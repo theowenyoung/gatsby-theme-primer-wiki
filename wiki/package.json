@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "wiki",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop -H 0.0.0.0",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "serve": "gatsby serve",
+    "now-build": "npm run build"
+  },
+  "dependencies": {
+    "@primer/components": "^28.3.0",
+    "@primer/css": "^17.5.0",
+    "gatsby-theme-primer-wiki": "*",
+    "gatsby": "^3.10.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "repository": "theowenyoung/gatsby-theme-primer-wiki"
+}

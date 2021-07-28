@@ -1,0 +1,179 @@
+---
+title: Customization
+---
+
+import {BorderBox} from '@primer/components'
+import {Contributors} from 'gatsby-theme-primer-wiki'
+
+Here are a few ways you can customize your Doctocat site:
+
+## Site metadata
+
+You can customize your site's metadata via the `siteMetadata` object in `gatsby-config.js`:
+
+```js
+// gatsby-config.js
+module.exports = {
+  siteMetadata: {
+    // Used for page titles and SEO
+    title: 'My Site',
+    // Used in the header
+    shortName: 'My Site',
+    // Used for SEO
+    description: 'My site description',
+    // Used for social previews
+    imageUrl: 'https://user-images.githubusercontent.com/example-image.png',
+  },
+}
+```
+
+## Side navigation
+
+Side navigation for your site is generated from the content in `src/gatsby-theme-primer-wiki/nav.yml`. Edit that file to customize your side navigation. Each entry in `nav.yml` should have a `title`, `url`, and an optional `children` list to create nested navigation links:
+
+```yml
+# src/gatsby-theme-primer-wiki/nav.yml
+- title: Example
+  url: /example
+  children:
+    - title: Example 2
+      url: /example/example-2
+```
+
+_Note: Doctocat only supports one level of nesting._
+
+## Repository
+
+Doctocat has a few features that rely on information about your repository, including:
+
+- "Edit this page on GitHub" links on the bottom of every page
+- Contributors on the bottom of every page
+- Repository link in the sidebar
+
+To enable these features, you'll need to specify your site's [`repository`](https://docs.npmjs.com/files/package.json#repository) in `package.json`:
+
+```json
+// package.json
+{
+  "repository": "repo-owner/repo-name"
+}
+```
+
+## Subdirectories
+
+If your site is located in a subdirectory of a repository, you'll also need to provide the relative path to the root of your git respository via the `repoRootPath` option in `gatsby-config.js`:
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-theme-primer-wiki',
+      options: {
+        repoRootPath: '..', // defaults to '.'
+      },
+    },
+  ],
+}
+```
+
+## Default branch
+
+If your site uses a branch other than `master` for your default branch, you'll also need to let Doctocat know via the `defaultBranch` option in `gatsby-config.js`:
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-theme-primer-wiki',
+      options: {
+        defaultBranch: 'main', // defaults to 'master'
+      },
+    },
+  ],
+}
+```
+
+## Contributors
+
+If you have the `repository` in `package.json` and `repoRootPath` in `gatsby-config.js` set up correctly (as described [above](#edit-on-github-link)), Doctocat will automatically display contributors on the bottom of every page, like so:
+
+<BorderBox p={4} mb={3}>
+  <Contributors
+    contributors={[
+      {
+        login: 'colebemis',
+        latestCommit: {
+          url: '#',
+          date: '2019-08-15T23:40:19Z',
+        },
+      },
+      {
+        login: 'emplums',
+        latestCommit: {
+          url: '#',
+          date: '2019-08-14T00:19:54Z',
+        },
+      },
+    ]}
+  />
+</BorderBox>
+
+These contributors are determined by commits. However, we know that commits aren't the only way to contribute. You can use [front matter](/usage/front-matter#additional-contributors) to give credit to people who aren't listed in the commit history but still contributed.
+
+## Hero
+
+To add a hero section to a page, you'll need to override the default layout component with Doctocat's `HeroLayout` component by exporting it from your MDX file:
+
+```markdown
+// index.mdx
+import {HeroLayout} from 'gatsby-theme-primer-wiki'
+export default HeroLayout
+```
+
+`HeroLayout` is similar to the default layout component except it also renders a `Hero` component displaying the `title` and `description` defined in the `siteMetadata` object from `gatsby-config.js`:
+
+```jsx live
+<Hero />
+```
+
+To use a custom hero component, [shadow](https://www.gatsbyjs.org/blog/2019-04-29-component-shadowing/) Doctocat's default `Hero` component by creating a `hero.js` file in `src/gatsby-theme-primer-wiki/components`:
+
+```jsx
+// src/gatsby-theme-primer-wiki/components/hero.js
+import {Box} from '@primer/components'
+import React from 'react'
+
+export default function Hero() {
+  return (
+    <Box bg="black" p={5}>
+      My Custom Hero
+    </Box>
+  )
+}
+```
+
+## Favicon
+
+If you want to override the default favicon, you can pass a relative path to a custom icon as a theme option in your `gatsby-config.js`:
+
+```js
+// gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: 'gatsby-theme-primer-wiki',
+      options: {
+        icon: './src/images/custom-icon-512.png', // This path is relative to the root of the site.
+      },
+    },
+  ],
+}
+```
+
+Doctocat uses [`gatsby-plugin-manifest`](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/) to generate a pre-configured set of icons from your image. For best results, if you’re providing an icon for generation, it should be:
+
+- 512x512 pixels or larger.
+- Square. If it’s not, the image will be [letterboxed](<https://en.wikipedia.org/wiki/Letterboxing_(filming)>) with a transparent background.
+- JPEG, PNG, WebP, TIFF, GIF, or SVG format.

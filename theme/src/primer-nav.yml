@@ -1,0 +1,26 @@
+- title: What's new
+  url: https://primer.style/news
+- title: Design
+  children:
+    - title: Interface guidelines
+      url: https://primer.style/design
+    - title: Octicons
+      url: https://primer.style/octicons
+    - title: Presentations
+      url: https://primer.style/presentations
+    - title: Command line
+      url: https://primer.style/cli
+    - title: Mobile
+      url: https://primer.style/mobile
+    - title: Desktop
+      url: https://primer.style/desktop
+- title: Development
+  children:
+    - title: CSS
+      url: https://primer.style/css
+    - title: React
+      url: https://primer.style/components
+    - title: ViewComponents
+      url: https://primer.style/view-components
+- title: About
+  url: https://primer.style/team

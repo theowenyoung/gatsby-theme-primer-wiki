@@ -1,0 +1,35 @@
+name: CI
+on: [push]
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Set up Node.js 12.x
+        uses: actions/setup-node@master
+        with:
+          node-version: 12
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: Test
+        run: npm -w theme run test
+
+      - name: Create .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_SHARED }}
+
+      - name: Release snapshot
+        run: |
+          npx changeset version --snapshot
+          npx changeset publish --tag canary
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

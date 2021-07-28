@@ -1,0 +1,33 @@
+- text: Getting started
+  link: /getting-started/
+  items:
+    - text: Gatsby CLI
+      link: /getting-started/gatsby-cli/
+- text: Usage
+  link: /usage/
+  items:
+    - text: Local development
+      link: /usage/local-development/
+    - text: Customization
+      link: /usage/customization/
+    - text: Front matter
+      link: /usage/front-matter/
+    - text: Live code
+      link: /usage/live-code/
+    - text: Deployment
+      link: /usage/deployment/
+    - text: Using images
+      link: /usage/using-images/
+- text: Components
+  link: /components/
+  items:
+    - text: Caption
+      link: /components/caption/
+    - text: Do/Don't
+      link: /components/do-dont/
+    - text: ImageContainer
+      link: /components/image-container/
+    - text: Note
+      link: /components/note/
+- text: Contributing
+  link: /contributing/
