@@ -32,13 +32,28 @@ function Sidebar() {
   const scrollContainerProps = usePersistentScroll('sidebar')
   const data = useStaticQuery(graphql`
     {
-      allSummaryYaml {
+      allSummaryGroup {
         nodes {
-          text
-          link
+          title
           items {
-            text
-            link
+            title
+            url
+            external
+            items {
+              title
+              url
+              external
+              items {
+                title
+                url
+                external
+                items {
+                  title
+                  url
+                  external
+                }
+              }
+            }
           }
         }
       }
@@ -65,7 +80,7 @@ function Sidebar() {
         style={{overflow: 'auto'}}
       >
         <Box display="flex" flexDirection="column">
-          <NavItems items={data.allSummaryYaml.nodes} />
+          <NavItems items={data.allSummaryGroup.nodes} />
         </Box>
       </Box>
     </Box>

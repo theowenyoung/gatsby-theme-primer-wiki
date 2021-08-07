@@ -1,21 +1,8 @@
-import {StyledOcticon, Link, themeGet, Box} from '@primer/components'
+import {StyledOcticon, Link, themeGet, Box, Heading} from '@primer/components'
 import {LinkExternalIcon} from '@primer/octicons-react'
 import {Link as GatsbyLink} from 'gatsby'
-import preval from 'preval.macro'
 import React from 'react'
 import styled from 'styled-components'
-
-// This code needs to run at build-time so it can access the file system.
-const repositoryUrl = preval`
-  const readPkgUp = require('read-pkg-up')
-  const getPkgRepo = require('get-pkg-repo')
-  try {
-    const repo = getPkgRepo(readPkgUp.sync().packageJson)
-    module.exports = \`https://github.com/\${repo.user}/\${repo.project}\`
-  } catch (error) {
-    module.exports = ''
-  }
-`
 
 const NavLink = styled(Link)`
   &.active {
@@ -23,6 +10,48 @@ const NavLink = styled(Link)`
     color: ${themeGet('colors.auto.gray.8')};
   }
 `
+function SidebarItem({title, url, external, items, depth = 0}) {
+  return (
+    <Box display="flex" flexDirection="column" ml={depth > 0 ? 3 : 0}>
+      {external ? (
+        <Link display="block" mt={2} fontSize={1} href={url}>
+          <Box display="flex" alignItems="center" position="relative">
+            {title}
+            <StyledOcticon
+              ml={2}
+              sx={{
+                top: '2px',
+                position: 'relative',
+              }}
+              size={14}
+              icon={LinkExternalIcon}
+              color="text.placeholder"
+            />
+          </Box>
+        </Link>
+      ) : (
+        <NavLink
+          key={title}
+          as={GatsbyLink}
+          to={url}
+          activeClassName="active"
+          display="block"
+          mt={2}
+          fontSize={1}
+          partiallyActive={true}
+        >
+          {title}
+        </NavLink>
+      )}
+
+      {Array.isArray(items)
+        ? items.map(subItem => (
+            <SidebarItem key={subItem.title} depth={depth + 1} {...subItem} />
+          ))
+        : null}
+    </Box>
+  )
+}
 
 function NavItems({items}) {
   return (
@@ -31,64 +60,35 @@ function NavItems({items}) {
         <Box
           borderStyle="solid"
           borderColor="border.primary"
-          key={item.text}
+          key={item.title}
           borderWidth={0}
           borderRadius={0}
           borderTopWidth={1}
           p={4}
         >
           <Box display="flex" flexDirection="column">
-            <NavLink
-              as={GatsbyLink}
-              to={item.link}
-              activeClassName="active"
-              partiallyActive={true}
-              color="inherit"
-            >
-              {item.text}
-            </NavLink>
-            {item.items ? (
-              <Box display="flex" flexDirection="column" mt={2}>
-                {item.items.map(child => (
-                  <NavLink
-                    key={child.text}
-                    as={GatsbyLink}
-                    to={child.link}
-                    activeClassName="active"
-                    display="block"
-                    py={1}
-                    mt={2}
-                    fontSize={1}
-                  >
-                    {child.text}
-                  </NavLink>
-                ))}
-              </Box>
-            ) : null}
+            {item.title && (
+              <Heading
+                color="text.placeholder"
+                fontSize="12px"
+                sx={{
+                  textTransform: 'uppercase',
+                  fontFamily: 'Content-font, Roboto, sans-serif;',
+                }}
+                mb={1}
+                fontWeight="500"
+              >
+                {item.title}
+              </Heading>
+            )}
+            {Array.isArray(item.items)
+              ? item.items.map(child => (
+                  <SidebarItem key={child.title} {...child}></SidebarItem>
+                ))
+              : null}
           </Box>
         </Box>
       ))}
-      {repositoryUrl ? (
-        <Box
-          borderStyle="solid"
-          borderColor="border.primary"
-          borderWidth={0}
-          borderTopWidth={1}
-          borderRadius={0}
-          p={4}
-        >
-          <Link href={repositoryUrl} color="inherit">
-            <Box
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              GitHub
-              <StyledOcticon icon={LinkExternalIcon} color="auto.gray.7" />
-            </Box>
-          </Link>
-        </Box>
-      ) : null}
     </>
   )
 }

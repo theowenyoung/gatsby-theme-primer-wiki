@@ -46,19 +46,34 @@ function NavDrawer({isOpen, onDismiss}) {
   const siteMetadata = useSiteMetadata()
   const data = useStaticQuery(graphql`
     {
-      allSummaryYaml {
+      allSummaryGroup {
         nodes {
-          text
-          link
+          title
           items {
-            text
-            link
+            title
+            url
+            external
+            items {
+              title
+              url
+              external
+              items {
+                title
+                url
+                external
+                items {
+                  title
+                  url
+                  external
+                }
+              }
+            }
           }
         }
       }
     }
   `)
-  const navItems = data.allSummaryYaml.nodes
+  const navItems = data.allSummaryGroup.nodes
   return (
     <Drawer isOpen={isOpen} onDismiss={onDismiss}>
       <Box

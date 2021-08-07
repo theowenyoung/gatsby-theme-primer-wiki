@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-transformer-summary",
+  "version": "0.1.0",
+  "description": "Gatsby Plugin Source SUMMARY.md",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theowenyoung/gatsby-theme-primer-wiki.git"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "author": "Owen Young",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theowenyoung/gatsby-theme-primer-wiki/issues"
+  },
+  "homepage": "https://github.com/theowenyoung/gatsby-theme-primer-wiki#readme",
+  "dependencies": {
+    "@honkit/markdown": "^3.7.0",
+    "is-relative-url": "^3.0.0"
+  }
+}

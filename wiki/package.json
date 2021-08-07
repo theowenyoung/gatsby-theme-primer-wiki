@@ -8,7 +8,8 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "serve": "gatsby serve",
-    "now-build": "npm run build"
+    "now-build": "npm run build",
+    "test": "echo "
   },
   "dependencies": {
     "@primer/components": "^28.3.0",

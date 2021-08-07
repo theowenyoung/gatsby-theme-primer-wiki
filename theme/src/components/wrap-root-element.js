@@ -1,3 +1,4 @@
+import 'minireset.css/minireset.css'
 import {MDXProvider} from '@mdx-js/react'
 import {Link, theme, ThemeProvider} from '@primer/components'
 import React from 'react'
@@ -15,7 +16,6 @@ import List from './list'
 import Note from './note'
 import Paragraph from './paragraph'
 import Table from './table'
-
 const components = {
   a: Link,
   pre: props => props.children,

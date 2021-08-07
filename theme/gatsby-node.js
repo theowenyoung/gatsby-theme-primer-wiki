@@ -7,20 +7,7 @@ const extractExports = require(`gatsby-plugin-mdx/utils/extract-exports`)
 const mdx = require(`gatsby-plugin-mdx/utils/mdx`)
 
 const CONTRIBUTOR_CACHE = new Map()
-exports.createSchemaCustomization = ({actions}) => {
-  const {createTypes} = actions
-  createTypes(`
-    type SummaryItem {
-      link: String
-      text: String!
-    }
-    type SummaryYaml implements Node @infer {
-      link: String
-      text: String!
-      items: [SummaryItem]
-    }
-  `)
-}
+
 exports.createPages = async ({graphql, actions}, themeOptions) => {
   const repo = getPkgRepo(readPkgUp.sync().packageJson)
 
@@ -97,8 +84,6 @@ exports.createPages = async ({graphql, actions}, themeOptions) => {
       if (!pagePath.endsWith('/')) {
         pagePath += '/'
       }
-      console.log('pagePath', pagePath)
-
       actions.createPage({
         path: pagePath,
         component: node.fileAbsolutePath,

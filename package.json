@@ -6,14 +6,18 @@
     "release": "changeset publish",
     "build": "npm -w wiki run build",
     "serve": "npm -w wiki run serve",
-    "test": "npm -w theme run test"
+    "test": "npm -ws run test"
   },
   "workspaces": [
     "theme",
-    "wiki"
+    "wiki",
+    "gatsby-transformer-summary"
   ],
   "dependencies": {
     "@changesets/changelog-github": "^0.4.0",
     "@changesets/cli": "^2.16.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6"
   }
 }
