@@ -17,7 +17,7 @@ jobs:
         run: npm i
 
       - name: Test
-        run: npm -w theme run test
+        run: npm test
 
       - name: Create .npmrc
         run: |
