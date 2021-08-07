@@ -3,6 +3,7 @@ on: [push]
 jobs:
   ci:
     name: CI
+    concurrency: ci
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
