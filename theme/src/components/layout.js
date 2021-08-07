@@ -1,4 +1,3 @@
-import componentMetadata from '@primer/component-metadata'
 import {Box, Heading, Text} from '@primer/components'
 import React from 'react'
 import Head from './head'
@@ -10,7 +9,7 @@ import StatusLabel from './status-label'
 import StorybookLink from './storybook-link'
 import TableOfContents from './table-of-contents'
 
-function Layout({children, pageContext}) {
+function Layout({children, frontmatter, tableOfContents, pageContext}) {
   let {
     title,
     description,
@@ -18,19 +17,10 @@ function Layout({children, pageContext}) {
     source,
     storybook,
     additionalContributors,
-    componentId,
-  } = pageContext.frontmatter
+  } = frontmatter
 
   if (!additionalContributors) {
     additionalContributors = []
-  }
-
-  const component = componentMetadata.components[componentId]
-
-  // Auto-populate title and description using component metadata
-  if (component) {
-    title ||= component.displayName
-    description ||= component.description
   }
 
   return (
@@ -51,7 +41,7 @@ function Layout({children, pageContext}) {
             flexDirection: 'row-reverse',
           }}
         >
-          {pageContext.tableOfContents.items ? (
+          {tableOfContents.items ? (
             <Box
               sx={{width: 220, flex: '0 0 auto', marginLeft: 6}}
               display={['none', null, 'block']}
@@ -63,7 +53,7 @@ function Layout({children, pageContext}) {
               <Text display="inline-block" fontWeight="bold" mb={1}>
                 On this page
               </Text>
-              <TableOfContents items={pageContext.tableOfContents.items} />
+              <TableOfContents items={tableOfContents.items} />
             </Box>
           ) : null}
           <Box width="100%" maxWidth="960px">
@@ -79,21 +69,8 @@ function Layout({children, pageContext}) {
                   {description}
                 </Box>
               ) : null}
-              {source || storybook ? (
-                <Box
-                  display="grid"
-                  py={2}
-                  gridGap={[1, null, 3]}
-                  gridAutoFlow={['row', null, 'column']}
-                  gridAutoColumns="max-content"
-                  gridAutoRows="max-content"
-                >
-                  {source ? <SourceLink href={source} /> : null}
-                  {storybook ? <StorybookLink href={storybook} /> : null}
-                </Box>
-              ) : null}
             </Box>
-            {pageContext.tableOfContents.items ? (
+            {tableOfContents.items ? (
               <Box
                 borderWidth="1px"
                 borderStyle="solid"
@@ -120,7 +97,7 @@ function Layout({children, pageContext}) {
                     borderColor: 'border.gray',
                   }}
                 >
-                  <TableOfContents items={pageContext.tableOfContents.items} />
+                  <TableOfContents items={tableOfContents.items} />
                 </Box>
               </Box>
             ) : null}
