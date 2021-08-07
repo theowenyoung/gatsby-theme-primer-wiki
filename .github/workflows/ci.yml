@@ -12,7 +12,8 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 12
-
+      - name: update npm
+        run: npm i -g npm
       - name: Install dependencies
         run: npm i
 
