@@ -6,17 +6,34 @@ const uniqBy = require('lodash.uniqby')
 const extractExports = require(`gatsby-plugin-mdx/utils/extract-exports`)
 const mdx = require(`gatsby-plugin-mdx/utils/mdx`)
 const {createFilePath} = require(`gatsby-source-filesystem`)
+const {getTitle} = require('./gatsby-util')
 
 const CONTRIBUTOR_CACHE = new Map()
-exports.createSchemaCustomization = ({actions}) => {
-  const {createTypes} = actions
-  createTypes(`
-  type MdxFrontmatter {
-    title: String
-    description: String
-    status: String
-    additionalContributors: [String]
-  }`)
+
+exports.createResolvers = ({createResolvers}) => {
+  const resolvers = {
+    MdxFrontmatter: {
+      title: {
+        type: 'String',
+        resolve(source) {
+          return source.title || ''
+        },
+      },
+      description: {
+        type: 'String',
+        resolve(source) {
+          return source.description || ''
+        },
+      },
+      tags: {
+        type: '[String]',
+        resolve(source) {
+          return source.tags || []
+        },
+      },
+    },
+  }
+  createResolvers(resolvers)
 }
 exports.createPages = async ({graphql, actions}, themeOptions) => {
   const repo = getPkgRepo(readPkgUp.sync().packageJson)
@@ -101,7 +118,7 @@ exports.createPages = async ({graphql, actions}, themeOptions) => {
     }),
   )
 }
-exports.onCreateNode = ({node, actions, getNode}) => {
+exports.onCreateNode = async ({node, actions, getNode, loadNodeContent}) => {
   const {createNodeField} = actions
 
   if (node.internal.type === `Mdx`) {
@@ -117,6 +134,13 @@ exports.onCreateNode = ({node, actions, getNode}) => {
       name: `slug`,
       node,
       value,
+    })
+    const title = await getTitle(node, {loadNodeContent})
+
+    createNodeField({
+      name: `title`,
+      node,
+      value: title || '',
     })
   }
 }

@@ -1,5 +1,4 @@
 import {graphql, useStaticQuery} from 'gatsby'
-import path from 'path-browserify'
 import React from 'react'
 import SearchWorker from 'worker-loader!./search.worker.js'
 
@@ -13,17 +12,11 @@ function useSearch(query) {
     {
       allMdx {
         nodes {
-          fileAbsolutePath
-          frontmatter {
+          fields {
+            slug
             title
           }
           rawBody
-          parent {
-            ... on File {
-              relativeDirectory
-              name
-            }
-          }
         }
       }
     }
@@ -32,13 +25,8 @@ function useSearch(query) {
   const list = React.useMemo(() => {
     return data.allMdx.nodes.map(node => {
       return {
-        path: ensureAbsolute(
-          path.join(
-            node.parent.relativeDirectory,
-            node.parent.name === 'index' ? '/' : node.parent.name,
-          ),
-        ),
-        title: node.frontmatter.title,
+        path: node.fields.slug,
+        title: node.fields.title,
         rawBody: node.rawBody,
       }
     })

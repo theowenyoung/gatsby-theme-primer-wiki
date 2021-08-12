@@ -11,7 +11,8 @@
   "workspaces": [
     "theme",
     "wiki",
-    "gatsby-transformer-summary"
+    "gatsby-transformer-summary",
+    "gatsby-remark-rewrite-link-for-trailing-slash"
   ],
   "dependencies": {
     "@changesets/changelog-github": "^0.4.0",

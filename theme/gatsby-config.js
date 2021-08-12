@@ -24,6 +24,7 @@ module.exports = themeOptions => {
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-catch-links',
       'gatsby-transformer-summary',
+
       !mdxOtherwiseConfigured && `gatsby-plugin-sharp`,
       !mdxOtherwiseConfigured && `gatsby-remark-images`,
       !mdxOtherwiseConfigured && {
@@ -31,9 +32,13 @@ module.exports = themeOptions => {
         options: {
           extensions: extensions,
           gatsbyRemarkPlugins: [
+            'gatsby-remark-rewrite-link-for-trailing-slash',
             {
-              resolve: 'gatsby-remark-double-brackets-link',
-              options: {parseWikiLinks},
+              resolve: 'gatsby-remark-wiki-link',
+              options: {
+                stripBrackets: false,
+                stripDefinitionExts: extensions,
+              },
             },
             'gatsby-remark-double-parenthesis-link',
             {

@@ -8,13 +8,32 @@ export const query = graphql`
     mdx(fields: {slug: {eq: $slug}}) {
       id
       tableOfContents(maxDepth: 2)
+      fields {
+        slug
+      }
       frontmatter {
         title
         description
-        status
-        additionalContributors
       }
       body
+      outboundReferences {
+        ... on Mdx {
+          body
+          fields {
+            slug
+            title
+          }
+        }
+      }
+      inboundReferences {
+        ... on Mdx {
+          body
+          fields {
+            slug
+            title
+          }
+        }
+      }
     }
   }
 `

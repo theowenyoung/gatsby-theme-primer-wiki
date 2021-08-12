@@ -60,8 +60,12 @@ function Sidebar() {
     }
   `)
 
+  if (data.allSummaryGroup.nodes && data.allSummaryGroup.nodes.length <= 0) {
+    return null
+  }
   return (
     <Box
+      display={['none', null, null, 'block']}
       position="sticky"
       top={HEADER_HEIGHT}
       height={`calc(100vh - ${HEADER_HEIGHT}px)`}

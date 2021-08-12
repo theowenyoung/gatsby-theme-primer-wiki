@@ -4,33 +4,17 @@ import Head from './head'
 import Header, {HEADER_HEIGHT} from './header'
 import PageFooter from './page-footer'
 import Sidebar from './sidebar'
-import SourceLink from './source-link'
-import StatusLabel from './status-label'
-import StorybookLink from './storybook-link'
 import TableOfContents from './table-of-contents'
 
-function Layout({children, frontmatter, tableOfContents, pageContext}) {
-  let {
-    title,
-    description,
-    status,
-    source,
-    storybook,
-    additionalContributors,
-  } = frontmatter
-
-  if (!additionalContributors) {
-    additionalContributors = []
-  }
+function Layout({children, fields, frontmatter, tableOfContents, pageContext}) {
+  let {title, description} = frontmatter
 
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <Head title={title} description={description} />
       <Header />
       <Box display="flex" flex="1 1 auto" flexDirection="row" css={{zIndex: 0}}>
-        <Box display={['none', null, null, 'block']}>
-          <Sidebar />
-        </Box>
+        <Sidebar />
         <Box
           id="skip-nav"
           display="flex"
@@ -62,7 +46,6 @@ function Layout({children, frontmatter, tableOfContents, pageContext}) {
                 <Heading as="h1" mr={2}>
                   {title}
                 </Heading>{' '}
-                {status ? <StatusLabel status={status} /> : null}
               </Box>
               {description ? (
                 <Box pb={2} sx={{fontSize: 3}}>
@@ -104,9 +87,7 @@ function Layout({children, frontmatter, tableOfContents, pageContext}) {
             {children}
             <PageFooter
               editUrl={pageContext.editUrl}
-              contributors={pageContext.contributors.concat(
-                additionalContributors.map(login => ({login})),
-              )}
+              contributors={pageContext.contributors}
             />
           </Box>
         </Box>

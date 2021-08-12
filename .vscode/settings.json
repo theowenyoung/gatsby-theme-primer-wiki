@@ -1,0 +1,28 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false,
+  "editor.wrappingIndent": "indent",
+  "editor.overviewRulerBorder": false,
+  "foam.edit.linkReferenceDefinitions": "withExtensions",
+  "foam.openDailyNote.directory": "journal",
+  "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
+  "vscodeMarkdownNotes.noteCompletionConvention": "rawFilename",
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "cSpell.language": "en-GB",
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "spellright.language": ["en"],
+  "spellright.documentTypes": ["markdown", "plaintext"],
+  "files.exclude": {
+    "_site/**": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules": true
+  }
+}

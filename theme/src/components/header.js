@@ -31,18 +31,13 @@ function Header({isSearchEnabled}) {
         bg="auto.black"
       >
         <Box display="flex" alignItems="center">
-          <Link href="/" color="auto.blue.4" mr={3} lineHeight="condensedUltra">
+          <Link href="/" color="auto.white" mr={3} lineHeight="condensedUltra">
             <StyledOcticon icon={MarkGithubIcon} size="medium" />
           </Link>
 
           {siteMetadata.shortName ? (
             <>
-              <Link
-                as={GatsbyLink}
-                to="/"
-                color="auto.blue.4"
-                fontFamily="mono"
-              >
+              <Link as={GatsbyLink} to="/" color="auto.white" fontFamily="mono">
                 {siteMetadata.shortName}
               </Link>
             </>

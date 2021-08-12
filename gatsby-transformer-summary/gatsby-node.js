@@ -126,10 +126,8 @@ function formatItem(item, pluginOptions) {
   let external = false
   if (ref) {
     const ext = path.extname(ref)
-    const name = path
-      .basename(ref)
-      .toLowerCase()
-      .slice(0, ext.length * -1)
+    const basename = path.basename(ref)
+    const name = basename.toLowerCase().slice(0, basename.length - ext.length)
 
     if (isRelativeUrl(ref) && options.extensions.includes(ext)) {
       // transformer to slug
@@ -138,7 +136,7 @@ function formatItem(item, pluginOptions) {
           ? name.length + ext.length
           : ext.length
 
-      url = ref.slice(0, sliceLength * -1)
+      url = ref.slice(0, ref.length - sliceLength)
       if (!url.startsWith('/')) {
         url = '/' + url
       }
