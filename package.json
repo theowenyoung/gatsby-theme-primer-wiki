@@ -1,18 +1,16 @@
 {
   "private": true,
   "scripts": {
-    "start": "npm -w wiki run develop",
-    "clean": "npm -w wiki run clean",
+    "start": "npm -w example run develop",
+    "clean": "npm -w example run clean",
     "release": "changeset publish",
-    "build": "npm -w wiki run build",
-    "serve": "npm -w wiki run serve",
+    "build": "npm -w example run build",
+    "serve": "npm -w example run serve",
     "test": "npm -ws run test -- --passWithNoTests"
   },
   "workspaces": [
-    "theme",
-    "wiki",
-    "gatsby-transformer-summary",
-    "gatsby-remark-rewrite-link-for-trailing-slash"
+    "packages/*",
+    "example"
   ],
   "dependencies": {
     "@changesets/changelog-github": "^0.4.0",
