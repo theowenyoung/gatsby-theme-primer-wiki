@@ -1,0 +1,67 @@
+# File systems
+
+## Links
+
+- [TMFS](https://github.com/abique/tmfs) - Apple's Time Machine fuse read only file system.
+- [sparsebundlefs](https://github.com/torarnv/sparsebundlefs) - FUSE filesystem for reading macOS sparse-bundle disk images.
+- [Understanding Google’s File System (2020)](https://www.micahlerner.com/distributed/systems/2020/03/22/understanding-googles-file-system.html)
+- [mergerfs](https://github.com/trapexit/mergerfs) - Union filesystem geared towards simplifying storage and management of files across numerous commodity storage devices.
+- [gefs](https://github.com/oridb/gefs) - Good enough file system.
+- [libfsapfs](https://github.com/libyal/libfsapfs) - Library to access the Apple File System (APFS).
+- [proper-lockfile](https://github.com/moxystudio/node-proper-lockfile) - Inter-process and inter-machine lockfile utility that works on a local or network file system.
+- [How do you lay out your home directory? (2020)](https://lobste.rs/s/fd1rbw/how_do_you_lay_out_your_home_directory)
+- [RISC-V OS using Rust: Filesystems](http://osblog.stephenmarz.com/ch10.html) ([HN](https://news.ycombinator.com/item?id=23155294))
+- [Sanoid](https://github.com/jimsalterjrs/sanoid) - Policy-driven snapshot management tool for ZFS filesystems. When combined with the Linux KVM hypervisor, you can use it to make your systems functionally immortal.
+- [UtahFS](https://github.com/cloudflare/utahfs) - Encrypted storage system that provides a user-friendly FUSE drive backed by cloud storage. ([Article](https://blog.cloudflare.com/utahfs/)) ([HN](https://news.ycombinator.com/item?id=23465571))
+- [Writing a file system from scratch in Rust (2020)](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html) ([Lobsters](https://lobste.rs/s/8ipzof/writing_file_system_from_scratch_rust)) ([HN](https://news.ycombinator.com/item?id=23967016))
+- [Filesystem deduplication is a sidechannel](https://mjg59.dreamwidth.org/55638.html) ([Lobsters](https://lobste.rs/s/bhuaxo/filesystem_deduplication_is))
+- [Files by Dan Luu (2019)](https://www.deconstructconf.com/2019/dan-luu-files)
+- [Non-POSIX file systems (2020)](https://weinholt.se/articles/non-posix-filesystems/) ([Lobsters](https://lobste.rs/s/bed7wm/non_posix_file_systems)) ([HN](https://news.ycombinator.com/item?id=24412970))
+- [Filesystems for dummies (2020)](https://29jm.github.io/filesystems-for-dummies/)
+- [gcsfuse](https://github.com/GoogleCloudPlatform/gcsfuse) - User-space file system for interacting with Google Cloud Storage.
+- [Apache Helix](https://helix.apache.org/0.6.8-docs/recipes/rsync_replicated_file_store.html) - Near-Realtime Rsync Replicated File System. ([HN](https://news.ycombinator.com/item?id=24898911))
+- [The Second Extended File System](https://www.nongnu.org/ext2-doc/ext2.html) - Also known as Ext2.
+- [bindfs](https://github.com/mpartel/bindfs) - FUSE filesystem for mirroring a directory to another directory, similarly to mount --bind. ([Web](https://bindfs.org/))
+- [Practical File System Design (1999)](http://www.nobius.org/dbg/practical-file-system-design.pdf)
+- [Virtual filesystem: fun and profit (2019)](https://abbyssoul.github.io/engineering/2019/11/25/vfs-for-fun-and-profit.html)
+- [Files Are Fraught with Peril (2019)](https://danluu.com/deconstruct-files/) ([HN](https://news.ycombinator.com/item?id=25090760))
+- [An Introduction to ZFS (2020)](https://www.servethehome.com/an-introduction-to-zfs-a-place-to-start/) ([HN](https://news.ycombinator.com/item?id=25157491))
+- [vmtouch](https://hoytech.com/vmtouch/) - Portable file system cache diagnostics and control. ([Code](https://github.com/hoytech/vmtouch))
+- [Modern storage is plenty fast. It is the APIs that are bad (2020)](https://itnext.io/modern-storage-is-plenty-fast-it-is-the-apis-that-are-bad-6a68319fbc1a) ([HN](https://news.ycombinator.com/item?id=25217323))
+- [Supertag](https://github.com/amoffat/supertag) - Tag-based filesystem, written in Rust, for Linux and MacOS. ([Docs](https://amoffat.github.io/supertag/))
+- [DwarFS](https://github.com/mhx/dwarfs) - Fast high compression read-only file system.
+- [ID mapping for mounted filesystems](https://lwn.net/SubscriberLink/837566/33dbf767adaf9bd4/)
+- [Filesystem and Database are not cutting the problem space right (2020)](https://boomla.com/blog/filesystem-and-database-are-not-cutting-the-problem-space-right) ([Lobsters](https://lobste.rs/s/7vebdc/filesystem_database_are_not_cutting))
+- [The Perils of File Typing](https://invisibleup.com/articles/34/) ([HN](https://news.ycombinator.com/item?id=25322288))
+- [vfs](https://github.com/blang/vfs) - Virtual filesystem library written in Go.
+- [dino](https://github.com/nicolagi/dino) - Distributed FUSE filesystem for small volumes.
+- [Exploring the IBM Graphical Filesystem](https://casadevall.pro/articles/2020/12/exploring-the-ibm-graphical-filesystem/) ([Lobsters](https://lobste.rs/s/dsn99n/exploring_ibm_graphical_filesystem))
+- [organize](https://github.com/tfeldmann/organize) - File management automation tool.
+- [JuiceFS](https://github.com/juicedata/juicefs) - Distributed POSIX file system built on top of Redis and S3.
+- [GoDFS](https://github.com/rounakdatta/GoDFS) - Simple Distributed FileSystem written in Go. ([Article](https://rounakdatta.github.io/posts/godfs/))
+- [TiFS](https://github.com/Hexilee/tifs) - Distributed file system based on TiKV.
+- [HyperTag](https://github.com/SeanPedersen/HyperTag) - Helps humans intuitively express how they think about their files using tags and machine learning.
+- [sandboxfs](https://github.com/bazelbuild/sandboxfs) - Virtual file system for sandboxing.
+- [GitHub File System](https://github.com/sirnewton01/ghfs) - With this filesystem you can use GitHub from your favorite shell and text editor.
+- [Dirhash Standard](https://github.com/andhus/dirhash) - Formal procedure for hashing of a filesystem directory.
+- [The No-Order File System (2012)](http://pages.cs.wisc.edu/~vijayc/nofs.htm) ([HN](https://news.ycombinator.com/item?id=25900461))
+- [PiFS](https://github.com/philipl/pifs) - Data-Free Filesystem.
+- [S3QL](https://github.com/s3ql/s3ql) - File system that stores all its data online using storage services like Google Storage, Amazon S3, or OpenStack.
+- [Envfs](https://github.com/Mic92/envfs) - Fuse filesystem that returns symlinks to executables based on the PATH of the requesting process.
+- [GotenksFS](https://github.com/carlosgaldino/gotenksfs) - File system on top of your file system.
+- [Writing a file system from scratch in Rust (2020)](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html)
+- [Query-FS](https://gitlab.common-lisp.net/cl-fuse/query-fs) - Virtual filesystem implemented using FUSE in Common Lisp. ([Talk](https://www.youtube.com/watch?v=4T9ApaL6Un8))
+- [CrossFS](https://github.com/RutgersCSSystems/CrossFS) - Direct-access cross-layered file system with support for concurrency.
+- [A Survey of Distributed File Systems (1989)](https://www.cs.cmu.edu/~satya/docdir/satya89survey.pdf)
+- [libfsrefs](https://github.com/libyal/libfsrefs) - Library and tools to access the Resilient File System (ReFS).
+- [netfuse](https://github.com/anowell/netfuse) - FUSE-based abstraction for networked filesystems.
+- [go-fsimpl](https://github.com/hairyhenderson/go-fsimpl) - Go filesystem implementations for various URL schemes.
+- [ImpFS](https://github.com/tomjridge/imp_fs) - Novel filesystem with some interesting features.
+- [rpg-cli](https://github.com/facundoolano/rpg-cli) - Your filesystem as a dungeon.
+- [Log-structured File Systems](https://pages.cs.wisc.edu/~remzi/OSTEP/file-lfs.pdf)
+- [nullfsvfs](https://github.com/abbbi/nullfsvfs) - Virtual black hole file system that behaves like /dev/null.
+- [ffs](https://github.com/mgree/ffs) - File filesystem: mount semi-structured data (like JSON) as a Unix filesystem. ([Web](https://mgree.github.io/ffs/)) ([Tweet](https://twitter.com/mgrnbrg/status/1409871452099198982))
+- [fbox](https://github.com/prologic/fbox) - Easy to use and maintain distributed filesystem written in Go.
+- [Zip – How not to design a file format (2021)](https://games.greggman.com/game/zip-rant/) ([HN](https://news.ycombinator.com/item?id=27925393)) ([Lobsters](https://lobste.rs/s/agrmsw/zip_how_not_design_file_format))
+- [Facebook's Tectonic Filesystem: Efficiency from Exascale (2021)](https://paulcavallaro.com/blog/facebook-tectonic-filesystem/)
+- [AppFS](https://appfs.rkeene.org/web/index) - Universal packaging format that is presented to the system as a filesystem (via FUSE).

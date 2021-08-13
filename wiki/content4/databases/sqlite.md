@@ -1,0 +1,101 @@
+# [SQLite](https://www.sqlite.org/index.html)
+
+## Notes
+
+- [SQLite can import CSV data directly. Start sqlite, then: .mode csv .import some_data_file.csv your_table_name](https://lobste.rs/s/nydkgn/how_hot_does_it_get_inside_car_during_heat#c_0kknsc)
+
+## Links
+
+- [EXPLAIN QUERY PLAN](https://sqlite.org/eqp.html) - SQL command that is used to obtain a high-level description of the strategy or plan that SQLite uses to implement a specific SQL query.
+- [FTS5](https://www.sqlite.org/fts5.html) - SQLite virtual table module that provides full-text search functionality to database applications.
+- [Awesome SQLite](https://github.com/planetopendata/awesome-sqlite)
+- [All things around SQLite](https://github.com/mindreframer/awesome-sqlite)
+- [SQLite 3.32.0 (2020)](https://sqlite.org/releaselog/3_32_0.html) ([HN](https://news.ycombinator.com/item?id=23281994))
+- [Scaling SQLite to 4M QPS on a Single Server (EC2 vs Bare Metal) (2018)](https://blog.expensify.com/2018/01/08/scaling-sqlite-to-4m-qps-on-a-single-server/) ([HN](https://news.ycombinator.com/item?id=23291779))
+- [sqlite-web](https://github.com/coleifer/sqlite-web) - Web-based SQLite database browser written in Python.
+- [DB Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser) - High quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
+- [SQLancer](https://github.com/sqlancer/sqlancer) - Detecting Logic Bugs in DBMS. ([HN](https://news.ycombinator.com/item?id=23426753))
+- [SQLite As An Application File Format](https://sqlite.org/appfileformat.html) ([HN](https://news.ycombinator.com/item?id=23508923)) ([Lobsters](https://lobste.rs/s/gbj1jf/sqlite_as_application_file_format))
+- [How does SQLite work? (2014)](https://jvns.ca/blog/2014/09/27/how-does-sqlite-work-part-1-pages/) ([HN](https://news.ycombinator.com/item?id=23663071))
+- [SQLite Localtime Date Modifier is Slow (2019)](https://radhifadlillah.com/post/2019-08-11-sqlite-localtime-date-modifier-is-slow/)
+- [Why SQLite succeeded as a database (2016)](https://changelog.com/podcast/201)
+- [Appropriate Uses For SQLite](https://sqlite.org/whentouse.html)
+- [SQLite 3.33 adds support for UPDATE FROM](https://www.sqlite.org/lang_update.html#upfrom) ([HN](https://news.ycombinator.com/item?id=24176608))
+- [SQLite: Protégé of PostgreSQL (2014)](https://www.youtube.com/watch?v=ZvmMzI0X7fE) ([Tweet](https://twitter.com/electron0zero/status/1280431762133270529))
+- [SQLite Quirks and Gotchas](https://sqlite.org/quirks.html)
+- [sqlite-utils](https://github.com/simonw/sqlite-utils) - Python CLI utility and library for manipulating SQLite databases.
+- [CG/SQL](https://github.com/facebookincubator/CG-SQL) - Easy, accurate SQLite code generation. ([Article](https://engineering.fb.com/open-source/cg-sql/))
+- [SQLite: Begin Concurrent](https://sqlite.org/src/doc/begin-concurrent/doc/begin_concurrent.md)
+- [SQLite now allows multiple recursive SELECT statements in a single recursive CTE (2020)](https://fossil-scm.org/forum/forumpost/bacf8cf88c) ([HN](https://news.ycombinator.com/item?id=24843643))
+- [Making SQLite Upserts Snappy (with Python and SQLAlchemy) (2020)](https://flightaware.engineering/making-sqlite-upserts-snappy-with-python-and-sqlalchemy/)
+- [pgsqlite](https://github.com/sanderhahn/pgsqlite) - PostgreSQL extension that embeds SQLite3 and uses large objects as storage.
+- [sqlite-diffable](https://github.com/simonw/sqlite-diffable) - Tools for dumping/loading a SQLite database to diffable directory structure.
+- [hybrid-disk-cache](https://github.com/rjyo/hybrid-disk-cache) - Hybrid disk cache library that utilized both the solid SQLite3 and file system.
+- [SQLite briefing for Linux kernel hackers](https://sqlite.org/lpc2019/doc/trunk/briefing.md) ([HN](https://news.ycombinator.com/item?id=25167423))
+- [Richard Hipp - SQLite lecture (2015)](https://www.youtube.com/watch?v=gpxnbly9bz4)
+- [SQLite as a Document Database (2020)](https://dgl.cx/2020/06/sqlite-json-support) ([HN](https://news.ycombinator.com/item?id=25226260))
+- [Dqlite](https://dqlite.io/) - High-Availability SQLite. ([Code](https://github.com/canonical/dqlite))
+- [LiteTree](https://github.com/aergoio/litetree) - SQLite with Branches.
+- [Working with SQLite using Go and Python (2020)](https://www.ardanlabs.com/blog/2020/11/working-with-sqlite-using-go-python.html)
+- [sandman2](https://github.com/jeffknupp/sandman2) - Generates a RESTful API service from your existing database, without requiring you to write a line of code. Works with SQLite.
+- [node-sqlite](https://github.com/kriasoft/node-sqlite) - SQLite client for Node.js applications with SQL-based migrations API written in TypeScript.
+- [What If OpenDocument Used SQLite?](https://www.sqlite.org/affcase1.html)
+- [The Use Of assert() In SQLite](https://sqlite.org/assert.html)
+- [simple-graph](https://github.com/dpapathanasiou/simple-graph) - Graph database in SQLite. ([Lobsters](https://lobste.rs/s/x0fk0a/simple_graph_graph_database_sqlite)) ([HN](https://news.ycombinator.com/item?id=25544397))
+- [SQLite is 35% Faster Than The Filesystem](https://www.sqlite.org/fasterthanfs.html)
+- [SQLiteC++](https://github.com/SRombauts/SQLiteCpp) - Smart and easy to use C++ SQLite3 wrapper.
+- [sqlite-worker](https://github.com/WebReflection/sqlite-worker) - Simple, and persistent, SQLite database for Web and Workers.
+- [Grafito](https://github.com/arturo-lang/grafito) - Portable, Serverless & Lightweight SQLite-based Graph Database.
+- [GRDB.swift](https://github.com/groue/GRDB.swift) - Toolkit for SQLite databases, with a focus on application development. ([Web](http://groue.github.io/GRDB.swift/))
+- [edge-sql](https://sql.lspgn.workers.dev/) - Serverless edge worker embedding SQLite using Cloudflare Workers and WASM. ([Code](https://github.com/lspgn/edge-sql)) ([HN](https://news.ycombinator.com/item?id=25842999))
+- [Litestream](https://github.com/benbjohnson/litestream) - Streaming replication for SQLite. ([Why I Built Litestream (2021)](https://litestream.io/blog/why-i-built-litestream/)) ([HN](https://news.ycombinator.com/item?id=26103776)) ([Lobsters](https://lobste.rs/s/bplm1x/why_i_built_litestream))
+- [Rqlite](https://github.com/rqlite/rqlite) - Lightweight, distributed relational database built on SQLite. ([HN](https://news.ycombinator.com/item?id=25871605)) ([Article](https://www.philipotoole.com/7-years-of-open-source-database-development-lessons-learned/))
+- [SQLite CREATE TABLE Parser](https://github.com/marcobambini/sqlite-createtable-parser)
+- [sqlite-transform](https://github.com/simonw/sqlite-transform) - Tool for running transformations on columns in a SQLite database.
+- [SQLite DB Migrations with PRAGMA user_version](https://levlaz.org/sqlite-db-migrations-with-pragma-user_version/)
+- [Many Small Queries Are Efficient In SQLite](https://sqlite.org/np1queryprob.html)
+- [Rust SQLite](https://github.com/joaoh82/rust_sqlite) - SQLite clone from scratch in Rust.
+- [Command Line Shell for SQLite](https://www.sqlite.org/cli.html) ([HN](https://news.ycombinator.com/item?id=26162115))
+- [sqleet](https://github.com/resilar/sqleet) - Encryption extension for SQLite3.
+- [SQLite Viewer](http://inloop.github.io/sqlite-viewer/) - View SQLite file online. ([Code](https://github.com/inloop/sqlite-viewer))
+- [Amalgalite](https://github.com/copiousfreetime/amalgalite) - SQLite embedded in a Ruby extension.
+- [Cross-Database Queries in SQLite (2021)](https://simonwillison.net/2021/Feb/21/cross-database-queries/) ([HN](https://news.ycombinator.com/item?id=26217754))
+- [Build SQLite Extensions in Go](https://github.com/riyaz-ali/sqlite)
+- [What’s new in SQLite 3.35 (2021)](https://nalgeon.github.io/sqlite-3-35/) ([HN](https://news.ycombinator.com/item?id=26440397))
+- [SQLite is not a toy database (2021)](https://antonz.org/sqlite-is-not-a-toy-database/) ([HN](https://news.ycombinator.com/item?id=26580614)) ([Lobsters](https://lobste.rs/s/ts0vtk/sqlite_is_not_toy_database))
+- [SQLite Plus](https://github.com/nalgeon/sqlite-plus) - All the missing SQLite functions. ([HN](https://news.ycombinator.com/item?id=26683832))
+- [Dogsheep](https://dogsheep.github.io/) - Tools for personal analytics using SQLite and Datasette. ([Code](https://github.com/dogsheep/dogsheep.github.io))
+- [Bionic](https://github.com/bionic-dev/bionic) - Convert data exports from various services to a single SQLite database.
+- [SquirrelByte](https://github.com/adamlouis/squirrelbyte) - SQLite-based JSON document server. ([Web](https://squirrelbyte.com/)) ([HN](https://news.ycombinator.com/item?id=26766557))
+- [Ask HN: Deploying SQLite on a Production Website (2021)](https://news.ycombinator.com/item?id=26765118)
+- [SQLite the only database you will ever need in most cases (2021)](https://unixsheikh.com/articles/sqlite-the-only-database-you-will-ever-need-in-most-cases.html) ([Lobsters](https://lobste.rs/s/tsh0jq/sqlite_only_database_you_will_ever_need)) ([HN](https://news.ycombinator.com/item?id=26816954))
+- [csvs-to-sqlite](https://github.com/simonw/csvs-to-sqlite) - Convert CSV files into a SQLite database.
+- [SQLiter](https://github.com/touchlab/SQLiter) - Minimal multiplatform sqlite library.
+- [Litestream/s6 Example](https://github.com/benbjohnson/litestream-s6-example) - Example of running a Go application in the same container as Litestream by using s6-overlay. Allows developers to release their SQLite-based application and provide replication in a single container.
+- [Hosting SQLite databases on GitHub Pages or any static file hoster (2021)](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/) ([Code](https://github.com/phiresky/sql.js-httpvfs)) ([HN](https://news.ycombinator.com/item?id=27016630)) ([HN](https://news.ycombinator.com/item?id=28015980))
+- [SQLite performance tuning (2020)](https://phiresky.github.io/blog/2020/sqlite-performance-tuning/)
+- [SQLite on the Jamstack (2021)](https://www.youtube.com/watch?v=912bOLolMIA)
+- [A Hitchiker's Guide to SQLite with Python (2021)](https://arctype.com/blog/hitchhikers-guide-sqlite-python/)
+- [wa-sqlite](https://github.com/rhashimoto/wa-sqlite) - WebAssembly SQLite with experimental support for browser storage extensions.
+- [Sqliteviz](https://github.com/lana-k/sqliteviz) - Single-page offline-first PWA for fully client-side visualization of SQLite databases or CSV. ([HN](https://news.ycombinator.com/item?id=27165192))
+- [SQLite in production with WAL (2020)](https://victoria.dev/blog/sqlite-in-production-with-wal/) ([HN](https://news.ycombinator.com/item?id=27237919))
+- [Deno SQLite Module](https://github.com/dyedgreen/deno-sqlite)
+- [Simple application with an HTTP server & SQLite database](https://github.com/benbjohnson/myapp)
+- [SQLFluff](https://github.com/sqlfluff/sqlfluff) - SQL linter and auto-formatter for Humans. ([Web](https://www.sqlfluff.com/))
+- [SQLite Archiver](https://sqlite.org/sqlar/doc/trunk/README.md)
+- [How to Setup Replicated Highly Available SQLite with rqlite (2021)](https://lowendbox.com/blog/how-to-setup-replicated-highly-available-sqlite-with-rqlite/)
+- [Ask HN: What is the SQLite of nosql databases? (2021)](https://news.ycombinator.com/item?id=27490361)
+- [Using sqlite3 as a notekeeping document graph with automatic reference indexing (2021)](https://epilys.github.io/bibliothecula/notekeeping.html) ([Lobsters](https://lobste.rs/s/yev7oa/using_sqlite3_as_notekeeping_document)) ([HN](https://news.ycombinator.com/item?id=27702084))
+- [The Untold Story of SQLite with Richard Hipp (2021)](https://corecursive.com/066-sqlite-with-richard-hipp/) ([HN](https://news.ycombinator.com/item?id=27718701))
+- [SQLite query inside a Bash function](https://news.ycombinator.com/item?id=27762201)
+- [RSQLite](https://github.com/pmk21/rsqlite) - Simple SQLite clone written in Rust.
+- [Atomic Commit In SQLite](https://www.sqlite.org/atomiccommit.html) ([Lobsters](https://lobste.rs/s/ysri9z/atomic_commit_sqlite))
+- [Inserting One Billion Rows in SQLite Under A Minute (2021)](https://avi.im/blag/2021/fast-sqlite-inserts/) ([HN](https://news.ycombinator.com/item?id=27872575)) ([Reddit](https://www.reddit.com/r/rust/comments/omsar3/inserting_one_billion_rows_in_sqlite_under_a/))
+- [Inserting 130M SQLite Rows per Minute...from a Scripting Language (2021)](https://blog.metaobject.com/2021/07/inserting-130m-sqlite-rows-per.html) ([HN](https://news.ycombinator.com/item?id=27944065))
+- [Detecting cycles in tag parent-child relationship in sqlite3](https://sic.nessuent.xyz/s/18/detecting-cycles-in-tag-parent-child-relationship-in-sqlite3/)
+- [Tricks for making SQLite fast (2021)](https://news.ycombinator.com/item?id=27946821)
+- [dogsheep-beta](https://github.com/dogsheep/dogsheep-beta) - Build a search index across content from multiple SQLite database tables and run faceted searches against it using Datasette.
+- [absurd-sql.js-backend](https://github.com/jlongster/absurd-sql.js-backend) - sqlite3 in ur indexeddb.
+- [SQLite Is Dynamically Typed (2020)](https://blog.zachwf.com/posts/sqlite-is-dynamically-typed/) ([HN](https://news.ycombinator.com/item?id=28050198))
+- [Sqlite µLogger](https://github.com/siara-cc/sqlite_micro_logger_c) - Fast and Lean database logger that can log data into Sqlite databases even with SRAM as low as 2kb.
+- [Apply conversion functions to data in SQLite columns with the sqlite-utils CLI tool (2021)](https://simonwillison.net/2021/Aug/6/sqlite-utils-convert/)

@@ -40,7 +40,6 @@ module.exports = themeOptions => {
                 stripDefinitionExts: extensions,
               },
             },
-            'gatsby-remark-double-parenthesis-link',
             {
               resolve: `gatsby-remark-images`,
               options: {

@@ -1,0 +1,97 @@
+# [Quantum computing](https://en.wikipedia.org/wiki/Quantum_computing)
+
+## Links
+
+- [Quantum Computers Explained](https://www.youtube.com/watch?v=JhHMJCUmq28)
+- [Curry](https://github.com/LSaldyt/curry) - Prototype for a quantum probabilistic programming language.
+- [How the quantum search algorithm works (2019)](https://quantum.country/search) ([HN](https://news.ycombinator.com/item?id=19684141))
+- [learn-quantum](https://github.com/unixpickle/learn-quantum) - Learning about quantum computing.
+- [Arrow of Time and its Reversal on IBM Quantum Computer](https://arxiv.org/pdf/1712.10057.pdf)
+- [Finally, Proof That Quantum Computing Can Boost Machine Learning (2019)](https://singularityhub.com/2019/03/17/finally-proof-that-quantum-computing-can-boost-machine-learning/)
+- [Quantum Computing for English Majors (2019)](https://blogs.scientificamerican.com/cross-check/quantum-computing-for-english-majors/)
+- [Quilc](https://github.com/rigetti/quilc) - Advanced optimizing compiler for the quantum instruction language Quil.
+- [Rigetti](https://www.rigetti.com/) - Bringing hardware and application development closer together can shorten the timeline to quantum advantage.
+- [HN: IBM will soon launch a 53-qubit quantum computer (2019)](https://news.ycombinator.com/item?id=21004615)
+- [Scott’s Supreme Quantum Supremacy FAQ! (2019)](https://www.scottaaronson.com/blog/?p=4317) ([HN](https://news.ycombinator.com/item?id=21053405))
+- [Precise measurement of quantum observables with neural-network estimators (2019)](https://arxiv.org/abs/1910.07596)
+- [Quantum supremacy using a programmable superconducting processor (2019)](https://www.nature.com/articles/s41586-019-1666-5)
+- [Why I Called It ‘Quantum Supremacy’](https://www.quantamagazine.org/john-preskill-explains-quantum-supremacy-20191002/)
+- [Quantum attacks on Bitcoin, and how to protect against them (2017)](https://arxiv.org/abs/1710.10377)
+- [Quantum supremacy: the gloves are off (2019)](https://www.scottaaronson.com/blog/?p=4372) ([HN](https://news.ycombinator.com/item?id=21335907))
+- [ELI 5 of quantum computing](https://news.ycombinator.com/item?id=21337938)
+- [Quantum Supremacy Using a Programmable Superconducting Processor (2019)](https://ai.googleblog.com/2019/10/quantum-supremacy-using-programmable.html) ([HN](https://news.ycombinator.com/item?id=21332768)) ([Talk](https://www.youtube.com/watch?v=FklMpRiTeTA))
+- [Quantum Country](https://quantum.country/) - Free introduction to quantum computing and quantum mechanics.
+- [Quantum mechanics distilled](https://quantum.country/qm)
+- [Qiskit](https://qiskit.org/) - Open-source quantum computing software development framework for leveraging today's quantum processors in research, education, and business.
+- [Quantum Computation and Quantum Information by Nielsen and Chuang](http://mmrc.amss.cas.cn/tlb/201702/W020170224608149940643.pdf)
+- [ARTIQ](https://github.com/m-labs/artiq) - Leading-edge control system for quantum information experiments.
+- [QuTiP](https://github.com/qutip/qutip) - Quantum Toolbox in Python.
+- [TensorFlow Quantum](https://github.com/tensorflow/quantum) - Python framework for hybrid quantum-classical machine learning that is primarily focused on modeling quantum data.
+- [Brief History of Quantum Computers (2020)](https://thecomputation.com/2020/03/19/brief-history-of-quantum-computing.html)
+- [Lecture Notes on Quantum Computation (2020)](https://github.com/mdnls/cs7805-final-presentation)
+- [discopy](https://github.com/oxford-quantum-group/discopy) - Toolbox for computing with monoidal categories.
+- [Introduction to Quantum Information Science Lecture Notes (2018)](https://www.scottaaronson.com/qclec.pdf)
+- [The Argument Against Quantum Computers and the Quantum Laws of Nature](https://news.ycombinator.com/item?id=23291071)
+- [Quil: A Portable Quantum Instruction Language](https://github.com/rigetti/quil)
+- [Rigetti Computing](https://rigetti.com/) - On a mission to build the world's most powerful computer.
+- [PyQuil](https://github.com/rigetti/pyquil) - Quantum programming in Python.
+- [Grove](https://github.com/rigetti/grove) - Collection of quantum algorithms built using the Rigetti Forest platform.
+- [Picturing Quantum Processes](https://www.cambridge.org/nl/academic/subjects/physics/quantum-physics-quantum-information-and-quantum-computation/picturing-quantum-processes-first-course-quantum-theory-and-diagrammatic-reasoning?format=HB) - A First Course in Quantum Theory and Diagrammatic Reasoning.
+- [A Brief Opinionated Overview of NIST’s Post-Quantum Cryptography Round 3 Candidates (2020)](https://soatok.blog/2020/07/24/a-brief-opinionated-of-nists-post-quantum-cryptography-round-3-candidates/) ([Lobsters](https://lobste.rs/s/t7g14w/brief_opinionated_overview_nist_s_post))
+- [Ask HN: Resources to start learning about quantum computing? (2020)](https://news.ycombinator.com/item?id=23914992)
+- [“Giant atoms” enable quantum processing and communication in one (2020)](http://news.mit.edu/2020/giant-atoms-quantum-processing-communication-0729)
+- [Quantum Game with Photons](https://alpha.quantumgame.io/)
+- [Amazon Braket](https://aws.amazon.com/braket/) - Explore and experiment with quantum computing. ([HN](https://news.ycombinator.com/item?id=24220337))
+- [What Intel Is Planning for The Future of Quantum Computing: Hot Qubits, Cold Control Chips, and Rapid Testing (2020)](https://spectrum.ieee.org/tech-talk/computing/hardware/intels-quantum-computing-plans-hot-qubits-cold-control-chips-and-rapid-testing)
+- [List of quantum information and computation projects in Julia](https://github.com/jlapeyre/JuliaQuantumInformation)
+- [John Preskill - Quantum Computing and Fundamental Physics (2020)](https://www.youtube.com/watch?v=-idmtdl32e4) ([HN](https://news.ycombinator.com/item?id=24717673))
+- [TRIQS (Toolbox for Research on Interacting Quantum Systems)](https://github.com/TRIQS/triqs) - Scientific project providing a set of C++ and Python libraries to develop new tools for the study of interacting quantum systems. ([Web](https://triqs.github.io/triqs/latest/))
+- [Quantum Hardware: On the road to Quantum Advantage (2020)](https://www.ieee-edps.com/archives/2020/c/1.6ChristyTyberg.pdf) ([Video](https://www.ieee-edps.com/archives/2020/c/1.6ChristyTyberg.mp4))
+- [OpenQASM](https://github.com/Qiskit/openqasm) - Gate and operation specification for quantum circuits.
+- [Cirq](https://github.com/quantumlib/Cirq) - Python framework for creating, editing, and invoking Noisy Intermediate Scale Quantum (NISQ) circuits.
+- [CERN Online introductory lectures on quantum computing (2020)](https://home.cern/news/announcement/computing/online-introductory-lectures-quantum-computing-6-november) ([HN](https://news.ycombinator.com/item?id=24996034))
+- [The Weirdness of Quantum Random Walks (2020)](https://limitlesscuriosity.com/the-weirdness-of-quantum-random-walks/)
+- [XACC](https://github.com/eclipse/xacc) - Extensible compilation framework for hybrid quantum-classical computing architectures.
+- [Emulating Quantum Computing with Python (2020)](https://www.activestate.com/blog/emulating-quantum-computing-with-python/)
+- [Quantum Winter School: Introduction to Quantum Computing and Materials (2020)](https://sites.dartmouth.edu/quantum-spin-lab/quantum-winter-school-2020/)
+- [Unitary Fund](https://unitary.fund/) - Non-profit working to create a quantum technology ecosystem that benefits the most people. ([GitHub](https://github.com/unitaryfund))
+- [Xanadu Quantum Cloud](https://www.xanadu.ai/) - Start building quantum applications today. ([GitHub](https://github.com/XanaduAI))
+- [Google Quantum AI](https://quantumai.google/) - Advancing the state of the art of quantum computing and developing the tools for researchers to operate beyond classical capabilities.
+- [TensorFlow Quantum](https://www.tensorflow.org/quantum) - Library for hybrid quantum-classical machine learning.
+- [Braket Tutorials GitHub](https://github.com/aws/amazon-braket-examples) - Example notebooks that show how to apply quantum computing in Amazon Braket.
+- [Two pictures of quantum computation (2020)](https://ahelwer.ca/post/2020-12-06-sum-over-paths/)
+- [Learn Quantum Computation](https://qiskit.org/textbook/preface.html) ([HN](https://news.ycombinator.com/item?id=25586565)) ([Code](https://github.com/qiskit-community/qiskit-textbook))
+- [Quantum machine learning](https://pennylane.ai/qml/) - Introductions to key concepts in quantum machine learning, as well as tutorials and implementations from cutting-edge QML research. ([Code](https://github.com/PennyLaneAI/qml))
+- [Advanced Rust quantum computer simulator](https://github.com/beneills/quantum)
+- [QCGPU](https://github.com/libtangle/qcgpu) - High Performance & Hardware Accelerated, Quantum Computer Simulator.
+- [PennyLane](https://github.com/PennyLaneAI/pennylane) - Cross-platform Python library for differentiable programming of quantum computers. ([Web](https://pennylane.ai/))
+- [Awesome Quantum Software](https://github.com/qosf/awesome-quantum-software)
+- [Quantum Computing’s Internals Demystified (2021)](https://whiteheadsoftware.dev/quantum-computings-internals-demystified/)
+- [FunQy](https://github.com/rvanasa/funqy) - High-level hybrid quantum programming language.
+- [quantum](https://github.com/littledivy/quantum) - Quantum Circuit Simulator in Go.
+- [Quirk](https://algassert.com/quirk) - Quantum Circuit Simulator. ([Code](https://github.com/Strilanc/Quirk))
+- [Yao](https://yaoquantum.org/) - Extensible, Efficient Quantum Algorithm Design For Humans. ([Code](https://github.com/QuantumBFS/Yao.jl))
+- [Experimental quantum homomorphic encryption (2021)](https://www.nature.com/articles/s41534-020-00340-8.pdf)
+- [Quantum Computation by John Preskill, Caltech (2020)](https://www.youtube.com/playlist?list=PL0ojjrEqIyPy-1RRD8cTD_lF1hflo89Iu)
+- [Awesome Quantum Computing](https://github.com/desireevl/awesome-quantum-computing)
+- [Quantum physics needs complex numbers (2021)](https://arxiv.org/abs/2101.10873) ([Reddit](https://www.reddit.com/r/Physics/comments/lztuk4/quantum_physics_needs_complex_numbers/))
+- [D-Wave Ocean Software Docs](https://docs.ocean.dwavesys.com/en/stable/) - Fastest way to get started writing your quantum application.
+- [How I Became A Quantum Computing Researcher (2021)](https://www.youtube.com/watch?v=3BXZxh6rVlE)
+- [Quantum computing’s reproducibility crisis: Majorana fermions (2021)](https://www.nature.com/articles/d41586-021-00954-8) ([HN](https://news.ycombinator.com/item?id=26781994))
+- [Write Your First Quantum Program (Common Lisp) (2021)](https://lambdafaktorie.com/how-to-write-your-first-quantum-program/) ([HN](https://news.ycombinator.com/item?id=26873119))
+- [Awesome Quantum Games](https://github.com/HuangJunye/Awesome-Quantum-Games)
+- [QuEST](https://github.com/QuEST-Kit/QuEST) - Multithreaded, distributed, GPU-accelerated simulator of quantum computers. ([Web](https://quest.qtechtheory.org/))
+- [Quantum Computing: Top Players 2021](https://www.youtube.com/watch?v=OGsu5MIzruw)
+- [Quantum Algorithm Zoo](https://quantumalgorithmzoo.org/) - Comprehensive catalog of quantum algorithms.
+- [Mitiq](https://github.com/unitaryfund/mitiq) - Python toolkit for implementing error mitigation techniques on quantum computers.
+- [What makes quantum computing so hard to explain? (2021)](https://www.quantamagazine.org/why-is-quantum-computing-so-hard-to-explain-20210608/) ([HN](https://news.ycombinator.com/item?id=27439839))
+- [The Ghost in the Quantum Turing Machine](https://www.scottaaronson.com/papers/giqtm3.pdf)
+- [qutip-qip](https://github.com/qutip/qutip-qip) - QuTiP quantum information processing package.
+- [Reality Behind the Hype: 40 Years of Quantum Computing (2021)](https://arxiv.org/abs/2106.10522)
+- [Mindscape 153 – John Preskill on Quantum Computers and What They’re Good For (2021)](https://www.youtube.com/watch?v=UYt4QG8iZ6U)
+- [Q-CTRL Open Controls](https://github.com/qctrl/python-open-controls) - Open-source Python package that makes it easy to create and deploy established error-robust quantum control protocols from the open literature.
+- [Q-CTRL](https://q-ctrl.com/) - World-leading quantum control engineering expertise as intuitive software. ([GitHub](https://github.com/qctrl))
+- [Strong quantum computational advantage using a superconducting quantum processor (2021)](https://arxiv.org/abs/2106.14734)
+- [The Story of Shor's Algorithm, Straight From the Source | Peter Shor (2021)](https://www.youtube.com/watch?v=6qD9XElTpCE)
+- [First ‘Time Crystal’ Built Using Google’s Quantum Computer (2021)](https://www.quantamagazine.org/first-time-crystal-built-using-googles-quantum-computer-20210730/) ([HN](https://news.ycombinator.com/item?id=28008202))
+- [What a time crystal is and Google's latest results breakdown (2021)](https://www.youtube.com/watch?v=3vmvMyu9Q0o)

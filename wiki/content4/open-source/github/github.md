@@ -1,0 +1,252 @@
+# [GitHub](https://github.com)
+
+I ♥️️ GitHub. It is one of the best communities out there that exists with so many different projects and ideas being worked on at any given time.
+
+I publish most of my work and make it open source for other people to use and reuse.
+
+[Here](../../sharing/my-github.md) you can find all the repositories I shared.
+
+## Interesting GitHub Bios
+
+- [Carlos Becker](https://github.com/caarlos0) - Auto updated list of activities + sponsors.
+- [Anthony Fu](https://github.com/antfu) - Has nice icons.
+- [Christian Muehlhaeuser](https://github.com/muesli) - Lengthy.
+- [TJ Holowaychuk](https://github.com/tj)
+- [Ema Suriano](https://github.com/EmaSuriano) - Nice table.
+- [Mael Nison](https://github.com/arcanis) - Nice picture on side.
+- [Martin Sandsmark](https://github.com/sandsmark) - Nice organized list of projects.
+- [Alex Ellis](https://github.com/alexellis) - Minimal & clear calls to action.
+- [egoist](https://github.com/egoist) - Showing sponsors is nice.
+- [Phil Pluckthun](https://github.com/kitten)
+- [Brandon Bayer](https://github.com/flybayer) - Nice & clear calls to action.
+- [Piotr Chmolowski](https://github.com/pch) - Clean.
+- [Brian Lovin](https://github.com/brianlovin) - Detailed.
+- [Matthias](https://github.com/mre)
+- [Brandur](https://github.com/brandur/brandur) - Clean & self updating.
+- [Michele Riva](https://github.com/micheleriva)
+
+## Great GitHub readme
+
+- [lichess](https://github.com/ornicar/lila/) - Clean & to the point.
+- [Siren](https://github.com/vsitzmann/siren) - Like the Project Page | Paper | Data links links + no extra things in readme.
+- [next.js](https://github.com/vercel/next.js/) - Clean, nice logo.
+- [Notable](https://github.com/notable/notable) - Like the icons after the heading & nice screenshots.
+
+# Nice GitHub sponsor pages
+
+- [Alex Ellis](https://github.com/sponsors/alexellis)
+
+## Notes
+
+- Can append `#readme` to GitHub repo URL to jump to README of the repo.
+- Selecting some text in a GitHub comment and pressing `r` will make a reply of that text.
+- [GitHub jump](https://github.com/lox/alfred-github-jump) workflow is one of the best things you can install to navigate GitHub like a God.
+  - I [slightly modified it](https://github.com/nikitavoloboev/small-workflows#workflow-augmentations) to jump to different parts of the repo with modifiers like going to issues, releases, opening new issue or even cloning the repo instantly.
+- I can include media files like GIFs in the repository itself and then just reference them from readme to embed them.
+- I can include and mix in HTML in GitHub readme's. This is super useful for embedding images because you can customize `width` and `height` values to make the READMEs look a lot nice.
+- I can tack in various GitHub related templates like `issue_template.md` and `pull_request_template.md` as well as `code_of_conduct.md` and even `contributing.md` under `.github` folder at the root of my project.
+- [Add .atom to the URL of a commit listing on GitHub and you can subscribe to any repo, directory or file history, ideal for git scraping.](https://twitter.com/simonw/status/1376168593319108621)
+- [To open code from GitHub, just add "blitz" to the domain name (`http://github.com...` becomes `http://githubblitz.com...`)](https://twitter.com/stackblitz/status/1397193629534494722)
+
+## Links
+
+- [This is my work-flow for contributing on GitHub](https://zimbatm.com/journal/2015/08/16/this-is-how-i-contribute-on-github/) - Shell centric workflow.
+- [ghb0t](https://github.com/jessfraz/ghb0t)
+- [Hub](https://github.com/github/hub) - Awesome wrapper over `git` command.
+- [GitHub release stats](http://www.somsubhra.com/github-release-stats/) - Find how many people have downloaded various GitHub releases of people.
+- [GitHub contributions chart](https://github-contributions.now.sh/) - Show user's contribution charts across the years.
+- [Fork cleaner](https://github.com/caarlos0/fork-cleaner) - Cleans up old and inactive forks on your GitHub account.
+- [gitsome](https://github.com/donnemartin/gitsome) - Supercharged Git/GitHub command line interface.
+- [GitHub Trending](https://github.com/josephyzhou/github-trending) - Tracking the most popular GitHub repos, updated daily.
+- [How to collaborate on GitHub](https://github.com/eonist/How-to-collaborate-on-github) - Mini book about collaborating on GitHub.
+- [Gitrob](https://github.com/michenriksen/gitrob) - Tool to help find potentially sensitive files pushed to public repositories on GitHub.
+- [Octoverse](https://octoverse.github.com/)
+- [utterances](https://github.com/utterance/utterances) - Lightweight comments widget built on GitHub issues. ([Web](https://utteranc.es/))
+- [github-drama](https://github.com/nikolas/github-drama) - Curated collection of "dramatic" GitHub interactions.
+- [DevHub](https://github.com/devhubapp/devhub) - TweetDeck for GitHub - Android, iOS and Web.
+- [Probot](https://github.com/probot/probot) - Framework for building GitHub Apps to automate and improve your workflow.
+- [Git History](https://github.com/pomber/git-history) - Quickly browse the history of any GitHub file.
+- [GitStalk](https://gitstalk.netlify.app/) - Discover who's upto what on Github. ([Code](https://github.com/thelittlewonder/gitstalk))
+- [ghr](https://github.com/tcnksm/ghr) - Creates GitHub Release and uploads artifacts in parallel.
+- [GitMemory](https://www.gitmemory.com/) - Pretty nice stats on GitHub data like [profiles](https://www.gitmemory.com/nikitavoloboev).
+- [all-contributors](https://github.com/all-contributors/all-contributors) - Recognize all contributors, not just the ones who push code.
+- [release-notes](https://github.com/TheThingsIndustries/release-notes) - Generate release notes from pull request description.
+- [gh-card](https://github.com/nwtgck/gh-card) - GitHub Repository Card for Every Web Site.
+- [GitHub Package Registry (2019)](https://github.com/features/package-registry) ([HN](https://news.ycombinator.com/item?id=19881709))
+- [GitHub Sponsors](https://github.com/sponsors) ([HN](https://news.ycombinator.com/item?id=19989684))
+- [Nice Contribution Guidelines template](https://github.com/tazjin/crimp/blob/master/CONTRIBUTING.md)
+- [Collection of GitHub issue and pull request templates](https://github.com/stevemao/github-issue-templates)
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+- [GitHub users with most contributors (worldwide)](https://github.com/lauripiispanen/github-top/blob/master/_data/locations/worldwide.yml) - Can also see by [location](https://github.com/lauripiispanen/github-top/tree/master/_data/locations).
+- [GitHub GraphQL API client for browsers and Node](https://github.com/octokit/graphql.js)
+- [shhgit](https://github.com/eth0izzle/shhgit) - Find GitHub secrets in real time.
+- [Octobox](https://github.com/octobox/octobox) - Helps you manage your GitHub notifications efficiently so you can spend less time managing and more time getting things done.
+- [Pull Review](https://github.com/imsky/pull-review) - Assign pull request reviewers intelligently.
+- [stargazed](https://github.com/abhijithvijayan/stargazed) - Creating your own Awesome List of GitHub Stars.
+- [Monorepo](https://github.com/codechecks/monorepo) - Framework for code review automation. It allows writing plugins (codechecks) in JavaScript.
+- [Brainstorm ideas for GitHub Sponsors tiers](https://github.com/github/github-sponsors-beta/issues/12)
+- [ChangeCast](https://github.com/palmerhq/changecast) - Create beautiful, performant, accessible changelogs from your Github releases.
+- [Release](https://github.com/vercel/release) - Generate changelogs with a single command.
+- [Release Auth](https://github.com/vercel/release-auth) - Handles the OAuth authentication with GitHub's webflow for release.
+- [Triage](https://github.com/tj/triage) - Interactive command-line GitHub issue & notification triaging tool.
+- [VS Code Issues Triaging workflow](https://github.com/microsoft/vscode/wiki/Issues-Triaging)
+- [reviewdog](https://github.com/reviewdog/reviewdog) - Automated code review tool integrated with any code analysis tools regardless of programming language.
+- [GitHub Contribution Chart Generator](https://github.com/sallar/github-contributions-chart)
+- [Awesome GitHub](https://github.com/phillipadsmith/awesome-github)
+- [Repl from Repo](https://repl.it/site/blog/github) ([HN](https://news.ycombinator.com/item?id=21765872))
+- [github-cli](https://github.com/twpayne/github-cli) - Minimal CLI for making GitHub API calls.
+- [GitHub Star History and Stats](https://seladb.github.io/StarTrack-js/) ([Code](https://github.com/seladb/StarTrack-js))
+- [Most active GitHub users in Worldwide](https://commits.top/worldwide.html) ([Code](https://github.com/lauripiispanen/most-active-github-users-counter))
+- [github2mr](https://github.com/skx/github2mr) - Export all your github repositories to a form suitable for 'myrepos' to work with.
+- [Auto](https://github.com/intuit/auto) - Generate releases based on semantic version labels on pull requests. ([Web](https://intuit.github.io/auto/)) ([Tweet](https://twitter.com/winkerVSbecks/status/1409516685091033088))
+- [GitHub Polls](https://github.com/apex/gh-polls) - Polls for user feedback in GitHub issues.
+- [gh](https://github.com/cli/cli) - GitHub CLI tool. ([Article](https://johnpapa.net/try-githubs-new-cli-gh/)) ([HN](https://news.ycombinator.com/item?id=22310516)) ([HN 2](https://news.ycombinator.com/item?id=22864465)) ([HN 3](https://news.ycombinator.com/item?id=24504074)) ([Reddit](https://www.reddit.com/r/devops/comments/n16gy7/why_github_cli_is_not_widely_used/))
+- [gg](https://github.com/danielecook/gg) - Github Gists from the command line.
+- [The past and the future of hub (2020)](https://mislav.net/2020/01/github-cli/)
+- [Trends](https://trends.now.sh/) - Ultra high performance GitHub trending application. ([Code](https://github.com/hanford/trends))
+- [Highfive](https://github.com/rust-lang/highfive) - GitHub hooks to provide an encouraging atmosphere for new contributors.
+- [grep.app](https://grep.app/) - Search across a half million git repos. ([HN](https://news.ycombinator.com/item?id=22396824))
+- [Derek](https://github.com/alexellis/derek) - Reduces fatigue for maintainers by automating governance and delegating permissions to your team and community.
+- [lerna-changelog](https://github.com/lerna/lerna-changelog) - PR-based changelog generator with monorepo support.
+- [ghg](https://github.com/Songmu/ghg) - Get the executable from github releases.
+- [Improving GitHub Issue Labels](http://karolis.koncevicius.lt/posts/improving_github_issue_labels/)
+- [Dasher](https://github.com/colebemis/dasher) - Create flexible dashboards with GitHub queries.
+- [backport](https://github.com/sqren/backport) - Simple CLI tool that automates the process of backporting commits on a GitHub repo.
+- [Reviewable](https://reviewable.io/) - GitHub code reviews done right.
+- [How to Scope Down PRs (2020)](https://www.netlify.com/blog/2020/03/31/how-to-scope-down-prs/)
+- [GitHub Experiments](https://experiments.github.com/) - Explore the future of software development.
+- [Release Please](https://github.com/googleapis/release-please) - Generates GitHub PRs for library releases based on the conventionalcommits.org commit specification and SemVer.
+- [Weekly Digest](https://github.com/probot/weekly-digest) - Weekly summary of activity on your GitHub repository.
+- [List of Badges, in Markdown](https://github.com/Naereen/badges)
+- [GitHub Protips: Tips, tricks, hacks, and secrets (2020)](https://github.blog/2020-04-09-github-protips-tips-tricks-hacks-and-secrets-from-lee-reilly/)
+- [GitBuddy](https://github.com/WeTransfer/GitBuddy) - Your buddy in managing and maintaining GitHub repositories.
+- [Triage Party](https://github.com/google/triage-party) - Tool for triaging incoming GitHub issues for large open-source projects.
+- [The Many Benefits of Good Pull Request Descriptions (+ How to Write One) (2020)](https://formidable.com/blog/2020/good-pr-descriptions/)
+- [GitHub Trending Repos](https://github.com/vitalets/github-trending-repos) - Track GitHub trending repositories in your favorite programming language by native GitHub notifications.
+- [gren](https://github.com/github-tools/github-release-notes) - Github release notes and changelog generator.
+- [LabelSync](https://github.com/maticzav/label-sync) - Delightful companion to manage Github Labels across multiple repositories.
+- [GitHub Satellite Virtual 2020 - Work](https://www.youtube.com/watch?v=FhZTPM9ysWk) ([HN](https://news.ycombinator.com/item?id=23092160))
+- [LabelSync](https://label-sync.com/) - Sync labels. Across all repositories.
+- [Shields.io](https://shields.io/) - Concise, consistent, and legible badges in SVG and raster format. ([Code](https://github.com/badges/shields))
+- [GitHub Subscriber](https://gitsub.easydev.space/) - Follow github users. ([Code](https://github.com/rpolonsky/gitsub))
+- [GitHub repos scraper](https://github.com/henson/Scraper) - Tracking the most popular Github repos, updated daily.
+- [Sponsors API](https://github.com/tj/sponsors-api) - GitHub Sponsor avatar listings in your Readme.
+- [github-release](https://github.com/github-release/github-release) - Small commandline app written in Go that allows you to easily create and delete releases of your projects on Github.
+- [Site Policy on GitHub](https://help.github.com/en/github/site-policy) ([Code](https://github.com/github/site-policy))
+- [GitHub Settings](https://github.com/probot/settings) - Pull Requests for GitHub repository settings.
+- [GitHub Explore](https://github.com/explore) - Community-curated topic and collection pages on GitHub. ([Code](https://github.com/github/explore))
+- [Anonymous GitHub](https://anonymous.4open.science/) - System to anonymize GitHub repositories before referring to them in a double-blind paper submission. ([Code](https://github.com/tdurieux/anonymous_github/))
+- [GitHub Docs](https://docs.github.com/en) ([Code](https://github.com/github/docs)) ([Open Sourcing GitHub Docs](https://www.youtube.com/watch?v=u_h5FZkDNgc))
+- [GitHub Stars](https://stars.github.com/) - Lift up the people who inspire and educate your communities with the GitHub Stars program.
+- [Building a self-updating profile README for GitHub (2020)](https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/) ([HN](https://news.ycombinator.com/item?id=23807881))
+- [GitHub public roadmap](https://github.com/github/roadmap) ([HN](https://news.ycombinator.com/item?id=23977256))
+- [Repos Beyond Code: A Collection of Creative Uses of GitHub (2018)](http://www.brendanschlagel.com/2018/09/28/repos-beyond-code-a-collection-of-creative-uses-of-github/)
+- [Sponsor Verifier](https://github.com/matchai/sponsor-verifier) - Site for users to verify their sponsorships to be sent goodies.
+- [GitHub Archive Program & Arctic Code Vault](https://github.com/github/archive-program)
+- [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats) - Get dynamically generated GitHub stats on your readmes.
+- [Awesome GitHub Profiles](https://github.com/kautukkundan/Awesome-Profile-README-templates)
+- [Octotree](https://www.octotree.io/) - GitHub on steroids. ([Code](https://github.com/ovity/octotree))
+- [GitHub ReadME Project](https://github.com/readme/) - Meet the people behind the projects you love.
+- [Scuttlebutt](https://github.com/benbjohnson/scuttlebutt) - Daemon for tracking and tweeting trending Github repositories by language.
+- [LinearSync](https://linear-sync.com/) - Sends GitHub issues to Linear. ([Code](https://github.com/jtormey/linear-sync))
+- [Keep your GitHub forks up to date (2020)](https://samizdat.dev/keep-your-github-forks-up-to-date/)
+- [GitHub Security](https://github.com/features/security) - Code scanning & more. ([Article](https://github.blog/2020-09-30-code-scanning-is-now-available/)) ([HN](https://news.ycombinator.com/item?id=24646960))
+- [Go script to query whether a GitHub user is your sponsor at a given tier](https://gist.github.com/alexellis/6212c988189323dbb2806d1c7f7699ab)
+- [github-email](https://github.com/paulirish/github-email) - Get a GitHub user's email even if it's not public.
+- [SSH Auth Github](https://github.com/nextjournal/ssh-auth-github) - Small Babashka script that retrieves public keys from a specific team under a specific organization on Github.
+- [GitHub public feedback discussions](https://github.com/github/feedback)
+- [gethub](https://github.com/pearkes/gethub) - Utility for cloning and fetching your remote git repositories from GitHub.
+- [GitDorker](https://github.com/obheda12/GitDorker) - Python program to scrape secrets from GitHub through usage of a large repository of dorks.
+- [Sell access to your GitHub repos with Gumroad](https://gumroad.com/l/gumhub) ([HN](https://news.ycombinator.com/item?id=24824938))
+- [Knightly](https://github.com/knightlyjs/knightly) - Nightly builds for projects and PRs.
+- [First Commit](https://firstcommit.netlify.app/) - Dig up the first commit of any GitHub repo. ([Code](https://github.com/premieroctet/firstcommit))
+- [GitHub Useful Forks](https://payne911.github.io/useful-forks/) - Sorted list of starred forks for a GitHub repo. ([Code](https://github.com/payne911/useful-forks))
+- [gitflux](https://github.com/muesli/gitflux) - Track your GitHub projects in InfluxDB and create beautiful graphs with Grafana. ([Tweet](https://twitter.com/mueslix/status/1320675269699579905))
+- [GitHub-DL](https://github.com/achow101/github-dl) - GitHub Repo Full Downloader. Downloads an entire GitHub repository and it's metadata.
+- [GitHub DMCA takedown notices](https://github.com/github/dmca)
+- [Parity GitHub Processbot](https://github.com/paritytech/parity-processbot)
+- [GitHub Pull](https://github.com/wei/pull) - Keep your forks up-to-date via automated PRs.
+- [Refined GitHub](https://github.com/sindresorhus/refined-github) - Browser extension that simplifies the GitHub interface and adds useful features.
+- [Gitako](https://github.com/EnixCoda/Gitako) - File tree extension for GitHub.
+- [GitHub Source Code Leak (2020)](https://web.archive.org/web/20201104050026if_/https://github.com/github/dmca/tree/565ece486c7c1652754d7b6d2b5ed9cb4097f9d5) ([HN](https://news.ycombinator.com/item?id=24994746))
+- [GitHub Support Community](https://github.community/) ([Latest](https://github.community/latest))
+- [GitHub Unofficial Issue Tracker](https://github.com/isaacs/github)
+- [publish-release](https://github.com/remixz/publish-release) - Create GitHub releases with assets from CLI, or from JS.
+- [GitHub Desktop](https://github.com/desktop/desktop) - Open source Electron-based GitHub . ([Web](https://desktop.github.com/))
+- [GitHub social preview images for your repos](https://www.mugshotbot.com/github) ([HN](https://news.ycombinator.com/item?id=25151272))
+- [sponsorsme](https://github.com/maticzav/sponsorsme) - Lightweight utility to check whether a user sponsors you.
+- [Github Repository Timeline](https://reposlib.vercel.app/) ([Code](https://github.com/okandavut/reposlib))
+- [Highfive](https://github.com/servo/highfive) - GitHub hooks to provide an encouraging atmosphere for new contributors.
+- [recent](https://github.com/yoshuawuyts/recent) - Get the recent issues and pull-requests on github.
+- [github auth.js](https://github.com/octokit/auth.js) - GitHub API authentication library for JavaScript and Node.js.
+- [GitHub Universe](https://githubuniverse.com/) ([Code](https://github.com/githubevents/universe2020))
+- [CSS in GitHub Readmes](https://github.com/sindresorhus/css-in-readme-like-wat) ([HN](https://news.ycombinator.com/item?id=25349068))
+- [GitHub Archive Program](https://archiveprogram.github.com/) - Preserving open source software for future generations.
+- [Everything You Always Wanted To Know About GitHub (But Were Afraid To Ask)](https://gh.clickhouse.tech/explorer/) ([HN](https://news.ycombinator.com/item?id=25364000))
+- [GH Archive](https://www.gharchive.org/) - Project to record the public GitHub timeline, archive it, and make it easily accessible for further analysis.
+- [GitHub Blog Post Workflow](https://github.com/gautamkrishnar/blog-post-workflow) - Show your latest blog posts from any sources or StackOverflow activity or Youtube Videos on your GitHub profile/project readme automatically using the RSS feed.
+- [ghtopdep](https://github.com/github-tooling/ghtopdep) - CLI tool for sorting dependents repo by stars.
+- [GitHub's REST API OpenAPI Description](https://github.com/github/rest-api-description)
+- [watch-rss](https://github.com/azu/watch-rss) - Subscribe your watched GitHub Repository's releases as RSS feeds on Inoreader.
+- [Building a self-updating GitHub README](https://brandur.org/fragments/self-updating-github-readme)
+- [Relnotes](https://github.com/EmbarkStudios/relnotes) - Automatic GitHub Release Notes.
+- [Only Sponsors](https://onlysponsors.dev/) - Platform to hide content behind GitHub Sponsors.
+- [Badgen](https://badgen.net/) - Fast badge generating service. ([Code](https://github.com/badgen/badgen))
+- [Renaming the default branch on GitHub](https://github.com/github/renaming)
+- [GitHub Stale Bots – A False Economy (2021)](https://blog.benwinding.com/github-stale-bots/) ([HN](https://news.ycombinator.com/item?id=25821092))
+- [GitHub Socialify](https://socialify.git.ci/) - Generate a nice image for a GitHub repo. ([Code](https://github.com/wei/socialify))
+- [Get notified when a file on GitHub has changed (2021)](https://blog.mastykarz.nl/get-notified-file-github-changed/)
+- [Awesome READMEs](https://github.com/leogdion/AWESOME-AWESOME-README)
+- [HN: Open-source, not open-contribution (2021)](https://news.ycombinator.com/item?id=25940195)
+- [GitHub1s](https://github.com/conwnet/github1s) - One second to read GitHub code with VS Code. ([HN](https://news.ycombinator.com/item?id=26083919))
+- [ghtop](https://github.com/nat/ghtop) - See what's happening on GitHub in real time.
+- [ghapi](https://github.com/fastai/ghapi) - Delightful and complete interface to GitHub's amazing API.
+- [GitHub Surf](https://github.com/surfcodes/surf) - Surf GitHub code with VS Code. (with CLI, chrome extensions).
+- [GitHub VSC](https://github.com/gao-sun/github-vsc) - Use VSCode to view and edit GitHub repos, in your browser.
+- [My GitHub Open PRs](https://github.com/search?o=asc&q=is:pr+is:open+archived:false+user:@me&s=updated&type=Issues)
+- [Terraform Provider GitHub](https://github.com/integrations/terraform-provider-github)
+- [ghstack](https://github.com/ezyang/ghstack) - Submit stacked diffs to GitHub on the command line.
+- [GitHub Diff](https://git-diff.netlify.app/) - Compare changes across GitHub branches, commits, or tags. ([Code](https://github.com/breadthe/svelte-git-diff))
+- [Scripting with GitHub CLI (2021)](https://github.blog/2021-03-11-scripting-with-github-cli/)
+- [GitHub Learning Lab](https://lab.github.com/githubtraining/)
+- [Octocrabby](https://github.com/travisbrown/octocrabby) - Tools for managing GitHub block lists.
+- [RepoKitteh](https://www.repokitteh.io/) - GitHub Functions: Workflow Automation. ([HN](https://news.ycombinator.com/item?id=26674781))
+- [Dev Protocol](https://devprotocol.xyz/) - Lets GitHub users tokenize their OSS projects in a few clicks. ([Code](https://github.com/dev-protocol/protocol))
+- [Lotus](https://getlotus.app/) - Keep up with GitHub notifications without stress.
+- [Standard and acceptable badges list](https://badges.aleen42.com/) ([Code](https://github.com/aleen42/badges))
+- [HUBFS](https://github.com/billziss-gh/hubfs) - Read-only file system for GitHub and Git.
+- [Awesome Developer GitHub Profiles](https://github.com/coderjojo/creative-profile-readme)
+- [GistFS](https://github.com/jhchabran/gistfs) - Go io/fs filesystem implementation for reading files in a Github gists.
+- [git-xargs](https://github.com/gruntwork-io/git-xargs) - Command-line tool (CLI) for making updates across multiple Github repositories with a single command.
+- [A Better Model for Stacked (GitHub) Pull Requests (2021)](https://timothyandrew.dev/blog/git-stack/) ([HN](https://news.ycombinator.com/item?id=26913959))
+- [GHToken](https://github.com/Link-/github-app-bash) - Create an installation access token for a GitHub app from your terminal.
+- [Having a Healthy Pull Request Process for Teams](https://alexkitchens.net/better-pull-requests)
+- [Sponsorware for Github](https://github.com/Neutron-Creative/Sponsorware-Github) - Serverless function that automates the process of granting someone access to one or more private repositories after sponsoring you on Github.
+- [Nesting GitHub’s API in your GraphQL Schema](https://www.parabol.co/blog/nest-github-api-in-graphql-schema)
+- [Dependabot](https://dependabot.com/) - Automated dependency updates. ([Code](https://github.com/dependabot/dependabot-core))
+- [GREV](https://hanadigital.github.io/grev/) - View github release statistics. ([Code](https://github.com/HanaDigital/grev))
+- [giscus](https://github.com/laymonage/giscus) - Comments widget built on GitHub Discussions. ([Article](https://laymonage.com/posts/giscus))
+- [Codespaces: GitHub’s Play for a Remote Development Future (2021)](https://blog.robenkleene.com/2021/05/16/codespaces/)
+- [Flat Data](https://octo.github.com/projects/flat-data) - Explores how to make it easy to work with data in git and GitHub. ([Tweet](https://twitter.com/simonw/status/1394729289346519041))
+- [GitHub OCTO](https://octo.github.com/) - GitHub’s Office of the CTO investigates the future of software development.
+- [GitHub Exporter](https://github.com/github/github-artifact-exporter) - Set of packages to make exporting artifacts from GitHub easier.
+- [GitHub Awesome](https://app.polymersearch.com/discover/github-awesome) - Browse Every Awesome List on GitHub.
+- [GitHub Security Lab](https://securitylab.github.com/) - Securing the world’s software, together. ([Code](https://github.com/github/securitylab))
+- [Prometheus GitHub Exporter](https://github.com/infinityworks/github-exporter) - Exposes basic metrics for your repositories from the GitHub API, to a Prometheus compatible endpoint.
+- [ghissue](https://github.com/hcgatewood/ghissue) - Bulk-upload GitHub Issues.
+- [Maintainers](https://maintainers.app/) - Maintain your GitHub Projects.
+- [GitHub Copilot](https://copilot.github.com/) - Your AI pair programmer. ([HN](https://news.ycombinator.com/item?id=27676266)) ([Reddit](https://www.reddit.com/r/MachineLearning/comments/oaambv/n_github_and_openai_release_copilot_an_ai_pair/)) ([Lobsters](https://lobste.rs/s/rxml1k/github_copilot_your_ai_pair_programmer)) ([Preview](https://github.com/github/copilot-preview))
+- [Grafana GitHub datasource](https://github.com/grafana/github-datasource) - GitHub datasource allows GitHub API data to be visually represented in Grafana dashboards.
+- [Awesome GitHub Profile Readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme) ([Web](https://awesomegithubprofile.tech/))
+- [HN: GitHub confirmed using all public code for training copilot regardless license (2021)](https://news.ycombinator.com/item?id=27769440)
+- [org-stats](https://github.com/caarlos0/org-stats) - Get the contributor stats summary from all repos of any given organization.
+- [MergeQueue](https://mergequeue.com/) - Automate your Github workflows. ([Docs](https://mergequeue.com/documentation)) ([HN](https://news.ycombinator.com/item?id=27858013))
+- [solar](https://github.com/gleich/solar) - Clone all your starred GitHub repos.
+- [GitHub Web IDE](https://github.com/zvizvi/GitHub-Web-IDE) - Open GitHub repositories in online web IDE.
+- [GitHub Copilot: First Impressions (2021)](https://vladiliescu.net/github-copilot-first-impressions/) ([HN](https://news.ycombinator.com/item?id=27872116))
+- [Is GitHub Copilot a blessing, or a curse? (2021)](https://www.fast.ai/2021/07/19/copilot/) ([HN](https://news.ycombinator.com/item?id=27889967))
+- [Risk Assessment of GitHub Copilot (2021)](https://gist.github.com/0xabad1dea/be18e11beb2e12433d93475d72016902) ([HN](https://news.ycombinator.com/item?id=27809059))
+- [go-trending](https://github.com/andygrunwald/go-trending) - Go library for accessing trending repositories and developers at Github.
+- [Github Trending Twitter](https://twitter.com/TrendingGithub) - Twitter bot to tweet trending repositories and developers from GitHub. ([Code](https://github.com/andygrunwald/TrendingGithub))
+- [GitHub Metrics](https://metrics.lecoq.io/) - Generate your metrics that you can embed everywhere, including your GitHub profile readme. ([Code](https://github.com/lowlighter/metrics))
+- [GitHub’s Engineering Team has moved to Codespaces (2021)](https://github.blog/2021-08-11-githubs-engineering-team-moved-codespaces/) ([HN](https://news.ycombinator.com/item?id=28143722))

@@ -93,7 +93,7 @@ exports.onCreateNode = async (
   const content = await loadNodeContent(node)
   let parsedContent
   try {
-    parsedContent = parseSummary(content)
+    parsedContent = await parseSummary(content)
   } catch {
     const hint = node.absolutePath
       ? `file ${node.absolutePath}`

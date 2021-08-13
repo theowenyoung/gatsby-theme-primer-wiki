@@ -1,0 +1,102 @@
+# Web scraping
+
+## Links
+
+- [Scrapy](https://github.com/scrapy/scrapy) - Fast high-level web crawling & scraping framework for Python. ([Web](https://scrapy.org/)) ([Docs](https://docs.scrapy.org/en/latest/)) ([Awesome Scrapy](https://github.com/AccordBox/awesome-scrapy))
+- [Simple Scraper](https://simplescraper.io/) - Extract data from any website in seconds.
+- [ScrapingBee](https://www.scrapingbee.com/) - Web Scraping API.
+- [Easy web scraping with Scrapy (2019)](https://www.scrapingbee.com/blog/web-scraping-with-scrapy/)
+- [A guide to Web Scraping without getting blocked in 2020](https://www.scrapingbee.com/blog/web-scraping-without-getting-blocked/)
+- [Crawlab](https://github.com/crawlab-team/crawlab) - Distributed web crawler admin platform for spiders management regardless of languages and frameworks.
+- [hakrawler](https://github.com/hakluke/hakrawler) - Simple, fast web crawler designed for easy, quick discovery of endpoints and assets within a web application.
+- [JobFunnel](https://github.com/PaulMcInnis/JobFunnel) - Tool for scraping job websites, and filtering and reviewing the job listings.
+- [You-Get](https://github.com/soimort/you-get) - Tiny command-line utility to download media contents (videos, audios, images) from the Web.
+- [Universal Reddit Scraper](https://github.com/JosephLai241/Universal-Reddit-Scraper) - Scrape Subreddits, Redditors, and comments on posts. A command-line tool written in Python.
+- [Gerapy](https://github.com/Gerapy/Gerapy) - Distributed Crawler Management Framework Based on Scrapy, Scrapyd, Django and Vue.js.
+- [Ask HN: Best practices for ethical web scraping? (2020)](https://news.ycombinator.com/item?id=22778089)
+- [Newscatcher](https://newscatcherapi.com/) - Programmatically collect normalized news from (almost) any website. ([Code](https://github.com/kotartemiy/newscatcher))
+- [scrapio](https://github.com/Koshqua/scrapio) - Simple and easy-to-use scraper and crawler in Go.
+- [Colly](https://github.com/gocolly/colly) - Elegant Scraper and Crawler Framework for Golang.
+- [Python Web Scraping with Virtual Private Networks (2020)](https://tech.marksblogg.com/python-scraper-wireguard-vpn-ssh-proxy.html)
+- [extract-news-api](https://github.com/kotartemiy/extract-news-api) - Flask code to deploy an API that pulls structured data from online news articles.
+- [Web Scraper](https://web.scraper.workers.dev/) - Scrape websites for text by CSS selector.
+- [List all the broken links on your website](https://gist.github.com/mdamien/7b71ef06f49de1189fb75f8fed91ae82)
+- [Creating a Robust, Reusable Link-Checker (2020)](http://adventures.michaelfbryan.com/posts/linkchecker/)
+- [micawber](https://github.com/coleifer/micawber) - Small library for extracting rich content from urls.
+- [Spider Pro](https://tryspider.com/) - Easy and cheap way to scrape the internet. ([HN](https://news.ycombinator.com/item?id=21215484))
+- [Website Sitemap Parser](https://github.com/berkmancenter/mediacloud-ultimate-sitemap-parser)
+- [rget](https://github.com/merklecounty/rget) - Download URLs and verify the contents against a publicly recorded cryptographic log.
+- [yarl](https://github.com/aio-libs/yarl) - Yet another URL library.
+- [Apify](https://apify.com/) - Web Scraping, Data Extraction and Automation.
+- [Gumbo](https://github.com/google/gumbo-parser) - Pure-C HTML5 parser.
+- [What is a present-day web scraping in 2020?](https://dataflowkit.com/blog/what-is-a-present-day-web-scraper/)
+- [Dataflow Kit](https://dataflowkit.com/) - Web scraping. Data extraction tools
+- [Awesome Web Scraping](https://github.com/lorien/awesome-web-scraping)
+- [Common Crawl](https://commoncrawl.org/) - Open repository of web crawl data that can be accessed and analyzed by anyone. ([HN](https://news.ycombinator.com/item?id=26594172))
+- [Cognito Common Crawl](https://github.com/andresriancho/cc-lambda) - Search the common crawl using lambda functions.
+- [Awesome Open Source Javascript Projects for Web Scraping (2020)](https://scrapingant.com/awesome-open-source-javascript-projects-for-web-scraping/)
+- [ScrapingAnt](https://scrapingant.com/) - All in One Scraping API. Rotating Proxies. Headless Chrome.
+- [Django Dynamic Scraper](https://github.com/holgerd77/django-dynamic-scraper) - Creating Scrapy scrapers via the Django admin interface.
+- [AutoScraper](https://github.com/alirezamika/autoscraper) - Smart, Automatic, Fast and Lightweight Web Scraper for Python.
+- [Spidey](https://github.com/Manzanit0/spidey) - Dead-simple crawler which focuses on ease of use and speed. Return a list of all URls of a web page.
+- [Scraping News and Articles From Public APIs with Python (2020)](https://martinheinz.dev/blog/31)
+- [LinkedIn Scraper](https://github.com/linkedtales/scrapedin)
+- [ScrapeOwl](https://scrapeowl.com/) - Simple and affordable web scraping API.
+- [Pholcidae](https://github.com/bbrodriges/pholcidae) - Tiny python web crawler.
+- [Booking site web scraper](https://github.com/ZoranPandovski/BookingScraper) - Downloads all of the accommodations for the chosen country and saves them in a file.
+- [Reddit Media Downloader](https://github.com/shadowmoose/RedditDownloader) - Scrapes Reddit to download media of your choice.
+- [Web scraping with JS (2020)](https://qoob.cc/web-scraping/) ([HN](https://news.ycombinator.com/item?id=24898016))
+- [Web scraping that just works with OpenFaaS with Puppeteer (2020)](https://www.openfaas.com/blog/puppeteer-scraping/)
+- [What Happened to XPath? (2020)](https://webreflection.medium.com/what-happened-to-xpath-1409aa3dbd57) ([HN](https://news.ycombinator.com/item?id=24940676))
+- [ScrapingHub](https://www.scrapinghub.com/) - Turn web content into useful data. ([GitHub](https://github.com/scrapinghub))
+- [extruct](https://github.com/scrapinghub/extruct) - Library for extracting embedded metadata from HTML markup.
+- [Introduction to Scraping in Python (2020)](https://itnext.io/introduction-to-scraping-in-python-with-beautifulsoup-and-requests-ab7b1c9bc113)
+- [Test driving a HackerNews scraper with Node.js (2020)](https://cri.dev/posts/2020-11-06-Test-driving-a-HackerNews-scraper-with-Nodejs/)
+- [SecretAgent](https://github.com/ulixee/secret-agent) - Web browser that's built for scraping. ([Web](https://secretagent.dev/))
+- [Ulixee](https://ulixee.org/) - Turns every website into an open API. Access any dataset on the world wide web. ([GitHub](https://github.com/ulixee))
+- [Floki](https://github.com/philss/floki) - Simple HTML parser that enables search for nodes using CSS selectors.
+- [NYT Vote Scraper](https://github.com/alex/nyt-2020-election-scraper) - Scrapes the NYT Votes Remaining Page JSON and commits it back to this repo. Nice use of GitHub actions for git scraping.
+- [Instagram Scraper](https://github.com/arc298/instagram-scraper) - Scrapes an instagram user's photos and videos.
+- [Inventory Hunter](https://github.com/EricJMarti/inventory-hunter) - Get notified as soon as your next CPU, GPU, or game console is in stock.
+- [Guide on preventing Website Scraping](https://github.com/JonasCz/How-To-Prevent-Scraping)
+- [Bibliographies of the Bibliometric-enhanced Information Retrieval workshops and related other workshops](https://github.com/PhilippMayr/Bibliometric-enhanced-IR_Bibliography)
+- [news-please](https://github.com/fhamborg/news-please) - Open source, easy-to-use news crawler that extracts structured information from almost any news website.
+- [Web crawling with Python (2020)](https://www.scrapingbee.com/blog/crawling-python/)
+- [Metascraper](https://github.com/microlinkhq/metascraper) - Scrape data from websites using Open Graph, HTML metadata & fallbacks. ([Docs](https://metascraper.js.org/#/))
+- [Instaloader](https://github.com/instaloader/instaloader) - Download pictures (or videos) along with their captions and other metadata from Instagram. ([Docs](https://instaloader.github.io/))
+- [trafilatura](https://github.com/adbar/trafilatura) - Manage URLs and scrape main text and metadata.
+- [htmldate](https://github.com/adbar/htmldate) - Find the publication date of web pages.
+- [Filtering links to gather texts on the web (2020)](http://adrien.barbaresi.eu/blog/link-filtering-courlan-python.html)
+- [Evaluating scraping and text extraction tools for Python (2020)](http://adrien.barbaresi.eu/blog/evaluating-text-extraction-python.html)
+- [Using sitemaps to crawl websites (2019)](http://adrien.barbaresi.eu/blog/using-sitemaps-crawl-websites.html)
+- [Evaluation of date extraction tools for Python (2020)](http://adrien.barbaresi.eu/blog/evaluation-date-extraction-python.html)
+- [jusText](https://github.com/miso-belica/jusText) - Tool for removing boilerplate content, such as navigation links, headers, and footers from HTML pages.
+- [sumy](https://github.com/miso-belica/sumy) - Module for automatic summarization of text documents and HTML pages.
+- [Voyager](https://github.com/mattsse/voyager) - Write your own web crawler/scraper as a state machine in rust.
+- [Trandoshan](https://github.com/creekorful/trandoshan) - Fast, highly configurable, cloud native dark web crawler.
+- [ralger](https://github.com/feddelegrand7/ralger) - Makes it easy to scrape a website with R.
+- [Scraping HN content with declarative programming](https://pathom3.wsscode.com/docs/tutorials/hacker-news-scraper/)
+- [snscrape](https://github.com/JustAnotherArchivist/snscrape) - Social networking service scraper in Python.
+- [qwarc](https://github.com/JustAnotherArchivist/qwarc) - Framework for rapidly archiving a large number of URLs with little overhead.
+- [select.rs](https://github.com/utkarshkukreti/select.rs) - Rust library to extract useful data from HTML documents, suitable for web scraping.
+- [Scrapera](https://github.com/DarshanDeshpande/Scrapera) - Provides access to a variety of scraper scripts for most commonly used machine learning and data science domains.
+- [Visual scraping with Elixir and Crawly (2021)](https://oltarasenko.medium.com/visual-scraping-with-elixir-and-crawly-or-how-to-get-data-without-programming-540222750135)
+- [Headless Chrome Crawler](https://github.com/yujiosaka/headless-chrome-crawler) - Distributed crawler powered by Headless Chrome.
+- [Tips for reliable web automation and scraping selectors (2021)](https://medium.com/brick-by-brick/7-bite-sized-tips-for-reliable-web-automation-and-scraping-selectors-2612bc4de2a1) ([HN](https://news.ycombinator.com/item?id=25993258))
+- [Web Crawler for scraping Financial data](https://github.com/Skumarr53/Stock-Fundamental-data-scraping-and-analysis) ([Article](https://medium.com/datadriveninvestor/build-a-web-crawler-that-scrapes-stock-fundamentals-in-python-e2d4af56398))
+- [Web Scraping 101 with Python (2021)](https://www.scrapingbee.com/blog/web-scraping-101-with-python/) ([HN](https://news.ycombinator.com/item?id=26090243))
+- [Automatio](https://automatio.co/) - No-code Web Automation Tool. Automation Tool to Extract Data From Any Website.
+- [Scaling up a Serverless Web Crawler and Search Engine (2021)](https://aws.amazon.com/blogs/architecture/scaling-up-a-serverless-web-crawler-and-search-engine/)
+- [crawler-user-agents](https://github.com/monperrus/crawler-user-agents) - List of of HTTP user-agents used by robots, crawlers, and spiders as in single JSON file.
+- [ant](https://github.com/yields/ant) - Web crawler for Go.
+- [SearchScraperAPI](https://github.com/EdmundMartin/SearchScraperAPI) - Implementation of an API, which allows you to scrape Google, Bing, Yandex, and Qwant.
+- [Scala Scraper](https://github.com/ruippeixotog/scala-scraper) - Scala library for scraping content from HTML pages.
+- [Next.js Web Scraper Playground](https://github.com/johnpolacek/nextjs-scraper-playground) - Build and test your own web scraper APIs with Next.js API Routes and cheerio. ([Web](https://nextjs-scraper-playground.vercel.app/))
+- [Scrapers List](https://github.com/cassidoo/scrapers)
+- [Trafilatura](https://github.com/adbar/trafilatura) - Web scraping library and command-line tool for text discovery and extraction (main content, metadata, comments).
+- [Rarchy](https://rarchy.com/) - Visual Sitemaps & Website Planning Tool. ([HN](https://news.ycombinator.com/item?id=27509682))
+- [CloudProxy](https://github.com/claffin/cloudproxy) - Hide your scrapers IP behind the cloud. ([HN](https://news.ycombinator.com/item?id=27640217))
+- [FlareSolverr](https://github.com/FlareSolverr/FlareSolverr) - Proxy server to bypass Cloudflare protection.
+- [Schema API for the Semantic Web](https://schema.api.page/) - Extract structured content from the semantic web.
+- [DataHen Till](https://github.com/DataHenHQ/till) - Standalone tool that runs alongside your web scraper, and instantly makes your existing web scraper scalable, maintainable and unblockable. ([Web](https://till.datahen.com/)) ([HN](https://news.ycombinator.com/item?id=28059291))
+- [Mastering Web Scraping in Python: Crawling from Scratch (2021)](https://www.zenrows.com/blog/mastering-web-scraping-in-python-crawling-from-scratch) ([HN](https://news.ycombinator.com/item?id=28142002))

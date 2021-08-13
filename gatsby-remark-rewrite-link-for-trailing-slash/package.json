@@ -7,7 +7,9 @@
     "gatsby"
   ],
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo test"
+  },
   "engines": {
     "node": ">=12.13.0"
   },

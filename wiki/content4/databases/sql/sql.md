@@ -1,0 +1,130 @@
+# [SQL](http://en.wikipedia.org/wiki/SQL)
+
+## Notes
+
+- High cardinality = unique. Low cardinality = less unique.
+- Nice to alias tables by their first letters. i.e. `supplier_domains sd` or `supplier_inferred_properties sip`. Then can use the alias as `sd.` in `select` clause.
+
+## Links
+
+- [Learn SQL the hard way](https://learncodethehardway.org/sql/)
+- [Quick SQL cheat sheet](https://github.com/enochtangg/quick-SQL-cheatsheet) - Quick reminder of all SQL queries and examples on how to use them.
+- [SQLCheck](https://github.com/jarulraj/sqlcheck) - Automatically identify anti-patterns in SQL queries.
+- [SQL Fundamentals course](https://egghead.io/courses/sql-fundamentals)
+- [Q](https://github.com/harelba/q) - Run SQL directly on CSV or TSV files. ([Docs](http://harelba.github.io/q/)) ([HN](https://news.ycombinator.com/item?id=27423276))
+- [Learn Modern SQL with PostgreSQL](https://www.masterywithsql.com/) ([HN](https://news.ycombinator.com/item?id=20260292))
+- [PartiQL](https://partiql.org/) - SQL-compatible access to relational, semi-structured, and nested data.
+- [BlazingSQL](https://github.com/BlazingDB/pyBlazing) - Lightweight, GPU accelerated, SQL engine built on RAPIDS.
+- [Ways to Tweak Slow SQL Queries](https://www.databasestar.com/slow-sql) ([HN](https://news.ycombinator.com/item?id=20855441))
+- [osquery](https://github.com/osquery/osquery) - SQL powered operating system instrumentation, monitoring, and analytics. ([Web](https://osquery.io/)) ([osquery launcher](https://github.com/kolide/launcher))
+- [SQL queries don't start with SELECT (2019)](https://jvns.ca/blog/2019/10/03/sql-queries-don-t-start-with-select/)
+- [OctoSQL](https://github.com/cube2222/octosql) - Query tool that allows you to join, analyse and transform data from multiple databases and file formats using SQL.
+- [SQL Murder Mystery](https://github.com/NUKnightLab/sql-mysteries) - Designed to be both a self-directed lesson to learn SQL concepts and commands and a fun game for experienced SQL users to solve an intriguing crime. ([HN](https://news.ycombinator.com/item?id=21799988))
+- [usql](https://github.com/xo/usql) - Universal command-line interface for SQL databases. ([HN](https://news.ycombinator.com/item?id=21509373))
+- [SQL Performance Explained book](https://sql-performance-explained.com/)
+- [How a SQL database works (2019)](http://calpaterson.com/how-a-sql-database-works.html) ([HN](https://news.ycombinator.com/item?id=21838531))
+- [When an SQL database makes a great Pub/Sub (2019)](https://threedots.tech/post/when-sql-database-makes-great-pub-sub/) ([HN](https://news.ycombinator.com/item?id=21834152))
+- [Cosette](https://github.com/uwdb/Cosette) - Automated SQL solver.
+- [BlazingSQL](https://github.com/BlazingDB/blazingsql) - GPU accelerated SQL engine built on top of the RAPIDS ecosystem. ([Web](https://blazingsql.com/))
+- [libinjection](https://github.com/client9/libinjection) - SQL / SQLI tokenizer parser analyzer.
+- [SQL Tutorial for Beginners (2020)](https://www.youtube.com/watch?v=tp_5c6jaNQE)
+- [SQL Koans](https://sqlkoans.com/) - Set of koans to introduce you to SQL. ([Code](https://github.com/phillipjohnson/sql-koans))
+- [eSQLate](https://github.com/forbesmyester/esqlate) - Build minimum viable admin panels quickly with just SQL.
+- [Presto](https://prestodb.io/) - Distributed SQL Query Engine for Big Data. ([Code](https://github.com/prestodb/presto))
+- [SQL Language Server](https://github.com/joe-re/sql-language-server)
+- [The rise of SQL-based data modeling and DataOps (2019)](https://www.holistics.io/blog/the-rise-of-sql-based-data-modeling-and-dataops/) ([HN](https://news.ycombinator.com/item?id=22189851))
+- [NULL Values in SQL Queries (2020)](https://mitchum.blog/null-values-in-sql-queries/) ([HN](https://news.ycombinator.com/item?id=22223909))
+- [RapidQL](https://rapidql.com/) - Join, combine, and aggregate data from multiple APIs and databases — all in one call. ([Code](https://github.com/RapidAPI/rapidql))
+- [sqlfmt](https://github.com/jackc/sqlfmt) - SQL Formatter.
+- [Domain Logic and SQL (2013)](https://www.martinfowler.com/articles/dblogic.html) ([HN](https://news.ycombinator.com/item?id=22381919))
+- [Database basics: writing a SQL database from scratch in Go (2020)](https://notes.eatonphil.com/database-basics.html) ([HN](https://news.ycombinator.com/item?id=22850817))
+- [sqls](https://github.com/lighttiger2505/sqls) - Implementation of the Language Server Protocol for SQL.
+- [Compiling PL/SQL Away (2019)](https://arxiv.org/pdf/1909.03291.pdf)
+- [Constexpr SQL](https://github.com/mkitzan/constexpr-sql) - Light weight single header alternative to DBMS.
+- [SELECT wat FROM sql](https://scattered-thoughts.net/writing/select-wat-from-sql/) ([HN](https://news.ycombinator.com/item?id=22985455))
+- [Advanced SQL and database books and resources (2020)](https://www.neilwithdata.com/advanced-sql) ([HN](https://news.ycombinator.com/item?id=23138297))
+- [Medium-hard SQL interview questions](https://quip.com/2gwZArKuWk7W) ([HN](https://news.ycombinator.com/item?id=23053981))
+- [SQL Police Department – Learn SQL while solving crimes](https://sqlpd.com/) ([HN](https://news.ycombinator.com/item?id=23066776))
+- [Preventing SQL injection: a Django author's perspective (2020)](https://blog.r2c.dev/2020/preventing-sql-injection-a-django-authors-perspective/)
+- [SQL for the rest of us](https://technically.dev/posts/sql-for-the-rest-of-us.html)
+- [Demystifying JOIN Algorithms (2019)](http://blog.felipe.rs/2019/01/29/demystifying-join-algorithms/)
+- [SQLsmith](https://github.com/anse1/sqlsmith) - Random SQL query generator.
+- [forma](https://github.com/maxcountryman/forma) - Opinionated SQL formatter.
+- [How Does SQLAlchemy Manage Database Transactions? (2019)https://capnfabs.net/posts/sqlalchemy-connection-management/)
+- [Falcon](https://github.com/plotly/falcon) - Free, open-source SQL editor with inline data visualization.
+- [querycafe](https://www.query.cafe/) - Import, query, and share any dataset.
+- [AlaSQL](https://github.com/agershun/alasql) - JavaScript SQL database for browser and Node.js. Handles both traditional relational tables and nested JSON data (NoSQL).
+- [RAT-SQL: Relation-Aware Schema Encoding and Linking for Text-to-SQL Parsers (2020)](https://arxiv.org/abs/1911.04942) ([Code](https://github.com/microsoft/rat-sql))
+- [Some SQL Tricks of an Application DBA (2020)](https://hakibenita.com/sql-tricks-application-dba) ([Lobsters](https://lobste.rs/s/yqd6bi/some_sql_tricks_application_dba))
+- [Scaling relational SQL databases (2020)](https://stribny.name/blog/2020/07/scaling-relational-sql-databases) ([HN](https://news.ycombinator.com/item?id=27505267))
+- [The Troublesome Active Record Pattern (2020)](http://calpaterson.com/activerecord.html) ([HN](https://news.ycombinator.com/item?id=22615414))
+- [Implementing subqueries in go-mysql-server (2020)](https://www.dolthub.com/blog/2020-08-05-implementing-subqueries/)
+- [We Can Do Better Than SQL (2019)](https://edgedb.com/blog/we-can-do-better-than-sql/) ([Lobsters](https://lobste.rs/s/uwefle/we_can_do_better_than_sql)) ([HN](https://news.ycombinator.com/item?id=24106608))
+- [How to level up your SQL skills (2019)](https://clubhouse.io/developer-how-to/how-to-level-up-your-sql-skills/) ([Lobsters](https://lobste.rs/s/fddvpn/how_level_up_your_sql_skills))
+- [Lateral Joins and Demand-Driven Queries (2020)](https://materialize.io/lateral-joins-and-demand-driven-queries/)
+- [SQL Templates](https://popsql.com/sql-templates)
+- [PopSQL](https://popsql.com/) - Collaborative SQL editor for teams.
+- [Nested SQL Queries](https://leontrolski.github.io/nested-sql.html)
+- [GlueSQL](https://github.com/gluesql/gluesql) - SQL Database Engine as a Library.
+- [TS SQL](https://github.com/codemix/ts-sql) - SQL database implemented purely in TypeScript type annotations. ([Tweet](https://twitter.com/c_pick/status/1307433762914009090)) ([HN](https://news.ycombinator.com/item?id=24615185))
+- [Simple Anomaly Detection Using Plain SQL (2020)](https://hakibenita.com/sql-anomaly-detection) ([Lobsters](https://lobste.rs/s/q1hh1g/simple_anomaly_detection_using_plain_sql)) ([HN](https://news.ycombinator.com/item?id=25731699))
+- [A Short Story About SQL’s Biggest Rival (2020)](https://www.holistics.io/blog/quel-vs-sql/?) ([HN](https://news.ycombinator.com/item?id=24730713))
+- [What ORMs Have Taught Me: Just Learn SQL (2014)](https://wozniak.ca/blog/2014/08/03/1/) ([HN](https://news.ycombinator.com/item?id=24845300))
+- [SQL Formatter](https://zeroturnaround.github.io/sql-formatter/) - JavaScript library for pretty-printing SQL queries. ([Code](https://github.com/zeroturnaround/sql-formatter))
+- [SQL Joins Visualizer](https://sql-joins.leopard.in.ua/) - Help to you build SQL JOIN between two tables by using of Venn diagrams. ([Code](https://github.com/le0pard/sql-joins-app))
+- [Top 10 Most Important SQL Commands to Know (2020)](https://blog.arctype.com/sql-cheat-sheet-top-10-most-important-sql-commands-to-know/)
+- [Automate Business Logic With Logic Bank](https://dzone.com/articles/automate-business-logic-with-logic-bank) - Rule engine automates SQLAlchemy update logic for remarkable agility - 40X more concise. Scalable. Extensible and manageable using Python. ([Tweet](https://twitter.com/zzzeek/status/1328041618931408898))
+- [SQL overview](http://jakewheat.github.io/sql-overview/) ([Code](https://github.com/JakeWheat/sql-overview))
+- [cloudquery](https://cloudquery.run/) - Transform your cloud config and metadata to SQL. ([Code](https://github.com/cloudquery/cloudquery))
+- [mfsqlchecker](https://github.com/MedFlyt/mfsqlchecker) - Statically validate correctness of all your SQL queries. TypeScript, PostgreSQL.
+- [SQLiterally](https://github.com/terkelg/sqliterally) - Lightweight SQL query builder.
+- [sqlmap](https://github.com/sqlmapproject/sqlmap) - Automatic SQL injection and database takeover tool. ([Web](http://sqlmap.org/))
+- [SQL Conventions](https://github.com/FGRibreau/sql-convention)
+- [SQLFlow](https://github.com/sql-machine-learning/sqlflow) - Brings SQL and AI together. ([Web](https://sql-machine-learning.github.io/))
+- [Practical SQL (2018)](https://nostarch.com/practicalSQL) - Beginner’s Guide to Storytelling with Data.
+- [Recursion in SQL Explained Visually (2020)](https://medium.com/swlh/recursion-in-sql-explained-graphically-679f6a0f143b)
+- [FuseQuery](https://github.com/datafusedev/fuse-query) - Distributed SQL Query Engine at scale. ([Web](https://datafuse.dev/))
+- [Introduction to Window Functions in SQL (2020)](https://khashtamov.com/en/sql-window-functions/) ([HN](https://news.ycombinator.com/item?id=25656583))
+- [Preql](https://github.com/erezsh/Preql) - Interpreted relational query language that compiles to SQL. ([Lobsters](https://lobste.rs/s/r5qaap/introducing_preql_new_relational))
+- [What can we learn from SQL's 50 year reign? A story of 2 Turing Awards (2021)](https://blog.arctype.com/sql-50-years/) ([Lobsters](https://lobste.rs/s/jqf8z1/what_can_we_learn_from_sql_s_50_year_reign))
+- [SQL Next Steps: Optimization](https://www.oreilly.com/live-training/courses/sql-next-steps-optimization/0636920452904/) ([Code](https://github.com/hakib/oreilly-sql-next-steps))
+- [The surprisingly difficult problem of user-defined order in SQL (2018)](https://begriffs.com/posts/2018-03-20-user-defined-order.html) ([HN](https://news.ycombinator.com/item?id=25797674))
+- [Why SELECT \* is bad for SQL performance (2020)](https://tanelpoder.com/posts/reasons-why-select-star-is-bad-for-sql-performance/) ([HN](https://news.ycombinator.com/item?id=26141003))
+- [Use The Index, Luke](https://use-the-index-luke.com/) - SQL indexing and tuning tutorial for developers.
+- [SQL and aggregated data: is there a better way?](https://github.com/zsvoboda/gooddata-jdbc/wiki/SQL-and-aggregated-data:-is-there-a-better-way%3F)
+- [Double-thinking in SQL (2009)](https://explainextended.com/2009/07/12/double-thinking-in-sql/)
+- [Objection to ORM Hatred (2019)](https://www.jakso.me/blog/objection-to-orm-hatred) ([HN](https://news.ycombinator.com/item?id=26076622))
+- [Lobsters: Why is SQL so successful? (2021)](https://lobste.rs/s/snflhf/why_is_sql_so_successful)
+- [How Materialize and other databases optimize SQL subqueries (2021)](https://scattered-thoughts.net/writing/materialize-decorrelation)
+- [Advanced SQL Questions From Amazon (2021)](https://www.youtube.com/watch?v=VYeevsVj4fU)
+- [Streaming SQL: What is it, why is it useful? (2021)](https://materialize.com/streaming-sql-intro/)
+- [Steampipe](https://steampipe.io/) - Extensible SQL interface to your favorite cloud APIs. ([Code](https://github.com/turbot/steampipe))
+- [Speeding up SQL queries by orders of magnitude using UNION (2021)](https://www.foxhound.systems/blog/sql-performance-with-union/) ([HN](https://news.ycombinator.com/item?id=26524776))
+- [Some opinionated thoughts on SQL databases (2021)](https://blog.nelhage.com/post/some-opinionated-sql-takes/) ([Lobsters](https://lobste.rs/s/jb8jk1/some_opinionated_thoughts_on_sql))
+- [How to create a 1M record table with a single query (2021)](https://antonz.org/random-table/)
+- [fselect](https://github.com/jhspetersson/fselect) - Find files with SQL-like queries.
+- [Thinking in Questions with SQL (2021)](https://benjiweber.co.uk/blog/2021/03/21/thinking-in-questions-with-sql/)
+- [Best practices for writing SQL queries](https://www.metabase.com/learn/building-analytics/sql-templates/sql-best-practices) ([HN](https://news.ycombinator.com/item?id=26762206))
+- [Arctype](https://arctype.com/) - Fast and easy-to-use SQL client.
+- [Don’t we all just want to use SQL on the front end? (2021)](https://vjpr.medium.com/dont-we-all-just-want-to-use-sql-on-the-frontend-6b9d38c08146) ([HN](https://news.ycombinator.com/item?id=26822884))
+- [TinySQL](https://github.com/tidb-incubator/tinysql) - Course designed to teach you how to implement a distributed relational database in Go.
+- [Ask HN: Is there a way to efficiently subscribe to an SQL query for changes? (2021)](https://news.ycombinator.com/item?id=26901352)
+- [Practical SQL for Data Analysis: What you can do without Pandas (2021)](https://hakibenita.com/sql-for-data-analysis) ([HN](https://news.ycombinator.com/item?id=27025829))
+- [sqlbench](https://github.com/felixge/sqlbench) - Measures and compares the execution time of one or more SQL queries.
+- [Efficient SQL on Pandas with DuckDB (2021)](https://duckdb.org/2021/05/14/sql-on-pandas.html)
+- [SQL](https://github.com/nearform/sql) - SQL injection protection module.
+- [DuoRAT: Towards Simpler Text-to-SQL Models (2020)](https://arxiv.org/abs/2010.11119) ([Code](https://github.com/ElementAI/duorat))
+- [SQL Jobber](https://github.com/knadh/sql-jobber) - Lightweight SQL job-server for scaling read queries. ([HN](https://news.ycombinator.com/item?id=27285237))
+- [SQL Query Optimization: Understanding Key Principle (2021)](https://hinty.io/devforth/sql-query-optimization-understanding-key-principle/) ([Reddit](https://www.reddit.com/r/programming/comments/nm9ehx/sql_query_optimization_understanding_key_principle/))
+- [SQLizer](https://sqlizer.io/#/) - Easily convert files into SQL Databases.
+- [sql-lint](https://github.com/joereynolds/sql-lint) - Does sanity checks on your queries as well as bring errors back from the DB.
+- [Actual order of execution of SQL](https://twitter.com/chrisalbon/status/1399767813569486853)
+- [sqlgg](https://github.com/ygrek/sqlgg) - SQL Guided (code) Generator. ([Web](https://ygrek.org/p/sqlgg/))
+- [sqldef](https://github.com/k0kubun/sqldef) - Idempotent MySQL/PostgreSQL schema management by SQL. ([Web](https://sqldef.github.io/))
+- [SQL Fiddle](http://sqlfiddle.com/) - Application for testing and sharing SQL queries.
+- [TextQL](https://github.com/dinedal/textql) - Execute SQL against structured text like CSV or TSV.
+- [SQL Join Types Explained in Visuals (2021)](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/) ([HN](https://news.ycombinator.com/item?id=27760154))
+- [Against SQL (2021)](https://scattered-thoughts.net/writing/against-sql/) ([HN](https://news.ycombinator.com/item?id=27791539)) ([Lobsters](https://lobste.rs/s/jxeg1b/against_sql))
+- [SQLBolt](https://sqlbolt.com/) - Interactive lessons and exercises to learn SQL. ([HN](https://news.ycombinator.com/item?id=27842067))
+- [Load CSV files and write SQL](https://superintendent.app/) ([HN](https://news.ycombinator.com/item?id=27871574))
+- [Why you should learn SQL (2019)](https://www.executeprogram.com/blog/why-you-should-learn-sql) ([HN](https://news.ycombinator.com/item?id=28057291))

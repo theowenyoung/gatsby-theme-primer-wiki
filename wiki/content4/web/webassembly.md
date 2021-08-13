@@ -1,0 +1,186 @@
+# [WebAssembly](https://webassembly.org/)
+
+## Links
+
+- [WebAssemblyLanguages](https://github.com/AppCypher/WebAssemblyLanguages)
+- [WebAssembly Studio](https://github.com/wasdk/WebAssemblyStudio) - Learn, Teach, Work and Play in the WebAssembly Studio.
+- [wasm-pack](https://github.com/ashleygwilliams/wasm-pack) - Pack up the wasm and publish it to npm.
+- [Dan Callahan: Practical WebAssembly](https://www.youtube.com/watch?v=bac0dGQbUto)
+- [WebAssembly Spec](https://github.com/WebAssembly/spec/)
+- [WebAssembly Demystified](http://floooh.github.io/2017/06/09/webassembly-demystified.html)
+- [Life](https://github.com/perlin-network/life) - Secure WebAssembly VM catered for decentralized applications.
+- [Calls between JavaScript and WebAssembly are finally fast](https://hacks.mozilla.org/2018/10/calls-between-javascript-and-webassembly-are-finally-fast-%F0%9F%8E%89/)
+- [Wasmer](https://github.com/WAFoundation/wasmer) - High-Performance WebAssembly JIT interpreter. ([Wasmer 1.0](https://medium.com/wasmer/wasmer-1-0-3f86ca18c043)) ([HN](https://news.ycombinator.com/item?id=25649476))
+- [wac](https://github.com/kanaka/wac) - WebAssembly in C.
+- [Wasmjit](https://github.com/rianhunter/wasmjit) - Kernel Mode WebAssembly Runtime for Linux.
+- [AssemblyScript](https://github.com/AssemblyScript/assemblyscript) - TypeScript to WebAssembly compiler.
+- [Twiggy](https://github.com/rustwasm/twiggy) - Code size profiler.
+- [Olin](https://github.com/Xe/olin) - Environment to run and operate functions as a service projects using event sourcing and webassembly under the hood.
+- [Wasmtime](https://github.com/CraneStation/wasmtime) - Standalone wasm-only runtime for WebAssembly, using the Cranelift JIT.
+- [wasmtime-py](https://github.com/bytecodealliance/wasmtime-py) - Python WebAssembly runtime powered by Wasmtime. ([Docs](https://bytecodealliance.github.io/wasmtime-py/))
+- [Cranelift Code Generator](https://github.com/CraneStation/cranelift) - Low-level retargetable code generator. It translates a target-independent intermediate representation into executable machine code..
+- [Standardizing WASI: A system interface to run WebAssembly outside the web (2019)](https://hacks.mozilla.org/2019/03/standardizing-wasi-a-webassembly-system-interface/)
+- [WASI](https://wasi.dev/) - WebAssembly System Interface. ([Code](https://github.com/WebAssembly/WASI)).
+- [wasi-rust](https://github.com/bytecodealliance/wasi) - WASI API Bindings for Rust.
+- [Lucet](https://github.com/fastly/lucet) - Sandboxing WebAssembly Compiler.
+- [Wasmer](https://github.com/wasmerio/wasmer) - Leading WebAssembly Runtime supporting WASI and JavaScript. ([Web](https://wasmer.io/))
+- [WebAssembly Playground](http://ast.run/)
+- [Wasmer is taking WebAssembly beyond the browser (2019)](https://overcast.fm/+HZUfSYn4E)
+- [Wasmer](https://github.com/wasmerio/python-ext-wasm) - Python extension to run WebAssembly binaries.
+- [WebAssembly Micro Runtime](https://github.com/intel/wasm-micro-runtime) - Standalone WebAssembly (WASM) runtime with a small footprint.
+- [inNative](https://github.com/innative-sdk/innative) - Native non-web embedding of WebAssembly for Windows/Linux.
+- [Introducing inNative (2019)](https://innative.dev/news/introducing-innative/) - Run WebAssembly Outside The Sandbox at 95% Native Speed.
+- [Compiling C to WebAssembly without Emscripten (2019)](https://surma.dev/things/c-to-webassembly/)
+- [Wasm By Example](https://wasmbyexample.dev/)
+- [Lightbeam](https://github.com/CraneStation/lightbeam) - Optimising one-pass streaming compiler for WebAssembly, intended for use in Wasmtime.
+- [Pragmatic compiling of C++ to WebAssembly. A Guide. (2019)](https://medium.com/@tdeniffel/pragmatic-compiling-from-c-to-webassembly-a-guide-a496cc5954b8)
+- [wasm-pack](https://github.com/rustwasm/wasm-pack) - Your favorite rust -> wasm workflow tool.
+- [M3/Wasm](https://github.com/soundandform/m3) - High performance WebAssembly interpreter in C.
+- [WebAssembly Tool Conventions](https://github.com/WebAssembly/tool-conventions) - Conventions supporting interoperatibility between tools working with WebAssembly.
+- [go-web-app](https://github.com/talentlessguy/go-web-app) - CLI for setting up Go WebAssembly frontend app.
+- [WABT](https://github.com/WebAssembly/wabt) - WebAssembly Binary Toolkit.
+- [RustConf 2019 - From Electron, to Wasm, to Rust (Aaand Back to Electron) by Irina Shestak](https://www.youtube.com/watch?v=lLzFJenzBng)
+- [WebAssembly Runtimes](https://github.com/appcypher/awesome-wasm-runtimes)
+- [WAVM](https://github.com/AndrewScheidecker/WAVM) - WebAssembly Virtual Machine. Uses LLVM to compile WebAssembly code to machine code with close to native performance.
+- [Lobsters: Why WebAssembly is not more mainstream? (2019)](https://lobste.rs/s/pmdcpu/why_webassembly_is_not_more_mainstream)
+- [2015 LLVM Developers’ Meeting: Jf Bastien & Dan Gohman “WebAssembly: Here Be Dragons"](https://www.youtube.com/watch?v=5W7NkofUtAw)
+- [TiDB in the Browser: Running a Golang Database on WebAssembly](https://pingcap.com/blog/tidb-in-the-browser-running-a-golang-database-on-webassembly/)
+- [Forest](https://github.com/forest-lang/forest-compiler) - Functional programming language that compiles to WebAssembly.
+- [WebAssembly.sh](https://webassembly.sh/) - WASM/WASI sandboxed terminal in the browser.
+- [WebAssembly meetings (VC or in-person), agendas, and notes](https://github.com/WebAssembly/meetings)
+- [WebAssembly proposals](https://github.com/WebAssembly/proposals)
+- [Bytecode Alliance](https://bytecodealliance.org/) - Open source community dedicated to creating secure new software foundations, building on standards such as WebAssembly and WebAssembly System Interface (WASI).
+- [How to create polyglot HTML/JS/WebAssembly module](https://webassembly-security.com/polyglot-webassembly-module-html-js-wasm/)
+- [Patrick Hamann | WebAssembly – To the browser and beyond (2019)](https://www.youtube.com/watch?v=Z6ZhIA8i_8g) ([Slides](https://noti.st/patrickhamann/uEw4zt/webassembly-to-the-browser-and-beyond))
+- [wasmboy](https://github.com/torch2424/wasmboy) - Game Boy / Game Boy Color Emulator Library, 🎮written for WebAssembly using AssemblyScript.
+- [Awesome WebAssembly Languages](https://github.com/appcypher/awesome-wasm-langs)
+- [WASM as a Platform for Abstraction (2019)](http://adventures.michaelfbryan.com/posts/wasm-as-a-platform-for-abstraction/) ([HN](https://news.ycombinator.com/item?id=21794438))
+- [Making really tiny WebAssembly graphics demos (2019)](http://cliffle.com/blog/bare-metal-wasm/) ([Code](https://github.com/cbiffle/bare-metal-wasm-example))
+- [WASM Metal](https://github.com/lastmjs/wasm-metal) - Bare metal physical implementation of WebAssembly. That's right, a WebAssembly CPU.
+- [JSC.js](https://github.com/mbbill/JSC.js) - JavaScriptCore on WebAssembly.
+- [WebAssembly Beyond the Browser • Dan Callahan (2020)](https://www.youtube.com/watch?v=TGo3vJVTlyQ)
+- [Debugging Through WebAssembly Is Impossible (2020)](https://erikmcclure.com/blog/debugging-through-webassembly-is-impossible/) ([Lobsters](https://lobste.rs/s/lkftpa/debugging_through_webassembly_is))
+- [Wasm3](https://github.com/wasm3/wasm3) - High performance WebAssembly interpreter written in C. ([HN](https://news.ycombinator.com/item?id=26299212))
+- [Fast, parallel applications with WebAssembly SIMD (2020)](https://v8.dev/features/simd)
+- [Evolving Wasm into a proper misnomer: Andreas Rossberg (2019)](https://www.youtube.com/watch?v=pq-Pa2Fj4nE&t=40s)
+- [Actually Using WASM](https://wiki.alopex.li/ActuallyUsingWasm)
+- [asm-dom](https://github.com/mbasso/asm-dom) - Minimal WebAssembly virtual DOM to build C++ SPA (Single page applications).
+- [Firefox's low-latency webassembly compiler (2020)](http://wingolog.org/archives/2020/03/25/firefoxs-low-latency-webassembly-compiler)
+- [Bulk Memory Operations Proposal for WebAssembly](https://github.com/WebAssembly/bulk-memory-operations)
+- [wain](https://github.com/rhysd/wain) - WebAssembly INterpreter written in Rust from scratch with zero dependency.
+- [Wasminspect](https://github.com/kateinoigakukun/wasminspect) - Interactive Debugger for WebAssembly.
+- [Run Clang in WebAssembly](https://github.com/wapm-packages/clang)
+- [Wasienv](https://github.com/wasienv/wasienv) - WASI Development Toolchain for C/C++.
+- [Enarx](https://github.com/enarx/enarx) - Tools for deploying WebAssembly into Enarx Keeps.
+- [What’s in that .wasm? Introducing: wasm-decompile (2020)](https://v8.dev/blog/wasm-decompile) ([HN](https://news.ycombinator.com/item?id=23006501))
+- [First impressions on Rust and Webassembly (2020)](https://techadv.xyz/posts/rust-wasm/)
+- [Build your own WebAssembly Compiler (2019)](https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html)
+- [WAKit](https://github.com/akkyie/WAKit) - WebAssembly runtime written in Swift.
+- [gasm](https://github.com/mathetake/gasm) - WASM Virtual Machine for Gophers.
+- [The WebAssembly App Gap (2020)](https://paulbutler.org/2020/the-webassembly-app-gap/)
+- [parity-wasm](https://github.com/paritytech/parity-wasm) - Low-level WebAssembly format library.
+- [wasm-tools](https://github.com/bytecodealliance/wasm-tools) - Low level tooling for WebAssembly in Rust.
+- [Parcel and Rust: A WASM Romcom (2020)](https://dev.p.ota.to/post/parcel-and-rust-a-wasm-romcom-4kgsjnrdm5t/) ([HN](https://news.ycombinator.com/item?id=23401553))
+- [AssemblyScript Examples](https://github.com/AssemblyScript/examples)
+- [Generating WebAssembly CPU Profiles in Go (2019)](https://agniva.me/wasm/2019/07/25/wasm-cpu-profiles.html)
+- [WebAssembly Weekly](https://wasmweekly.news/) - Community-driven weekly newsletter about WebAssembly. ([Code](https://github.com/ColinEberhardt/wasmweekly))
+- [Schism](https://github.com/google/schism) - Experimental compiler from Scheme to WebAssembly.
+- [Rust, WebAssembly, and Javascript Make Three: An FFI Story (2019)](https://www.infoq.com/presentations/rust-webassembly-javascript/)
+- [Rust WebAssembly Workshop](https://github.com/rylev/rust-wasm-workshop)
+- [Woz](https://github.com/alexkehayias/woz) - Progressive WebAssembly app (PWAA) generator for Rust.
+- [waSCC](https://wascc.dev/) - Dynamic, elastically scalable WebAssembly host runtime for securely connecting actors and capability providers. ([Code](https://github.com/wascc/wascc-host))
+- [Moving from TypeScript to Rust / WebAssembly (2020)](https://nicolodavis.com/blog/typescript-to-rust/) ([HN](https://news.ycombinator.com/item?id=23776514))
+- [Hunting down a non-determinism-bug in our Rust Wasm build (2020)](https://dev.to/gnunicorn/hunting-down-a-non-determinism-bug-in-our-rust-wasm-build-4fk1)
+- [Boids in WebAssembly Using Go (2020)](https://healeycodes.com/boids-flocking-simulation/) ([Lobsters](https://lobste.rs/s/7hrtwi/boids_webassembly_using_go)) ([Code](https://github.com/healeycodes/boids))
+- [WebAssembly in the Cloud](https://www.explorewasm.com/)
+- [Single Page Applications using Rust and WASM (2020)](http://www.sheshbabu.com/posts/rust-wasm-yew-single-page-application/) ([HN](https://news.ycombinator.com/item?id=24120311)) ([Lobsters](https://lobste.rs/s/1awebn/single_page_applications_using_rust))
+- [Golang Desktop App with Webview/Lorca, WASM and Bazel (2020)](https://maori.geek.nz/golang-desktop-app-with-webview-lorca-wasm-and-bazel-3283813bf89) ([HN](https://news.ycombinator.com/item?id=24117758))
+- [Bytecode Alliance RFCs](https://github.com/bytecodealliance/rfcs)
+- [Webassembly Without The Browser (2020)](https://alexene.dev/2020/08/17/webassembly-without-the-browser-part-1.html) ([HN](https://news.ycombinator.com/item?id=24180303))
+- [Everything Old is New Again: Binary Security of WebAssembly (2020)](https://www.usenix.org/conference/usenixsecurity20/presentation/lehmann) ([HN](https://news.ycombinator.com/item?id=24216764)) ([HN 2](https://news.ycombinator.com/item?id=26994741))
+- [Hands-on WebAssembly: Try the basics (2020)](https://evilmartians.com/chronicles/hands-on-webassembly-try-the-basics) ([HN](https://news.ycombinator.com/item?id=24279912))
+- [WebAssembly Troubles: WebAssembly Is Not a Stack Machine (2020)](http://troubles.md/wasm-is-not-a-stack-machine/)
+- [Wasmer Python](https://github.com/wasmerio/wasmer-python) - WebAssembly runtime for Python.
+- [WebAssembly C and C++ API](https://github.com/WebAssembly/wasm-c-api)
+- [Explorable Programming with Rust and WebAssembly (2020)](https://lowlvl.org/blog/explorable-programming)
+- [wasm-remapper-web](https://github.com/vlakreeh/wasm-remapper-web) - Web app to help reverse engineer WebAssembly binaries.
+- [wasi-fs-access](https://github.com/GoogleChromeLabs/wasi-fs-access) - Demo shell powered by WebAssembly, WASI, Asyncify and File System Access API.
+- [WASI Libc](https://github.com/WebAssembly/wasi-libc) - Libc for WebAssembly programs built on top of WASI system calls.
+- [Low-Level Academy WebAssembly modules](https://github.com/LowLevelAcademy/wasm-modules)
+- [trunk](https://github.com/thedodd/trunk) - Build, bundle & ship your Rust WASM application to the web.
+- [wasmbin](https://github.com/GoogleChromeLabs/wasmbin) - Self-generating WebAssembly parser & serializer in Rust. ([Article](https://rreverser.com/wasmbin-yet-another-webassembly-parser-serializer/))
+- [Sourcegraph Podcast: Syrus Akbary, founder and CEO of Wasmer (2020)](https://about.sourcegraph.com/podcast/syrus-akbary/)
+- [Go, WebAssembly, HTTP requests and Promises (2020)](https://withblue.ink/2020/10/03/go-webassembly-http-requests-and-promises.html)
+- [AssemblyLift](https://github.com/akkoro/assemblylift) - Framework for building serverless applications powered by WebAssembly.
+- [WebAssembly Design Docs](https://github.com/WebAssembly/design)
+- [Speed up Python with Rust via WebAssembly](https://github.com/savarin/bridge)
+- [V8 WASM Compilation Pipeline (2020)](https://v8.dev/docs/wasm-compilation-pipeline)
+- [ws_stream_wasm](https://github.com/najamelan/ws_stream_wasm) - Convenience library for using web sockets in WASM.
+- [Orthogonal Persistence, Webassembly, and Rust (2020)](https://charted.space/orthogonal-persistence.html) ([Lobsters](https://lobste.rs/s/kdea1p/orthogonal_persistence_webassembly))
+- [acot](https://github.com/acot-a11y/acot) - Open-source Accessibility Testing Framework.
+- [Debugging WebAssembly with modern tools (2020)](https://developers.google.com/web/updates/2020/12/webassembly)
+- [WebAssembly as Meta-Language (2020)](https://docs.google.com/document/d/14T8RPgQKztURiHmzyP_Ju2S9nrIZWDaAb8eSx3NiiYw/mobilebasic)
+- [Yo WASM – The Easy Way to WebAssembly (2020)](https://deislabs.io/posts/introducing-yo-wasm/)
+- [as-wasi](https://github.com/jedisct1/as-wasi) - High-level AssemblyScript layer for the WebAssembly System Interface (WASI).
+- [WebAssembly Studio](https://webassembly.studio/) ([HN](https://news.ycombinator.com/item?id=25592481))
+- [Metallic](https://github.com/jdh8/metallic) - C runtime library (libc) for WebAssembly.
+- [Wizer](https://github.com/bytecodealliance/wizer) - WebAssembly Pre-Initializer.
+- [Hosting WebAssembly in Swift (2021)](http://www.alwaysrightinstitute.com//swifty-wasmer/)
+- [Rust and WebAssembly Book](https://rustwasm.github.io/docs/book/) - Small book describes how to use Rust and WebAssembly together. ([Code](https://github.com/rustwasm/book))
+- [Property-Based Testing of WebAssembly](https://github.com/jmid/wasm-prop-tester) - Implements a stack-driven generator of arbitrary WebAssembly programs.
+- [WASM to OCI](https://github.com/engineerd/wasm-to-oci) - Use OCI registries to distribute WASM modules.
+- [A practical guide to WebAssembly memory (2021)](https://radu-matei.com/blog/practical-guide-to-wasm-memory/)
+- [A simple WebAssembly linker in JavaScript (2021)](https://radu-matei.com/blog/a-simple-wasm-linker-js/)
+- [Towards sockets and networking in WebAssembly and WASI (2020)](https://radu-matei.com/blog/towards-sockets-networking-wasi/)
+- [box2d-wasm](https://github.com/Birch-san/box2d-wasm) - Box2D physics engine compiled to WebAssembly. Supports TypeScript and ES modules.
+- [wasm-tool/wasi](https://github.com/wasm-tool/wasi) - Import WebAssembly modules that expose the WebAssembly System Interface (WASI).
+- [Fizzy](https://github.com/wasmx/fizzy) - Fast, deterministic, and pedantic WebAssembly interpreter written in C++.
+- [WebAssembly in Action Book (2019)](https://www.manning.com/books/webassembly-in-action) - With examples using C++ and Emscripten. ([Code](https://github.com/cggallant/WebAssembly-in-Action))
+- [WebAssembly WASI Experiments](https://github.com/topheman/webassembly-wasi-experiments)
+- [WAGI: WebAssembly Gateway Interface](https://github.com/deislabs/wagi)
+- [WebAssembly Reference Manual](https://github.com/sunfishcode/wasm-reference-manual)
+- [go-wasm-http-server](https://github.com/nlepage/go-wasm-http-server) - Embed your Go HTTP handlers in a ServiceWorker (usin WebAssembly) and emulate an HTTP server.
+- [Memory64 Proposal for WebAssembly](https://github.com/WebAssembly/memory64)
+- [Raw WebAssembly Demos](https://github.com/binji/raw-wasm) ([Web](https://binji.github.io/raw-wasm/))
+- [Benchmark of WebAssembly runtimes](https://github.com/jedisct1/webassembly-benchmarks)
+- [WebAssembly Search Tools for Static Sites (2021)](https://healeycodes.com/webassembly-search-tools-for-static-websites/) ([Lobsters](https://lobste.rs/s/g8i4w5/webassembly_search_tools_for_static))
+- [vscode-wasm](https://github.com/wasm-lsp/vscode-wasm) - Visual Studio Code client for the WebAssembly language server.
+- [Effect Handlers Proposal for WebAssembly](https://github.com/effect-handlers/wasm-effect-handlers)
+- [WebAssembly Monorepo](https://github.com/saschazar21/webassembly) - Monorepo for dependency-free WebAssembly projects. Supports browser, web worker and Node.js runtimes.
+- [A Comparison between WebAssembly and RISC-V (2020)](https://medium.com/@losfair/a-comparison-between-webassembly-and-risc-v-e8fb9d37e6cc)
+- [LAM: an actor-model VM for WebAssembly and native (2021)](https://notamonadtutorial.com/lam-an-actor-model-vm-for-webassembly-and-native-d7939362e1b8)
+- [LAM](https://github.com/AbstractMachinesLab/lam) - Lightweight alternative to the BEAM that runs as Native and WebAssembly binaries, both on WASI-enabled systems and browsers.
+- [Swag](https://github.com/Ji4n1ng/Swag) - Toy WASM interpreter written in Swift.
+- [Awesome WebAssembly Tools](https://github.com/vshymanskyy/awesome-wasm-tools)
+- [WASM signatures](https://github.com/jedisct1/wasmsign) - Tool to add and verify digital signatures to/from WASM binaries.
+- [wasm-jseval](https://github.com/maple3142/wasm-jseval) - Safe eval library based on WebAssembly and Duktape/QuickJS.
+- [Is WebAssembly magic performance pixie dust? (2021)](https://surma.dev/things/js-to-asc/) ([HN](https://news.ycombinator.com/item?id=26803155)) ([Tweet](https://twitter.com/DasSurma/status/1381970241694076930))
+- [Web Bundler](https://github.com/panoptix-za/web-bundler) - Bundles a Rust WebAssembly frontend application for publishing.
+- [WASM Coq](https://github.com/WasmCert/WasmCert-Coq) - WebAssembly (aka Wasm) formalization in Coq, based on the official formalization.
+- [Using asynchronous web APIs from WebAssembly (2021)](https://web.dev/asyncify/)
+- [Learning Web Assembly System Interface (WASI)](https://github.com/danbev/learning-wasi)
+- [aWsm](https://github.com/gwsystems/aWsm) - WebAssembly ahead-of-time compiler and runtime. Focuses on generating fast code, simplicity, and portability.
+- [wasm-run](https://github.com/wasm3/node-wasm-run) - Run arbitrary WASM/WASI files.
+- [Hit the Ground Running: Wasm Snapshots for Fast Start Up (2021)](https://fitzgeraldnick.com/2021/05/10/wasm-summit-2021.html)
+- [wasmCloud](https://github.com/wasmCloud/wasmCloud) - Universal host runtime for actors built with WebAssembly and capability providers. ([Web](https://wasmcloud.dev/))
+- [WebContainer Core](https://github.com/stackblitz/webcontainer-core)
+- [Rust WebAssembly React Template](https://github.com/Fallenstedt/wasm-react-webpack-template)
+- [Defense in depth: stopping a Wasm compiler bug before it became a problem (2021)](https://www.fastly.com/blog/defense-in-depth-stopping-a-wasm-compiler-bug-before-it-became-a-problem)
+- [WebAssembly Tour](https://github.com/thangchung/webassembly-tour)
+- [WasmEdge](https://github.com/WasmEdge/WasmEdge) - High-performance, extensible, and hardware optimized WebAssembly Virtual Machine for cloud, AI, and blockchain applications. ([Web](https://wasmedge.org/))
+- [webassemblyjs](https://github.com/xtuc/webassemblyjs) - Toolchain for WebAssembly.
+- [wasm-lsp-server](https://github.com/wasm-lsp/wasm-lsp-server) - Language server implementation for WebAssembly.
+- [Making JavaScript run fast on WebAssembly (2021)](https://bytecodealliance.org/articles/making-javascript-run-fast-on-webassembly) ([HN](https://news.ycombinator.com/item?id=27370138))
+- [Exploiting a zero-day WebAssembly Vulnerability in macOS Safari (2021)](https://blog.ret2.io/2021/06/02/pwn2own-2021-jsc-exploit/)
+- [wasmlink](https://github.com/peterhuene/wasmlink) - WebAssembly Module Linker.
+- [An introduction to WebAssembly for JavaScript Developers (2021)](https://pascalpares.appspot.ovh/webassembly-for-javascript-developers/)
+- [wapm](https://wapm.io/) - WebAssembly Package Manager.
+- [wasmi](https://github.com/k-nasa/wasmi) - WASM interpreter written by rust.
+- [First Steps with Web Assembly (WASM) & Rust (2021)](https://www.youtube.com/watch?v=mCpKF0YsfaU)
+- [Wasmer Ruby](https://github.com/wasmerio/wasmer-ruby) - WebAssembly runtime for Ruby. ([Article](https://wasmer.io/posts/wasmer-ruby-embedding-1.0))
+- [WebAssembly for Proxies (Go SDK)](https://github.com/tetratelabs/proxy-wasm-go-sdk)
+- [Extend your Go app with embedded WebAssembly functions in WasmEdge (2021)](https://www.secondstate.io/articles/extend-golang-app-with-webassembly-rust/)
+- [WebAssembly from Scratch: From FizzBuzz to DooM](https://github.com/diekmann/wasm-fizzbuzz) ([HN](https://news.ycombinator.com/item?id=27832115))
+- [WasmEdge for Go Package](https://github.com/second-state/WasmEdge-go)
+- [Using WebAssembly threads from C, C++ and Rust (2021)](https://web.dev/webassembly-threads/) ([HN](https://news.ycombinator.com/item?id=27905555))
+- [Wasp](https://github.com/WebAssembly/wasp) - WebAssembly module decoder in C++.

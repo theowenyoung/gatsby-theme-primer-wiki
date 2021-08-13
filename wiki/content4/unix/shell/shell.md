@@ -1,0 +1,149 @@
+# [Unix Shell](http://en.wikipedia.org/wiki/Unix_shell)
+
+## Variables
+
+All active variables can be seen by running `env`.
+
+- `$HOME` - Expands to the path of my home folder.
+- `$PS1` - Variable that represents my command prompt line.
+- `$PATH` - Special environment variable that contains the command path (list of system directories that the shell searches when trying to locate a command).
+
+## Notes
+
+- Scripts are run in subshells, and nothing is shared "upwards". That's the difference between running a script and sourcing one. A sourced (imported) script is run in your own script's namespace.
+- In shell everything is a string.
+- Children never touch parent environment. It can only if it runs as part of the current process (source, function, alias).
+- Pipes are used to connect one process's output with another process’s input.
+- `/etc/paths.d` define paths to add to `$PATH` globally to all users.
+
+## Links
+
+- [Explain Shell](https://www.explainshell.com/)
+- [Introduction to POSIX Shell](http://drewdevault.com/2018/02/05/Introduction-to-POSIX-shell.html)
+- [Yoshua's notes](https://yoshuawuyts.gitbooks.io/knowledge/content/unix/shell.html)
+- [Shell Auto-completion Systems](http://dundalek.com/entropic/shell-auto-completion/)
+- [Shell and Scripting (2019)](https://hacker-tools.github.io/shell/)
+- [ShellCheck](https://www.shellcheck.net) - Finds bugs in your shell scripts. [Code](https://github.com/koalaman/shellcheck). ([Zine](https://wizardzines.com/comics/shellcheck/))
+- [Rash](https://github.com/willghatch/racket-rash) - The Reckless Racket Shell.
+- [Eternal Terminal](https://github.com/MisterTea/EternalTerminal) - Remote shell that automatically reconnects without interrupting the session.
+- [patat](https://github.com/jaspervdj/patat) - Terminal-based presentations using Pandoc.
+- [What does your shell prompt look like? (2019)](https://lobste.rs/s/x5ioqm/what_does_your_shell_prompt_look_like)
+- [direnv](https://direnv.net/) - Unclutter your .profile. ([Code](https://github.com/direnv/direnv))
+- [mask](https://github.com/jakedeichert/mask) - CLI task runner defined by a simple markdown file.
+- [Purs](https://github.com/xcambar/purs) - Pure-inspired prompt in Rust.
+- [Sampler](https://github.com/sqshq/sampler) - Tool for shell commands execution, visualization and alerting. Configured with a simple YAML file.
+- [Nu Shell](https://github.com/nushell/nushell) - Modern, GitHub-era shell written in Rust. ([HN](https://news.ycombinator.com/item?id=20783006))
+- [Collection of pure POSIX sh alternatives to external processes](https://github.com/dylanaraps/pure-sh-bible)
+- [Lobsters: What does your shell prompt look like? (2019)](https://lobste.rs/s/skoapt/what_does_your_shell_prompt_look_like)
+- [navi](https://github.com/denisidoro/navi) - Interactive cheatsheet tool for the command-line.
+- [Announcing Alacritty, a GPU-accelerated terminal emulator](https://jwilm.io/blog/announcing-alacritty/)
+- [What Is a Shell? (2019)](https://yunchi.dev/posts/what-is-a-shell/)
+- [Lobsters: What shell do you use? (2019)](https://lobste.rs/s/tjjfnz/what_shell_do_you_use)
+- [“Use Dumb Shell, don’t Reinvent the Wheel” (2020)](https://ilya-sher.org/2020/01/04/use-dumb-shell-dont-reinvent-the-wheel/) ([Lobsters](https://lobste.rs/s/b8xanw/use_dumb_shell_don_t_reinvent_wheel))
+- [In search for a better job scheduler](https://beepb00p.xyz/scheduler.html) - What if cron and systemd had a baby? Wouldn't it be beautiful? ([HN](https://news.ycombinator.com/item?id=22087195))
+- [Writing Safe Shell Scripts (2019)](https://sipb.mit.edu/doc/safe-shell/) ([HN](https://news.ycombinator.com/item?id=22212338))
+- [Curl to shell isn’t so bad (2019)](https://www.arp242.net/curl-to-sh.html) ([HN](https://news.ycombinator.com/item?id=21490151))
+- [Partial Tour Through the UNIX Shell](http://www.collyer.net/who/geoff/sh.tour.pdf)
+- [ABS](https://github.com/abs-lang/abs) - Programming language that works best when you're scripting on your terminal.
+- [Wez's Terminal](https://github.com/wez/wezterm) - GPU-accelerated cross-platform terminal emulator and multiplexer written in Rust.
+- [Text processing in the shell (2020)](https://blog.balthazar-rouberol.com/text-processing-in-the-shell) ([HN](https://news.ycombinator.com/item?id=22590824))
+- [Crush](https://github.com/liljencrantz/crush) - Attempt to make a command line shell that is also a powerful modern programming language.
+- [nsh](https://github.com/nuta/nsh) - Command-line shell like fish, but POSIX compatible.
+- [Three Comics For Understanding Unix Shell (2020)](http://www.oilshell.org/blog/2020/04/comics.html)
+- [Oil Shell](http://www.oilshell.org/) - New Unix shell. ([Blog](http://www.oilshell.org/blog/)) ([Idioms](http://www.oilshell.org/preview/doc/idioms.html))
+- [asciinema](https://asciinema.org/) - Web player for terminal session recordings. ([Code](https://github.com/asciinema/asciinema-player))
+- [svg-term-cli](https://github.com/marionebl/svg-term-cli) - Share terminal sessions via SVG and CSS.
+- [Customizing your shell (2020)](https://blog.balthazar-rouberol.com/customizing-your-shell.html) ([HN](https://news.ycombinator.com/item?id=22898577))
+- [tmate](https://tmate.io/) - Instant terminal sharing. ([Code](https://github.com/tmate-io/tmate))
+- [Rich’s sh (POSIX shell) tricks ](http://www.etalabs.net/sh_tricks.html)
+- [Shell productivity tips and tricks (2020)](https://blog.balthazar-rouberol.com/shell-productivity-tips-and-tricks.html) ([HN](https://news.ycombinator.com/item?id=22975437))
+- [Tutorial - Write a Shell in C (2015)](https://brennan.io/2015/01/16/write-a-shell-in-c/) ([Code](https://github.com/brenns10/lsh)) ([HN](https://news.ycombinator.com/item?id=26126010))
+- [DSL for shell scripting (2020)](https://acha.ninja/blog/dsl_for_shell_scripting/) ([Lobsters](https://lobste.rs/s/p6insb/dsl_for_shell_scripting))
+- [Shell Script Compiler](https://github.com/neurobin/shc) - Generic shell script compiler. Shc takes a script, which is specified on the command line and produces C source code.
+- [Shell script template suitable for most software developers](https://github.com/mjambon/reasonable-shell-script)
+- [Chafa](https://github.com/hpjansson/chafa) - Command-line utility that converts all kinds of images, including animated GIFs, into sixel or ANSI/Unicode character output that can be displayed in a terminal.
+- [streamhut](https://github.com/miguelmota/streamhut) - Stream and send data, terminal to web and vice versa.
+- [TermBackTime](https://github.com/termbacktime/termbacktime) - Terminal recording and playback.
+- [shell-functools](https://github.com/sharkdp/shell-functools) - Functional programming tools for the shell.
+- [Hacking with environment variables](https://www.elttam.com/blog/env/) ([HN](https://news.ycombinator.com/item?id=23827486))
+- [CMD.XYZ](https://cmd.xyz/) - GPT3 command creator for Linux.
+- [Alacritty](https://github.com/alacritty/alacritty) - Cross-platform, GPU-accelerated terminal emulator. ([HN](https://news.ycombinator.com/item?id=24016977)) ([Lobsters](https://lobste.rs/s/ab8bfz/alacritty_version_0_5_0))
+- [The Terminal Jockey's Toolbelt (2020)](https://packetlost.dev/the-terminal-jockeys-toolbelt) ([Lobsters](https://lobste.rs/s/8ax6zc/terminal_jockey_s_toolbelt))
+- [asciicast2gif](https://github.com/asciinema/asciicast2gif) - Generate GIF animations from asciicasts (asciinema recordings).
+- [coin](https://github.com/ibara/coin) - Command interpreter for Unix, for learning how shells issue commands.
+- [Overmind](https://github.com/DarthSim/overmind) - Process manager for Procfile-based applications and tmux.
+- [Tunshell](https://github.com/TimeToogo/tunshell) - Remote shell into ephemeral environments behind NAT/firewall. ([HN](https://news.ycombinator.com/item?id=24186410)) ([Web](https://tunshell.com/))
+- [A Better Shell (2019)](https://matklad.github.io/2019/11/16/a-better-shell.html)
+- [What Shell Am I Using?](https://nil.wallyjones.com/what-shell-am-i-using/) ([HN](https://news.ycombinator.com/item?id=24314600))
+- [terminal.sexy](https://terminal.sexy/) - Terminal Color Scheme Designer. ([HN](https://news.ycombinator.com/item?id=24431027))
+- [Shell redirection example (2019)](http://dtrace.org/blogs/dap/2019/09/23/shell-redirection-example/)
+- [Kitty](https://github.com/kovidgoyal/kitty) - Fast, featureful, GPU based terminal emulator. ([Code](https://github.com/kovidgoyal/kitty)) ([HN](https://news.ycombinator.com/item?id=24643008))
+- [Upterm](https://github.com/owenthereal/upterm) - Open-source solution for sharing terminal sessions instantly over the public internet via secure tunnels.
+- [libtmt](https://github.com/deadpixi/libtmt) - Small, simple, useful terminal emulation library.
+- [Syntactic Concepts in the Oil Language](http://www.oilshell.org/preview/doc/syntactic-concepts.html) ([Lobsters](https://lobste.rs/s/txj4um/syntactic_concepts_oil_language))
+- [smash](https://github.com/evmar/smash) - New kind of terminal. ([Docs](http://evmar.github.io/smash/))
+- [webify](https://github.com/beefsack/webify) - Turn shell commands into web services.
+- [waitfor](https://github.com/aeshirey/waitfor) - Shell app for delaying on conditions.
+- [Useful shell prompt (2020)](https://solovyov.net/blog/2020/useful-shell-prompt/) ([Lobsters](https://lobste.rs/s/s5jj3v/useful_shell_prompt))
+- [awk: BEGIN { (2020)](https://jemma.dev/blog/awk-part-1) ([HN](https://news.ycombinator.com/item?id=24940661)) ([Lobsters](https://lobste.rs/s/ntxpzv/awk_begin))
+- [Pretty CSV viewing on the Command Line (2016)](https://www.stefaanlippens.net/pretty-csv.html) ([Lobsters](https://lobste.rs/s/zvallq/pretty_csv_viewing_on_command_line))
+- [Terminals Are Sexy](https://terminalsare.sexy/) - Curated list of Terminal frameworks, plugins & resources for CLI lovers. ([Code](https://github.com/k4m4/terminals-are-sexy))
+- [eDEX-UI](https://github.com/GitSquared/edex-ui) - Fullscreen, cross-platform terminal emulator and system monitor that looks and feels like a sci-fi computer interface.
+- [What is a shell? A TTY? A Terminal?](https://effective-shell.com/docs/part-2-core-skills/11-what-is-a-shell/)
+- [Features of a Modern Terminal Emulator (2020)](https://www.youtube.com/watch?v=9DgQqDnYNyQ) ([Lobsters](https://lobste.rs/s/jfkja1/features_modern_terminal_emulator))
+- [vte](https://github.com/alacritty/vte) - Parser for implementing virtual terminal emulators in Rust.
+- [getoptions](https://github.com/ko1nksm/getoptions) - Elegant option parser for shell scripts (sh, bash and all POSIX shells).
+- [McFly](https://github.com/cantino/mcfly) - Fly through your shell history.
+- [Hull](https://250bpm.com/blog:153/) - Shell where every piece of its state is stored in the filesystem.
+- [Sockets in Your Shell (2020)](https://who23.github.io/2020/12/03/sockets-in-your-shell.html) ([HN](https://news.ycombinator.com/item?id=25287144))
+- [Shellac](https://github.com/geelen/shellac) - Tool to make invoking a series of shell commands safer & better-looking.
+- [Become Shell Literate (2020)](https://drewdevault.com/2020/12/12/Shell-literacy.html) ([HN](https://news.ycombinator.com/item?id=25399058)) ([Lobsters](https://lobste.rs/s/qa2xyd/become_shell_literate))
+- [Ask HN: How do I become a shell god? (2020)](https://news.ycombinator.com/item?id=25403393)
+- [POSIX Shell and Utilities Quick Reference](http://shellhaters.org/)
+- [tab](https://github.com/austinjones/tab-rs) - Intuitive, config-driven terminal multiplexer designed for software & systems engineers.
+- [Waiting for jobs, and the concept of the shell (2020)](https://qmacro.org/autodidactics/2020/12/28/waiting-for-jobs/)
+- [Terminal Recorder](https://github.com/sassman/t-rec-rs) - Fast terminal recorder that generates animated gif images for the web written in rust.
+- [Unix shell pipelines have two usage patterns (2021)](https://utcc.utoronto.ca/~cks/space/blog/unix/ShellPipesTwoUsages) ([Lobsters](https://lobste.rs/s/sfovod/unix_shell_pipelines_have_two_usage))
+- [atom](https://github.com/adam-mcdaniel/atom) - Shell scripting that will knock your socks off.
+- [sh](https://github.com/mvdan/sh) - Shell parser, formatter, and interpreter with bash support; includes shfmt.
+- [Compleat](https://github.com/mbrubeck/compleat) - Generate command-line completions using a simple DSL.
+- [The terminal, the console and the shell - what are they? (2021)](https://www.unixsheikh.com/articles/the-terminal-the-console-and-the-shell-what-are-they.html)
+- [tio](https://github.com/tio/tio) - Simple TTY terminal I/O application. ([Web](https://tio.github.io/))
+- [rwsh](https://github.com/tudurom/rwsh) - UNIX shell based around Structural Regular Expressions and the usam experiment.
+- [Why Create a New Unix Shell? (2021)](http://www.oilshell.org/blog/2021/01/why-a-new-shell.html) ([HN](https://news.ycombinator.com/item?id=25924647))
+- [Next Generation Shell (NGS)](https://github.com/ngs-lang/ngs) - Modern programming language with the focus on systems engineering. ([Web](https://ngs-lang.org/))
+- [Alternative Shells](https://github.com/oilshell/oil/wiki/Alternative-Shells) ([Lobsters](https://lobste.rs/s/bhqflt/alternative_shells))
+- [Run Python Code in a Shell Script (2021)](https://trstringer.com/python-in-shell-script/)
+- [murex](https://github.com/lmorg/murex) - Alternative shell with native support for JSON, YAML, TOML, CSV, etc. ([Web](https://murex.rocks/)) ([HN](https://news.ycombinator.com/item?id=26284294))
+- [Atuin](https://github.com/ellie/atuin) - Manages and synchronizes your shell history.
+- [pimp](https://github.com/aymericbeaumet/pimp) - Give your shell commands superpowers.
+- [Fig](https://github.com/withfig/autocomplete) - Autocomplete for terminals on MacOS. ([Web](https://fig.io/)) ([HN](https://news.ycombinator.com/item?id=27277819))
+- [Elvish Shell](https://elv.sh/) - Expressive programming language and a versatile interactive shell, combined into one seamless package. ([Tour](https://elv.sh/learn/tour.html))
+- [All the characters that work on any terminal and any operating system](https://github.com/ehmicky/cross-platform-terminal-characters)
+- [Improving shell workflows with fzf (2021)](https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/) ([HN](https://news.ycombinator.com/item?id=26634419))
+- [Shell Field Guide](https://raimonster.com/scripting-field-guide/)
+- [Koi language](https://koi-lang.dev/) - Minimalistic language, mainly aimed at shell scripting. ([Code](https://github.com/eliaperantoni/Koi))
+- [What was the point of [ “x$var” = “xval” ]? (2021)](https://www.vidarholen.net/contents/blog/?p=1035) ([HN](https://news.ycombinator.com/item?id=26776956))
+- [The TTY demystified (2008)](http://www.linusakesson.net/programming/tty/index.php) ([HN](https://news.ycombinator.com/item?id=26803109))
+- [Reverse Shell Generator](https://www.revshells.com/) ([Code](https://github.com/0dayCTF/reverse-shell-generator))
+- [Learn GNU AWK](https://learnbyexample.github.io/learn_gnuawk/preface.html)
+- [My Favorite One Liners](https://muhammadraza.me/2021/Oneliners/) ([HN](https://news.ycombinator.com/item?id=27023572))
+- [The Once and Future Shell (2021)](https://angelhof.github.io/files/papers/shell-2021-hotos.pdf)
+- [zx](https://github.com/google/zx) - JavaScript for Shell Scripting. ([Lobsters](https://lobste.rs/s/9yu5sl/after_discussion_here_i_created_lib_for)) ([HN](https://news.ycombinator.com/item?id=27072515)) ([Video](https://www.youtube.com/watch?v=vVP9ekFuqFA))
+- [lazycli](https://github.com/jesseduffield/lazycli) - Turn static CLI commands into TUIs with ease.
+- [Quickly copy the output of the last shell command you ran (2021)](https://ianthehenry.com/posts/tmux-copy-last-command/)
+- [Performance optimizations for the shell prompt (2021)](https://seb.jambor.dev/posts/performance-optimizations-for-the-shell-prompt/)
+- [GoTTY](https://github.com/sorenisanerd/gotty) - Share your terminal as a web application.
+- [TermPair](https://github.com/cs01/termpair) - View and control terminals from your browser with end-to-end encryption.
+- [Unix Shell Programming: The Next 50 Years (2021)](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s06-greenberg.pdf) ([HN](https://news.ycombinator.com/item?id=27378444))
+- [Hilbish](https://github.com/Rosettea/Hilbish) - Interactive Unix-like shell written in Go, with the config and other code written in Lua.
+- [Typed Pipes in Every Shell](http://joeyh.name/blog/entry/typed_pipes_in_every_shell/) ([HN](https://news.ycombinator.com/item?id=27535357))
+- [4 Useful fzf Tricks for Your Terminal (2021)](https://pragmaticpineapple.com/four-useful-fzf-tricks-for-your-terminal/)
+- [How to replace a string with sed in current and recursive subdirectories](https://victoria.dev/blog/how-to-replace-a-string-with-sed-in-current-and-recursive-subdirectories/)
+- [Gufo](https://github.com/Piervit/gufo) - Modern shell language.
+- [Warp](https://www.warp.dev/) - Fast, Rust-based terminal. ([HN](https://news.ycombinator.com/item?id=27835057)) ([Issues](https://github.com/warpdotdev/warp))
+- [How Warp Works (2021)](https://blog.warp.dev/how-warp-works/) ([Lobsters](https://lobste.rs/s/16pj8p/how_warp_works))
+- [TStream](https://github.com/qnkhuat/tstream) - Live streaming from your terminal. ([Web](https://www.tstream.club/))
+- [; echo "Shell Injection" (2021)](https://matklad.github.io//2021/07/30/shell-injection.html) ([Lobsters](https://lobste.rs/s/v0zrtr/echo_shell_injection)) ([HN](https://news.ycombinator.com/item?id=28105100))
+- [Unix Shell: History and Trivia (2021)](https://www.oilshell.org/blog/2021/08/history-trivia.html)
+- [Processing Semi-Structured Data in the Unix Shell (2021)](http://www.weaselhat.com/2021/06/29/processing-semi-structured-data-in-the-unix-shell/)

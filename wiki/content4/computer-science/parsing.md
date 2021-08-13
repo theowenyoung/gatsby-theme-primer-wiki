@@ -1,0 +1,66 @@
+# Parsing
+
+## Links
+
+- [Crowdsourcing the evolution of text parsing with unified (2018)](https://medium.com/unifiedjs/collectively-evolving-through-crowdsourcing-22c359ea95cc)
+- [Angstrom](https://github.com/inhabitedtype/angstrom) - Parser combinators built for speed and memory efficiency.
+- [tree-sitter](https://github.com/tree-sitter/tree-sitter) - Parser generator tool and an incremental parsing library. ([Web](https://tree-sitter.github.io/tree-sitter/)) ([HN](https://news.ycombinator.com/item?id=26225298))
+- [RBNF.jl](https://github.com/thautwarm/RBNF.jl) - DSL for modern parsing.
+- [Parse, don’t validate (2019)](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/) ([Lobsters](https://lobste.rs/s/uemphs/parse_don_t_validate)) ([HN](https://news.ycombinator.com/item?id=21476261)) ([HN](https://news.ycombinator.com/item?id=27639890))
+- [DDL](https://github.com/yeslogic/ddl) - Declarative data definition language for formally specifying binary data formats.
+- [JSON Parser with JavaScript](https://lihautan.com/json-parser-with-javascript/) ([HN](https://news.ycombinator.com/item?id=21772336))
+- [Parsing 18 billion JSON lines with Go (2019)](https://itnext.io/parsing-18-billion-lines-json-with-go-738be6ee5ed2)
+- [Parsing JSON Really Quickly: Lessons Learned (2019)](https://www.youtube.com/watch?v=wlvKAT7SZIQ) ([Article](https://blog.metaobject.com/2020/04/somewhat-less-lethargic-json-support.html))
+- [Functional Parsing - Computerphile (2020)](https://www.youtube.com/watch?v=dDtZLm7HIJs)
+- [Common Expression Language](https://github.com/google/cel-spec) - Implements common semantics for expression evaluation, enabling different applications to more easily interoperate. ([HN](https://news.ycombinator.com/item?id=25377620))
+- [Awesome Unified](https://github.com/unifiedjs/awesome-unified)
+- [Essentials of Interpretation (2020)](http://dmitrysoshnikov.com/courses/essentials-of-interpretation/) ([HN](https://news.ycombinator.com/item?id=22549265))
+- [pest](https://github.com/pest-parser/pest) - General purpose parser written in Rust with a focus on accessibility, correctness, and performance. ([Web](https://pest.rs/))
+- [Simple but Powerful Pratt Parsing (2020)](https://matklad.github.io/2020/04/13/simple-but-powerful-pratt-parsing.html)
+- [Reasoning About Recursive Tree Traversals (2019)](https://arxiv.org/pdf/1910.09521.pdf)
+- [unist](https://github.com/syntax-tree/unist) - Specification for syntax trees.
+- [Essentials of Parsing (2020)](https://www.youtube.com/playlist?list=PLGNbPb3dQJ_6aPNnlBvXGyNMlDtNTqN5I)
+- [Port of Rob Pike's Go lexer to Rust](https://github.com/jackmott/rust-lexer)
+- [nearley](https://github.com/kach/nearley) - Streaming parser with support for catching errors gracefully and providing all parsings for ambiguous grammars.
+- [SwiftSoup](https://github.com/scinfu/SwiftSoup) - Pure Swift HTML Parser, with best of DOM, CSS, and jquery (Supports Linux, iOS, Mac, tvOS, watchOS).
+- [GoGLL](https://github.com/goccmack/gogll) - Generates a GLL parser and FSA-based lexer for any context-free grammar. The generated code is Go or Rust.
+- [How to Write a Lexer in Go (2020)](https://www.aaronraff.dev/blog/how-to-write-a-lexer-in-go)
+- [Spicy](https://github.com/zeek/spicy) - C++ parser generator that makes it easy to create robust parsers for network protocols, file formats, and more.
+- [Don't Panic! Better, Fewer, Syntax Errors for LR Parsers (2020)](https://soft-dev.org/pubs/html/diekmann_tratt__dont_panic/) ([Lobsters](https://lobste.rs/s/pje7ff/don_t_panic_better_fewer_syntax_errors_for)) ([HN](https://news.ycombinator.com/item?id=23850718))
+- [Parsing: a timeline (2014)](http://jeffreykegler.github.io/Ocean-of-Awareness-blog/individual/2014/09/chron.html) ([HN](https://news.ycombinator.com/item?id=8290681))
+- [Which Parsing Approach? (2020)](https://tratt.net/laurie/blog/entries/which_parsing_approach.html) ([Lobsters](https://lobste.rs/s/9pcqys/which_parsing_approach)) ([Reddit](https://www.reddit.com/r/Compilers/comments/it80pu/which_parsing_approach/))
+- [Lark](https://github.com/lark-parser/lark/) - Parsing toolkit for Python, built with a focus on ergonomics, performance and modularity.
+- [Challenging LR Parsing (2020)](https://rust-analyzer.github.io//blog/2020/09/16/challeging-LR-parsing.html) ([HN](https://news.ycombinator.com/item?id=24492675)) ([Lobsters](https://lobste.rs/s/t9oewt/challenging_lr_parsing))
+- [Why I write recursive descent parsers (despite their issues) (2020)](https://utcc.utoronto.ca/~cks/space/blog/programming/WhyRDParsersForMe)
+- [mpc](https://github.com/orangeduck/mpc) - Lightweight and powerful Parser Combinator library for C.
+- [Pure AST based linting sucks (2020)](https://rdambrosio016.github.io/rust/2020/09/18/pure-ast-based-linting-sucks.html)
+- [Awesome binary parsing](https://github.com/dloss/binary-parsing) - List of generic tools for parsing binary data structures, such as file formats, network protocols or bitstreams.
+- [Parsing with Scannerless Earley Virtual Machines (2019)](https://www.bjmc.lu.lv/fileadmin/user_upload/lu_portal/projekti/bjmc/Contents/7_2_01_Saikunas.pdf)
+- [North](https://github.com/tuxmark5/north) - Experimental SEVM (Scannerless Earley Virtual Machine) parser implementation.
+- [Just write the parser](https://tiarkrompf.github.io/notes/?/just-write-the-parser/) - Whirlwind tour of writing parsers by hand. ([HN](https://news.ycombinator.com/item?id=24837898))
+- [Parsing Algorithms course](http://dmitrysoshnikov.com/courses/parsing-algorithms/) ([HN](https://news.ycombinator.com/item?id=24898210)) ([Code](https://github.com/DmitrySoshnikov/letter-source))
+- [Intro to Parsing with Parsec in Haskell](https://github.com/JakeWheat/intro_to_parsing) - Demonstrates the basics of Parsec and goes on to build a SQL query parser.
+- [Parser Generator DSLs (2020)](https://kitten.sh/parser-generator-dsl)
+- [AST Explorer](https://astexplorer.net/) - Web tool to explore the ASTs generated by various parsers. ([Code](https://github.com/fkling/astexplorer))
+- [Lezer](https://lezer.codemirror.net/) - Incremental GLR parser intended for use in an editor or similar system, which needs to keep a representation of the program current during changes and in the face of syntax errors. ([GitHub](https://github.com/lezer-parser)) ([Code](https://github.com/lezer-parser/lezer))
+- [GraphRedex](https://github.com/TOPLLab/GraphRedex) - Open-source tool that empowers language designers to interactively explore their reduction graphs.
+- [Parsimmon](https://github.com/jneen/parsimmon) - Small library for writing big parsers made up of lots of little parsers.
+- [Inline caching: quickening (2021)](https://bernsteinbear.com/blog/inline-caching-quickening/) ([HN](https://news.ycombinator.com/item?id=26054573))
+- [Earley Parser (2021)](https://rahul.gopinath.org/post/2021/02/06/earley-parsing/) ([Lobsters](https://lobste.rs/s/gadd2l/earley_parser))
+- [awesome syntax-tree](https://github.com/syntax-tree/awesome-syntax-tree) - Curated list of awesome syntax-tree, unist, hast, xast, mdast, nlcst resources.
+- [Top-Down Parsing with Parsing Contexts -- A simple approach to context sensitive parsing (2014)](https://lobste.rs/s/l6yieh/top_down_parsing_with_parsing_contexts)
+- [Applicative parsing (2019)](https://jobjo.github.io/2019/05/19/applicative-parsing.html)
+- [Parser Combinators From Scratch (2020)](https://www.youtube.com/watch?v=6oQLRhw5Ah0&list=PLP29wDx6QmW5yfO1LAgO8kU3aQEj8SIrU) ([Code](https://github.com/LowLevelJavaScript/Parser-Combinators-From-Scratch))
+- [Ohm](https://ohmlang.github.io/) - Parser generator consisting of a library and a domain-specific language. ([Code](https://github.com/harc/ohm)) ([HN](https://news.ycombinator.com/item?id=26603393))
+- [Pika parsing: reformulating packrat parsing as a dynamic programming algorithm solves the left recursion and error recovery problems (2020)](https://arxiv.org/pdf/2005.06444.pdf)
+- [Sparser](https://github.com/Unibeautify/sparser) - Framework of various language parsers. ([Web](https://sparser.io/))
+- [Parsers all the way down: writing a self-hosting parser (2021)](https://drewdevault.com/2021/04/22/Our-self-hosted-parser-design.html)
+- [Canopy](https://github.com/jcoglan/canopy) - Parser compiler for Java, JavaScript, Python, Ruby. ([Docs](http://canopy.jcoglan.com/))
+- [Principled Procedural Parsing (2019)](https://norswap.com/pubs/thesis.pdf)
+- [Parsix](https://github.com/parsix/parsix) - Parse, don't validate. ([HN](https://news.ycombinator.com/item?id=27166162))
+- [parsegen](https://github.com/osa1/parsegen) - LR parser generator, similar to happy, ocamlyacc, and lalrpop.
+- [TextMapper](https://github.com/inspirer/textmapper) - Lexer and Parser generator. ([Web](https://textmapper.org/))
+- [Waxeye Parser Generator](https://github.com/waxeye-org/waxeye) - Parser generator based on parsing expression grammars (PEGs).
+- [rust-peg](https://github.com/kevinmehall/rust-peg) - Parsing Expression Grammar (PEG) parser generator for Rust.
+- [Rust - Writing Parsers With nom Parser Combinator Framework (2021)](https://iximiuz.com/en/posts/rust-writing-parsers-with-nom/)
+- [GrammKit](https://github.com/dundalek/GrammKit) - Tool for generating syntax diagrams (also known as railroad diagrams) for parser grammars.

@@ -1,0 +1,89 @@
+# Color
+
+## Nice gradients
+
+- [1](https://components.ai/gradient/ZkZ7AP11YnaNf2SuDTt6?tab=editor)
+- [2](https://components.ai/gradient/p1DA8pSJI7vVfAeFkgXU?tab=editor)
+
+## Links
+
+- [Color Hunt](http://colorhunt.co/)
+- [Handpicked list of 18181 unique color names from various sources and thousands of user submissions](https://github.com/meodai/color-names)
+- [Colormind](http://colormind.io/) - Color scheme generator that uses deep learning.
+- [Building Your Color Palette](https://refactoringui.com/previews/building-your-color-palette/) ([HN](https://news.ycombinator.com/item?id=25180180))
+- [Cloudflare Design](https://cloudflare.design/color/) - Preview palettes against UI elements.
+- [pastel](https://github.com/sharkdp/pastel) - Command-line tool to generate, analyze, convert and manipulate colors.
+- [Image Color Picker](https://image-color.com) - Image color picker and palette generator.
+- [Contrast](https://usecontrast.com/) - MacOS app for quick access to WCAG color contrast ratios.
+- [Sip](https://sipapp.io/) - Better way to collect, organize & share your colors.
+- [Designing accessible color systems (2019)](https://stripe.com/gb/blog/accessible-color-systems)
+- [SRCERY](https://srcery-colors.github.io/) - Dark color scheme.
+- [Who can use this color combination?](https://whocanuse.com/)
+- [Happy Hues](https://www.happyhues.co/) - Color palette inspiration site that acts as a real world example as to how the colors could be used in your design projects. ([Nice palette](https://www.happyhues.co/palettes/15))
+- [The Hitchhiker's Guide to Digital Color](https://hg2dc.com/) - Light-hearted introduction to understanding digital color reproduction.
+- [Brown; color is weird (2020)](https://www.youtube.com/watch?v=wh4aWZRtTwU) ([HN](https://news.ycombinator.com/item?id=22324298))
+- [The Weird World in RGB (2019)](https://www.youtube.com/watch?v=uYbdx4I7STg)
+- [Pywal](https://github.com/dylanaraps/pywal) - Tool that generates a color palette from the dominant colors in an image.
+- [HSLuv, a developer friendly perceptual color space (2020)](https://www.kuon.ch/post/2020-03-08-hsluv/)
+- [HSLuv](https://www.hsluv.org/) - Human-friendly HSL. ([Code](https://github.com/hsluv/hsluv))
+- [colors.lol](https://colors.lol/) - Overly descriptive color palettes. ([Code](https://github.com/adamfuhrer/colors.lol))
+- [Color gradient generator](https://mybrandnewlogo.com/color-gradient-generator)
+- [Not Another Gradient Generator](https://doodad.dev/gradient-generator/) - Create complex, layered color gradients as CSS, SVG, or Raster Images.
+- [Building dark mode on Stack Overflow (2020)](https://stackoverflow.blog/2020/03/31/building-dark-mode-on-stack-overflow/) ([HN](https://news.ycombinator.com/item?id=22776651))
+- [Duo](https://duo.alexpate.uk/) - Collection of color combinations that I've curated from personal projects or that I've come across on the web. ([HN](https://news.ycombinator.com/item?id=22801661))
+- [color-scheme.js](http://c0bra.github.io/color-scheme-js/) - Generate nice, pretty color schemes with JavaScript. ([Code](https://github.com/c0bra/color-scheme-js))
+- [Themer](https://themer.dev/) - Takes a set of colors and generates themes for your development environment (editors, terminals, wallpapers, and more). ([Code](https://github.com/mjswensen/themer))
+- [Color Names](https://colornames.org/) - Collaborative effort to name every color in the RGB/web space. ([HN](https://news.ycombinator.com/item?id=22852646))
+- [Chromotome](https://kgolid.github.io/chromotome-site/) - Collection of color palettes saved for personal use. ([Code](https://github.com/kgolid/chromotome))
+- [Research links on color theory (2020)](https://twitter.com/mattdesl/status/1260341933551104000)
+- [A short history of color theory](https://programmingdesignsystems.com/color/a-short-history-of-color-theory/index.html)
+- [35+ white paint colors that top designers swear by](https://www.elledecor.com/design-decorate/color/advice/a3448/the-right-white-a-70889/)
+- [Scale](https://hihayk.github.io/scale/) - Generative way to create color scales. ([Code](https://github.com/hihayk/scale))
+- [Sanzo Wada](https://sanzo-wada.dmbk.io/) - Dictionary of Color Combinations. ([Code](https://github.com/dblodorn/sanzo-wada))
+- [Palettes from A Dictionary of Colour Combinations](https://github.com/mattdesl/dictionary-of-colour-combinations)
+- [Color Copy Paste](https://colorcopypaste.app/) - Copy & paste colour directly from your camera to Figma/Sketch/Chrome. ([Code](https://github.com/sonnylazuardi/color-copy-paste))
+- [Perceptually Smooth Multi-Color Linear Gradients (2020)](https://observablehq.com/@mattdesl/perceptually-smooth-multi-color-linear-gradients)
+- [Piggment](https://piggment.co/) - The gradient you have always wanted.
+- [Material Design Palette Generator](https://materialpalettes.com/) ([Code](https://github.com/edelstone/material-palette-generator))
+- [Colour Theory On 80 Display Boards (1944)](http://blog.presentandcorrect.com/colour-theory-on-80-display-boards-1944)
+- [Color Palette Generator](https://palettegenerator.colorion.co/)
+- [Coolors](https://coolors.co/) - Super fast color schemes generator.
+- [atcq](https://github.com/mattdesl/atcq) - Implementation of Ant-Tree Color Quantization (ATCQ), described by Pérez-Delgado in various papers.
+- [Color contrast checker, analyser and color suggestions](https://polypane.app/color-contrast/)
+- [Adobe Color](https://color.adobe.com/create/color-wheel) - Color wheel, a color palette generator.
+- [iroiro](https://github.com/antfu/iroiro) - Beautiful Colors Lookup in CLI.
+- [consistent-shading](https://github.com/ugudango/consistent-shading) - Shade consitency for various hues, based on luminance.
+- [Sorted CSS Colors](https://enes.in/sorted-colors/) - Sort the named CSS colors in a way that it shows related colors together. ([Code](https://github.com/scriptype/sorted-colors))
+- [Cascading Colors](https://cascading-colors.netlify.app/) - Generate dynamic and themable color palettes using CSS custom properties, and allow (persistent) user-adjustments with a bit of light-weight JS. ([Code](https://github.com/oddbird/cascading-color-system))
+- [Basic Color Science For Graphics Engineer (2018)](https://agraphicsguynotes.com/posts/basic_color_science_for_graphcis_engineer/)
+- [Bjango Color Creator Templates](https://github.com/bjango/Color-Creator) - Photoshop, Sketch and Affinity Designer documents that use base colors to generate larger palettes.
+- [Palettte App](https://palettte.app/) ([Explanation](https://gabrieladorf.com/palettteapp/))
+- [Reasoning about colors (2020)](https://notes.neeasade.net/color-spaces.html) ([Lobsters](https://lobste.rs/s/ezppla/reasoning_about_colors))
+- [How do humans perceive color? (2020)](https://www.wired.com/story/a-new-study-about-color-tries-to-decode-the-brains-pantone/)
+- [Random Color Cycler](https://farbvelo.elastiq.ch/) ([Code](https://github.com/meodai/farbvelo))
+- [Colorable](https://colorable.jxnblk.com/) - Color combination contrast tester. ([Code](https://github.com/jxnblk/colorable))
+- [How software gets color wrong (2020)](https://bottosson.github.io/posts/colorwrong/)
+- [Random color generator for JavaScript](https://randomcolor.lllllllllllllllll.com/) ([Code](https://github.com/davidmerfield/randomColor))
+- [Practical Color Theory for People Who Code (2016)](http://tallys.github.io/color-theory/)
+- [Color Craft & Counterpoint: A Designer’s Life with Color Vision Deficiency (2020)](https://alistapart.com/article/a-designers-life-with-color-vision-deficiency/)
+- [Conic.css](https://conic.style/) - Nice, simple conic gradients. ([Code](https://github.com/argyleink/conic.css))
+- [HSL: a color format for humans (2021)](https://cloudfour.com/thinks/hsl-a-color-format-for-humans/)
+- [Mesh](https://meshgradient.com/) - Create beautiful mesh gradients.
+- [Poulette](https://github.com/grgrdvrt/poulette) - Color Palette GUI. ([Demo](https://www.grgrdvrt.com/poulette-demo/)) ([HN](https://news.ycombinator.com/item?id=26632653))
+- [Colord](https://github.com/omgovich/colord) - Tiny yet powerful tool for high-performance color manipulations and conversions.
+- [A Guide to Color from 1692](https://www.openculture.com/2021/04/a-900-page-pre-pantone-guide-to-color-from-1692-a-complete-high-resolution-digital-scan.html) ([HN](https://news.ycombinator.com/item?id=26755839))
+- [Paletter](https://www.paletter.app/) - Create professional color palettes. ([HN](https://news.ycombinator.com/item?id=26956105))
+- [culori](https://github.com/Evercoder/culori) - Comprehensive color library for JavaScript. ([Web](https://culorijs.org/))
+- [Mindfully curated color palettes](https://access.mymind.com/colors) - Collection of unique color combinations for your design projects.
+- [Towards richer colors on the Web (2021)](https://darker.ink/writings/Towards-richer-colors-on-the-Web) ([HN](https://news.ycombinator.com/item?id=27709788))
+- [Radix Colors](https://github.com/radix-ui/colors) - Gorgeous, accessible color system. ([Web](https://www.radix-ui.com/colors))
+- [Cone](https://cone.app/) - Live Color Picker.
+- [100 Mesh Gradients](https://www.meshgradients.design/) - Make your website beautiful with mesh gradients.
+- [Using HSL Colors In CSS (2021)](https://www.smashingmagazine.com/2021/07/hsl-colors-css/)
+- [How to make nice gradients in CSS](https://twitter.com/notwaldorf/status/1407102532992655361)
+- [Why we're blind to the color blue](https://calebkruse.com/10-projects/seeing-blue/) ([HN](https://news.ycombinator.com/item?id=27858630))
+- [How WCAG color contrast ratio works (2021)](https://twitter.com/DanHollick/status/1417895151003865090)
+- [colorful gradients](https://colorfulgradients.tumblr.com/) - Gradients automatically created by a computer.
+- [Accessible Colors](https://accessible-colors.com/) - Automatically find the closest accessible color combination. ([Code](https://github.com/moroshko/accessible-colors))
+- [ColorBox](https://colorbox.io/)
+- [color-algorithm](https://github.com/k-vyn/coloralgorithm) - JavaScript function for producing color sets. Used to build Lyft's color system (Spectrum) and power ColorBox.

@@ -6,7 +6,7 @@
     "release": "changeset publish",
     "build": "npm -w wiki run build",
     "serve": "npm -w wiki run serve",
-    "test": "npm -ws run test"
+    "test": "npm -ws run test -- --passWithNoTests"
   },
   "workspaces": [
     "theme",

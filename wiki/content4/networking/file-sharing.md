@@ -1,0 +1,76 @@
+# File sharing
+
+## Links
+
+- [Firefox Send](https://github.com/mozilla/send) - File sharing experiment which allows you to send encrypted files to other users. ([HN](https://news.ycombinator.com/item?id=19367850))
+- [ffsend](https://github.com/timvisee/ffsend) - Easily and securely share files from the command line. A fully featured Firefox Send client.
+- [Transfer.sh](https://transfer.sh/) - Easy file sharing from the command line or web. ([HN](https://news.ycombinator.com/item?id=27739991))
+- [Syncthing](https://github.com/syncthing/syncthing) - Open Source Continuous File Synchronization. ([Web](https://syncthing.net/)) ([HN](https://news.ycombinator.com/item?id=27149002)) ([HN](https://news.ycombinator.com/item?id=27929194))
+- [OnionShare](https://github.com/micahflee/onionshare) - Securely and anonymously send and receive files, and publish onion sites.
+- [Dropbox Transfer](https://www.dropbox.com/transfer)
+- [bita](https://github.com/oll3/bita) - Differential file synchronization over http.
+- [Filestash](https://github.com/mickael-kerjean/filestash) - Modern web client for SFTP, S3, FTP, WebDAV, Git, Minio, LDAP, CalDAV, CardDAV, Mysql, Backblaze.
+- [Seafile](https://github.com/haiwen/seafile) - Open source cloud storage system with privacy protection and teamwork features. ([Web](https://www.seafile.com/en/home/))
+- [Perkeep](https://github.com/perkeep/perkeep) - Personal storage system for life: a way of storing, syncing, sharing, modelling and backing up content.
+- [mc](https://github.com/minio/mc) - MinIO Client is a replacement for ls, cp, mkdir, diff and rsync commands for filesystems and object storage.
+- [CryFS](https://github.com/cryfs/cryfs) - Cryptographic filesystem for the cloud.
+- [gocat](https://github.com/sumup-oss/gocat) - 21st century, multi-purpose relay from source to destination.
+- [Fast.io](https://fast.io/) - Host anything (PDFs, video, zips, images, etc.) with direct links on a super-fast global network. ([HN](https://news.ycombinator.com/item?id=21589213))
+- [Static FileZ](https://github.com/killercup/static-filez) - Build compressed archives for static files and serve them over HTTP.
+- [qrcp](https://github.com/claudiodangelis/qrcp) - Transfer files over wifi from your computer to your mobile device by scanning a QR code without leaving the terminal. ([HN](https://news.ycombinator.com/item?id=22914789))
+- [0x0.st](https://0x0.st/) - No-bullshit file hosting and URL shortening service. ([Code](https://github.com/mia-0/0x0))
+- [Librevault](https://github.com/librevault/librevault) - Open-source peer-to-peer file synchronization program, designed with convenience and privacy in mind.
+- [Flying Carpet](https://github.com/spieglt/FlyingCarpet) - Wireless, encrypted file transfer over automatically configured ad hoc networking.
+- [shoop](https://github.com/mcginty/shoop) - High-speed encrypted file transfer tool reminiscent of scp.
+- [Airshare](https://github.com/kurolabs/airshare) - Cross-platform content sharing in a local network.
+- [ShareDrop](https://www.sharedrop.io/) - Easy P2P file transfer powered by WebRTC - inspired by Apple AirDrop. ([Code](https://github.com/cowbell/sharedrop))
+- [Syncthing is everything I used to love about computers (2020)](https://tonsky.me/blog/syncthing/) ([Lobsters](https://lobste.rs/s/4ucmcp/computers_as_i_used_love_them)) ([HN](https://news.ycombinator.com/item?id=23537243))
+- [Perkeep](https://perkeep.org/) - Lets you permanently keep your stuff, for life. ([HN](https://news.ycombinator.com/item?id=23676350))
+- [HN: Discussing Dropbox (2020)](https://news.ycombinator.com/item?id=23787446)
+- [SCP user's migration guide to rsync (2020)](https://fedoramagazine.org/scp-users-migration-guide-to-rsync/) ([Lobsters](https://lobste.rs/s/uupfif/scp_user_s_migration_guide_rsync))
+- [Broccoli: Syncing faster by syncing less (2020)](https://dropbox.tech/infrastructure/-broccoli--syncing-faster-by-syncing-less)
+- [Ask HN: What is your favorite method of sending large files? (2020)](https://news.ycombinator.com/item?id=24351111)
+- [Data Transfer Project](https://github.com/google/data-transfer-project) - Makes it easy for people to transfer their data between online services. ([Web](https://datatransferproject.dev/))
+- [File Transfer with SSH, Tee, and Base64 (2019)](https://susam.in/blog/file-transfer-with-ssh-tee-and-base64/) -
+- [Tardigrade](https://tardigrade.io/) - Decentralized Cloud Object Storage.
+- [croc](https://github.com/schollz/croc) - Easily and securely send things from one computer to another. ([HN](https://news.ycombinator.com/item?id=24503077))
+- [wave-share](https://github.com/ggerganov/wave-share) - Serverless, peer-to-peer, local file sharing through sound. ([HN](https://news.ycombinator.com/item?id=24586390))
+- [JustBeamIt](https://justbeamit.com/) - File transfer made easy. ([CLI](https://github.com/justbeamit/beam))
+- [Magic Wormhole](https://github.com/magic-wormhole/magic-wormhole) - Get things from one computer to another, safely.
+- [Send Anywhere](https://send-anywhere.com/) - File transfer.
+- [FileRoom](https://fileroom.io) - Browser File Transfer. Send files to anyone on the same WiFi or network that's on fileroom.io.
+- [wormhole-william](https://github.com/psanford/wormhole-william) - End-to-end encrypted file transfer. A magic wormhole CLI and API in Go.
+- [Global Socket](https://github.com/hackerschoice/gsocket) - Moving data from here to there. Securely, Fast and trough NAT/Firewalls.
+- [Warp](https://github.com/minio/warp) - S3 benchmarking tool.
+- [smart_open](https://github.com/RaRe-Technologies/smart_open) - Python 3 library for efficient streaming of very large files from/to storages such as S3, GCS, Azure Blob Storage, HDFS, WebHDFS, HTTP, HTTPS, SFTP, or local filesystem.
+- [FilePizza](https://file.pizza/) - Peer-to-peer file transfers in your browser. ([Code](https://github.com/kern/filepizza))
+- [tus](https://tus.io/) - Resumable file uploads. ([GitHub](https://github.com/tus))
+- [Hyp](https://github.com/hypercore-protocol/cli/) - CLI for peer-to-peer file sharing (and more) using the Hypercore Protocol. ([Demo](https://www.youtube.com/watch?v=SVk1uIQxOO8))
+- [Snapdrop](https://snapdrop.net/) - Local file sharing in your browser. Inspired by Apple's Airdrop. ([Code](https://github.com/RobinLinus/snapdrop))
+- [Shary](https://github.com/wilk/shary) - Share your files effortlessly with QRCodes.
+- [myDrive](https://github.com/subnub/myDrive) - Node.js and mongoDB Google Drive Clone.
+- [WebDrop](https://webdrop.space/#/) - Group P2P File & Message transfer in browser with WebRTC. ([Code](https://github.com/subins2000/WebDrop))
+- [Juicesync](https://github.com/juicedata/juicesync) - Tool to move your data between any clouds or regions.
+- [goploader](https://github.com/Depado/goploader) - Easy file sharing with server-side encryption, curl/httpie/wget compliant.
+- [ownCloud Infinite Scale](https://github.com/owncloud/ocis) - Modern file-sync and share platform. ([Docs](https://owncloud.github.io/ocis/))
+- [Nextcloud](https://nextcloud.com/) - On-premises file share and collaboration platform. ([Server Code](https://github.com/nextcloud/server))
+- [S3P - Massively Parallel S3 Copying (2021)](https://www.genui.com/open-source/s3p-massively-parallel-s3-copying)
+- [filite](https://github.com/raftario/filite) - Simple, light and standalone pastebin, URL shortener and file-sharing service.
+- [Sync](https://www.sync.com/) - Secure Cloud Storage.
+- [Pydio](https://pydio.com/) - Enterprise File Sharing & Sync Platform. ([Code](https://github.com/pydio/cells))
+- [Cacheroach](https://github.com/bobvawter/cacheroach) - Multi-tenant, multi-region, multi-cloud file store built using CockroachDB.
+- [Teleport](https://goteleport.com/) - Access Computing Resources Anywhere. ([Code](https://github.com/gravitational/teleport))
+- [ownCloud](https://owncloud.com/) - Share files and folders, easy and secure. ([Code](https://github.com/owncloud/core))
+- [Wormhole](https://wormhole.app/) - Simple, private file sharing. ([HN](https://news.ycombinator.com/item?id=26666142))
+- [SkyTransfer](https://skytransfer.hns.siasky.net/#/) - Free, Open-Source, Decentralized and Encrypted File-Sharing. ([Code](https://github.com/kamy22/skytransfer)) ([HN](https://news.ycombinator.com/item?id=27017805))
+- [Sending Files with Taildrop (2021)](https://tailscale.com/blog/sending-files-with-taildrop/)
+- [Powergate](https://github.com/textileio/powergate) - Multitiered file storage API built on Filecoin and IPFS.
+- [Tresorit Send](https://send.tresorit.com/) - Send Big Files up to 5GB Securely.
+- [Send](https://send.vis.ee/) - Encrypt and send files with a link that automatically expires to ensure your important documents don't stay online forever.
+- [Triox](https://github.com/AaronErhardt/Triox) - Free file hosting server that focuses on speed, reliability and security.
+- [portal](https://github.com/jackyzha0/portal) - Zero-config peer-to-peer encrypted live folder syncing tool that respects your .gitignore.
+- [sfz](https://github.com/weihanglo/sfz) - Simple static file serving command-line tool written in Rust.
+- [Streamwo](https://streamwo.com/) - Simple video hosting & sharing.
+- [Estuary](https://estuary.tech/) - Use any browser and our API to store public data on the Filecoin Network and retrieve it from anywhere, anytime.
+- [S3Sync](https://github.com/larrabee/s3sync) - Really fast sync tool for S3.
+- [osm](https://github.com/appscode/osm) - Object Store Manipulator - curl for cloud storage.

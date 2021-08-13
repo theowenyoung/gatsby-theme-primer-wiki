@@ -45,13 +45,8 @@ function Layout({children, fields, frontmatter, tableOfContents, pageContext}) {
               <Box display="flex" sx={{alignItems: 'center'}}>
                 <Heading as="h1" mr={2}>
                   {title}
-                </Heading>{' '}
+                </Heading>
               </Box>
-              {description ? (
-                <Box pb={2} sx={{fontSize: 3}}>
-                  {description}
-                </Box>
-              ) : null}
             </Box>
             {tableOfContents.items ? (
               <Box

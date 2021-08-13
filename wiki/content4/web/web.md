@@ -1,0 +1,295 @@
+# Web
+
+The Internet is genuinely one of the best things to come out of 20th century. It has so many implications for the future and can solve so many of the world's problems, it is exciting.
+
+## Notes
+
+- Amazing thing about the web is the fact that clients (browsers) and servers can interact in complex ways without the client knowing anything beforehand about the server and the resources it hosts.
+- [I often grab local versions of sites to experiment and learn from. You can get a site's html and all of the page's dependencies with a single wget command: `wget -H -E -k -p SOMEURL`](https://twitter.com/philhawksworth/status/1214942635300982785)
+- [Tips for keeping track of maintaining many websites as a solo-founder: 1: Re-use same architecture across all products. 2: Set up notifications for when things break. 3: Make it easy for customers to reach me. 4: Don't rely on dashboards. I'll forget to check them.](https://twitter.com/marckohlbrugge/status/1408056727057039369)
+
+## Links
+
+- [Everything easy is hard again](https://frankchimero.com/writing/everything-easy-is-hard-again/)
+- [FreeCodeCamp Map](https://www.freecodecamp.org/map)
+- [Ask HN: What's your favorite way of getting a web app up quickly in 2018?](https://news.ycombinator.com/item?id=17217210)
+- [RealWorld](https://github.com/gothinkster/realworld) - Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more.
+- [Internetting is hard](https://internetingishard.com/) - Friendly web development tutorials for complete beginners.
+- [devd](https://github.com/cortesi/devd) - Local webserver for developers.
+- [Lwan Web Server](https://github.com/lpereira/lwan) - Experimental, scalable, high performance HTTP server.
+- [NetData](http://my-netdata.io/) - System for distributed real-time performance and health monitoring.
+- [Razzle](https://github.com/jaredpalmer/razzle) - Create server-rendered universal JavaScript applications with no configuration.
+- [Ask HN: Where can one learn about the history of the internet and the protocols?](https://news.ycombinator.com/item?id=17607095)
+- [Squoosh](https://github.com/GoogleChromeLabs/squoosh) - Make images smaller using best-in-class codecs, right in the browser.
+- [Making dev.to Incredibly fast](https://dev.to/ben/making-devto-insanely-fast)
+- [The Most Annoying Website - Feross Aboukhadijeh (2018)](https://www.youtube.com/watch?v=QFZ-pwErSl4) ([Code](https://github.com/feross/TheAnnoyingSite.com))
+- [What, exactly, is the DOM? (2018)](https://bitsofco.de/what-exactly-is-the-dom/)
+- [web.dev](https://web.dev/) - Explore structured curriculums that include both guides and hands-on codelabs. [Code](https://github.com/GoogleChrome/web.dev).
+- [Ask HN: Go-to web stack today? (2019)](https://news.ycombinator.com/item?id=18829557)
+- [Google's Long March (2019)](https://doriantaylor.com/googles-long-march)
+- [instant.page](https://github.com/instantpage/instant.page) - Uses just-in-time preloading — it preloads a page right before a user clicks on it.
+- [UI Elements](https://github.com/GoogleChromeLabs/ui-element-samples) - Collection of UI element samples written with vanilla web platform features.
+- [gotify/server](https://github.com/gotify/server) - Simple server for sending and receiving messages in real-time per web socket.
+- [Sizzy](https://github.com/kitze/sizzy) - Tool for testing responsive websites crazy-fast.
+- [Awesome Stacks](https://github.com/stackshareio/awesome-stacks) - Curated list of tech stacks for building different applications & features.
+- [Build Tracker](https://github.com/paularmstrong/build-tracker) - Set of tools to track the size of your build artifacts over time.
+- [monolith](https://github.com/Y2Z/monolith) - Save HTML pages with ease. ([HN](https://news.ycombinator.com/item?id=20774322))
+- [Watch Netlify's CEO code a Sudoku app from scratch in a bar on a Saturday night (2019)](https://www.youtube.com/watch?v=GytUZLK4kwA)
+- [static.fun](https://github.com/vercel/static-fun) - Fun demo for wildcard domains.
+- [W3C on GitHub](https://github.com/w3c/) - Resources useful when working on W3C projects using GitHub.
+- [Deep Dive Into Modern Web Development (2019)](https://fullstackopen.com/en/)
+- [urlwatch](https://github.com/thp/urlwatch) - Monitors webpages for you.
+- [Fly-through guide to web development best practices (2017)](https://slides.com/seldo/stuff-everybody-knows-2019-04/#/)
+- [My list of over 600 web development feeds](https://webplatform.news/issues/2018-10-31)
+- [Gumroad v1](https://github.com/gumroad/gumroad-v1) - MVP of Gumroad written in Python and runs on App Engine.
+- [Mint](https://github.com/mint-lang/mint) - Refreshing programming language for the front-end web.
+- [Various books on web tech](https://flaviocopes.com/page/ebooks-links/)
+- [Lite YouTube Embed](https://github.com/paulirish/lite-youtube-embed) - Provide videos with a supercharged focus on visual performance.
+- [Hands-on with Portals: seamless navigation on the Web (2019)](https://web.dev/hands-on-portals/)
+- [Nx](https://github.com/nrwl/nx) - Extensible Dev Tools for Monorepos.
+- [Web Platform Course](https://webplatformcourse.com/7XoqGASUulHqaQUWuqXR/)
+- [Principles for making things for the web](https://github.com/veltman/principles)
+- [Cloudflare Learning Center](https://www.cloudflare.com/learning/) - Resources on Cyber-Security and How the Internet Works From Cloudflare.
+- [Building and deploying modern websites and apps - GitHub Universe 2019](https://www.youtube.com/watch?v=KlO5Ksk7baQ)
+- [This Page is Designed to Last (2019)](https://jeffhuang.com/designed_to_last/) ([HN](https://news.ycombinator.com/item?id=21840140)) ([Lobsters](https://lobste.rs/s/xltmol/this_page_is_designed_last))
+- [Web development, illustrated](https://illustrated.dev/)
+- [HN: The Old Internet Died and We Watched and Did Nothing (2019)](https://news.ycombinator.com/item?id=21921323)
+- [Personal sites are awesome](https://personalsit.es/) - Little directory of people's personal sites. ([Code](https://github.com/xdesro/personalsit.es))
+- [Ask HN: How do you manage your bookmarks? (2020)](https://news.ycombinator.com/item?id=22105561)
+- [Timeless Web Dev Articles (2020)](https://css-tricks.com/timeless-web-dev-articles/)
+- [Whatever Happened to the Semantic Web? (2018)](https://twobithistory.org/2018/05/27/semantic-web.html) ([HN](https://news.ycombinator.com/item?id=18023408))
+- [berserk](https://github.com/jackdoe/berserk) - Personal website + shell.
+- [Web packaging format](https://github.com/WICG/webpackage)
+- [7 Principles of Rich Web Applications (2014)](https://rauchg.com/2014/7-principles-of-rich-web-applications)
+- [Web Skills](https://andreasbm.github.io/web-skills/) ([Code](https://github.com/andreasbm/web-skills))
+- [Do We Really Need a Web API? (2019)](https://liaison.dev/blog/articles/Do-We-Really-Need-A-Web-API-yq12wz) ([HN](https://news.ycombinator.com/item?id=21638809))
+- [Roadmap to becoming a web developer](https://github.com/kamranahmedse/developer-roadmap)
+- [Free resources for learning Full Stack Web Development](https://github.com/bmorelli25/Become-A-Full-Stack-Web-Developer)
+- [Mastery Games](https://mastery.games/) - All-new platform for leveling up your coding skills.
+- [Cargo](https://cargo.site/) - Build a site off a template.
+- [How to get started with web development (2020)](https://gomakethings.com/how-to-get-started-with-web-development/)
+- [Archiving URLs](https://www.gwern.net/Archiving-URLs)
+- [Main-thread Scheduling API](https://github.com/WICG/main-thread-scheduling)
+- [The Open Web Is Dying (2020)](https://perezbox.com/2020/04/the-open-web-is-dying/) ([HN](https://news.ycombinator.com/item?id=23026998))
+- [Snowpack](https://www.snowpack.dev/) - WASM-powered frontend build tool. Fast, lightweight, unbundled ESM. ([Code](https://github.com/snowpackjs/snowpack)) ([Create Snowpack App](https://github.com/pikapkg/create-snowpack-app))
+- [Rebuilding our tech stack for the new Facebook.com (2020)](https://engineering.fb.com/web/facebook-redesign/) ([HN](https://news.ycombinator.com/item?id=23116300))
+- [Lobsters: If you were to choose a backend web framework today, what would you choose? (2020)](https://lobste.rs/s/2bsh1g/if_you_were_choose_backend_web_framework)
+- [Wayback Machine Downloader](https://github.com/hartator/wayback-machine-downloader) - Download an entire website from the Internet Archive Wayback Machine.
+- [Second-guessing the modern web (2020)](https://macwright.com/2020/05/10/spa-fatigue.html) ([HN](https://news.ycombinator.com/item?id=23136688)) ([HN](https://news.ycombinator.com/item?id=27308982))
+- [What the heck happened with .org? (2020)](https://blog.mozilla.org/blog/2020/05/11/what-the-heck-happened-with-org/) ([HN](https://news.ycombinator.com/item?id=23149732))
+- [HN: Thank you for helping us increase our bandwidth by Archive.org](https://news.ycombinator.com/item?id=23147752)
+- [IndieWeb Link Sharing (2019)](https://mxb.dev/blog/indieweb-link-sharing/)
+- [In defense of the modern web (2020)](https://dev.to/richharris/in-defense-of-the-modern-web-2nia) ([HN](https://news.ycombinator.com/item?id=23191493))
+- [W3C Public Mailing List Archives](https://lists.w3.org/Archives/Public/)
+- [Wappalyzer](https://github.com/AliasIO/wappalyzer) - Identify technology on websites using an extension.
+- [h+h lab](https://hplu.sh/) - Lab to create urbanism for the modern Web. ([Principles](https://github.com/hplush/hplu.sh/blob/master/principles.md)) ([Code](https://github.com/hplush/hplu.sh))
+- [Phusion Passenger](https://github.com/phusion/passenger) - Fast and robust web server and application server for Ruby, Python and Node.js.
+- [Tiny websites are great (2020)](https://tinyprojects.dev/posts/tiny_websites_are_great) ([HN](https://news.ycombinator.com/item?id=23228904))
+- [The Hottest Websites from the Late 90s (2017)](https://vanschneider.com/hottest-websites-late-90s)
+- [SuckIT](https://github.com/Skallwar/suckit) - Allows you to recursively visit and download a website's content to your disk.
+- [How Web Works](https://github.com/vasanthk/how-web-works) - What happens behind the scenes when we type www.google.com in a browser. ([Version 2](https://github.com/alex/what-happens-when))
+- [Graphene](https://gozala.io/work/graphene) - Concept of a web runtime, designed to be thinnest possible layer for the web. Runtime would take URL to an HTML, would load (and cache) it as it's user interface.
+- [IndieWeb](https://indieweb.org/) - Community of individual personal websites, connected by simple standards, based on the principles of owning your domain. ([IndieWeb Comments](https://indieweb.org/comments))
+- [One Word Domains](https://www.oneword.domains/) - Database of all available one-word domains. ([HN](https://news.ycombinator.com/item?id=23291337))
+- [Every Domain](https://everydomain.co/) - Find every available domain for your keyword.
+- [Cloudflare Speed Test](https://speed.cloudflare.com/) ([HN](https://news.ycombinator.com/item?id=23313657))
+- [Own your content on Social Media using the IndieWeb (2019)](https://www.youtube.com/watch?v=X3SrZuH00GQ)
+- [Local Testing on an iPhone (2020)](https://joshwcomeau.com/blog/local-testing-on-an-iphone/)
+- [Rediscovering the Small Web (2020)](https://neustadt.fr/essays/the-small-web/) ([HN](https://news.ycombinator.com/item?id=23326329))
+- [Snowpack 2.0 (2020)](https://www.snowpack.dev/posts/2020-05-26-snowpack-2-0-release/) ([HN](https://news.ycombinator.com/item?id=23331099))
+- [CState](https://github.com/cstate/cstate) - Open-source Hugo powered status page. ([HN](https://news.ycombinator.com/item?id=23361263))
+- [Some of my favorite projects brought to by The Open Web](https://bilge.world/open)
+- [Google Is Not God of The Web (2020)](https://bilge.world/google-page-experience) ([HN](https://news.ycombinator.com/item?id=23383548))
+- [Ask HN: What is the cheapest way to make a website? (2020)](https://news.ycombinator.com/item?id=23390308)
+- [Every bookmark manager ever made (2019)](https://bookmarkos.com/every-bookmark-manager-ever-made/)
+- [Some Bookmarklets, I Use (2020)](https://www.ph-uhl.com/0010-Bookmarklets/) ([HN](https://news.ycombinator.com/item?id=23445382))
+- [From Rust to Svelte, what tech stack will I use (2020)](https://hugodaniel.pt/posts/browser-tech-stack-2020/)
+- [Archive.today](http://archive.vn/) - Time capsule for web pages. ([API](https://github.com/caresx/archivetoday))
+- [archhive](https://github.com/caresx/archhive) - Command-line utility to archive a link to archive.org and archive.today and take a full-page screenshot of it with a header containing the links.
+- [Popub](https://github.com/m13253/popub) - Publish a service from localhost onto your server.
+- [Shizaru](https://tildegit.org/solderpunk/shizaru) - Minimalistic web server whose guiding principle is “serve no evil”.
+- [Web criticisms](https://www.circumlunar.space/~solderpunk/web.html) - Collection of articles criticising various facets of the web.
+- [Conifer](https://conifer.rhizome.org/) - Web archiving service that creates an interactive copy of any web page that you browse.
+- [Xiph.org](https://xiph.org/) - Non-profit corporation dedicated to protecting the foundations of Internet multimedia from control by private interests.
+- [Webmention](https://indieweb.org/Webmention) - Simple way to notify any URL when you mention it on your site.
+- [Test suites for Web platform specs — including WHATWG, W3C, and others](https://web-platform-tests.org/) ([Code](https://github.com/web-platform-tests/wpt))
+- [besticon](https://github.com/mat/besticon) - Favicon service written in Go.
+- [The Return of the 90s Web (2020)](https://mxb.dev/blog/the-return-of-the-90s-web/) ([HN](https://news.ycombinator.com/item?id=23567744))
+- [Clientside Webmentions](https://www.swyx.io/writing/clientside-webmentions/)
+- [Introducing the Web Platform Contribution Guide (2020)](https://bocoup.com/blog/introducing-the-web-platform-contribution-guide))
+- [Web Almanac](https://almanac.httparchive.org/) - HTTP Archive's annual state of the web report. ([Code](https://github.com/HTTPArchive/almanac.httparchive.org))
+- [Streams Standard](https://streams.spec.whatwg.org/) - Provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives. ([Code](https://github.com/whatwg/streams))
+- [Portals](https://wicg.github.io/portals/) - Proposal for enabling seamless navigations between sites or pages. ([Code](https://github.com/WICG/portals))
+- [WebMention Endpoint](https://webmention.herokuapp.com/) - Easily accept and embed WebMentions on all type of sites.
+- [Micropub](https://micropub.net/) - Open API standard that is used to create posts on one's own domain using third-party clients.
+- [go-sitemap-generator](https://github.com/ikeikeikeike/go-sitemap-generator) - Easiest way to generate Sitemaps in Go.
+- [Text-Only Websites](https://sjmulder.nl/en/textonly.html) ([HN](https://news.ycombinator.com/item?id=23626929))
+- [WebTransport API](https://wicg.github.io/web-transport/) ([HN](https://news.ycombinator.com/item?id=23666364))
+- [In Defense of a Fussy Website (2020)](https://css-tricks.com/in-defense-of-a-fussy-website/)
+- [ArchiveBox](https://github.com/ArchiveBox/ArchiveBox) - Open-source self-hosted web archive. ([Web](https://archivebox.io/)) ([HN](https://news.ycombinator.com/item?id=26858635))
+- [web.dev LIVE](https://web.dev/live/) - Bringing web developers together, from home.
+- [Weird Wide Webring](https://weirdwidewebring.net/) - The web needs a little more weird. These sites are helping. ([Code](https://github.com/jackmcdade/weird-wide-webring))
+- [The Whimsical Web](https://whimsical.club/) - Curated list of sites with an extra bit of fun. ([Code](https://github.com/maxboeck/whimsical)) ([HN](https://news.ycombinator.com/item?id=23704270))
+- [Web Dark Ages](https://pavellaptev.github.io/web-dark-ages/) ([HN](https://news.ycombinator.com/item?id=23700075)) ([Code](https://github.com/PavelLaptev/web-dark-ages))
+- [Responsive Web Design (2010)](https://alistapart.com/article/responsive-web-design/)
+- [Web Design Museum 1991 – 2006](https://www.webdesignmuseum.org/)
+- [Websites that look like desktop GUIs](https://simone.computer/#/webdesktops) ([HN](https://news.ycombinator.com/item?id=23734093))
+- [No Cookies, No Problem — Using ETags For User Tracking (2020)](https://levelup.gitconnected.com/no-cookies-no-problem-using-etags-for-user-tracking-3e745544176b) ([Lobsters](https://lobste.rs/s/anzcwy/no_cookies_no_problem_using_etags_for_user))
+- [Your SPA doesn’t need a router (2020)](https://forweb.dev/en/blog/drop-the-router/)
+- [Build Times](https://eduardoboucas.com/) - Musings on building (and breaking) websites.
+- [Come for the Network, Pay for the Tool (2020)](https://subpixel.space/entries/come-for-the-network-pay-for-the-tool/)
+- [Web Development Resources](https://github.com/mtdvio/web-development-resources)
+- [Infinite scrolling on the web obnoxiously complex](https://notriddle-more-interesting.herokuapp.com/D35K4ZCCNG6RB)
+- [Piccalilli Community Forum](https://community.piccalil.li/)
+- [The hypertext Web is the real Metaverse (2020)](https://thesephist.com/posts/hypertext/)
+- [Incrementally Improving The DOM (2018)](https://blog.functorial.com/posts/2018-04-08-Incrementally-Improving-The-DOM.html)
+- [HN: In spite of an increase in Internet speed, webpage speeds have not improved (2020)](https://news.ycombinator.com/item?id=24050980)
+- [The History of the Web](https://thehistoryoftheweb.com/)
+- [IndieWeb Collection](https://boffosocko.com/research/indieweb/)
+- [Chromatic](https://www.chromatic.com/) - Storybook deployment, review, and test.
+- [Don't design for mobile](https://mattanddesign.com/dont-design-for-mobile/) ([Lobsters](https://lobste.rs/s/iei6om/don_t_design_for_mobile))
+- [Why not use Bazel for building web projects](https://twitter.com/samccone/status/1295069537084162048)
+- [Microbundle](https://github.com/developit/microbundle) - Zero-configuration bundler for tiny modules.
+- [Cloudflare Docs](https://developers.cloudflare.com/docs/)
+- [Raw Sockets API proposal](https://github.com/WICG/raw-sockets)
+- [Deploy Friday Live Q&A](https://www.youtube.com/playlist?list=PLn5EpEMtxTCmLsbLgaN3djvEkRdp-YmlE)
+- [A clean start for the web (2020)](https://macwright.com/2020/08/22/clean-starts-for-the-web.html) ([Lobsters](https://lobste.rs/s/tmzyrk/clean_start_for_web)) ([HN](https://news.ycombinator.com/item?id=24255541))
+- [What is the Small Web? (2020)](https://ar.al/2020/08/07/what-is-the-small-web/) ([Lobsters](https://lobste.rs/s/f8ip91/what_is_small_web)) ([HN](https://news.ycombinator.com/item?id=24268472))
+- [What happens when you load a URL?](https://danluu.com/navigate-url/)
+- [A Short Guide to Minimal Web Development (2018)](https://meiert.com/en/blog/minimal-web-development/) ([HN](https://news.ycombinator.com/item?id=24294171))
+- [33 Web Development Terms You May Not Have Heard Of (2020)](https://meiert.com/en/blog/33-web-development-terms/)
+- [Fluid Framework](https://github.com/microsoft/FluidFramework) - TypeScript library for building distributed, real-time collaborative web applications. ([Web](https://fluidframework.com/)) ([Docs](https://fluidframework.com/docs/)) ([Playground](https://fluidframework.com/playground/?path=/story/welcome--page))
+- [On Modern Web Applications Stability (2020)](https://www.emadelsaid.com/on-modern-web-applications-stability/) ([HN](https://news.ycombinator.com/item?id=24493865))
+- [Cloudflare and the Wayback Machine, joining forces for a more reliable Web (2020)](http://blog.archive.org/2020/09/17/internet-archive-partners-with-cloudflare-to-help-make-the-web-more-useful-and-reliable/) ([HN](https://news.ycombinator.com/item?id=24504080))
+- [Web Development for Everyone book](https://webdevelopmentforeveryone.com/)
+- [Skynet](https://siasky.net/) - Decentralized CDN and file sharing platform for devs. ([Code](https://github.com/NebulousLabs/skynet-webportal))
+- [Apache ZooKeeper](https://zookeeper.apache.org/) - Centralized service for maintaining configuration information, naming, providing distributed synchronization, and providing group services. ([Code](https://github.com/apache/zookeeper))
+- [Grant for the Web](https://www.grantfortheweb.org/) - 100M fund to boost open, fair, and inclusive standards and innovation in Web Monetization.
+- [Nerds of the 90s Web Ring](https://webringdemo.netlify.app/) ([Code](https://github.com/maxboeck/webring))
+- [Cloudflare Radar](https://radar.cloudflare.com/) ([Introduction](https://blog.cloudflare.com/introducing-cloudflare-radar/)) ([HN](https://news.ycombinator.com/item?id=24638706))
+- [Hyperlog](https://hyperlog.app/) - Search web logs of small personal websites & indie publications.
+- [The Odin Project](https://www.theodinproject.com/) - Full stack curriculum.
+- [CS50's Web Programming with Python and JavaScript (2020)](https://cs50.harvard.edu/web/2020/)
+- [Internet Archive](https://archive.org/) - Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine. ([GitHub](https://github.com/internetarchive))
+- [How The URL Was Built (2020)](https://www.welcometothejungle.com/en/articles/btc-url-internet) ([HN](https://news.ycombinator.com/item?id=24718227))
+- [Developing For The Semantic Web (2020)](https://www.smashingmagazine.com/2020/10/developing-semantic-web/)
+- [Reffy](https://github.com/tidoust/reffy) - Web spec dependencies exploration companion. It features a short set of tools to study spec references as well as WebIDL term definitions and references found in Web specifications.
+- [Web Fundamentals](https://developers.google.com/web/fundamentals) - Best practices for modern web development. ([Code](https://github.com/google/WebFundamentals))
+- [Why IndieWeb?](https://indieweb.org/why)
+- [New on the web](https://www.industrialempathy.com/new-on-the-web/)
+- [Case study on vanilla web development](https://github.com/morris/vanilla-todo) ([Lobsters](https://lobste.rs/s/5gcrxh/case_study_on_vanilla_web_development))
+- [Archive.org](https://archive.org/) - Internet Archive. Digital Library of Free & Borrowable Books, Movies, Music & Wayback Machine. ([Python CLI](https://github.com/jjjake/internetarchive))
+- [caniuse-lite](https://github.com/ben-eb/caniuse-lite) - Smaller version of caniuse-db, with only the essentials.
+- [Geoff Huston ISP Column](https://www.potaroo.net/ispcol/) - Articles on the social and technical evolution of the Internet.
+- [If not SPAs, What? (2020)](https://macwright.com/2020/10/28/if-not-spas.html) ([HN](https://news.ycombinator.com/item?id=24920702))
+- [Designing for the Web by Mark Boulton](https://designingfortheweb.co.uk/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/) ([Code](https://github.com/mdn/kuma)) ([MDN Web Docs evolves! Lowdown on the upcoming new platform](https://hacks.mozilla.org/2020/10/mdn-web-docs-evolves-lowdown-on-the-upcoming-new-platform/)) ([HN](https://news.ycombinator.com/item?id=24931862)) ([Content](https://github.com/mdn/content))
+- [Parcel](https://github.com/parcel-bundler/parcel) - Blazing fast, zero configuration web application bundler. ([Web](https://parceljs.org/))
+- [Is the Internet Different? (2020)](https://stratechery.com/2020/is-the-internet-different/) ([HN](https://news.ycombinator.com/item?id=24979479))
+- [Solid Ecosystem Spec](https://solid.github.io/specification/) - Technology, like the Web, but a new level of standard which adds to the existing protocols with the motivation to empower individuals in an informed and interconnected society. ([Code](https://github.com/solid/specification)) ([Web](https://solidproject.org/))
+- [Using the Webmention.io API (2020)](https://randomgeekery.org/post/2020/11/using-the-webmentionio-api/)
+- [Self-hosted offline Internet from your browsing history](https://github.com/c9fe/22120) ([HN](https://news.ycombinator.com/item?id=25059554))
+- [Web Platform Design Principles (2020)](https://www.w3.org/TR/design-principles/)
+- [Global Internet Infrastructure Map](https://live.infrapedia.com/app)
+- [File System Access API](https://github.com/WICG/file-system-access) - Expose the file system on the user’s device, so Web apps can interoperate with the user’s native applications.
+- [Web Development for Beginners - A Curriculum](https://github.com/microsoft/Web-Dev-For-Beginners)
+- [WebPKI-level Certificate Revocation via Multi-Level Bloom Filter Cascade](https://github.com/mozilla/crlite)
+- [Doca (Russian)](https://y-doka.site/) - HTML/CSS/JS documentation. ([Code](https://github.com/Y-Doka/y-doka.site))
+- [Moon Highway](https://moonhighway.com/) - Professional web development trainings. ([GitHub](https://github.com/MoonHighway))
+- [Exploiting dynamic rendering engines to take control of web apps (2020)](https://r2c.dev/blog/2020/exploiting-dynamic-rendering-engines-to-take-control-of-web-apps/)
+- [Starlink team AMA (2020)](https://www.reddit.com/r/Starlink/comments/jybmgn/we_are_the_starlink_team_ask_us_anything/) ([HN](https://news.ycombinator.com/item?id=25170780))
+- [Low Tech Webring Directory](https://emreed.net/LowTech_Directory.html)
+- [WMR](https://github.com/preactjs/wmr) - Tiny all-in-one development tool for modern web apps, in a single 2mb file with no dependencies.
+- [this vs that](https://thisthat.dev/) - What is the difference between this & that. ([Code](https://github.com/phuoc-ng/this-vs-that))
+- [Safe Network](https://safenetwork.tech/) - Replaces the vulnerable structure of the existing Web with a decentralised, autonomous network. ([GitHub](https://github.com/maidsafe/))
+- [WebMention Support (2020)](https://christine.website/blog/webmention-support-2020-12-02) ([Lobsters](https://lobste.rs/s/lqxlyr/webmention_support))
+- [Porting a 100% local app to the web (2020)](https://actualbudget.com/blog/porting-local-app-web) ([HN](https://news.ycombinator.com/item?id=25304100))
+- [Periodic Table of the Web](https://wwwperiodictable.surge.sh/) ([Code](https://github.com/CrazyPython/wwwpreiodictable)) ([HN](https://news.ycombinator.com/item?id=25399294))
+- [24 ways](https://24ways.org/) - Web design and development articles and tutorials for advent.
+- [dvlp](https://github.com/popeindustries/dvlp) - No-configuration, no-conditionals, no-middleware, no-nonsense dev server toolkit to help you develop quickly and easily for the web.
+- [mdn.dev](https://mdn.dev/) - Resources for developers, by developers. ([Code](https://github.com/mdn/yari)) ([Article](https://hacks.mozilla.org/2020/12/welcome-yari-mdn-web-docs-has-a-new-platform/)) ([HN](https://news.ycombinator.com/item?id=25429518))
+- [Modern Web](https://modern-web.dev/) - Guides, tools and libraries for modern web development. ([Code](https://github.com/modernweb-dev/web))
+- [StumblingOn](https://stumblingon.com/) - Randomly find indie websites. ([HN](https://news.ycombinator.com/item?id=25461367))
+- [Web Dev Server](https://modern-web.dev/docs/dev-server/overview/) - Helps developing for the web, using native browser features like es modules.
+- [The birth of the Web](https://home.cern/science/computing/birth-web) ([HN](https://news.ycombinator.com/item?id=25485651))
+- [How to Favicon in 2021: Six files that fit most needs (2020)](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs) ([HN](https://news.ycombinator.com/item?id=25520655))
+- [CSS & HTML vocabulary](http://apps.workflower.fi/vocabs/) ([Code](https://github.com/sakamies/vocabs))
+- [How We Built the GitHub Globe (2020)](https://github.blog/2020-12-21-how-we-built-the-github-globe/) ([HN](https://news.ycombinator.com/item?id=25584720))
+- [MDN live code editor interactive examples](https://github.com/mdn/interactive-examples)
+- [MinWiz](https://github.com/zeplia/minwiz) - Minimal starter kit for under 2 KB sites. ([Web](https://minwiz.com/))
+- [How URLs work?](https://howurls.work/) - Learn how URLs work by visually inspecting their structure. ([Code](https://github.com/Redd-Developer/howurls.work))
+- [Herodotus](https://github.com/alaskanpuffin/herodotus-core) - Content Archival Software.
+- [W3C Immersive Web Working Group](https://www.w3.org/immersive-web/) - Help bring high-performance Virtual Reality (VR) and Augmented Reality (AR) to the open Web.
+- [Web Dev Without Tools (2021)](https://danthedev.com/web-dev-without-tools/)
+- [Webmention.io](https://webmention.io/) - Easily enable webmentions and pingbacks on any web page. ([Code](https://github.com/aaronpk/webmention.io)) ([HN](https://news.ycombinator.com/item?id=26401955))
+- [Ask HN: What's the lowest churn web stack? (2021)](https://news.ycombinator.com/item?id=25798186)
+- [Awesome HTML/CSS/JS Tips](https://github.com/MarkoDenic/awesome-html-css-js-tips)
+- [List of software / services that (almost) every web application needs (2020)](https://dylanstein.dev/blog/everything-everybody-needs)
+- [sorvor](https://github.com/osdevisnot/sorvor) - Extremely fast, zero config server for modern web applications.
+- [Webbed Briefs](https://briefs.video/) - Brief videos about the web, its technologies, and how to make the most of them.
+- [Awesome Semantic Web](https://github.com/semantalytics/awesome-semantic-web)
+- [Princeton Web Transparency & Accountability Project](https://webtap.princeton.edu/)
+- [The Web After Tomorrow (2015)](https://tonsky.me/blog/the-web-after-tomorrow/) ([HN](https://news.ycombinator.com/item?id=26053777))
+- [Hobbes' Internet Timeline](https://www.zakon.org/robert/internet/timeline/) - Definitive ARPAnet & Internet history.
+- [Front-of-the-Front-End and Back-of-the-Front-End Web Development (2021)](https://bradfrost.com/blog/post/front-of-the-front-end-and-back-of-the-front-end-web-development/) ([HN](https://news.ycombinator.com/item?id=26160538))
+- [Infima](https://github.com/facebookincubator/infima) - UI framework that provides websites with the minimal CSS and JS needed to get started with building a modern responsive beautiful website.
+- [ArchiveWeb.page](https://archiveweb.page/) - Archive as you browse, store locally and/or share with others via IPFS. ([HN](https://news.ycombinator.com/item?id=26188626))
+- [Webrecorder](https://webrecorder.net/) - Provides a suite of open source projects and tools to capture interactive websites and replay them at a later time as accurately as possible. ([GitHub](https://github.com/webrecorder))
+- [Keeping platforms open (2021)](https://seirdy.one/2021/02/23/keeping-platforms-open.html) ([Lobsters](https://lobste.rs/s/ur3eul/keeping_platforms_open))
+- [Lessons around creating UI builders (2021)](https://59bb.medium.com/lessons-around-creating-ui-builders-46ceeaea327f)
+- [Redbean](https://justine.lol/redbean/index.html) - Single-file distributable web server. ([HN](https://news.ycombinator.com/item?id=26271117)) ([Lobsters](https://lobste.rs/s/3emvqh/redbean_single_file_distributable_web)) ([Code](https://github.com/jart/cosmopolitan/blob/master/tool/net/redbean.c))
+- [The small web is beautiful (2021)](https://benhoyt.com/writings/the-small-web-is-beautiful/) ([Lobsters](https://lobste.rs/s/d6qwff/small_web_is_beautiful))
+- [Unlock](https://unlock-protocol.com/) - Protocol for memberships built on a blockchain. ([Code](https://github.com/unlock-protocol/unlock))
+- [Web Mini Apps](https://web.dev/mini-apps/) - Apps that are built with web technologies but that do not run in browsers.
+- [The Web’s Missing Interoperability (2021)](https://stratechery.com/2021/the-webs-missing-interoperability/) ([HN](https://news.ycombinator.com/item?id=26316209))
+- [Ask HN: What's the fastest stack for making web side projects? (2021)](https://news.ycombinator.com/item?id=26556722)
+- [Permission.site](https://permission.site/) - Simple site to test permission-related UI for web APIs. ([Code](https://github.com/chromium/permission.site)) ([HN](https://news.ycombinator.com/item?id=26588480))
+- [How will the web be different in 5 years from now? (2021)](https://twitter.com/koenbok/status/1375759968272535552)
+- [Inside a viral website (2021)](https://notfunatparties.substack.com/p/inside-a-viral-website) ([HN](https://news.ycombinator.com/item?id=26645813))
+- [Which is the fastest web framework?](https://github.com/the-benchmarker/web-frameworks)
+- [Ask HN: What novel tools are you using to write web sites/apps? (2021)](https://news.ycombinator.com/item?id=26693959)
+- [Sidenotes in Web Design · Gwern.net](https://www.gwern.net/Sidenotes)
+- [Ask HN: What is a good way to build a web application in 2021](https://news.ycombinator.com/item?id=26734749)
+- [Upcoming web tech to be excited about (2021)](https://twitter.com/wesbos/status/1381622263347171329)
+- [Awesome Web Effects](https://github.com/lindelof/awesome-web-effect) - Series of exquisite and compact web page cool effects.
+- [Kiterunner](https://github.com/assetnote/kiterunner) - Contextual Content Discovery Tool.
+- [Awesome Landing Page](https://github.com/nordicgiant2/awesome-landing-page) - Series of beautiful and practical landing page templates.
+- [How Shopify Dynamically Routes Storefront Traffic (2021)](https://shopify.engineering/dynamically-route-storefront-traffic)
+- [Landing Page Checklist](https://landingpage.fyi/landing-page-checklist.html) - 100+ Tools to Build a Landing Page.
+- [Schema.org](https://schema.org/) - Schemas for Structured Data on the Internet.
+- [My Ideal Web Service (2021)](https://kevincox.ca/2021/04/15/my-ideal-service/)
+- [Clean Up the Web](https://cleanuptheweb.org/) - Help rid the web of privacy-invading tracking. ([Code](https://github.com/small-tech/cleanuptheweb.org))
+- [Relate](https://relate.app/) - Open platform to create for the web.
+- [Web Interface Handbook](https://imperavi.com/books/web-interface-handbook/) - Book about the fundamentals of creating a good web interface.
+- [Paid in Full: an internet where every interaction is a financial transaction (2021)](https://reallifemag.com/paid-in-full/) ([HN](https://news.ycombinator.com/item?id=26935057))
+- [vite-plugin-compress](https://github.com/alloc/vite-plugin-compress) - Compress your bundle + assets from Vite.
+- [IndieWebify.Me](https://indiewebify.me/) - Guide to getting you on the IndieWeb. ([Code](https://github.com/indieweb/indiewebify-me))
+- [Facts every Web Dev should know before they Burn Out](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
+- [The Internet explained from first principles](https://explained-from-first-principles.com/internet/)
+- [What’s the web dev equivalent of SICP? (2021)](https://news.ycombinator.com/item?id=27084854)
+- [mmm.page](https://build.mmm.page/) - Dead simple, drag & drop personal websites.
+- [The new responsive: Web design in a component-driven world (2021)](https://web.dev/new-responsive/)
+- [Web Platform Contribution Guide Docs](https://wpc.guide/) - Getting started with a history, skill guide and how-to of web standards.
+- [Why Prefetch Is Broken (2021)](https://www.jefftk.com/p/why-prefetch-is-broken) ([HN](https://news.ycombinator.com/item?id=27365608))
+- [Web Applications from the Future: A Database in the Browser](https://stopa.io/post/279) ([HN](https://news.ycombinator.com/item?id=27424496))
+- [Let web applications be file handlers (2021)](https://web.dev/file-handling/) ([HN](https://news.ycombinator.com/item?id=27501732))
+- [Start Your Own ISP](https://startyourownisp.com/) - Helping you start your own Internet Service Provider. ([HN](https://news.ycombinator.com/item?id=27539165))
+- [How the Next Layer of the Internet Is Going to Be Standardized (2021)](https://www.mnot.net/blog/2021/06/21/standards-competition-governance) ([HN](https://news.ycombinator.com/item?id=27586081))
+- [Web Applications Working Group](https://www.w3.org/2019/webapps/) ([Code](https://github.com/w3c/webappswg))
+- [A framework for building Open Graph images (2021)](https://github.blog/2021-06-22-framework-building-open-graph-images/)
+- [You have one shot to redesign the Internet. What are you going to change? (2021)](https://news.ycombinator.com/item?id=27663618)
+- [Morty](https://github.com/asciimoo/morty) - Privacy aware web content sanitizer proxy as a service.
+- [Vite SSR Starter](https://github.com/s-kris/vite-ssr-starter) - Quickly build full-stack webapps with SSR using vitejs.
+- [cdnjs](https://cdnjs.com/) - Free and open source CDN built to make life easier for developers.
+- [Remote code execution in cdnjs of Cloudflare (2021)](https://blog.ryotak.me/post/cdnjs-remote-code-execution-en/) ([HN](https://news.ycombinator.com/item?id=27853434))
+- [StaticShield](https://github.com/Lalit2005/staticshield) - Easiest way to password protect your static and dynamic sites. ([Web](https://staticshield.vercel.app/))
+- [URLs: It's complicated (2021)](https://www.netmeister.org/blog/urls.html) ([HN](https://news.ycombinator.com/item?id=27588306))
+- [The Future Of The Web (2021)](https://www.hazem.cool/blog/the-future-of-the-web)
+- [Public CDNs Are Useless and Dangerous](https://httptoolkit.tech/blog/public-cdn-risks/) ([Lobsters](https://lobste.rs/s/epqbuw/public_cdns_are_useless_dangerous))
+- [How to build accessible modals (2021)](https://twitter.com/dluzar/status/1418259104938795017)
+- [What forces layout/reflow. The comprehensive list.](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
+- [Reflections as the Internet Archive turns 25 (2021)](https://blog.archive.org/2021/07/21/reflections-as-the-internet-archive-turns-25/) ([HN](https://news.ycombinator.com/item?id=27914848))
+- [Polyfill.io](https://polyfill.io/) - Automatic polyfill service. ([Code](https://github.com/Financial-Times/polyfill-service))
+- [RFC Editor](https://www.rfc-editor.org/) - Contains technical and organizational documents about the Internet, including the specifications and policy documents.
+- [egghead.io](https://egghead.io/) - High quality, concise web development screencasts. ([Course Notes](https://github.com/eggheadio/eggheadio-course-notes))
+- [Breaking Changes to the Web Platform](https://github.com/styfle/breaking-changes-web)

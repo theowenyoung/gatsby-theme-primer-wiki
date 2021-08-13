@@ -1,0 +1,70 @@
+# [Racket](https://racket-lang.org/)
+
+## Links
+
+- [Racket documentation](https://docs.racket-lang.org/)
+- [The Racket Guide](https://docs.racket-lang.org/guide/index.html)
+- [Why language-oriented programming? Why Racket? (2019)](https://beautifulracket.com/appendix/why-lop-why-racket.html) ([HN](https://news.ycombinator.com/item?id=19232068))
+- [DrRacket](https://github.com/racket/drracket) - IDE for Racket.
+- [Racket 7.3](https://download.racket-lang.org/v7.3.html) ([HN](https://news.ycombinator.com/item?id=19925832))
+- [Why Racket? Why Lisp?](https://beautifulracket.com/appendix/why-racket-why-lisp.html) ([HN](https://news.ycombinator.com/item?id=19952714))
+- [Racket is an acceptable Python (2019)](https://dustycloud.org/blog/racket-is-an-acceptable-python/) ([Lobsters](https://lobste.rs/s/q2kci7/racket_is_acceptable_python))
+- [Racket Code](https://github.com/racket/racket)
+- [Beautiful Racket](https://beautifulracket.com/) - Introduction to language-oriented programming using racket. ([Code](https://github.com/mbutterick/beautiful-racket))
+- [Hackett](https://github.com/lexi-lambda/hackett) - Attempt to implement a Haskell-like language with support for Racket’s macro system, built using the techniques described in the paper Type Systems as Macros.
+- [Learning Racket #1: Introduction](https://artyom.me/learning-racket-1)
+- [Awesome Racket](https://github.com/avelino/awesome-racket)
+- [I built this website using Racket. Here's what i can do now.](https://sagegerard.com/racket-powered.html)
+- [Native Applications with Racket (2020)](https://defn.io/2020/01/04/remember-internals/) ([Lobsters](https://lobste.rs/s/s4okil/native_applications_with_racket))
+- [Running Racket on iOS (2020)](https://defn.io/2020/01/05/racket-on-ios/)
+- [Frog](https://github.com/greghendershott/frog) - Static blog generator implemented in Racket, targeting Bootstrap and able to use Pygments.
+- [The Missing Guide to Racket's Web Server (2020)](https://defn.io/2020/02/12/racket-web-server-guide/)
+- [Tips, tricks, articles, and tutorials for getting the most out of Racket. By Jesse Alama.](https://lisp.sh/)
+- [Racket Manifesto](https://www2.ccs.neu.edu/racket/pubs/manifesto.pdf)
+- [db Racket packages](https://github.com/racket/db)
+- [Turnstile+](https://github.com/stchang/macrotypes) - Racket-based framework for creating extensible and reusable typed languages.
+- [Typed Racket Guide](https://docs.racket-lang.org/ts-guide/index.html)
+- [Racket is 25 years old (2020)](https://blog.racket-lang.org/2020/05/racket-is-25.html) ([HN](https://news.ycombinator.com/item?id=23132621))
+- [Racket Stories](https://racket-stories.com/)
+- [Racket News](https://racket-news.com/) ([Code](https://github.com/pmatos/racket-news))
+- [sham](https://github.com/rjnw/sham) - DSL for runtime code generation in racket.
+- [PasteRack](http://www.pasterack.org/) - Evaluating pastebin for Racket. ([Code](https://github.com/stchang/pasterack))
+- [cKanren](https://github.com/calvis/cKanren) - Constraint programming language embedded in Racket.
+- [Deploying Racket Web Apps (2020)](https://defn.io/2020/06/28/racket-deployment/) ([Lobsters](https://lobste.rs/s/lzv4iu/deploying_racket_web_apps))
+- [Racket Programming the Fun Way by James Stelly (2020)](https://www.penguinrandomhouse.com/books/645955/racket-programming-the-fun-way-by-james-stelly/)
+- [Rebuilding Racket on Chez Scheme Experience Report (2020)](https://www.youtube.com/watch?v=s3Q3M2wZ7rI)
+- [Practical guide to Racket macros](https://github.com/greghendershott/fear-of-macros)
+- [Learn Racket in Y Minutes](https://learnxinyminutes.com/docs/racket/)
+- [RacketCon](https://con.racket-lang.org/)
+- [Parsing propositional logic in 33 lines of Racket (2020)](https://micahcantor.xyz/blog/logic-racket-parser) ([HN](https://news.ycombinator.com/item?id=24764648))
+- [Racket Continuations Study Group](https://github.com/rain-1/continuations-study-group)
+- [GoLisp](https://github.com/corpix/golisp) - Racket DSL to make code-generation for Go.
+- [2048 - Racket Edition](https://github.com/danprager/racket-2048) - Clean-room, functional implementation in Racket of the game 2048.
+- [racket-package-ci-action](https://github.com/jackfirth/racket-package-ci-action) - GitHub Action for building and testing Racket packages.
+- [Sauron](https://github.com/racket-tw/sauron) - IDE for Racket language.
+- [Typed Racket](https://github.com/racket/typed-racket) - Racket's gradually-typed sister language which lets you add statically-checked type annotations to your programs.
+- [datatype](https://github.com/pnwamk/datatype) - Algebraic(-like) Data Types for Racket.
+- [Rosette](https://emina.github.io/rosette/) - Solver-aided programming language that extends Racket with language constructs for program synthesis, verification, and more. ([Code](https://github.com/emina/rosette))
+- [Typed Rosette](https://github.com/stchang/typed-rosette) - Experimental typed version of the Rosette language.
+- [Racket GitHub](https://github.com/racket)
+- [Racket Cheat Sheet](https://docs.racket-lang.org/racket-cheat/) ([Code](https://github.com/jeapostrophe/racket-cheat))
+- [Demonstration of implementing a language in Racket](https://github.com/mflatt/scratchy)
+- [racket-format](https://github.com/russellw/racket-format) - Format Racket source code.
+- [Racket for Visual Studio Code](https://github.com/pouyakary/vscode-racket)
+- [Running Racket CS on iOS (2021)](https://defn.io/2021/01/19/racket-cs-on-ios/)
+- [RacketScript](https://github.com/vishesh/racketscript) - Racket to JavaScript Compiler.
+- [Rackt](https://github.com/rackt-org/rackt) - Ultrasmall (~70 loc) React wrapper written in RacketScript.
+- [racket-http-easy](https://github.com/Bogdanp/racket-http-easy) - High-level HTTP client for Racket.
+- [Racket v8.0 (2021)](https://blog.racket-lang.org/2021/02/racket-v8-0.html) ([HN](https://news.ycombinator.com/item?id=26129480))
+- [Picturing Programs: A Racket Book (2010)](http://picturingprograms.com/)
+- [racket-langserver](https://github.com/jeapostrophe/racket-langserver) - Language Server Protocol implementation for Racket.
+- [Racket GUI packages](https://github.com/racket/gui)
+- [brag](https://github.com/mbutterick/brag) - Racket DSL for generating parsers from BNF grammars.
+- [Goblins: A transactional, distributed actor model environment](https://docs.racket-lang.org/goblins/) ([HN](https://news.ycombinator.com/item?id=26665387))
+- [MrEd Designer](https://github.com/Metaxal/MrEd-Designer) - WYSIWYG program to create GUI applications for Racket.
+- [Building Web Services with Racket (2021)](https://www.youtube.com/watch?v=ZvwE6_MMJjM)
+- [Racket 8.1 (2021)](https://blog.racket-lang.org/2021/05/racket-v8-1.html) ([HN](https://news.ycombinator.com/item?id=27073879))
+- [sketching](https://github.com/soegaard/sketching) - Racket library inspired by Processing.
+- [imin](https://github.com/iambrj/imin) - Compiler for (a subset of) Racket -> x86-64, written in Racket.
+- [cli](https://github.com/countvajhula/cli) - Language for writing command line interfaces in Racket.
+- [racket-gui-easy](https://github.com/Bogdanp/racket-gui-easy) - Declarative GUIs in Racket. ([Video](https://www.youtube.com/watch?v=AXJ9tTVGDwU)) ([Lobsters](https://lobste.rs/s/vaouwt/declarative_guis_racket))

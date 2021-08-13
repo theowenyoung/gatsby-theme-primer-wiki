@@ -1,0 +1,142 @@
+# Browsers
+
+## Notes
+
+- `document.querySelector("video").playbackRate = 1.4` will [increase video playback](https://mjtsai.com/blog/2018/06/25/speeding-up-wwdc-videos/).
+- [document.designMode = 'on' lets you edit pages](https://twitter.com/sulco/status/1177559150563344384)
+
+## Links
+
+- [How Browsers Work: Behind the scenes of modern web browsers](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+- [Wexond](https://github.com/wexond/wexond) - Extensible and privacy-focused web browser with a totally different user experience.
+- [Web-ext](https://github.com/mozilla/web-ext) - Command line tool to help build, run, and test web extensions. ([HN](https://news.ycombinator.com/item?id=25217857))
+- [Facebook’s open source browser contributions (2019)](https://code.fb.com/web/browser-contributions/)
+- [WebKit](https://github.com/WebKit/webkit) - Open source cross-platform web browser engine.
+- [Browserless](https://www.browserless.io/) - Fast, scalable, and reliable browser automation built for businesses and developers.
+- [Polypane](https://polypane.app/) - Browser for developers and designers.
+- [QA Wolf](https://github.com/qawolf/qawolf) - Create browser tests 10x faster. ([Web](https://www.qawolf.com/))
+- [Inside look at modern web browser](https://developers.google.com/web/updates/2018/09/inside-browser-part1) - Multi part series on how browsers work. Other parts found in left sidebar.
+- [Life of pixel (2019)](https://docs.google.com/presentation/d/1boPxbgNrTU0ddsc144rcXayGA_WF53k96imRH8Mp34Y/edit#slide=id.g60f92a5151_40_0)
+- [The whole web at maximum FPS: How WebRender gets rid of jank (2017)](https://hacks.mozilla.org/2017/10/the-whole-web-at-maximum-fps-how-webrender-gets-rid-of-jank/)
+- [Things you can do with a browser in 2020](https://github.com/luruke/browser-2020)
+- [Karmatic](https://github.com/developit/karmatic) - Easy automatic (headless) browser testing. Powered by Karma, Webpack & Jasmine.
+- [n.eko](https://github.com/nurdism/neko) - Self hosted virtual browser (rabb.it clone) that runs in docker.
+- [Playwright](https://github.com/microsoft/playwright) - Node library to automate Chromium, Firefox and WebKit browsers. ([Playwright Fixture-based test runner](https://github.com/microsoft/playwright-test-runner)) ([End-to-end tests with Playwright](https://github.com/microsoft/playwright-test)) ([playwright-aws-lambda](https://github.com/JupiterOne/playwright-aws-lambda))
+- [Playwright for Python](https://github.com/microsoft/playwright-python) - Python library to automate Chromium, Firefox and WebKit browsers with a single API.
+- [Playwright for Go](https://github.com/mxschmitt/playwright-go) - Go library to automate Chromium, Firefox and WebKit with a single API.
+- [Robot Framework](https://github.com/MarketSquare/robotframework-browser) - Browser library powered by Playwright.
+- [browser-extension-template](https://github.com/notlmn/browser-extension-template) - Barebones boilerplate with webpack, options handler and auto-publishing.
+- [WebExtension browser API Polyfill](https://github.com/mozilla/webextension-polyfill) - Allows extensions that use the Promise-based WebExtension/BrowserExt API.
+- [Web Store Upload CLI](https://github.com/DrewML/chrome-webstore-upload-cli) - CLI wrapper around the Web Store Upload module.
+- [Kasaya](https://github.com/syscolabs/kasaya) - Scripting language and runtime for browser automation. ([HN](https://news.ycombinator.com/item?id=22374991))
+- [Browser Startup Comparison (2020)](https://www.netmeister.org/blog/browser-startup.html)
+- [WebdriverIO](https://github.com/webdriverio/webdriverio) - Next-gen browser automation test automation framework for Node.js.
+- [rust-minibrowser](https://github.com/joshmarinacci/rust-minibrowser) - Mini-browser written in rust.
+- [Nyxt](https://nyxt.atlas.engineer/) - Keyboard-oriented, extensible web-browser designed for power users. ([Code](https://github.com/atlas-engineer/nyxt)) ([Lobsters](https://lobste.rs/s/pkpefb/nyxt_browser_2_0_0_pre_release)) ([Typed, customizable hooks](https://nyxt.atlas.engineer/article/hooks-implementation.org))
+- [Browsix](https://github.com/plasma-umass/browsix) - Unix-like operating system for the browser.
+- [Web Extensions - Shipit](https://github.com/LinusU/wext-shipit) - Automate the process of shipping Web Extensions for Chrome, Firefox, Safari, Opera and Edge.
+- [Pico](https://github.com/gripeless/pico) - Take browser screenshots in JavaScript.
+- [Can I Use](https://caniuse.com/) - Browser support tables for modern web technologies.
+- [Wildcard](https://www.geoffreylitt.com/wildcard/) - Browser extension for customizing web apps with a spreadsheet view. ([Code](https://github.com/geoffreylitt/wildcard))
+- [Axiom](https://axiom.ai/) - Create custom bots in seconds, or use ready-made templates. ([HN](https://news.ycombinator.com/item?id=23089243))
+- [The Browser Company](https://thebrowser.company/) - Building a better way to use the internet.
+- [Fast and reliable cross-browser testing with Playwright (2020)](https://medium.com/@arjunattam/fast-and-reliable-cross-browser-testing-with-playwright-155c0e8a821f)
+- [SingleFile](https://github.com/gildas-lormeau/SingleFile) - Web Extension for Firefox/Chrome/Edge and CLI tool to save a faithful copy of an entire web page in a single HTML file.
+- [XS-Leaks](https://github.com/xsleaks/xsleaks) - Collection of browser-based side channel attack vectors.
+- [Responsively App](https://github.com/manojVivek/responsively-app) - Modified browser that helps in responsive web development.
+- [Things I wish I knew before making a paid extension (2019)](https://www.amie-chen.com/blog/making-paid-extension/)
+- [Wiper](https://github.com/davidahmed/wiper) - Browser add-on to strip search results from 'blacklisted' URLs on Google. ([HN](https://news.ycombinator.com/item?id=23295989))
+- [Brave Browser](https://github.com/brave/brave-browser)
+- [Chromium Embedded Framework (CEF)](https://github.com/chromiumembedded/cef) - Framework for embedding Chromium-based browsers in other applications.
+- [Fafi Browser](https://git.sr.ht/~soapdog/fafi-browser) - Gemini browser written in Racket.
+- [ksp-browser](https://github.com/inkandswitch/ksp-browser) - Connect the things you already know in your browser.
+- [html2canvas](https://github.com/niklasvh/html2canvas) - Screenshots with JavaScript.
+- [Quotebacks](https://quotebacks.net/) - Quote the Web. ([HN](https://news.ycombinator.com/item?id=23468175)) ([Code](https://github.com/Blogger-Peer-Review/quotebacks))
+- [Favicon Checker](http://www.colinkeany.com/favicon-checker/) - See how your favicon hold up across popular browsers, including native dark and light modes. ([Code](https://github.com/colinkeany/favicon-checker))
+- [Selene](https://github.com/yashaka/selene) - User-oriented Web UI browser tests in Python.
+- [Quickstrom](https://quickstrom.io/) - High-confidence browser testing. ([Lobsters](https://lobste.rs/s/mdmvuw/webcheck_high_confidence_browser)) ([Intro](https://wickstrom.tech/programming/2020/08/27/introducing-quickstrom-high-confidence-browser-testing.html)) ([Code](https://github.com/quickstrom/quickstrom))
+- [Hello, Goodbye](https://github.com/bcye/Hello-Goodbye) - Browser extension that blocks annoying chat widgets.
+- [Getting a Browser Extension Through Review (2020)](https://formidable.com/blog/2020/extension-reviews/)
+- [Browservice](https://github.com/ttalvitie/browservice) - Browse the modern web on historical browsers. ([HN](https://news.ycombinator.com/item?id=23595430))
+- [Are you using SVG favicons yet? A guide for modern browsers. (2020)](https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df)
+- [Sys: a Static/Symbolic Tool for Finding Good Bugs in Good (Browser) Code (2020)](https://cseweb.ucsd.edu/~dstefan/pubs/brown:2020:sys.pdf)
+- [Consider deploying cross-origin resource policy](https://resourcepolicy.fyi/)
+- [Ampie](https://ampie.app/) - Social navigator for the web. Helps you find interesting links, and find what people had to say about them. ([Tweet](https://twitter.com/posobin/status/1283111738154668032)) ([Get URL Context](https://ampie.app/url-context))
+- [Browserslist](https://browserslist.dev/) - Website to display compatible browsers from browserslist string. ([Code](https://github.com/PSPDFKit-labs/browserslist.dev))
+- [Kosmonaut](https://github.com/twilco/kosmonaut) - Web browser from scratch in Rust. ([HN](https://news.ycombinator.com/item?id=24170201))
+- [Replay](https://replay.io/) - Record and replay web applications. ([GitHub](https://github.com/RecordReplay)) ([Dev Tools](https://github.com/RecordReplay/devtools))
+- [theheadless.dev](https://theheadless.dev/) - Learn Puppeteer & Playwright. ([HN](https://news.ycombinator.com/item?id=24209073)) ([Code](https://github.com/checkly/theheadless.dev))
+- [Rumin Web Clipper](https://github.com/jhlyeung/rumin-web-clipper) - Browser extension for Rumin which allows you to save learnings from online resources. ([HN](https://news.ycombinator.com/item?id=24461070))
+- [Browser Focus Rings (2020)](https://www.notion.so/Focus-Rings-4459faa9d1f643728ca8dde145a89900) - How making accessible, consistent, and elegant focus rings in browsers is actually a hard problem.
+- [Look ma, no mouse: Vimium (2020)](https://codefaster.substack.com/p/look-ma-no-mouse-vimium) ([HN](https://news.ycombinator.com/item?id=24700746))
+- [Fraidycat](https://github.com/kickscondor/fraidycat) - Follow blogs, wikis, YouTube channels, as well as accounts on Twitter, Instagram, etc. from a single page. ([Web](https://fraidyc.at/))
+- [Keyboard-driven browser design tool](https://twitter.com/yoshikischmitz/status/1185189779521953798)
+- [Floating Point in the Browser (2020)](https://randomascii.wordpress.com/2020/09/27/floating-point-in-the-browser-part-1-impossible-expectations/) ([Part 2](https://randomascii.wordpress.com/2020/10/11/floating-point-in-the-browser-part-2-bad-epsilon/))
+- [sysend.js](https://github.com/jcubic/sysend.js) - Send messages between open pages or tabs in same browser.
+- [Selenium](https://www.selenium.dev/) - Browser Automation. ([Code](https://github.com/SeleniumHQ/selenium))
+- [Selenium Python: Helium](https://github.com/mherrmann/selenium-python-helium) - Python library for web automation.
+- [Elemental](https://github.com/red-and-black/elemental) - Makes Selenium automation faster and easier. ([HN](https://news.ycombinator.com/item?id=25088816))
+- [Cloudflare Browser Isolation beta (2020)](https://blog.cloudflare.com/browser-beta/) ([HN](https://news.ycombinator.com/item?id=24789293))
+- [Iridium Browser](https://iridiumbrowser.de/) - Browser securing your privacy. ([Code](https://github.com/iridium-browser/iridium-browser))
+- [Chromium in Docker](https://github.com/atlassian/docker-chromium-xvfb) - Docker image for running browser tests against headless Chromium.
+- [Say goodbye to resource-caching across sites and domains (2020)](https://www.stefanjudis.com/notes/say-goodbye-to-resource-caching-across-sites-and-domains/) ([HN](https://news.ycombinator.com/item?id=24894135))
+- [Browserslist](https://github.com/browserslist/browserslist) - Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-preset-env.
+- [Histools](https://github.com/thesephist/histools) - Collection of tools for generating data visualizations from browser history data. ([Article](https://dotink.co/posts/histools/))
+- [Splash](https://github.com/scrapinghub/splash) - Lightweight, scriptable browser as a service with an HTTP API.
+- [Re: When will browsers be complete? (2020)](https://gist.github.com/lf94/9320eb89d1b72f6649d60e6e2119fd35) ([Lobsters](https://lobste.rs/s/tjqmjy/re_when_will_browsers_be_complete))
+- [web-extension-starter](https://github.com/abhijithvijayan/web-extension-starter) - Web Extension starter to build "Write Once Run on Any Browser" extension.
+- [Ask HN: How do you follow news about browsers? (2020)](https://news.ycombinator.com/item?id=24968536)
+- [Browsh](https://www.brow.sh/) - Fully-modern text-based browser. ([HN](https://news.ycombinator.com/item?id=25129747))
+- [Browser compatibility data](https://github.com/mdn/browser-compat-data) - Describes which platforms particular Web APIs.
+- [Min](https://minbrowser.org/) - Fast, minimal browser that protects your privacy.
+- [Brave Core](https://github.com/brave/brave-core) - Set of changes, APIs, and scripts used for customizing Chromium to make Brave.
+- [SVG Screenshots](https://github.com/felixfbecker/svg-screenshots) - Browser extension to take scalable, semantic, accessible screenshots of websites in SVG format.
+- [uBlacklist](https://github.com/iorate/uBlacklist) - Blocks specific sites from appearing in Google search results.
+- [TabFS](https://omar.website/tabfs/) - Mount your Browser Tabs as a Filesystem. ([HN](https://news.ycombinator.com/item?id=25600338)) ([Code](https://github.com/osnr/TabFS))
+- [browserless](https://github.com/microlinkhq/browserless) - Browser driver on top of puppeteer, ready for production scenarios. ([Docs](https://browserless.js.org/#/))
+- [Let's build a browser engine (2014)](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+- [Robinson](https://github.com/mbrubeck/robinson) - Toy web rendering engine written in Rust.
+- [Why can't I write code inside my browser? (2021)](https://tomcritchlow.com/2021/01/14/new-browsers/) ([HN](https://news.ycombinator.com/item?id=25787107))
+- [Tales of Favicons and Caches – Persistent Tracking in Modern Browsers (2021)](https://www.cs.uic.edu/%7Epolakis/papers/solomos-ndss21.pdf)
+- [Browser rendering performance resources](https://github.com/ufocoder/browser-rendering-performance) ([HN](https://news.ycombinator.com/item?id=25868742))
+- [Screenjar](https://screenjar.com/) - Make it super easy for customers to send you videos of their screen.
+- [Microsoft Edge Explainers](https://github.com/MicrosoftEdge/MSEdgeExplainers)
+- [Zap](https://github.com/issmirnov/zap) - Powerful tool that allows you to define universal web shortcuts in a simple config file.
+- [devtools-ds](https://github.com/intuit/devtools-ds) - Components and tools for building browser devtools extensions.
+- [Web Browser Engineering Book](https://browser.engineering/) - Explains, building a basic but complete web browser, from networking to JavaScript, in a thousand lines of Python.
+- [Supercookie](https://github.com/jonasstrehle/supercookie) - Browser Fingerprinting via Favicon. ([Web](https://supercookie.me/)) ([HN](https://news.ycombinator.com/item?id=26051370))
+- [Titanium Web Browser](https://github.com/antoyo/titanium) - Keyboard-driven web browser written in Rust.
+- [Serverless browser automation with AWS Lambda and Puppeteer (2021)](https://acloudguru.com/blog/engineering/serverless-browser-automation-with-aws-lambda-and-puppeteer)
+- [ExtensionPay](https://extensionpay.com/) - Payments in browser extensions, no server needed.
+- [React Web Extension Boilerplate](https://github.com/ElForastero/react-browser-extension-boilerplate) - React / Preact X browser extension boilerplate for the most popular browsers.
+- [FingerprintJS](https://fingerprintjs.com/) - Browser fingerprinting and fraud detection API.
+- [Browser Rendering Optimization](https://github.com/vasanthk/browser-rendering-optimization) - Notes on browser rendering optimization and hitting 60fps smoothness.
+- [CORS in 100 Seconds (2021)](https://www.youtube.com/watch?v=4KHiSt0oLJ0)
+- [Browserosaurus](https://wstone.io/browserosaurus) - Browser prompter for macOS. ([Code](https://github.com/will-stone/browserosaurus))
+- [How Browsers Lay Out Web Pages](https://browser.engineering/layout.html) ([HN](https://news.ycombinator.com/item?id=26707368))
+- [Deep dive in CORS: History, how it works, and best practices (2021)](https://ieftimov.com/post/deep-dive-cors-history-how-it-works-best-practices/) ([HN](https://news.ycombinator.com/item?id=26798412))
+- [The Hotdog web browser and browser engine](https://github.com/danfragoso/thdwb) ([HN](https://news.ycombinator.com/item?id=26869814))
+- [Agregore Browser](https://github.com/AgregoreWeb/agregore-browser) - Minimal web browser for the distributed web.
+- [broz](https://github.com/antfu/broz) - Simple, frameless browser for screenshots.
+- [Wexond Base](https://github.com/wexond/browser-base) - Modern and feature-rich web browser base based on Electron. ([Web](https://wexond.net/))
+- [Refresh](https://refresh.study/) - Fresh approach to the browser.
+- [Synth](https://synth.app/) - Browser From The Future.
+- [Hoverify](https://www.tryhoverify.com/) - All-in-one browser extension that helps you in web development.
+- [What’s the most underrated browser API? (2021)](https://twitter.com/burgessdryan/status/1397202072941080587)
+- [Reflecting on the last year of SerenityOS Browser development (2021)](https://www.youtube.com/watch?app=desktop&v=-YlVex4nbfw)
+- [Web Search Navigator](https://github.com/infokiller/web-search-navigator) - Chrome/Firefox extension that adds keyboard shortcuts to Google, YouTube, Github, Amazon, and others.
+- [Pleasantest](https://github.com/cloudfour/pleasantest) - Write real-browser tests with Testing Library in Jest.
+- [In browser, we trust! (2021)](https://gnanesh.me/in-browsers-we-trust.html)
+- [Why mimicking a device is becoming almost impossible (2021)](https://multilogin.com/why-mimicking-a-device-is-almost-impossible/) ([HN](https://news.ycombinator.com/item?id=27648719))
+- [browsersync](https://github.com/schollz/browsersync) - Simple live-reloading tool for developing HTML.
+- [WSCapture](https://github.com/depp/wscapture) - Capture Video from Browser over Web Sockets.
+- [Web browser specifications](https://github.com/w3c/browser-specs) - Machine-readable list of specifications used to build Web browsers.
+- [puppy](https://github.com/lmt-swallow/puppy-browser) - Example implementation of a tiny Web browser for educational purposes.
+- [The universal VM we call browser (2021)](https://cerebralab.com/The_universal_VM_we_call_browser) ([Lobsters](https://lobste.rs/s/x2zi43/universal_vm_we_call_browser))
+- [Apple, Facebook, and Google Broke the Mobile Browser Market (2021)](https://infrequently.org/2021/07/hobsons-browser/)
+- [WebExtension Vite Starter](https://github.com/antfu/vitesse-webext) - Vite powered WebExtension (Chrome, FireFox, etc.) starter template.
+- [webext-bridge](https://github.com/antfu/webext-bridge) - Messaging in Web Extensions made super easy. Out of the box.
+- [A Fun List of Browsers](https://thehistoryoftheweb.com/a-fun-list-of-browsers-youve-never-heard-of/) ([HN](https://news.ycombinator.com/item?id=27938988))
+- [Privacy Sandbox Timeline](https://privacysandbox.com/timeline)
+- [Ask HN: Why didn't the early web support more client side languages? (2021)](https://news.ycombinator.com/item?id=28008606)
+- [Memex](https://getmemex.com/) - Bookmarking for power users. Annotate, organize and share what you find online.

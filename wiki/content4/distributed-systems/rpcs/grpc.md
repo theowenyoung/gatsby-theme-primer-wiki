@@ -1,0 +1,53 @@
+# [gRPC](https://grpc.io)
+
+## Links
+
+- [Go gRPC Middleware](https://github.com/grpc-ecosystem/go-grpc-middleware) - Interceptor chaining, auth, logging, retries and more.
+- [gRPC-rs](https://github.com/pingcap/grpc-rs) - Rust wrapper of gRPC Core. gRPC is a high performance, open source universal RPC framework that puts mobile and HTTP/2 first.
+- [gRPC Web](https://github.com/grpc/grpc-web) - JavaScript library that lets browser clients access a gRPC service.
+- [gRPC Web implementation for Golang and TypeScript](https://github.com/improbable-eng/grpc-web)
+- [Awesome gRPC](https://github.com/grpc-ecosystem/awesome-grpc)
+- [Tower gRPC](https://github.com/tower-rs/tower-grpc) - gRPC client & server implementation.
+- [BloomRPC](https://github.com/uw-labs/bloomrpc) - GUI Client for GRPC Services.
+- [tonic](https://github.com/hyperium/tonic) - Native gRPC client & server implementation with async/await support in Rust.
+- [Swift & gRPC: Supercharging your Web APIs (2019)](https://docs.google.com/presentation/d/1mKygo8MK6tlG1R6NUV8LN8o8OGzPN1H7hUqjygHkank/edit#slide=id.gc6f73a04f_0_0)
+- [Swift gRPC](https://github.com/grpc/grpc-swift) - Swift language implementation of gRPC.
+- [grpc-rust](https://github.com/stepancheg/grpc-rust) - Rust implementation of gRPC.
+- [Seamless Cloud-Native Apps with gRPC-Web and Istio (2018)](https://venilnoronha.io/seamless-cloud-native-apps-with-grpc-web-and-istio)
+- [gRPCurl](https://github.com/fullstorydev/grpcurl) - Command-line tool that lets you interact with gRPC servers.
+- [Evans](https://github.com/ktr0731/evans) - More expressive universal gRPC client.
+- [ttrpc](https://github.com/containerd/ttrpc) - GRPC for low-memory environments.
+- [ttrpc-rust](https://github.com/containerd/ttrpc-rust) - Rust implementation of ttrpc (GRPC for low-memory environments).
+- [ygot](https://github.com/openconfig/ygot) - YANG-centric Go toolkit - Go/Protobuf Code Generation; Validation; Marshaling/Unmarshaling.
+- [grpc-graphql-gateway](https://github.com/ysugimoto/grpc-graphql-gateway) - Protoc plugin that generates graphql execution code from Protocol Buffers.
+- [grpc-gateway](https://github.com/grpc-ecosystem/grpc-gateway) - gRPC to JSON proxy generator following the gRPC HTTP spec.
+- [OpenAPI and gRPC Side-by-Side (2017)](https://medium.com/apis-and-digital-transformation/openapi-and-grpc-side-by-side-b6afb08f75ed)
+- [Pike](https://github.com/sashabaranov/pike) - Generate CRUD gRPC backends from single YAML description.
+- [gRPC on Node.js](https://github.com/grpc/grpc-node)
+- [protoreflect](https://github.com/jhump/protoreflect) - Reflection (Rich Descriptors) for Go Protocol Buffers.
+- [gRPC Proxy](https://github.com/mwitkow/grpc-proxy) - Go reverse proxy that allows for rich routing of gRPC calls with minimum overhead.
+- [gNMI](https://github.com/openconfig/gnmi) - gRPC Network Management Interface.
+- [Ditching REST with gRPC-web and Envoy (2020)](https://medium.com/swlh/ditching-rest-with-grpc-web-and-envoy-bfaa89a39b32)
+- [Road to gRPC (2020)](https://blog.cloudflare.com/road-to-grpc/)
+- [grpclib](https://github.com/vmagamedov/grpclib) - Pure-Python gRPC implementation for asyncio.
+- [BloomRPC-Mock](https://github.com/uw-labs/bloomrpc-mock) - Toolset library for working with GRPC mocks.
+- [Wombat](https://github.com/rogchap/wombat) - Cross platform gRPC client.
+- [Mortar](https://github.com/go-masonry/mortar) - Go framework/library for building gRPC (and REST) web services.
+- [gRPC microservice for dealing with users and its CLI client + Helm chart](https://github.com/maelvls/users-grpc)
+- [ratelimit](https://github.com/envoyproxy/ratelimit) - Go/gRPC service designed to enable generic rate limit scenarios from different types of applications.
+- [python-betterproto](https://github.com/danielgtaylor/python-betterproto) - Clean, modern, Python 3.6+ code generator & library for Protobuf 3 and async gRPC.
+- [grpcbin](https://github.com/moul/grpcbin) - httpbin like for gRPC.
+- [gRPC UI](https://github.com/fullstorydev/grpcui) - Interactive web UI for gRPC, along the lines of postman.
+- [GripMock](https://github.com/tokopedia/gripmock) - Mock server for GRPC services.
+- [Kreya](https://kreya.app/) - gRPC GUI client. It makes calling gRPC APIs easy. ([Docs](https://kreya.app/docs/getting-started))
+- [gRPC Channels](https://github.com/fullstorydev/grpchan) - Channels for gRPC: custom transports.
+- [grpc-testing](https://github.com/ryoya-fujimoto/grpc-testing) - Testing and helper tool for grpc server, using cuelang and grpcurl.
+- [gun](https://github.com/Qv2ray/gun) - Toy gRPC Tunnel over CloudFlare.
+- [gRPC Is Easy to Misconfigure (2021)](https://www.evanjones.ca/grpc-is-tricky.html) ([HN](https://news.ycombinator.com/item?id=26462438))
+- [gRPC RFCs](https://github.com/grpc/proposal)
+- [DRPC](https://github.com/storj/drpc/) - Drop-in, lightweight gRPC replacement. ([Web](https://storj.github.io/drpc/)) ([Article](https://www.storj.io/blog/introducing-drpc-our-replacement-for-grpc)) ([Reddit](https://www.reddit.com/r/golang/comments/mznppb/introducing_drpc_the_storj_replacement_for_grpc/)) ([Lobsters](https://lobste.rs/s/qo2qqk/introducing_drpc_our_replacement_for))
+- [Why load balancing gRPC is tricky? (2020)](https://majidfn.com/blog/20201222-grpc-load-balancing/)
+- [ghz](https://github.com/bojand/ghz) - gRPC benchmarking and load testing tool. ([Web](https://ghz.sh/))
+- [gRPC vs REST: comparing APIs architectural styles (2021)](https://www.imaginarycloud.com/blog/grpc-vs-rest/)
+- [Lile](https://github.com/lileio/lile) - Easily generate gRPC services in Go.
+- [PowerProto](https://github.com/storyicon/powerproto) - Awesome version control tool for protoc and its related plugins.

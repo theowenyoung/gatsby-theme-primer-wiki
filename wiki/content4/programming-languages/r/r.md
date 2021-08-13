@@ -1,0 +1,77 @@
+# R language
+
+## Links
+
+- [The R language, for programmers](https://www.johndcook.com/blog/r_language_for_programmers/)
+- [gt package](https://github.com/rstudio/gt) - Easily generate information-rich, publication-quality tables from R.
+- [usethis](https://github.com/r-lib/usethis) - Automates repetitive tasks that arise during project setup and development, both for R packages and non-package projects.
+- [RStudio Cheat Sheets](https://github.com/rstudio/cheatsheets)
+- [mlr](https://github.com/mlr-org/mlr) - Machine learning in R.
+- [Why I use R (2019)](https://blog.shotwell.ca/posts/why_i_use_r/) ([HN](https://news.ycombinator.com/item?id=21965248))
+- [Text Mining with R (2019)](https://www.tidytextmining.com/)
+- [R LSP](https://github.com/REditorSupport/languageserver) - Implementation of the Language Server Protocol for R.
+- [Tools to make an R developer's life easier](https://github.com/r-lib/devtools)
+- [R Base Plotting Without Wrappers](http://karolis.koncevicius.lt/posts/r_base_plotting_without_wrappers/)
+- [Lesser Known R Features](http://karolis.koncevicius.lt/posts/lesser_known_r_features/)
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [R Graphics Cookbook (2019)](https://r-graphics.org/)
+- [HN: R 4.0 (2020)](https://news.ycombinator.com/item?id=22966332)
+- [MOSAIC R package](https://github.com/ProjectMOSAIC/mosaic) - Designed to facilitate the use of R in statistics and calculus.
+- [A roadmap for getting started with R (2020)](https://oscarbaruffa.com/a-roadmap-for-getting-started-with-r/)
+- [hugodown](https://github.com/r-lib/hugodown) - Make websites with hugo and RMarkdown.
+- [Palmer Archipelago (Antarctica) Penguins data package](https://github.com/allisonhorst/penguins)
+- [Plumber](https://github.com/rstudio/plumber) - Turn your R code into a web API.
+- [R-bloggers](https://www.r-bloggers.com/) - R news and tutorials contributed by hundreds of R bloggers.
+- [R for Everyone](https://www.jaredlander.com/r-for-everyone/)
+- [TidyTuesday](https://github.com/rfordatascience/tidytuesday) - Weekly social data project in R.
+- [Teaching Statistics and Data Science Online](https://mine-cetinkaya-rundel.github.io/teach-r-online/) ([Code](https://github.com/mine-cetinkaya-rundel/teach-r-online))
+- [R & stats illustrations](https://github.com/allisonhorst/stats-illustrations)
+- [Tidy Modeling with R](https://www.tmwr.org/)
+- [Torch](https://github.com/mlverse/torch) - PyTorch port using LibTorch for R. ([Intro](https://blogs.rstudio.com/ai/posts/2020-09-29-introducing-torch-for-r/))
+- [coro](https://github.com/r-lib/coro) - Coroutines for R.
+- [purrr](https://github.com/tidyverse/purrr) - Functional programming toolkit for R. ([Web](https://purrr.tidyverse.org/))
+- [ggplot2](https://github.com/tidyverse/ggplot2) - Implementation of the Grammar of Graphics in R.
+- [Tidyverse](https://www.tidyverse.org/) - Opinionated collection of R packages designed for data science. ([GitHub](https://github.com/tidyverse))
+- [Programming R at native speed using Haskell (2020)](https://www.tweag.io/blog/2015-09-08-programming-r-at-native-speed-in-haskell/) ([HN](https://news.ycombinator.com/item?id=24981356))
+- [jqr](https://github.com/ropensci/jqr) - R interface to jq, a JSON processor.
+- [Plotly](https://github.com/ropensci/plotly) - Interactive graphing library for R.
+- [remotes](https://github.com/r-lib/remotes) - Install R Packages from remote or local repositories.
+- [Shiny](https://github.com/rstudio/shiny) - Easy interactive web applications with R. ([Web](https://shiny.rstudio.com/))
+- [Mastering Shiny book](https://mastering-shiny.org/) ([Code](https://github.com/hadley/mastering-shiny))
+- [insight](https://github.com/easystats/insight) - Easy access to model information for various model objects.
+- [Awesome R Learning Resources](https://github.com/iamericfletcher/awesome-r-learning-resources)
+- [reticulate](https://github.com/rstudio/reticulate) - R Interface to Python.
+- [JuliaCall](https://github.com/Non-Contradiction/JuliaCall) - Embed Julia in R.
+- [docopt](https://github.com/docopt/docopt.R) - Command-line interface description language for R. ([Web](http://docopt.org/))
+- [parameters](https://github.com/easystats/parameters) - Utilities for processing the parameters of various statistical models.
+- [flexdashboard](https://github.com/rstudio/flexdashboard) - Easy interactive dashboards for R.
+- [recipes](https://github.com/tidymodels/recipes) - Preprocessing engine to generate design matrices.
+- [golgotha](https://github.com/bnosac/golgotha) - Contextualised Embeddings and Language Modelling using BERT and Friends using R.
+- [modelsummary](https://github.com/vincentarelbundock/modelsummary) - Beautiful and customizable model summaries in R.
+- [r-cli](https://github.com/r-lib/cli) - Tools for making beautiful & useful command line interfaces using R.
+- [pod](https://github.com/klmr/pod) - Write Reusable, Composable and Modular R Code.
+- [ggcharts](https://github.com/thomas-neitmann/ggcharts) - Get You to Your Desired Plot Faster.
+- [tweenr](https://github.com/thomasp85/tweenr) - Package for interpolating data, mainly for animations.
+- [SDS 375: Data Visualization in R](https://wilkelab.org/SDS375/syllabus.html) ([Code](https://github.com/wilkelab/SDS375))
+- [Modern Text Features in R (2021)](https://www.tidyverse.org/blog/2021/02/modern-text-features/) ([HN](https://news.ycombinator.com/item?id=26357955))
+- [An Ode to Stable Interfaces: R and R Core Deserve So Much Praise (2021)](https://dirk.eddelbuettel.com/blog/2021/03/20/)
+- [llr](https://github.com/dirkschumacher/llr) - Lisp-like-R: A clojure inspired lisp that compiles to R in R.
+- [Notes on R programming Newsletter](https://buttondown.email/rcode)
+- [mgcViz](https://github.com/mfasiolo/mgcViz) - Visual tools for Generalized Additive Models.
+- [Rhumba](https://github.com/mamba-org/rhumba) - R package manager that is blazingly fast. Powered by mamba.
+- [dm](https://github.com/krlmlr/dm) - Working with relational data models in R.
+- [Interactive Studio for Explanatory Model Analysis](https://github.com/ModelOriented/modelStudio)
+- [rOpenSci](https://ropensci.org/) - Open tools for open science. ([GitHub](https://github.com/ropensci))
+- [collapse](https://github.com/SebKrantz/collapse) - Advanced and Fast Data Transformation in R.
+- [Epidemiologist R Handbook](https://epirhandbook.com/) - R for applied epidemiology and public health. ([HN](https://news.ycombinator.com/item?id=27106489))
+- [deepdep](https://github.com/DominikRafacz/deepdep) - Visualise and Explore Deep Dependencies of R packages.
+- [stringi](https://github.com/gagolews/stringi) - String Processing Package for R.
+- [How I Learned to Love Failing at Compiling R (2020)](https://www.youtube.com/watch?v=VdD0nHbcyk4)
+- [Learn R Through Examples (2020)](https://gexijin.github.io/learnR/index.html) ([HN](https://news.ycombinator.com/item?id=27404103))
+- [robservable](https://github.com/juba/robservable) - Allows the use of Observable notebooks (or parts of them) as htmlwidgets in R. ([Web](https://juba.github.io/robservable/))
+- [jsonlite](https://github.com/jeroen/jsonlite) - Robust, High Performance JSON Parser and Generator for R.
+- [radian](https://github.com/randy3k/radian) - 21 century R console.
+- [Why do we use R rather than Excel? (2021)](https://shkspr.mobi/blog/2021/07/why-do-we-use-r-rather-than-excel/) ([HN](https://news.ycombinator.com/item?id=27800291))
+- [Supervised Machine Learning for Text Analysis in R (2021)](https://smltar.com/) ([Code](https://github.com/EmilHvitfeldt/smltar))
+- [performance](https://github.com/easystats/performance) - Test if your model is a good model.
+- [rmonad](https://github.com/arendsee/rmonad) - Pipelines you can compute on.

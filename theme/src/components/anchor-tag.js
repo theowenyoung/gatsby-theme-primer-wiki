@@ -4,7 +4,7 @@ import Tippy from '@tippyjs/react'
 import {MDXProvider} from '@mdx-js/react'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import {Link, Box} from '@primer/components'
-import './anchor-tag.css'
+// import './anchor-tag.css'
 const AnchorTag = ({
   title,
   href,
@@ -45,8 +45,25 @@ const AnchorTag = ({
       </Box>
     )
     child = (
-      <Link as={GatsbyLink} to={withPrefix(href)} title={title}>
-        [[{title || restProps.children}]]
+      <Link
+        sx={{
+          ':before': {
+            content: "'[['",
+            opacity: '0.5',
+          },
+          ':after': {
+            content: "']]'",
+            opacity: '0.5',
+          },
+          ':hover': {
+            textDecoration: 'none',
+          },
+        }}
+        as={GatsbyLink}
+        to={withPrefix(href)}
+        title={title}
+      >
+        {title || restProps.children}
       </Link>
     )
   } else {
@@ -69,6 +86,7 @@ const AnchorTag = ({
         {restProps.children}
       </Link>
     )
+    return child
   }
 
   if (withoutPopup) {

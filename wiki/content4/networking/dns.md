@@ -1,0 +1,117 @@
+# [DNS](http://en.wikipedia.org/wiki/Domain_Name_System)
+
+## Notes
+
+- [`dig +noall +answer DOMAIN` will get just the DNS info you want.](https://twitter.com/b0rk/status/1387490109168173057)
+- [Can get your IP using DNS instead of HTTP: `dig +short -4 A myip.opendns.com @resolver1.opendns.com`. For IPv6: `dig +short -6 AAAA myip.opendns.com @resolver1.ipv6-sandbox.opendns.com`](https://lobste.rs/s/0kqjna/new_future_for_icanhazip)
+
+## Links
+
+- [How DNS works](https://howdns.works/) - Fun and colorful explanation of how DNS works.
+- [1.1.1.1](https://one.one.one.one/) - DNS by CloudFlare.
+- [Quad9](https://www.quad9.net/)
+- [Pi-hole](https://pi-hole.net/) - Can be used as DNS server. ([Lobsters](https://lobste.rs/s/95saar/pi_hole_black_hole_for_internet))
+- [Tenta DNS](https://github.com/tenta-browser/tenta-dns) - Recursive and authoritative DNS server in go, including DNSSEC and DNS-over-TLS.
+- [Trust-DNS](https://github.com/bluejekyll/trust-dns) - Rust based DNS client, server, and resolver.
+- [AdGuardHome](https://github.com/AdguardTeam/AdGuardHome) - Network-wide ads & trackers blocking DNS server.
+- [PowerDNS](https://github.com/PowerDNS/pdns) - Sources for the PowerDNS Recursor, the PowerDNS Authoritative Server, and dnsdist (a powerful DNS loadbalancer).
+- [Hello, and welcome to DNS!](https://github.com/ahupowerdns/hello-dns) - Attempts to provide a correct introduction to the Domain Name System as of 2018.
+- [A Cat Explains DNS (2017)](https://www.youtube.com/watch?v=4ZtFk2dtqv0)
+- [octoDNS](https://github.com/github/octodns) - Tools for managing DNS across multiple providers.
+- [Gobuster](https://github.com/OJ/gobuster) - Directory/File, DNS and VHost busting tool written in Go.
+- [CoreDNS](https://github.com/coredns/coredns) - DNS server that chains plugins. ([Web](https://coredns.io/))
+- [How we optimized our DNS server using go tools (2020)](https://medium.com/@arash.cordi/how-we-optimized-our-dns-server-using-go-tools-d753e1a5e709)
+- [A warm welcome to DNS](https://powerdns.org/hello-dns/) - Attempts to provide a correct introduction to the Domain Name System as of 2018.
+- [Public Zone Database (ZoneDB)](https://github.com/zonedb/zonedb) - Contains a list and associated metadata of public DNS zones.
+- [ExternalDNS](https://github.com/kubernetes-sigs/external-dns) - Synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
+- [dnslookup](https://github.com/ameshkov/dnslookup) - Simple command line utility to make DNS lookups to the specified server.
+- [Nslookup.io](https://www.nslookup.io/) - Find DNS records.
+- [c-ares](https://github.com/c-ares/c-ares) - C library for asynchronous DNS requests.
+- [DNS over Wikipedia](https://github.com/aaronjanse/dns-over-wikipedia) - Redirect `.idk` domains using the official link found on a topic's Wikipedia page. ([HN](https://news.ycombinator.com/item?id=22790425)) ([HN 2](https://news.ycombinator.com/item?id=22808121))
+- [dns-proxy-server](https://github.com/mageddo/dns-proxy-server) - Solve your DNS hosts from your docker containers, then from your local configuration, then from internet.
+- [NextDNS](https://nextdns.io/) - Block ads, trackers and malicious websites on all your devices. ([Article](https://angristan.xyz/2020/04/nextdns/)) ([HN](https://news.ycombinator.com/item?id=22854209)) ([Metadata](https://github.com/nextdns/metadata))
+- [NextDNS CLI Client (DoH Proxy)](https://github.com/nextdns/nextdns)
+- [grimd](https://github.com/looterz/grimd) - Fast dns proxy that can run anywhere, built to black-hole internet advertisements and malware servers.
+- [Stubby](https://github.com/getdnsapi/stubby) - Application that acts as a local DNS Privacy stub resolver (using DNS-over-TLS).
+- [The case of the missing DNS packets: a Google Cloud support story (2020)](https://cloud.google.com/blog/topics/inside-google-cloud/google-cloud-support-engineer-solves-a-tough-dns-case) ([HN](https://news.ycombinator.com/item?id=23235995))
+- [DNS Proxy](https://github.com/AdguardTeam/dnsproxy) - Simple DNS proxy with DoH, DoT, and DNSCrypt support.
+- [Building a DNS server in Rust](https://github.com/EmilHernvall/dnsguide) ([HN](https://news.ycombinator.com/item?id=23442730))
+- [DNS-over-HTTPS](https://github.com/m13253/dns-over-https) - High performance DNS over HTTPS client & server.
+- [Beyond DNS over HTTPS: Trustless DNS Privacy (2020)](https://alyssa.is/proposing-dns-over-tcp-over-tor/) ([Lobsters](https://lobste.rs/s/7owwun/beyond_dns_over_https_trustless_dns))
+- [Where is the DNS Headed? (2020)](https://www.potaroo.net/ispcol/2020-06/row.html)
+- [What happens when you update your DNS? (2020)](https://jvns.ca/blog/how-updating-dns-works/) ([HN](https://news.ycombinator.com/item?id=23597687))
+- [An interview with Paul Mockapetris, the creator of the DNS (2020)](https://www.welcometothejungle.com/en/collections/behind-the-code/coder-stories/articles/btc-interview-paul-mockapetris) ([HN](https://news.ycombinator.com/item?id=23650499))
+- [DNS Push Notifications](https://www.rfc-editor.org/rfc/rfc8765.html) ([HN](https://news.ycombinator.com/item?id=23627094))
+- [DNS questions](https://questions.wizardzines.com/dns.html)
+- [Under the Hood of a Simple DNS Server (2020)](https://blog.aos.sh/2020/08/23/under-the-hood-of-a-simple-dns-server/)
+- [Understanding DNS—anatomy of a BIND zone file (2020)](https://arstechnica.com/gadgets/2020/08/understanding-dns-anatomy-of-a-bind-zone-file/)
+- [DNSLink](https://dnslink.io/) - Simple protocol to link content and services directly from DNS.
+- [DNS flag day](https://dnsflagday.net/) ([Code](https://github.com/dns-violations/dnsflagday))
+- [Secondary DNS – Deep Dive (2020)](https://blog.cloudflare.com/secondary-dns-deep-dive/)
+- [DNSimple](https://dnsimple.com/) - Secure & Simple DNS Hosting.
+- [Speeding up HTTPS and HTTP/3 negotiation with... DNS (2020)](https://blog.cloudflare.com/speeding-up-https-and-http-3-negotiation-with-dns/) ([Tweet](https://twitter.com/SimmerVigor/status/1311294630198161410))
+- [DNS Flag Day 2020](https://blog.cloudflare.com/dns-flag-day-2020/)
+- [Unbound](https://github.com/NLnetLabs/unbound) - Validating, recursive, and caching DNS resolver. ([Web](https://nlnetlabs.nl/projects/unbound/about/))
+- [namebench](https://github.com/catap/namebench) - Open-source DNS Benchmark Utility.
+- [Yet Another Kubernetes DNS Latency Story (2020)](https://build.thebeat.co/yet-another-kubernetes-dns-latency-story-2a1c00ebbb8d)
+- [Oblivious DoH Library](https://github.com/chris-wood/odoh)
+- [Which DNS servers are you pointing to?](https://which.nameserve.rs/) ([HN](https://news.ycombinator.com/item?id=24886120)) ([Code](https://github.com/redirect2me/which-dns))
+- [Resolve.rs](https://resolve.rs/) - Troubleshooting website for network and DNS issues. ([Code](https://github.com/redirect2me/resolvers))
+- [DNS Trends (2020)](https://www.potaroo.net/ispcol/2020-10/trends.html)
+- [Dynroute53](https://github.com/thoeni/dynroute53) - Dynamic DNS updater for AWS Route53. Like DDNS for AWS managed domains.
+- [Handshake](https://handshake.org/) - Experimental peer-to-peer root naming system. ([Code](https://github.com/handshake-org/hsd)
+- [What Does It Take To Resolve A Hostname (2020)](https://venam.nixers.net/blog/unix/2020/11/01/resolving-a-hostname.html)
+- [dog](https://github.com/ogham/dog) - Command-line DNS client. ([Web](https://dns.lookup.dog/)) ([HN](https://news.ycombinator.com/item?id=25033056))
+- [Sad DNS](https://www.cs.ucr.edu/~zhiyunq/SADDNS.html) - Revival of the classic DNS cache poisoning attack.
+- [SAD DNS Explained (2020)](https://blog.cloudflare.com/sad-dns-explained/)
+- [DNS Resolution: Optimization Tools and Opportunities (2020)](https://ashu.online/blogs/optimize-dns-resolution-for-fast-website)
+- [Improving DNS Privacy with Oblivious DoH (2020)](https://blog.cloudflare.com/oblivious-dns/) ([HN](https://news.ycombinator.com/item?id=25344358))
+- [odoh-go](https://github.com/cloudflare/odoh-go) - Oblivious DoH library in Go.
+- [odoh-server-go](https://github.com/cloudflare/odoh-server-go) - Oblivious DoH server in Go.
+- [DNSTools](https://dnstools.ws/) - Perform DNS lookups, pings, traceroutes, and other utilities, from 24 locations around the world. ([Code](https://github.com/Daniel15/dnstools))
+- [DIY Dynamic DNS Using Netlify API (2020)](https://blog.skylerlewis.io/2020/12/diy-dynamic-dns-using-netlify-api.html)
+- [dcompass](https://github.com/LEXUGE/dcompass) - High-performance DNS server with rule matching/DoT/DoH functionality built-in.
+- [doggo](https://github.com/mr-karan/doggo) - Command-line DNS Client for Humans. Written in Go. ([Lobsters](https://lobste.rs/s/6ey5mv/doggo_command_line_dns_client))
+- [Update your DNS records when abandoning servers (2021)](https://news.ycombinator.com/item?id=25621519)
+- [nonymous + bore(1): DNS toys for Rust (2021)](https://www.azabani.com/2021/01/03/nonymous-bore.html)
+- [DNS Key Value Storage](https://dnskv.com/) ([HN](https://news.ycombinator.com/item?id=25620411))
+- [DNS-LG](http://www.dns-lg.com/) - REST API allowing to perform DNS queries over HTTP from multiple locations worldwide. ([CLI](https://github.com/mxssl/dns))
+- [A Name Resolver for the Distributed Web (2021)](https://blog.cloudflare.com/cloudflare-distributed-web-resolver/)
+- [Dns.Watch](https://dns.watch/) - Public DNS Servers. ([HN](https://news.ycombinator.com/item?id=25792345))
+- [ZeroConf](https://github.com/grandcat/zeroconf) - MDNS / DNS-SD Service Discovery in pure Go.
+- [KadNode](https://github.com/mwarning/KadNode) - P2P DNS with content key, crypto key and PKI support. DynDNS alternative.
+- [Container to update DNS records periodically with WebUI for many DNS providers](https://github.com/qdm12/ddns-updater)
+- [Docker DNS server on steroids to access DNS-over-TLS](https://github.com/qdm12/dns)
+- [DNS over TLS - Thoughts and Implementation (2018)](https://sagi.io/dns-over-tls-thoughts-and-implementation/)
+- [DNSCrypt](https://dnscrypt.info/) - Protocol that encrypts, authenticates and optionally anonymizes communications between a DNS client and a DNS resolver. ([GitHub](https://github.com/dnscrypt))
+- [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy) - Flexible DNS proxy, with support for encrypted DNS protocols.
+- [Why updating DNS is slow](https://wizardzines.com/comics/updating-dns/) ([HN](https://news.ycombinator.com/item?id=26058337))
+- [Please do not put IP addresses into DNS MX records (2021)](https://blog.hboeck.de/archives/904-Please-do-not-put-IP-addresses-into-DNS-MX-records.html) ([HN](https://news.ycombinator.com/item?id=26215112)) ([Lobsters](https://lobste.rs/s/5r2uri/please_do_not_put_ip_addresses_into_dns_mx))
+- [Cloudflare DDNS](https://github.com/timothymiller/cloudflare-ddns) - Access your home network remotely via a custom domain name without a static IP.
+- [DNS lookup tool](https://dns-lookup.jvns.ca/) ([Code](https://github.com/jvns/dns-lookup)) ([Article](https://jvns.ca/blog/2021/02/24/a-little-tool-to-make-dns-queries/))
+- [dnc (Domain Name Checker)](https://github.com/fcambus/dnc) - CLI tool to check domain names configuration.
+- [ZDNS](https://github.com/zmap/zdns) - Fast CLI DNS Lookup Tool.
+- [go-doh-client](https://github.com/babolivier/go-doh-client) - Go client library implementation of DNS over HTTPS.
+- [RouteDNS](https://github.com/folbricht/routedns) - DNS stub resolver, proxy and router with support for DoT, DoH, DoQ, and DTLS.
+- [Stop using low DNS TTLs (2019)](https://00f.net/2019/11/03/stop-using-low-dns-ttls/) ([HN](https://news.ycombinator.com/item?id=21436448))
+- [dnspeep](https://github.com/jvns/dnspeep) - Lets you spy on the DNS queries your computer is making.
+- [hyper-dns](https://github.com/martinheidegger/hyper-dns) - DNS lookup for dat/hyper archives.
+- [The Sisyphean Task Of DNS Client Config on Linux (2021)](https://tailscale.com/blog/sisyphean-dns-client-linux/) ([HN](https://news.ycombinator.com/item?id=26821298)) ([Lobsters](https://lobste.rs/s/v9w4ax/sisyphean_task_dns_client_config_on_linux))
+- [We Built Our Own DNS Infrastructure (2021)](https://blog.replit.com/dns)
+- [DNS Violations](https://github.com/dns-violations/dns-violations) - List of DNS violations by implementations, software and/or systems.
+- [dnspython](https://github.com/rthalley/dnspython) - Powerful DNS toolkit for python.
+- [inadyn](https://github.com/troglobit/inadyn) - Dynamic DNS client with SSL/TLS support. ([Web](https://troglobit.com/projects/inadyn/))
+- [Anubis](https://github.com/jonluca/Anubis) - Subdomain enumeration and information gathering tool.
+- [ddclient](https://github.com/ddclient/ddclient) - Perl client used to update dynamic DNS entries for accounts on many dynamic DNS services.
+- [dnsharper](https://github.com/marshall-lee/dnsharper) - Small DNS server to lookup local network IPs by their MAC addresses.
+- [DNS Based Discovery (2020)](https://vac.dev/dns-based-discovery)
+- [Anatomy of a Linux DNS Lookup](https://zwischenzugs.com/2018/06/08/anatomy-of-a-linux-dns-lookup-part-i/) ([HN](https://news.ycombinator.com/item?id=27396208))
+- [MaraDNS](https://github.com/samboy/MaraDNS) - Small open-source DNS server. ([Web](https://maradns.samiam.org/))
+- [odoh-client-rs](https://github.com/cloudflare/odoh-client-rs) - Oblivious DoH client application written in Rust.
+- [HN: DNS-powered website with no back end (2021)](https://news.ycombinator.com/item?id=27598164)
+- [DNS Explained in 100 Seconds](https://www.youtube.com/watch?v=UVR9lhUGAyU)
+- [meshname](https://github.com/zhoreeq/meshname) - Universal naming system for all IPv6-based mesh networks, including CJDNS and Yggdrasil.
+- [dn42](https://dn42.dev/Home) - Big dynamic VPN.
+- [Bulldohzer](https://github.com/commonshost/bulldohzer) - Performance measurement tool for DNS. It supports DNS-over-HTTPS (DoH) and DNS-over-UDP (Do53).
+- [(All) DNS Resource Records (2021)](https://www.netmeister.org/blog/dns-rrs.html) ([HN](https://news.ycombinator.com/item?id=27852601)) ([Tweet](https://twitter.com/jschauma/status/1415858462064533505))
+- [DNS Privacy Considerations](https://www.rfc-editor.org/rfc/rfc9076.html) ([HN](https://news.ycombinator.com/item?id=28007367))

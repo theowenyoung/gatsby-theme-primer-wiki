@@ -1,0 +1,314 @@
+# [Python](https://www.python.org)
+
+## Notes
+
+- [Global interpreter lock (or GIL) is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes at once.](https://wiki.python.org/moin/GlobalInterpreterLock)
+- [Create separate enviornments in Conda for each program to avoid dependency issues.](https://www.reddit.com/r/bioinformatics/comments/n2fwz4/what_is_something_that_you_realized_that_entirely/)
+
+## Links
+
+- [Learn Python in Y Minutes](https://learnxinyminutes.com/docs/python/)
+- [Python 3 cheat sheet](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)
+- [Pyre Check](https://github.com/facebook/pyre-check) - Performant type-checking for python. ([Article](https://engineering.fb.com/security/pysa/)) ([Web](https://pyre-check.org/)) ([HN](https://news.ycombinator.com/item?id=27107647))
+- [Optional Static Typing for Python - Guido van Rossum (2018)](https://www.youtube.com/watch?v=GiZKuyLKvAA)
+- [WTF Python](https://github.com/satwikkansal/wtfpython) - Exploring and understanding Python through surprising snippets. ([HN](https://news.ycombinator.com/item?id=26097732))
+- [My Python Development Environment, 2020 Edition (2019)](https://jacobian.org/2019/nov/11/python-environment-2020/) ([HN](https://news.ycombinator.com/item?id=21510262))
+- [Python 3 with pleasure](https://github.com/arogozhnikov/python3_with_pleasure)
+- [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
+- [Structuring Your Python Project](http://docs.python-guide.org/en/latest/writing/structure/)
+- [Awesome Python Features Explained Using Harry Potter](https://github.com/zotroneneis/harry_potter_universe)
+- [Learn python](https://github.com/trekhleb/learn-python) - Playground and cheatsheet for learning Python.
+- [Py-Spy](https://github.com/benfred/py-spy) - Sampling profiler for Python programs.
+- [Profiling](https://github.com/what-studio/profiling) - Interactive continuous Python profiler.
+- [Pytype](https://github.com/google/pytype) - Static analyzer for Python code.
+- [gpython](https://github.com/go-python/gpython) - Python interpreter written in Go "batteries not included".
+- [RustPython](https://github.com/RustPython/RustPython) - Python Interpreter written in Rust.
+- [Comprehensive Python Cheatsheet](https://github.com/gto76/python-cheatsheet)
+- [Awesome Python Security resources](https://github.com/guardrailsio/awesome-python-security)
+- [Pyright](https://github.com/Microsoft/pyright) - Static type checker for the Python language.
+- [cpython](https://github.com/python/cpython) - Python programming language source code.
+- [PySnooper](https://github.com/cool-RR/PySnooper) - Never use print for debugging again.
+- [Python at Netflix (2019)](https://medium.com/netflix-techblog/python-at-netflix-bba45dae649e)
+- [Things you’re probably not using in Python 3 – but should (2019)](https://datawhatnow.com/things-you-are-probably-not-using-in-python-3-but-should/) ([HN](https://news.ycombinator.com/item?id=19916089))
+- [Black](https://github.com/python/black) - Uncompromising Python code formatter. ([HN](https://news.ycombinator.com/item?id=19939806))
+- [Amber Brown: Batteries Included, But They're Leaking](http://pyfound.blogspot.com/2019/05/amber-brown-batteries-included-but.html) ([HN](https://news.ycombinator.com/item?id=19948642))
+- [Python Cheatsheet](https://www.pythonsheets.com/) ([Code](https://github.com/crazyguitar/pysheeet))
+- [PyOxidizer](https://github.com/indygreg/PyOxidizer) - Modern Python application packaging and distribution tool.
+- [isort](https://github.com/timothycrosley/isort) - Python utility / library to sort imports.
+- [What's coming in Python 3.8](https://lwn.net/SubscriberLink/793818/0c6f9dd271021cd4/) ([HN](https://news.ycombinator.com/item?id=20463170))
+- [Python Handout](https://github.com/danijar/handout) - Turn Python scripts into handouts with Markdown and figures.
+- [HN: Python Is Eating the World (2019)](https://news.ycombinator.com/item?id=20672051)
+- [Your Guide to the CPython Source Code (2019)](https://realpython.com/cpython-source-code-guide/)
+- [30 seconds of python](https://github.com/30-seconds/30-seconds-of-python) - Curated collection of useful Python snippets that you can understand in 30 seconds or less.
+- [ptpython](https://github.com/prompt-toolkit/ptpython) - Better Python REPL.
+- [cython](https://cython.org/) - Optimising static compiler for both the Python programming language and the extended Cython programming language (based on Pyrex).
+- [Ask HN: How do you handle/maintain local Python environments? (2019)](https://news.ycombinator.com/item?id=21054462)
+- [CVXPY](https://github.com/cvxgrp/cvxpy) - Python-embedded modeling language for convex optimization problems.
+- [Pythran](https://github.com/serge-sans-paille/pythran) - Ahead of time compiler for a subset of the Python language, with a focus on scientific computing.
+- [How to Python in VS Code](https://py-vscode.readthedocs.io/en/latest/)
+- [Airspeed Velocity](https://github.com/airspeed-velocity/asv) - Primarily designed to benchmark a single project over its lifetime using a given suite of benchmarks.
+- [New features planned for Python 4.0 satire](http://charlesleifer.com/blog/new-features-planned-for-python-4-0/)
+- [Instant-feedback, instant-debugging Python coding (2019)](https://2019.pycon-au.org/talks/instant-feedback-instant-debugging-python-coding)
+- [HN: What’s New in Python 3.8 (2019)](https://news.ycombinator.com/item?id=21252784)
+- [A Talk Near the Future of Python (2019)](https://www.youtube.com/watch?v=r-A78RgMhZU)
+- [Pyinstrument](https://github.com/joerick/pyinstrument) - Call stack profiler for Python. Shows you why your code is slow.
+- [reloading](https://github.com/julvo/reloading) - Python utility to reload a loop body from source on each iteration without losing state.
+- [Static Analysis at Scale: An Instagram Story (2019)](https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c)
+- [Python Type Checking course](https://realpython.com/courses/python-type-checking/)
+- [Python Enhancement Proposals](https://github.com/python/peps) ([Web](https://www.python.org/dev/peps/))
+- [Cool Python features for machine learning that I used to be too afraid to use](https://github.com/chiphuyen/python-is-cool)
+- [Python: better typed than you think (2019)](https://beepb00p.xyz/mypy-error-handling.html)
+- [hython](https://github.com/mattgreen/hython) - Haskell-powered Python 3 interpreter. ([Article](http://callcc.io/hython-the-simplest-possible-language/))
+- [Python -> Speed blog](https://pythonspeed.com/) - Learn tools and techniques to help you ship better Python software, faster.
+- [pipx](https://github.com/pipxproject/pipx) - Install and Run Python Applications in Isolated Environments.
+- [pyperf](https://github.com/vstinner/pyperf) - Toolkit to run Python benchmarks.
+- [Flit](https://github.com/takluyver/flit) - Simplified packaging of Python modules.
+- [Python debugger package for use with Visual Studio and Visual Studio Code](https://github.com/microsoft/ptvsd)
+- [Pyflame](https://github.com/uber/pyflame) - Ptracing Profiler For Python.
+- [Classic Computer Science Problems in Python book (2019)](https://www.manning.com/books/classic-computer-science-problems-in-python)
+- [PyInstaller](https://github.com/pyinstaller/pyinstaller) - Freeze (package) Python programs into stand-alone executables.
+- [Structuring Your Project](https://docs.python-guide.org/writing/structure/) ([HN](https://news.ycombinator.com/item?id=21732821))
+- [Pympler](https://github.com/pympler/pympler) - Development tool to measure, monitor and analyze the memory behavior of Python objects in a running Python application.
+- [Poetry](https://github.com/python-poetry/poetry) - Python dependency management and packaging made easy. ([Web](https://python-poetry.org/)) ([HN](https://news.ycombinator.com/item?id=24081125))
+- [SICP in Python](https://wizardforcel.gitbooks.io/sicp-in-python/content/index.html)
+- [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html) ([Code](https://github.com/quantifiedcode/python-anti-patterns))
+- [Creator of Python Programming Language, Guido van Rossum | Oxford Union (2019)](https://www.youtube.com/watch?v=7kn7NtlV6g0)
+- [scalene](https://github.com/emeryberger/scalene) - High-performance CPU and memory profiler for Python.
+- [Iterables vs. Iterators vs. Generators (2014)](https://nvie.com/posts/iterators-vs-generators/)
+- [Making Python Programs Blazingly Fast (2020)](https://martinheinz.dev/blog/13) ([HN](https://news.ycombinator.com/item?id=22040899))
+- [Python built-ins worth learning (2019)](https://treyhunner.com/2019/05/python-builtins-worth-learning/)
+- [Python Coding Guidelines for Sanity](https://github.com/rednafi/py-sanity)
+- [Human's Ultimate Guide to setup.py](https://github.com/navdeep-G/setup.py)
+- [Python Guide by NSA](https://nsa.sfo2.digitaloceanspaces.com/comp3321.pdf)
+- [Python Packaging User Guide](https://packaging.python.org/)
+- [Math Symbols Explained with Python](https://amitness.com/2019/08/math-for-programmers/) ([HN](https://news.ycombinator.com/item?id=22637402))
+- [MonkeyType](https://github.com/Instagram/MonkeyType) - System for Python that generates static type annotations by collecting runtime types. ([HN](https://news.ycombinator.com/item?id=22624845))
+- [CrossHair](https://github.com/pschanely/CrossHair) - Static analysis tool for Python that blurs the line between testing and type systems.
+- [Introduction to Python and Programming (2020)](https://github.com/webartifex/intro-to-python) ([HN](https://news.ycombinator.com/item?id=22669084))
+- [Vulture](https://github.com/jendrikseipp/vulture) - Finds unused code in Python programs.
+- [Full Stack FastAPI and PostgreSQL - Base Project Generator](https://github.com/tiangolo/full-stack-fastapi-postgresql)
+- [Byterun](https://github.com/nedbat/byterun) - Python implementation of a Python bytecode runner.
+- [Clean Code Python](https://github.com/zedr/clean-code-python)
+- [cython](https://github.com/cython/cython) - Most widely used Python to C compiler.
+- [HPy](https://github.com/hpyproject/hpy) - Better API for extending Python in C. ([Hello, HPy](https://hpyproject.org/blog/posts/2021/03/hello-hpy/)) ([Web](https://hpyproject.org/index.html)) ([HN](https://news.ycombinator.com/item?id=26625398))
+- [Safety checks your installed dependencies for known security vulnerabilities](https://github.com/pyupio/safety)
+- [The Composition Over Inheritance Principle](https://python-patterns.guide/gang-of-four/composition-over-inheritance/)
+- [Building Finite State Machines with Python Coroutines](https://arpitbhayani.me/blogs/fsm) ([HN](https://news.ycombinator.com/item?id=22915716))
+- [Awesome Python](https://github.com/vinta/awesome-python)
+- [Distill: Why do we need Flask, Celery, and Redis? (2019)](https://ljvmiranda921.github.io/notebook/2019/11/08/flask-redis-celery-mcdo/) ([HN](https://news.ycombinator.com/item?id=22901856))
+- [Building on solid ground: ensuring reproducible Docker builds for Python (2020)](https://pythonspeed.com/articles/reproducible-docker-builds-python/) ([Lobsters](https://lobste.rs/s/xu1lxh/building_on_solid_ground_ensuring))
+- [Python Language Server](https://github.com/palantir/python-language-server)
+- [HN: Best Practices for Working with Configuration in Python Applications (2020)](https://news.ycombinator.com/item?id=22964910)
+- [pdb++](https://github.com/pdbpp/pdbpp) - Drop-in replacement for pdb.
+- [poetry2nix](https://github.com/nix-community/poetry2nix) - Convert poetry projects to nix automagically.
+- [Ultimate Setup for Your Next Python Project (2020)](https://towardsdatascience.com/ultimate-setup-for-your-next-python-project-179bda8a7c2c) ([Lobsters](https://lobste.rs/s/c5cpd0/ultimate_setup_for_your_next_python))
+- [reorder_python_imports](https://github.com/asottile/reorder_python_imports) - Tool for automatically reordering python imports. Similar to isort but uses static analysis more.
+- [Python performance: it’s not just the interpreter (2020)](http://blog.kevmod.com/2020/05/python-performance-its-not-just-the-interpreter/) ([HN](https://news.ycombinator.com/item?id=23235930))
+- [Automating Every Aspect of Your Python Project (2020)](https://martinheinz.dev/blog/17)
+- [Python Generated Sequence Diagrams (2020)](https://dragonquest64.blogspot.com/2020/05/python-generated-sequence-diagrams.html) ([HN](https://news.ycombinator.com/item?id=23269697))
+- [GraalVM Implementation of Python](https://github.com/graalvm/graalpython)
+- [pyp](https://github.com/hauntsaninja/pyp) - Easily run Python at the shell! Magical, but never mysterious.
+- [Hypermodern Python (2020)](https://cjolowicz.github.io/posts/hypermodern-python-01-setup/) ([HN](https://news.ycombinator.com/item?id=23336050)) ([Lobsters](https://lobste.rs/s/2dcejo/hypermodern_python))
+- [pyanalyze](https://github.com/quora/pyanalyze) - Static analysis tool for Python.
+- [Full Speed Python](https://github.com/joaoventura/full-speed-python) - Book aims to teach the Python programming language using a practical approach.
+- [Practical Python Programming course](https://dabeaz-course.github.io/practical-python/Notes/Contents.html) ([Code](https://github.com/dabeaz-course/practical-python))
+- [Milksnake](https://github.com/getsentry/milksnake) - Extension for setuptools that allows you to distribute dynamic linked libraries in Python wheels in the most portable way imaginable.
+- [Replacing Bash Scripting with Python](https://github.com/ninjaaron/replacing-bash-scripting-with-python)
+- [Overview of Python Dependency Management (2020)](https://modelpredict.com/python-dependency-management-tools) ([HN](https://news.ycombinator.com/item?id=23380113))
+- [Guide to Python Debugging (2020)](https://martinheinz.dev/blog/24) ([HN](https://news.ycombinator.com/item?id=23386537))
+- [Python for Lisp Programmers (2000)](https://norvig.com/python-lisp.html) ([HN](https://news.ycombinator.com/item?id=26222374))
+- [Intermediate Python book](https://book.pythontips.com/en/latest/)
+- [Using enumerated types in Python (2020)](https://johnlekberg.com/blog/2020-06-06-enum.html) ([HN](https://news.ycombinator.com/item?id=23440541))
+- [Subpar](https://github.com/google/subpar) - Utility for creating self-contained python executables. It is designed to work well with Bazel.
+- [Python Wheels](https://pythonwheels.com/) - New standard of Python distribution. ([HN](https://news.ycombinator.com/item?id=23452365))
+- [Calm Code](https://calmcode.io/) - Learn code calmly. ([HN](https://news.ycombinator.com/item?id=25123059))
+- [How async should have been in Python (2020)](https://sobolevn.me/2020/06/how-async-should-have-been) ([Lobsters](https://lobste.rs/s/srbshw/how_async_should_have_been_python))
+- [Pycopy](https://github.com/pfalcon/pycopy) - Minimalist and memory-efficient Python implementation. Good for desktop, cloud, constrained systems, microcontrollers, and just everything. ([HN](https://news.ycombinator.com/item?id=23446721))
+- [Packaging without setup.py (2020)](https://pgjones.dev/blog/packaging-without-setup-py-2020/)
+- [Async Python is not faster (2020)](http://calpaterson.com/async-python-is-not-faster.html) ([HN](https://news.ycombinator.com/item?id=23496994)) ([Lobsters](https://lobste.rs/s/hyi7ov/async_python_is_not_faster))
+- [Advanced pytest techniques I learned while contributing to pandas (2020)](https://levelup.gitconnected.com/advanced-pytest-techniques-i-learned-while-contributing-to-pandas-7ba1465b65eb) ([Lobsters](https://lobste.rs/s/6qgags/advanced_pytest_techniques_i_learned))
+- [Effective Python book](https://effectivepython.com/) ([Code](https://github.com/bslatkin/effectivepython))
+- [Specific ways to write better Python (2017)](https://github.com/SigmaQuan/Better-Python-59-Ways) ([HN](https://news.ycombinator.com/item?id=23584594))
+- [Learning Scientific Programming with Python](https://scipython.com/book/)
+- [Development with Nix: Python (2020)](https://thomazleite.com/posts/development-with-nix-python/) ([Lobsters](https://lobste.rs/s/tjgvzi/development_with_nix_python))
+- [Picking a Language for Introductory CS - Why I don't like Python (2020)](http://dynamicsofprogramming.blogspot.com/2019/02/problems-with-python-for-introductory-cs.html)
+- [Clinging to memory: how Python function calls can increase your memory usage (2020)](https://pythonspeed.com/articles/function-calls-prevent-garbage-collection/)
+- [PEP 622 – Structural Pattern Matching](https://www.python.org/dev/peps/pep-0622/) ([HN](https://news.ycombinator.com/item?id=23627017)) ([Code](https://github.com/gvanrossum/patma))
+- [What is the core of the Python programming language? (2020)](https://snarky.ca/what-is-the-core-of-the-python-programming-language/) ([HN](https://news.ycombinator.com/item?id=23698846))
+- [NPComp](https://github.com/google/mlir-npcomp) - Aspirational MLIR based numpy compiler.
+- [Nuitka](https://github.com/Nuitka/Nuitka) - Python compiler written in Python. ([Web](http://nuitka.net/)) ([HN](https://news.ycombinator.com/item?id=27537819))
+- [Brython](https://brython.info/) - Python 3 implementation for client-side web programming. ([HN](https://news.ycombinator.com/item?id=23746067)) ([Code](https://github.com/brython-dev/brython))
+- [Hashing it Out (2020)](https://akshayr.me/blog/articles/python-dictionaries) - A deep dive into Python dictionaries.
+- [An exploration of why Python doesn't require a 'main' function (2020)](https://utcc.utoronto.ca/~cks/space/blog/python/WhyNoMainFunction)
+- [Ask HN: How do I teach intermediate Python engineering skills? (2020)](https://news.ycombinator.com/item?id=23849070)
+- [Creating a virtual env in Python steps (2020)](https://news.ycombinator.com/item?id=24022583)
+- [futurecoder](https://futurecoder.herokuapp.com/) - Platform for beginners to learn programming in Python. ([HN](https://news.ycombinator.com/item?id=24020906))
+- [Exactly-Once Initialization in Asynchronous Python (2020)](https://nullprogram.com/blog/2020/07/30/)
+- [Dive Into Python 3 book](https://diveintopython3.net/) ([Code](https://github.com/diveintomark/diveintopython3))
+- [Think Python: How to Think Like a Computer Scientist](http://greenteapress.com/thinkpython2/html/index.html)
+- [I know Python basics, what next? (2020)](https://www.reddit.com/r/Python/comments/i0m2sy/i_know_python_basics_what_next/)
+- [Fluent Python (2015)](https://www.oreilly.com/library/view/fluent-python/9781491946237/) ([Code](https://github.com/fluentpython/example-code))
+- [Awesome Python Typing](https://github.com/typeddjango/awesome-python-typing) - Collection of awesome Python types, stubs, plugins, and tools to work with them.
+- [Sparking Joy with Python (2020)](https://maxwellforbes.com/posts/spark-joy-python-why)
+- [Options for packaging your Python code: Wheels, Conda, Docker, and more (2020)](https://pythonspeed.com/articles/distributing-software/) ([HN](https://news.ycombinator.com/item?id=24117464))
+- [Mypy](https://github.com/python/mypy) - Optional Static Typing for Python.
+- [Mypyc](https://github.com/python/mypy/tree/master/mypyc) - Mypy to Python C Extension Compiler. ([Lobsters](https://lobste.rs/s/3c1oog/mypyc_mypy_python_c_extension_compiler))
+- [Developing Python with Poetry & Poetry2nix: Reproducible flexible Python environments (2020)](https://www.tweag.io/blog/2020-08-12-poetry2nix/)
+- [Structural pattern matching for Python (2020)](https://lwn.net/Articles/827179/)
+- [Python Language Reference](https://docs.python.org/3/reference/index.html)
+- [Python Data model](https://docs.python.org/3/reference/datamodel.html)
+- [Python Documentation](https://docs.python.org/3/)
+- [Building FunctionTrace, a graphical Python profiler (2020)](https://hacks.mozilla.org/2020/05/building-functiontrace-a-graphical-python-profiler/)
+- [Python 3.8 Makes me Sad Again (2020)](https://ilya-sher.org/2020/08/16/python-3-8-makes-me-sad-again/) ([Lobsters](https://lobste.rs/s/rgcgjz/python_3_8_makes_me_sad_again)) ([HN](https://news.ycombinator.com/item?id=24176823))
+- [The Consortium for Python Data API Standards (2020)](https://data-apis.org/blog/announcing_the_consortium/) ([HN](https://news.ycombinator.com/item?id=24205363))
+- [Write a Python to C compiler in Python (2020)](https://notes.eatonphil.com/writing-a-simple-python-compiler.html)
+- [Writing Python Extensions in Assembly (2020)](https://tonybaloney.github.io/posts/extending-python-with-assembly.html)
+- [CPython Internals Book](https://realpython.com/products/cpython-internals-book/) ([Code](https://github.com/tonybaloney/cpython-book-samples))
+- [A deep dive into the official Docker image for Python (2020)](https://pythonspeed.com/articles/official-python-docker-image/)
+- [How to cheat at unit tests with pytest and Black (2020)](https://simonwillison.net/2020/Feb/11/cheating-at-unit-tests-pytest-black/)
+- [Never Run ‘python’ In Your Downloads Folder (2020)](https://glyph.twistedmatrix.com/2020/08/never-run-python-in-your-downloads-folder.html) ([HN](https://news.ycombinator.com/item?id=24250418)) ([Reddit](https://www.reddit.com/r/Python/comments/ifkt6k/never_run_python_in_your_downloads_folder/))
+- [Awesome Scientific Python](https://github.com/rossant/awesome-scientific-python)
+- [Learn Python 3 with Jupyter notebooks](https://github.com/jerry-git/learn-python3)
+- [Writing More Idiomatic and Pythonic Code (2020)](https://towardsdatascience.com/writing-more-idiomatic-and-pythonic-code-c22e900eaf83) ([Lobsters](https://lobste.rs/s/nprial/writing_more_idiomatic_pythonic_code))
+- [Package and deploy Python apps faster with Poetry and Nix (2020)](https://www.youtube.com/watch?v=TbIHRHy7_JM)
+- [Ultimate Python study guide](https://github.com/huangsam/ultimate-python)
+- [Sync vs. Async Python: What Is the Difference? (2020)](https://blog.miguelgrinberg.com/post/sync-vs-async-python-what-is-the-difference) ([HN](https://news.ycombinator.com/item?id=24427978))
+- [Mamba](https://github.com/mamba-org/mamba) - Reimplementation of the conda package manager in C++.
+- [Nagini](https://www.pm.inf.ethz.ch/research/nagini.html) - Automated, modular verifier for (concurrent) Python programs, based on the Viper verification infrastructure. ([Code](https://github.com/marcoeilers/nagini))
+- [Source Code Modeling](https://github.com/lab-ml/source_code_modelling) - Use Transformers and LSTMs to learn Python source code.
+- [Course Files for Complete Python 3 Bootcamp Course](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp)
+- [Awesome Python Applications](https://github.com/mahmoud/awesome-python-applications) - Case studies in successfully shipping Python software.
+- [Data-oriented Programming in Python (2020)](https://www.moderndescartes.com/essays/data_oriented_python/) ([HN](https://news.ycombinator.com/item?id=24504947))
+- [Analyzing Python Code with Python (2020)](https://rotemtam.com/2020/08/13/python-ast/)
+- [Healthy Python Codebase (2020)](https://blog.vtemian.com/post/healthy-python-codebase/)
+- [Python Multiple Inheritance (2020)](https://blog.vtemian.com/post/multiple-inheritance/)
+- [The Personal Python Data Science Toolkit (2020)](https://alexfranz.com/posts/personal-python-data-science-toolkit-part-1/)
+- [Beginners Introduction to using Standard I/O (2020)](https://alecthegeek.github.io/2020/05/04/Intro-to-stdio.html)
+- [Asynchronous Python and Databases (2015)](https://techspot.zzzeek.org/2015/02/15/asynchronous-python-and-databases/)
+- [What does this python package do?](https://www.youtube.com/playlist?list=PLCTHcU1KoD99ZWRvzAGrvF6ZBCrkmZk4t) - Bi-weekly series, our developer advocate, Nafiul Islam, explores different Python packages both in the standard library and the community.
+- [PyCharm JetBrains YouTube](https://www.youtube.com/c/PyCharmIDE/playlists)
+- [How I Tried To Reduce Pylint Memory Usage (2020)](https://rtpg.co/2020/10/12/pylint-usage.html) ([HN](https://news.ycombinator.com/item?id=24754397))
+- [PySDR: A Guide to SDR and DSP Using Python](https://pysdr.org/index.html) ([HN](https://news.ycombinator.com/item?id=24750588))
+- [Boa](https://github.com/mamba-org/boa) - Fast Conda and Mamba Package Builder.
+- [NPComp](https://github.com/llvm/mlir-npcomp) - MLIR based compiler toolkit for numerical python programs.
+- [wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide) - Strictest and most opinionated python linter ever.
+- [codebasics learn python channel](https://www.youtube.com/c/codebasics/videos) ([Code](https://github.com/codebasics/py))
+- [Python Core Developers Q&A (2020)](https://www.youtube.com/watch?v=gXMdfBTcOfQ)
+- [Dlint](https://github.com/dlint-py/dlint) - Tool for encouraging best coding practices and helping ensure Python code is secure.
+- [Higher Kinded Types in Python (2020)](https://sobolevn.me/2020/10/higher-kinded-types-in-python)
+- [My Experience In Production with: Flask, Bottle, Tornado and Twisted (2020)](https://thehftguy.com/2020/10/27/my-experience-in-production-with-flask-bottle-tornado-and-twisted/)
+- [FlakeHell](https://github.com/life4/flakehell) - Flake8 wrapper to make it nice, legacy-friendly, configurable.
+- [Awesome Python Code Formatters](https://github.com/life4/awesome-python-code-formatters)
+- [Austin](https://github.com/P403n1x87/austin) - Python frame stack sampler for CPython written in pure C.
+- [Pyston](https://github.com/pyston/pyston) - Performance-oriented Python implementation built using LLVM and modern JIT techniques. ([Pyston v2: 20% faster Python](https://blog.pyston.org/2020/10/28/pyston-v2-20-faster-python/)) ([HN](https://news.ycombinator.com/item?id=24921790))
+- [The Magic of Python Context Managers (2020)](https://martinheinz.dev/blog/34)
+- [Python for Everybody course](https://www.coursera.org/specializations/python)
+- [Caching in Python Using the LRU Cache Strategy (2020)](https://realpython.com/lru-cache-python/)
+- [Annotated Algorithms in Python](https://github.com/mdipierro/nlib) - With applications in Physics, Biology, and Finance.
+- [Composing Programs](http://composingprograms.com/) - Free online introduction to programming and computer science using Python.
+- [Writing Performant Parallel Python Code (2020)](https://medium.com/swlh/writing-performant-parallel-python-code-7e2f0292f438)
+- [Optimizing your code is not the same as parallelizing your code (2020)](https://pythonspeed.com/articles/do-you-need-cluster-or-multiprocessing/)
+- [PyPy](https://github.com/mozillazg/pypy) - Interpreter that implements the Python programming language, based on the RPython compiler framework for dynamic language implementations. ([PyPy: Faster Python With Minimal Effort](https://realpython.com/pypy-faster-python/))
+- [Evolution of modern python talk (2020)](https://github.com/hultner-technologies/evolution-of-modern-python)
+- [BeeWare](https://beeware.org/) - Allows you to write your app in Python and release it on multiple platforms. ([Code](https://github.com/beeware/beeware.github.io))
+- [Python: The Full Monty: A Tested Semantics for the Python Programming Language](http://cs.brown.edu/~sk/Publications/Papers/Published/pmmwplck-python-full-monty/)
+- [Getting Started With Python 3 (2020)](https://mubinsodyssey.com/getting-started-with-python-3)
+- [Python Internals Serie : Subprocess.Popen (2020)](http://ykarroum.com/2020/11/07/subprocess/)
+- [Run Python Applications Efficiently With malloc_trim (2020)](https://reliability.substack.com/p/run-python-servers-more-efficiently)
+- [wheelwright](https://github.com/explosion/wheelwright) - Automated build repo for Python wheels and source packages.
+- [DepHell](https://github.com/dephell/dephell) - Project management for Python.
+- [Minimal web server demo in Python](https://gist.github.com/jph00/c3db65d2fdb75d8c369c45b688630e98) ([Tweet](https://twitter.com/jeremyphoward/status/1328780892769120256))
+- [Build a Flask microservice with OpenFaaS (2020)](https://www.openfaas.com/blog/openfaas-flask/)
+- [IPython for Web Devs](https://ipythonbook.com/)
+- [Cyberbrain](https://github.com/laike9m/Cyberbrain) - Python debugging, redefined.
+- [mach-nix](https://github.com/DavHau/mach-nix) - Create highly reproducible python environments.
+- [The History of Python: From List Comprehensions to Generator Expressions (2010)](http://python-history.blogspot.com/2010/06/from-list-comprehensions-to-generator.html)
+- [blackdoc](https://github.com/keewis/blackdoc) - Tool that applies black to code in documentation.
+- [Exhaustiveness Checking with Mypy (2020)](https://hakibenita.com/python-mypy-exhaustive-checking) ([HN](https://news.ycombinator.com/item?id=25428583))
+- [Beartype](https://github.com/beartype/beartype) - Fast O(1) runtime type-checking in pure Python.
+- [Python behind the scenes (2020)](https://tenthousandmeters.com/tag/python-behind-the-scenes/)
+- [Python behind the scenes: a list of resources](https://tenthousandmeters.com/materials/python-behind-the-scenes-a-list-of-resources/)
+- [Darker](https://github.com/akaihola/darker) - Reformat and lint modified Python code.
+- [Implementing Rust's dbg! in Python (2020)](https://rtpg.co/2020/12/11/dbg-in-python.html) ([Lobsters](https://lobste.rs/s/9ubykl/implementing_rust_s_dbg_python)) ([HN](https://news.ycombinator.com/item?id=25386358))
+- [line_profiler](https://github.com/pyutils/line_profiler) - Line-by-line profiling for Python.
+- [How not to be slow using Python: Functions (2020)](https://pawroman.dev/how-not-to-be-slow-using-python-functions/)
+- [Basic Python testing setup with pytest (2018)](https://pawroman.dev/pytest-basic-setup/)
+- [Legally Free Python Books List (2020)](https://www.pythonkitchen.com/legally-free-python-books-list/)
+- [VizTracer](https://github.com/gaogaotiantian/viztracer) - Low-overhead logging/debugging/profiling tool that can trace and visualize your python code execution.
+- [PyCG](https://github.com/vitsalis/pycg) - Practical Python Call Graphs.
+- [Python at Scale: Strict Modules (2019)](https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834) ([HN](https://news.ycombinator.com/item?id=25462168))
+- [Python Patterns](https://github.com/faif/python-patterns) - Collection of design patterns/idioms in Python.
+- [Python Cookbook (2013)](https://www.oreilly.com/library/view/python-cookbook-3rd/9781449357337/) ([Code](https://github.com/dabeaz/python-cookbook))
+- [Practice Python Projects](https://learnbyexample.github.io/practice_python_projects/) - Book on basic to intermediate level Python projects.
+- [pyastinterp](https://github.com/pfalcon/pyastinterp) - Python AST interpreter (aka tree-walking interpreter) in Python. Aka meta-circular interpreter.
+- [Python for Scientific Audio](https://github.com/faroit/awesome-python-scientific-audio)
+- [Awesome Python in Education](https://github.com/quobit/awesome-python-in-education)
+- [Virtual Environments Demystified (2018)](https://meribold.org/python/2018/02/13/virtual-environments-9487/) ([HN](https://news.ycombinator.com/item?id=25611307))
+- [Python Standalone Builds](https://github.com/indygreg/python-build-standalone) - Self-contained, highly-portable Python distributions.
+- [Pyflakes](https://github.com/PyCQA/pyflakes) - Simple program which checks Python source files for errors.
+- [Modern Python Environments - dependency and workspace management (2020)](https://testdriven.io/blog/python-environments/)
+- [pytudes](https://github.com/norvig/pytudes) - Python programs, usually short, of considerable difficulty, to perfect particular skills by Peter Norvig.
+- [Implementing FastAPI Services – Abstraction and Separation of Concerns (2020)](https://camillovisini.com/article/abstracting-fastapi-services/) ([HN](https://news.ycombinator.com/item?id=25797140))
+- [Tracing and visualizing the Python GIL with perf and VizTracer (2021)](https://www.maartenbreddels.com/perf/jupyter/python/tracing/gil/2021/01/14/Tracing-the-Python-GIL.html)
+- [MesaPy](https://github.com/mesalock-linux/mesapy) - Memory-Safe Python Implementation based on PyPy.
+- [Makefile.venv](https://github.com/sio/Makefile.venv) - Seamlessly manage Python virtual environment with a Makefile.
+- [Research Software Engineering with Python Course](https://alan-turing-institute.github.io/rsd-engineeringcourse/) ([Code](https://github.com/alan-turing-institute/rsd-engineeringcourse))
+- [OO in Python is mostly pointless](https://leontrolski.github.io/mostly-pointless.html) ([HN](https://news.ycombinator.com/item?id=25933121)) ([Lobsters](https://lobste.rs/s/ldzfsw/oo_python_is_mostly_pointless))
+- [Constant Folding in Python (2021)](https://arpitbhayani.me/blogs/constant-folding-python)
+- [You don't really need a virtualenv (2021)](https://frostming.com/2021/01-22/introducing-pdm/) ([HN](https://news.ycombinator.com/item?id=26020732))
+- [Homebrew Python Is Not For You (2021)](https://justinmayer.com/posts/homebrew-python-is-not-for-you/) ([Lobsters](https://lobste.rs/s/vhfoga/homebrew_python_is_not_for_you)) ([HN](https://news.ycombinator.com/item?id=26017852))
+- [Pattern matching accepted for Python (2021)](https://lwn.net/Articles/845480/) ([HN](https://news.ycombinator.com/item?id=26080760)) ([Lobsters](https://lobste.rs/s/l4n7db/pattern_matching_accepted_for_python))
+- [100 Page Python Intro Book](https://learnbyexample.github.io/100_page_python_intro/introduction.html) ([HN](https://news.ycombinator.com/item?id=26076721))
+- [CPython CMake Build System](https://github.com/python-cmake-buildsystem/python-cmake-buildsystem)
+- [I have no name, and I must recurse (2021)](https://blog.astrosnail.pt.eu.org/2021-02-11-snake.html) ([Lobsters](https://lobste.rs/s/gguvow/i_have_no_name_i_must_recurse))
+- [Python Concurrency: The Tricky Bits (2020)](https://python.hamel.dev/concurrency/) ([Tweet](https://twitter.com/HamelHusain/status/1361355718469718020))
+- [Python Programming and Numerical Methods: A Guide for Engineers and Scientists](https://pythonnumericalmethods.berkeley.edu/notebooks/Index.html) ([HN](https://news.ycombinator.com/item?id=26164879))
+- [Why you really need to upgrade pip (2021)](https://pythonspeed.com/articles/upgrade-pip/) ([Lobsters](https://lobste.rs/s/gywypy/why_you_really_need_upgrade_pip))
+- [12 requests per second: A realistic look at Python web frameworks (2021)](https://suade.org/dev/12-requests-per-second-with-python/) ([HN](https://news.ycombinator.com/item?id=26188765))
+- [Conda lock](https://github.com/conda-incubator/conda-lock) - Lightweight library that can be used to generate fully reproducible lock files for conda environments.
+- [Interfaces and Protocols in Python (2021)](https://glyph.twistedmatrix.com/2021/03/interfaces-and-protocols.html)
+- [Many models workflows in Python (2020)](https://www.alexpghayes.com/blog/many-models-workflows-in-python-part-i/)
+- [VSCode's Python Interactive mode is amazing! (2020)](https://www.youtube.com/watch?v=lwN4-W1WR84)
+- [How I Beat the Berlin Rental Market With a Python Script (2021)](https://giansegato.com/essays/how-i-beat-the-berlin-rental-market-with-a-python-script/)
+- [Awesome asyncio](https://github.com/timofurrer/awesome-asyncio)
+- [Hypermodern Python Cookiecutter Template](https://github.com/cjolowicz/cookiecutter-hypermodern-python)
+- [Bowler](https://github.com/facebookincubator/Bowler) - Safe code refactoring for modern Python. ([Web](https://pybowler.io/))
+- [Kuroko](https://kuroko-lang.github.io/) - Dynamic, bytecode-compiled programming language and a dialect of Python. ([Code](https://github.com/kuroko-lang/kuroko))
+- [IPython as a System Shell](https://ipython.readthedocs.io/en/stable/interactive/shell.html) ([HN](https://news.ycombinator.com/item?id=26711434))
+- [IPython](https://github.com/ipython/ipython) - Productive Interactive Computing. ([Docs](https://ipython.readthedocs.io/en/stable/))
+- [Jurigged](https://github.com/breuleux/jurigged) - Hot code reloading for Python. ([HN](https://news.ycombinator.com/item?id=26753190))
+- [Free Python Books](https://github.com/pamoroso/free-python-books) ([HN](https://news.ycombinator.com/item?id=26759677))
+- [Python dataclasses will save you hours (2021)](https://www.youtube.com/watch?v=vBH6GRJ1REM)
+- [Faster Python with Go shared objects (the easy way) (2021)](https://blog.kchung.co/faster-python-with-go-shared-objects/)
+- [Learn by reading code: Python standard library design decisions explained (for advanced beginners) (2021)](https://death.andgravity.com/stdlib)
+- [Python 3 Types in the Wild: A Tale of Two Type Systems (2020)](https://www.cs.rpi.edu/~milanova/docs/dls2020.pdf) ([HN](https://news.ycombinator.com/item?id=26788177))
+- [Sourcery](https://sourcery.ai/) - Automatically Improve Python Code Quality.
+- [Roadmap for mastering Python (2021)](https://twitter.com/PrasoonPratham/status/1383279052430008323)
+- [Awesome Flake8 Extensions](https://github.com/DmytroLitvinov/awesome-flake8-extensions)
+- [The hidden performance overhead of Python C extensions (2021)](https://pythonspeed.com/articles/python-extension-performance/) ([Lobsters](https://lobste.rs/s/6rxxhh/hidden_performance_overhead_python_c))
+- [Cinder](https://github.com/facebookincubator/cinder) - Instagram's performance oriented fork of CPython. ([HN](https://news.ycombinator.com/item?id=27043217))
+- [Asynchronous Tasks with FastAPI and Celery (2021)](https://testdriven.io/blog/fastapi-and-celery/)
+- [py2many](https://github.com/adsharma/py2many) - Python to CLike languages transpiler.
+- [Shrinking your Python application’s Docker image: an overview (2021)](https://pythonspeed.com/articles/smaller-docker-images/)
+- [Tiny Python Projects Book (2020)](http://tinypythonprojects.com/) - Learn coding and testing with puzzles and games. ([Code](https://github.com/kyclark/tiny_python_projects))
+- [Cpython Internals](https://github.com/zpoint/CPython-Internals) - Dive into CPython internals, trying to illustrate every detail of CPython implementation.
+- [The guide to Python virtual environments with conda (2021)](https://whiteboxml.com/blog/the-definitive-guide-to-python-virtual-environments-with-conda)
+- [PyCon US 2021 Recordings](https://pycon.blogspot.com/2021/06/pycon-us-2021-recordings-are-complete.html?m=1) ([HN](https://news.ycombinator.com/item?id=27398986))
+- [Python in a Box](https://github.com/raxod502/python-in-a-box) - Interactive online Python REPL in 30 lines of JavaScript.
+- [Writing fast async HTTP requests in Python (2021)](https://blog.jonlu.ca/posts/async-python-http) ([Lobsters](https://lobste.rs/s/fxpne4/writing_fast_async_http_requests_python))
+- [Intuitive Python: Productive Development for Projects that Last (2021)](https://pragprog.com/titles/dmpython/intuitive-python/) ([HN](https://news.ycombinator.com/item?id=27592822))
+- [Subclassing in Python: Redux (2021)](https://hynek.me/articles/python-subclassing-redux/)
+- [Typeclasses in Python (2021)](https://sobolevn.me/2021/06/typeclasses-in-python) ([Lobsters](https://lobste.rs/s/3eorxj/typeclasses_python))
+- [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/) ([HN](https://news.ycombinator.com/item?id=27736465))
+- [Coding Patterns for Python Extensions](https://pythonextensionpatterns.readthedocs.io/en/latest/index.html) ([Code](https://github.com/paulross/PythonExtensionPatterns))
+- [tryceratops](https://github.com/guilatrova/tryceratops) - Linter to manage all your python exceptions and try/except blocks. ([HN](https://news.ycombinator.com/item?id=27770750))
+- [Functools – The Power of Higher-Order Functions in Python](https://martinheinz.dev/blog/52) ([HN](https://news.ycombinator.com/item?id=27768211))
+- [Beating TimSort at Merging (2021)](https://earthly.dev/blog/python-timsort-merge/) ([Lobsters](https://lobste.rs/s/1a0gmn/beating_timsort_at_merging))
+- [Namedtuple in a Post-Dataclasses World (2021)](https://death.andgravity.com/namedtuples) ([HN](https://news.ycombinator.com/item?id=27906752))
+- [How the Python import system works](https://tenthousandmeters.com/blog/python-behind-the-scenes-11-how-the-python-import-system-works/) ([HN](https://news.ycombinator.com/item?id=27941208))
+- [Epic Python](https://epicpython.com/) - Fun exercise heavy approach to learning modern Python from scratch.
+- [SciPy 2021 Tutorials](https://www.youtube.com/playlist?list=PLYx7XA2nY5Geb1XY6mZU-35lgIfkDqaem)
+- [Replit.web: Python Framework With Built-in Database and Auth Support (2021)](https://blog.replit.com/replit-web) ([Tweet](https://twitter.com/amasad/status/1420479217805021184))
+- [PyArmor](https://github.com/dashingsoft/pyarmor) - Tool used to obfuscate python scripts, bind obfuscated scripts to fixed machine or expire obfuscated scripts. ([Web](http://pyarmor.dashingsoft.com/))
+- [The State Of Python In 2021](https://deprogrammaticaipsum.com/the-state-of-python-in-2021/)
+- [Framework Patterns (2019)](https://blog.startifact.com/posts/framework-patterns.html#) ([HN](https://news.ycombinator.com/item?id=28098578))

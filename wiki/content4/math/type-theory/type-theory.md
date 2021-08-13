@@ -1,0 +1,145 @@
+# [Type Theory](http://en.wikipedia.org/wiki/Type_theory)
+
+## Notes
+
+- A value is some concrete thing, and a type is a collection of concrete things (but is itself not a concrete thing. For example any individual integer is a value, but the collection of all integers is a type. Much like elements and sets in set theory.
+- A type is a collection of values which inhabit that type. A type is a value which is a member of the type of types.
+- Type theory goes much much further than just tagging data.
+- The type determines which data structure you use.
+- Dependent types is basically about being able to express arbitrary things in your type system, meaning that you can construct arbitrary proofs. That's how Coq, Agda and Idris work.
+- Types are types and propositions are propositions; types come from programming languages, and propositions from logic, and they seem to have no relation to each other.
+- [Types are specifications of behavior.](https://www.youtube.com/watch?v=LE0SSLizYUI)
+- Roughly speaking, a [type is a specification of its possible values](https://github.com/skaslev/why-types/blob/master/why-types.pdf).
+
+## Links
+
+- [Learn TT](https://github.com/jozefg/learn-tt) - A collection of resources for learning type theory and type theory adjacent fields.
+- [Homotopy Type Theory lecture materials](https://github.com/RobertHarper/hott-materials)
+- [A textbook on informal homotopy type theory](https://github.com/HoTT/book)
+- [Homotopy type theory book](https://github.com/HoTT/HoTT)
+- [GHOTL Project scope and outline plan](https://sphalerite.org/ghotl/posts/2017-10-16-project-scope-outline.html) - Good read.
+- [What I wish I knew when learning HoTT](https://abooij.github.io/wiwikwlhott/)
+- [Collected works of Per Martin-Löf](https://github.com/michaelt/martin-lof) - [Web version](http://archive-pml.github.io/).
+- [Type Theory: Does understanding of the Curry-Howard correspondence make you a better programmer?](http://qr.ae/TUpF3Z)
+- [Hazel](https://github.com/hazelgrove/hazel) - Live functional programming environment with typed holes. ([Web](https://hazel.org/))
+- [LaTTe](https://github.com/latte-central/LaTTe) - Laboratory for Type Theory experiments (in clojure).
+- [TT Lite](https://github.com/ilya-klyuchnikov/ttlite) - SuperCompiler for Martin-Löf's Type Theory.
+- [Implementation of spartan type theory](https://github.com/andrejbauer/spartan-type-theory)
+- [Why Types Matter](https://github.com/skaslev/why-types/blob/master/why-types.pdf)
+- [Introduction to type theory based on meaning explanations](https://github.com/jonsterling/type-theory-and-its-meaning-explanations)
+- [SymmetryBook](https://github.com/UniMath/SymmetryBook) - Undergraduate textbook written in the univalent style, taking advantage of the presence of symmetry in the logic at an early stage.
+- [nbe-for-mltt](https://github.com/jozefg/nbe-for-mltt) - Normalization by Evaluation for Martin-Löf Type Theory.
+- [Martin Escardo's research](http://www.cs.bham.ac.uk/~mhe/)
+- [Lambdas are Codatatypes (2019)](http://blog.ielliott.io/lambdas-are-codatatypes/)
+- [On the Relationship Between Static Analysis and Type Theory (2019)](https://semantic-domain.blogspot.com/2019/08/on-relationship-between-static-analysis.html) ([Lobsters](https://lobste.rs/s/irow0u/on_relationship_between_static_analysis))
+- [Timeline for Logic, λ-Calculus, and Programming Language Theory (2012)(http://fm.csl.sri.com/SSFT15/Timeline.pages.pdf) ([HN](https://news.ycombinator.com/item?id=20860888))
+- [Types and Programming Languages book](https://www.cis.upenn.edu/~bcpierce/tapl/)
+- [Type Theory and Formal Proof book](https://www.cambridge.org/core/books/type-theory-and-formal-proof/0472640AAD34E045C7F140B46A57A67C)
+- [qtt](https://github.com/LightAndLight/qtt) - Quantitative Type Theory implementation.
+- [Normalization by evaluation for Martin-Löf Type Theory with dependent records](https://github.com/brendanzab/rust-nbe-for-mltt)
+- [Introduction to Type Theory (2019)](https://jadon.io/blog/type-theory/)
+- [No, dynamic type systems are not inherently more open (2020)](https://lexi-lambda.github.io/blog/2020/01/19/no-dynamic-type-systems-are-not-inherently-more-open/) ([HN](https://news.ycombinator.com/item?id=22090700)) ([Lobsters](https://lobste.rs/s/qqlkk0/no_dynamic_type_systems_are_not))
+- [Hindley-Milner type system/Algorithm W study (2018)](http://boxbase.org/entries/2018/mar/5/hindley-milner/)
+- [HN: So you want to write a type checker](https://news.ycombinator.com/item?id=15583515)
+- [What are the common ways of performing typechecking? (2019)](https://www.reddit.com/r/ProgrammingLanguages/comments/87c5dw/what_are_the_common_ways_of_performing/)
+- [mlsub](https://github.com/stedolan/mlsub) - Prototype type inference engine.
+- [Papers and talks around type inference](http://stedolan.net/research/#mlsub)
+- [Low-Level Liquid Types](http://goto.ucsd.edu/~rjhala/papers/low_level_liquid_types.pdf)
+- [PRL Project](http://www.nuprl.org/) - Implementing computational mathematics and providing logic-based tools that help automate programming.
+- [Code is Engineering; Types are Science (2020)](https://www.tweag.io/posts/2020-03-05-peirce.html) ([HN](https://news.ycombinator.com/item?id=22791187))
+- [Implementation of "Complete and Easy Bidirectional Typechecking for Higher-Rank Polymorphism" in Rust](https://github.com/JDemler/BidirectionalTypechecking) ([Paper](https://arxiv.org/pdf/1306.6032.pdf))
+- [Milner Award Lecture: The Type Soundness Theorem That You Really Want to Prove (and now you can)](https://www.youtube.com/watch?v=8Xyk_dGcAwk)
+- [Experimenting with Dependent Type Theory in Rust](https://github.com/phase/dtt)
+- [Making Illegal States Unrepresentable (2020)](https://buttondown.email/hillelwayne/archive/making-illegal-states-unrepresentable/) ([Lobsters](https://lobste.rs/s/b0p6ib/making_illegal_states_unrepresentable))
+- [Beautiful, interactive visualizations of logical inference](https://github.com/ezyang/logitext)
+- [Type Inference by Example](https://github.com/Ahnfelt/type-inference-by-example)
+- [First-Class Dynamic Types (2019)](https://michael.homer.nz/Publications/DLS2019/pattern-types.pdf)
+- [Gradual Typing for Extensibility by Rows (2019)](https://arxiv.org/pdf/1910.08480.pdf)
+- [Graduality and Parametricity: Together Again for the First Time (2020)](https://www.ccs.neu.edu/home/amal/papers/gradparam.pdf)
+- [Abstracting gradual typing: metatheory and applications (2019)](http://repositorio.uchile.cl/bitstream/handle/2250/170935/Abstracting-gradual-typing-Metatheory-and-applications.pdf?sequence=1)
+- [Gradual Typing as if Types Mattered (2020)](https://wgt20.irif.fr/wgt20-final28-acmpaginated.pdf)
+- [Disjoint Intersection Types: Theory and Practice (2018)](https://bixuanzju.github.io/files/Thesis.pdf)
+- [The Fire Triangle (2020)](https://hal.archives-ouvertes.fr/hal-02383109/document)
+- [Foreign Function Typing: Semantic Type Soundness for FFIs (2020)](https://wgt20.irif.fr/wgt20-final23-acmpaginated.pdf)
+- [Bidirectional Typing (2019)](https://arxiv.org/pdf/1908.05839.pdf)
+- [Refinement Kinds (2019)](https://arxiv.org/pdf/1908.00441.pdf) - Type-safe Programming with Practical Type-level Computation.
+- [Refinement type contracts for verification of scientific investigative software (2019)](https://arxiv.org/pdf/1909.00427.pdf)
+- [Design and Evaluation of Contracts for Gradual Typing (2019)](https://jackw.io/papers/thesis.pdf)
+- [Manifest Contracts with Intersection Types (2019)](https://arxiv.org/pdf/1908.03010.pdf)
+- [Kinds are calling conventions (2019)](https://www.microsoft.com/en-us/research/uploads/prod/2019/03/eta.pdf)
+- [Space-Efficient Monotonic References (2020)](https://wgt20.irif.fr/wgt20-final70-acmpaginated.pdf)
+- [Label-Dependent Session Types (2019)](https://arxiv.org/pdf/1911.00705.pdf)
+- [Tabled Typeclass Resolution (2020)](https://arxiv.org/pdf/2001.04301.pdf)
+- [A type and effect system for uniqueness and immutability (2018)](https://www.researchgate.net/publication/326164533_A_type_and_effect_system_for_uniqueness_and_immutability)
+- [Inferring Types and Effects via Static Single AssignmentLeonardo](https://dl.acm.org/doi/pdf/10.1145/3341105.3373888)
+- [smalltt](https://github.com/AndrasKovacs/smalltt) - Demo for high-performance type theory elaboration.
+- [Hoare Type Theory](https://github.com/imdea-software/htt) - Contains the main libraries of Hoare Type Theory (HTT) for reasoning about sequential heap-manipulating programs.
+- [Type inference under the hood (2019)](https://www.aleksandra.codes/type-inference)
+- [Type inference for beginners (2019)](https://medium.com/@dhruvrajvanshi/type-inference-for-beginners-part-1-3e0a5be98a4b)
+- [Algorithm W Step by Step (2006)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.7733&rep=rep1&type=pdf) - Implementation of the classic algorithm W for Hindley- Milner polymorphic type inference in Haskell.
+- [Elaboration with First-Class Implicit Function Types (2020)](https://github.com/AndrasKovacs/icfp20sub/blob/master/paper.pdf) ([Code](https://github.com/AndrasKovacs/icfp20sub/tree/master/fcif))
+- [Experimental type-checker for internally parametric type theory](https://github.com/ecavallo/ptt)
+- [Type Systems as Macros (2017)](http://www.ccs.neu.edu/home/stchang/pubs/ckg-popl2017.pdf)
+- [Compositional Explanation of Types and Algorithmic Debugging of Type Errors (2001)](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.25.818)
+- [Christian Williams: Structural types for algebraic theories (2020)](https://www.youtube.com/watch?v=aJyxtUopJ74)
+- [Peter LeFanu Lumsdaine, What are we thinking when we present a type theory? (2020)](https://www.youtube.com/watch?v=kQe0knDuZqg)
+- [Mathematics in type theory (2020)](https://xenaproject.wordpress.com/2020/06/20/mathematics-in-type-theory/) ([HN](https://news.ycombinator.com/item?id=23612856))
+- [Division by zero in type theory: a FAQ (2020)](https://xenaproject.wordpress.com/2020/07/05/division-by-zero-in-type-theory-a-faq/) ([HN](https://xenaproject.wordpress.com/2020/07/05/division-by-zero-in-type-theory-a-faq/))
+- [Programming in Martin-L ̈of’s Type Theory: An Introduction (1990)](http://www.cse.chalmers.se/research/group/logic/book/book.pdf)
+- [Type Theory and Functional Programming book (1991)](https://www.cs.kent.ac.uk/people/staff/sjt/TTFP/)
+- [Intro To Type Theory](https://danielbmarkham.locals.com/post/88422/technical-tuesdays-intro-to-type-theory) ([Lobsters](https://lobste.rs/s/tvqpbu/intro_type_theory))
+- [Towards Observational Type Theory](http://strictlypositive.org/ott.pdf)
+- [Typing is Hard](https://typing-is-hard.ch/) ([Lobsters](https://lobste.rs/s/t7utm7/typing_is_hard))
+- [Types as axioms, or: playing god with static types (2020)](https://lexi-lambda.github.io/blog/2020/08/13/types-as-axioms-or-playing-god-with-static-types/) ([Lobsters](https://lobste.rs/s/zl3eha/types_as_axioms_playing_god_with_static))
+- [The Cartesian Product Algorithm (Type Inference) (1995)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.30.8177&rep=rep1&type=pdf)
+- [Martin Hofmann’s contributions to Type Theory: Groupoids and Univalence (2020)](http://www.cs.nott.ac.uk/~psztxa/martin-19.pdf)
+- [Demystifying Type Systems (2020)](https://medium.com/wix-engineering/demystifying-type-systems-3a16fafbd92e)
+- [Incremental Type Migration Using Type Algebra (2020)](https://research.google/pubs/pub49386/)
+- [Things I Was Wrong About: Types](https://v5.chriskrycho.com/journal/things-i-was-wrong-about/1-types/) ([HN](https://news.ycombinator.com/item?id=24604943))
+- [Luca Cardelli: Typeful Programming](http://www.lucacardelli.name/Papers/TypefulProg.pdf)
+- [Alg](https://github.com/andrejbauer/alg) - Program that generates all finite models of a first-order theory. It is optimized for equational theories.
+- [Corpse Reviver: Sound and Efficient Gradual Typing via Contract Verification (2020)](https://arxiv.org/abs/2007.12630) ([Tweet](https://twitter.com/yminsky/status/1315983813965742081))
+- [Propositions as types: some missing links (2019)](https://k-bx.github.io/articles/propositions-as-types-missing-links.html)
+- [SPRITE](https://github.com/ranjitjhala/sprite-lang) - Tutorial-style implementation of liquid/refinement types for a subset of Ocaml/Reason.
+- [Refinement Types: A Tutorial (2020)](https://arxiv.org/abs/2010.07763)
+- [Names are not type safety (2020)](https://lexi-lambda.github.io/blog/2020/11/01/names-are-not-type-safety/) ([HN](https://news.ycombinator.com/item?id=24963821))
+- [A Conversation on FRP, Databases, and Types (2020)](https://blog.wesleyac.com/posts/frp-databases-types)
+- [An extended type system with lambda-typed lambda-expressions (2020)](https://arxiv.org/abs/1803.10143)
+- [lambda-dti](https://github.com/ymyzk/lambda-dti) - Interpreter of the ITGL with dynamic type inference.
+- [Session Types without Sophistry](http://okmij.org/ftp/meta-programming/sessions/description.pdf)
+- [Finiteness in Cubical Type Theory (2020)](https://oisdk.github.io/masters-thesis/paper.pdf) ([Code](https://github.com/oisdk/masters-thesis))
+- [Homemade Bidirectional Typing](https://github.com/samuela/bidirectional-typing)
+- [BiRelCost](https://github.com/ezgicicek/BiRelCost) - Bidirectional Type Checking for Relational Properties.
+- [An accessible introduction to type theory and implementing a type-checker (2020)](https://mukulrathi.co.uk/create-your-own-programming-language/intro-to-type-checking/)
+- [Linear ML](https://github.com/neel-krishnaswami/linearml) - Small implementation of a linear type theory in the style of the Benton-Wadler adjoint calculus.
+- [Implementing Inverse Bidirectional Typechecking](https://github.com/neel-krishnaswami/inverse-bidirectional-typechecking)
+- [The intrinsic topology of a Martin-Lo ̈f universe (2012)](https://www.cs.bham.ac.uk/~mhe/papers/universe-indiscrete-and-rice.pdf)
+- [Typing is Hard](https://3fx.ch/typing-is-hard.html)
+- [Catt](https://github.com/thibautbenjamin/catt) - Infinity categorical coherence typechecker.
+- [Strongly-typed System F in Haskell](https://github.com/sweirich/challenge)
+- [Native Type Theory (2021)](https://golem.ph.utexas.edu/category/2021/02/native_type_theory.html) ([Lobsters](https://lobste.rs/s/ornuz9/native_type_theory)) ([HN](https://news.ycombinator.com/item?id=26203257))
+- [Simple-sub Algorithm for Algebraic Subtyping](https://github.com/LPTK/simple-sub) ([Demo](https://lptk.github.io/simple-sub/))
+- ["The Trouble With Types" by Martin Odersky (2013)](https://www.youtube.com/watch?v=0lXUBVipXa8)
+- [Grothendieck's EGA English Translation](https://ega.fppf.site/) ([Code](https://github.com/ryankeleti/ega))
+- [Untyped Types (2021)](https://www.gingerbill.org/article/2021/03/07/untyped-types/)
+- [Algebra and Data Types (2021)](https://justinpombrio.net/2021/03/11/algebra-and-data-types.html) ([Lobsters](https://lobste.rs/s/aul5kz/algebra_data_types))
+- [What part of Hindley-Milner do you not understand?](https://stackoverflow.com/questions/12532552/what-part-of-hindley-milner-do-you-not-understand)
+- [The Hindley-Milner Type System (2021)](https://www.youtube.com/watch?v=OyrByPkiX7s)
+- [Formalization of simple type theory](https://github.com/Chaaaos/formaltt)
+- [Modal Type Theory implementation](https://mtt-lang.github.io/mtt-web/) - Toy functional language based on modal type theory. ([Code](https://github.com/mtt-lang/mtt-lang))
+- [Giml's type inference engine (2021)](https://gilmi.me/blog/post/2021/04/06/giml-type-inference)
+- [Understanding typing judgments (2016)](https://www.hedonisticlearning.com/posts/understanding-typing-judgments.html)
+- [Prototype implementations of systems based on setoid type theory](https://github.com/AndrasKovacs/setoidtt)
+- [Higher-Dimensional Type Theory Course (2020)](https://favonia.org/courses/hdtt2020/) - Graduate seminar course on the recent development of higher-dimensional type theory. ([Code](https://github.com/favonia/hdtt2020-notes))
+- [Synthetic mathematics with an excursion into computability theory (2021)](https://vimeo.com/510188470)
+- [Counterexamples in Type Systems](http://counterexamples.org/) ([Code](https://github.com/stedolan/counterexamples)) ([HN](https://news.ycombinator.com/item?id=27252899))
+- [Introduction to Type Systems](https://splintah.github.io/series/Introduction%20to%20Type%20Systems.html)
+- [System F Playground](http://jamesrwilcox.com/f/)
+- [Building Blocks of the Sasquach Type System (2021)](https://blog.pentlander.com/building-blocks-sasquach-type-system/)
+- [Anders](https://github.com/groupoid/anders) - Homotopy Type System with Strict Equality.
+- [Homotopy Type System](https://groupoid.space/homotopy/) - Type theory with two equalities.
+- [Types versus sets in math and programming languages (2021)](https://byorgey.wordpress.com/2021/06/24/types-versus-sets-in-math-and-programming-languages/)
+- [Let's build a type system in Haskell!](https://luctielen.com/videos/lets_build_a_typesystem_in_haskell/)
+- [Bidirectional Typing Rules: A Tutorial (2013)](http://www.davidchristiansen.dk/tutorials/bidirectional.pdf) ([Code](https://github.com/luc-tielen/typesystem))
+- [The Hardest Problem in Type Theory [Uniqueness of Identity Proofs] (2021)](https://www.youtube.com/watch?v=m_PecfbEWik)
+- [Notes on type theory](https://github.com/ionathanch/ttzoo)

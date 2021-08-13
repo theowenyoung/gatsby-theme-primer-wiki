@@ -1,0 +1,70 @@
+# [Java](<https://en.wikipedia.org/wiki/Java_(programming_language)>)
+
+## Links
+
+- [Source code from the third edition of Effective Java, with minor additions as necessary to make it runnable](https://github.com/jbloch/effective-java-3e-source-code)
+- [HN: “No, we’re telling everyone we are using Java” (2019)](https://news.ycombinator.com/item?id=19346017)
+- [IT runs on Java 8 (2019)](https://news.ycombinator.com/item?id=19877916) ([HN](https://news.ycombinator.com/item?id=19877916))
+- [Java on iOS, for real (2019)](https://gluonhq.com/java-on-ios-for-real/)
+- [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+- [Quarkus](https://quarkus.io/) - Kubernetes Native Java stack tailored for GraalVM & OpenJDK HotSpot, crafted from the best of breed Java libraries and standards.
+- [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) - Sampling CPU and HEAP profiler for Java featuring AsyncGetCallTrace + perf_events.
+- [The Algorithms - Java](https://github.com/TheAlgorithms/Java) - All Algorithms implemented in Java.
+- [mx](https://github.com/graalvm/mx) - Command-line tool used for the development of Graal projects.
+- [JVM written in Rust](https://github.com/douchuan/jvm)
+- [Maxine VM](https://github.com/beehive-lab/Maxine-VM) - Metacircular VM for Java in Java.
+- [JNI Cookbook](https://github.com/mkowsiak/jnicookbook)
+- [Java Objects Inside Out](https://shipilev.net/jvm/objects-inside-out/)
+- [Java records demystified (2020)](https://isank.dev/posts/java-14-records/)
+- [State of Loom (2020)](https://cr.openjdk.java.net/~rpressler/loom/loom/sol1_part1.html) ([HN](https://news.ycombinator.com/item?id=23201559))
+- [Java 15 in 2020: Reasons to not use Java?](https://dev.to/brunoborges/java-15-in-2020-reasons-to-not-use-java-3ekg)
+- [How to write a (toy) JVM (2020)](https://zserge.com/posts/jvm/) ([HN](https://news.ycombinator.com/item?id=23390914))
+- [Awk-JVM](https://github.com/rethab/awk-jvm) - Toy JVM in Awk. ([HN](https://news.ycombinator.com/item?id=23612910))
+- [Implementing a Simple JVM in Rust by Ben Evans (2019)](https://www.youtube.com/watch?v=7ECbwgkHdAE)
+- [Performance of Modern Java on Data-Heavy Workloads (2020)](https://jet-start.sh/blog/2020/06/09/jdk-gc-benchmarks-part1) ([HN](https://news.ycombinator.com/item?id=23465660))
+- [TornadoVM: Accelerating Java with GPUs and FPGAs (2020)](https://www.infoq.com/articles/tornadovm-java-gpu-fpga/) ([HN](https://news.ycombinator.com/item?id=23521357))
+- [Notebooks on Java](https://justinblank.com/notebooks/)
+- [Writing Java With a Dash of Functional Programming (2018)](https://jiahao.codes/blog/writing-java-with-a-dash-of-functional-programming/)
+- [Write Once, Build Anywhere (2020)](https://dave.autonoma.ca/blog/2020/06/29/write-once-build-anywhere/) - Cross-compiling self-contained Java desktop application launchers.
+- [Greatest Java apps (2020)](https://blogs.oracle.com/javamagazine/the-top-25-greatest-java-apps-ever-written) ([HN](https://news.ycombinator.com/item?id=23676723))
+- [How to learn idiomatic Java in 2020?](https://lobste.rs/s/y2nnwd/how_learn_idiomatic_java_2020)
+- [Circumventing the JVM's bytecode verifier (2019)](https://anthony.som.codes/blog/2019-12-30-jvm-hackery-noverify/) ([HN](https://news.ycombinator.com/item?id=21921922))
+- [Java Turns 25 – Whats Next? (2020)](https://www.oracle.com/a/ocom/docs/corporate/analystrelations/omdia-java-turns-25.pdf) ([HN](https://news.ycombinator.com/item?id=24534629))
+- [Please Test Your Memory](https://shipilev.net/jvm/test-your-memory/) - My JVM keeps crashing in GC, must be a GC bug. ([Lobsters](https://lobste.rs/s/jaezro/please_test_your_memory))
+- [Modern Java/JVM Build Practices](https://github.com/binkley/modern-java-practices)
+- [A Complete Introduction to Java EE (2020)](https://www.jessym.com/articles/a-complete-introduction-to-java-ee)
+- [JDConf](https://jdconf.splashthat.com/) - Connecting Java Developers.
+- [Java Concurrency - Basics of Threads (2020)](https://turkogluc.com/java-concurrency-basics-of-threads/) ([HN](https://news.ycombinator.com/item?id=24940545))
+- [Graphics for JVM (2020)](https://tonsky.me/blog/skija/) ([HN](https://news.ycombinator.com/item?id=25121705))
+- [Useful Java links](https://github.com/Vedenin/useful-java-links)
+- [Java is better than C++ for high speed trading systems (2020)](https://news.efinancialcareers.com/uk-en/3004875/low-latency-java-trading-systems) ([HN](https://news.ycombinator.com/item?id=25217270))
+- [sbt-assembly](https://github.com/sbt/sbt-assembly) - sbt plugin to deploy fat JARs with all of its dependencies. Restart processes.
+- [Jib](https://github.com/GoogleContainerTools/jib/) - Build container images for your Java applications. ([Article](https://www.infoq.com/news/2020/08/containerize-java-app-with-jib/))
+- [Live Programming with the GraalVM, the LSP, and VS Code (2020)](https://www.javaadvent.com/2020/12/live-programming-with-the-graalvm-the-lsp-and-vs-code.html)
+- [Recaf](https://www.coley.software/Recaf/) - Modern Java bytecode editor. ([Code](https://github.com/Col-E/Recaf))
+- [Java Concurrency in Practice](https://jcip.net/)
+- [Java on Truffle – Going Fully Metacircular (2021)](https://medium.com/graalvm/java-on-truffle-going-fully-metacircular-215531e3f840) ([HN](https://news.ycombinator.com/item?id=25838364))
+- [Writing C code in Java/Clojure: GraalVM specific programming (2021)](https://yyhh.org/blog/2021/02/writing-c-code-in-javaclojure-graalvm-specific-programming/)
+- [Distribution of JVM Desktop Applications (2021)](https://blog.frankel.ch/state-jvm-desktop-frameworks/6/) ([HN](https://news.ycombinator.com/item?id=26135532))
+- [jabba](https://github.com/shyiko/jabba) - Java Version Manager.
+- [Choosing Java instead of C++ for low-latency systems (2021)](https://stackoverflow.blog/2021/02/22/choosing-java-instead-of-c-for-low-latency-systems/) ([HN](https://news.ycombinator.com/item?id=26225273))
+- [Java 16 (2021)](http://jdk.java.net/16/) ([HN](https://news.ycombinator.com/item?id=26477144))
+- [The Modern Java Platform – 2021 Edition](https://jamesward.com/2021/03/16/the-modern-java-platform-2021-edition/) ([HN](https://news.ycombinator.com/item?id=26485993))
+- [ZGC – What's new in JDK 16 (2021)](https://malloc.se/blog/zgc-jdk16) ([HN](https://news.ycombinator.com/item?id=26555514))
+- [A categorized list of all Java and JVM features since JDK 8 to 16 (2021)](https://advancedweb.hu/a-categorized-list-of-all-java-and-jvm-features-since-jdk-8-to-16/) ([HN](https://news.ycombinator.com/item?id=26662297))
+- [jbang](https://github.com/jbangdev/jbang) - Run java as scripts anywhere. ([Web](https://www.jbang.dev/))
+- [Java Is Underhyped (2021)](https://jackson.sh/posts/2021-04-java-underrated/) ([HN](https://news.ycombinator.com/item?id=26827766))
+- [Multi-Tier Compilation in GraalVM (2021)](https://medium.com/graalvm/multi-tier-compilation-in-graalvm-5fbc65f92402)
+- [JDK](https://github.com/openjdk/jdk) - Open-source reference implementations of Java. ([Web](https://openjdk.java.net/projects/jdk/)) ([GitHub](https://github.com/openjdk))
+- [Java: Automated API Testing with REST Assured (2021)](https://www.linkedin.com/learning/java-automated-api-testing-with-rest-assured)
+- [Java's records, Lombok's data, and Kotlin's data classes (2021)](https://nipafx.dev/java-record-semantics/) ([HN](https://news.ycombinator.com/item?id=27076976))
+- [How I Hacked Google App Engine: Anatomy of a Java Bytecode Exploit (2021)](https://blog.polybdenum.com/2021/05/05/how-i-hacked-google-app-engine-anatomy-of-a-java-bytecode-exploit.html)
+- [Teeing, a hidden gem in the Java API (2021)](https://blog.frankel.ch/teeing-java-api/) ([HN](https://news.ycombinator.com/item?id=27103033))
+- [Why use Java instead of Kotlin? (2021)](https://www.reddit.com/r/java/comments/ndwz92/can_i_get_some_reasons_to_use_java_instead_of/gyd5yi5/) ([HN](https://news.ycombinator.com/item?id=27183076))
+- [Quest to the OS: Java Native Memory (2021)](https://blog.picnic.nl/quest-to-the-os-java-native-memory-5d3ef68ffc0a) ([Lobsters](https://lobste.rs/s/9ne763/quest_os_java_native_memory))
+- [Networking I/O with Virtual Threads – Under the hood (2021)](https://inside.java/2021/05/10/networking-io-with-virtual-threads/) ([HN](https://news.ycombinator.com/item?id=27744826))
+- [GraalVM at Facebook (2021)](https://medium.com/graalvm/graalvm-at-facebook-af09338ac519) ([HN](https://news.ycombinator.com/item?id=27782475))
+- [Thread Pools on the JVM](https://gist.github.com/djspiewak/46b543800958cf61af6efa8e072bfd5c) ([HN](https://news.ycombinator.com/item?id=27883847))
+- [JVM Anatomy Quarks](https://shipilev.net/jvm/anatomy-quarks/)
+- [jgo](https://github.com/scijava/jgo) - Launch Java code from the CLI, installation-free.
+- [jas](https://github.com/mcy/jas) - JVM bytecode assembler.

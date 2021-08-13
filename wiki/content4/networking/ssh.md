@@ -1,0 +1,65 @@
+# SSH
+
+## Links
+
+- [SSH logins using keys (2005)](http://alblue.bandlem.com/2005/08/howto-ssh-logins-using-keys.html)
+- [Endlessh](https://github.com/skeeto/endlessh) - SSH tarpit that very slowly sends an endless, random SSH banner. ([HN](https://news.ycombinator.com/item?id=24491453))
+- [SeKey](https://github.com/sekey/sekey) - Use Touch ID / Secure Enclave for SSH Authentication.
+- [BLESS](https://github.com/Netflix/bless) - SSH Certificate Authority that runs as an AWS Lambda function and is used to sign SSH public keys.
+- [sslh](https://github.com/yrutschle/sslh) - Applicative Protocol Multiplexer (e.g. share SSH and HTTPS on the same port).
+- [Guide to using YubiKey for GPG and SSH](https://github.com/drduh/YubiKey-Guide)
+- [Eternal Terminal](https://github.com/MisterTea/EternalTerminal) - Re-Connectable secure remote shell.
+- [ssh in https](https://flak.tedunangst.com/post/ssh-in-https) ([Lobsters](https://lobste.rs/s/xzztac/ssh_https))
+- [WebSSH](https://github.com/huashengdun/webssh) - Web based ssh client.
+- [Building interactive SSH applications (2019)](https://drewdevault.com/2019/09/02/Interactive-SSH-programs.html) ([HN](https://news.ycombinator.com/item?id=20857362))
+- [Top 20 OpenSSH Server Best Security Practices (2020)](https://www.cyberciti.biz/tips/linux-unix-bsd-openssh-server-best-practices.html)
+- [Pwning your (web)server and network the easy way - or why exposing ~/.ssh/ is a bad idea](https://0day.work/pwning-your-web-server-and-network-the-easy-way-or-why-exposing-ssh-is-a-bad-idea/) ([HN](https://news.ycombinator.com/item?id=22068070))
+- [jass](https://github.com/jschauma/jass) - Tool to facilitate sharing of secrets using SSH keys.
+- [rtop-bot](https://github.com/rapidloop/rtop-bot) - Bot for Remote Server Monitoring over SSH.
+- [Awesome SSH](https://github.com/moul/awesome-ssh)
+- [ssh-vault](https://github.com/ssh-vault/ssh-vault) - Encrypt/decrypt using ssh keys.
+- [Secretive](https://github.com/maxgoedjen/secretive) - Store SSH keys in the Secure Enclave. ([HN](https://news.ycombinator.com/item?id=23664129))
+- [sshcommand](https://github.com/dokku/sshcommand) - Turn SSH into a thin client specifically for your app.
+- [How to SSH Properly (2020)](https://gravitational.com/blog/how-to-ssh-properly/) ([HN](https://news.ycombinator.com/item?id=22750850))
+- [Mosh](https://www.jefftk.com/p/mosh) - Tool used to connect from a client computer to a server over the Internet, to run a remote terminal. ([HN](https://news.ycombinator.com/item?id=22810589))
+- [DIY Single Sign-On for SSH (2020)](https://smallstep.com/blog/diy-single-sign-on-for-ssh/) ([Lobsters](https://lobste.rs/s/jrynqk/diy_single_sign_on_for_ssh))
+- [ssh-p2p](https://github.com/nobonobo/ssh-p2p) - SSH p2p tunneling server and client.
+- [SSH Tips & Tricks (2020)](https://smallstep.com/blog/ssh-tricks-and-tips/) ([HN](https://news.ycombinator.com/item?id=23025756))
+- [xxh](https://github.com/xxh/xxh) - Bring your favorite shell wherever you go through the ssh.
+- [SSH Agent Explained (2020)](https://smallstep.com/blog/ssh-agent-explained/) ([HN](https://news.ycombinator.com/item?id=23241934))
+- [SSH Emergency Access (2020)](https://smallstep.com/blog/ssh-emergency-access/) ([HN](https://news.ycombinator.com/item?id=23731351))
+- [Smallstep](https://smallstep.com/) - Single Sign-on SSH & Production Identity. Say Goodbye to SSH Key Management.
+- [Step CLI](https://github.com/smallstep/cli) - Toolkit for working with your public key infrastructure (PKI).
+- [Lockbox](https://github.com/half-cambodian-hacker-man/ssh-lockbox) - Personal centralised SSH key deployment to multiple boxes. ([Lobsters](https://lobste.rs/s/d9ziys/ssh_lockbox_personal_centralised_ssh_key))
+- [Ask HN: What do you use for SSH key management of teams? (2020)](https://news.ycombinator.com/item?id=24157180)
+- [How to properly manage ssh keys for server access (2020)](https://www.paepper.com/blog/posts/how-to-properly-manage-ssh-keys-for-server-access/) ([HN](https://news.ycombinator.com/item?id=24599837))
+- [SSH tutorial](https://github.com/RabeaMue/SSH_tutorial/blob/master/SSH_tutorial.org) - Small guide how to use SSH.
+- [TRASA](https://github.com/seknox/trasa) - Zero Trust Service Access. ([Web](https://www.trasa.io/))
+- [PSSH](https://github.com/lilydjwg/pssh) - Provides parallel versions of OpenSSH and related tools, including pssh, pscp, prsync, pnuke and pslurp.
+- [SSHDog](https://github.com/Matir/sshdog) - Small portable SSH server in Go.
+- [SSH Through Websocket (2020)](https://rumpelsepp.org/blog/ssh-through-websocket/)
+- [assh](https://github.com/moul/assh) - Transparent wrapper that adds support for regex, aliases, gateways, dynamic hostnames, graphviz, json output, yaml configuration, and more to SSH.
+- [Roll your own Ngrok with Nginx, Letsencrypt, and SSH reverse tunnelling (2019)](https://jerrington.me/posts/2019-01-29-self-hosted-ngrok.html)
+- [SSH Tunnelling Basics](https://www.polarsparc.com/xhtml/SSH-Tunnel.html)
+- [LazySSH](https://github.com/stephank/lazyssh) - SSH server that acts as a jump host only, and dynamically starts temporary virtual machines. ([HN](https://news.ycombinator.com/item?id=25081472))
+- [Passive SSH](https://github.com/D4-project/passive-ssh) - Open source framework composed of a scanner and server to store and lookup the SSH keys and fingerprints per host (IPv4/IPv6/onion). ([Presentation](https://github.com/D4-project/passive-ssh/blob/main/doc/slides/passive-ssh-presentation.pdf))
+- [Paramiko](https://github.com/paramiko/paramiko) - Leading native Python SSHv2 protocol library.
+- [boxssh](https://github.com/prologic/sshbox) - Server that boxes you into a container.
+- [boringproxy](https://github.com/boringproxy/boringproxy) - No-frills HTTPS/SSH tunneling solution with as much automation as possible. Designed for self-hosters. ([Web](https://boringproxy.io/))
+- [kr](https://github.com/kryptco/kr) - Dev tool for SSH auth + Git commit/tag signing using a key stored in Krypton.
+- [SSH Access for Supercomputers (2021)](https://goteleport.com/blog/secure-access-supercomputers/)
+- [sshh](https://github.com/daniellockyer/sshh) - Quickly SSH into hosts.
+- [A visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/) ([HN](https://news.ycombinator.com/item?id=26053323))
+- [SSH Certificates Security Hardening (2021)](https://goteleport.com/blog/ssh-certificates)
+- [MultiSSH](https://multissh.dev/) - Connect to multiple SSH hosts simultaneously.
+- [How often should I rotate my ssh keys? (2021)](https://tailscale.com/blog/rotate-ssh-keys/)
+- [remote pbcopy for use over ssh](https://github.com/bottlerocketlabs/remote-pbcopy)
+- [tosh](https://github.com/mikroskeem/tosh) - Imagine your SSH server only listens on an IPv6 address, and where the last 6 digits are changing every 30 seconds as a TOTP code.
+- [consrv](https://github.com/mdlayher/consrv) - SSH to serial console bridge server.
+- [ssh-audit](https://github.com/jtesta/ssh-audit) - SSH server & client auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc).
+- [SSH quoting (2021)](https://www.chiark.greenend.org.uk/~cjwatson/blog/ssh-quoting.html) ([HN](https://news.ycombinator.com/item?id=27483077))
+- [ssh_config](https://github.com/kevinburke/ssh_config) - Go parser for ssh_config files.
+- [SSH2-Promise](https://github.com/sanketbajoria/ssh2-promise) - Powerful promise wrapper around ssh2 client.
+- [ReverseSSH](https://github.com/Fahrj/reverse-ssh) - Lightweight SSH server behaving like a reverse shell.
+- [sish](https://github.com/antoniomika/sish) - HTTP(S)/WS(S)/TCP Tunnels to localhost using only SSH. Open source serveo/ngrok alternative.
+- [Rospo](https://github.com/ferama/rospo) - Simple and reliable ssh tunnels with embedded ssh server in Go.

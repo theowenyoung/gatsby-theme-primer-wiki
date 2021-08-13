@@ -1,0 +1,80 @@
+# [Genomics](https://en.wikipedia.org/wiki/Genomics)
+
+## Links
+
+- [Open sourcing bioinstruments (2019)](https://liorpachter.wordpress.com/2019/01/18/open-sourcing-bioinstruments/) ([HN](https://news.ycombinator.com/item?id=18946981))
+- [goleft](https://github.com/brentp/goleft) - Collection of bioinformatics tools distributed under MIT license in a single static binary.
+- [When the levee breaks: a practical guide to sketching algorithms for processing the flood of genomic data (2019)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1809-x)
+- [Handbook of Statistical Genomics (2019)](https://www.goodreads.com/book/show/44327365-handbook-of-statistical-genomics)
+- [Nature Reviews Genetics](https://www.nature.com/nrg/) - Monthly review journal in genetics and covers the full breadth of modern genetics.
+- [Bioinformatics and Functional Genomics 3rd Edition by Jonathan Pevsner](http://www.bioinfbook.org/)
+- [Nucleus](https://github.com/google/nucleus) - Python and C++ code for reading and writing genomics data.
+- [Statistical Population Genomics](https://link.springer.com/book/10.1007/978-1-0716-0199-0)
+- [Genome Informatics 2019 Lightning Talk: A. Sina Booeshaghi](https://www.youtube.com/watch?v=x-rNofr88BM)
+- [10x Genomics](https://www.10xgenomics.com/) ([Code](https://github.com/10XGenomics))
+- [Neher Lab](https://neherlab.org/) - Pathogen evolution, genomics, and biophysics lab in Switzerland.
+- [BEDOPS](https://github.com/bedops/bedops) - High-performance genomic feature operations.
+- [Introduction to Genetics and Evolution](https://www.coursera.org/learn/genetics-evolution)
+- [Open Targets](https://www.opentargets.org/) - Partnership that uses human genetics and genomics data for systematic drug target identification and prioritisation.
+- [Next-Gen Sequence Analysis Workshop (2019)](https://angus.readthedocs.io/en/2019/)
+- [Korkin Lab](http://korkinlab.org/)
+- [Varlociraptor](https://github.com/varlociraptor/varlociraptor) - Flexible, uncertainty-aware variant calling with parameter free filtration via FDR control.
+- [genetools](https://genetools.maximz.com/) - Single-cell analysis recipes. ([Code](https://github.com/maximz/genetools))
+- [Learn Genetics](https://learn.genetics.utah.edu/) ([HN](https://news.ycombinator.com/item?id=23295590))
+- [fgsea](https://github.com/ctlab/fgsea) - Fast Gene Set Enrichment Analysis.
+- [Awesome Genome Visualization](https://github.com/cmdcolin/awesome-genome-visualization)
+- [Computational Genomics Class Playlist at San Diego State University](https://www.youtube.com/playlist?list=PLpPXw4zFa0uLMHwSZ7DMeLGjIUgo1IBbn)
+- [Computational Genomics Manual](https://linsalrob.github.io/ComputationalGenomicsManual/) ([Code](https://github.com/linsalrob/ComputationalGenomicsManual))
+- [A Theory of Natural Universal Computation Through RNA (2020)](https://arxiv.org/abs/2008.08814) ([Tweet](https://twitter.com/theHessam/status/1296650944302776321))
+- [Hail](https://github.com/hail-is/hail) - Open-source, general-purpose, Python-based data analysis tool with additional data types and methods for working with genomic data. ([References](https://hail.is/references.html))
+- [gnomAD](https://gnomad.broadinstitute.org/) - Genome aggregation database.
+- [We can now edit the human genome – how far should we go?](https://www.pbs.org/wgbh/nova/video/human-nature/) ([HN](https://news.ycombinator.com/item?id=24454954))
+- [Scientific Background: A tool for genome editing (2020)](https://www.nobelprize.org/uploads/2020/10/advanced-chemistryprize2020.pdf)
+- [Introduction to Social Science Genetics (2020)](https://silverbeach.in/courses/2020/october/social-science-genetics/)
+- [gplearn](https://github.com/trevorstephens/gplearn) - Implements Genetic Programming in Python, with a scikit-learn inspired and compatible API.
+- [Genetic List](https://geneticlist.com/) - Browsable genetic marker lists.
+- [Cutevariant](https://github.com/labsquare/cutevariant) - Standalone and free application to explore genetics variations from VCF file.
+- [A hypothesis is a liability (2020)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02133-w)
+- [Awesome Imaging Genetics](https://github.com/heykeetae/AwesomeImagingGenetics)
+- [There is little chance CRISPR will ever be widely used to directly treat disease (2020)](http://www.josiahzayner.com/2020/10/crispr-is-dead.html) ([HN](https://news.ycombinator.com/item?id=25096386))
+- [misha](https://github.com/tanaylab/misha) - Genomic data analysis suite.
+- [MetaCell R](https://github.com/tanaylab/metacell) - Single-cell mRNA Analysis.
+- [nf-core/eager](https://github.com/nf-core/eager) - Bioinformatics best-practice analysis pipeline for NGS sequencing based ancient DNA (aDNA) data analysis.
+- [GenomicSQLite](https://github.com/mlin/GenomicSQLite) - Genomics Extension for SQLite.
+- [gfabase](https://github.com/mlin/gfabase) - Command-line utility for random-access storage of Graphical Fragment Assembly (GFA) data.
+- [GenomeSpy](https://genomespy.app/) - Genome visualization tool with a grammar of graphics and WebGL-powered fluid interactions. ([Code](https://github.com/tuner/genome-spy))
+- [Decoding the Language of Genomes (2020)](https://caltechletters.org/science/decoding-the-language-of-genomes) ([HN](https://news.ycombinator.com/item?id=25384412))
+- [GREIN](http://www.ilincs.org/apps/grein/?gse=) - GEO RNA-seq Experiments Interactive Navigator. ([Code](https://github.com/uc-bd2k/GREIN))
+- [FUMA: Functional mapping and annotation of genetic associations](https://fuma.ctglab.nl/) ([Code](https://github.com/Kyoko-wtnb/FUMA-webapp))
+- [GenePattern Notebook](https://github.com/genepattern/genepattern-notebook) - Platform for integrating genomic analysis with Jupyter Notebooks.
+- [SCDE](https://github.com/hms-dbmi/scde) - R package for analyzing single-cell RNA-seq data.
+- [Human Genome Idiogram Vector Art Library](https://github.com/RCollins13/HumanIdiogramLibrary) - Contains image files for each of the 24 primary human chromosomes, as well as one for the entire genome lined up.
+- [RNA Memory Hypothesis (2021)](https://scottlocklin.wordpress.com/2021/02/03/rna-memory-hypothesis/) ([HN](https://news.ycombinator.com/item?id=26013217))
+- [ELI5 Epigenetics](https://www.reddit.com/r/explainlikeimfive/comments/l0d48j/eli5_epigenetics/)
+- [Bioconductor](https://bioconductor.org/) - Provides tools for the analysis and comprehension of high-throughput genomic data. ([GitHub](https://github.com/Bioconductor))
+- [Orchestrating Single-Cell Analysis with Bioconductor](http://bioconductor.org/books/release/OSCA/) ([Code](https://github.com/Bioconductor/OrchestratingSingleCellAnalysis))
+- [Awesome CRISPR](https://github.com/davidliwei/awesome-CRISPR) - List of software/websites/databases/papers for genome engineering.
+- [Genomics Workflows on AWS](https://github.com/aws-samples/aws-genomics-workflows) ([Web](https://docs.opendata.aws/genomics-workflows/))
+- [Pyne Lab](https://pyne-lab.uk/) - Single molecule biophysics of DNA interactions.
+- [Nextclade](https://clades.nextstrain.org/) - Viral genome alignment, clade assignment, mutation calling, and quality checks. ([Code](https://github.com/nextstrain/nextclade))
+- [Shooting out the messenger—mRNA and how the pandemic advanced biotechnologies (2021)](https://www.economist.com/podcasts/2021/03/24/shooting-out-the-messenger-mrna-and-how-the-pandemic-advanced-biotechnologies) ([Tweet](https://twitter.com/EricTopol/status/1376253167575334914))
+- [Cirrocumulus for Single-Cell Data Visualization](https://cirrocumulus.readthedocs.io/en/latest/) ([Code](https://github.com/klarman-cell-observatory/cirrocumulus))
+- [On detecting gene-gene interactions (2020)](https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-020-0703-4)
+- [An on-off switch for gene editing (2021)](https://news.mit.edu/2021/switch-crispr-gene-editing-0414)
+- [Scientists Catch Jumping Genes Rewiring Genomes (2021)](https://www.quantamagazine.org/scientists-catch-jumping-genes-rewiring-genomes-20210512/) ([HN](https://news.ycombinator.com/item?id=27140443))
+- [regenie](https://github.com/rgcgithub/regenie) - C++ program for whole genome regression modelling of large genome-wide association studies.
+- [Edinburgh Genome Foundry](https://edinburgh-genome-foundry.github.io/) ([GitHub](https://github.com/Edinburgh-Genome-Foundry))
+- [Cultural Evolution of Genetic Heritability (2021)](https://michael.muthukrishna.com/wp-content/uploads/2021/05/Cultural_Evolution_of_Genetic_Heritability-BBS-Uchiyama_Spicer_Muthukrishna-final.pdf) ([Tweet](https://twitter.com/mmuthukrishna/status/1395731515540127746))
+- [Pachter Lab](http://pachterlab.github.io/) - Develops computational and experimental methods for genomics. ([GitHub](https://github.com/pachterlab))
+- [The complete sequence of a human genome (2021)](https://www.biorxiv.org/content/10.1101/2021.05.26.445798v1) ([Reddit](https://www.reddit.com/r/genomics/comments/nmg0t6/the_complete_sequence_of_a_human_genome_nurk_et/))
+- [perbase](https://github.com/sstadick/perbase) - Per-base per-nucleotide depth analysis.
+- [Computational genomics resources](https://github.com/igordot/genomics)
+- [Seq-N-Slide](https://github.com/igordot/sns) - Sequencing data analysis pipelines. ([Docs](https://igordot.github.io/sns/))
+- [Genomics Reddit](https://www.reddit.com/r/genomics/)
+- [How to sequence your genome at home (2021)](http://blog.booleanbiotech.com/human-genome-at-home.html) ([HN](https://news.ycombinator.com/item?id=27422719))
+- [Ask HN: What's an interesting DIY genetic engineering project? (2021)](https://news.ycombinator.com/item?id=27475080)
+- [Illumina](https://www.illumina.com/) - Sequencing and array-based solutions for genetic research.
+- [Wochenende](https://github.com/MHH-RCUG/Wochenende) - Whole Genome/Metagenome Sequencing Alignment Pipeline.
+- [Using a Quadruplet Codon to Expand the Genetic Code of an Animal (2021)](https://www.biorxiv.org/content/10.1101/2021.07.17.452788v1)
+- [PingPong](https://github.com/Parsoa/PingPong) - Comparative genome analysis using sample-specific string detectionin accurate long reads.
+- [RNA demethylation increases rice and potato yields 50% (2021)](https://www.nature.com/articles/s41587-021-00982-9) ([HN](https://news.ycombinator.com/item?id=27925250))

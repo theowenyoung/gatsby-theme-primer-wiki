@@ -1,0 +1,80 @@
+# [Raspberry Pi](https://www.raspberrypi.org/)
+
+## Links
+
+- [Raspberry Pi 4](https://www.raspberrypi.org/blog/raspberry-pi-4-on-sale-now-from-35/) ([HN](https://news.ycombinator.com/item?id=20260863))
+- [Setting up a Raspberry Pi 4 home server (2020)](https://smalldata.tech/blog/2019/07/12/setting-up-a-raspberry-pi-4-home-server) ([HN](https://news.ycombinator.com/item?id=22374093))
+- [Ask HN: What do you do with your Raspberry Pi? (2019)](https://news.ycombinator.com/item?id=20264911)
+- [Lobsters: Use case for Raspberry Pis? (2020)](https://lobste.rs/s/eld6l5/use_case_for_raspberry_pis)
+- [Bluetooth_HID](https://github.com/AnesBenmerzoug/Bluetooth_HID) - Program used to make a Raspberry Pi emulate a keyboard/mouse Bluetooth HID client.
+- [gokrazy](https://github.com/gokrazy/gokrazy) - Pure-Go userland for your Raspberry Pi 3 appliances. ([Web](https://gokrazy.org/))
+- [RPiPlay](https://github.com/FD-/RPiPlay) - Open-source AirPlay mirroring server for the Raspberry Pi.
+- [Raspberry-Pi Bare Metal Tutorial](https://github.com/BrianSidebotham/arm-tutorial-rpi)
+- [QPULib](https://github.com/mn416/QPULib) - Language and compiler for the Raspberry Pi GPU.
+- [Raspberry Pi Docs](https://www.raspberrypi.org/documentation/) ([Code](https://github.com/raspberrypi/documentation))
+- [Cuprum Pi](https://github.com/inre/cupi) - GPIO access library for the Raspberry Pi.
+- [A Raspberry Pi as a decent residential proxy (2020)](https://wiringbits.net/wiringbits/2020/06/07/a-raspberry-pi-as-a-decent-residential-proxy.html) ([HN](https://news.ycombinator.com/item?id=23456515))
+- [Raspberry Pi Firmware](https://github.com/raspberrypi/firmware) - Pre-compiled binaries of the current Raspberry Pi kernel and modules, userspace libraries, and bootloader/GPU firmware.
+- [Adventures in booting Linux on Raspberry Pi 4 (2020)](https://blog.mostlypointless.dev/posts/net-boot-rpi/) ([HN](https://news.ycombinator.com/item?id=23666564))
+- [Cross building Rust GStreamer plugins for the Raspberry Pi (2020)](https://www.collabora.com/news-and-blog/blog/2020/06/23/cross-building-rust-gstreamer-plugins-for-the-raspberry-pi/)
+- [Adding PCIe To Your Raspberry Pi 4, The Easier Way (2020)](https://hackaday.com/2020/07/01/adding-pcie-to-your-raspberry-pi-4-the-easier-way/)
+- [Raspberry Pi 4 PCIe bridge “chip” (2020)](https://blog.zakkemble.net/rpi4-pci-express-bridge-chip/) ([HN](https://news.ycombinator.com/item?id=23701208))
+- [I built a desktop radiation monitor with Raspberry Pi, brass and wood (2020)](https://www.balena.io/blog/show-tell-a-steampunk-desktop-background-radiation-monitor/) ([HN](https://news.ycombinator.com/item?id=23756964))
+- [Trying to build the ultimate raspberry pi computer (zero terminal v3)](https://n-o-d-e.net/zeroterminal3.html)
+- [Let's Build a 28-core Raspberry Pi Cluster (2020)](https://ikarus.sg/how-i-built-kraken/) ([HN](https://news.ycombinator.com/item?id=24126719))
+- [Simultaneous AP and Client Mode Wi-Fi on Raspberry Pi Zero W](https://github.com/lukicdarkoo/rpi-wifi) ([HN](https://news.ycombinator.com/item?id=24250947))
+- [Raspberry Pi as a local server for self hosting applications (2020)](https://cri.dev/posts/2020-09-12-Raspberry-Pi-as-a-local-server-for-self-hosting-applications/) ([HN](https://news.ycombinator.com/item?id=24474309))
+- [Raspberry Pi Colocation](https://raspberry-hosting.com/en/order) - Raspberry Pi hosting. ([Tweet](https://twitter.com/jeremyphoward/status/1308259937160577024))
+- [Useful Project Ideas for Your Raspberry Pi with Tutorials](https://devandgear.com/13-useful-project-ideas-for-your-raspberry-pi-with-tutorials/) ([HN](https://news.ycombinator.com/item?id=24567012))
+- [Bare Metal Programming on Raspberry Pi 3](https://github.com/bztsrc/raspi3-tutorial) ([HN](https://news.ycombinator.com/item?id=24637129))
+- [Rust + Raspberry Pi Tide Clock (2020)](https://thefuntastic.com/blog/rust-tide-clock)
+- [Today’s Webcams Are Boring, So I Brought Back a Classic (2020)](https://debugger.medium.com/todays-webcams-are-boring-so-i-brought-back-a-classic-291cc7c94c76) ([Lobsters](https://lobste.rs/s/w7pcc2/today_s_webcams_are_boring_so_i_brought)) ([HN](https://news.ycombinator.com/item?id=24742460))
+- [Raspberry Pi as FM transmitter](https://github.com/markondej/fm_transmitter)
+- [BT-Speaker](https://github.com/lukasjapan/bt-speaker) - Simple Bluetooth Speaker Daemon for the Raspberry Pi 3.
+- [Voice-Controlled Raspberry Pi (2020)](https://www.shawenyao.com/Voice-Controlled-Raspberry-Pi/)
+- [faasd - lightweight Serverless for your Raspberry Pi (2020)](https://blog.alexellis.io/faasd-for-lightweight-serverless/)
+- [Putting Raspberry Pi Online with Caddy and SSH Tunnel (2020)](https://gist.github.com/nileshtrivedi/4c615e8d3c1bf053b0d31176b9e69e42) ([HN](https://news.ycombinator.com/item?id=24893615))
+- [Porting Firecracker to a Raspberry Pi 4 (2019)](https://blog.cloudkernels.net/posts/firecracker-rpi4/) ([HN](https://news.ycombinator.com/item?id=24878698))
+- [Use a raspberry-pi 2 as a firewall with FreeBSD (2020)](https://stafwag.github.io/blog/blog/2020/10/25/rpi2_freebsd_firewall/) ([Lobsters](https://lobste.rs/s/ixvxmi/use_raspberry_pi_2_as_firewall_with))
+- [RPi-Monitor](https://github.com/XavierBerger/RPi-Monitor) - Real time monitoring for embedded devices. ([Docs](https://xavierberger.github.io/RPi-Monitor-docs/index.html))
+- [5 Gbps Ethernet on the Raspberry Pi Compute Module 4 (2020)](https://www.jeffgeerling.com/blog/2020/5-gbps-ethernet-on-raspberry-pi-compute-module-4) ([HN](https://news.ycombinator.com/item?id=24945361))
+- [Piipcam](https://github.com/sepfy/piipcam) - 1080P IP Camera on a Raspberry Pi Zero W. ([HN](https://news.ycombinator.com/item?id=24959408))
+- [Raspberry Pi 400 Desktop PC (Computer in Keyboard) (2020)](https://www.raspberrypi.org/blog/raspberry-pi-400-the-70-desktop-pc/) ([HN](https://news.ycombinator.com/item?id=24965614)) ([Lobsters](https://lobste.rs/s/p8e4wd/raspberry_pi_400_70_desktop_pc))
+- [Designing Raspberry Pi 400 (2020)](https://www.raspberrypi.org/blog/designing-raspberry-pi-400/) ([HN](https://news.ycombinator.com/item?id=24988681))
+- [Raspberry Pi 400 – First Impressions (2020)](https://martinpeck.com/blog/2020/11/06/Raspberry-Pi-400/) ([HN](https://news.ycombinator.com/item?id=25014025))
+- [Open and cheap DIY IP-KVM based on Raspberry Pi](https://github.com/pikvm/pikvm) ([Web](https://pikvm.org/))
+- [Checking if the Pi is done (2020)](https://alexanderell.is/posts/pi-cluster-monitoring/) - Basic monitoring for a Raspberry Pi cluster.
+- [Raspberry Pi Homelab with Kubernetes (2020)](https://amithm.ca/2020/10/kubernetes-raspberrypi-homelab/) ([HN](https://news.ycombinator.com/item?id=25061097))
+- [Remove ads from your life using Raspberry Pi, Docker and Docker Compose (2020)](https://burakkarakan.com/blog/pihole-on-raspberry-using-pi-docker-and-docker-compose/)
+- [Raspberry Pi OS](https://www.raspberrypi.org/software/)
+- [Raspberry Pi Audio Receiver](https://github.com/nicokaiser/rpi-audio-receiver) - Simple, light weight audio receiver with Bluetooth (A2DP), AirPlay, Spotify Connect and UPnP.
+- [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
+- [Making Pi ServerReady](https://rpi4-uefi.dev/) - SBBR-compliant (UEFI+ACPI) AArch64 firmware for the Raspberry Pi 4.
+- [Source code for ARM side libraries for interfacing to Raspberry Pi GPU](https://github.com/raspberrypi/userland)
+- [Shaking Down the Raspberry Pi 400 (2020)](https://www.pluralsight.com/blog/software-development/raspberry-pi-400)
+- [Getting started with Firecracker on Raspberry Pi (2020)](https://dev.l1x.be/posts/2020/11/22/getting-started-with-firecracker-on-raspberry-pi/) ([Lobsters](https://lobste.rs/s/b6tsce/getting_started_with_firecracker_on))
+- [Raspberry Pi Webcam](https://github.com/geerlingguy/pi-webcam) - Automation to configure a Raspberry Pi as a USB OTG webcam. ([Article](https://www.jeffgeerling.com/blog/2020/raspberry-pi-makes-great-usb-webcam-100)) ([HN](https://news.ycombinator.com/item?id=25191646)) ([Video](https://www.youtube.com/watch?v=8fcbP7lEdzY)) ([Lobsters](https://lobste.rs/s/rgpc8m/raspberry_pi_makes_great_usb_webcam_for))
+- [Rpitx](https://github.com/F5OEO/rpitx) - General radio frequency transmitter for Raspberry Pi.
+- [Raspberry Pi PCIe Devices](https://pipci.jeffgeerling.com/) - Raspberry Pi PCI Express device compatibility database. ([Code](https://github.com/geerlingguy/raspberry-pi-pcie-devices)) ([HN](https://news.ycombinator.com/item?id=25556650))
+- [Micro Displays for Raspberry Pi](https://github.com/igbit/micro-displays)
+- [PiSugar2](https://github.com/PiSugar/PiSugar) - Battery module for Raspberry Pi zero / zero W / zero WH.
+- [Raspberry Pi LEGO sorter (2021)](https://www.raspberrypi.org/blog/raspberry-pi-lego-sorter/)
+- [pitop](https://github.com/PierreKieffer/pitop) - Raspberry Pi 4 terminal based activity monitor.
+- [Getting Started with Raspberry Pi Pico using MicroPython and C (2021)](https://www.cnx-software.com/2021/01/24/getting-started-with-raspberry-pi-pico-using-micropython-and-c/)
+- [TinyPilot](https://github.com/mtlynch/tinypilot) - Turn your Raspberry Pi into a browser-based KVM. Easy-to-use, low-cost device to manage your servers. ([Web](https://tinypilotkvm.com/))
+- [Bringing the Moddable SDK (and modern JavaScript) to the Raspberry Pi Pico (2021)](https://blog.moddable.com/blog/pico/)
+- [RaSCSI](https://github.com/akuker/RASCSI) - Virtual SCSI device emulator that runs on a Raspberry Pi. ([HN](https://news.ycombinator.com/item?id=26247078))
+- [Getting started with Raspberry Pi Pico - MicroPython (2021)](https://www.youtube.com/watch?v=ETf1hD_XfJg)
+- [Monitoring a Raspberry Pi with Grafana, InfluxDB and collectd (2021)](https://ch-st.de/raspberry-pi-grafana-influxdb-collectd/)
+- [CutiePi](https://cutiepi.io/) - All-in-one Raspberry Pi tablet. ([HN](https://news.ycombinator.com/item?id=20703721))
+- [State of netbooting Raspberry Pi in 2021](https://blog.alexellis.io/state-of-netbooting-raspberry-pi-in-2021/)
+- [Build a Raspberry Pi Linux System the Hard Way (2021)](https://rickcarlino.com/2021/01/23/build-a-raspbery-pi-linux-system-the-hard-way-html.html)
+- [rp-hal](https://github.com/rp-rs/rp-hal) - Rust HAL impl for the RP family of microcontrollers from the Raspberry Pi Foundation.
+- [Rascam](https://github.com/pedrosland/rascam) - Rust library for interacting with the Raspberry Pi Camera.
+- [My 6-node 1U Raspberry Pi rack mount Cluster (2021)](https://www.jeffgeerling.com/blog/2021/my-6-node-1u-raspberry-pi-rack-mount-cluster)
+- [Young Persons Guide to BCPL Programming on the Raspberry Pi](https://www.cl.cam.ac.uk/~mr10/bcpl4raspi.pdf)
+- [Raspberry Pi WiFi to ethernet bridge (2021)](https://willhaley.com/blog/raspberry-pi-wifi-ethernet-bridge/) ([HN](https://news.ycombinator.com/item?id=27464907))
+- [Monitor Your Internet with a Raspberry Pi (2021)](https://www.jeffgeerling.com/blog/2021/monitor-your-internet-raspberry-pi) ([HN](https://news.ycombinator.com/item?id=27607099))
+- [Internet Pi](https://github.com/geerlingguy/internet-pi) - Raspberry Pi Configuration for Internet connectivity.
+- [Monitor your home's temperature and humidity with Raspberry Pis and Prometheus (2021)](https://opensource.com/article/21/7/home-temperature-raspberry-pi-prometheus) ([Lobsters](https://lobste.rs/s/k9q7vp/monitor_your_home_s_temperature_humidity))
+- [Raspberry Pi 1U Server](https://github.com/pawl/raspberry-pi-1u-server) - Low power 1U Raspberry Pi cluster server for inexpensive colocation. ([HN](https://news.ycombinator.com/item?id=27862967))

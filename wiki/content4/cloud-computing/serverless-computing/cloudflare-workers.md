@@ -1,0 +1,64 @@
+# [Cloudflare workers](https://www.cloudflare.com/en-gb/products/cloudflare-workers/)
+
+## Links
+
+- [worker-template curl](https://github.com/Gaafar/curl-worker) - Cloudflare worker template that intercepts requests from curl command and returns something different.
+- [Wrangler](https://github.com/cloudflare/wrangler) - Wrangle your cloudflare workers. ([Article](https://blog.cloudflare.com/announcing-wrangler-dev-the-edge-on-localhost/))
+- [Just Write Code: Improving Developer Experience for Cloudflare Workers (2019)](https://blog.cloudflare.com/just-write-code-improving-developer-experience-for-cloudflare-workers/)
+- [How We Design Features for Wrangler, the Cloudflare Workers CLI (2019)](https://blog.cloudflare.com/how-we-design-features-for-wrangler)
+- [Wrangler GitHub Action](https://github.com/cloudflare/wrangler-action) - Zero-config cloudflare workers application deployment using wrangler and github actions.
+- [Awesome Cloudflare Workers](https://github.com/tomByrer/awesome-cloudflare-workers)
+- [cloudflare-worker-local](https://github.com/gja/cloudflare-worker-local) - Run (or test) a Cloudflare Worker Locally.
+- [cloudworker-proxy](https://github.com/markusahlstrand/cloudworker-proxy) - API gateway for Cloudflare workers.
+- [Cloudflare Workers KV](https://www.cloudflare.com/products/workers-kv/) - Serverless key-value storage for applications on Cloudflare.
+- [cfworker](https://github.com/cfworker/cfworker) - Collection of packages optimized for Cloudflare Workers and service workers.
+- [Cloudflare launches Workers Unbound, next evolution of its serverless platform (2020)](https://blog.cloudflare.com/introducing-workers-unbound/) ([HN](https://news.ycombinator.com/item?id=23965514))
+- [Going fully serverless with Cloudflare Workers (2020)](https://guido.io/posts/going-fully-serverless-with-cloudflare-workers/)
+- [Rendering React on the Edge with Flareact and Cloudflare Workers (2020)](https://blog.cloudflare.com/rendering-react-on-the-edge-with-flareact-and-cloudflare-workers/)
+- [Flareact](https://github.com/flareact/flareact) - Edge-rendered React framework powered by Cloudflare Workers. ([Docs](https://flareact.com/))
+- [Flareact Template](https://github.com/flareact/flareact-template)
+- [My Blog Just Got Faster: Cloudflare Workers and AVIF Support (2020)](https://endler.dev/2020/perf)
+- [Cloudflare Edge Chat Demo](https://github.com/cloudflare/workers-chat-demo/) - Demo app written on Cloudflare Workers utilizing Durable Objects to implement real-time chat with stored history. This app runs 100% on Cloudflare's edge.
+- [Workers Durable Objects Beta: A New Approach to Stateful Serverless (2020)](https://blog.cloudflare.com/introducing-workers-durable-objects/)
+- [Built with Cloudflare Workers](https://workers.cloudflare.com/built-with)
+- [Let's build a Cloudflare Worker with WebAssembly and Haskell (2020)](https://blog.cloudflare.com/cloudflare-worker-with-webassembly-and-haskell/)
+- [cfw](https://github.com/lukeed/cfw) - Build and deploy utility for Cloudflare Workers.
+- [pytest-cloudflare-worker](https://github.com/samuelcolvin/pytest-cloudflare-worker) - CloudFlare worker system tests packaged as a pytest plugin.
+- [Useful Cloudflare Workers (2020)](https://max.town/b-4ZHOV1QJm2wbE-G9Uf4Q/aXyYJ6VdS5KVHa_fWtmzyA.html)
+- [Hardly working with Cloudflare Workers (2020)](https://blog.notifly.io/2020/11/04/hardly-working-with-cloudflare-workers)
+- [Cloudflare Workers Types](https://github.com/cloudflare/workers-types) - TypeScript type definitions for authoring Cloudflare Workers.
+- [Durable Objects in Production (2020)](https://linc.sh/blog/durable-objects-in-production) ([HN](https://news.ycombinator.com/item?id=25084470))
+- [Vitedge](https://github.com/frandiox/vitedge) - Vue + Vite + SRR + Cloudflare Workers.
+- [Cloudflare Workers Boilerplate](https://github.com/frandiox/cf-workers-boilerplate) - Deploy Cloudflare Workers easily without sacrificing developer experience.
+- [Vite SSR](https://github.com/frandiox/vite-ssr) - Use Vite for server side rendering in Node or in a Cloudflare Worker.
+- [lilredirector](https://github.com/signalnerve/lilredirector) - Redirector engine built for Cloudflare Workers.
+- [Cloudflare working on Cloudflare Pages, for deploying and hosting JAMstack (2020)](https://twitter.com/wongmjane/status/1335198021131194370) ([HN](https://news.ycombinator.com/item?id=25326232))
+- [saffron](https://github.com/cloudflare/saffron) - Cron parser powering Cron Triggers on Cloudflare Workers.
+- [Introduction to Cloudflare Workers Course](https://egghead.io/playlists/introduction-to-cloudflare-workers-5aa3)
+- [Cloudflare Workers Catalog](https://workers-catalog.pages.dev/) - Explore the existing Workers projects or just look for the right tooling for your next one. ([Code](https://github.com/eidam/cf-workers-catalog))
+- [Cloudflare Pages](https://pages.cloudflare.com/) - JAMstack platform for frontend developers to collaborate and deploy websites. ([HN](https://news.ycombinator.com/item?id=26778894))
+- [workers-pubsub](https://github.com/sagi/workers-pubsub) - Google Pub/Sub API for Cloudflare Workers (and Node.js).
+- [db-connect](https://github.com/cloudflare/db-connect) - Connect your SQL database to Cloudflare Workers.
+- [cf-workers](https://github.com/kv-orm/cf-workers) - Cloudflare Workers KV datastore plugin for kv-orm.
+- [workers.sh](https://workers.sh/) - Featureful dashboard for managing Cloudflare Workers. ([Code](https://github.com/GregBrimble/workers.sh))
+- [Cloudflare Workers Router](https://github.com/tsndr/cloudflare-worker-router) - Super lightweight router with middleware support and zero dependencies for CloudFlare Workers.
+- [Vitessedge](https://github.com/frandiox/vitessedge-template) - Opinionated Vite Starter Template with SSR in Cloudflare Workers.
+- [Worktop](https://github.com/lukeed/worktop) - Next generation web framework for Cloudflare Workers.
+- [Vercel Serverless Functions vs. Cloudflare Workers (2021)](https://moiva.io/blog/vercel-serverless-functions-vs-cloudflare-workers) ([HN](https://news.ycombinator.com/item?id=26580102))
+- [workers-graphql](https://github.com/caass/workers-graphql) - GraphQL API built for Cloudflare Workers.
+- [Durable Objects, now in Open Beta (2021)](https://blog.cloudflare.com/durable-objects-open-beta/)
+- [Awesome Cloudflare](https://github.com/irazasyed/awesome-cloudflare) - Curated list of awesome Cloudflare worker recipes, open-source projects, guides, blogs and other resources.
+- [WebSockets Support in Cloudflare Workers (2021)](https://blog.cloudflare.com/introducing-websockets-in-workers/)
+- [Cloudflare’s Database Partners (2021)](https://blog.cloudflare.com/partnership-announcement-db/)
+- [Cloudflare Developer Challenges Solutions](https://github.com/cloudflare/devweek)
+- [Using Cloudflare Workers to improve your Fastly cache hit rate](https://blog.diffen.com/post/631968553491415040/using-cloudflare-workers-to-improve-fastly-cache-hit-rat)
+- [Multiplayer Doom on Cloudflare Workers (2021)](https://blog.cloudflare.com/doom-multiplayer-workers/) ([Code](https://github.com/cloudflare/doom-wasm)) ([HN](https://news.ycombinator.com/item?id=27194031))
+- [kv-asset-handler](https://github.com/cloudflare/kv-asset-handler) - Open-source library for managing the retrieval of static assets from Workers KV inside of a Cloudflare Workers function.
+- [Building real-time games using Workers, Durable Objects, and Unity (2021)](https://blog.cloudflare.com/building-real-time-games-using-workers-durable-objects-and-unity/)
+- [Miniflare](https://github.com/mrbbot/miniflare) - Fully-local Cloudflare Workers Simulator. ([Docs](https://miniflare.dev/))
+- [worker-auth-providers](https://github.com/subhendukundu/worker-auth-providers) - Open-source auth providers for Cloudflare workers.
+- [Durable Objects: Easy, Fast, Correct — Choose three (2021)](https://blog.cloudflare.com/durable-objects-easy-fast-correct-choose-three/)
+- [Modernizing a familiar approach to REST APIs, with PostgreSQL and Cloudflare Workers (2021)](https://blog.cloudflare.com/modernizing-a-familiar-approach-to-rest-apis-with-postgresql-and-cloudflare-workers/)
+- [Build data-driven applications with Workers and PostgreSQL](https://developers.cloudflare.com/workers/tutorials/postgres) ([Code](https://github.com/cloudflare/postgres-postgrest-cloudflared-example)) ([Video](https://www.youtube.com/watch?v=inLOwovtqQM))
+- [workers-jwt](https://github.com/sagi/workers-jwt) - Generate JWTs on Cloudflare Workers using the WebCrypto API.
+- [rustwasm-worker-template](https://github.com/cloudflare/rustwasm-worker-template) - Template for kick starting a Cloudflare worker project using wasm-pack.

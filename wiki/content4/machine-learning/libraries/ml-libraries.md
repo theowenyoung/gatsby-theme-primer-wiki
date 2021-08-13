@@ -1,0 +1,181 @@
+# ML Libraries
+
+## Top
+
+- [PyTorch](pytorch.md)
+- [TensorFlow](tensorflow.md)
+- [Keras](keras.md)
+- [fastai](https://github.com/fastai/fastai)
+
+## Web
+
+- [ml5.js](https://github.com/ml5js/ml5-library) - Friendly machine learning for the web.
+
+## Other
+
+- [imgaug](https://github.com/aleju/imgaug) - Image augmentation for machine learning experiments.
+- [PlaidML](https://github.com/plaidml/plaidml) - Framework for making deep learning work everywhere.
+- [Leaf](https://github.com/autumnai/leaf) - Open Machine Intelligence Framework for Hackers. (GPU/CPU).
+- [Apache MXNet](https://github.com/apache/incubator-mxnet) - Deep learning framework designed for both efficiency and flexibility. It allows you to mix symbolic and imperative programming to maximize efficiency and productivity.
+- [Sonnet](https://github.com/deepmind/sonnet) - Library built on top of TensorFlow for building complex neural networks.
+- [tvm](https://github.com/dmlc/tvm/) - Open deep learning compiler stack for cpu, gpu and specialized accelerators.
+- [dgl](https://github.com/dmlc/dgl) - Python package built to ease deep learning on graph, on top of existing DL frameworks.
+- [PySyft](https://github.com/OpenMined/PySyft) - Library for encrypted, privacy preserving deep learning.
+- [numpy-ml](https://github.com/ddbourgin/numpy-ml) - Machine learning, in numpy.
+- [cuML](https://github.com/rapidsai/cuml) - Suite of libraries that implement machine learning algorithms and mathematical primitives functions that share compatible APIs with other RAPIDS projects.
+- [ONNX Runtime](https://github.com/microsoft/onnxruntime) - Cross-platform, high performance scoring engine for ML models.
+- [MLflow](https://github.com/mlflow/mlflow) - Machine Learning Lifecycle Platform.
+- [auto-sklearn](https://github.com/automl/auto-sklearn) - Automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator.
+- [TensorNetwork](https://github.com/google/TensorNetwork) - Library for easy and efficient manipulation of tensor networks.
+- [lambda-ml](https://github.com/cloudkj/lambda-ml) - Small machine learning library aimed at providing simple, concise implementations of machine learning techniques and utilities.
+- [scikit-learn](https://github.com/scikit-learn/scikit-learn) - Python module for machine learning built on top of SciPy. ([Tutorials](https://scikit-learn.org/stable/tutorial/index.html)) ([Course](https://www.fun-mooc.fr/en/courses/machine-learning-python-scikit-learn/))
+- [MLBox](https://github.com/AxeldeRomblay/MLBox) - Powerful Automated Machine Learning python library.
+- [Mlxtend (machine learning extensions)](https://github.com/rasbt/mlxtend) - Python library of useful tools for the day-to-day data science tasks.
+- [CrypTen](https://github.com/facebookresearch/CrypTen) - Framework for Privacy Preserving Machine Learning built on PyTorch.
+- [Faiss](https://github.com/facebookresearch/faiss) - Library for efficient similarity search and clustering of dense vectors. ([Tips](https://github.com/matsui528/faiss_tips))
+- [pyHSICLasso](https://github.com/riken-aip/pyHSICLasso) - Versatile Nonlinear Feature Selection Algorithm for High-dimensional Data.
+- [AutoGluon](https://github.com/awslabs/autogluon) - AutoML Toolkit for Deep Learning.
+- [DeepLearning.scala](https://github.com/ThoughtWorksInc/DeepLearning.scala) - Simple library for creating complex neural networks from object-oriented and functional programming constructs.
+- [Optuna](https://github.com/optuna/optuna) - Hyperparameter optimization framework. ([Optuna Dashboard](https://github.com/optuna/optuna-dashboard))
+- [Vowpal Wabbit](https://github.com/VowpalWabbit/vowpal_wabbit) - Machine learning system which pushes the frontier of machine learning with techniques such as online, hashing, allreduce, reductions, learning2search, active, and interactive learning. ([Web](https://vowpalwabbit.org/)) ([Article](https://andraztori.medium.com/speed-is-a-feature-introducing-fwumious-wabbit-1cc9573ea7be))
+- [Brancher](https://github.com/AI-DI/Brancher) - User-centered Python package for differentiable probabilistic inference.
+- [Karate Club](https://github.com/benedekrozemberczki/karateclub) - General purpose community detection and network embedding library for research built on NetworkX.
+- [FlexFlow](https://github.com/flexflow/FlexFlow) - Distributed deep learning framework that supports flexible parallelization strategies.
+- [DeltaPy](https://github.com/firmai/deltapy) - Tabular Data Augmentation & Feature Engineering.
+- [TensorStore](https://github.com/google/tensorstore) - Library for reading and writing large multi-dimensional arrays.
+- [FATE](https://github.com/FederatedAI/FATE) - Industrial Level Federated Learning Framework.
+- [Deepkit](https://github.com/deepkit/deepkit) - Collaborative and real-time machine learning training suite: Experiment execution, tracking, and debugging.
+- [Sls](https://github.com/IssamLaradji/sls) - Stochastic Line Search.
+- [PyCaret](https://github.com/pycaret/pycaret) - Open source low-code machine learning library in Python that aims to reduce the hypothesis to insights cycle time in a ML experiment.
+- [Flax](https://github.com/google/flax) - Neural network library for JAX designed for flexibility. ([Docs](https://flax.readthedocs.io/en/latest/))
+- [scikit-multilearn](https://github.com/scikit-multilearn/scikit-multilearn) - Python module capable of performing multi-label learning tasks.
+- [imbalanced-learn](https://github.com/scikit-learn-contrib/imbalanced-learn) - Python package offering a number of re-sampling techniques commonly used in datasets showing strong between-class imbalance.
+- [DeepSpeed](https://github.com/microsoft/DeepSpeed) - Deep learning optimization library that makes distributed training easy, efficient, and effective.
+- [HoMM](https://github.com/lampinen/HoMM) - Library for Homoiconic Meta-mapping.
+- [Hummingbird](https://github.com/microsoft/hummingbird) - Library for compiling trained traditional ML models into tensor computations.
+- [Ax](https://github.com/facebook/Ax) - Accessible, general-purpose platform for understanding, managing, deploying, and automating adaptive experiments.
+- [Neuropod](https://github.com/uber/neuropod) - Uniform interface to run deep learning models from multiple frameworks.
+- [aerosolve](https://github.com/airbnb/aerosolve) - Machine learning package built for humans in Scala.
+- [Kur](https://github.com/deepgram/kur) - Descriptive Deep Learning.
+- [NNI (Neural Network Intelligence)](https://github.com/microsoft/nni) - Lightweight but powerful toolkit to help users automate Feature Engineering, Neural Architecture Search, Hyperparameter Tuning and Model Compression.
+- [LMfit-py](https://github.com/lmfit/lmfit-py) - Non-Linear Least Squares Minimization, with flexible Parameter settings, based on scipy.optimize.leastsq, and with many additional classes and methods for curve fitting.
+- [tslearn](https://github.com/tslearn-team/tslearn) - Machine learning toolkit for time series analysis in Python.
+- [Libra](https://github.com/Palashio/libra) - Ergonomic machine learning for everyone. ([Docs](https://libradocs.github.io/))
+- [NGBoost](https://github.com/stanfordmlgroup/ngboost) - Natural Gradient Boosting for Probabilistic Prediction.
+- [LightGBM](https://github.com/microsoft/LightGBM) - Gradient boosting framework that uses tree based learning algorithms.
+- [XGBoost](https://github.com/dmlc/xgboost) - Optimized distributed gradient boosting library designed to be highly efficient, flexible and portable. It implements machine learning algorithms under the Gradient Boosting framework.
+- [DMLC-Core](https://github.com/dmlc/dmlc-core) - Common bricks library for building scalable and portable distributed machine learning.
+- [Linear Models](https://github.com/bashtage/linearmodels) - Add linear models including instrumental variable and panel data models that are missing from statsmodels.
+- [skift](https://github.com/shaypal5/skift) - scikit-learn wrappers for Python fastText.
+- [pulearn](https://github.com/pulearn/pulearn) - Positive-unlabeled learning with Python.
+- [pescador](https://github.com/pescadores/pescador) - Library for streaming (numerical) data, primarily for use in machine learning applications.
+- [TPOT (Tree-based Pipeline Optimization Tool)](https://github.com/EpistasisLab/tpot) - Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming. ([Docs](http://epistasislab.github.io/tpot/))
+- [GraKeL](https://github.com/ysig/GraKeL) - Library that provides implementations of several well-established graph kernels. scikit-learn compatible.
+- [creme](https://github.com/creme-ml/creme) - Python library for online machine learning. All the tools in the library can be updated with a single observation at a time, and can therefore be used to learn from streaming data. ([Docs](https://creme-ml.github.io/))
+- [RecBole](https://github.com/RUCAIBox/RecBole) - Unified, comprehensive and efficient recommendation library.
+- [NNFusion](https://github.com/microsoft/nnfusion) - Flexible and efficient DNN compiler that can generate high-performance executables from a DNN model description.
+- [ncnn](https://github.com/Tencent/ncnn) - High-performance neural network inference computing framework optimized for mobile platforms.
+- [Scikit-Optimize](https://github.com/scikit-optimize/scikit-optimize) - Sequential model-based optimization with a `scipy.optimize` interface.
+- [scikit-rebate](https://github.com/EpistasisLab/scikit-rebate) - Scikit-learn-compatible Python implementation of ReBATE, a suite of Relief-based feature selection algorithms for Machine Learning.
+- [Fedlearner](https://github.com/bytedance/fedlearner) - Collaborative machine learning frameowork that enables joint modeling of data distributed between institutions.
+- [SkLearn2PMML](https://github.com/jpmml/sklearn2pmml) - Python library for converting Scikit-Learn pipelines to PMML.
+- [vecstack](https://github.com/vecxoz/vecstack) - Python package for stacking (machine learning technique).
+- [LightSeq](https://github.com/bytedance/lightseq) - High Performance Inference Library for Sequence Processing and Generation.
+- [modestpy](https://github.com/sdu-cfei/modest-py) - Facilitates parameter estimation in models compliant with Functional Mock-up Interface.
+- [Distiller](https://github.com/IntelLabs/distiller) - Open-source Python package for neural network compression research.
+- [modAL](https://github.com/modAL-python/modAL) - Modular active learning framework for Python.
+- [Bambi](https://github.com/bambinos/bambi) - BAyesian Model-Building Interface in Python.
+- [Bolt](https://github.com/huawei-noah/bolt) - Deep learning library with high performance and heterogeneous flexibility.
+- [hypothesis](https://github.com/montefiore-ai/hypothesis) - Python toolkit for (simulation-based) inference and the mechanization of science.
+- [MMFeat](https://github.com/douwekiela/mmfeat) - Multi-modal features toolkit in Python.
+- [Flower](https://github.com/adap/flower) - Friendly Federated Learning Framework. ([Web](https://flower.dev/)) ([Flower Summit 2021](https://flower.dev/conf/flower-summit-2021))
+- [brain.js](https://github.com/BrainJS/brain.js) - GPU accelerated Neural networks in JavaScript for Browsers and Node.js. ([Web](https://brain.js.org/#/))
+- [Buffalo](https://github.com/kakao/buffalo) - Fast and scalable production-ready open source project for recommender systems.
+- [EvalML](https://github.com/alteryx/evalml) - AutoML library that builds, optimizes, and evaluates machine learning pipelines using domain-specific objective functions.
+- [MindSpore](https://github.com/mindspore-ai/mindspore) - New open source deep learning training/inference framework that could be used for mobile, edge and cloud scenarios.
+- [Flashlight](https://github.com/facebookresearch/flashlight) - Fast, Flexible Machine Learning in C++.
+- [raster-deep-learning](https://github.com/Esri/raster-deep-learning) - ArcGIS built-in python raster functions for deep learning to get you started fast.
+- [CTranslate2](https://github.com/OpenNMT/CTranslate2) - Fast inference engine for OpenNMT models.
+- [Causal Discovery Toolbox](https://github.com/FenTechSolutions/CausalDiscoveryToolbox) - Algorithms for graph structure recovery (including algorithms from the bnlearn, pcalg packages), mainly based out of observational data.
+- [FedML](https://github.com/FedML-AI/FedML) - Research Library and Benchmark for Federated Machine Learning.
+- [Auto_TS](https://github.com/AutoViML/Auto_TS) - Automatically build multiple Time Series models using a Single Line of Code.
+- [AutoGL (Auto Graph Learning)](https://github.com/THUMNLab/AutoGL) - AutoML framework & toolkit for machine learning on graphs.
+- [tsalib](https://github.com/ofnote/tsalib) - Tensor Shape Annotation Library (numpy, tensorflow, pytorch, ...).
+- [MMClassification](https://github.com/open-mmlab/mmclassification) - Open source image classification toolbox based on PyTorch.
+- [Nimble](https://github.com/snuspl/nimble) - Lightweight and Parallel GPU Task Scheduling for Deep Learning.
+- [Dannjs](https://github.com/matiasvlevi/Dann) - Neural Network library for JavaScript. ([Web](https://dannjs.org/))
+- [Shapley](https://github.com/benedekrozemberczki/shapley) - Python library for evaluating binary classifiers in a machine learning ensemble.
+- [Orion](https://github.com/signals-dev/Orion) - Machine learning library built for unsupervised time series anomaly detection.
+- [BigDL](https://github.com/intel-analytics/BigDL) - Distributed Deep Learning on Apache Spark. ([Docs](https://bigdl-project.github.io/))
+- [MNN](https://github.com/alibaba/MNN) - Blazing fast, lightweight deep learning framework, battle-tested by business-critical use cases in Alibaba.
+- [Haste](https://github.com/lmnt-com/haste) - CUDA implementation of fused RNN layers with built-in DropConnect and Zoneout regularization.
+- [sklearn-xarray](https://github.com/phausamann/sklearn-xarray) - Metadata-aware machine learning.
+- [dabnn](https://github.com/JDAI-CV/dabnn) - Accelerated binary neural networks inference framework for mobile platform.
+- [OneFlow](https://github.com/Oneflow-Inc/oneflow) - Performance-centered and open-source deep learning framework.
+- [DeepWalk](https://github.com/phanein/deepwalk) - Deep Learning for Graphs. ([Web](http://www.perozzi.net/projects/deepwalk/))
+- [sequitur](https://github.com/shobrook/sequitur) - Autoencoders for sequence data.
+- [cleanlab](https://github.com/cgnorthcutt/cleanlab) - Machine learning python package for learning with noisy labels and finding label errors in datasets.
+- [deeptime](https://github.com/deeptime-ml/deeptime) - Python library for analysis of time series data including dimensionality reduction, clustering, and Markov model estimation.
+- [Jelly Bean World](https://github.com/eaplatanios/jelly-bean-world) - Framework for experimenting with never-ending learning.
+- [Larq](https://github.com/larq/larq) - Open-source deep learning library for training neural networks with extremely low precision weights and activations, such as Binarized Neural Networks (BNNs). ([Web](https://larq.dev/))
+- [tsai](https://github.com/timeseriesAI/tsai) - State-of-the-art Deep Learning for Time Series and Sequence Modeling.
+- [edbo](https://github.com/b-shields/edbo) - Experimental Design via Bayesian Optimization.
+- [TensorJS](https://github.com/Hoff97/tensorjs) - JS/TS library for accelerated tensor computation intended to be run in the browser.
+- [micro-TCN](https://github.com/csteinmetz1/micro-tcn) - Efficient neural networks for audio effect modeling. ([Web](https://csteinmetz1.github.io/tcn-audio-effects/))
+- [DESlib](https://github.com/scikit-learn-contrib/DESlib) - Python library for dynamic classifier and ensemble selection.
+- [BytePS](https://github.com/bytedance/byteps) - High performance and generic framework for distributed DNN training.
+- [Hyperactive](https://github.com/SimonBlanke/Hyperactive) - Hyperparameter optimization and meta-learning toolbox for convenient and fast prototyping of machine-learning models.
+- [Jittor](https://github.com/Jittor/jittor) - Just-in-time(JIT) deep learning framework.
+- [autofeat](https://github.com/cod3licious/autofeat) - Linear Prediction Model with Automated Feature Engineering and Selection Capabilities.
+- [Distrax](https://github.com/deepmind/distrax) - Lightweight library of probability distributions and bijectors. It acts as a JAX-native reimplementation of a subset of TensorFlow Probability (TFP).
+- [scikit-learn-extra](https://github.com/scikit-learn-contrib/scikit-learn-extra) - Set of useful tools compatible with scikit-learn.
+- [GeneticAlgorithmPython](https://github.com/ahmedfgad/GeneticAlgorithmPython) - Building Genetic Algorithm in Python.
+- [Newt](https://github.com/AaltoML/Newt) - Gaussian process library in JAX.
+- [Hedgehog](https://github.com/MaxHalford/hedgehog) - Bayesian networks in Python.
+- [Backdoors 101](https://github.com/ebagdasa/backdoors101) - PyTorch framework for state-of-the-art backdoor defenses and attacks on deep learning models.
+- [Sabertooth](https://github.com/nikitakit/sabertooth) - Standalone pre-training recipe with JAX+Flax.
+- [ProbFlow](https://github.com/brendanhasz/probflow) - Python package for building Bayesian models with TensorFlow or PyTorch.
+- [Mars](https://github.com/mars-project/mars) - Tensor-based unified framework for large-scale data computation which scales Numpy, pandas, Scikit-learn and Python functions.
+- [DeepMatch](https://github.com/shenweichen/DeepMatch) - Deep matching model library for recommendations & advertising.
+- [Layout Parser](https://github.com/Layout-Parser/layout-parser) - Unified toolkit for Deep Learning Based Document Image Analysis. ([Web](https://layout-parser.github.io/))
+- [scikit-survival](https://github.com/sebp/scikit-survival) - Survival analysis built on top of scikit-learn.
+- [PySR](https://github.com/MilesCranmer/PySR) - Simple, fast, and parallelized symbolic regression in Python/Julia via regularized evolution and simulated annealing.
+- [Snowman Hotword Detection](https://github.com/Thalhammer/snowman)
+- [CLU](https://github.com/google/CommonLoopUtils) - Contains common functionality for writing ML training loops using JAX.
+- [SparseML](https://github.com/neuralmagic/sparseml) - Libraries for applying sparsification recipes to neural networks with a few lines of code, enabling faster and smaller models.
+- [CogDL](https://github.com/THUDM/cogdl) - Extensive Toolkit for Deep Learning on Graphs. ([Web](https://cogdl.ai/))
+- [TensorLy](https://github.com/tensorly/tensorly) - Tensor Learning in Python. ([Web](http://tensorly.org/stable/index.html))
+- [Cornac](https://github.com/PreferredAI/cornac) - Comparative Framework for Multimodal Recommender Systems.
+- [MegEngine](https://github.com/MegEngine/MegEngine) - Fast, scalable and easy-to-use deep learning framework, with auto-differentiation.
+- [SeqIO](https://github.com/google/seqio) - Task-based datasets, preprocessing, and evaluation for sequence models.
+- [OpenAI Python](https://github.com/openai/openai-python) - Provides convenient access to the OpenAI API from applications written in Python.
+- [Mesh Transformer JAX](https://github.com/kingoflolz/mesh-transformer-jax) - Model parallel transformers in JAX and Haiku. ([HN](https://news.ycombinator.com/item?id=27727009))
+- [deepC](https://github.com/ai-techsystems/deepC) - Vendor independent deep learning library, compiler and inference framework designed for small form-factor devices.
+- [Dlib](https://github.com/davisking/dlib) - Modern C++/Python Toolkit for Machine Learning . ([Web](http://dlib.net/)) ([HN](https://news.ycombinator.com/item?id=27917159))
+- [Continuum](https://github.com/Continvvm/continuum) - Clean and simple data loading library for Continual Learning.
+- [Smile](https://github.com/haifengl/smile) - Statistical Machine Intelligence & Learning Engine.
+- [AugLy](https://github.com/facebookresearch/AugLy) - Data augmentations library for audio, image, text, and video.
+- [Surprise](https://github.com/NicolasHug/Surprise) - Python scikit for building and analyzing recommender systems. ([Web](http://surpriselib.com/))
+- [TNN](https://github.com/Tencent/TNN) - High-performance, lightweight neural network inference framework.
+- [Parallax](https://github.com/srush/parallax) - Immutable Torch Modules for JAX.
+- [EvalAI](https://github.com/Cloud-CV/EvalAI) - Open source platform for evaluating and comparing machine learning (ML) and artificial intelligence (AI) algorithms at scale. ([Web](https://eval.ai/))
+- [Avalanche](https://github.com/ContinualAI/avalanche) - End-to-End Library for Continual Learning. ([Docs](https://avalanche.continualai.org/))
+- [PyKale](https://github.com/pykale/pykale) - Knowledge-Aware machine LEarning (KALE) from multiple sources in Python.
+- [mltrace](https://github.com/loglabs/mltrace) - Coarse-grained lineage and tracing for machine learning pipelines.
+- [PPLNN](https://github.com/openppl-public/ppl.nn) - High-performance deep-learning inference engine for efficient AI inferencing.
+- [Petastorm](https://github.com/uber/petastorm) - Enables single machine or distributed training and evaluation of deep learning models from datasets in Apache Parquet format.
+- [Collie](https://github.com/ShopRunner/collie_recs) - Library for preparing, training, and evaluating scalable deep learning hybrid recommender systems using PyTorch. ([Docs](https://collie.readthedocs.io/en/latest/))
+- [voxelmorph](https://github.com/voxelmorph/voxelmorph) - Unsupervised Learning for Image Registration.
+- [uTensor](https://github.com/uTensor/uTensor) - TinyML AI inference library.
+- [Tangram](https://github.com/tangramxyz/tangram) - All-in-one automated machine learning framework. ([Web](https://www.tangram.xyz/))
+- [AdaptDL](https://github.com/petuum/adaptdl) - Resource-adaptive cluster scheduler for deep learning training.
+- [Triage](https://github.com/dssg/triage) - General Purpose Risk Modeling and Prediction Toolkit for Policy and Social Good Problems.
+- [Gorse](https://github.com/zhenghaoz/gorse) - Open source recommender system service written in Go. ([Web](https://gorse.io/)) ([HN](https://news.ycombinator.com/item?id=27866289))
+- [LensKit](https://github.com/lenskit/lkpy) - Python Tools for Recommender Experiments. ([Web](https://lenskit.org/index.html))
+- [StarSpace](https://github.com/facebookresearch/StarSpace) - Learning embeddings for classification, retrieval and ranking.
+- [ELFI](https://github.com/elfi-dev/elfi) - Engine for Likelihood-Free Inference. ([Docs](https://elfi.readthedocs.io/en/latest/))
+- [DaisyRec](https://github.com/AmazingDD/daisyRec) - Python toolkit dealing with rating prediction and item ranking issue.
+- [AutoTS](https://github.com/winedarksea/AutoTS) - Forecasting Model Selection for Multiple Time Series.
+- [PyFlux](https://github.com/RJT1990/pyflux) - Open source time series library for Python.
+- [trajax](https://github.com/google/trajax) - Python library for differentiable optimal control on accelerators.
+- [TransmogrifAI](https://github.com/salesforce/TransmogrifAI) - End-to-end AutoML library for structured data written in Scala that runs on top of Apache Spark. ([Web](https://transmogrif.ai/))

@@ -1,0 +1,130 @@
+# Embedded systems
+
+## Interesting chips
+
+- [ESP32](https://en.wikipedia.org/wiki/ESP32)
+
+## Links
+
+- [Discovery](https://github.com/rust-embedded/discovery) - Discover the world of microcontrollers through Rust.
+- [Real Time For the Masses](https://github.com/japaric/cortex-m-rtfm) - Framework for ARM Cortex-M microcontrollers.
+- [The little filesystem](https://github.com/ARMmbed/littlefs) - Little fail-safe filesystem designed for embedded systems. ([Design](https://github.com/ARMmbed/littlefs/blob/master/DESIGN.md))
+- [Arm Mbed OS](https://github.com/ARMmbed/mbed-os) - Open source embedded operating system designed specifically for the "things" in the Internet of Things.
+- [eLua](https://github.com/elua/elua) - Lua for microcontrollers.
+- [Embedded devices Working Group](https://github.com/rust-embedded/wg) - Issue tracker is used by the embedded WG to coordinate efforts towards making Rust a great choice for embedded development.
+- [Arm Mbed DAPLink](https://github.com/ARMmbed/DAPLink) - Open-source software project that enables programming and debugging application software running on Arm Cortex CPUs.
+- [Mbed TLS](https://github.com/ARMmbed/mbedtls) - Open source, portable, easy to use, readable and flexible SSL library.
+- [Modern Microprocessors a 90-Minute Guide](http://www.lighterra.com/papers/modernmicroprocessors/) - Brief, pulls-no-punches, fast-paced introduction to the main design aspects of modern processor microarchitecture. ([HN](https://news.ycombinator.com/item?id=27014027))
+- [MicroPython](https://github.com/micropython/micropython) - Lean and efficient Python implementation for microcontrollers and constrained systems. ([HN](https://news.ycombinator.com/item?id=24166861))
+- [CircuitPython](https://github.com/adafruit/circuitpython) - Programming Hardware in Python. ([HN](https://news.ycombinator.com/item?id=25923491))
+- [What's your preferred embedded/application scripting language? (2019)](https://lobste.rs/s/jtrbrj/what_s_your_preferred_embedded)
+- [Bare-metal and Operating System development tutorials in Rust on the Raspberry Pi 3](https://github.com/rust-embedded/rust-raspi3-OS-tutorials)
+- [Embedded Rust Book](https://docs.rust-embedded.org/book/) - Introductory book about using the Rust Programming Language on "Bare Metal" embedded systems, such as Microcontrollers. ([Code](https://github.com/rust-embedded/book))
+- [Embedded Rust Discovery](https://docs.rust-embedded.org/discovery/) - Starting with Embedded Development Using Rust.
+- [mJS: Embedded JavaScript engine for C/C++](https://github.com/cesanta/mjs) - Designed for microcontrollers with limited resources.
+- [Swift for Embedded Systems](https://github.com/swift-embedded/swift-embedded)
+- [Cross](https://github.com/swift-embedded/cross) - Utility for easy cross compilation of projects to bare metal.
+- [Entry level embedded software career guide (2019)](https://www.reddit.com/r/embedded/comments/cbswjt/entry_level_embedded_software_career_guide/)
+- [printf](https://github.com/mpaland/printf) - Tiny, fast, non-dependent and fully loaded printf implementation for embedded systems. Extensive test suite passing.
+- [Jitter](https://jitter.company/) - Help you accelerate your projects with laser-focused advice or custom designs made for you.
+- [Practical Guide to Watchdogs for Embedded Systems (2020)](https://interrupt.memfault.com/blog/firmware-watchdog-best-practices)
+- [RouterSploit](https://github.com/threat9/routersploit) - Exploitation Framework for Embedded Devices.
+- [Ethernut Project](http://www.ethernut.de/index.html) - Open Source Hardware and Software Project for building tiny Embedded Ethernet Devices.
+- [OpenTitan](https://github.com/lowRISC/opentitan) - Open source silicon root of trust. ([Web](https://opentitan.org/))
+- [bare-metal](https://github.com/rust-embedded/bare-metal) - Abstractions common to bare metal systems.
+- [Embench](https://www.embench.org/) - Modern Embedded Benchmark Suite. ([Code](https://github.com/embench/embench-iot))
+- [Fresh look at embedded Rust development](https://github.com/japaric/embedded2020)
+- [Talks at Meeting Embedded 2019](https://meetingembedded.com/2019/Talks/#talk10)
+- [probe-rs](https://github.com/probe-rs/probe-rs) - Modern, embedded debugging toolkit, written in Rust. ([Web](http://probe.rs/))
+- [Awesome Bare Metal](https://github.com/alexellis/awesome-baremetal)
+- [usbarmory.rs](https://github.com/iqlusioninc/usbarmory.rs) - Bare metal Rust support for USB armory MkII devices.
+- [cortex-a](https://github.com/rust-embedded/cortex-a) - Low level access to Cortex-A processors.
+- [Tinkerbell](https://github.com/tinkerbell/tink) - Bare metal provisioning and workflow engine. ([GitHub](https://github.com/tinkerbell/)) ([Web](https://tinkerbell.org/))
+- [CMSIS](https://github.com/ARM-software/CMSIS_5) - Vendor-independent hardware abstraction layer for microcontrollers that are based on Arm® Cortex® processors.
+- [Rust on a Beaglebone Blue (2020)](http://afking.github.io/rustc)
+- [Embedded graphics](https://github.com/jamwaffles/embedded-graphics) - 2D graphics library that is focused on memory constrained embedded devices.
+- [LittlevGL](https://github.com/rafaelcaricio/lvgl-rs) - Open-source Embedded GUI Library in Rust.
+- [Embedded Rules of Thumb (2018)](https://embeddedartistry.com/blog/2018/04/26/embedded-rules-of-thumb/) ([HN](https://news.ycombinator.com/item?id=23376960))
+- [An Empirical Study on ARM Disassembly Tools (2020)](https://yajin.org/papers/issta20.pdf)
+- [Micro-RTSP](https://github.com/geeksville/Micro-RTSP) - Small library which can be used to serve up RTSP streams from resource constrained MCUs. It lets you trivially make a \$10 open source RTSP video stream camera.
+- [esp32](https://github.com/esp-rs/esp32) - Peripheral access crate for the ESP32.
+- [What are some of the most asked embedded systems interview questions? (2020)](https://www.reddit.com/r/embedded/comments/h7pdem/what_are_some_of_the_most_asked_embedded_systems/)
+- [Monolinux Jiffy](https://github.com/eerimoq/monolinux-jiffy) - Monolinux distro for the Jiffy board. ([HN](https://news.ycombinator.com/item?id=23556862))
+- [Fast Execute-Only Memory for Embedded Systems (2006)](https://arxiv.org/pdf/2006.00076.pdf)
+- [Trends in Embedded Systems (2020)](https://www.reddit.com/r/embedded/comments/heay2s/trends_in_embedded_systems/)
+- [Blech language](https://www.blech-lang.org/) - Embedded real-time programming.
+- [Rhai](https://github.com/jonathandturner/rhai) - Embedded scripting language for Rust.
+- [Rust on the ESP32 - SVD's, PAC's and USB flashing (2020)](https://mabez.dev/blog/posts/esp32-rust-svd-pac/) ([HN](https://news.ycombinator.com/item?id=23737451))
+- [Concurrency Patterns in Embedded Rust (2020)](https://ferrous-systems.com/blog/embedded-concurrency-patterns/)
+- [OpenCore bootloader](https://github.com/acidanthera/OpenCorePkg) - Open-sourced Apple UEFI drivers, enabling Hackintosh. ([HN](https://news.ycombinator.com/item?id=24069428))
+- [MicroBlocks](http://microblocks.fun/) - Small, Fast, Human Friendly.
+- [probe-run, run embedded Rust apps like native apps (2020)](https://ferrous-systems.com/blog/probe-run/)
+- [Step-through debugging with no debugger on Cortex-M (2020)](https://interrupt.memfault.com/blog/cortex-m-debug-monitor)
+- [Target atsamd microcontrollers using Rust](https://github.com/atsamd-rs/atsamd)
+- [ClojureScript on ESP32? Why not! (2020)](https://blog.tindie.com/2020/07/clojurescript-on-esp32-why-not/)
+- [defmt](https://github.com/knurling-rs/defmt) - Efficient, deferred formatting for logging on embedded systems.
+- [Embedded Podcast/Blog](https://embedded.fm/) - Site dedicated to the many aspects of engineering. We talk about the how, why, and what of engineering, usually devices.
+- [Tesla Buildroot](https://github.com/teslamotors/buildroot) - Simple, efficient and easy-to-use tool to generate embedded Linux systems through cross-compilation.
+- [coreboot](https://github.com/teslamotors/coreboot) - Aimed at replacing the proprietary BIOS (firmware) found in most computers. coreboot performs a little bit of hardware initialization and then executes additional boot logic, called a payload.
+- [lilos](https://github.com/cbiffle/lilos) - Wee RTOS written to support the async style of programming in Rust.
+- [Brittle Kernel](https://github.com/cbiffle/brittle-kernel) - Research microkernel, designed for embedded applications on ARM Cortex-M microcontrollers.
+- [Bare-metal programming the tinyAVR 0 microcontrollers (2020)](https://www.omzlo.com/articles/baremetal-programming-on-the-tinyavr-0-micro-controllers)
+- [AI at the edge](https://github.com/crespum/edge-ai) - Curated list of resources for embedded AI.
+- [JLCPCB](https://jlcpcb.com/) - PCB Prototype & PCB Fabrication Manufacturer.
+- [JLCKicadTools](https://github.com/matthewlai/JLCKicadTools) - Tool for using JLCPCB assembly service with KiCad.
+- [Low-Level Academy](https://lowlvl.org/) - Learn systems programming from the first principles. ([Code](https://github.com/LowLevelAcademy/LowLevelAcademy)) ([HN](https://news.ycombinator.com/item?id=24764589)) ([Backend code](https://github.com/LowLevelAcademy/server))
+- [Espruino](https://github.com/espruino/Espruino) - JavaScript interpreter for microcontrollers. ([HN](https://news.ycombinator.com/item?id=24764483))
+- [QP/C](https://github.com/QuantumLeaps/qpc) - Real-time embedded framework/RTOS for embedded systems based on active objects (actors) and hierarchical state machines. ([Web](http://www.state-machine.com/qpc/))
+- [Quantum Leaps](https://www.state-machine.com/) - Modern Embedded Software. ([GitHub](https://github.com/QuantumLeaps))
+- [So you want to build an embedded Linux system? (2020)](https://jaycarlson.net/embedded-linux/) ([HN](https://news.ycombinator.com/item?id=24800037))
+- [How I Teach Embedded Systems (2019)](https://jaycarlson.net/2019/07/26/how-i-teach-embedded-systems/)
+- [eRPC (Embedded RPC)](https://github.com/EmbeddedRPC/erpc) - Open source Remote Procedure Call (RPC) system for multichip embedded systems and heterogeneous multicore SoCs.
+- [Bela](https://bela.io/) - Create beautiful interaction with sensors and sound. ([Code](https://github.com/BelaPlatform/Bela)) ([bela-sys - Rust bindings for the Bela platform](https://github.com/padenot/bela-sys))
+- [Embedded Programming Without the IDE (2016)](http://reecestevens.me/blog/2016/07/08/embedded-programming-without-ide/) ([HN](https://news.ycombinator.com/item?id=24867643))
+- [Free CANopen Stack for Embedded Systems](https://github.com/embedded-office/canopen-stack) ([Web](https://canopen-stack.org/))
+- [Using Rust for a simple hardware project (2020)](https://blog.tonari.no/rust-simple-hardware-project)
+- [elfload](https://github.com/erincandescent/elfload) - ELF loader for embedded systems.
+- [Introduction to Embedded Linux Security (2020)](https://embeddedbits.org/introduction-embedded-linux-security-part-1/)
+- [Handmade Seattle](https://www.handmade-seattle.com/) - Indie Systems Programming Conference. ([Lobsters](https://lobste.rs/s/uynlxo/indie_systems_programming_conference)) ([Day 1 video](https://vimeo.com/479193681))
+- [The Best and Worst Microcontroller SDKs (2020)](https://interrupt.memfault.com/blog/the-best-and-worst-mcu-sdks) ([HN](https://news.ycombinator.com/item?id=25094956))
+- [SwiftIO](https://github.com/madmachineio/SwiftIO) - Swift framework for microcontrollers.
+- [MadMachine](https://www.madmachine.io/) - Swift for microcontrollers. ([GitHub](https://github.com/madmachineio))
+- [stm32f4xx-hal](https://github.com/stm32-rs/stm32f4xx-hal) - Rust embedded-hal HAL for all MCUs in the STM32 F4 family.
+- [Cubesat Space Protocol](https://github.com/libcsp/libcsp) - Small protocol stack written in C. CSP is designed to ease communication between distributed embedded systems in smaller networks, such as Cubesats.
+- [LPC55 HAL](https://github.com/nickray/lpc55-hal) - Hardware Abstraction Layer (HAL) for NXP LPC55S6x (Cortex-M33) microcontrollers.
+- [Moddable SDK](https://github.com/Moddable-OpenSource/moddable) - JavaScript for Microcontrollers. ([HN](https://news.ycombinator.com/item?id=25169395)) ([Web](https://www.moddable.com/))
+- [F Prime](https://github.com/nasa/fprime) - Component-driven framework that enables rapid development and deployment of spaceflight and other embedded software applications. ([Web](https://nasa.github.io/fprime/))
+- [Crust](https://github.com/crust-firmware/crust) - SCP firmware for sunxi SoCs.
+- [emba](https://github.com/e-m-b-a/emba) - Analyzer for Linux-based firmware of embedded devices.
+- [FIRMADYNE](https://github.com/firmadyne/firmadyne) - Automated and scalable system for performing emulation and dynamic analysis of Linux-based embedded firmware.
+- [OpenWrt](https://openwrt.org/) - Linux operating system targeting embedded devices. ([Code](https://github.com/openwrt/openwrt))
+- [Embedded Virtual Machine](https://github.com/embvm/embvm-core)
+- [Foundations of Embedded Systems](https://f-of-e.org/) ([HN](https://news.ycombinator.com/item?id=25717717))
+- [Knurling-rs](https://knurling.ferrous-systems.com/) - Get a handle on bare-metal Rust. ([GitHub](https://github.com/knurling-rs)) ([What's Knurling all about?](https://github.com/knurling-rs/meta))
+- [Creating Embedded Microcontrollers](https://abdullahyildiz.github.io/files/Creating_Embedded_Microcontrollers.pdf)
+- [Introduction to ARM Semihosting (2021)](https://interrupt.memfault.com/blog/arm-semihosting)
+- [Tutorial for secure OTA (over the air) firmware update on the ESP32 (2021)](https://www.lab4iot.com/2021/02/21/esp32-secure-firmware-update-over-the-air-ota/)
+- [AArch64 Boards and Perception (2021)](https://marcin.juszkiewicz.com.pl/2021/02/22/aarch64-boards-and-perception/)
+- [µGUI](https://github.com/achimdoebler/UGUI) - Open Source GUI module for embedded systems.
+- [avr-hal](https://github.com/Rahix/avr-hal) - embedded-hal abstractions for AVR microcontrollers.
+- [LambdaChip](http://lambdachip.com/index/) - Write Scheme on Embedded System.
+- [cortex-m](https://github.com/rust-embedded/cortex-m) - Low level access to Cortex-M processors.
+- [CurrentSense-TinyML](https://github.com/Santandersecurityresearch/CurrentSense-TinyML) - Spying on Microcontrollers using Current Sensing and embedded TinyML models.
+- [ODAS](https://github.com/introlab/odas) - Open embeddeD Audition System.
+- [Testing an embedded application (2021)](https://ferrous-systems.com/blog/test-embedded-app/)
+- [cortex-m-rt](https://github.com/rust-embedded/cortex-m-rt) - Minimal startup / runtime for Cortex-M microcontrollers.
+- [Want to Learn Programming and Microcontrollers? (2021)](https://www.eejournal.com/article/want-to-learn-programming-and-microcontrollers/) ([HN](https://news.ycombinator.com/item?id=26981800))
+- [Building Morsecipher (2021)](https://fadein.xyz/posts/2021-04-29-morsecipher-architecture/)
+- [Rune](https://github.com/hotg-ai/rune) - Containerization technology for deploying TinyML applications to extremely constraint devices.
+- [A virtual machine for microcontrollers (2021)](https://blog.toit.io/why-doesnt-v8-fit-on-my-microcontroller-71dc6e2d8f5c) ([HN](https://news.ycombinator.com/item?id=27353255))
+- [Embedded scripting languages](https://github.com/dbohdan/embedded-scripting-languages)
+- [Neotron](https://neotron-compute.github.io/Neotron-Book/index.html) - Embedded Rust Home Computer Platform.
+- [Ask HN: How to start learning embedded systems? (2021)](https://news.ycombinator.com/item?id=27828834)
+- [Taking Months to Bits (2021)](https://kevlinhenney.medium.com/taking-months-to-bits-f66f3eb2476a) - Calendrical journey into low-level programming.
+- [EON Tuner: Edge Impulse's New AutoML Tool for Embedded Machine Learning (2021)](https://www.edgeimpulse.com/blog/introducing-the-eon-tuner-edge-impulses-new-automl-tool-for-embedded-machine-learning?_ga=2.52353705.1878182224.1626956307-1252652237.1574934249)
+- [Pinion](https://github.com/yaqwsx/Pinion) - Generate interactive and nice-looking diagrams for your PCBs. ([Docs](https://yaqwsx.github.io/Pinion/))
+- [PcbDraw](https://github.com/yaqwsx/PcbDraw) - Convert your KiCAD board into a nicely looking 2D drawing suitable for pinout diagrams.
+- [JlcParts](https://yaqwsx.github.io/jlcparts/#/) - Better parametric search for components available for JLC PCB assembly. ([Code](https://github.com/yaqwsx/jlcparts))
+- [KiCad EDA](https://www.kicad.org/) - Schematic Capture & PCB Design Software.
+- [KiKit](https://github.com/yaqwsx/KiKit) - Automation for KiCAD.
+- [The Rust standard library on Espressif chips (2021)](https://mabez.dev/blog/posts/esp-rust-espressif/) ([Lobsters](https://lobste.rs/s/rwzgka/rust_standard_library_on_espressif_chips))

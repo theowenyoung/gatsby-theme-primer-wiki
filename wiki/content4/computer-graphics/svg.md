@@ -1,0 +1,96 @@
+# SVG
+
+## Links
+
+- [Zdog](https://zzz.dog/) - Flat, round, designer-friendly pseudo-3D engine.
+- [Rough.js](https://github.com/pshihn/rough) - Create graphics with a hand-drawn, sketchy, appearance.
+- [SVG illustrations as React Components](https://blog.prototypr.io/svg-illustrations-as-react-components-f0e7be304eb6)
+- [Scaling SVG Elements](https://wattenberger.com/guide/scaling-svg) ([Lobsters](https://lobste.rs/s/luuqzc/svg_is_telescope_into_another_world))
+- [Transform SVG into React Components using SVGR (2017)](https://gregberge.com/blog/svg-to-react-component-with-svgr)
+- [svg-to-react](https://github.com/twilio-labs/svg-to-react) - Utility to convert raw SVG files into accessible and extendable React Components.
+- [Optimising SVGs for the Web (2020)](https://css-irl.info/optimising-svgs-for-the-web/)
+- [Where are all the animated SVGs? (2020)](https://www.getmotion.io/blog/where-are-all-the-animated-svgs/)
+- [Motion](https://www.getmotion.io/) - Free, simple animated SVG editor. ([Article](https://www.getmotion.io/blog/introducing-motion/))
+- [Svgbob Editor](https://ivanceras.github.io/svgbob-editor/) - Convert your ascii diagram scribbles into happy little SVG.
+- [Vecta](https://vecta.io/) - Powerful, online SVG editor for teams.
+- [OpenMoji](https://openmoji.org/) - Open source emojis for designers, developers and everyone else. ([Code](https://github.com/hfg-gmuend/openmoji))
+- [Visual Guide To SVG Matrix](https://github.com/afternoon2/svg-matrix-visual-guide)
+- [Curated List Of Websites For Free SVG Illustrations (2019)](https://wweb.dev/resources/free-svg-illustrations)
+- [SVG Animations](https://andrew.wang-hoyer.com/experiments/svg-animations/) ([Code](https://github.com/ndrwhr/svg-animation-src))
+- [Creating a Pencil Effect in SVG (2020)](https://heredragonsabound.blogspot.com/2020/02/creating-pencil-effect-in-svg.html) ([HN](https://news.ycombinator.com/item?id=22645959))
+- [Vivus](http://maxwellito.github.io/vivus/) - JavaScript library to make drawing animation on SVG. ([Code](https://github.com/maxwellito/vivus))
+- [Canvas2Svg](https://github.com/gliffy/canvas2svg) - Translates HTML5 Canvas draw commands to SVG.
+- [canvg](https://github.com/canvg/canvg) - JavaScript SVG parser and renderer on Canvas.
+- [resvg](https://github.com/RazrFalcon/resvg) - SVG rendering library in Rust.
+- [Creating a Gauge in React (2020)](https://wattenberger.com/blog/gauge)
+- [XVG](https://xvg.now.sh/) - Chrome extension for debugging SVG paths by converting them to outlines and displaying anchors, control points, handles and arc ellipses. ([Code](https://github.com/winkerVSbecks/xvg))
+- [path-data-parser](https://github.com/pshihn/path-data-parser) - SVG Path Parser.
+- [points-on-path](https://github.com/pshihn/points-on-path) - Estimate point on a SVG path.
+- [Practical SVG book](https://abookapart.com/products/practical-svg)
+- [How to emulate hand-drawn shapes / Algorithms behind RoughJS (2020)](https://shihn.ca/posts/2020/roughjs-algorithms/)
+- [SVG for Everybody](https://jonneal.dev/svg4everybody/) - Adds external spritemaps support to otherwise SVG-capable browsers. ([Code](https://github.com/jonathantneal/svg4everybody))
+- [CNC Hershey Font Tool](https://msurguy.github.io/cnc-text-tool/) ([Code](https://github.com/msurguy/cnc-text-tool))
+- [SVG Path Visualizer](https://svg-path-visualizer.netlify.app/) - Enter a SVG path data to visualize it and discover all its different commands.
+- [Nano SVG](https://github.com/memononen/nanosvg) - Simple stupid SVG parser.
+- [Shape Divider App](https://www.shapedivider.app/) - Export a beautiful SVG shape divider.
+- [URL-encoder for SVG](https://yoksel.github.io/url-encoder/) ([Code](https://github.com/yoksel/url-encoder))
+- [SVG Filters Playground](https://yoksel.github.io/svg-filters/#/) ([Code](https://github.com/yoksel/svg-filters))
+- [Textures.js](https://github.com/riccardoscalco/textures) - JavaScript library for creating SVG patterns. ([Web](https://riccardoscalco.it/textures/)) ([HN](https://news.ycombinator.com/item?id=23673534)) ([Example](https://observablehq.com/@bradydowling/textures))
+- [SVG Caching with use (2020)](https://paco.im/blog/svg-caching-with-use)
+- [Benefits of SVG (2020)](https://dev.to/alexi_be3/benefits-of-svg-10mn)
+- [Free Vector Illustrations](https://www.pixeltrue.com/free-illustrations) ([HN](https://news.ycombinator.com/item?id=24048508))
+- [svg2jsx](https://github.com/balajmarius/svg2jsx) - Transform SVG into valid JSX.
+- [Graphical UI's with SVG and React (2020)](https://datalanguage.com/blog/graphical-uis-with-svg-and-react-part-1-declarative-graphics)
+- [SVGO](https://github.com/svg/svgo) - Node.js tool for optimizing SVG files.
+- [Lean-SVG](https://lean-svg.netlify.app/) - Optimize SVG and Flatten transforms and shapes. ([Code](https://github.com/upendra-web/lean-svg))
+- [flatten-svg](https://github.com/nornagon/flatten-svg) - Flatten SVGs into points.
+- [Squircley](https://squircley.app/) - SVG Squircle Maker. ([Code](https://github.com/georgedoescode/squircle)) ([Squircles with Vue](https://codepen.io/simeydotme/pen/oOGmYe))
+- [Fabric.js](https://github.com/fabricjs/fabric.js) - JavaScript Canvas Library, SVG-to-Canvas (& canvas-to-SVG) Parser. ([Web](http://fabricjs.com/))
+- [SVG Path Editor](https://yqnn.github.io/svg-path-editor/) - Online editor to create and manipulate SVG paths. ([Code](https://github.com/Yqnn/svg-path-editor)) ([HN](https://news.ycombinator.com/item?id=24998532))
+- [SVG Diff](https://svgdiff.now.sh/) - See the visual difference between two SVGs. ([Code](https://github.com/stipsan/svgdiff))
+- [diffvg](https://people.csail.mit.edu/tzumao/diffvg/) - Differentiable Rasterizer for Vector Graphics. ([Paper](https://people.csail.mit.edu/tzumao/diffvg/))
+- [Using SVGs in asset catalogs](https://bjango.com/articles/svgassetcatalogs/)
+- [uhtml](https://github.com/WebReflection/uhtml) - Micro HTML/SVG render.
+- [Simple Image Vectorization](https://wordsandbuttons.online/simple_image_vectorization.html) ([HN](https://news.ycombinator.com/item?id=24957120))
+- [Svglib](https://github.com/deeplook/svglib) - Pure-Python library for reading and converting SVG.
+- [IconPark](https://github.com/bytedance/IconPark) - Transform an SVG icon into multiple themes, and generate React icons，Vue icons, SVG icons.
+- [PSVG](https://github.com/LingDong-/psvg) - Programmable SVG. Introduces programming language features like functions, control flows, and variables.
+- [Loaf](https://getloaf.io/) - Animated SVG icon library.
+- [vpype](https://github.com/abey79/vpype) - Swiss-Army-knife command-line tool for plotter vector graphics.
+- [svg-path-properties](https://github.com/rveciana/svg-path-properties) - JavaScript alternative to getPointAtLength(t) and getTotalLength() functions. Works with Canvas objects and when Node.
+- [Learn SVG through 24 examples (2020)](https://www.youtube.com/watch?v=kBT90nwUb_o)
+- [flowchart.js](http://flowchart.js.org/) - Draws simple SVG flow chart diagrams from textual representation of the diagram. ([Code](https://github.com/adrai/flowchart.js))
+- [js-sequence-diagrams](https://bramp.github.io/js-sequence-diagrams/) - Draws simple SVG sequence diagrams from textual representation of the diagram. ([Code](https://github.com/bramp/js-sequence-diagrams))
+- [SVGOMG](https://jakearchibald.github.io/svgomg/) - Web GUI for SVGO. ([Code](https://github.com/jakearchibald/svgomg))
+- [Paths.js](https://github.com/andreaferretti/paths-js) - Generate SVG paths for geometric shapes. ([Web](http://andreaferretti.github.io/paths-js-react-demo/))
+- [CairoSVG](https://github.com/Kozea/CairoSVG) - SVG converter based on Cairo. It can export SVG files to PDF, EPS, PS, and PNG files. ([Web](https://www.courtbouillon.org/cairosvg))
+- [SVG Crop](https://svgcrop.com/) - Remove blank space from around any SVG instantly.
+- [SVG Tutorial: How to Code SVG Icons by Hand (2021)](https://www.aleksandrhovhannisyan.com/blog/svg-tutorial-how-to-code-svg-icons-by-hand/)
+- [SVG Repo](https://www.svgrepo.com/) - Free SVG Vectors and Icons.
+- [svg-injector](https://github.com/tanem/svg-injector) - Fast, caching, dynamic inline SVG DOM injection library.
+- [SVG Wave](https://svgwave.in/) - Tiny, customizable gradient SVG wave generator. ([Code](https://github.com/anup-a/svgwave))
+- [Too Many SVGs Clogging Up Your Markup? Try `use`. (2021)](https://css-tricks.com/too-many-svgs-clogging-up-your-markup-try-use/)
+- [SVG Explained in 100 Seconds (2021)](https://www.youtube.com/watch?v=emFMHH2Bfvo)
+- [Yogurt Layout](https://github.com/accurat/yogurt-layout) - Small JS layout computation library, to organize space in SVGs and canvases.
+- [Haikei](https://haikei.app/) - Generate unique SVG design assets.
+- [Warp SVG Online](https://pavellaptev.github.io/warp-svg/) - Warp and distort SVG files online. ([Code](https://github.com/PavelLaptev/warp-svg))
+- [SVG Generators (2021)](https://www.smashingmagazine.com/2021/03/svg-generators/)
+- [Make Awesome SVG Animations with CSS (2021)](https://www.youtube.com/watch?v=UTHgr6NLeEw) ([Code](https://github.com/fireship-io/animated-svg-demo))
+- [SVG Color Matrix Mixer](https://www.fecolormatrix.com/)
+- [DOM to SVG](https://github.com/felixfbecker/dom-to-svg) - Library to convert a given HTML DOM node into an accessible SVG "screenshot".
+- [Swipey image grids (2021)](https://www.cassie.codes/posts/swipey-image-grids/) ([Tweet](https://twitter.com/cassiecodes/status/1378656290273173509))
+- [SVG Essentials & Animation Course](https://frontendmasters.com/courses/svg-essentials-animation/) ([Code](https://github.com/sdras/svg-workshop))
+- [svgpath](https://github.com/fontello/svgpath) - SVG path low level transformations toolkit.
+- [kld-intersections](https://github.com/thelonious/kld-intersections) - Library of intersection algorithms covering all SVG shape types.
+- [SVG Loader](https://github.com/shubhamjain/svg-loader) - Plug 'n Play external SVG loader. ([Article](https://css-tricks.com/svg-loader-a-different-way-to-work-with-external-svg/))
+- [Boring Avatars](https://boringavatars.com/) - React library to generate custom avatars. ([Code](https://github.com/boringdesigners/boring-avatars)) ([HN](https://news.ycombinator.com/item?id=27311964))
+- [svgj](https://github.com/Jarred-Sumner/svgj) - Quickly converts .svg files into JSX.
+- [text-to-svg](https://github.com/shrhdk/text-to-svg) - Convert text to SVG path without native dependence.
+- [Blobs](https://github.com/g-harel/blobs) - Random blob generation and animation. ([Web](https://blobs.dev/))
+- [LunaSVG](https://github.com/sammycage/lunasvg) - Standalone SVG rendering library in C++.
+- [Rune.js](https://github.com/runemadsen/rune.js) - JavaScript library for programming graphic design systems with SVG. ([Web](http://runemadsen.github.io/rune.js/))
+- [SVG Loaders](http://samherbert.net/svg-loaders/) - Loading icons and small animations built with pure SVG. ([Code](https://github.com/SamHerbert/SVG-Loaders))
+- [Hero Patterns](https://www.heropatterns.com/) - Free repeatable SVG background patterns for your web projects.
+- [Polymorph](https://github.com/notoriousb1t/polymorph) - Morph SVG Paths. ([Docs](https://notoriousb1t.github.io/polymorph-docs/))
+- [scribby](https://github.com/naknomum/scribby) - JavaScript library which lets users draw simple "scribbles" on a web page.
+- [Fire SVG animations (SMIL) when the SVG is visible (2021)](https://www.zachleat.com/web/svg-animate/)

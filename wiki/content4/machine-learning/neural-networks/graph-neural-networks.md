@@ -1,0 +1,58 @@
+# Graph neural networks
+
+## Links
+
+- [A Comprehensive Survey on Graph Neural Networks (2019)](https://arxiv.org/pdf/1901.00596.pdf)
+- [Spektral](https://github.com/danielegrattarola/spektral) - Graph Neural Networks with Keras and Tensorflow.
+- [Graph Neural Networks in TF2](https://github.com/microsoft/tf2-gnn)
+- [Graph Neural Tangent Kernel: Fusing Graph Neural Networks with Graph Kernels (2019)](https://github.com/KangchengHou/gntk)
+- [Strategies for Pre-training Graph Neural Networks](https://github.com/snap-stanford/pretrain-gnns)
+- [Transformers are Graph Neural Networks (2020)](https://graphdeeplearning.github.io/post/transformers-are-gnns/) ([HN](https://news.ycombinator.com/item?id=22518263))
+- [Towards understanding glasses with graph neural networks (2020)](https://deepmind.com/blog/article/Towards-understanding-glasses-with-graph-neural-networks)
+- [How Powerful are Graph Neural Networks?](https://github.com/weihua916/powerful-gnns)
+- [Resources for learning Graph Neural Networks for beginners (2020)](https://www.reddit.com/r/MLQuestions/comments/gk517g/resources_for_learning_graph_neural_networks_for/)
+- [Graph-based Deep Learning Literature](https://github.com/naganandy/graph-based-deep-learning-literature)
+- [PyTorch Cluster](https://github.com/rusty1s/pytorch_cluster) - PyTorch Extension Library of Optimized Graph Cluster Algorithms.
+- [Graph Neural Network Model in TensorFlow](https://github.com/mtiezzi/gnn)
+- [Traffic prediction with advanced Graph Neural Networks (2020)](https://deepmind.com/blog/article/traffic-prediction-with-advanced-graph-neural-networks) ([HN](https://news.ycombinator.com/item?id=24386584))
+- [Transformers Are Graph Neural Networks (2020)](https://thegradient.pub/transformers-are-graph-neural-networks/) ([HN](https://news.ycombinator.com/item?id=24453294))
+- [Must-read papers on graph neural networks](https://github.com/thunlp/GNNPapers)
+- [Latest developments in Graph Neural Networks: A list of recent conference talks (2020)](https://www.reddit.com/r/MachineLearning/comments/j6wzut/r_latest_developments_in_graph_neural_networks_a/)
+- [DGL-LifeSci](https://github.com/awslabs/dgl-lifesci) - Python package for graph neural networks in chemistry and biology.
+- [Introduction to Graph Neural Networks (2020)](https://heartbeat.fritz.ai/introduction-to-graph-neural-networks-c5a9f4aa9e99)
+- [PyDGN](https://github.com/diningphil/PyDGN) - Python library for Deep Graph Networks.
+- [A gentle introduction to deep learning for graphs (2020)](https://www.sciencedirect.com/science/article/abs/pii/S0893608020302197)
+- [Graph Structure of Neural Networks](https://github.com/facebookresearch/graph2nn) - PyTorch implementation.
+- [GraphGym](https://github.com/snap-stanford/GraphGym) - Platform for designing and evaluating Graph Neural Networks.
+- [GraphRNN](https://github.com/JiaxuanYou/graph-generation) - Generating Realistic Graphs with Deep Auto-regressive Model.
+- [Position-aware Graph Neural Networks](https://github.com/JiaxuanYou/P-GNN)
+- [SEAL - Learning from Subgraphs, Embeddings, and Attributes for Link prediction](https://github.com/muhanzhang/SEAL)
+- [Jraph](https://github.com/deepmind/jraph) - Lightweight library for working with graph neural networks in jax.
+- [Benchmarking Graph Neural Networks (2020)](https://arxiv.org/abs/2003.00982) ([Code](https://github.com/graphdeeplearning/benchmarking-gnns))
+- [Pro-GNN](https://github.com/ChandlerBang/Pro-GNN) - PyTorch implementation of "Graph Structure Learning for Robust Graph Neural Networks".
+- [Supervised Learning on Relational Databases with Graph Neural Networks](https://github.com/mwcvitkovic/Supervised-Learning-on-Relational-Databases-with-GNNs)
+- [Why I’m lukewarm on graph neural networks (2020)](https://www.singlelunch.com/2020/12/28/why-im-lukewarm-on-graph-neural-networks/) ([HN](https://news.ycombinator.com/item?id=25632592))
+- [Simplicial Neural Networks](https://github.com/stefaniaebli/paper-snn-neurips2020tda) - Generalization of graph neural networks to data that live on a class of topological spaces called [simplicial complexes].
+- [FLAG: Adversarial Data Augmentation for Graph Neural Networks](https://github.com/devnkong/FLAG)
+- [Distilling Knowledge From Graph Convolutional Networks (2020)](https://openaccess.thecvf.com/content_CVPR_2020/html/Yang_Distilling_Knowledge_From_Graph_Convolutional_Networks_CVPR_2020_paper.html) ([Code](https://github.com/ihollywhy/DistillGCN.PyTorch))
+- [GN-Transformer AST](https://github.com/chengjunyan1/GN-Transformer-AST) - Code for "GN-Transformer: Fusing AST and Source Code information in Graph Networks" paper.
+- [Graph theory, graph convolutional networks, knowledge graphs (2021)](https://albertazout.substack.com/p/gradient-ascent-10) ([HN](https://news.ycombinator.com/item?id=26058440))
+- [Theoretical Foundations of Graph Neural Networks (2021)](https://www.youtube.com/watch?v=uF53xsT7mjc)
+- [PyTorch GAT](https://github.com/gordicaleksa/pytorch-GAT) - PyTorch implementation of the original GAT paper.
+- [Graph Transformer Networks (2019)](https://arxiv.org/abs/1911.06455) ([Code](https://github.com/seongjunyun/Graph_Transformer_Networks))
+- [DropEdge: Towards Deep Graph Convolutional Networks on Node Classification](https://github.com/DropEdge/DropEdge)
+- [DIG (Dive into Graphs)](https://github.com/divelab/DIG) - Library for graph deep learning research.
+- [Understanding Graph Neural Networks from Graph Signal Denoising Perspectives (2020)](https://arxiv.org/abs/2006.04386) ([Code](https://github.com/fuguoji/GSDN))
+- [Adaptive Filters and Aggregator Fusion for Efficient Graph Convolutions](https://github.com/shyam196/egc)
+- [Graph Convolutional Networks in PyTorch](https://github.com/tkipf/pygcn)
+- [Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges (2021)](https://arxiv.org/abs/2104.13478)
+- [E(n) Equivariant Graph Neural Networks (2021)](https://arxiv.org/abs/2102.09844) ([Code](https://github.com/vgsatorras/egnn))
+- [How Attentive are Graph Attention Networks? (2021)](https://arxiv.org/pdf/2105.14491.pdf) ([Code](https://github.com/tech-srl/how_attentive_are_gats))
+- [Masked Label Prediction: Unified Message Passing Model for Semi-Supervised Classification (2021)](https://arxiv.org/abs/2009.03509) ([Code](https://github.com/lucidrains/graph-transformer-pytorch))
+- [Binary Graph Neural Networks (2021)](https://arxiv.org/abs/2012.15823) ([Code](https://github.com/mbahri/binary_gnn))
+- [Scaling Graph Neural Networks with Approximate PageRank (2020)](https://www.in.tum.de/daml/pprgo/) ([Code](https://github.com/TUM-DAML/pprgo_pytorch))
+- [CS224W: Machine Learning with Graphs (2021)](https://www.youtube.com/playlist?list=PLoROMvodv4rPLKxIpqhjhPgdQy7imNkDn)
+- [Graph Attention Networks (GAT) annotated implementation](https://nn.labml.ai/graphs/gat/index.html)
+- [Awesome Explainable Graph Reasoning](https://github.com/AstraZeneca/awesome-explainable-graph-reasoning) - Collection of research papers and software related to explainability in graph machine learning.
+- [An Attempt at Demystifying Graph Deep Learning](https://ericmjl.github.io/essays-on-data-science/machine-learning/graph-nets/)
+- [Graph Random Neural Network for Semi-Supervised Learning on Graphs (2020)](https://arxiv.org/abs/2005.11079) ([Code](https://github.com/THUDM/GRAND))

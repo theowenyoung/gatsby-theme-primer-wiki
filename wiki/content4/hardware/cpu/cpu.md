@@ -1,0 +1,108 @@
+# CPU
+
+## Links
+
+- [RISC-V](https://riscv.org/) - Free and Open RISC Instruction Set Architecture.
+- [Digging into RISC-V and how I learn new things (2019)](https://blog.jessfraz.com/post/digging-into-risc-v-and-how-i-learn-new-things/)
+- [SHAKTI](http://shakti.org.in/) - Open-source Processor Development Ecosystem.
+- [I don't know how CPUs work so I simulated one in code (2019)](https://djhworld.github.io/post/2019/05/21/i-dont-know-how-cpus-work-so-i-simulated-one-in-code/)
+- [Simple Computer](https://github.com/djhworld/simple-computer) - Whilst reading But How Do It Know? by J. Clark Scott I felt compelled to write something to simulate the computer the book describes.
+- [Awesome CPU and MCU documentation](https://github.com/larsbrinkhoff/awesome-cpus)
+- [How do CPUs read machine code? (2019)](https://www.youtube.com/watch?v=yl8vPW5hydQ)
+- [CPU Microcodes](https://github.com/platomav/CPUMicrocodes) - Intel, AMD, VIA & Freescale CPU Microcode Repositories.
+- [CPU Scheduling](https://twitter.com/b0rk/status/1215753312324157441)
+- [uarch-bench](https://github.com/travisdowns/uarch-bench) - Benchmark for low-level CPU micro-architectural features.
+- [Performance Analysis & Tuning on Modern CPU - Denis Bakhvalov (2020)](https://www.youtube.com/watch?v=Ho3bCIJcMcc)
+- [x86 and amd64 instruction reference](https://www.felixcloutier.com/x86/)
+- [IA32-doc](https://github.com/wbenny/ia32-doc) - Project which aims to put as many definitions from the Intel Manual into machine-processable format as possible.
+- [CPU caches and data locality: a small demonstration (2020)](https://kaushikghose.wordpress.com/2020/01/30/cpu-caches-and-data-locality-a-small-demonstration/) ([Lobsters](https://lobste.rs/s/4m2s8f/cpu_caches_data_locality_small))
+- [What is a stack and how does it work? (2020)](https://www.youtube.com/watch?v=xBjQVxVxOxc)
+- [Branch prediction explained](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
+- [x86-info-term](https://github.com/zwegner/x86-info-term) - Terminal viewer for x86 instruction/intrinsic information using Python 3 + curses.
+- [Cosmic](https://github.com/clbx/Cosmic) - Stellar simulated 8-bit computer architecture.
+- [Optimized implementations of various library functions for ARM architecture processors](https://github.com/ARM-software/optimized-routines)
+- [Chipping away at Moore's law. Modern CPUs are just chiplets connected together (2020)](https://queue.acm.org/detail.cfm?id=3388515)
+- [SIMD instructions](https://opensourceweekly.org/issues/7/) ([HN](https://news.ycombinator.com/item?id=22833299))
+- [Reverse-engineering the TL431: the most common chip you've never heard of (2014)](http://www.righto.com/2014/05/reverse-engineering-tl431-most-common.html) ([HN](https://news.ycombinator.com/item?id=22885819))
+- [X86-64 Semantics](https://github.com/kframework/X86-64-semantics) - Complete and thoroughly tested formal semantics of x86-64 to date.
+- [Efficient and performance-portable SIMD wrapper](https://github.com/google/highway)
+- [The DooM-chip: no CPU, no opcodes, no instruction counter (2020)](https://twitter.com/sylefeb/status/1258808333265514497) ([HN](https://news.ycombinator.com/item?id=23123782))
+- [Unicorn Engine](https://www.unicorn-engine.org/) - Lightweight multi-platform, multi-architecture CPU emulator framework. ([Code](https://github.com/unicorn-engine/unicorn))
+- [afl-unicorn](https://github.com/Battelle/afl-unicorn) - Lets you fuzz any piece of binary that can be emulated by Unicorn Engine.
+- [Archspec](https://github.com/archspec/archspec) - Library for detecting, labeling, and reasoning about microarchitectures.
+- [Branch prediction in CPUs](https://danluu.com/branch-prediction/)
+- [Examining ARM vs X86 Memory Models with Rust (2020)](https://www.nickwilcox.com/blog/arm_vs_x86_memory_model/) ([HN](https://news.ycombinator.com/item?id=23659037))
+- [Single-use JIT Performance on x86 Processors](https://github.com/animetosho/jit_smc_test) ([HN](https://news.ycombinator.com/item?id=23711449))
+- [ARMRef](https://github.com/evilpenguin/ARMRef) - iOS, iPadOS, and macOS application reference manual for ARM assembly instructions.
+- [Produce your own physical chips. For free. In the Open. (2020)](https://fossi-foundation.org/2020/06/30/skywater-pdk) ([HN](https://news.ycombinator.com/item?id=23755693))
+- [Improving performance with SIMD intrinsics in three use cases (2020)](https://stackoverflow.blog/2020/07/08/improving-performance-with-simd-intrinsics-in-three-use-cases/) ([HN](https://news.ycombinator.com/item?id=23772302))
+- [Inside the 8086 processor, tiny charge pumps create a negative voltage (2020)](http://www.righto.com/2020/07/inside-8086-processor-tiny-charge-pumps.html)
+- [An Intel 8080 assembler and online simulator (2020)](https://eli.thegreenplace.net/2020/an-intel-8080-assembler-and-online-simulator/)
+- [CoreMark](https://github.com/eembc/coremark) - Industry-standard benchmark that measures the performance of central processing units (CPU) and embedded microcrontrollers (MCU).
+- [How Extreme Ultraviolet Lithography works (2020)](https://www.youtube.com/watch?v=z6c3vzIGo9o)
+- [SIMDe](https://github.com/simd-everywhere/simde) - Implementations of SIMD instruction sets for systems which don't natively support them. ([HN](https://news.ycombinator.com/item?id=24048562))
+- [Itanium Processor Microarchitecture (2000)](http://www.cs.binghamton.edu/~dima/cs522_05/itanium.pdf)
+- [Intel Hardware Accelerated Execution Manager (HAXM)](https://github.com/intel/haxm)
+- [sse2neon](https://github.com/DLTcollab/sse2neon) - C/C++ header file that converts Intel SSE intrinsics to Arm/Aarch64 NEON intrinsics.
+- [Toward the 1nm Technology Generation: Imec Roadmap for Logic Technology (2020)](https://www.imec-int.com/en/articles/view-logic-technology-roadmap)
+- [Gperftools CPU Profiler](https://gperftools.github.io/gperftools/cpuprofile.html)
+- [VSCode JS Profile Visualizer](https://github.com/microsoft/vscode-js-profile-visualizer) - Custom editor for viewing .cpuprofile files in VS Code. Pairs well with new JavaScript debugger.
+- [LDM: My Favorite ARM Instruction (2020)](https://keleshev.com/ldm-my-favorite-arm-instruction/) ([HN](https://news.ycombinator.com/item?id=24785357))
+- [How Debuggers Work: Getting and Setting x86 Registers (2020)](https://www.moritz.systems/blog/how-debuggers-work-getting-and-setting-x86-registers-part-1/)
+- [Taiwan Semiconductor](https://www.taiwansemi.com/) - Taiwanese multinational semiconductor contract manufacturing and design company.
+- [AMD Research Instruction Based Sampling Toolkit](https://github.com/jlgreathouse/AMD_IBS_Toolkit)
+- [Dynarmic](https://github.com/MerryMage/dynarmic) - Dynamic recompiler for ARM.
+- [Reverse-engineering the carry-lookahead circuit in the Intel 8008 processor (2020)](http://www.righto.com/2020/11/reverse-engineering-carry-lookahead.html) ([HN](https://news.ycombinator.com/item?id=25029484))
+- [ARM Memory Model Tool: Morello (and Some Memory Tagging) (2020)](https://community.arm.com/developer/ip-products/processors/b/processors-ip-blog/posts/memory-model-tool-morello-and-some-memory-tagging)
+- [Graphs, Metagraphs, RAM, CPU: HyperGraphs are more memory efficient than graphs (2020)](https://github.com/opencog/atomspace/blob/master/opencog/sheaf/docs/ram-cpu.pdf)
+- [Intel's disruption is now complete (2020)](https://jamesallworth.medium.com/intels-disruption-is-now-complete-d4fa771f0f2c) ([HN](https://news.ycombinator.com/item?id=25092721))
+- [ARM processor history (2020)](https://twitter.com/kenshirriff/status/1327021630636212224)
+- [Bitdefender disassembler](https://github.com/bitdefender/bddisasm) - Lightweight, x86/x64 only instruction decoder.
+- [Performance Analysis and Tuning on Modern CPUs book](https://book.easyperf.net/perf_book)
+- [Under the hood of a CPU: Reverse Engineering the P6 microcode | Peter Bosch (2020)](https://www.youtube.com/watch?v=4oFOpDflJMA)
+- [2020 Wheeler Lecture: The Future of Microprocessors](https://www.youtube.com/watch?v=R2SdSLCMKEA)
+- [c8c](https://github.com/glouw/c8c) - Aims to be a small typeless programming language for the CHIP-8 virtual machine.
+- [vrCPU](https://github.com/visrealm/vrcpu) - Code, documentation, schematics, notes for my Ben Eater inspired breadboard computer and emulator.
+- [ARM and Lock-Free Programming (2020)](https://randomascii.wordpress.com/2020/11/29/arm-and-lock-free-programming/)
+- [Why Is Apple’s M1 Chip So Fast? (2020)](https://debugger.medium.com/why-is-apples-m1-chip-so-fast-3262b158cba2) ([HN](https://news.ycombinator.com/item?id=25328292))
+- [Collection of information about ARM cortex-M](https://github.com/rgujju/STM32-projects)
+- [Ask HN: How did Apple manage to create such a better chip than Intel? (2020)](https://news.ycombinator.com/item?id=25381537)
+- [ARM Cortex-A72 fetch and branch processing (2020)](http://sandsoftwaresound.net/arm-cortex-a72-fetch-and-branch-processing/)
+- [The Secret History of the First Microprocessor, the F-14, and Me (2020)](https://www.wired.com/story/secret-history-of-the-first-microprocessor-f-14/)
+- [sandsifter](https://github.com/xoreaxeaxeax/sandsifter) - x86 processor fuzzer.
+- [Undocumented arm64 ISA extension present on the Apple M1](https://gist.github.com/dougallj/7a75a3be1ec69ca550e7c36dc75e0d6f) ([Reddit](https://www.reddit.com/r/programming/comments/km76pz/undocumented_arm64_isa_extension_present_on_the/))
+- [MIPS-Simulator](https://github.com/skyzh/mips-simulator) - Functional MIPS CPU simulator implemented in Haskell.
+- [From microops to abstract resources: constructing simpler CPU performance models (2020)](https://arxiv.org/abs/2012.11473)
+- [Let's Build a Microprocessor!](https://tiarkrompf.github.io/notes/?/lets-build-a-microprocessor/) - From NAND to RISC, using JavaScript as a HDL.
+- [ARM NEON intrinsics guide](https://github.com/thenifty/neon-guide)
+- [ASL Interpreter](https://github.com/ARM-software/asl-interpreter) - Example implementation of Arm's Architecture Specification Language (ASL). ([Fork](https://github.com/alastairreid/asl-interpreter))
+- [Corellium](https://corellium.com/) - ARM Device Virtualization. ([GitHub](https://github.com/corellium))
+- [Siliconpr0n: High Resolution Chip Maps](https://siliconpr0n.org/map/) ([HN](https://news.ycombinator.com/item?id=25964865))
+- [Fritzchens Fritz's Albums](https://www.flickr.com/photos/130561288@N04/albums) - Gorgeous high resolution die shots of (mostly) modern chips.
+- [Lobsters: How much are non x86/arm platforms used? (2021)](https://lobste.rs/s/79plp4/how_much_are_non_x86_arm_platforms_used)
+- [MIPS Emulator written in Go](https://github.com/0n1shi/mipsemu)
+- [The CPU Shack](http://www.cpushack.com/) - History of Microprocessors & CPU Techo.
+- [The 486 CPU Era – The Birth of Overclocking (2021)](http://www.cpushack.com/2021/02/21/the-486-cpu-era-the-birth-of-overclocking-part-1/)
+- [How CPUs are Designed and Built (2020)](https://www.techspot.com/article/1821-how-cpus-are-designed-and-built/)
+- [Arm Announces Armv9 Architecture: SVE2, Security, and the Next Decade (2021)](https://www.anandtech.com/show/16584/arm-announces-armv9-architecture) ([HN](https://news.ycombinator.com/item?id=26638091))
+- [Our Journey to ARM | PSPDFKit (2021)](https://pspdfkit.com/blog/2021/our-journey-to-arm/)
+- [Understanding modern state-of-the-art branch predictor (2021)](https://twitter.com/halvarflake/status/1381567750733238272)
+- [Application Binary Interface for the Arm Architecture](https://github.com/ARM-software/abi-aa)
+- [A CPU With Just One Instruction (2019)](https://www.youtube.com/watch?v=jRZDnetjGuo)
+- [v86](https://github.com/copy/v86/) - Emulates an x86-compatible CPU and hardware.
+- [RISC vs. CISC](https://cs.stanford.edu/people/eroberts/courses/soco/projects/risc/risccisc/)
+- [Where the top of the stack is on x86 (2011)](https://eli.thegreenplace.net/2011/02/04/where-the-top-of-the-stack-is-on-x86/) ([HN](https://news.ycombinator.com/item?id=27077173))
+- [Architecture All Access: Modern CPU Architecture (2021)](https://www.youtube.com/watch?v=vgPFzblBh7w&list=PL8t1FdN2Tj3ZVAzTY-FvsS0qy-mEfRdoj)
+- [How M1 Macs feel faster than Intel models: it’s about QoS (2021)](https://eclecticlight.co/2021/05/17/how-m1-macs-feel-faster-than-intel-models-its-about-qos/) ([HN](https://news.ycombinator.com/item?id=27182244))
+- [UCodeDisasm: Intel Atom Disassembler](https://github.com/chip-red-pill/uCodeDisasm)
+- [Atomics in AArch64 (2021)](https://cpufun.substack.com/p/atomics-in-aarch64)
+- [CPU Fun Blog](https://cpufun.substack.com/) - Intended to cover various subjects related to the low-level interactions of software and hardware.
+- [Building an Always-On CPU Profiler (2021)](https://blog.px.dev/cpu-profiling/)
+- [Scamp – a homebrew 16-bit CPU (2021)](https://incoherency.co.uk/blog/stories/scamp-lives.html) ([HN](https://news.ycombinator.com/item?id=27339088))
+- [What should the CPU usage be of a fully-loaded CPU that has been throttled? (2021)](https://devblogs.microsoft.com/oldnewthing/20210629-00/?p=105378) ([HN](https://news.ycombinator.com/item?id=27725286))
+- [Your CPU May Have Slowed Down on Wednesday (2021)](https://travisdowns.github.io/blog/2021/06/17/rip-zero-opt.html) ([HN](https://news.ycombinator.com/item?id=27588258))
+- [CPU Pinning and CPU Sets (2020)](https://www.netmeister.org/blog/cpu-pinning-and-sets.html)
+- [A natively flexible 32-bit Arm microprocessor (2021)](https://www.nature.com/articles/s41586-021-03625-w) ([HN](https://news.ycombinator.com/item?id=27910621))
+- [PlasticArm: Get Your Next CPU, Made Without Silicon (2021)](https://www.anandtech.com/show/16837/plasticarm-get-your-next-cpu-without-silicon) ([Lobsters](https://lobste.rs/s/ljgsb5/plasticarm_get_your_next_cpu_made_without))
+- [Beating the L1 cache with value speculation (2021)](https://mazzo.li/posts/value-speculation.html) ([HN](https://news.ycombinator.com/item?id=27929600)) ([Tweet](https://twitter.com/trascendentale/status/1418505269924016128))
+- [Hunting a bug in the i40e Intel driver (2021)](https://blog.cri.epita.fr/post/2021-07-29-hunting-a-bug-in-the-i40e-intel-driver/)

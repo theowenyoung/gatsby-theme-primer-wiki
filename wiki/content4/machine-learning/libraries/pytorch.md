@@ -1,0 +1,268 @@
+# [PyTorch](http://pytorch.org/)
+
+## Notes
+
+- [torch.fx allows you to write composable transformations in Python that take in PyTorch code and output PyTorch code](https://twitter.com/cHHillee/status/1367621538791317504)
+
+## Links
+
+- [PyTorch Tutorials](https://pytorch.org/tutorials/)
+- [RL Adventure](https://github.com/higgsfield/RL-Adventure)
+- [PyTorch template project](https://github.com/victoresque/pytorch-template)
+- [PyTorch GAN](https://github.com/eriklindernoren/PyTorch-GAN) - PyTorch implementations of Generative Adversarial Networks.
+- [PyTorch examples](https://github.com/pytorch/examples)
+- [Grokking PyTorch](https://github.com/Kaixhin/grokking-pytorch)
+- [Awesome PyTorch list](https://github.com/bharathgs/Awesome-pytorch-list)
+- [OCaml PyTorch](https://github.com/LaurentMazare/ocaml-torch) - OCaml bindings for PyTorch.
+- [Apex](https://github.com/NVIDIA/apex) - PyTorch Extension: Tools for easy mixed precision and distributed training in PyTorch.
+- [Translate](https://github.com/pytorch/translate) - PyTorch Language Library.
+- [What is torch.nn really?](https://pytorch.org/tutorials/beginner/nn_tutorial.html)
+- [Introduction to PyTorch Workshop at the AMLD 2019](https://github.com/ahug/amld-pytorch-workshop)
+- [Neural Pipeline](https://github.com/toodef/neural-pipeline) - Neural networks training pipeline based on PyTorch. Designed to standardize training process and accelerate experiments.
+- [Faster R-CNN and Mask R-CNN in PyTorch](https://github.com/facebookresearch/maskrcnn-benchmark)
+- [tch-rs](https://github.com/LaurentMazare/tch-rs) - Rust bindings for PyTorch.
+- [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) - Geometric deep learning extension library for PyTorch.
+- [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal) - Temporal (dynamic) extension library for PyTorch Geometric.
+- [BigGAN-PyTorch](https://github.com/ajbrock/BigGAN-PyTorch) - Contains code for 4-8 GPU training of BigGANs from Large Scale GAN Training for High Fidelity Natural Image Synthesis.
+- [Incredible PyTorch](https://github.com/ritchieng/the-incredible-pytorch) - Curated list of tutorials, papers, projects, communities and more relating to PyTorch.
+- [NimTorch](https://github.com/fragcolor-xyz/nimtorch) - Nim frontend for pytorch, aiming to be mostly auto-generated and internally using ATen.
+- [PyTorch adds new dev tools as it hits production scale (2019)](https://ai.facebook.com/blog/pytorch-adds-new-dev-tools-as-it-hits-production-scale/)
+- [PyTorch tutorials demonstrating modern techniques with readable code](https://github.com/spro/practical-pytorch)
+- [PyTorch internals](http://blog.ezyang.com/2019/05/pytorch-internals/)
+- [Towards Reproducible Research with PyTorch Hub (2019)](https://pytorch.org/blog/towards-reproducible-research-with-pytorch-hub/)
+- [XLM](https://github.com/facebookresearch/XLM) - PyTorch original implementation of Cross-lingual Language Model Pretraining.
+- [BoTorch](https://github.com/pytorch/botorch) - Bayesian optimization in PyTorch.
+- [PyTorch Lightning](https://github.com/williamFalcon/pytorch-lightning) - Rapid research framework for PyTorch. The researcher's version of Keras. ([Tutorial](https://www.youtube.com/watch?v=Hgg8Xy6IRig))
+- [PointNet.pytorch](https://github.com/fxia22/pointnet.pytorch) - PyTorch implementation for "PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation".
+- [former](https://github.com/pbloem/former) - Simple transformer implementation from scratch in PyTorch.
+- [PyTorch Implementation of Differentiable ODE Solvers](https://github.com/rtqichen/torchdiffeq)
+- [PyTorch BigGraph](https://github.com/facebookresearch/PyTorch-BigGraph) - Software used for generating embeddings from large-scale graph-structured data.
+- [Deep Learning (PyTorch)](https://github.com/udacity/deep-learning-v2-pytorch) - Projects and exercises for the latest Deep Learning ND program.
+- [PyWarm](https://github.com/blue-season/pywarm) - Cleaner way to build neural networks for PyTorch.
+- [PyTorch implementations of algorithms for density estimation](https://github.com/ikostrikov/pytorch-flows)
+- [Higher](https://github.com/facebookresearch/higher) - PyTorch library allowing users to obtain higher order gradients over losses spanning training loops rather than individual training steps.
+- [Detectron2](https://github.com/facebookresearch/detectron2) - FAIR's next-generation research platform for object detection and segmentation.
+- [Deep learning with PyTorch: a 60 minute blitz](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html) ([HN](https://news.ycombinator.com/item?id=21240057))
+- [Neural Network Programming - Deep Learning with PyTorch (2019)](https://www.youtube.com/playlist?list=PLZbbT5o_s2xrfNyHZsM6ufI0iZENK9xgG) - Series is all about neural network programming and PyTorch.
+- [A quick tour of Torch internals (2015)](https://apaszke.github.io/torch-internals.html)
+- [How to Run PyTorch with TPUs](https://github.com/pytorch/xla)
+- [EfficientNet PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch)
+- [Captum](https://github.com/pytorch/captum) - Model interpretability and understanding for PyTorch.
+- [Pytorch-Struct](https://github.com/harvardnlp/pytorch-struct) - Fast, general, and tested differentiable structured prediction in PyTorch.
+- [Dive Into Deep Learning 2 PyTorch](https://github.com/dsgiitr/d2l-pytorch)
+- [PyTorch at Tesla - Andrej Karpathy, Tesla (2019)](https://www.youtube.com/watch?v=oBklltKXtDE) ([HN](https://news.ycombinator.com/item?id=21495685))
+- [3D Ken Burns Effect](https://github.com/sniklaus/3d-ken-burns) - Implementation of 3D Ken Burns Effect from a Single Image using PyTorch.
+- [Fast LSTMs in PyTorch (2019)](https://lernapparat.de/fast-lstm-pytorch/)
+- [F8 2019: Developing and Scaling AI Experiences at Facebook with PyTorch](https://www.youtube.com/watch?v=O8t9xbAajbY)
+- [Kaolin](https://github.com/NVIDIAGameWorks/kaolin) - PyTorch Library for Accelerating 3D Deep Learning Research.
+- [SpConv](https://github.com/traveller59/spconv) - PyTorch Spatially Sparse Convolution Library.
+- [Segmentation models](https://github.com/qubvel/segmentation_models.pytorch) - Python library with Neural Networks for Image Segmentation based on PyTorch.
+- [LSTM and QRNN Language Model Toolkit](https://github.com/salesforce/awd-lstm-lm)
+- [cvxpylayers](https://github.com/cvxgrp/cvxpylayers) - Python library for constructing differentiable convex optimization layers in PyTorch and TensorFlow using CVXPY.
+- [Frustum ConvNet](https://github.com/zhixinwang/frustum-convnet) - Sliding Frustums to Aggregate Local Point-Wise Features for Amodal 3D Object Detection.
+- [PyTorch Elastic](https://github.com/pytorch/elastic) - Framework that enables distributed training jobs to be executed in a fault tolerant and elastic manner.
+- [torchgpipe](https://github.com/kakaobrain/torchgpipe) - GPipe implementation in PyTorch.
+- [C++ Implementation of PyTorch Tutorial for Deep Learning Researchers](https://github.com/prabhuomkar/pytorch-cpp)
+- [Neural Painters: A learned differentiable constraint for generating brushstroke paintings](https://github.com/reiinakano/neural-painters-pytorch)
+- [CycleGAN and pix2pix in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) - Image-to-Image Translation in PyTorch.
+- [Easily Extendable Basic Deep Metric Learning Pipeline](https://github.com/Confusezius/Deep-Metric-Learning-Baselines)
+- [TTAch](https://github.com/qubvel/ttach) - Image Test Time Augmentation with PyTorch.
+- [Hyperspherical Variational Auto-Encoders in PyTorch](https://github.com/nicola-decao/s-vae-pytorch)
+- [Hyperbolic Graph Convolutional Networks in PyTorch](https://github.com/HazyResearch/hgcn)
+- [Deep Learning with PyTorch Book (2020)](https://www.manning.com/books/deep-learning-with-pytorch) - Provides a detailed, hands-on introduction to building and training neural networks with PyTorch. ([HN](https://news.ycombinator.com/item?id=21601774)) ([Code](https://github.com/deep-learning-with-pytorch/dlwpt-code))
+- [OpenProtein](https://github.com/biolib/openprotein) - PyTorch framework for tertiary protein structure prediction.
+- [GPyTorch](https://github.com/cornellius-gp/gpytorch) - Highly efficient and modular implementation of Gaussian Processes in PyTorch. ([Docs](https://gpytorch.readthedocs.io/en/latest/index.html))
+- [Memory-efficient implementation of DenseNets](https://github.com/gpleiss/efficient_densenet_pytorch)
+- [PyTorch Toolbelt](https://github.com/BloodAxe/pytorch-toolbelt) - PyTorch extensions for fast R&D prototyping and Kaggle farming.
+- [Reformer](https://github.com/lucidrains/reformer-pytorch) - Efficient Transformer, in PyTorch.
+- [Which PyTorch-compatible training abstraction libraries do you use and why? (2020)](https://www.reddit.com/r/MachineLearning/comments/esrtxu/d_which_pytorchcompatible_training_abstraction/)
+- [Deep Learning with PyTorch Course](https://atcold.github.io/pytorch-Deep-Learning-Minicourse/) ([Code](https://github.com/Atcold/pytorch-Deep-Learning-Minicourse))
+- [PyTorch: An Imperative Style, High-Performance Deep Learning Library (2019)](https://arxiv.org/abs/1912.01703)
+- [Open Graph Benchmark (OGB)](https://github.com/snap-stanford/ogb) - Collection of benchmark datasets, data-loaders and evaluators for graph machine learning in PyTorch.
+- [Ignite](https://github.com/pytorch/ignite) - High-level library to help with training neural networks in PyTorch.
+- [PyTorch Lightning](https://github.com/PyTorchLightning/pytorch-lightning) - Lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate.
+- [PyTorch Forum](https://discuss.pytorch.org/)
+- [Collection of PyTorch notebooks for learning and practicing deep learning](https://github.com/dair-ai/pytorch_notebooks)
+- [face.evoLVe](https://github.com/ZhaoJ9014/face.evoLVe.PyTorch) - High-Performance Face Recognition Library based on PyTorch.
+- [PyTorch implementation for 3D Bounding Box Estimation Using Deep Learning and Geometry](https://github.com/skhadem/3D-BoundingBox)
+- [Fast AutoAugment](https://github.com/kakaobrain/fast-autoaugment) - Official Implementation of 'Fast AutoAugment' in PyTorch.
+- [Rethinking the Value of Network Pruning](https://github.com/Eric-mingjie/rethinking-network-pruning)
+- [PyTorch Metric Learning](https://github.com/KevinMusgrave/pytorch-metric-learning)
+- [Deep Tutorials for PyTorch](https://github.com/sgrvinod/Deep-Tutorials-for-PyTorch)
+- [Matchbox](https://github.com/salesforce/matchbox) - Enables deep learning researchers to write PyTorch code at the level of individual examples, then run it efficiently on minibatches.
+- [torchtext](https://github.com/pytorch/text) - Data loaders and abstractions for text and NLP.
+- [Relational Networks](https://github.com/kimhc6028/relational-networks) - PyTorch implementation of "A simple neural network module for relational reasoning".
+- [nflows](https://github.com/bayesiains/nflows) - Normalizing flows in PyTorch.
+- [torchlayers](https://github.com/szymonmaszke/torchlayers) - Shape inference for PyTorch (like in Keras) + new SoTA layers.
+- [PyTorch re-implementation of Neural Radiance Fields](https://github.com/krrish94/nerf-pytorch)
+- [Torchmeta](https://github.com/tristandeleu/pytorch-meta) - Collection of extensions and data-loaders for few-shot learning & meta-learning in PyTorch.
+- [PyTorch SimCLR: A Simple Framework for Contrastive Learning of Visual Representations](https://github.com/sthalles/SimCLR)
+- [Neural Spline Flow, RealNVP, Autoregressive Flow, 1x1Conv in PyTorch](https://github.com/tonyduan/normalizing-flows)
+- [PyTorch implementation of NeRF (Neural Radiance Fields)](https://github.com/yenchenlin/nerf-pytorch)
+- [PyTorch learning rate finder](https://github.com/davidtvs/pytorch-lr-finder)
+- [PyTorch Scatter](https://github.com/rusty1s/pytorch_scatter) - PyTorch Extension Library of Optimized Scatter Operations.
+- [TorchServe](https://github.com/pytorch/serve/) - Flexible and easy to use tool for serving PyTorch models.
+- [torch-optimizer](https://github.com/jettify/pytorch-optimizer) - Collection of optimizers for PyTorch.
+- [PyTorch 1.5 (2020)](https://pytorch.org/blog/pytorch-1-dot-5-released-with-new-and-updated-apis/) ([HN](https://news.ycombinator.com/item?id=22942027))
+- [Tacotron 2 (without wavenet)](https://github.com/NVIDIA/tacotron2) - PyTorch implementation of Natural TTS Synthesis By Conditioning Wavenet On Mel Spectrogram Predictions.
+- [Tacotron 2 latest papers](https://paperswithcode.com/method/tacotron-2)
+- [pytorch-crf](https://github.com/kmkurn/pytorch-crf) - Conditional random field in PyTorch.
+- [torchprof](https://github.com/awwong1/torchprof) - PyTorch layer-by-layer model profiler.
+- [A Taste of PyTorch C++ frontend API (2020)](https://medium.com/pytorch/a-taste-of-pytorch-c-frontend-api-8ec5209823ca)
+- [Tutorial: Mixture Density Networks with JAX (2020)](https://github.com/hardmaru/mdn_jax_tutorial)
+- [Deep learning CNN feature visualization using PyTorch](https://github.com/elichen/Feature-visualization)
+- [rectorch](https://github.com/makgyver/rectorch) - PyTorch-based framework for state-of-the-art top-N recommendation.
+- [neural-dream](https://github.com/ProGamerGov/neural-dream) - PyTorch implementation of DeepDream algorithm.
+- [PyProf2](https://github.com/adityaiitb/pyprof2) - PyTorch Profiling tool.
+- [Blitz](https://github.com/piEsposito/blitz-bayesian-deep-learning) - Simple and extensible library to create Bayesian Neural Network layers on PyTorch.
+- [PyContrast](https://github.com/HobbitLong/PyContrast) - PyTorch implementation of Contrastive Learning methods.
+- [PyVacy](https://github.com/ChrisWaites/pyvacy) - Differentially Private Optimization Algorithms for PyTorch.
+- [Gaussian mixture models in PyTorch](https://github.com/ldeecke/gmm-torch)
+- [Effective PyTorch](https://github.com/vahidk/EffectivePyTorch) - PyTorch tutorials and best practices.
+- [PyTorch for Numpy Users](https://pytorch-for-numpy-users.wkentaro.com/) ([Code](https://github.com/wkentaro/pytorch-for-numpy-users))
+- [PyTorch implementation of Fully Convolutional Networks](https://github.com/wkentaro/pytorch-fcn)
+- [Lite Transformer with Long-Short Range Attention](https://github.com/mit-han-lab/lite-transformer)
+- [PyTorch implementation of the KWNG estimator](https://github.com/MichaelArbel/KWNG)
+- [Classification with PyTorch](https://github.com/bearpaw/pytorch-classification)
+- [PyTorch Toolbox](https://github.com/PistonY/torch-toolbox) - Aiming to make you write Pytorch code more easier, readable and concise.
+- [Sinusoidal Representation Networks (SIREN)](https://github.com/dalmia/siren)
+- [PyTorch Hub](https://pytorch.org/hub/) - Discover and publish models to a pre-trained model repository designed for research exploration. ([Code](https://github.com/pytorch/hub))
+- [Pretrained models for PyTorch](https://github.com/Cadene/pretrained-models.pytorch)
+- [DrQA](https://github.com/facebookresearch/DrQA) - Reading Wikipedia to Answer Open-Domain Questions. In PyTorch.
+- [minGPT](https://github.com/karpathy/minGPT) - Minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training. ([Code](https://news.ycombinator.com/item?id=24189497))
+- [MiniTorch](https://minitorch.github.io/) - Teaching library for machine learning engineers who wish to learn about the internal concepts underlying deep learning systems.
+- [PyTorch Performance Tuning Guide - Szymon Migacz, NVIDIA (2020)](https://www.youtube.com/watch?v=9mS1fIYj1So) ([Summary](https://twitter.com/karpathy/status/1299921324333170689))
+- [Opacus](https://github.com/pytorch/opacus) - Training PyTorch models with differential privacy.
+- [Towards Fast, Accurate and Stable 3D Dense Face Alignment](https://github.com/cleardusk/3DDFA_V2)
+- [Hivemind](https://github.com/learning-at-home/hivemind) - Library to train large neural networks across the internet. Imagine training one huge transformer on thousands of computers from universities, companies, and volunteers.
+- [Prediction and Policy-learning Under Uncertainty (PPUU)](https://github.com/Atcold/pytorch-PPUU)
+- [PyTorch Lightning Bolts](https://github.com/PyTorchLightning/pytorch-lightning-bolts) - Toolbox of models, callbacks, and datasets for AI/ML researchers.
+- [LabML Neural Networks](https://nn.labml.ai/) - Collection of simple PyTorch implementation of various neural network architectures and layers. ([Code](https://github.com/lab-ml/nn)) ([HN](https://news.ycombinator.com/item?id=25967641))
+- [PyTorch Interpret](https://github.com/ttumiel/interpret) - PyTorch library for interpreting your deep learning results, using both visualisations and attributions.
+- [Lambda Networks - PyTorch](https://github.com/lucidrains/lambda-networks) - Implementation of Lambda Networks, an attention-based solution for image recognition that reaches SOTA.
+- [PyTorch image data augmentation](https://github.com/anguelos/tormentor)
+- [Bootstrap Your Own Latent (BYOL), in PyTorch](https://github.com/lucidrains/byol-pytorch)
+- [Vision Transformer - PyTorch](https://github.com/lucidrains/vit-pytorch) - Implementation of Vision Transformer, a simple way to achieve SOTA in vision classification with only a single transformer encoder, in PyTorch.
+- [Benchmkarking Optimizers in PyTorch (2020)](https://blog.paperspace.com/optimization-in-deep-learning/)
+- [ShrinkBench](https://github.com/JJGO/shrinkbench) - PyTorch library to facilitate development and standardized evaluation of neural network pruning methods.
+- [Asteroid](https://github.com/mpariente/asteroid) - PyTorch-based audio source separation toolkit for researchers.
+- [The Hitchhikers's Guide to PyTorch for Data Scientists (2020)](https://hackernoon.com/the-hitchhikerss-guide-to-pytorch-for-data-scientists-ux1i3td4)
+- [Pointnet2/Pointnet++ PyTorch](https://github.com/erikwijmans/Pointnet2_PyTorch)
+- [Dreamer PyTorch](https://github.com/juliusfrost/dreamer-pytorch) - Dream to Control: Learning Behaviors by Latent Imagination, implemented in PyTorch.
+- [project-NII-pytorch-scripts](https://github.com/nii-yamagishilab/project-NN-Pytorch-scripts)
+- [fairscale](https://github.com/facebookresearch/fairscale) - PyTorch extension library for high performance and large scale training for optimizing training on one or across multiple machines/nodes.
+- [FastSpeech PyTorch](https://github.com/xcmyz/FastSpeech)
+- [Lightwood](https://github.com/mindsdb/lightwood) - Pytorch based framework that breaks down machine learning problems into smaller blocks that can be glued together.
+- [PyTorch Loss Functions: Guide (2020)](https://neptune.ai/blog/pytorch-loss-functions)
+- [David's Tips on How to Read PyTorch](https://github.com/davidbau/how-to-read-pytorch)
+- [MeshCNN in PyTorch](https://github.com/ranahanocka/MeshCNN) - General-purpose deep neural network for 3D triangular meshes, which can be used for tasks such as 3D shape classification or segmentation.
+- [tinygrad](https://github.com/geohot/tinygrad) - Something in between a PyTorch and a karpathy/micrograd. ([tinygrad: tiny efficientnet is recognize cat?](https://www.youtube.com/watch?v=BFqQpBlkX74))
+- [Lucent](https://github.com/greentfrapp/lucent) - Lucid library adapted for PyTorch.
+- [pytorch-pfn-extras](https://github.com/pfnet/pytorch-pfn-extras) - Supplementary components to accelerate research and development in PyTorch.
+- [PyHessian](https://github.com/amirgholami/PyHessian) - PyTorch library for second-order based analysis and training of Neural Networks.
+- [AdaHessian](https://github.com/amirgholami/adahessian) - Second order based optimizer for the neural network training based on PyTorch.
+- [TorchMTL](https://github.com/chrisby/torchMTL) - Lightweight module to do Multi-Task Learning in PyTorch.
+- [TRTorch](https://github.com/NVIDIA/TRTorch) - PyTorch/TorchScript compiler for NVIDIA GPUs using TensorRT. ([Docs](https://nvidia.github.io/TRTorch/))
+- [Mastering TorchScript: Tracing vs Scripting, Device Pinning, Direct Graph Modification (2020)](https://paulbridger.com/posts/mastering-torchscript/)
+- [Flow Forecast](https://github.com/AIStream-Peelout/flow-forecast) - Deep learning PyTorch library for time series forecasting, classification, and anomaly detection.
+- [SpykeTorch](https://github.com/miladmozafari/SpykeTorch) - High-speed simulator of convolutional spiking neural networks with at most one spike per neuron.
+- [PyTorch Loss](https://github.com/CoinCheung/pytorch-loss) - Label-smooth, amsoftmax, focal-loss, triplet-loss.
+- [Cleora](https://github.com/Synerise/cleora) - Faster alternative to PyTorch-BigGraph.
+- [The Original Transformer (PyTorch)](https://github.com/gordicaleksa/pytorch-original-transformer)
+- [PyTorch implementation of the hamburger module from the ICLR 2020 paper "Is Attention Better Than Matrix Decomposition"](https://github.com/lucidrains/hamburger-pytorch)
+- [PyTorch Developer Day 2020](https://www.youtube.com/watch?v=jaPVoObpdO0)
+- [MLflow and PyTorch integration – autologging and TorchServe plugin (2020)](https://medium.com/pytorch/mlflow-and-pytorch-where-cutting-edge-ai-meets-mlops-1985cf8aa789)
+- [HiddenLayer](https://github.com/waleedka/hiddenlayer) - Lightweight library for neural network graphs and training metrics for PyTorch, Tensorflow, and Keras.
+- [LabML](https://github.com/lab-ml/labml) - Monitor PyTorch & TensorFlow model training on mobile phones. ([Docs](https://lab-ml.com/))
+- [Old Photo Restoration (Official PyTorch Implementation)](https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life)
+- [Torch-Pruning](https://github.com/VainF/Torch-Pruning) - PyTorch pruning toolkit for structured neural network pruning and layer dependency maintaining.
+- [torchac](https://github.com/fab-jul/torchac) - Fast Arithmetic Coding for PyTorch.
+- [AdaHessian](https://github.com/davda54/ada-hessian) - Easy-to-use AdaHessian optimizer (PyTorch).
+- [PyTorch Dynamic Quantization (2020)](https://leimao.github.io/blog/PyTorch-Dynamic-Quantization/)
+- [Performer in PyTorch](https://github.com/lucidrains/performer-pytorch) - Implementation of Performer, a linear attention-based transformer, in PyTorch.
+- [GoTch](https://github.com/sugarme/gotch) - Go binding for Pytorch C++ API (libtorch).
+- [auraloss](https://github.com/csteinmetz1/auraloss) - Collection of audio-focused loss functions in PyTorch.
+- [Normalizing flows with PyTorch](https://github.com/acids-ircam/pytorch_flows) - Implementation and tutorials of normalizing flows with the novel distributions module.
+- [PyTorch Lightning Snippets](https://github.com/awaelchli/pytorch-lightning-snippets)
+- [Stylized Neural Painting](https://github.com/jiupinjia/stylized-neural-painting) - In PyTorch.
+- [PyTorch Tools, Best Practices & Style Guide](https://github.com/IgorSusmelj/pytorch-styleguide)
+- [NeuralProphet](https://github.com/ourownstory/neural_prophet) - Neural Network based Time-Series model, inspired by Facebook Prophet and AR-Net, built on PyTorch.
+- [Pytorch-Lightning Implementation of Self-Supervised algorithms](https://github.com/untitled-ai/self_supervised)
+- [Reimplementation of LiteFlowNet using PyTorch](https://github.com/sniklaus/pytorch-liteflownet)
+- [Julius](https://github.com/adefossez/julius) - Fast PyTorch based DSP for audio and 1D signals.
+- [PyTorch Points 3D](https://github.com/nicolas-chaulet/torch-points3d) - PyTorch framework for doing deep learning on point clouds.
+- [PyTorch Lightning project template](https://github.com/PyTorchLightning/deep-learning-project-template)
+- [TorchData](https://github.com/szymonmaszke/torchdata) - PyTorch dataset extended with map, cache etc. (tensorflow.data like).
+- [pytorch_memlab](https://github.com/Stonesjtu/pytorch_memlab) - Profiling and inspecting memory in PyTorch.
+- [NeRF (Neural Radiance Fields) using PyTorch (PyTorch Lightning)](https://github.com/kwea123/nerf_pl)
+- [Faster PyTorch Implementation of Faster R-CNN](https://github.com/jwyang/faster-rcnn.pytorch)
+- [Axial Attention in PyTorch](https://github.com/lucidrains/axial-attention) - Implementation of Axial Attention - attending to multi-dimensional data efficiently.
+- [torchaudio](https://github.com/pytorch/audio) - Audio library for PyTorch.
+- [Benchmark Suite for Deep Learning](https://github.com/lambdal/deeplearning-benchmark) - Provides a wrapper to run PyTorch benchmarks using NVidia's Deep Learning Examples repo.
+- [Fast Transformers](https://github.com/idiap/fast-transformers) - PyTorch library for fast transformer implementations.
+- [PyTorch Quantization Aware Training (2020)](https://leimao.github.io/blog/PyTorch-Quantization-Aware-Training/)
+- [Unsupervised Learning of Image Segmentation Based on Differentiable Feature Clustering](https://github.com/kanezaki/pytorch-unsupervised-segmentation-tip)
+- [WebDataset](https://github.com/tmbdev/webdataset) - PyTorch Dataset (IterableDataset) implementation providing efficient access to datasets stored in POSIX tar archives and uses only sequential/streaming data access.
+- [Semantic Segmentation in PyTorch](https://github.com/yassouali/pytorch_segmentation)
+- [torchlambda](https://github.com/szymonmaszke/torchlambda) - Lightweight tool to deploy PyTorch models to AWS Lambda.
+- [torchfunc](https://github.com/szymonmaszke/torchfunc) - PyTorch functions and utilities to make your life easier.
+- [PyTorch-Reparam-Module](https://github.com/SsnL/PyTorch-Reparam-Module) - Reparameterize your PyTorch modules.
+- [Pytorch Forecasting](https://github.com/jdb78/pytorch-forecasting) - Time series forecasting with PyTorch.
+- [DALL-E in PyTorch](https://github.com/lucidrains/DALLE-pytorch) - Implementation / replication of DALL-E, OpenAI's Text to Image Transformer, in PyTorch.
+- [PyTorch Architectures](https://github.com/addisonklinke/pytorch-architectures) - PyTorch implementations of research paper model architectures.
+- [Ways of making PyTorch training faster (2021)](https://www.reddit.com/r/MachineLearning/comments/kvs1ex/d_here_are_17_ways_of_making_pytorch_training/)
+- [RepVGG: Making VGG-style ConvNets Great Again (PyTorch)](https://github.com/DingXiaoH/RepVGG)
+- [PyTorch-OpCounter](https://github.com/Lyken17/pytorch-OpCounter) - Count the MACs / FLOPs of your PyTorch model.
+- [PyTorch Memory optimizations via gradient checkpointing](https://github.com/prigoyal/pytorch_memonger)
+- [Efficient PyTorch](https://github.com/Lyken17/Efficient-PyTorch) - Best practices of training large datasets using PyTorch.
+- [SAM: Sharpness-Aware Minimization (PyTorch)](https://github.com/davda54/sam)
+- [Factorization Machine models in PyTorch](https://github.com/rixwew/pytorch-fm)
+- [graftr](https://github.com/lmnt-com/graftr) - Interactive shell to view and edit PyTorch checkpoints.
+- [EagerPy](https://github.com/jonasrauber/eagerpy) - Writing Code That Works Natively with PyTorch, TensorFlow, JAX, and NumPy. ([Web](https://eagerpy.jonasrauber.de/))
+- [Evidential Deep Learning to Quantify Classification Uncertainty (2018)](https://arxiv.org/abs/1806.01768) ([Code](https://github.com/dougbrion/pytorch-classification-uncertainty))
+- [PyProf](https://github.com/NVIDIA/PyProf) - GPU performance profiling tool for PyTorch models.
+- [ctcdecode](https://github.com/parlance/ctcdecode) - Implementation of CTC (Connectionist Temporal Classification) beam search decoding for PyTorch.
+- [OpenMM PyTorch Plugin](https://github.com/openmm/openmm-torch) - OpenMM plugin to define forces with neural networks.
+- [Totally Versatile Miscellania for PyTorch](https://github.com/t-vi/pytorch-tvmisc)
+- [Lightning Flash](https://github.com/PyTorchLightning/lightning-flash) - Collection of tasks for fast prototyping, baselining, finetuning and solving problems with deep learning.
+- [FlashTorch](https://github.com/MisaOgura/flashtorch) - Python visualization toolkit, built with PyTorch, for neural networks in PyTorch.
+- [torchinfo](https://github.com/TylerYep/torchinfo) - View model summaries in PyTorch.
+- [Compressive transformer PyTorch implementation with notes](https://nn.labml.ai/transformers/compressive/index.html)
+- [DALL-E](https://github.com/openai/DALL-E) - PyTorch package for the discrete VAE used for DALL·E. ([HN](https://news.ycombinator.com/item?id=26255325))
+- [PyTorch: From Centralized To Federated (2021)](https://flower.dev/blog/2021-02-24-pytorch-from-centralized-to-federated)
+- [PyTorch 1.8, with AMD ROCm support (2021)](https://pytorch.org/blog/pytorch-1.8-released/) ([HN](https://news.ycombinator.com/item?id=26353184))
+- [Linear Attention Transformer in PyTorch](https://github.com/lucidrains/linear-attention-transformer) - Transformer based on a variant of attention that is linear complexity in respect to sequence length.
+- [GeoTorch](https://github.com/Lezcano/geotorch) - Constrained optimization toolkit for PyTorch.
+- [LieTorch: Tangent Space Backpropagation](https://github.com/princeton-vl/lietorch)
+- [FastMoE](https://fastmoe.ai/) - Fast MoE implementation for PyTorch. ([Code](https://github.com/laekov/fastmoe))
+- [NN Template](https://github.com/lucmos/nn-template) - Generic template to bootstrap your PyTorch project with PyTorch Lightning, Hydra, W&B, DVC, and Streamlit.
+- [Lightning Hydra Template](https://github.com/ashlevski/lightning-hydra-template) - PyTorch Lightning + Hydra. A very general, feature-rich template for rapid, scalable ML experimentation process and best practices.
+- [Memformer - PyTorch](https://github.com/lucidrains/memformer) - Implementation of Memformer, a Memory-augmented Transformer, in PyTorch.
+- [torchtyping](https://github.com/patrick-kidger/torchtyping) - Runtime type annotations for the shape, dtype etc. of PyTorch Tensors.
+- [torchbench](https://github.com/paperswithcode/torchbench) - Easily benchmark machine learning models in PyTorch.
+- [pytorch-world](https://github.com/stites/pytorch-world) - Nix scripts for pytorch-related libraries.
+- [Butterfly matrix multiplication in PyTorch](https://github.com/HazyResearch/butterfly)
+- [GLOM - PyTorch](https://github.com/lucidrains/glom-pytorch) - Geoffrey Hinton's new idea that integrates concepts from neural fields, top-down-bottom-up processing, and attention (consensus between columns) for learning emergent part-whole heirarchies from data.
+- [nnAudio](https://github.com/KinWaiCheuk/nnAudio) - Audio processing by using PyTorch 1D convolution network.
+- [Lightning-Transformers](https://github.com/PyTorchLightning/lightning-transformers) - Flexible interface for high performance research using SOTA Transformers leveraging Pytorch Lightning, Transformers, and Hydra.
+- [PyTorch Tutorial for Deep Learning Researchers](https://github.com/yunjey/pytorch-tutorial)
+- [torchsynth](https://github.com/torchsynth/torchsynth) - Based upon traditional modular synthesis written in PyTorch. It is GPU-optional and differentiable. ([Docs](https://torchsynth.readthedocs.io/en/latest/))
+- [PyTorch Tabular](https://github.com/manujosephv/pytorch_tabular) - Standard framework for modelling Deep Learning Models for tabular data.
+- [functorch](https://github.com/zou3519/functorch) - Prototype of JAX-like composable function transforms for PyTorch.
+- [PyTorch implementation of EfficientDet](https://github.com/rwightman/efficientdet-pytorch)
+- [Transfer Learning for Semantic Segmentation using PyTorch DeepLab v3](https://github.com/msminhas93/DeepLabv3FineTuning)
+- [Class Activation Map methods implemented in PyTorch](https://github.com/jacobgil/pytorch-grad-cam)
+- [Neural Network Pruning](https://github.com/lucaslie/torchprune) - PyTorch-based pruning and research.
+- [Deep Learning with PyTorch Step-by-Step: Beginner's Guide (2021)](https://leanpub.com/pytorch)
+- [learn2learn](https://github.com/learnables/learn2learn) - PyTorch Library for Meta-learning Research.
+- [PyTorch builds the future of AI and machine learning at Facebook (2021)](https://ai.facebook.com/blog/pytorch-builds-the-future-of-ai-and-machine-learning-at-facebook/)
+- [allRank](https://github.com/allegro/allRank) - Framework for training learning-to-rank neural models based on PyTorch.
+- [KD_Lib](https://github.com/SforAiDl/KD_Lib) - PyTorch library to easily facilitate knowledge distillation for custom deep learning models.
+- [PyTorch Sparse](https://github.com/rusty1s/pytorch_sparse) - PyTorch Extension Library of Optimized Autograd Sparse Matrix Operations.
+- [train-CLIP](https://github.com/Zasder3/train-CLIP) - PyTorch Lightning solution to training CLIP from both scratch and fine-tuning.
+- [Norse](https://github.com/norse/norse) - Deep learning with spiking neural networks (SNNs) in PyTorch.
+- [Dense Matching](https://github.com/PruneTruong/DenseMatching) - Dense matching library based on PyTorch.
+- [TorchShard](https://github.com/KaiyuYue/torchshard) - Slicing a PyTorch Tensor Into Parallel Shards.
+- [Growing open-source: from Torch to PyTorch (2021)](https://soumith.ch/posts/2021/02/growing-opensource/)
+- [PyTorch implementation of "Supervised Contrastive Learning"](https://github.com/HobbitLong/SupContrast)
+- [Equinox](https://github.com/patrick-kidger/equinox) - Callable PyTrees and filtered JIT/grad transformations => neural networks in JAX.

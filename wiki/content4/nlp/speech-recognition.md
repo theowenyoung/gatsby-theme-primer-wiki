@@ -1,0 +1,68 @@
+# [Speech recognition](https://github.com/daanzu/kaldi-active-grammar)
+
+## Links
+
+- [HN: Facebook open-sources a speech-recognition system and a machine learning library (2018)](https://news.ycombinator.com/item?id=18736116)
+- [DeepSpeech](https://github.com/mozilla/DeepSpeech) - Open source Speech-To-Text engine, using a model trained by machine learning techniques, based on Baidu's Deep Speech research paper. ([Examples](https://github.com/mozilla/DeepSpeech-examples))
+- [Online speech recognition with wav2letter@anywhere (2020)](https://ai.facebook.com/blog/online-speech-recognition-with-wav2letteranywhere/)
+- [wav2letter++](https://github.com/facebookresearch/wav2letter) - Fast, open source speech processing toolkit from the Speech team at Facebook AI Research built to facilitate research in end-to-end models for speech recognition.
+- [Kaldi](https://github.com/kaldi-asr/kaldi) - Speech Recognition Toolkit.
+- [Building an end-to-end Speech Recognition model in PyTorch](https://www.assemblyai.com/blog/end-to-end-speech-recognition-pytorch) ([HN](https://news.ycombinator.com/item?id=22899107))
+- [Real-Time Voice Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning) - Clone a voice in 5 seconds to generate arbitrary speech in real-time.
+- [Kaldi Active Grammar](https://github.com/daanzu/kaldi-active-grammar) - Python Kaldi speech recognition with grammars that can be set active/inactive dynamically at decode-time.
+- [SpecAugment with PyTorch](https://github.com/zcaceres/spec_augment) - PyTorch Implementation of GoogleBrain's SpecAugment: A Simple Data Augmentation Method for Automatic Speech Recognition.
+- [Dragonfly](https://github.com/dictation-toolbox/dragonfly) - Speech recognition framework for Python that makes it convenient to create custom commands to use with speech recognition software.
+- [Gentle](https://github.com/lowerquality/gentle) - Robust yet lenient forced-aligner built on Kaldi. A tool for aligning speech with text.
+- [Porcupine](https://github.com/Picovoice/porcupine) - On-device wake word detection powered by deep learning.
+- [Eesen](https://github.com/srvk/eesen) - End-to-End Speech Recognition using Deep RNN Models and WFST-based Decoding.
+- [Ask HN: Is there any work being done in speech-to-code with deep learning? (2020)](https://news.ycombinator.com/item?id=23497756)
+- [Silero Models](https://github.com/snakers4/silero-models) - Pre-trained STT models and benchmarks made embarrassingly simple.
+- [High-quality pre-trained speech-to-text models now available on Torch Hub](https://pytorch.org/hub/snakers4_silero-models_stt/) ([HN](https://news.ycombinator.com/item?id=24565831))
+- [Wavenet For Speech Denoising](https://github.com/drethage/speech-denoising-wavenet) - Neural network for end-to-end speech denoising, as described in: "A Wavenet For Speech Denoising".
+- [Vosk](https://github.com/wzhd/vosk-rs) - Speech recognition toolkit with state-of-the-art accuracy and low latency in Rust.
+- [Voicegain](https://www.voicegain.ai/) - Speech-to-text Platform and APIs. Speech Recognition.
+- [LibreASR](https://github.com/iceychris/LibreASR) - On-Premises, Streaming Speech Recognition System. ([HN](https://news.ycombinator.com/item?id=25099847))
+- [WORLD](https://github.com/mmorise/World) - High-quality speech analysis, manipulation and synthesis system. ([Web](http://www.isc.meiji.ac.jp/~mmorise/world/english/))
+- [ESPnet](https://github.com/espnet/espnet) - End-to-end speech processing toolkit. ([Docs](https://espnet.github.io/espnet/))
+- [Speaker Diarization](https://github.com/sehgal-simran/Spk-Dzn) - Process to answer the question of 'who spoke when?' in an audio file.
+- [SpeechRecognition](https://github.com/OAID/SpeechRecognition) - Local auto speech recognition project based on Kaldi and ALSA.
+- [Athena](https://github.com/athena-team/athena) - Open-source implementation of sequence-to-sequence based speech processing engine.
+- [PyTorch end-to-end speech recognition](https://github.com/1ytic/open_stt_e2e)
+- [Cheetah](https://github.com/Picovoice/cheetah) - On-device streaming speech-to-text engine powered by deep learning.
+- [WaveRNN](https://github.com/fatchord/WaveRNN) - PyTorch implementation of Deepmind's WaveRNN model from Efficient Neural Audio Synthesis.
+- [Conformer](https://github.com/sooftware/conformer) - PyTorch implementation of Conformer: Convolution-augmented Transformer for Speech Recognition.
+- [A Review of End-to-End Architectures for Speech Recognition (2021)](https://www.assemblyai.com/blog/a-survey-on-end-to-end-speech-recognition-architectures-in-2021)
+- [libfvad](https://github.com/dpirch/libfvad) - Voice activity detection (VAD) library, based on WebRTC's VAD engine.
+- [ASR with PyTorch](https://github.com/jinserk/pytorch-asr) - Experimental code for speech recognition using PyTorch and Kaldi.
+- [YSDA Speech Processing Course](https://github.com/yandexdataschool/speech_course)
+- [Paper List for Speech Translation](https://github.com/dqqcasia/awesome-speech-translation)
+- [Deep Contextualized Acoustic Representations For Semi-Supervised Speech Recognition (2020)](https://arxiv.org/abs/1912.01679) ([Code](https://github.com/awslabs/speech-representations))
+- [Lyra: A New Very Low-Bitrate Codec for Speech Compression (2021)](https://ai.googleblog.com/2021/02/lyra-new-very-low-bitrate-codec-for.html)
+- [Parrot.PY](https://github.com/chaosparrot/parrot.py) - Computer interaction using audio and speech recognition.
+- [SpeechBrain Toolkit](https://github.com/speechbrain/speechbrain) - PyTorch-based Speech Toolkit. ([Web](https://speechbrain.github.io/))
+- [Vosk API](https://github.com/alphacep/vosk-api) - Offline open source speech recognition toolkit.
+- [Lyra](https://github.com/google/lyra) - Very Low-Bitrate Codec for Speech Compression.
+- [lasr](https://github.com/sooftware/lasr) - PyTorch Lightning implementation of Automatic Speech Recognition.
+- [TTS](https://github.com/coqui-ai/TTS) - Library for advanced Text-to-Speech generation.
+- [Speech Recognition from Scratch](https://colab.research.google.com/drive/1aFgzrUv3udM_gNJNUoLaHIm78QHtxdIz?usp=sharing)
+- [Common Voice](https://commonvoice.mozilla.org/en) - Mozilla's initiative to help teach machines how real people speak.
+- [FullSubNet: A Full-Band and Sub-Band Fusion Model for Real-Time Single-Channel Speech Enhancement (2021)](https://arxiv.org/abs/2010.15508) ([Code](https://github.com/haoxiangsnr/FullSubNet))
+- [DeepSpeech2 in PyTorch using PyTorch Lightning](https://github.com/SeanNaren/deepspeech.pytorch)
+- [Speech and Language Processing Book (2020)](https://web.stanford.edu/~jurafsky/slp3/ed3book_dec302020.pdf) - Introduction to Natural Language Processing, Computational Linguistics, and Speech Recognition.
+- [voice2json](https://github.com/synesthesiam/voice2json) - Command-line tools for speech and intent recognition on Linux. ([Web](https://voice2json.org/))
+- [wav2vec Unsupervised: Speech recognition without supervision (2021)](https://ai.facebook.com/blog/wav2vec-unsupervised-speech-recognition-without-supervision/)
+- [Online Speech recognition using RNN-Transducer](https://github.com/theblackcat102/edgedict)
+- [Openspeech](https://github.com/sooftware/openspeech) - Open-Source Toolkit for End-to-End Speech Recognition.
+- [Unsupervised Speech Decomposition via Triple Information Bottleneck (2020)](https://arxiv.org/abs/2004.11284) ([Code](https://github.com/auspicious3000/SpeechSplit))
+- [AudioCLIP: Extending CLIP to Image, Text and Audio (2021)](https://arxiv.org/abs/2106.13043) ([Code](https://github.com/AndreyGuzhov/AudioCLIP))
+- [Wav2vec: Semi and Unsupervised Speech Recognition](https://vaclavkosar.com/ml/Wav2vec2-Semi-and-Unsupervised-Speech-Recognition) ([HN](https://news.ycombinator.com/item?id=27722333))
+- [WeNet](https://github.com/wenet-e2e/wenet) - Production First and Production Ready End-to-End Speech Recognition Toolkit. ([Docs](https://wenet-e2e.github.io/wenet/))
+- [Why Hasn’t the iPhone Moment Happened Yet for Voice UIs (2021)](https://www.speechly.com/blog/real-time-voice-user-interfaces/)
+- [LeBenchmark: a reproducible framework for assessing SSL from speech](https://github.com/LeBenchmark/Interspeech2021)
+- [INTERSPEECH 2021](https://www.interspeech2021.org/)
+- [WER are we?](https://github.com/syhw/wer_are_we) - Tracking states of the art(s) and recent results on speech recognition.
+- [GigaSpeech](https://github.com/SpeechColab/GigaSpeech) - Large, modern dataset for speech recognition.
+- [Coqui STT](https://github.com/coqui-ai/STT) - Deep learning toolkit for Speech-to-Text, battle-tested in research and production.
+- [Coqui](https://coqui.ai/) - Startup providing open speech tech for everyone. ([GitHub](https://github.com/coqui-ai))
+- [Open Speech Corpora](https://github.com/coqui-ai/open-speech-corpora) - List of accessible speech corpora for ASR, TTS, and other Speech Technologies.
+- [An Overview of Multi-Task Learning in Speech Recognition (2020)](http://jrmeyer.github.io/asr/2020/03/21/overview-mtl-in-asr.html)
