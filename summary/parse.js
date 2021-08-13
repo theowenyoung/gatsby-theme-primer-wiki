@@ -1,7 +1,5 @@
 const markdownParser = require('@honkit/markdown')
 const remark = require('remark')
-// import modifiers from '../modifiers'
-// const SummaryModifier = modifiers.Summary
 const remarkInlineLinks = require('remark-inline-links')
 const replaceLinkTitle = require('./replace-link-title')
 /**

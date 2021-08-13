@@ -1,5 +1,7 @@
 ---
-tags: todo, good-first-task
+tags: 
+   - todo
+   - good-first-task
 ---
 # Contribution Guide
 

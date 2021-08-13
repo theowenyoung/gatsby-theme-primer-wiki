@@ -14,6 +14,7 @@
     "node": ">=12.13.0"
   },
   "dependencies": {
-    "unist-util-visit": "^1.3.0"
+    "unist-util-visit": "^1.3.0",
+    "@theowenyoung/transformer-markdown-url": "^0.1.0"
   }
 }

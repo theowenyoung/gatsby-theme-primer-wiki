@@ -1,0 +1,20 @@
+{
+  "name": "@theowenyoung/gatsby-plugin-slug",
+  "description": "generate slug field",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "gatsby"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "peerDependencies": {
+    "gatsby-source-filesystem": "^3.0.0"
+  },
+  "dependencies": {}
+}

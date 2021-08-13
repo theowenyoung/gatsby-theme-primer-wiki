@@ -3,8 +3,7 @@ const readPkgUp = require('read-pkg-up')
 const getPkgRepo = require('get-pkg-repo')
 const axios = require('axios')
 const uniqBy = require('lodash.uniqby')
-const extractExports = require(`gatsby-plugin-mdx/utils/extract-exports`)
-const mdx = require(`gatsby-plugin-mdx/utils/mdx`)
+
 const {createFilePath} = require(`gatsby-source-filesystem`)
 const {getTitle} = require('./gatsby-util')
 
@@ -122,19 +121,19 @@ exports.onCreateNode = async ({node, actions, getNode, loadNodeContent}) => {
   const {createNodeField} = actions
 
   if (node.internal.type === `Mdx`) {
-    let value = createFilePath({node, getNode})
+    // let value = createFilePath({node, getNode})
 
-    const lowerCaseValue = value.toLowerCase()
+    // const lowerCaseValue = value.toLowerCase()
 
-    if (lowerCaseValue.endsWith('/readme/')) {
-      value = value.slice(0, -7)
-    }
+    // if (lowerCaseValue.endsWith('/readme/')) {
+    //   value = value.slice(0, -7)
+    // }
 
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    // createNodeField({
+    //   name: `slug`,
+    //   node,
+    //   value,
+    // })
     const title = await getTitle(node, {loadNodeContent})
 
     createNodeField({

@@ -4,6 +4,7 @@ import Tippy from '@tippyjs/react'
 import {MDXProvider} from '@mdx-js/react'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import {Link, Box} from '@primer/components'
+import isRelativeUrl from 'is-relative-url'
 // import './anchor-tag.css'
 const AnchorTag = ({
   title,
@@ -69,7 +70,7 @@ const AnchorTag = ({
   } else {
     popupContent = <div className="popover no-max-width">{href}</div>
     // eslint-disable-next-line jsx-a11y/anchor-has-content
-    const externalLink = /^(http(s?)):\/\//i.test(href)
+    const externalLink = !isRelativeUrl(href)
     child = (
       <Link
         {...restProps}

@@ -20,6 +20,7 @@ module.exports = themeOptions => {
           path: path.resolve('./content'),
         },
       },
+      '@theowenyoung/gatsby-plugin-slug',
       'gatsby-plugin-styled-components',
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-catch-links',
@@ -64,7 +65,7 @@ module.exports = themeOptions => {
           ],
         },
       },
-      `gatsby-transformer-markdown-references`,
+      `@theowenyoung/gatsby-transformer-references`,
       {
         resolve: 'gatsby-plugin-manifest',
         options: {

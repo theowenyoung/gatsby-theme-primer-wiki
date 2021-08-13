@@ -9,8 +9,14 @@
     "test": "npm -ws run test -- --passWithNoTests"
   },
   "workspaces": [
-    "packages/*",
-    "example"
+    "references",
+    "remove-brackets",
+    "rewrite",
+    "summary",
+    "theme",
+    "example",
+    "slug",
+    "transformer-url"
   ],
   "dependencies": {
     "@changesets/changelog-github": "^0.4.0",

@@ -1,0 +1,19 @@
+{
+  "name": "@theowenyoung/transformer-markdown-url",
+  "description": "It can freely transformer the link URL of Markdown.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "gatsby"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "dependencies": {
+    "is-relative-url": "^3.0.0"
+  }
+}
