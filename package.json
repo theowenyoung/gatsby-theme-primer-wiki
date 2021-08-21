@@ -1,5 +1,6 @@
 {
   "private": true,
+  "name": "wiki",
   "scripts": {
     "start": "npm run develop -w example",
     "clean": "npm run clean -w example",
@@ -35,5 +36,5 @@
     "release-it-yarn-workspaces": "^2.0.1"
   },
   "dependencies": {},
-  "version": "1.9.0"
+  "version": "1.9.1"
 }
