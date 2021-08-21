@@ -45,7 +45,6 @@ function SidebarItem({
   depth = 0,
   sidebarDepth = 1,
 }) {
-  sidebarDepth = 0;
   items = items || [];
   const defaultShowItems = depth < sidebarDepth;
   const isActive = getIsActive(location, url, items);
