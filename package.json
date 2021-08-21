@@ -3,8 +3,7 @@
   "scripts": {
     "start": "npm run develop -w example",
     "clean": "npm run clean -w example",
-    "version": "changeset version",
-    "release": "changeset publish",
+    "release": "release-it",
     "build": "npm -w example run build",
     "serve": "npm -w example run serve",
     "test": "npm -ws run test -- --passWithNoTests",
@@ -24,10 +23,6 @@
     "theme",
     "example"
   ],
-  "dependencies": {
-    "@changesets/changelog-github": "^0.4.0",
-    "@changesets/cli": "^2.16.0"
-  },
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -35,6 +30,9 @@
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2"
-  }
+    "prettier": "^2.3.2",
+    "release-it": "^14.11.5",
+    "release-it-yarn-workspaces": "^2.0.1"
+  },
+  "dependencies": {}
 }
