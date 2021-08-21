@@ -1,49 +1,49 @@
-import {Box, Link, Text} from '@primer/components'
-import {ChevronDownIcon, ChevronUpIcon, XIcon} from '@primer/octicons-react'
-import {Link as GatsbyLink} from 'gatsby'
-import debounce from 'lodash.debounce'
-import React from 'react'
-import {useStaticQuery, graphql} from 'gatsby'
-import primerNavItems from '../primer-nav.yml'
-import useSiteMetadata from '../use-site-metadata'
-import DarkButton from './dark-button'
-import Details from './details'
-import Drawer from './drawer'
-import NavItems from './nav-items'
+import { Box, Link, Text } from "@primer/components";
+import { ChevronDownIcon, ChevronUpIcon, XIcon } from "@primer/octicons-react";
+import { Link as GatsbyLink } from "gatsby";
+import debounce from "lodash.debounce";
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import primerNavItems from "../primer-nav.yml";
+import useSiteMetadata from "../use-site";
+import DarkButton from "./dark-button";
+import Details from "./details";
+import Drawer from "./drawer";
+import NavItems from "./nav-items";
 
 export function useNavDrawerState(breakpoint) {
   // Handle string values from themes with units at the end
-  if (typeof breakpoint === 'string') {
-    breakpoint = parseInt(breakpoint, 10)
+  if (typeof breakpoint === "string") {
+    breakpoint = parseInt(breakpoint, 10);
   }
-  const [isOpen, setOpen] = React.useState(false)
+  const [isOpen, setOpen] = React.useState(false);
 
   const onResize = React.useCallback(() => {
     if (window.innerWidth >= breakpoint) {
-      setOpen(false)
+      setOpen(false);
     }
-  }, [setOpen])
+  }, [setOpen]);
 
   const debouncedOnResize = React.useCallback(debounce(onResize, 250), [
-    onResize,
-  ])
+    onResize
+  ]);
 
   React.useEffect(() => {
     if (isOpen) {
-      window.addEventListener('resize', debouncedOnResize)
+      window.addEventListener("resize", debouncedOnResize);
       return () => {
         // cancel any debounced invocation of the resize handler
-        debouncedOnResize.cancel()
-        window.removeEventListener('resize', debouncedOnResize)
-      }
+        debouncedOnResize.cancel();
+        window.removeEventListener("resize", debouncedOnResize);
+      };
     }
-  }, [isOpen, debouncedOnResize])
+  }, [isOpen, debouncedOnResize]);
 
-  return [isOpen, setOpen]
+  return [isOpen, setOpen];
 }
 
-function NavDrawer({isOpen, onDismiss}) {
-  const siteMetadata = useSiteMetadata()
+function NavDrawer({ isOpen, onDismiss, location }) {
+  const { siteMetadata } = useSiteMetadata();
   const data = useStaticQuery(graphql`
     {
       allSummaryGroup {
@@ -72,8 +72,9 @@ function NavDrawer({isOpen, onDismiss}) {
         }
       }
     }
-  `)
-  const navItems = data.allSummaryGroup.nodes
+  `);
+
+  const navItems = data.allSummaryGroup.nodes;
   return (
     <Drawer isOpen={isOpen} onDismiss={onDismiss}>
       <Box
@@ -81,7 +82,7 @@ function NavDrawer({isOpen, onDismiss}) {
         flexDirection="column"
         height="100%"
         bg="auto.gray.9"
-        style={{overflow: 'auto', WebkitOverflowScrolling: 'touch'}}
+        style={{ overflow: "auto", WebkitOverflowScrolling: "touch" }}
       >
         <Box
           display="flex"
@@ -140,15 +141,15 @@ function NavDrawer({isOpen, onDismiss}) {
             >
               {siteMetadata.title}
             </Link>
-            <NavItems items={navItems} />
+            <NavItems location={location} items={navItems} />
           </Box>
         ) : null}
       </Box>
     </Drawer>
-  )
+  );
 }
 
-function PrimerNavItems({items}) {
+function PrimerNavItems({ items }) {
   return items.map((item, index) => {
     return (
       <Box
@@ -162,34 +163,36 @@ function PrimerNavItems({items}) {
       >
         {item.children ? (
           <Details key={index}>
-            {({open, toggle}) => (
-              <>
-                <summary onClick={toggle} style={{cursor: 'pointer'}}>
-                  <Box
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="space-between"
-                  >
-                    <Text>{item.title}</Text>
-                    {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
-                  </Box>
-                </summary>
-                <Box display="flex" flexDirection="column" mt={2}>
-                  {item.children.map(child => (
-                    <Link
-                      key={child.title}
-                      href={child.url}
-                      py={1}
-                      mt={2}
-                      fontSize={1}
-                      color="inherit"
+            {({ open, toggle }) => {
+              return (
+                <>
+                  <summary onClick={toggle} style={{ cursor: "pointer" }}>
+                    <Box
+                      display="flex"
+                      alignItems="center"
+                      justifyContent="space-between"
                     >
-                      {child.title}
-                    </Link>
-                  ))}
-                </Box>
-              </>
-            )}
+                      <Text>{item.title}</Text>
+                      {open ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                    </Box>
+                  </summary>
+                  <Box display="flex" flexDirection="column" mt={2}>
+                    {item.children.map(child => (
+                      <Link
+                        key={child.title}
+                        href={child.url}
+                        py={1}
+                        mt={2}
+                        fontSize={1}
+                        color="inherit"
+                      >
+                        {child.title}
+                      </Link>
+                    ))}
+                  </Box>
+                </>
+              );
+            }}
           </Details>
         ) : (
           <Link key={index} href={item.url} color="inherit" display="block">
@@ -197,8 +200,8 @@ function PrimerNavItems({items}) {
           </Link>
         )}
       </Box>
-    )
-  })
+    );
+  });
 }
 
-export default NavDrawer
+export default NavDrawer;

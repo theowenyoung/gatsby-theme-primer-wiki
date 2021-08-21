@@ -1,12 +1,12 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 // The <details> element is not yet supported in Edge so we have to use a polyfill.
 // We have to check if window is defined before importing the polyfill
 // so the code doesn’t run while Gatsby is building.
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   // eslint-disable-next-line no-unused-expressions
-  import('details-element-polyfill')
+  import("details-element-polyfill");
 }
 
 // TODO: Replace this Details component with the one from @primer/components when 14.0.0 is released.
@@ -24,45 +24,55 @@ const DetailsReset = styled.details`
   & > summary::before {
     display: none;
   }
-`
+`;
 
 function getRenderer(children) {
-  return typeof children === 'function' ? children : () => children
+  return typeof children === "function" ? children : () => children;
 }
 
-function Details({children, overlay, render = getRenderer(children), ...rest}) {
-  const [open, setOpen] = React.useState(Boolean(rest.open))
+function Details({
+  children,
+  overlay,
+  render = getRenderer(children),
+  ...rest
+}) {
+  const [open, setOpen] = React.useState(Boolean(rest.open));
 
   function toggle(event) {
-    if (event) event.preventDefault()
+    if (event) {
+      event.preventDefault && event.preventDefault();
+    }
     if (overlay) {
-      openMenu()
+      openMenu();
     } else {
-      setOpen(!open)
+      setOpen(!open);
     }
   }
 
   function openMenu() {
     if (!open) {
-      setOpen(true)
-      document.addEventListener('click', closeMenu)
+      setOpen(true);
+      setTimeout(() => {
+        // This should been listened next tick
+        document.addEventListener("click", closeMenu);
+      }, 0);
     }
   }
 
-  function closeMenu() {
-    setOpen(false)
-    document.removeEventListener('click', closeMenu)
+  function closeMenu(event) {
+    setOpen(false);
+    document.removeEventListener("click", closeMenu);
   }
 
   return (
     <DetailsReset {...rest} open={open}>
-      {render({open, toggle})}
+      {render({ open, toggle })}
     </DetailsReset>
-  )
+  );
 }
 
 Details.defaultProps = {
-  overlay: false,
-}
+  overlay: false
+};
 
-export default Details
+export default Details;

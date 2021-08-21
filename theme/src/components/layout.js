@@ -1,35 +1,38 @@
-import {Box, Heading, Text} from '@primer/components'
-import React from 'react'
-import Head from './head'
-import Header, {HEADER_HEIGHT} from './header'
-import PageFooter from './page-footer'
-import Sidebar from './sidebar'
-import TableOfContents from './table-of-contents'
-
-function Layout({children, fields, frontmatter, tableOfContents, pageContext}) {
-  let {title, description} = frontmatter
-
+import { Box, Heading, Text } from "@primer/components";
+import React from "react";
+import Header, { HEADER_HEIGHT } from "./header";
+import PageFooter from "./page-footer";
+import Sidebar from "./sidebar";
+import TableOfContents from "./table-of-contents";
+import "../styles/global.css";
+function Layout({ children, fields, frontmatter, tableOfContents, location }) {
+  let { title } = frontmatter;
+  const { lastUpdated, editUrl } = fields;
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
-      <Head title={title} description={description} />
-      <Header />
-      <Box display="flex" flex="1 1 auto" flexDirection="row" css={{zIndex: 0}}>
-        <Sidebar />
+      <Header location={location} />
+      <Box
+        display="flex"
+        flex="1 1 auto"
+        flexDirection="row"
+        css={{ zIndex: 0 }}
+      >
+        <Sidebar location={location} />
         <Box
           id="skip-nav"
           display="flex"
           width="100%"
           p={[4, 5, 6, 7]}
           sx={{
-            justifyContent: 'center',
-            flexDirection: 'row-reverse',
+            justifyContent: "center",
+            flexDirection: "row-reverse"
           }}
         >
           {tableOfContents.items ? (
             <Box
-              sx={{width: 220, flex: '0 0 auto', marginLeft: 6}}
-              display={['none', null, 'block']}
-              css={{gridArea: 'table-of-contents', overflow: 'auto'}}
+              sx={{ width: 220, flex: "0 0 auto", marginLeft: 6 }}
+              display={["none", null, "block"]}
+              css={{ gridArea: "table-of-contents", overflow: "auto" }}
               position="sticky"
               top={HEADER_HEIGHT + 24}
               maxHeight={`calc(100vh - ${HEADER_HEIGHT}px - 24px)`}
@@ -41,20 +44,23 @@ function Layout({children, fields, frontmatter, tableOfContents, pageContext}) {
             </Box>
           ) : null}
           <Box width="100%" maxWidth="960px">
-            <Box mb={4}>
-              <Box display="flex" sx={{alignItems: 'center'}}>
-                <Heading as="h1" mr={2}>
-                  {title}
-                </Heading>
+            {title && (
+              <Box mb={4}>
+                <Box display="flex" sx={{ alignItems: "center" }}>
+                  <Heading as="h1" mr={2}>
+                    {title}
+                  </Heading>
+                </Box>
               </Box>
-            </Box>
+            )}
+
             {tableOfContents.items ? (
               <Box
                 borderWidth="1px"
                 borderStyle="solid"
                 borderColor="border.primary"
                 borderRadius={2}
-                display={['block', null, 'none']}
+                display={["block", null, "none"]}
                 mb={5}
                 bg="auto.gray.1"
               >
@@ -71,8 +77,8 @@ function Layout({children, fields, frontmatter, tableOfContents, pageContext}) {
                 <Box
                   p={3}
                   sx={{
-                    borderTop: '1px solid',
-                    borderColor: 'border.gray',
+                    borderTop: "1px solid",
+                    borderColor: "border.gray"
                   }}
                 >
                   <TableOfContents items={tableOfContents.items} />
@@ -80,15 +86,12 @@ function Layout({children, fields, frontmatter, tableOfContents, pageContext}) {
               </Box>
             ) : null}
             {children}
-            <PageFooter
-              editUrl={pageContext.editUrl}
-              contributors={pageContext.contributors}
-            />
+            <PageFooter editUrl={editUrl} lastUpdated={lastUpdated} />
           </Box>
         </Box>
       </Box>
     </Box>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

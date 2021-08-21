@@ -1,28 +1,25 @@
 {
-  "files.autoSave": "onFocusChange",
   "editor.minimap.enabled": false,
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
-  "foam.edit.linkReferenceDefinitions": "withExtensions",
-  "foam.openDailyNote.directory": "journal",
-  "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
-  "vscodeMarkdownNotes.noteCompletionConvention": "rawFilename",
   "[markdown]": {
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": false
-    }
+    "editor.quickSuggestions": true
   },
-  "cSpell.language": "en-GB",
-  "git.enableSmartCommit": true,
-  "git.postCommitCommand": "sync",
-  "spellright.language": ["en"],
-  "spellright.documentTypes": ["markdown", "plaintext"],
-  "files.exclude": {
-    "_site/**": true
-  },
+  "files.defaultLanguage": "markdown",
+
   "files.watcherExclude": {
     "**/node_modules": true
-  }
+  },
+  "foam.edit.linkReferenceDefinitions": "withExtensions",
+  "foam.openDailyNote.directory": "journal",
+  "foam.openDailyNote.titleFormat": "fullDate",
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync",
+  "markdown.preview.breaks": true,
+  "pasteImage.path": "${projectRoot}/attachments",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "prettier.singleQuote": false,
+  "spellright.notificationClass": "warning",
+  "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
+  "vscodeMarkdownNotes.slugifyMethod": "github-slugger"
 }

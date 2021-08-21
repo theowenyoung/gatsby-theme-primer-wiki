@@ -1,29 +1,29 @@
-import {Box} from '@primer/components'
-import Downshift from 'downshift'
-import {navigate} from 'gatsby'
-import React from 'react'
-import useSearch from '../use-search'
-import useSiteMetadata from '../use-site-metadata'
-import DarkTextInput from './dark-text-input'
-import SearchResults from './search-results'
+import { Box } from "@primer/components";
+import Downshift from "downshift";
+import { navigate } from "gatsby";
+import React from "react";
+import useSearch from "../use-search";
+import useSiteMetadata from "../use-site";
+import DarkTextInput from "./dark-text-input";
+import SearchResults from "./search-results";
 
 function stateReducer(state, changes) {
   switch (changes.type) {
     case Downshift.stateChangeTypes.changeInput:
       if (!changes.inputValue) {
         // Close the menu if the input is empty.
-        return {...changes, isOpen: false}
+        return { ...changes, isOpen: false };
       }
-      return changes
+      return changes;
     default:
-      return changes
+      return changes;
   }
 }
 
 function Search() {
-  const [query, setQuery] = React.useState('')
-  const results = useSearch(query)
-  const siteMetadata = useSiteMetadata()
+  const [query, setQuery] = React.useState("");
+  const results = useSearch(query);
+  const { siteMetadata } = useSiteMetadata();
 
   return (
     <Downshift
@@ -37,11 +37,11 @@ function Search() {
       selectedItem={null}
       onSelect={item => {
         if (item) {
-          navigate(item.path)
-          setQuery('')
+          navigate(item.path);
+          setQuery("");
         }
       }}
-      itemToString={item => (item ? item.title : '')}
+      itemToString={item => (item ? item.title : "")}
       stateReducer={stateReducer}
     >
       {({
@@ -50,23 +50,23 @@ function Search() {
         getMenuProps,
         getRootProps,
         isOpen,
-        highlightedIndex,
+        highlightedIndex
       }) => (
-        <Box position="relative" {...getRootProps({position: 'relative'})}>
+        <Box position="relative" {...getRootProps({ position: "relative" })}>
           <DarkTextInput
             {...getInputProps({
               placeholder: `Search ${siteMetadata.shortName ||
                 siteMetadata.title}`,
-              width: 240,
+              width: 240
             })}
           />
           {isOpen ? (
             <Box
               {...getMenuProps({
-                position: 'absolute',
+                position: "absolute",
                 left: 0,
                 right: 0,
-                pt: 2,
+                pt: 2
               })}
             >
               <Box
@@ -79,7 +79,7 @@ function Search() {
                 py={1}
                 boxShadow="medium"
                 bg="auto.white"
-                style={{overflow: 'auto'}}
+                style={{ overflow: "auto" }}
               >
                 <SearchResults
                   results={results}
@@ -92,7 +92,7 @@ function Search() {
         </Box>
       )}
     </Downshift>
-  )
+  );
 }
 
-export default Search
+export default Search;

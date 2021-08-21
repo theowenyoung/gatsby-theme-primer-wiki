@@ -1,26 +1,26 @@
 {
   "private": true,
   "scripts": {
-    "start": "npm -w example run develop",
-    "clean": "npm -w example run clean",
+    "start": "npm run develop -w example",
+    "clean": "npm run clean -w example",
     "release": "changeset publish",
     "build": "npm -w example run build",
     "serve": "npm -w example run serve",
     "test": "npm -ws run test -- --passWithNoTests"
   },
   "workspaces": [
+    "transformer-url",
+    "slug",
     "references",
-    "remove-brackets",
     "rewrite",
     "summary",
     "theme",
-    "example",
-    "slug",
-    "transformer-url"
+    "example"
   ],
   "dependencies": {
     "@changesets/changelog-github": "^0.4.0",
-    "@changesets/cli": "^2.16.0"
+    "@changesets/cli": "^2.16.0",
+    "remove-markdown": "^0.3.0"
   },
   "devDependencies": {
     "jest": "^27.0.6"

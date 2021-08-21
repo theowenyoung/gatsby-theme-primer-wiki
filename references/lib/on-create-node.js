@@ -1,37 +1,33 @@
-'use strict'
+"use strict";
 
-const {getReferences} = require('./get-references')
+const {
+  getReferences,
+  getOutboundReferencesSlugs
+} = require("./get-references");
 
-var _options2 = require('./options')
+var _options2 = require("./options");
 
-var _cache = require('./cache')
-
-const onCreateNode = async (
-  {cache, node, loadNodeContent, getNode},
-  _options,
-) => {
-  const options = _options2.resolveOptions(_options) // if we shouldn't process this node, then return
+const onCreateNode = async ({ node, loadNodeContent, getNode }, _options) => {
+  const options = _options2.resolveOptions(_options); // if we shouldn't process this node, then return
 
   if (!options.types.includes(node.internal.type)) {
-    return
+    return;
   }
 
   if (node.fields && node.fields.slug) {
-    const content = await loadNodeContent(node)
+    const content = await loadNodeContent(node);
     const outboundReferences = await getReferences(content, {
       ...options,
       node,
-      getNode,
-    })
-
-    await _cache.clearInboundReferences(cache)
-    await _cache.setCachedNode(cache, node.id, {
-      slug: node.fields.slug,
-      outboundReferences,
-    })
+      getNode
+    });
+    const outboundReferencesSlugs = getOutboundReferencesSlugs(
+      outboundReferences
+    );
+    node.__outboundReferencesSlugs = outboundReferencesSlugs;
   } else {
-    return
+    return;
   }
-}
+};
 
-exports.onCreateNode = onCreateNode
+exports.onCreateNode = onCreateNode;

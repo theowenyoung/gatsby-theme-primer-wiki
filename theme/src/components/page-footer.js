@@ -1,10 +1,19 @@
-import {StyledOcticon, Link, Box} from '@primer/components'
-import {PencilIcon} from '@primer/octicons-react'
-import React from 'react'
-import Contributors from './contributors'
+import { StyledOcticon, Link, Box } from "@primer/components";
+import { PencilIcon } from "@primer/octicons-react";
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import LastUpdated from "./last-updated";
 
-function PageFooter({editUrl, contributors}) {
-  return editUrl || contributors.length > 0 ? (
+function PageFooter({ editUrl, lastUpdated }) {
+  const data = useStaticQuery(graphql`
+    {
+      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
+        editUrlText
+      }
+    }
+  `);
+
+  return editUrl || lastUpdated ? (
     <Box
       borderStyle="solid"
       borderColor="border.primary"
@@ -14,24 +23,21 @@ function PageFooter({editUrl, contributors}) {
       mt={8}
       py={5}
     >
-      <Box display="grid" gridGap={4}>
+      <Box display="flex" flexWrap="wrap" justifyContent="space-between">
         {editUrl ? (
-          <Link href={editUrl}>
+          <Link mb="1" href={editUrl}>
             <StyledOcticon icon={PencilIcon} mr={2} />
-            Edit this page on GitHub
+            {data.primerWikiThemeConfig.editUrlText}
           </Link>
         ) : null}
-
-        {contributors.length > 0 ? (
-          <Contributors contributors={contributors} />
-        ) : null}
+        {lastUpdated && <LastUpdated lastUpdated={lastUpdated}></LastUpdated>}
       </Box>
     </Box>
-  ) : null
+  ) : null;
 }
 
 PageFooter.defaultProps = {
-  contributors: [],
-}
+  contributors: []
+};
 
-export default PageFooter
+export default PageFooter;

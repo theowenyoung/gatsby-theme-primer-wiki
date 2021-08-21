@@ -1,25 +1,29 @@
-import {Box, Link, StyledOcticon, Text} from '@primer/components'
-import {MarkGithubIcon, SearchIcon, ThreeBarsIcon} from '@primer/octicons-react'
-import {Link as GatsbyLink} from 'gatsby'
-import React from 'react'
-import {ThemeContext} from 'styled-components'
-import primerNavItems from '../primer-nav.yml'
-import useSiteMetadata from '../use-site-metadata'
-import DarkButton from './dark-button'
-import MobileSearch from './mobile-search'
-import NavDrawer, {useNavDrawerState} from './nav-drawer'
-import NavDropdown, {NavDropdownItem} from './nav-dropdown'
-import Search from './search'
+import { Box, Link, StyledOcticon, Text } from "@primer/components";
+import {
+  MarkGithubIcon,
+  SearchIcon,
+  ThreeBarsIcon
+} from "@primer/octicons-react";
+import { Link as GatsbyLink } from "gatsby";
+import React from "react";
+import { ThemeContext } from "styled-components";
+import primerNavItems from "../primer-nav.yml";
+import useSiteMetadata from "../use-site";
+import DarkButton from "./dark-button";
+import MobileSearch from "./mobile-search";
+import NavDrawer, { useNavDrawerState } from "./nav-drawer";
+import NavDropdown, { NavDropdownItem } from "./nav-dropdown";
+import Search from "./search";
 
-export const HEADER_HEIGHT = 66
+export const HEADER_HEIGHT = 66;
 
-function Header({isSearchEnabled}) {
-  const theme = React.useContext(ThemeContext)
+function Header({ isSearchEnabled, location }) {
+  const theme = React.useContext(ThemeContext);
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useNavDrawerState(
-    theme.breakpoints[2],
-  )
-  const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false)
-  const siteMetadata = useSiteMetadata()
+    theme.breakpoints[2]
+  );
+  const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
+  const { siteMetadata } = useSiteMetadata();
   return (
     <Box top={0} zIndex={1} position="sticky">
       <Box
@@ -44,16 +48,16 @@ function Header({isSearchEnabled}) {
           ) : null}
 
           {isSearchEnabled ? (
-            <Box display={['none', null, null, 'block']} ml={4}>
+            <Box display={["none", null, null, "block"]} ml={4}>
               <Search />
             </Box>
           ) : null}
         </Box>
         <Box display="flex">
-          <Box display={['none', null, null, 'block']}>
+          <Box display={["none", null, null, "block"]}>
             <PrimerNavItems items={primerNavItems} />
           </Box>
-          <Box display={['flex', null, null, 'none']}>
+          <Box display={["flex", null, null, "none"]}>
             {isSearchEnabled ? (
               <>
                 <DarkButton
@@ -78,6 +82,7 @@ function Header({isSearchEnabled}) {
               <ThreeBarsIcon />
             </DarkButton>
             <NavDrawer
+              location={location}
               isOpen={isNavDrawerOpen}
               onDismiss={() => setIsNavDrawerOpen(false)}
             />
@@ -85,14 +90,14 @@ function Header({isSearchEnabled}) {
         </Box>
       </Box>
     </Box>
-  )
+  );
 }
 
 Header.defaultProps = {
-  isSearchEnabled: true,
-}
+  isSearchEnabled: true
+};
 
-function PrimerNavItems({items}) {
+function PrimerNavItems({ items }) {
   return (
     <Box display="flex" alignItems="center" color="auto.blue.2">
       {items.map((item, index) => {
@@ -107,7 +112,7 @@ function PrimerNavItems({items}) {
                 ))}
               </NavDropdown>
             </Box>
-          )
+          );
         }
 
         return (
@@ -120,10 +125,10 @@ function PrimerNavItems({items}) {
           >
             {item.title}
           </Link>
-        )
+        );
       })}
     </Box>
-  )
+  );
 }
 
-export default Header
+export default Header;

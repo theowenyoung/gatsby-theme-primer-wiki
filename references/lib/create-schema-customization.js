@@ -1,71 +1,70 @@
-'use strict'
+"use strict";
 
-exports.setFieldsOnGraphQLNodeType = exports.createSchemaCustomization = void 0
+exports.setFieldsOnGraphQLNodeType = exports.createSchemaCustomization = void 0;
 
-var _options2 = require('./options')
+var _options2 = require("./options");
 
-var _computeInbounds = require('./compute-inbounds')
+var _computeInbounds = require("./compute-inbounds");
 
-var _cache = require('./cache')
+var _nonNullable = require("./non-nullable");
 
-var _nonNullable = require('./non-nullable')
-
-const createSchemaCustomization = ({actions}, _options) => {
-  const options = _options2.resolveOptions(_options)
+const createSchemaCustomization = ({ actions }, _options) => {
+  const options = _options2.resolveOptions(_options);
   actions.createTypes(`
-    union ReferenceTarget = ${options.types.join(' | ')}
-  `)
-}
+    union ReferenceTarget = ${options.types.join(" | ")}
+  `);
+};
 
-exports.createSchemaCustomization = createSchemaCustomization
+exports.createSchemaCustomization = createSchemaCustomization;
 
-const setFieldsOnGraphQLNodeType = ({cache, type, getNode}, _options) => {
-  const options = _options2.resolveOptions(_options) // if we shouldn't process this node, then return
+const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
+  const options = _options2.resolveOptions(_options); // if we shouldn't process this node, then return
 
   if (!options.types.includes(type.name)) {
-    return {}
+    return {};
   }
 
   return {
     outboundReferences: {
       type: `[ReferenceTarget!]!`,
-      resolve: async node => {
-        let cachedNode = await _cache.getCachedNode(cache, node.id, getNode)
-
-        if (!cachedNode || !cachedNode.resolvedOutboundReferences) {
-          await _computeInbounds.generateData(cache, getNode)
-          cachedNode = await _cache.getCachedNode(cache, node.id, getNode)
+      resolve: async (source, _, context) => {
+        if (
+          source.__outboundReferencesSlugs &&
+          Array.isArray(source.__outboundReferencesSlugs) &&
+          source.__outboundReferencesSlugs.length > 0
+        ) {
+          return context.nodeModel.runQuery({
+            query: {
+              filter: {
+                fields: {
+                  slug: { in: source.__outboundReferencesSlugs }
+                }
+              }
+            },
+            type: type.name,
+            firstOnly: false
+          });
+        } else {
+          return [];
         }
-
-        if (cachedNode && cachedNode.resolvedOutboundReferences) {
-          return cachedNode.resolvedOutboundReferences
-            .map(nodeId => getNode(nodeId))
-            .filter(_nonNullable.nonNullable)
-        }
-
-        return []
-      },
+      }
     },
     inboundReferences: {
       type: `[ReferenceTarget!]!`,
-      resolve: async node => {
-        let data = await _cache.getInboundReferences(cache)
-
-        if (!data) {
-          await _computeInbounds.generateData(cache, getNode)
-          data = await _cache.getInboundReferences(cache)
-        }
+      resolve: async (node, _, context) => {
+        const allNodes = context.nodeModel.getAllNodes({ type: type.name });
+        const data = _computeInbounds.getInboundReferences(getNode, allNodes);
 
         if (data) {
           return (data[node.id] || [])
             .map(nodeId => getNode(nodeId))
-            .filter(_nonNullable.nonNullable)
+            .filter(_nonNullable.nonNullable);
         }
 
-        return []
-      },
-    },
-  }
-}
+        return [];
+      }
+    }
+  };
+};
 
-exports.setFieldsOnGraphQLNodeType = setFieldsOnGraphQLNodeType
+exports.setFieldsOnGraphQLNodeType = setFieldsOnGraphQLNodeType;
