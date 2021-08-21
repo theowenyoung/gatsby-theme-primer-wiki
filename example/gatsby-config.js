@@ -1,3 +1,4 @@
+const path = require("path");
 const siteMetadata = {
   title: "Gatsby Theme Primer Wiki",
   shortName: "Wiki",
@@ -10,6 +11,19 @@ module.exports = {
     DEV_SSR: true,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: path.resolve("./content"),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        policy: [{ userAgent: "*", disallow: "/" }],
+      },
+    },
     {
       resolve: "gatsby-theme-primer-wiki",
       options: {

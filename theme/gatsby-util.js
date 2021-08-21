@@ -36,6 +36,10 @@ async function getTitle(node, { loadNodeContent }) {
     return node.frontmatter["title"];
   }
   const content = await loadNodeContent(node);
-  return getMdTitle(content).text || "";
+  const result = getMdTitle(content);
+  if (!result) {
+    return "Untitled";
+  }
+  return result.text || "Untitled";
 }
 exports.getTitle = getTitle;

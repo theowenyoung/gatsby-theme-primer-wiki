@@ -14,13 +14,6 @@ module.exports = (themeOptions) => {
         "https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png",
     },
     plugins: [
-      {
-        resolve: "gatsby-source-filesystem",
-        options: {
-          name: "content",
-          path: path.resolve("./content"),
-        },
-      },
       "@theowenyoung/gatsby-plugin-slug",
       "gatsby-plugin-styled-components",
       "gatsby-plugin-react-helmet",

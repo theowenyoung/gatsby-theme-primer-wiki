@@ -26,6 +26,7 @@ const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
     outboundReferences: {
       type: `[ReferenceTarget!]!`,
       resolve: async (source, _, context) => {
+        // return [];
         if (
           source.__outboundReferencesSlugs &&
           Array.isArray(source.__outboundReferencesSlugs) &&
@@ -50,6 +51,7 @@ const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
     inboundReferences: {
       type: `[ReferenceTarget!]!`,
       resolve: async (node, _, context) => {
+        // return [];
         const allNodes = context.nodeModel.getAllNodes({ type: type.name });
         const data = _computeInbounds.getInboundReferences(getNode, allNodes);
 
