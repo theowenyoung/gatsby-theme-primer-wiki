@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import GeneralTags from "./general";
 import OpenGraphTags from "./open-graph";
 import RichSearchTags from "./rich-search.js";
-import TwitterTags from "./Twitter";
+import TwitterTags from "./twitter";
 import { generatePostData, generateSeoData } from "./utils";
 import useSiteMetadata from "../../use-site";
 
