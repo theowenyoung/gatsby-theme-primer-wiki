@@ -34,5 +34,6 @@
     "release-it": "^14.11.5",
     "release-it-yarn-workspaces": "^2.0.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "version": null
 }
