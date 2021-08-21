@@ -1,7 +1,7 @@
 {
   "name": "@theowenyoung/transformer-markdown-url",
   "description": "It can freely transformer the link URL of Markdown.",
-  "version": "0.1.2",
+  "version": "1.8.1",
   "license": "MIT",
   "keywords": [
     "gatsby"
