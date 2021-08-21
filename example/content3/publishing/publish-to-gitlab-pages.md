@@ -10,7 +10,7 @@ Generate a solution using the [Foam template].
 
 Change the remote to GitLab, or copy all the files into a new GitLab repo.
 
-### Add a _config.yaml
+### Add a \_config.yaml
 
 Add another file to the root directory (the one with `readme.md` in it) called `_config.yaml` (no extension)
 
@@ -24,8 +24,7 @@ plugins:
 optional_front_matter:
   remove_originals: true
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # we need to add this to properly render layouts
     values:
       layout: "default"
@@ -56,7 +55,7 @@ Commit the file and push it to gitlab.
 
 ## Troubleshooting
 
-- *Could not locate Gemfile* - You didn't follow the steps above to [#Add a Gemlock file]
-- *Conversion error: Jekyll::Converters::Scss encountered an error while converting* You need to reference a theme.
-- *Pages are running in CI/CD, but I only ever see `test`, and never deploy* - Perhaps you've renamed the main branch (from master) - check the settings in `.gitlab-ci.yml` and ensure the deploy command is running to the branch you expect it to.
-- *I deployed, but my .msd files don't seem to be being converted into .html files* - You need a gem that GitHub installs by default - check `gem "jekyll-optional-front-matter"` appears in the `Gemfile`
+- _Could not locate Gemfile_ - You didn't follow the steps above to [#Add a Gemlock file]
+- _Conversion error: Jekyll::Converters::Scss encountered an error while converting_ You need to reference a theme.
+- _Pages are running in CI/CD, but I only ever see `test`, and never deploy_ - Perhaps you've renamed the main branch (from master) - check the settings in `.gitlab-ci.yml` and ensure the deploy command is running to the branch you expect it to.
+- _I deployed, but my .msd files don't seem to be being converted into .html files_ - You need a gem that GitHub installs by default - check `gem "jekyll-optional-front-matter"` appears in the `Gemfile`

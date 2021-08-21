@@ -72,7 +72,7 @@ function Details({
 }
 
 Details.defaultProps = {
-  overlay: false
+  overlay: false,
 };
 
 export default Details;

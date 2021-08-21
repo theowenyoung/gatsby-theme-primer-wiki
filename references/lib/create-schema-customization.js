@@ -1,5 +1,3 @@
-"use strict";
-
 exports.setFieldsOnGraphQLNodeType = exports.createSchemaCustomization = void 0;
 
 var _options2 = require("./options");
@@ -37,17 +35,17 @@ const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
             query: {
               filter: {
                 fields: {
-                  slug: { in: source.__outboundReferencesSlugs }
-                }
-              }
+                  slug: { in: source.__outboundReferencesSlugs },
+                },
+              },
             },
             type: type.name,
-            firstOnly: false
+            firstOnly: false,
           });
         } else {
           return [];
         }
-      }
+      },
     },
     inboundReferences: {
       type: `[ReferenceTarget!]!`,
@@ -57,13 +55,13 @@ const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
 
         if (data) {
           return (data[node.id] || [])
-            .map(nodeId => getNode(nodeId))
+            .map((nodeId) => getNode(nodeId))
             .filter(_nonNullable.nonNullable);
         }
 
         return [];
-      }
-    }
+      },
+    },
   };
 };
 

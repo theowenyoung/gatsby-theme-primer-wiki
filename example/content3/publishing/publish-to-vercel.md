@@ -21,7 +21,7 @@ First, we'll need to add a `_config.yml` at the root directory. This is the Jeky
 title: Foam
 # All the plugins we will be installing now that we won't be using GitHub Pages
 plugins:
-  - jekyll-katex  # optional
+  - jekyll-katex # optional
   - jekyll-default-layout
   - jekyll-relative-links
   - jekyll-readme-index

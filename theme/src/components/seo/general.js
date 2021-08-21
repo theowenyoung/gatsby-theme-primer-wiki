@@ -6,7 +6,7 @@ const GeneralTags = (seoData, siteMetadata) => {
 
   const tags = [
     <title key="gen-title">{title}</title>,
-    <link rel="shortcut icon" href={logoUrl} key="gen-fav" />
+    <link rel="shortcut icon" href={logoUrl} key="gen-fav" />,
   ];
 
   if (description)

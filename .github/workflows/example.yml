@@ -32,5 +32,5 @@ jobs:
           personal_token: ${{ secrets.PUBLISH_GITHUB_TOKEN }}
           publish_dir: ./example/public
           force_orphan: false
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"

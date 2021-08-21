@@ -1,6 +1,6 @@
-import {Link} from '@primer/components'
-import styled from 'styled-components'
-import React from 'react'
+import { Link } from "@primer/components";
+import styled from "styled-components";
+import React from "react";
 
 function SkipLinkBase(props) {
   return (
@@ -14,7 +14,7 @@ function SkipLinkBase(props) {
     >
       Skip to content
     </Link>
-  )
+  );
 }
 
 const SkipLink = styled(SkipLinkBase)`
@@ -38,6 +38,6 @@ const SkipLink = styled(SkipLinkBase)`
     margin: -1px;
     padding: 0;
   }
-`
+`;
 
-export default SkipLink
+export default SkipLink;

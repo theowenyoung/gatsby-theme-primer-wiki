@@ -13,14 +13,14 @@ const SEO = ({ post }) => {
   const postData = post ? generatePostData(post) : undefined;
 
   const seoData = generateSeoData(siteMetadata, postData, {
-    pathPrefix
+    pathPrefix,
   });
 
   const tagList = [
     ...GeneralTags(seoData, siteMetadata),
     ...OpenGraphTags({ seoData, siteMetadata, postData }),
     ...RichSearchTags({ seoData, postData }),
-    ...TwitterTags({ seoData, siteMetadata })
+    ...TwitterTags({ seoData, siteMetadata }),
   ];
 
   return (
@@ -29,7 +29,7 @@ const SEO = ({ post }) => {
         lang:
           postData && postData.language
             ? postData.language
-            : siteMetadata.language || "en"
+            : siteMetadata.language || "en",
       }}
     >
       {tagList}

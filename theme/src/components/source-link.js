@@ -1,8 +1,8 @@
-import {Link, Text} from '@primer/components'
-import {MarkGithubIcon} from '@primer/octicons-react'
-import React from 'react'
+import { Link, Text } from "@primer/components";
+import { MarkGithubIcon } from "@primer/octicons-react";
+import React from "react";
 
-function SourceLink({href}) {
+function SourceLink({ href }) {
   return (
     <Link href={href}>
       <MarkGithubIcon />
@@ -10,7 +10,7 @@ function SourceLink({href}) {
         View source
       </Text>
     </Link>
-  )
+  );
 }
 
-export default SourceLink
+export default SourceLink;

@@ -1,12 +1,13 @@
 # Foam Note Templates
 
-Foam includes note templates! 
+Foam includes note templates!
 This allows you to easily create notes that have similar structure without having to use copy/paste :)
 
 Templates support the [VS Code's Snippet Syntax](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_snippet-syntax), which means you can:
+
 - add variables to the newly created note
 - add tabstop to automatically navigate to the key parts of the note, just like a form
-Below you can see an example showing a todo list and a timestamp.
+  Below you can see an example showing a todo list and a timestamp.
 
 ## Todo List
 

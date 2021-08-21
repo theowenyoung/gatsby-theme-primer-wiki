@@ -1,12 +1,11 @@
-import {graphql, useStaticQuery} from 'gatsby'
-import React from 'react'
-import SearchWorker from 'worker-loader!./search.worker.js'
-
-const ensureAbsolute = uri => (uri.startsWith('/') ? uri : `/${uri}`)
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import SearchWorker from "worker-loader!./search.worker.js";
 
 function useSearch(query) {
-  const latestQuery = React.useRef(query)
-  const workerRef = React.useRef()
+  const latestQuery = React.useRef(query);
+  const workerRef = React.useRef();
 
   const data = useStaticQuery(graphql`
     {
@@ -20,47 +19,47 @@ function useSearch(query) {
         }
       }
     }
-  `)
+  `);
 
   const list = React.useMemo(() => {
-    return data.allMdx.nodes.map(node => {
+    return data.allMdx.nodes.map((node) => {
       return {
         path: node.fields.slug,
         title: node.fields.title,
         rawBody: node.rawBody,
-      }
-    })
-  }, [data])
+      };
+    });
+  }, [data]);
 
-  const [results, setResults] = React.useState(list)
+  const [results, setResults] = React.useState(list);
 
-  const handleSearchResults = React.useCallback(({data}) => {
+  const handleSearchResults = React.useCallback(({ data }) => {
     if (data.query && data.results && data.query === latestQuery.current) {
-      setResults(data.results.map(item => item.item))
+      setResults(data.results.map((item) => item.item));
     }
-  }, [])
+  }, []);
 
   React.useEffect(() => {
-    const worker = new SearchWorker()
-    worker.addEventListener('message', handleSearchResults)
-    worker.postMessage({list})
-    workerRef.current = worker
+    const worker = new SearchWorker();
+    worker.addEventListener("message", handleSearchResults);
+    worker.postMessage({ list });
+    workerRef.current = worker;
 
     return () => {
-      workerRef.current.terminate()
-    }
-  }, [list, handleSearchResults])
+      workerRef.current.terminate();
+    };
+  }, [list, handleSearchResults]);
 
   React.useEffect(() => {
-    latestQuery.current = query
+    latestQuery.current = query;
     if (query && workerRef.current) {
-      workerRef.current.postMessage({query: query})
+      workerRef.current.postMessage({ query: query });
     } else {
-      setResults(list)
+      setResults(list);
     }
-  }, [query, list])
+  }, [query, list]);
 
-  return results
+  return results;
 }
 
-export default useSearch
+export default useSearch;

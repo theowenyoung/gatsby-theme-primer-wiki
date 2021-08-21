@@ -1,0 +1,5 @@
+build
+coverage
+example/public
+example/.cache
+node_modules

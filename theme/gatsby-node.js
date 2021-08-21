@@ -19,17 +19,13 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
   const { createNode } = actions;
   const options = defaultOptions(pluginOptions);
-  const {
-    sidebarDepth,
-    editUrlText,
-    shouldShowLastUpdated,
-    lastUpdatedText
-  } = options;
+  const { sidebarDepth, editUrlText, shouldShowLastUpdated, lastUpdatedText } =
+    options;
   const themeConfig = {
     sidebarDepth,
     editUrlText,
     shouldShowLastUpdated,
-    lastUpdatedText
+    lastUpdatedText,
   };
 
   createNode({
@@ -41,8 +37,8 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
       type: `PrimerWikiThemeConfig`,
       contentDigest: createContentDigest(themeConfig),
       content: JSON.stringify(themeConfig),
-      description: `Options for gatsby-theme-primer-wiki`
-    }
+      description: `Options for gatsby-theme-primer-wiki`,
+    },
   });
 };
 exports.createResolvers = ({ createResolvers }) => {
@@ -53,61 +49,61 @@ exports.createResolvers = ({ createResolvers }) => {
         resolve(source, _, context) {
           const { pathPrefix } = context.nodeModel.getNodeById({
             type: "Site",
-            id: "Site"
+            id: "Site",
           });
           return urlJoin(pathPrefix || "/", source.slug);
-        }
+        },
       },
       url: {
         type: "String",
         resolve(source, _, context) {
           const {
             siteMetadata: { siteUrl },
-            pathPrefix
+            pathPrefix,
           } = context.nodeModel.getNodeById({
             type: "Site",
-            id: "Site"
+            id: "Site",
           });
           const fullPath = urlJoin(pathPrefix || "/", source.slug);
           return urlJoin(siteUrl, fullPath);
-        }
-      }
+        },
+      },
     },
     MdxFrontmatter: {
       draft: {
         type: "Boolean",
         resolve(source) {
           return source.draft || false;
-        }
+        },
       },
       title: {
-        type: "String"
+        type: "String",
       },
       description: {
-        type: "String"
+        type: "String",
       },
       date: {
-        type: "Date"
+        type: "Date",
       },
       tags: {
         type: "[String]",
         resolve(source) {
           return source.tags || [];
-        }
+        },
       },
       imageAlt: {
-        type: "String"
+        type: "String",
       },
       image: {
-        type: "File"
+        type: "File",
       },
       category: {
-        type: "String"
+        type: "String",
       },
       dateModified: {
-        type: "Date"
-      }
-    }
+        type: "Date",
+      },
+    },
   };
   createResolvers(resolvers);
 };
@@ -133,15 +129,15 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
 
   // Turn every MDX file into a page.
   return data.allMdx.nodes
-    .filter(node => node.frontmatter.draft !== true)
-    .map(node => {
+    .filter((node) => node.frontmatter.draft !== true)
+    .forEach((node) => {
       let slug = node.fields.slug;
       actions.createPage({
         path: slug,
         component: postTemplate,
         context: {
-          slug: slug
-        }
+          slug: slug,
+        },
       });
     });
 };
@@ -158,7 +154,7 @@ exports.onCreateNode = async (
     createNodeField({
       name: `title`,
       node,
-      value: title || ""
+      value: title || "",
     });
     let lastUpdated = "";
     let lastUpdatedAt = "";
@@ -189,22 +185,22 @@ exports.onCreateNode = async (
     actions.createNodeField({
       node,
       name: "lastUpdated",
-      value: lastUpdated
+      value: lastUpdated,
     });
     actions.createNodeField({
       node,
       name: "lastUpdatedAt",
-      value: lastUpdatedAt
+      value: lastUpdatedAt,
     });
     actions.createNodeField({
       node,
       name: "gitCreatedAt",
-      value: gitCreatedAt
+      value: gitCreatedAt,
     });
     actions.createNodeField({
       node,
       name: "editUrl",
-      value: editUrl
+      value: editUrl,
     });
   }
 };

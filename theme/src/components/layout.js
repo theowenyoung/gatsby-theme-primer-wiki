@@ -25,7 +25,7 @@ function Layout({ children, fields, frontmatter, tableOfContents, location }) {
           p={[4, 5, 6, 7]}
           sx={{
             justifyContent: "center",
-            flexDirection: "row-reverse"
+            flexDirection: "row-reverse",
           }}
         >
           {tableOfContents.items ? (
@@ -78,7 +78,7 @@ function Layout({ children, fields, frontmatter, tableOfContents, location }) {
                   p={3}
                   sx={{
                     borderTop: "1px solid",
-                    borderColor: "border.gray"
+                    borderColor: "border.gray",
                   }}
                 >
                   <TableOfContents items={tableOfContents.items} />

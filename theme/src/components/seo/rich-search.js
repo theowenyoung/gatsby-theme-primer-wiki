@@ -1,6 +1,6 @@
 import React from "react";
 
-export const generateArticleMetadata = postData => {
+export const generateArticleMetadata = (postData) => {
   const {
     title,
     description,
@@ -10,7 +10,7 @@ export const generateArticleMetadata = postData => {
     category,
     tags,
     body,
-    url
+    url,
   } = postData;
 
   const orgMetaData = undefined;
@@ -35,7 +35,7 @@ export const generateArticleMetadata = postData => {
     mainEntityOfPage: "True",
     keywords: tags,
     articleSection: category,
-    articleBody: body
+    articleBody: body,
   };
 };
 
@@ -53,7 +53,7 @@ const RichSearchResultTags = ({ seoData, postData }) => {
     ? [
         <script key="rich-search" type="application/ld+json">
           {JSON.stringify(jsonLdData)}
-        </script>
+        </script>,
       ]
     : [];
 };

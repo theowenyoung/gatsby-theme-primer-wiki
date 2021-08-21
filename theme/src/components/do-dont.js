@@ -1,23 +1,23 @@
-import {Box, StyledOcticon, Text} from '@primer/components'
-import {CheckCircleFillIcon, XCircleFillIcon} from '@primer/octicons-react'
-import React from 'react'
+import { Box, StyledOcticon, Text } from "@primer/components";
+import { CheckCircleFillIcon, XCircleFillIcon } from "@primer/octicons-react";
+import React from "react";
 
-export function DoDontContainer({stacked, children}) {
+export function DoDontContainer({ stacked, children }) {
   return (
     <Box
       display="grid"
-      gridTemplateColumns={['1fr', null, stacked ? '1fr' : '1fr 1fr']}
+      gridTemplateColumns={["1fr", null, stacked ? "1fr" : "1fr 1fr"]}
       gridGap={4}
       mb={4}
     >
       {children}
     </Box>
-  )
+  );
 }
 
 DoDontContainer.defaultProps = {
   stacked: false,
-}
+};
 
 export function Do(props) {
   return (
@@ -27,7 +27,7 @@ export function Do(props) {
       icon={CheckCircleFillIcon}
       iconBg="green.5"
     />
-  )
+  );
 }
 
 export function Dont(props) {
@@ -38,10 +38,10 @@ export function Dont(props) {
       icon={XCircleFillIcon}
       iconBg="red.5"
     />
-  )
+  );
 }
 
-function DoDontBase({children, title, icon: Icon, iconBg}) {
+function DoDontBase({ children, title, icon: Icon, iconBg }) {
   return (
     <Box display="flex" flexDirection="column">
       <Box
@@ -59,10 +59,10 @@ function DoDontBase({children, title, icon: Icon, iconBg}) {
       <Box
         display="flex"
         flexDirection="column"
-        sx={{'& *:last-child': {mb: 0}, img: {maxWidth: '100%'}}}
+        sx={{ "& *:last-child": { mb: 0 }, img: { maxWidth: "100%" } }}
       >
         {children}
       </Box>
     </Box>
-  )
+  );
 }

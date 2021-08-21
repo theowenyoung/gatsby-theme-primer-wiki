@@ -1,11 +1,11 @@
-import React from 'react'
-import Reference from './reference'
-import {Box, Heading, StyledOcticon} from '@primer/components'
-import {LinkIcon} from '@primer/octicons-react'
+import React from "react";
+import Reference from "./reference";
+import { Box, Heading, StyledOcticon } from "@primer/components";
+import { LinkIcon } from "@primer/octicons-react";
 
-const ReferencesBlock = ({references}) => {
+const ReferencesBlock = ({ references }) => {
   if (!references.length) {
-    return null
+    return null;
   }
 
   return (
@@ -15,8 +15,8 @@ const ReferencesBlock = ({references}) => {
           mr={2}
           size={16}
           sx={{
-            top: '-3px',
-            position: 'relative',
+            top: "-3px",
+            position: "relative",
           }}
           icon={LinkIcon}
           color="text.placeholder"
@@ -24,12 +24,12 @@ const ReferencesBlock = ({references}) => {
         LINKS TO THIS PAGE
       </Heading>
       <div>
-        {references.map(ref => (
+        {references.map((ref) => (
           <Reference node={ref} key={ref.fields.slug} />
         ))}
       </div>
     </Box>
-  )
-}
+  );
+};
 
-export default ReferencesBlock
+export default ReferencesBlock;

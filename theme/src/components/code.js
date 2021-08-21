@@ -1,17 +1,17 @@
-import {Box, Text} from '@primer/components'
-import Highlight, {defaultProps} from 'prism-react-renderer'
-import Prism from '../prism'
-import githubTheme from '../github'
-import React from 'react'
-import ClipboardCopy from './clipboard-copy'
-import LiveCode from './live-code'
+import { Box, Text } from "@primer/components";
+import Highlight, { defaultProps } from "prism-react-renderer";
+import Prism from "../prism";
+import githubTheme from "../github";
+import React from "react";
+import ClipboardCopy from "./clipboard-copy";
+import LiveCode from "./live-code";
 
-function Code({className, children, live, noinline}) {
-  const language = className ? className.replace(/language-/, '') : ''
-  const code = children.trim()
+function Code({ className, children, live, noinline }) {
+  const language = className ? className.replace(/language-/, "") : "";
+  const code = children.trim();
 
   if (live) {
-    return <LiveCode code={code} language={language} noinline={noinline} />
+    return <LiveCode code={code} language={language} noinline={noinline} />;
   }
 
   return (
@@ -20,9 +20,9 @@ function Code({className, children, live, noinline}) {
       sx={{
         // Make <pre> adjust to the width of the container
         // https://stackoverflow.com/a/14406386
-        display: 'table',
-        tableLayout: 'fixed',
-        width: '100%',
+        display: "table",
+        tableLayout: "fixed",
+        width: "100%",
       }}
     >
       <Box position="absolute" top={0} right={0} p={2}>
@@ -35,7 +35,7 @@ function Code({className, children, live, noinline}) {
         language={language}
         theme={githubTheme}
       >
-        {({className, style, tokens, getLineProps, getTokenProps}) => (
+        {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <Box
             as="pre"
             className={className}
@@ -43,17 +43,17 @@ function Code({className, children, live, noinline}) {
             mb={3}
             p={3}
             border={0}
-            style={{...style, overflow: 'auto'}}
-            sx={{borderRadius: 2}}
+            style={{ ...style, overflow: "auto" }}
+            sx={{ borderRadius: 2 }}
           >
             {tokens.map((line, i) => (
-              <div key={i} {...getLineProps({line, key: i})}>
+              <div key={i} {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
                   <Text
                     key={key}
                     fontFamily="mono"
                     fontSize={1}
-                    {...getTokenProps({token, key})}
+                    {...getTokenProps({ token, key })}
                   />
                 ))}
               </div>
@@ -62,7 +62,7 @@ function Code({className, children, live, noinline}) {
         )}
       </Highlight>
     </Box>
-  )
+  );
 }
 
-export default Code
+export default Code;

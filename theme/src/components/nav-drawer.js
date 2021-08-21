@@ -22,11 +22,11 @@ export function useNavDrawerState(breakpoint) {
     if (window.innerWidth >= breakpoint) {
       setOpen(false);
     }
-  }, [setOpen]);
+  }, [setOpen, breakpoint]);
 
-  const debouncedOnResize = React.useCallback(debounce(onResize, 250), [
-    onResize
-  ]);
+  const debouncedOnResize = React.useMemo(() => {
+    return debounce(onResize, 250);
+  }, [onResize]);
 
   React.useEffect(() => {
     if (isOpen) {
@@ -177,7 +177,7 @@ function PrimerNavItems({ items }) {
                     </Box>
                   </summary>
                   <Box display="flex" flexDirection="column" mt={2}>
-                    {item.children.map(child => (
+                    {item.children.map((child) => (
                       <Link
                         key={child.title}
                         href={child.url}

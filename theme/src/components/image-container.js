@@ -1,7 +1,7 @@
-import {Box} from '@primer/components'
-import React from 'react'
+import { Box } from "@primer/components";
+import React from "react";
 
-function ImageContainer({children}) {
+function ImageContainer({ children }) {
   return (
     <Box
       borderWidth="1px"
@@ -14,12 +14,12 @@ function ImageContainer({children}) {
       <Box
         display="flex"
         justifyContent="center"
-        sx={{img: {maxWidth: '100%'}}}
+        sx={{ img: { maxWidth: "100%" } }}
       >
         {children}
       </Box>
     </Box>
-  )
+  );
 }
 
-export default ImageContainer
+export default ImageContainer;

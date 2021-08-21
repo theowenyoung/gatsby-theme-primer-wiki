@@ -1,8 +1,6 @@
 import removeMd from "remove-markdown";
-import urlJoin from "url-join";
-
 // Generate postData from a allMdx edge
-export const generatePostData = post => {
+export const generatePostData = (post) => {
   const {
     coverImageUrl,
     coverImageAlt,
@@ -14,7 +12,7 @@ export const generatePostData = post => {
     tags,
     rawBody,
     excerpt,
-    slug
+    slug,
   } = post;
 
   if (!rawBody)
@@ -35,7 +33,7 @@ export const generatePostData = post => {
     category: category || "None",
     tags: tags || [],
     body,
-    url: post.url
+    url: post.url,
   };
 };
 
@@ -63,6 +61,6 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
     imageUrl,
     imageAlt,
     url,
-    description
+    description,
   };
 };

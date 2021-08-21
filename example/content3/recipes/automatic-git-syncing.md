@@ -11,7 +11,7 @@ You can also easily manipulate the git history to reduce clutter.
 
 Click on the extension link above to see how to use it.
 
-__For Foam specific needs, you can add a comment here by following the [[contribution-guide]]__
+**For Foam specific needs, you can add a comment here by following the [[contribution-guide]]**
 
 ## Feedback and issues
 

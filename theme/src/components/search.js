@@ -29,19 +29,19 @@ function Search() {
     <Downshift
       id="downshift-search"
       inputValue={query}
-      onInputValueChange={inputValue => setQuery(inputValue)}
+      onInputValueChange={(inputValue) => setQuery(inputValue)}
       // We don't need Downshift to keep track of a selected item because as
       // soon as an item is selected we navigate to a new page.
       // Let's avoid any unexpected states related to the selected item
       // by setting it to always be `null`.
       selectedItem={null}
-      onSelect={item => {
+      onSelect={(item) => {
         if (item) {
           navigate(item.path);
           setQuery("");
         }
       }}
-      itemToString={item => (item ? item.title : "")}
+      itemToString={(item) => (item ? item.title : "")}
       stateReducer={stateReducer}
     >
       {({
@@ -50,14 +50,15 @@ function Search() {
         getMenuProps,
         getRootProps,
         isOpen,
-        highlightedIndex
+        highlightedIndex,
       }) => (
         <Box position="relative" {...getRootProps({ position: "relative" })}>
           <DarkTextInput
             {...getInputProps({
-              placeholder: `Search ${siteMetadata.shortName ||
-                siteMetadata.title}`,
-              width: 240
+              placeholder: `Search ${
+                siteMetadata.shortName || siteMetadata.title
+              }`,
+              width: 240,
             })}
           />
           {isOpen ? (
@@ -66,7 +67,7 @@ function Search() {
                 position: "absolute",
                 left: 0,
                 right: 0,
-                pt: 2
+                pt: 2,
               })}
             >
               <Box

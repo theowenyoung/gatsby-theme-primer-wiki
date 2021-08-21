@@ -1,9 +1,9 @@
-import {Box} from '@primer/components'
-import {AnimatePresence, motion} from 'framer-motion'
-import React from 'react'
-import {FocusOn} from 'react-focus-on'
+import { Box } from "@primer/components";
+import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
+import { FocusOn } from "react-focus-on";
 
-function Drawer({isOpen, onDismiss, children}) {
+function Drawer({ isOpen, onDismiss, children }) {
   return (
     <AnimatePresence>
       {isOpen ? (
@@ -11,18 +11,18 @@ function Drawer({isOpen, onDismiss, children}) {
           // These event handlers fix a bug that caused links below the fold
           // to be unclickable in macOS Safari.
           // Reference: https://github.com/theKashey/react-focus-lock/issues/79
-          onMouseDown={event => event.preventDefault()}
-          onClick={event => event.target.focus()}
+          onMouseDown={(event) => event.preventDefault()}
+          onClick={(event) => event.target.focus()}
         >
           <FocusOn returnFocus={true} onEscapeKey={() => onDismiss()}>
             <Box
               position="fixed"
               key="overlay"
               as={motion.div}
-              initial={{opacity: 0}}
-              animate={{opacity: 1}}
-              exit={{opacity: 0}}
-              transition={{type: 'tween'}}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ type: "tween" }}
               top={0}
               right={0}
               bottom={0}
@@ -35,16 +35,16 @@ function Drawer({isOpen, onDismiss, children}) {
               position="fixed"
               key="drawer"
               as={motion.div}
-              initial={{x: '100%'}}
-              animate={{x: 0}}
-              exit={{x: '100%'}}
-              transition={{type: 'tween', duration: 0.2}}
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "tween", duration: 0.2 }}
               width={300}
               top={0}
               right={0}
               bottom={0}
               bg="auto.gray.0"
-              style={{zIndex: 1}}
+              style={{ zIndex: 1 }}
             >
               {children}
             </Box>
@@ -52,7 +52,7 @@ function Drawer({isOpen, onDismiss, children}) {
         </div>
       ) : null}
     </AnimatePresence>
-  )
+  );
 }
 
-export default Drawer
+export default Drawer;

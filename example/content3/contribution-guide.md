@@ -1,8 +1,9 @@
 ---
-tags: 
-   - todo
-   - good-first-task
+tags:
+  - todo
+  - good-first-task
 ---
+
 # Contribution Guide
 
 Foam is open to contributions of any kind, including but not limited to code, documentation, ideas, and feedback.
@@ -48,8 +49,8 @@ You should now be ready to start working!
 Code needs to come with tests.
 We use the following convention in Foam:
 
-- *.test.ts are unit tests
-- *.spec.ts are integration tests
+- \*.test.ts are unit tests
+- \*.spec.ts are integration tests
 
 Also, note that tests in `foam-core` live in the `test` directory.
 Tests in `foam-vscode` live alongside the code in `src`.

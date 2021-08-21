@@ -1,13 +1,13 @@
-import React from 'react'
-import SkipLink from './skip-link'
+import React from "react";
+import SkipLink from "./skip-link";
 
-function wrapPageElement({element}) {
+function wrapPageElement({ element }) {
   return (
     <>
       <SkipLink />
       {element}
     </>
-  )
+  );
 }
 
-export default wrapPageElement
+export default wrapPageElement;

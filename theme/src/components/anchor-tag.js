@@ -16,7 +16,7 @@ const AnchorTag = ({
 }) => {
   // same as in gatsby-transformer-markdown-references/src/compute-inbounds.ts#getRef
   const ref = references.find(
-    x =>
+    (x) =>
       withPrefix(x.fields.slug) === withPrefix(href) || x.fields.title === title
   );
 
@@ -27,7 +27,7 @@ const AnchorTag = ({
     const nestedComponents = {
       a(props) {
         return <AnchorTag {...props} references={references} withoutPopup />;
-      }
+      },
     };
     const frontmatterTitle = ref.frontmatter.title;
     popupContent = (
@@ -58,15 +58,15 @@ const AnchorTag = ({
         sx={{
           ":before": {
             content: "'[['",
-            opacity: "0.5"
+            opacity: "0.5",
           },
           ":after": {
             content: "']]'",
-            opacity: "0.5"
+            opacity: "0.5",
           },
           ":hover": {
-            textDecoration: "none"
-          }
+            textDecoration: "none",
+          },
         }}
         as={GatsbyLink}
         to={withPrefix(href)}

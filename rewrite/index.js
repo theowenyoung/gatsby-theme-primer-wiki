@@ -1,36 +1,34 @@
-const visit = require('unist-util-visit')
-const anymatch = require('anymatch')
-const transformerUrl = require('@theowenyoung/transformer-markdown-url')
-module.exports = ({markdownAST, markdownNode, getNode}, pluginOptions) => {
+const visit = require("unist-util-visit");
+const anymatch = require("anymatch");
+const transformerUrl = require("@theowenyoung/transformer-markdown-url");
+module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
   /** @type {PluginOptions} */
   const defaults = {
-    extensions: ['.md', '.mdx', '.markdown'],
+    extensions: [".md", ".mdx", ".markdown"],
     fileIgnore: [],
     fileParentIgnore: [],
     pathIgnore: [],
-  }
-  const {fileIgnore, extensions, fileParentIgnore, pathIgnore} = Object.assign(
-    defaults,
-    pluginOptions,
-  )
+  };
+  const { fileIgnore, extensions, fileParentIgnore, pathIgnore } =
+    Object.assign(defaults, pluginOptions);
   // console.log('markdownNode', markdownNode)
-  const parentNode = getNode(markdownNode.parent)
-  const relativePath = parentNode.relativePath
-  const isIgnore = anymatch(fileIgnore, relativePath)
-  let slug = ''
+  const parentNode = getNode(markdownNode.parent);
+  const relativePath = parentNode.relativePath;
+  const isIgnore = anymatch(fileIgnore, relativePath);
+  let slug = "";
   if (markdownNode && markdownNode.fields && markdownNode.fields.slug) {
-    slug = markdownNode.fields.slug
+    slug = markdownNode.fields.slug;
   }
 
-  let shouldRewrite = !isIgnore && slug
+  let shouldRewrite = !isIgnore && slug;
   if (!shouldRewrite) {
-    return markdownNode
+    return markdownNode;
   }
 
-  const shouldRewriteToParent = !anymatch(fileParentIgnore, relativePath)
+  const shouldRewriteToParent = !anymatch(fileParentIgnore, relativePath);
 
   /** @type {{(node: {url: string}) => void}} */
-  const visitor = node => {
+  const visitor = (node) => {
     // console.log('node.url', node.url)
 
     node.url = transformerUrl(node.url, {
@@ -38,11 +36,11 @@ module.exports = ({markdownAST, markdownNode, getNode}, pluginOptions) => {
       extensions,
       addParent: shouldRewriteToParent,
       pathIgnore,
-    })
+    });
     // console.log('node final', node.url)
-  }
-  visit(markdownAST, 'link', visitor)
-  visit(markdownAST, 'definition', node => {
+  };
+  visit(markdownAST, "link", visitor);
+  visit(markdownAST, "definition", (node) => {
     // console.log('node.url', node.url)
 
     node.url = transformerUrl(node.url, {
@@ -50,8 +48,8 @@ module.exports = ({markdownAST, markdownNode, getNode}, pluginOptions) => {
       extensions,
       addParent: shouldRewriteToParent,
       pathIgnore,
-    })
+    });
     // console.log('node final', node.url)
-  })
-  return markdownAST
-}
+  });
+  return markdownAST;
+};

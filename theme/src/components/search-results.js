@@ -27,7 +27,7 @@ function SearchResults({ results, getItemProps, highlightedIndex }) {
           py: 2,
           color: highlightedIndex === index ? "white" : "gray.8",
           bg: highlightedIndex === index ? "auto.blue.5" : "transparent",
-          style: { cursor: "pointer" }
+          style: { cursor: "pointer" },
         })}
       >
         <Text
@@ -51,7 +51,7 @@ function getBreadcrumbs(siteTitle, path) {
       // The last title will be displayed separately, so we exclude it
       // from the breadcrumbs to avoid displaying it twice.
       .slice(0, -1)
-      .map(sentenceCase)
+      .map(sentenceCase),
   ];
 }
 

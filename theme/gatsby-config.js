@@ -1,9 +1,8 @@
 const path = require("path");
 const { defaultOptions } = require("./gatsby-util");
-module.exports = themeOptions => {
-  const { mdxOtherwiseConfigured, imageMaxWidth, extensions } = defaultOptions(
-    themeOptions
-  );
+module.exports = (themeOptions) => {
+  const { mdxOtherwiseConfigured, imageMaxWidth, extensions } =
+    defaultOptions(themeOptions);
   return {
     siteMetadata: {
       title: "Doctocat",
@@ -12,15 +11,15 @@ module.exports = themeOptions => {
       logoUrl: "",
       fbAppId: "",
       imageUrl:
-        "https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png"
+        "https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png",
     },
     plugins: [
       {
         resolve: "gatsby-source-filesystem",
         options: {
           name: "content",
-          path: path.resolve("./content")
-        }
+          path: path.resolve("./content"),
+        },
       },
       "@theowenyoung/gatsby-plugin-slug",
       "gatsby-plugin-styled-components",
@@ -41,39 +40,39 @@ module.exports = themeOptions => {
               resolve: "gatsby-remark-wiki-link",
               options: {
                 stripBrackets: false,
-                stripDefinitionExts: extensions
-              }
+                stripDefinitionExts: extensions,
+              },
             },
             {
               resolve: `gatsby-remark-relative-images`,
               options: {
-                include: ["image"]
-              }
+                include: ["image"],
+              },
             },
             {
               resolve: `gatsby-remark-images`,
               options: {
                 maxWidth: imageMaxWidth,
-                showCaptions: ["title", "alt"]
-              }
+                showCaptions: ["title", "alt"],
+              },
             },
             {
               resolve: `gatsby-remark-copy-linked-files`,
               options: {
                 ignoreFileExtensions: extensions
-                  .map(item => item.slice(1))
-                  .concat([`png`, `jpg`, `jpeg`, `bmp`, `tiff`])
-              }
+                  .map((item) => item.slice(1))
+                  .concat([`png`, `jpg`, `jpeg`, `bmp`, `tiff`]),
+              },
             },
 
             {
               resolve: `gatsby-remark-autolink-headers`,
               options: {
-                icon: false
-              }
-            }
-          ]
-        }
+                icon: false,
+              },
+            },
+          ],
+        },
       },
       `@theowenyoung/gatsby-transformer-references`,
       {
@@ -81,9 +80,9 @@ module.exports = themeOptions => {
         options: {
           icon: themeOptions.icon
             ? path.resolve(themeOptions.icon)
-            : require.resolve("./src/images/favicon.png")
-        }
-      }
-    ]
+            : require.resolve("./src/images/favicon.png"),
+        },
+      },
+    ],
   };
 };

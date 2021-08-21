@@ -1,17 +1,17 @@
-import {Box, Link} from '@primer/components'
-import React from 'react'
-import {useScrollSpy} from '../hooks/use-scrollspy'
+import { Box, Link } from "@primer/components";
+import React from "react";
+import { useScrollSpy } from "../hooks/use-scrollspy";
 
-function TableOfContents({items, depth}) {
+function TableOfContents({ items, depth }) {
   const activeId = useScrollSpy(
-    items.map(({url}) => `[id="${url.slice(1)}"]`),
+    items.map(({ url }) => `[id="${url.slice(1)}"]`),
     {
-      rootMargin: '0% 0% -24% 0%',
-    },
-  )
+      rootMargin: "0% 0% -24% 0%",
+    }
+  );
   return (
-    <Box as="ul" m={0} p={0} css={{listStyle: 'none'}}>
-      {items.map(item => (
+    <Box as="ul" m={0} p={0} css={{ listStyle: "none" }}>
+      {items.map((item) => (
         <Box as="li" key={item.url} pl={depth > 0 ? 3 : 0}>
           {item.title ? (
             <Link
@@ -21,10 +21,10 @@ function TableOfContents({items, depth}) {
               fontSize={[2, null, 1]}
               color="auto.gray.6"
               sx={{
-                fontWeight: item.url === `#${activeId}` ? 'bold' : 'medium',
+                fontWeight: item.url === `#${activeId}` ? "bold" : "medium",
               }}
               aria-current={
-                item.url === `#${activeId}` ? 'location' : undefined
+                item.url === `#${activeId}` ? "location" : undefined
               }
             >
               {item.title}
@@ -36,11 +36,11 @@ function TableOfContents({items, depth}) {
         </Box>
       ))}
     </Box>
-  )
+  );
 }
 
 TableOfContents.defaultProps = {
   depth: 0,
-}
+};
 
-export default TableOfContents
+export default TableOfContents;

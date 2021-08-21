@@ -1,5 +1,5 @@
 const getMdTitle = require("get-md-title");
-const defaultOptions = pluginOptions => {
+const defaultOptions = (pluginOptions) => {
   const options = Object.assign(
     {
       extensions: [`.mdx`, ".md", ".markdown"],
@@ -9,16 +9,16 @@ const defaultOptions = pluginOptions => {
       editUrl: "", // 'https://github.com/facebook/docusaurus/edit/main/website/',
       editUrlText: "Edit this page",
       shouldShowLastUpdated: true,
-      lastUpdatedTransformer: isoString => {
+      lastUpdatedTransformer: (isoString) => {
         const dateObj = new Date(isoString);
         const date = dateObj.toLocaleString("en-US", {
           day: "numeric",
           month: "numeric",
-          year: "numeric"
+          year: "numeric",
         });
         return date;
       },
-      lastUpdatedText: "Last updated on"
+      lastUpdatedText: "Last updated on",
     },
     pluginOptions
   );

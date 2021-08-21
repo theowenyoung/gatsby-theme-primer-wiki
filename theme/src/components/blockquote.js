@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
+import styled from "styled-components";
+import themeGet from "@styled-system/theme-get";
 
 const Blockquote = styled.blockquote`
-  margin: 0 0 ${themeGet('space.3')};
-  padding: 0 ${themeGet('space.3')};
-  color: ${themeGet('colors.auto.gray.5')};
-  border-left: 0.25em solid ${themeGet('colors.auto.gray.2')};
+  margin: 0 0 ${themeGet("space.3")};
+  padding: 0 ${themeGet("space.3")};
+  color: ${themeGet("colors.auto.gray.5")};
+  border-left: 0.25em solid ${themeGet("colors.auto.gray.2")};
 
   > :first-child {
     margin-top: 0;
@@ -14,6 +14,6 @@ const Blockquote = styled.blockquote`
   > :last-child {
     margin-bottom: 0;
   }
-`
+`;
 
-export default Blockquote
+export default Blockquote;

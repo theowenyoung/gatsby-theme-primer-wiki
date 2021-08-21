@@ -37,7 +37,7 @@ function PageFooter({ editUrl, lastUpdated }) {
 }
 
 PageFooter.defaultProps = {
-  contributors: []
+  contributors: [],
 };
 
 export default PageFooter;

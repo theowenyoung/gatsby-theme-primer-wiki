@@ -17,6 +17,7 @@ It's possible to navigate tags via the Tag Explorer panel.
 In the future it will be possible to explore tags via the graph as well.
 
 ## Styling tags
+
 Inline tags can be styled using custom CSS with the selector `.foam-tag`.
 
 ## An alternative to tags

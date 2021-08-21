@@ -1,8 +1,8 @@
-import { Box, Link, StyledOcticon, Text } from "@primer/components";
+import { Box, Link, StyledOcticon } from "@primer/components";
 import {
   MarkGithubIcon,
   SearchIcon,
-  ThreeBarsIcon
+  ThreeBarsIcon,
 } from "@primer/octicons-react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
@@ -94,7 +94,7 @@ function Header({ isSearchEnabled, location }) {
 }
 
 Header.defaultProps = {
-  isSearchEnabled: true
+  isSearchEnabled: true,
 };
 
 function PrimerNavItems({ items }) {
@@ -105,7 +105,7 @@ function PrimerNavItems({ items }) {
           return (
             <Box ml={4} key={index}>
               <NavDropdown title={item.title}>
-                {item.children.map(child => (
+                {item.children.map((child) => (
                   <NavDropdownItem key={child.title} href={child.url}>
                     {child.title}
                   </NavDropdownItem>

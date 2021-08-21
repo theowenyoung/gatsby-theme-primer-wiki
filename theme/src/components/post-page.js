@@ -17,7 +17,7 @@ const Post = ({ data, pageContext, location }) => {
     body,
     inboundReferences,
     outboundReferences,
-    excerpt
+    excerpt,
   } = post;
 
   const { title, lastUpdatedAt, gitCreatedAt, slug, url } = fields;
@@ -43,9 +43,9 @@ const Post = ({ data, pageContext, location }) => {
     imageUrl: frontmatter.image ? frontmatter.image.publicURL : null,
     imageAlt: imageAlt,
     url,
-    slug
+    slug,
   };
-  const AnchorTag = props => (
+  const AnchorTag = (props) => (
     <components.a {...props} references={outboundReferences} />
   );
   return (
@@ -85,7 +85,7 @@ function getMatchNode(url, items, title) {
   }
 }
 function getCategory(url, allNodes) {
-  let realNodes = allNodes.map(nodeGroup => nodeGroup.items);
+  let realNodes = allNodes.map((nodeGroup) => nodeGroup.items);
   for (let i = 0; i < realNodes.length; i++) {
     const currentGroup = realNodes[i];
     const category = getMatchNode(url, currentGroup);

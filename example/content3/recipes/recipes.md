@@ -1,4 +1,5 @@
 <!-- omit in toc -->
+
 # Recipes
 
 A #recipe is a guide, tip or strategy for getting the most out of your Foam workspace!

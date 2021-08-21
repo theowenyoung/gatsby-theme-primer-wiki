@@ -164,7 +164,7 @@ This would open use the template found at `.foam/templates/new-note.md` to creat
 
 If `.foam/templates/new-note.md` doesn't exist, it behaves the same as `Markdown Notes: New Note`:
 
-* it would ask for a title and create the note in the current directory. It would open a note with the note containing the title.
+- it would ask for a title and create the note in the current directory. It would open a note with the note containing the title.
 
 **Note:** this would use an implicit default template, making use of the `${title}` variable.
 
@@ -172,7 +172,7 @@ If `.foam/templates/new-note.md` doesn't exist, it behaves the same as `Markdown
 
 If `.foam/templates/new-note.md` exists:
 
-* it asks for the note title and creates the note in the current directory
+- it asks for the note title and creates the note in the current directory
 
 **Progress:** At this point, we have a faster way to create new notes from templates.
 
@@ -183,8 +183,8 @@ That way, creating a note by navigating to a missing note uses the default templ
 
 ### Add a metadata section to templates
 
-* The `Foam: New Note` command creates a new note in the current directory. This is a sensible default that makes it quick, but lacks flexibility.
-* The `Foam: Create New Note From Template` asks the user to confirm/customize the filepath. This is more flexible but slower since there are more steps involved.
+- The `Foam: New Note` command creates a new note in the current directory. This is a sensible default that makes it quick, but lacks flexibility.
+- The `Foam: Create New Note From Template` asks the user to confirm/customize the filepath. This is more flexible but slower since there are more steps involved.
 
 Both commands use templates. It would be nice if we could template the filepaths as well as the template contents (See ["Template the filepath in `openDailyNote`"](https://github.com/foambubble/foam/issues/523) for a more in-depth discussion the benefits of filepath templating).
 
@@ -200,19 +200,22 @@ While this syntax probably doesn't work as a solution, for this example I will d
 
 ```markdown
 <!-- The below front-matter block is for foam-specific template settings -->
-<!-- It is removed when the user creates a new note using this template -->
----
+
+## <!-- It is removed when the user creates a new note using this template -->
+
 <!-- The default filepath to use when using this template -->
 <!-- Relative paths are relative to the workspace, absolute paths are absolute -->
 <!-- Note that you can include VSCode snippet variables to template the path -->
-filepath: `journal/${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}_${titleSlug}.md`
+
+## filepath: `journal/${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}_${titleSlug}.md`
+
+## <!-- The actual contents of the template begin after the `---` thematic break immediately below this line-->
+
 ---
 
-<!-- The actual contents of the template begin after the `---` thematic break immediately below this line-->
----
----
 created: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}
 tags: []
+
 ---
 
 # ${title}
@@ -234,16 +237,17 @@ This would be especially useful in the migration of users to the new daily notes
 
 ```markdown
 <!-- The below front-matter block is for foam-specific template settings -->
-<!-- It is removed when the user creates a new note using this template -->
----
+
+## <!-- It is removed when the user creates a new note using this template -->
+
 <!-- The default filepath to use when using this template -->
 <!-- Relative paths are relative to the workspace, absolute paths are absolute -->
 <!-- Note that you can include VSCode snippet variables to template the path -->
-filepath: `${foam.openDailyNote.directory}/${foam.openDailyNote.filenameFormat}.${foam.openDailyNote.fileExtension}`
----
 
-<!-- The actual contents of the template begin after the `---` thematic break immediately below this line-->
----
+## filepath: `${foam.openDailyNote.directory}/${foam.openDailyNote.filenameFormat}.${foam.openDailyNote.fileExtension}`
+
+## <!-- The actual contents of the template begin after the `---` thematic break immediately below this line-->
+
 # ${foam.openDailyNote.titleFormat}
 ```
 
@@ -260,16 +264,17 @@ Example daily note template (again using the example syntax of the foam-specific
 
 ```markdown
 <!-- The below front-matter block is for foam-specific template settings -->
-<!-- It is removed when the user creates a new note using this template -->
----
+
+## <!-- It is removed when the user creates a new note using this template -->
+
 <!-- The default filepath to use when using this template -->
 <!-- Relative paths are relative to the workspace, absolute paths are absolute -->
 <!-- Note that you can include VSCode snippet variables to template the path -->
-filepath: `journal/${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}.md`
----
 
-<!-- The actual contents of the template begin after the `---` thematic break immediately below this line-->
----
+## filepath: `journal/${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}.md`
+
+## <!-- The actual contents of the template begin after the `---` thematic break immediately below this line-->
+
 # ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}
 ```
 
@@ -279,8 +284,8 @@ Since there is no use of the `${title}` variable, opening the daily note behaves
 
 Now that all of the functionality of the `foam.openDailyNote` settings have been obviated, these settings can be removed:
 
-* `foam.openDailyNote.directory`, `foam.openDailyNote.filenameFormat`, and `foam.openDailyNote.fileExtension` can be specified in the `filepath` metadata of the daily note template.
-* `foam.openDailyNote.titleFormat` has been replaced by the ability to fully template the daily note, including the title.
+- `foam.openDailyNote.directory`, `foam.openDailyNote.filenameFormat`, and `foam.openDailyNote.fileExtension` can be specified in the `filepath` metadata of the daily note template.
+- `foam.openDailyNote.titleFormat` has been replaced by the ability to fully template the daily note, including the title.
 
 ## Summary: resulting behaviour
 
@@ -317,8 +322,8 @@ Perhaps users could even define their own (namespaced) template variables, and F
 
 By using `defaultFilepath` instead of `filepath` in the metadata section, you could have more control over the note creation without having to fall back to the full `Create New Note From Template` workflow.
 
-* `filepath` will not ask the user for the file path, simply use the value provided (as described above)
-* `defaultFilepath` will ask the user for the file path, pre-populating the file path using `defaultFilepath`
+- `filepath` will not ask the user for the file path, simply use the value provided (as described above)
+- `defaultFilepath` will ask the user for the file path, pre-populating the file path using `defaultFilepath`
 
 The first allows "one-click" note creation, the second more customization.
 This might not be necessary, or this might not be the right way to solve the problem. We'll see.

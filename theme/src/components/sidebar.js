@@ -9,7 +9,7 @@ function usePersistentScroll(id) {
 
   const handleScroll = React.useCallback(
     // Save scroll position in session storage on every scroll change
-    event => window.sessionStorage.setItem(id, event.target.scrollTop),
+    (event) => window.sessionStorage.setItem(id, event.target.scrollTop),
     [id]
   );
 
@@ -19,12 +19,12 @@ function usePersistentScroll(id) {
     if (scrollPosition && ref.current) {
       ref.current.scrollTop = scrollPosition;
     }
-  }, []);
+  }, [id]);
 
   // Return props to spread onto the scroll container
   return {
     ref,
-    onScroll: handleScroll
+    onScroll: handleScroll,
   };
 }
 

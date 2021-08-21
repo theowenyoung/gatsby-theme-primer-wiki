@@ -1,6 +1,6 @@
 # Summary
 
-## Group1 
+## Group1
 
 - [Getting started](getting-started/readme.mdx)
   - [Gatsby CLI](getting-started/readme.mdx)

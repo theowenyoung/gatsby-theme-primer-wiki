@@ -5,7 +5,7 @@ const addTag = (tagList, property, content) => {
   tagList.push(<meta property={property} content={content} />);
 };
 
-const createArticleTagList = postData => {
+const createArticleTagList = (postData) => {
   const metaTags = [];
 
   addTag(
@@ -26,7 +26,7 @@ const createArticleTagList = postData => {
 
   addTag(metaTags, "article:section", postData.category);
 
-  postData.tags.forEach(tag => {
+  postData.tags.forEach((tag) => {
     addTag(metaTags, "article:tag", tag);
   });
 
@@ -34,15 +34,8 @@ const createArticleTagList = postData => {
 };
 
 const OpenGraphTags = ({ seoData, siteMetadata, postData }) => {
-  const {
-    isArticle,
-    type,
-    title,
-    imageUrl,
-    imageAlt,
-    url,
-    description
-  } = seoData;
+  const { isArticle, type, title, imageUrl, imageAlt, url, description } =
+    seoData;
 
   const siteName = siteMetadata.name;
 
@@ -64,9 +57,9 @@ const OpenGraphTags = ({ seoData, siteMetadata, postData }) => {
   if (isArticle && postData) metaTags.push(...createArticleTagList(postData));
 
   // Add unique keys and return
-  return metaTags.map(tag => ({
+  return metaTags.map((tag) => ({
     ...tag,
-    key: `${tag.props.property}-${tag.props.content}`
+    key: `${tag.props.property}-${tag.props.content}`,
   }));
 };
 

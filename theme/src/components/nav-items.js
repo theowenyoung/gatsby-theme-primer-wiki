@@ -4,12 +4,11 @@ import {
   themeGet,
   Box,
   Heading,
-  Text
 } from "@primer/components";
 import {
   LinkExternalIcon,
   ChevronDownIcon,
-  ChevronUpIcon
+  ChevronUpIcon,
 } from "@primer/octicons-react";
 import { Link as GatsbyLink, graphql, useStaticQuery } from "gatsby";
 
@@ -33,7 +32,7 @@ function getIsActive(location, url, items) {
   return (
     (url && location.pathname.startsWith(url)) ||
     (Array.isArray(items) &&
-      items.find(item => getIsActive(location, item.url, item.items)))
+      items.find((item) => getIsActive(location, item.url, item.items)))
   );
 }
 function SidebarItem({
@@ -44,7 +43,7 @@ function SidebarItem({
   external,
   items,
   depth = 0,
-  sidebarDepth = 1
+  sidebarDepth = 1,
 }) {
   sidebarDepth = 0;
   items = items || [];
@@ -90,7 +89,7 @@ function SidebarItem({
                 ml={2}
                 sx={{
                   top: "2px",
-                  position: "relative"
+                  position: "relative",
                 }}
                 size={14}
                 icon={LinkExternalIcon}
@@ -160,7 +159,7 @@ function NavItems({ items, location }) {
   `);
   return (
     <>
-      {items.map(item => (
+      {items.map((item) => (
         <Box
           key={item.title}
           borderStyle="solid"
@@ -177,7 +176,7 @@ function NavItems({ items, location }) {
                 fontSize="12px"
                 sx={{
                   textTransform: "uppercase",
-                  fontFamily: "Content-font, Roboto, sans-serif;"
+                  fontFamily: "Content-font, Roboto, sans-serif;",
                 }}
                 mb={1}
                 fontWeight="500"

@@ -1,14 +1,12 @@
-"use strict";
-
 var _nonNullable = require("./non-nullable");
 
 function hasChildInArrayExcept(node, array, except, getNode) {
-  return node.children.some(id => {
+  return node.children.some((id) => {
     if (id === except) {
       return false;
     }
 
-    if (array.some(x => x.id === id)) {
+    if (array.some((x) => x.id === id)) {
       return true;
     }
 
@@ -26,31 +24,31 @@ function getInboundReferences(getNode, allNodes) {
   const nodes = allNodes;
   const inboundReferences = {};
   function getRef(item) {
-    return nodes.find(x => {
+    return nodes.find((x) => {
       return x.fields.slug === item;
     });
   }
 
-  nodes.forEach(node => {
+  nodes.forEach((node) => {
     const mapped = node.__outboundReferencesSlugs
       .map(getRef)
       .filter(_nonNullable.nonNullable)
-      .map(x => x.id);
+      .map((x) => x.id);
 
-    mapped.forEach(x => {
+    mapped.forEach((x) => {
       if (!inboundReferences[x]) {
         inboundReferences[x] = [];
       }
       // deduplation
-      if (!inboundReferences[x].map(y => y.id).includes(node.id)) {
+      if (!inboundReferences[x].map((y) => y.id).includes(node.id)) {
         inboundReferences[x].push(node);
       }
     });
   });
 
-  Object.keys(inboundReferences).forEach(nodeId => {
+  Object.keys(inboundReferences).forEach((nodeId) => {
     inboundReferences[nodeId] = inboundReferences[nodeId].filter(
-      node =>
+      (node) =>
         getNode(node.parent) &&
         !hasChildInArrayExcept(
           getNode(node.parent),
@@ -62,7 +60,7 @@ function getInboundReferences(getNode, allNodes) {
   });
   const inboundReferencesId = Object.keys(inboundReferences).reduce(
     (prev, x) => {
-      prev[x] = inboundReferences[x].map(y => y.id);
+      prev[x] = inboundReferences[x].map((y) => y.id);
       return prev;
     },
     {}

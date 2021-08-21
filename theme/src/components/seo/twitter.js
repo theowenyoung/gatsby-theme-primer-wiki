@@ -25,9 +25,9 @@ const TwitterTags = ({ seoData, siteMetadata }) => {
 
   if (siteTwitterName) addTag("twitter:site", siteTwitterName);
 
-  return tagList.map(tag => ({
+  return tagList.map((tag) => ({
     ...tag,
-    key: tag.props.name
+    key: tag.props.name,
   }));
 };
 

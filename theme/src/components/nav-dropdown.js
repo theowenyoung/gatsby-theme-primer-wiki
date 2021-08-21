@@ -1,15 +1,15 @@
-import {Box, StyledOcticon, Text, themeGet} from '@primer/components'
-import {TriangleDownIcon} from '@primer/octicons-react'
-import React from 'react'
-import styled from 'styled-components'
-import Details from './details'
+import { Box, StyledOcticon, Text, themeGet } from "@primer/components";
+import { TriangleDownIcon } from "@primer/octicons-react";
+import React from "react";
+import styled from "styled-components";
+import Details from "./details";
 
-function NavDropdown({title, children}) {
+function NavDropdown({ title, children }) {
   return (
     <Details overlay={true}>
-      {({toggle}) => (
+      {({ toggle }) => (
         <>
-          <summary style={{cursor: 'pointer'}} onClick={toggle}>
+          <summary style={{ cursor: "pointer" }} onClick={toggle}>
             <Text>{title}</Text>
             <StyledOcticon icon={TriangleDownIcon} ml={1} />
           </summary>
@@ -31,20 +31,20 @@ function NavDropdown({title, children}) {
         </>
       )}
     </Details>
-  )
+  );
 }
 
 export const NavDropdownItem = styled.a`
   display: block;
-  padding: ${themeGet('space.2')} ${themeGet('space.3')};
+  padding: ${themeGet("space.2")} ${themeGet("space.3")};
   color: inherit;
   text-decoration: none;
 
   &:hover {
-    color: ${themeGet('colors.auto.white')};
-    background-color: ${themeGet('colors.auto.blue.5')};
+    color: ${themeGet("colors.auto.white")};
+    background-color: ${themeGet("colors.auto.blue.5")};
     text-decoration: none;
   }
-`
+`;
 
-export default NavDropdown
+export default NavDropdown;

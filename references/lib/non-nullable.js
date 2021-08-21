@@ -1,7 +1,5 @@
-'use strict'
-
-exports.nonNullable = nonNullable
+exports.nonNullable = nonNullable;
 
 function nonNullable(value) {
-  return value !== null && value !== undefined
+  return value !== null && value !== undefined;
 }

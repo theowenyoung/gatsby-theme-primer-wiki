@@ -1,38 +1,38 @@
-import {Box} from '@primer/components'
-import {XIcon} from '@primer/octicons-react'
-import Downshift from 'downshift'
-import {AnimatePresence, motion} from 'framer-motion'
-import {navigate} from 'gatsby'
-import React from 'react'
-import {FocusOn} from 'react-focus-on'
-import useSearch from '../use-search'
-import DarkButton from './dark-button'
-import DarkTextInput from './dark-text-input'
-import SearchResults from './search-results'
+import { Box } from "@primer/components";
+import { XIcon } from "@primer/octicons-react";
+import Downshift from "downshift";
+import { AnimatePresence, motion } from "framer-motion";
+import { navigate } from "gatsby";
+import React from "react";
+import { FocusOn } from "react-focus-on";
+import useSearch from "../use-search";
+import DarkButton from "./dark-button";
+import DarkTextInput from "./dark-text-input";
+import SearchResults from "./search-results";
 
 function stateReducer(state, changes) {
   switch (changes.type) {
     case Downshift.stateChangeTypes.changeInput:
       if (!changes.inputValue) {
         // Close the menu if the input is empty.
-        return {...changes, isOpen: false}
+        return { ...changes, isOpen: false };
       }
-      return changes
+      return changes;
     case Downshift.stateChangeTypes.blurInput:
       // Don't let a blur event change the state of `inputValue` or `isOpen`.
-      return {...changes, inputValue: state.inputValue, isOpen: state.isOpen}
+      return { ...changes, inputValue: state.inputValue, isOpen: state.isOpen };
     default:
-      return changes
+      return changes;
   }
 }
 
-function MobileSearch({isOpen, onDismiss}) {
-  const [query, setQuery] = React.useState('')
-  const results = useSearch(query)
+function MobileSearch({ isOpen, onDismiss }) {
+  const [query, setQuery] = React.useState("");
+  const results = useSearch(query);
 
   function handleDismiss() {
-    setQuery('')
-    onDismiss()
+    setQuery("");
+    onDismiss();
   }
 
   return (
@@ -50,9 +50,9 @@ function MobileSearch({isOpen, onDismiss}) {
             <Box
               position="absolute"
               as={motion.div}
-              initial={{opacity: 0}}
-              animate={{opacity: 1}}
-              exit={{opacity: 0}}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               top={0}
               left={0}
               right={0}
@@ -64,15 +64,15 @@ function MobileSearch({isOpen, onDismiss}) {
             <Downshift
               id="downshift-mobile-search"
               inputValue={query}
-              onInputValueChange={inputValue => setQuery(inputValue)}
+              onInputValueChange={(inputValue) => setQuery(inputValue)}
               selectedItem={null}
-              onSelect={item => {
+              onSelect={(item) => {
                 if (item) {
-                  navigate(item.path)
-                  handleDismiss()
+                  navigate(item.path);
+                  handleDismiss();
                 }
               }}
-              itemToString={item => (item ? item.title : '')}
+              itemToString={(item) => (item ? item.title : "")}
               stateReducer={stateReducer}
             >
               {({
@@ -86,8 +86,8 @@ function MobileSearch({isOpen, onDismiss}) {
                 <Box
                   display="flex"
                   {...getRootProps({
-                    flexDirection: 'column',
-                    height: isMenuOpen ? '100%' : 'auto',
+                    flexDirection: "column",
+                    height: isMenuOpen ? "100%" : "auto",
                   })}
                 >
                   <Box
@@ -98,16 +98,16 @@ function MobileSearch({isOpen, onDismiss}) {
                     flex="0 0 auto"
                   >
                     <motion.div
-                      initial={{scaleX: 0.1}}
-                      animate={{scaleX: 1}}
-                      exit={{scaleX: 0.1, transition: {duration: 0.1}}}
-                      transition={{type: 'tween', duration: 0.2}}
-                      style={{width: '100%', originX: '100%'}}
+                      initial={{ scaleX: 0.1 }}
+                      animate={{ scaleX: 1 }}
+                      exit={{ scaleX: 0.1, transition: { duration: 0.1 } }}
+                      transition={{ type: "tween", duration: 0.2 }}
+                      style={{ width: "100%", originX: "100%" }}
                     >
                       <DarkTextInput
                         {...getInputProps({
                           placeholder: `Search`,
-                          width: '100%',
+                          width: "100%",
                         })}
                       />
                     </motion.div>
@@ -123,13 +123,13 @@ function MobileSearch({isOpen, onDismiss}) {
                     <Box
                       display="flex"
                       {...getMenuProps({
-                        bg: 'white',
+                        bg: "white",
                         py: 1,
-                        flexDirection: 'column',
-                        flex: '1 1 auto',
+                        flexDirection: "column",
+                        flex: "1 1 auto",
                         style: {
-                          overflow: 'auto',
-                          WebkitOverflowScrolling: 'touch',
+                          overflow: "auto",
+                          WebkitOverflowScrolling: "touch",
                         },
                       })}
                     >
@@ -147,7 +147,7 @@ function MobileSearch({isOpen, onDismiss}) {
         </FocusOn>
       ) : null}
     </AnimatePresence>
-  )
+  );
 }
 
-export default MobileSearch
+export default MobileSearch;

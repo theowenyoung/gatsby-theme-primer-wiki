@@ -1,7 +1,8 @@
 ---
-tags: 
+tags:
   - architecture
 ---
+
 # Architecture
 
 This document aims to provide a quick overview of the Foam architecture!

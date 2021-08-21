@@ -31,21 +31,19 @@ You can add variables to the global scope of live previews by [shadowing](https:
 
 ```js
 // src/@primer/gatsby-theme-doctocat/live-code-scope.js
-import {Box} from '@primer/components'
+import { Box } from "@primer/components";
 
 export default {
   Box,
-  text: 'Hello, world!',
-}
+  text: "Hello, world!",
+};
 ```
 
 <Note variant="warning">
 
-
 Make sure to place `live-code-scope.js` in the root of your `gatsby-theme-doctocat` folder. Shadowed files must be present in the same location as they exist in the theme repository.
 
 </Note>
-
 
 Every property on the object exported by `live-code-scope.js` will be available as a variable in the code:
 
@@ -72,15 +70,15 @@ You can apply global styles to _all_ live previews on your site by [shadowing](h
 
 ```jsx
 // src/@primer/gatsby-theme-doctocat/components/live-preview-wrapper.js
-import React from 'react'
+import React from "react";
 
-export default function LivePreviewWrapper({children}) {
+export default function LivePreviewWrapper({ children }) {
   return (
     <div>
       <link href="https://unpkg.com/primer/build/build.css" rel="stylesheet" />
       {children}
     </div>
-  )
+  );
 }
 ```
 
@@ -91,7 +89,7 @@ By default, live previews treat your code as a single JSX expression to be rende
 ````markdown
 ```javascript live noinline
 function DemoApp() {
-  const [count, setCount] = React.useState(0)
+  const [count, setCount] = React.useState(0);
 
   return (
     <div>
@@ -99,25 +97,25 @@ function DemoApp() {
       {count}
       <button onClick={() => setCount((n) => n + 1)}>+</button>
     </div>
-  )
+  );
 }
 
-render(<DemoApp />)
+render(<DemoApp />);
 ```
 ````
 
 ```javascript live noinline
 function DemoApp() {
-  const [count, setCount] = React.useState(0)
+  const [count, setCount] = React.useState(0);
 
   return (
-    <div style={{textAlign: 'center'}}>
+    <div style={{ textAlign: "center" }}>
       <button onClick={() => setCount((n) => n - 1)}>-</button>
       {count}
       <button onClick={() => setCount((n) => n + 1)}>+</button>
     </div>
-  )
+  );
 }
 
-render(<DemoApp />)
+render(<DemoApp />);
 ```

@@ -1,27 +1,25 @@
-'use strict'
+var visit = require("unist-util-visit");
 
-var visit = require('unist-util-visit')
-
-module.exports = inlineLinks
+module.exports = inlineLinks;
 
 function inlineLinks() {
-  return transformer
+  return transformer;
 
   function transformer(tree) {
-    visit(tree, onvisit)
+    visit(tree, onvisit);
 
     function onvisit(node, index, parent) {
-      if (node.type === 'link') {
+      if (node.type === "link") {
         if (node.title) {
           node.children = [
             {
-              type: 'text',
+              type: "text",
               value: node.title,
             },
-          ]
+          ];
         }
       }
-      return node
+      return node;
     }
   }
 }

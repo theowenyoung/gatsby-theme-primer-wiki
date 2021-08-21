@@ -1,8 +1,6 @@
-"use strict";
-
 const {
   getReferences,
-  getOutboundReferencesSlugs
+  getOutboundReferencesSlugs,
 } = require("./get-references");
 
 var _options2 = require("./options");
@@ -19,11 +17,10 @@ const onCreateNode = async ({ node, loadNodeContent, getNode }, _options) => {
     const outboundReferences = await getReferences(content, {
       ...options,
       node,
-      getNode
+      getNode,
     });
-    const outboundReferencesSlugs = getOutboundReferencesSlugs(
-      outboundReferences
-    );
+    const outboundReferencesSlugs =
+      getOutboundReferencesSlugs(outboundReferences);
     node.__outboundReferencesSlugs = outboundReferencesSlugs;
   } else {
     return;

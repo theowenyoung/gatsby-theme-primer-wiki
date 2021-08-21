@@ -8,8 +8,8 @@ Note templates are files located in the special `.foam/templates` directory.
 
 Create a template:
 
-* Run the `Foam: Create New Template` command from the command palette
-* OR manually create a regular `.md` file in the `.foam/templates` directory
+- Run the `Foam: Create New Template` command from the command palette
+- OR manually create a regular `.md` file in the `.foam/templates` directory
 
 ![Create new template GIF](../assets/images/create-new-template.gif)
 
@@ -17,14 +17,15 @@ _Theme: Ayu Light_
 
 To create a note from a template:
 
-* Run the `Foam: Create New Note From Template` command and follow the instructions. Don't worry if you've not created a template yet! You'll be prompted to create a new template if none exist.
-* OR run the `Foam: Create New Note` command, which uses the special default template (`.foam/templates/new-note.md`, if it exists)
+- Run the `Foam: Create New Note From Template` command and follow the instructions. Don't worry if you've not created a template yet! You'll be prompted to create a new template if none exist.
+- OR run the `Foam: Create New Note` command, which uses the special default template (`.foam/templates/new-note.md`, if it exists)
 
 ![Create new note from template GIF](../assets/images/create-new-note-from-template.gif)
 
 _Theme: Ayu Light_
 
 ## Special templates
+
 ### Default template
 
 The `.foam/templates/new-note.md` template is special in that it is the template that will be used by the `Foam: Create New Note` command.
@@ -76,7 +77,7 @@ For example, `filepath` can be used to customize `.foam/templates/new-note.md`, 
 # This will create the note in the "journal" subdirectory of the current workspace,
 # regardless of which file is the active file.
 foam_template:
-  filepath: 'journal/$FOAM_TITLE.md'
+  filepath: "journal/$FOAM_TITLE.md"
 ---
 ```
 
@@ -108,7 +109,7 @@ If your template already has a YAML Frontmatter block, you can add the Foam temp
 
 #### Limitations
 
-Foam only supports adding the template metadata to *YAML* Frontmatter blocks. If the existing Frontmatter block uses some other format (e.g. JSON), you will have to add the template metadata to its own YAML Frontmatter block.
+Foam only supports adding the template metadata to _YAML_ Frontmatter blocks. If the existing Frontmatter block uses some other format (e.g. JSON), you will have to add the template metadata to its own YAML Frontmatter block.
 
 Further, the template metadata must be provided as a [YAML block mapping](https://yaml.org/spec/1.2/spec.html#id2798057), with the attributes placed on the lines immediately following the `foam_template` line:
 

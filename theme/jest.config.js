@@ -1,6 +1,6 @@
 module.exports = {
-  testEnvironment: 'jsdom',
+  testEnvironment: "jsdom",
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.js'],
-  setupFilesAfterEnv: ['<rootDir>/setup-tests.js'],
-}
+  collectCoverageFrom: ["src/**/*.js"],
+  setupFilesAfterEnv: ["<rootDir>/setup-tests.js"],
+};

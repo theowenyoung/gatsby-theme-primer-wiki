@@ -1,13 +1,13 @@
-import {TextInput, themeGet} from '@primer/components'
-import styled from 'styled-components'
+import { TextInput, themeGet } from "@primer/components";
+import styled from "styled-components";
 
 const DarkTextInput = styled(TextInput)`
   /* The font-size of inputs should never be less than 16px.
    * Otherwise, iOS browsers will zoom in when the input is focused.
    * TODO: Update font-size of TextInput in @primer/components.
    */
-  font-size: ${themeGet('fontSizes.2')} !important;
-  color: ${themeGet('colors.auto.white')};
+  font-size: ${themeGet("fontSizes.2")} !important;
+  color: ${themeGet("colors.auto.white")};
   background-color: rgba(255, 255, 255, 0.07);
   border: 1px solid transparent;
   box-shadow: none;
@@ -17,5 +17,5 @@ const DarkTextInput = styled(TextInput)`
     outline: none;
     box-shadow: none;
   }
-`
-export default DarkTextInput
+`;
+export default DarkTextInput;

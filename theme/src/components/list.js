@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import themeGet from '@styled-system/theme-get'
+import styled from "styled-components";
+import themeGet from "@styled-system/theme-get";
 
 const List = styled.ul`
   padding-left: 2em;
@@ -15,12 +15,12 @@ const List = styled.ul`
   }
 
   li > p {
-    margin-top: ${themeGet('space.3')};
+    margin-top: ${themeGet("space.3")};
   }
 
   li + li {
-    margin-top: ${themeGet('space.1')};
+    margin-top: ${themeGet("space.1")};
   }
-`
+`;
 
-export default List
+export default List;

@@ -6,7 +6,13 @@
     "release": "changeset publish",
     "build": "npm -w example run build",
     "serve": "npm -w example run serve",
-    "test": "npm -ws run test -- --passWithNoTests"
+    "test": "npm -ws run test -- --passWithNoTests",
+    "lint": "npx prettier --write . && eslint ./ --fix",
+    "check": "npx prettier --check --loglevel debug .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write  --ignore-unknown"
   },
   "workspaces": [
     "transformer-url",
@@ -23,6 +29,12 @@
     "remove-markdown": "^0.3.0"
   },
   "devDependencies": {
-    "jest": "^27.0.6"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
   }
 }

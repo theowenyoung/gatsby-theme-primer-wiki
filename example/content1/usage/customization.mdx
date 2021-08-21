@@ -2,8 +2,8 @@
 title: Customization
 ---
 
-import {BorderBox} from '@primer/components'
-import {Contributors} from 'gatsby-theme-primer-wiki'
+import { BorderBox } from "@primer/components";
+import { Contributors } from "gatsby-theme-primer-wiki";
 
 Here are a few ways you can customize your Doctocat site:
 
@@ -25,15 +25,15 @@ You can customize your site's metadata via the `siteMetadata` object in `gatsby-
 module.exports = {
   siteMetadata: {
     // Used for page titles and SEO
-    title: 'My Site',
+    title: "My Site",
     // Used in the header
-    shortName: 'My Site',
+    shortName: "My Site",
     // Used for SEO
-    description: 'My site description',
+    description: "My site description",
     // Used for social previews
-    imageUrl: 'https://user-images.githubusercontent.com/example-image.png',
+    imageUrl: "https://user-images.githubusercontent.com/example-image.png",
   },
-}
+};
 ```
 
 ## Side navigation
@@ -77,13 +77,13 @@ If your site is located in a subdirectory of a repository, you'll also need to p
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-theme-primer-wiki',
+      resolve: "gatsby-theme-primer-wiki",
       options: {
-        repoRootPath: '..', // defaults to '.'
+        repoRootPath: "..", // defaults to '.'
       },
     },
   ],
-}
+};
 ```
 
 ## Default branch
@@ -95,13 +95,13 @@ If your site uses a branch other than `master` for your default branch, you'll a
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-theme-primer-wiki',
+      resolve: "gatsby-theme-primer-wiki",
       options: {
-        defaultBranch: 'main', // defaults to 'master'
+        defaultBranch: "main", // defaults to 'master'
       },
     },
   ],
-}
+};
 ```
 
 ## Contributors
@@ -112,17 +112,17 @@ If you have the `repository` in `package.json` and `repoRootPath` in `gatsby-con
   <Contributors
     contributors={[
       {
-        login: 'colebemis',
+        login: "colebemis",
         latestCommit: {
-          url: '#',
-          date: '2019-08-15T23:40:19Z',
+          url: "#",
+          date: "2019-08-15T23:40:19Z",
         },
       },
       {
-        login: 'emplums',
+        login: "emplums",
         latestCommit: {
-          url: '#',
-          date: '2019-08-14T00:19:54Z',
+          url: "#",
+          date: "2019-08-14T00:19:54Z",
         },
       },
     ]}
@@ -151,15 +151,15 @@ To use a custom hero component, [shadow](https://www.gatsbyjs.org/blog/2019-04-2
 
 ```jsx
 // src/gatsby-theme-primer-wiki/components/hero.js
-import {Box} from '@primer/components'
-import React from 'react'
+import { Box } from "@primer/components";
+import React from "react";
 
 export default function Hero() {
   return (
     <Box bg="black" p={5}>
       My Custom Hero
     </Box>
-  )
+  );
 }
 ```
 
@@ -172,13 +172,13 @@ If you want to override the default favicon, you can pass a relative path to a c
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-theme-primer-wiki',
+      resolve: "gatsby-theme-primer-wiki",
       options: {
-        icon: './src/images/custom-icon-512.png', // This path is relative to the root of the site.
+        icon: "./src/images/custom-icon-512.png", // This path is relative to the root of the site.
       },
     },
   ],
-}
+};
 ```
 
 Doctocat uses [`gatsby-plugin-manifest`](https://www.gatsbyjs.org/packages/gatsby-plugin-manifest/) to generate a pre-configured set of icons from your image. For best results, if you’re providing an icon for generation, it should be:

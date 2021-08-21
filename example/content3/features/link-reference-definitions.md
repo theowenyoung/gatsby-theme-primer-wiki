@@ -8,17 +8,17 @@ When you use `[[wikilinks]]`, the [foam-vscode](https://github.com/foambubble/fo
 
 The following example:
 
-  ```md
-  - [[wikilinks]]
-  - [[github-pages]]
-  ```
+```md
+- [[wikilinks]]
+- [[github-pages]]
+```
 
 ...generates the following link reference definitions to the bottom of the file:
 
-  ```md
-  [wikilinks]: wikilinks "Wikilinks"
-  [github-pages]: github-pages "GitHub Pages"
-  ```
+```md
+[wikilinks]: wikilinks "Wikilinks"
+[github-pages]: github-pages "GitHub Pages"
+```
 
 You can open the [raw markdown](https://foambubble.github.io/foam/features/link-reference-definitions.md) to see them at the bottom of this file
 
@@ -65,7 +65,7 @@ You can ignore the `_site` directory by adding the following to your `.vscode/se
 
 After changing the setting in your workspace, you can run the [[workspace-janitor]] command to convert all existing definitions.
 
-[[todo]] _Implement a `foam.eclude
+[[todo]] \_Implement a `foam.eclude
 
 ## Future improvements
 

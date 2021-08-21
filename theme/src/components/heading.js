@@ -71,9 +71,9 @@ const StyledH6 = styled(StyledHeading).attrs({ as: "h6" })`
   color: ${themeGet("colors.auto.gray.5")};
 `;
 
-export const H1 = props => <MarkdownHeading as={StyledH1} {...props} />;
-export const H2 = props => <MarkdownHeading as={StyledH2} {...props} />;
-export const H3 = props => <MarkdownHeading as={StyledH3} {...props} />;
-export const H4 = props => <MarkdownHeading as={StyledH4} {...props} />;
-export const H5 = props => <MarkdownHeading as={StyledH5} {...props} />;
-export const H6 = props => <MarkdownHeading as={StyledH6} {...props} />;
+export const H1 = (props) => <MarkdownHeading as={StyledH1} {...props} />;
+export const H2 = (props) => <MarkdownHeading as={StyledH2} {...props} />;
+export const H3 = (props) => <MarkdownHeading as={StyledH3} {...props} />;
+export const H4 = (props) => <MarkdownHeading as={StyledH4} {...props} />;
+export const H5 = (props) => <MarkdownHeading as={StyledH5} {...props} />;
+export const H6 = (props) => <MarkdownHeading as={StyledH6} {...props} />;

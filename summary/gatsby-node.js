@@ -1,7 +1,7 @@
-const isRelativeUrl = require('is-relative-url')
-const path = require('path')
-const defaultOptions = require(`./default-options`)
-const parseSummary = require('./parse')
+const isRelativeUrl = require("is-relative-url");
+const path = require("path");
+const defaultOptions = require(`./default-options`);
+const parseSummary = require("./parse");
 
 /**
  * ============================================================================
@@ -10,7 +10,7 @@ const parseSummary = require('./parse')
  */
 
 // should see message in console when running `gatsby develop` in example-site
-exports.onPreInit = () => console.log('Loaded gatsby-source-summary')
+exports.onPreInit = () => console.log("Loaded gatsby-source-summary");
 
 /**
  * ============================================================================
@@ -18,8 +18,8 @@ exports.onPreInit = () => console.log('Loaded gatsby-source-summary')
  * ============================================================================
  */
 
-exports.createSchemaCustomization = ({actions}) => {
-  const {createTypes} = actions
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
   createTypes(`
   type SummaryItem {
     title: String
@@ -32,44 +32,44 @@ exports.createSchemaCustomization = ({actions}) => {
   type SummaryGroup implements Node @infer {
     title: String
     items: [SummaryItem]
-  }`)
-}
-function unstable_shouldOnCreateNode({node}, pluginOptions) {
-  const options = defaultOptions(pluginOptions)
+  }`);
+};
+function unstable_shouldOnCreateNode({ node }, pluginOptions) {
+  const options = defaultOptions(pluginOptions);
 
-  return _unstable_shouldOnCreateNode({node}, options)
+  return _unstable_shouldOnCreateNode({ node }, options);
 }
 
 // eslint-disable-next-line camelcase
-function _unstable_shouldOnCreateNode({node}, options) {
+function _unstable_shouldOnCreateNode({ node }, options) {
   // options check to stop transformation of the node
   if (options.shouldBlockNodeFromTransformation(node)) {
-    return false
+    return false;
   }
   if (node.internal.type === `File` && options.extensions.includes(node.ext)) {
     if (options.sourceInstanceName) {
       if (!node.sourceInstanceName === options.sourceInstanceName) {
-        return false
+        return false;
       }
     }
     if (options.summaryPath) {
       if (node.relativePath === options.summaryPath) {
-        return true
+        return true;
       } else {
-        return false
+        return false;
       }
     } else {
       if (
-        node.relativeDirectory === '' &&
-        node.name.toLowerCase() === 'summary'
+        node.relativeDirectory === "" &&
+        node.name.toLowerCase() === "summary"
       ) {
-        return true
+        return true;
       } else {
-        return false
+        return false;
       }
     }
   } else {
-    return false
+    return false;
   }
 }
 
@@ -80,74 +80,74 @@ function _unstable_shouldOnCreateNode({node}, options) {
  */
 
 exports.onCreateNode = async (
-  {actions, createContentDigest, loadNodeContent, createNodeId, node},
-  pluginOptions,
+  { actions, createContentDigest, loadNodeContent, createNodeId, node },
+  pluginOptions
 ) => {
-  if (!unstable_shouldOnCreateNode({node}, pluginOptions)) {
-    return
+  if (!unstable_shouldOnCreateNode({ node }, pluginOptions)) {
+    return;
   }
   const helpers = Object.assign({}, actions, {
     createContentDigest,
     createNodeId,
-  })
-  const content = await loadNodeContent(node)
-  let parsedContent
+  });
+  const content = await loadNodeContent(node);
+  let parsedContent;
   try {
-    parsedContent = await parseSummary(content)
+    parsedContent = await parseSummary(content);
   } catch {
     const hint = node.absolutePath
       ? `file ${node.absolutePath}`
-      : `in node ${node.id}`
-    throw new Error(`Unable to parse Summary: ${hint}`)
+      : `in node ${node.id}`;
+    throw new Error(`Unable to parse Summary: ${hint}`);
   }
 
   if (Array.isArray(parsedContent.groups)) {
     parsedContent.groups.forEach((obj, i) => {
       // transform ref to url
       if (Array.isArray(obj.items)) {
-        obj.items = obj.items.map(formatItem)
+        obj.items = obj.items.map(formatItem);
       }
       createNodeFromData(
         obj,
         obj.id
           ? String(obj.id)
           : createNodeId(`${node.id} [${i}] >>> SummaryGroup`),
-        'SummaryGroup',
+        "SummaryGroup",
         helpers,
-        node,
-      )
-    })
+        node
+      );
+    });
   }
-}
+};
 function formatItem(item, pluginOptions) {
-  const options = defaultOptions(pluginOptions)
-  const ref = item.ref
-  let url = ''
-  let external = false
+  const options = defaultOptions(pluginOptions);
+  const ref = item.ref;
+  let url = "";
+  let external = false;
   if (ref) {
-    const ext = path.extname(ref)
-    const basename = path.basename(ref)
-    const name = basename.toLowerCase().slice(0, basename.length - ext.length)
+    const ext = path.extname(ref);
+    const basename = path.basename(ref);
+    const name = basename.toLowerCase().slice(0, basename.length - ext.length);
 
     if (isRelativeUrl(ref) && options.extensions.includes(ext)) {
       // transformer to slug
       const sliceLength =
-        name === 'readme' || name === 'index'
+        name === "readme" || name === "index"
           ? name.length + ext.length
-          : ext.length
+          : ext.length;
 
-      url = ref.slice(0, ref.length - sliceLength)
-      if (!url.startsWith('/')) {
-        url = '/' + url
+      url = ref.slice(0, ref.length - sliceLength);
+      if (!url.startsWith("/")) {
+        url = "/" + url;
       }
-      if (!url.endsWith('/')) {
-        url = url + '/'
+      if (!url.endsWith("/")) {
+        url = url + "/";
       }
     } else {
-      url = ref
+      url = ref;
     }
     if (!isRelativeUrl(ref)) {
-      external = true
+      external = true;
     }
   }
   return {
@@ -156,13 +156,13 @@ function formatItem(item, pluginOptions) {
     url: url,
     external,
     items: item.items
-      ? item.items.map(item => {
-          return formatItem(item)
+      ? item.items.map((item) => {
+          return formatItem(item);
         })
       : [],
-  }
+  };
 }
-exports.unstable_shouldOnCreateNode = unstable_shouldOnCreateNode
+exports.unstable_shouldOnCreateNode = unstable_shouldOnCreateNode;
 // helper function for creating nodes
 const createNodeFromData = (item, id, nodeType, helpers, parent = null) => {
   const nodeMetadata = {
@@ -174,12 +174,12 @@ const createNodeFromData = (item, id, nodeType, helpers, parent = null) => {
       content: JSON.stringify(item),
       contentDigest: helpers.createContentDigest(item),
     },
-  }
+  };
 
-  const node = Object.assign({}, item, nodeMetadata)
-  helpers.createNode(node)
+  const node = Object.assign({}, item, nodeMetadata);
+  helpers.createNode(node);
   if (parent) {
-    helpers.createParentChildLink({parent: parent, child: node})
+    helpers.createParentChildLink({ parent: parent, child: node });
   }
-  return node
-}
+  return node;
+};

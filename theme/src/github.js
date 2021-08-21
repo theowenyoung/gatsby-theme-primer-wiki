@@ -1,4 +1,4 @@
-export default {
+const githubTheme = {
   plain: {
     color: "#393A34",
     backgroundColor: "#f6f8fa",
@@ -72,3 +72,4 @@ export default {
     },
   ],
 };
+export default githubTheme;

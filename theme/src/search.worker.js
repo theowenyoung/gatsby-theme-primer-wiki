@@ -1,7 +1,7 @@
-import Fuse from 'fuse.js'
-import debounce from 'lodash.debounce'
-;(function searchWorker() {
-  let fuse = null
+import Fuse from "fuse.js";
+import debounce from "lodash.debounce";
+(function searchWorker() {
+  let fuse = null;
 
   // [MKT]: I landed on the debouce wait value of 50 based mostly on
   // experimentation. With both `leading` and `trailing` set to `true`, this
@@ -14,23 +14,23 @@ import debounce from 'lodash.debounce'
   // > invoked more than once during the wait timeout.
   const performSearch = debounce(
     function performSearch(query) {
-      const results = fuse.search(query).slice(0, 20)
+      const results = fuse.search(query).slice(0, 20);
 
-      postMessage({results: results, query: query})
+      postMessage({ results: results, query: query });
     },
     50,
-    {leading: true, trailing: true},
-  )
+    { leading: true, trailing: true }
+  );
 
-  onmessage = function({data}) {
+  onmessage = function ({ data }) {
     if (data.list) {
       fuse = new Fuse(data.list, {
         threshold: 0.2,
-        keys: ['title', 'rawBody'],
+        keys: ["title", "rawBody"],
         tokenize: true,
-      })
+      });
     } else if (data.query) {
-      performSearch(data.query)
+      performSearch(data.query);
     }
-  }
-})()
+  };
+})();
