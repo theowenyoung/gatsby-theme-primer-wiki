@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-primer-wiki",
-  "version": null,
+  "version": "1.8.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

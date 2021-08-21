@@ -1,7 +1,7 @@
 {
   "name": "@theowenyoung/gatsby-plugin-slug",
   "description": "generate slug field",
-  "version": null,
+  "version": "0.2.0",
   "license": "MIT",
   "keywords": [
     "gatsby"

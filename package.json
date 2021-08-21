@@ -35,5 +35,5 @@
     "release-it-yarn-workspaces": "^2.0.1"
   },
   "dependencies": {},
-  "version": null
+  "version": "0.1.0"
 }
