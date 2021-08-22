@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm run develop -w example",
     "clean": "npm run clean -w example",
-    "release": "release-it",
+    "release": "standard-version",
     "build": "npm -w example run build",
     "serve": "npm -w example run serve",
     "test": "npm -ws run test -- --passWithNoTests",
@@ -32,9 +32,8 @@
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
-    "release-it": "^14.11.5",
-    "release-it-yarn-workspaces": "^2.0.1"
+    "release-it-yarn-workspaces": "^2.0.1",
+    "standard-version": "^9.3.1"
   },
-  "dependencies": {},
   "version": "1.9.3"
 }
