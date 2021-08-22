@@ -29,6 +29,10 @@ export const generatePostData = (post) => {
     postDescription = excerpt;
     if (!frontmatterTitle && title && postDescription.startsWith(title)) {
       postDescription = postDescription.slice(title.length);
+      if (postDescription && postDescription.startsWith(" ")) {
+        // remove title space
+        postDescription = postDescription.slice(1);
+      }
     }
   }
 
