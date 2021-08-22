@@ -40,5 +40,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/theowenyoung/gatsby-theme-primer-wiki.git"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "next"
+    ]
   }
 }
