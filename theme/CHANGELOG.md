@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.9.5
+
+### Patch Changes
+
+- 31440c2: Fix
+
 ## 1.9.4
 
 ### Patch Changes
