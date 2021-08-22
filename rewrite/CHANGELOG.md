@@ -1,5 +1,13 @@
 # gatsby-remark-rewrite-link-for-trailing-slash
 
+## 1.9.4
+
+### Patch Changes
+
+- 4caecb5: Fix some thing
+- Updated dependencies [4caecb5]
+  - @theowenyoung/transformer-markdown-url@1.9.4
+
 ## 0.1.1
 
 ### Patch Changes

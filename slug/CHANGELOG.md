@@ -1,5 +1,11 @@
 # @theowenyoung/gatsby-plugin-slug
 
+## 1.9.4
+
+### Patch Changes
+
+- 4caecb5: Fix some thing
+
 ## 0.1.1
 
 ### Patch Changes

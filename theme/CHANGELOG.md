@@ -1,5 +1,16 @@
 # gatsby-theme-primer-wiki
 
+## 1.9.4
+
+### Patch Changes
+
+- 4caecb5: Fix some thing
+- Updated dependencies [4caecb5]
+  - @theowenyoung/gatsby-transformer-references@1.9.4
+  - gatsby-remark-rewrite-link-for-trailing-slash@1.9.4
+  - @theowenyoung/gatsby-plugin-slug@1.9.4
+  - gatsby-transformer-summary@1.9.4
+
 ## 1.7.2
 
 ### Patch Changes
