@@ -34,6 +34,7 @@
     "prettier": "^2.3.2",
     "release-it-yarn-workspaces": "^2.0.1",
     "semantic-release": "^17.4.5",
+    "semantic-release-monorepo": "^7.0.5",
     "standard-version": "^9.3.1"
   },
   "version": "0.0.0-development",
@@ -42,6 +43,7 @@
     "url": "https://github.com/theowenyoung/gatsby-theme-primer-wiki.git"
   },
   "release": {
+    "extends": "semantic-release-monorepo",
     "branches": [
       "main",
       "next"
