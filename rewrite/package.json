@@ -1,7 +1,7 @@
 {
   "name": "gatsby-remark-rewrite-link-for-trailing-slash",
   "description": "It can freely rewrite the link URL of Markdown.",
-  "version": "1.9.6",
+  "version": "1.9.7",
   "license": "MIT",
   "keywords": [
     "gatsby"
