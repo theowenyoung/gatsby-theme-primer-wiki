@@ -1,5 +1,11 @@
 # @theowenyoung/gatsby-plugin-slug
 
+## 1.9.5
+
+### Patch Changes
+
+- 8fe4533: Test changeset
+
 ## 1.9.4
 
 ### Patch Changes
