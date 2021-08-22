@@ -1,5 +1,12 @@
 # gatsby-theme-primer-wiki
 
+## 1.9.7
+
+### Patch Changes
+
+- Updated dependencies [02b20ef]
+  - gatsby-remark-rewrite-link-for-trailing-slash@1.9.9
+
 ## 1.9.6
 
 ### Patch Changes
