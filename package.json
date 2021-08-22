@@ -35,5 +35,5 @@
     "release-it-yarn-workspaces": "^2.0.1",
     "standard-version": "^9.3.1"
   },
-  "version": "1.9.3"
+  "version": "1.9.4"
 }
