@@ -9,9 +9,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     fileNode.internal.type === "File"
   ) {
     let value = createFilePath({ node, getNode });
-
     const lowerCaseValue = value.toLowerCase();
-
     if (lowerCaseValue.endsWith("/readme/")) {
       value = value.slice(0, -7);
     }
