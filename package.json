@@ -10,7 +10,8 @@
     "lint": "npx prettier --write . && eslint ./ --fix",
     "check": "npx prettier --check --loglevel debug .",
     "prepare": "husky install",
-    "release": "npx --workspaces semantic-release"
+    "ver": "changeset version",
+    "release": "changeset publish"
   },
   "lint-staged": {
     "**/*": "prettier --write  --ignore-unknown"
