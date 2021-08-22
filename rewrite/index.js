@@ -2,7 +2,6 @@ const visit = require("unist-util-visit");
 const anymatch = require("anymatch");
 const transformerUrl = require("@theowenyoung/transformer-markdown-url");
 module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
-  /** @type {PluginOptions} */
   const defaults = {
     extensions: [".md", ".mdx", ".markdown"],
     fileIgnore: [],
@@ -27,7 +26,6 @@ module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
 
   const shouldRewriteToParent = !anymatch(fileParentIgnore, relativePath);
 
-  /** @type {{(node: {url: string}) => void}} */
   const visitor = (node) => {
     // console.log('node.url', node.url)
 

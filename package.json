@@ -10,6 +10,7 @@
     "lint": "npx prettier --write . && eslint ./ --fix",
     "check": "npx prettier --check --loglevel debug .",
     "prepare": "husky install",
+    "changeset": "changeset",
     "ver": "changeset version",
     "release": "changeset publish"
   },
