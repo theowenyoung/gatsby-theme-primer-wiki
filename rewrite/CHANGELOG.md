@@ -1,5 +1,11 @@
 # gatsby-remark-rewrite-link-for-trailing-slash
 
+## 1.9.6
+
+### Patch Changes
+
+- b276659: Test version
+
 ## 1.9.5
 
 ### Patch Changes
