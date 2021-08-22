@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-primer-wiki",
-  "version": "1.9.7",
+  "version": "1.9.8",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -53,7 +53,7 @@
     "gatsby-remark-double-parenthesis-link": "^0.1.5",
     "gatsby-remark-images": "^5.9.0",
     "gatsby-remark-relative-images": "^2.0.2",
-    "gatsby-remark-rewrite-link-for-trailing-slash": "^1.9.9",
+    "gatsby-remark-rewrite-link-for-trailing-slash": "^1.9.10",
     "gatsby-remark-wiki-link": "^0.3.0",
     "gatsby-transformer-sharp": "^3.12.0",
     "gatsby-transformer-summary": "^1.9.4",
