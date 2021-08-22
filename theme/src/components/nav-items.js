@@ -28,12 +28,15 @@ const NavBox = styled(Box)`
     color: ${themeGet("colors.auto.gray.8")};
   }
 `;
-function getIsActive(location, url, items) {
+function getGroupIsActive(location, url, items) {
   return (
     (url && location.pathname.startsWith(url)) ||
     (Array.isArray(items) &&
-      items.find((item) => getIsActive(location, item.url, item.items)))
+      items.find((item) => getGroupIsActive(location, item.url, item.items)))
   );
+}
+function getIsActive(location, url) {
+  return url && location.pathname === url;
 }
 function SidebarItem({
   location,
@@ -47,16 +50,21 @@ function SidebarItem({
 }) {
   items = items || [];
   const defaultShowItems = depth < sidebarDepth;
-  const isActive = getIsActive(location, url, items);
+  const isGroupActive = getGroupIsActive(location, url, items);
+  const isActive = getIsActive(location, url);
 
   const [isShowItems, setIsShowItems] = React.useState(
-    isActive || defaultShowItems
+    isGroupActive || defaultShowItems
   );
   const isHasItems = items.length > 0;
 
   const handleToggleCollapse = () => {
     setIsShowItems(!isShowItems);
   };
+  let isShowBorderBottom = true;
+  if (depth === 0 && items.length === 0) {
+    isShowBorderBottom = false;
+  }
   return (
     <Box
       display="flex"
@@ -66,7 +74,9 @@ function SidebarItem({
       borderColor="border.primary"
       borderWidth={0}
       borderRadius={0}
-      borderBottomWidth={depth === 0 && !isLast && sidebarDepth > 0 ? 1 : 0}
+      borderBottomWidth={
+        depth === 0 && !isLast && sidebarDepth > 0 && isShowBorderBottom ? 1 : 0
+      }
       py={sidebarDepth === 0 && depth === 0 ? 1 : depth === 0 ? 2 : 0}
     >
       <Box
@@ -110,7 +120,7 @@ function SidebarItem({
         ) : (
           <NavBox
             key={title}
-            color="text.placeholder"
+            color="text.secondary"
             fontWeight={isActive ? "600" : "400"}
             className={isActive ? "active" : undefined}
             display="block"

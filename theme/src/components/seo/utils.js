@@ -13,6 +13,7 @@ export const generatePostData = (post) => {
     rawBody,
     excerpt,
     slug,
+    frontmatterTitle,
   } = post;
 
   if (!rawBody)
@@ -21,11 +22,20 @@ export const generatePostData = (post) => {
     );
 
   const body = removeMd(rawBody);
+  let postDescription = "";
+  if (description) {
+    postDescription = description;
+  } else {
+    postDescription = excerpt;
+    if (!frontmatterTitle && title && postDescription.startsWith(title)) {
+      postDescription = postDescription.slice(title.length);
+    }
+  }
 
   return {
     slug,
     title,
-    description: description || excerpt,
+    description: postDescription,
     coverImageUrl,
     coverImageAlt,
     datePublished,

@@ -15,7 +15,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
-        path: path.resolve("./content"),
+        path: path.resolve("./content5"),
       },
     },
     {
@@ -27,9 +27,15 @@ module.exports = {
     {
       resolve: "gatsby-theme-primer-wiki",
       options: {
-        sidebarDepth: 0,
+        sidebarDepth: 1,
         editUrl:
           "https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example/content/",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "./static/logo.png",
       },
     },
   ],

@@ -21,7 +21,13 @@ const Post = ({ data, pageContext, location }) => {
   } = post;
 
   const { title, lastUpdatedAt, gitCreatedAt, slug, url } = fields;
-  const { date, description, imageAlt, dateModified } = frontmatter;
+  const {
+    title: frontmatterTitle,
+    date,
+    description,
+    imageAlt,
+    dateModified,
+  } = frontmatter;
   const category = getCategory(slug, data.allSummaryGroup.nodes);
   const datePublished = date
     ? new Date(date)
@@ -30,6 +36,7 @@ const Post = ({ data, pageContext, location }) => {
     : null;
   const postSeoData = {
     title,
+    frontmatterTitle,
     description,
     rawBody,
     excerpt,

@@ -5,10 +5,9 @@ module.exports = (themeOptions) => {
     defaultOptions(themeOptions);
   return {
     siteMetadata: {
-      title: "Doctocat",
-      shortName: "Doctocat",
-      description: "A Gatsby theme for creating Primer documentation sites",
-      logoUrl: "",
+      title: "Gatsby Theme Primer Wiki",
+      shortName: "Wiki",
+      description: "A Gatsby theme for creating Primer wiki sites",
       fbAppId: "",
       imageUrl:
         "https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png",
@@ -68,14 +67,6 @@ module.exports = (themeOptions) => {
         },
       },
       `@theowenyoung/gatsby-transformer-references`,
-      {
-        resolve: "gatsby-plugin-manifest",
-        options: {
-          icon: themeOptions.icon
-            ? path.resolve(themeOptions.icon)
-            : require.resolve("./src/images/favicon.png"),
-        },
-      },
     ],
   };
 };

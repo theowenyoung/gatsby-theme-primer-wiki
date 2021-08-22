@@ -1,6 +1,6 @@
 {
   "name": "@theowenyoung/gatsby-transformer-references",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "description": "Transform markdown nodes to add the necesserary references for bi-directional links",
   "main": "index.js",
   "scripts": {},
@@ -27,7 +27,7 @@
     "gatsby": "^2.32.13"
   },
   "dependencies": {
-    "@theowenyoung/transformer-markdown-url": "^1.9.2",
+    "@theowenyoung/transformer-markdown-url": "^1.9.3",
     "anymatch": "^3.1.2",
     "is-relative-url": "^3.0.0",
     "remark": "^13.0.0",

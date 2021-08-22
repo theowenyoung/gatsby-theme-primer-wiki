@@ -10,7 +10,6 @@ function useSite() {
           description
           imageUrl
           fbAppId
-          logoUrl
           siteUrl
         }
         pathPrefix
