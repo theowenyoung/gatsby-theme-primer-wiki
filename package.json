@@ -4,13 +4,13 @@
   "scripts": {
     "start": "npm run develop -w example",
     "clean": "npm run clean -w example",
-    "release": "standard-version",
     "build": "npm -w example run build",
     "serve": "npm -w example run serve",
     "test": "npm -ws run test -- --passWithNoTests",
     "lint": "npx prettier --write . && eslint ./ --fix",
     "check": "npx prettier --check --loglevel debug .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "semantic-release"
   },
   "lint-staged": {
     "**/*": "prettier --write  --ignore-unknown"
@@ -33,7 +33,12 @@
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
     "release-it-yarn-workspaces": "^2.0.1",
+    "semantic-release": "^17.4.5",
     "standard-version": "^9.3.1"
   },
-  "version": "1.9.4"
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theowenyoung/gatsby-theme-primer-wiki.git"
+  }
 }
