@@ -22,9 +22,10 @@ const SEO = ({ post }) => {
     ...RichSearchTags({ seoData, postData }),
     ...TwitterTags({ seoData, siteMetadata }),
   ];
-
+  const titleTemplate = `%s - ${siteMetadata.title}`;
   return (
     <Helmet
+      titleTemplate={titleTemplate}
       htmlAttributes={{
         lang:
           postData && postData.language

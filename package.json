@@ -11,7 +11,7 @@
     "check": "npx prettier --check --loglevel debug .",
     "prepare": "husky install",
     "changeset": "changeset",
-    "ver": "changeset version",
+    "version-packages": "changeset version",
     "release": "changeset publish"
   },
   "lint-staged": {

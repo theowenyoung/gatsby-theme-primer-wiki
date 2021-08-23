@@ -1,4 +1,3 @@
-const path = require("path");
 const { defaultOptions } = require("./gatsby-util");
 module.exports = (themeOptions) => {
   const { mdxOtherwiseConfigured, imageMaxWidth, extensions } =

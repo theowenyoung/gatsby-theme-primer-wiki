@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const GeneralTags = (seoData, siteMetadata) => {
+const GeneralTags = (seoData) => {
   const { title, description, imageUrl } = seoData;
 
   const tags = [<title key="gen-title">{title}</title>];
