@@ -6,5 +6,5 @@
 - [ ] - support mobile instant view button
 - [ ] - support nav items
 - [ ] - support graph view
-- [ ] - release workflow
+- [x] - release workflow
 - [ ] - readme add summary
