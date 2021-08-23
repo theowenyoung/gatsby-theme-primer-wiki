@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.1
+
+### Patch Changes
+
+- [`cb8aebd`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/cb8aebd1544b8ec23f60a79e0980a0d0134b7190) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Add 404 page for theme
+
 ## 1.10.0
 
 ### Minor Changes
