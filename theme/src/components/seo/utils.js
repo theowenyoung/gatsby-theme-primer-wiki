@@ -15,18 +15,16 @@ export const generatePostData = (post) => {
     slug,
     frontmatterTitle,
   } = post;
+  let body = "";
+  if (rawBody) {
+    body = removeMd(rawBody);
+  }
 
-  if (!rawBody)
-    throw Error(
-      "SEO::generatePostData: Post doesn't contain internal content used for Rich Tags. Aborting."
-    );
-
-  const body = removeMd(rawBody);
   let postDescription = "";
   if (description) {
     postDescription = description;
   } else {
-    postDescription = excerpt;
+    postDescription = excerpt || "";
     if (!frontmatterTitle && title && postDescription.startsWith(title)) {
       postDescription = postDescription.slice(title.length);
       if (postDescription && postDescription.startsWith(" ")) {
