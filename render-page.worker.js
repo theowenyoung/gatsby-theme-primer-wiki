@@ -2273,7 +2273,7 @@ __webpack_require__.r(__webpack_exports__);
 // > Note: If `leading` and `trailing` options are `true`, `func` is invoked
 // > on the trailing edge of the timeout only if the debounced function is
 // > invoked more than once during the wait timeout.
-const performSearch=lodash_debounce__WEBPACK_IMPORTED_MODULE_1___default()(function performSearch(query){const results=fuse.search(query).slice(0,20);postMessage({results:results,query:query});},50,{leading:true,trailing:true});onmessage=function({data}){if(data.list){fuse=new fuse_js__WEBPACK_IMPORTED_MODULE_0__.default(data.list,{threshold:0.2,keys:['title','rawBody'],tokenize:true});}else if(data.query){performSearch(data.query);}};})();
+const performSearch=lodash_debounce__WEBPACK_IMPORTED_MODULE_1___default()(function performSearch(query){const results=fuse.search(query).slice(0,20);postMessage({results:results,query:query});},50,{leading:true,trailing:true});onmessage=function({data}){if(data.list){fuse=new fuse_js__WEBPACK_IMPORTED_MODULE_0__.default(data.list,{threshold:0.2,keys:["title","rawBody"],tokenize:true});}else if(data.query){performSearch(data.query);}};})();
 })();
 
 /******/ })()
