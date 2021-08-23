@@ -3,7 +3,7 @@
 
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "theowenyoung/monorepo-example" }
+    { "repo": "theowenyoung/gatsby-theme-primer-wiki" }
   ],
 
   "commit": false,
