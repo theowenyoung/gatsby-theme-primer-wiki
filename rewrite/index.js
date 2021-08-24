@@ -10,7 +10,6 @@ module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
   };
   const { fileIgnore, extensions, fileParentIgnore, pathIgnore } =
     Object.assign(defaults, pluginOptions);
-  // console.log('markdownNode', markdownNode)
   const parentNode = getNode(markdownNode.parent);
   const relativePath = parentNode.relativePath;
   const isIgnore = anymatch(fileIgnore, relativePath);
@@ -26,21 +25,49 @@ module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
 
   const shouldRewriteToParent = !anymatch(fileParentIgnore, relativePath);
 
-  const visitor = (node) => {
-    // console.log('node.url', node.url)
-
-    node.url = transformerUrl(node.url, {
+  const visitor = (node, index, parent) => {
+    const newUrl = transformerUrl(node.url, {
       fileUrl: slug,
       extensions,
       addParent: shouldRewriteToParent,
       pathIgnore,
     });
+    const isReplaced = newUrl !== node.url;
+
+    node.url = newUrl;
+
+    if (isReplaced) {
+      const siblings = parent.children;
+      if (!siblings || !Array.isArray(siblings)) {
+        return;
+      }
+      const previous = siblings[index - 1];
+      const next = siblings[index + 1];
+
+      if (!(previous && next)) {
+        return;
+      }
+
+      const previousValue = previous.value;
+      const nextValue = next.value;
+
+      if (
+        previous.type !== "text" ||
+        previous.value[previousValue.length - 1] !== "[" ||
+        next.type !== "text" ||
+        next.value[0] !== "]"
+      ) {
+        return;
+      }
+
+      previous.value = previousValue.replace(/\[$/, "");
+      next.value = nextValue.replace(/^\]/, "");
+    }
+
     // console.log('node final', node.url)
   };
   visit(markdownAST, "link", visitor);
   visit(markdownAST, "definition", (node) => {
-    // console.log('node.url', node.url)
-
     node.url = transformerUrl(node.url, {
       fileUrl: slug,
       extensions,
