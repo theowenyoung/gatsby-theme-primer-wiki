@@ -1,5 +1,11 @@
 # gatsby-remark-rewrite-link-for-trailing-slash
 
+## 1.9.13
+
+### Patch Changes
+
+- [#4](https://github.com/theowenyoung/gatsby-theme-primer-wiki/pull/4) [`50da3fe`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/50da3fe63356695e2b9247d9186559780be69f9d) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Instant View Button for Mobile
+
 ## 1.9.12
 
 ### Patch Changes
