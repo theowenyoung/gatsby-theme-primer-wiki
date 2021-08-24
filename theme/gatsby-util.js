@@ -4,6 +4,7 @@ const defaultOptions = (pluginOptions) => {
     {
       extensions: [`.mdx`, ".md", ".markdown"],
       mdxOtherwiseConfigured: false,
+      nav: [],
       imageMaxWidth: 561,
       sidebarDepth: 1,
       editUrl: "", // 'https://github.com/facebook/docusaurus/edit/main/website/',

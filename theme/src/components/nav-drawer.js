@@ -1,10 +1,8 @@
 import { Box, Link, Text } from "@primer/components";
 import { ChevronDownIcon, ChevronUpIcon, XIcon } from "@primer/octicons-react";
-import { Link as GatsbyLink } from "gatsby";
 import debounce from "lodash.debounce";
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import primerNavItems from "../primer-nav.yml";
+import { useStaticQuery, graphql, Link as GatsbyLink } from "gatsby";
 import useSiteMetadata from "../use-site";
 import DarkButton from "./dark-button";
 import Details from "./details";
@@ -46,6 +44,16 @@ function NavDrawer({ isOpen, onDismiss, location }) {
   const { siteMetadata } = useSiteMetadata();
   const data = useStaticQuery(graphql`
     {
+      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
+        nav {
+          title
+          url
+          items {
+            title
+            url
+          }
+        }
+      }
       allSummaryGroup {
         nodes {
           title
@@ -75,6 +83,7 @@ function NavDrawer({ isOpen, onDismiss, location }) {
   `);
 
   const navItems = data.allSummaryGroup.nodes;
+  const primerNavItems = data.primerWikiThemeConfig.nav;
   return (
     <Drawer isOpen={isOpen} onDismiss={onDismiss}>
       <Box
@@ -91,28 +100,15 @@ function NavDrawer({ isOpen, onDismiss, location }) {
           color="auto.blue.2"
           bg="auto.gray.9"
         >
-          <Box
-            borderStyle="solid"
-            borderWidth={0}
-            borderRadius={0}
-            borderBottomWidth={1}
-            borderColor="auto.gray.7"
-          >
+          <Box>
             <Box
               display="flex"
               py={3}
               pl={4}
               pr={3}
               alignItems="center"
-              justifyContent="space-between"
+              justifyContent="flex-end"
             >
-              <Link
-                href="https://primer.style"
-                fontFamily="mono"
-                color="inherit"
-              >
-                Primer
-              </Link>
               <DarkButton aria-label="Close" onClick={onDismiss}>
                 <XIcon />
               </DarkButton>
@@ -161,7 +157,7 @@ function PrimerNavItems({ items }) {
         borderColor="auto.gray.7"
         p={4}
       >
-        {item.children ? (
+        {item.items ? (
           <Details key={index}>
             {({ open, toggle }) => {
               return (
@@ -177,7 +173,7 @@ function PrimerNavItems({ items }) {
                     </Box>
                   </summary>
                   <Box display="flex" flexDirection="column" mt={2}>
-                    {item.children.map((child) => (
+                    {item.items.map((child) => (
                       <Link
                         key={child.title}
                         href={child.url}

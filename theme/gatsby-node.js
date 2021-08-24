@@ -7,11 +7,18 @@ exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
   createTypes(`
+    type NavItem {
+      title: String
+      url: String
+      external: Boolean
+      items: [NavItem]
+    }
     type PrimerWikiThemeConfig implements Node {
       sidebarDepth: Int,
       editUrlText: String,
       shouldShowLastUpdated: Boolean,
-      lastUpdatedText: String
+      lastUpdatedText: String,
+      nav: [NavItem!]
     }
  
   `);
@@ -19,13 +26,19 @@ exports.createSchemaCustomization = ({ actions }) => {
 exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
   const { createNode } = actions;
   const options = defaultOptions(pluginOptions);
-  const { sidebarDepth, editUrlText, shouldShowLastUpdated, lastUpdatedText } =
-    options;
+  const {
+    sidebarDepth,
+    editUrlText,
+    shouldShowLastUpdated,
+    lastUpdatedText,
+    nav,
+  } = options;
   const themeConfig = {
     sidebarDepth,
     editUrlText,
     shouldShowLastUpdated,
     lastUpdatedText,
+    nav,
   };
 
   createNode({

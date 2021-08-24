@@ -4,10 +4,9 @@ import {
   SearchIcon,
   ThreeBarsIcon,
 } from "@primer/octicons-react";
-import { Link as GatsbyLink } from "gatsby";
+import { useStaticQuery, graphql, Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { ThemeContext } from "styled-components";
-import primerNavItems from "../primer-nav.yml";
 import useSiteMetadata from "../use-site";
 import DarkButton from "./dark-button";
 import MobileSearch from "./mobile-search";
@@ -24,6 +23,22 @@ function Header({ isSearchEnabled, location }) {
   );
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const { siteMetadata } = useSiteMetadata();
+  const data = useStaticQuery(graphql`
+    {
+      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
+        nav {
+          title
+          url
+          items {
+            title
+            url
+          }
+        }
+      }
+    }
+  `);
+  const primerNavItems = data.primerWikiThemeConfig.nav;
+
   return (
     <Box top={0} zIndex={1} position="sticky">
       <Box
@@ -101,11 +116,11 @@ function PrimerNavItems({ items }) {
   return (
     <Box display="flex" alignItems="center" color="auto.blue.2">
       {items.map((item, index) => {
-        if (item.children) {
+        if (item.items) {
           return (
             <Box ml={4} key={index}>
               <NavDropdown title={item.title}>
-                {item.children.map((child) => (
+                {item.items.map((child) => (
                   <NavDropdownItem key={child.title} href={child.url}>
                     {child.title}
                   </NavDropdownItem>

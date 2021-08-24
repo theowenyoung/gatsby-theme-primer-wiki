@@ -25,15 +25,10 @@ module.exports = (themeOptions) => {
         resolve: `gatsby-plugin-mdx`,
         options: {
           extensions: extensions,
+          remarkPlugins: [require("remark-inline-links")],
           gatsbyRemarkPlugins: [
             "gatsby-remark-rewrite-link-for-trailing-slash",
-            {
-              resolve: "gatsby-remark-wiki-link",
-              options: {
-                stripBrackets: false,
-                stripDefinitionExts: extensions,
-              },
-            },
+
             {
               resolve: `gatsby-remark-relative-images`,
               options: {

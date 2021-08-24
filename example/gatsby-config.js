@@ -28,6 +28,12 @@ module.exports = {
       resolve: "gatsby-theme-primer-wiki",
       options: {
         sidebarDepth: 1,
+        nav: [
+          {
+            title: "Github",
+            url: "https://github.com/theowenyoung/gatsby-theme-primer-wiki",
+          },
+        ],
         editUrl:
           "https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example/content/",
       },

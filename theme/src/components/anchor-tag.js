@@ -3,8 +3,10 @@ import { withPrefix, Link as GatsbyLink } from "gatsby";
 import Tippy from "@tippyjs/react";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { Link, Box, Heading } from "@primer/components";
+import { Link, Box, Heading, Button } from "@primer/components";
 import isRelativeUrl from "is-relative-url";
+import { ZapIcon } from "@primer/octicons-react";
+
 // import './anchor-tag.css'
 const AnchorTag = ({
   title,
@@ -19,9 +21,17 @@ const AnchorTag = ({
     (x) =>
       withPrefix(x.fields.slug) === withPrefix(href) || x.fields.title === title
   );
-
+  let instance = null;
+  const onCreate = (theInstance) => {
+    instance = theInstance;
+  };
   let popupContent;
   let child;
+  const show = () => {
+    if (instance) {
+      instance.show();
+    }
+  };
 
   if (ref) {
     const nestedComponents = {
@@ -54,7 +64,8 @@ const AnchorTag = ({
       </Box>
     );
     child = (
-      <Link
+      <Box
+        display="inline"
         sx={{
           ":before": {
             content: "'[['",
@@ -68,12 +79,32 @@ const AnchorTag = ({
             textDecoration: "none",
           },
         }}
-        as={GatsbyLink}
-        to={withPrefix(href)}
-        title={title}
       >
-        {title || restProps.children}
-      </Link>
+        <Link
+          sx={{
+            ":hover": {
+              textDecoration: "none",
+            },
+          }}
+          as={GatsbyLink}
+          to={withPrefix(href)}
+          title={title}
+        >
+          {title || restProps.children}
+        </Link>
+        <Button
+          display={["inline-block", "inline-block", "inline-block", "none"]}
+          bg="transparent"
+          px="1"
+          py="0"
+          pb="1"
+          ml="2"
+          mr="1"
+          onClick={show}
+        >
+          <ZapIcon size="14"></ZapIcon>
+        </Button>
+      </Box>
     );
   } else {
     popupContent = <div className="popover no-max-width">{href}</div>;
@@ -113,7 +144,8 @@ const AnchorTag = ({
       maxWidth="none"
       arrow={false}
       placement="bottom"
-      touch={["hold", 500]}
+      touch={["hold", 5000]}
+      onCreate={onCreate}
     >
       {child}
     </Tippy>
