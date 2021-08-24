@@ -17,7 +17,7 @@
     "gatsby": "^3.12.0",
     "gatsby-plugin-robots-txt": "^1.6.9",
     "gatsby-source-filesystem": "^3.12.0",
-    "gatsby-theme-primer-wiki": "^1.10.2",
+    "gatsby-theme-primer-wiki": "^1.10.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
