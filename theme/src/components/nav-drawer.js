@@ -107,8 +107,11 @@ function NavDrawer({ isOpen, onDismiss, location }) {
               pl={4}
               pr={3}
               alignItems="center"
-              justifyContent="flex-end"
+              justifyContent="justify-content"
             >
+              <Link as={GatsbyLink} to="/" color="inherit" fontFamily="mono">
+                {siteMetadata.title}
+              </Link>
               <DarkButton aria-label="Close" onClick={onDismiss}>
                 <XIcon />
               </DarkButton>
@@ -126,17 +129,6 @@ function NavDrawer({ isOpen, onDismiss, location }) {
             color="auto.gray.7"
             bg="auto.gray.0"
           >
-            <Link
-              as={GatsbyLink}
-              to="/"
-              display="inline-block"
-              color="inherit"
-              fontFamily="mono"
-              mx={4}
-              my={4}
-            >
-              {siteMetadata.title}
-            </Link>
             <NavItems location={location} items={navItems} />
           </Box>
         ) : null}

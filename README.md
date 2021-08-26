@@ -3,7 +3,7 @@
 ## Todos
 
 - [x] - excerpt as seo description
-- [ ] - support mobile instant view button
+- [x] - support mobile instant view button
 - [x] - support nav items
 - [ ] - support graph view
 - [x] - release workflow
