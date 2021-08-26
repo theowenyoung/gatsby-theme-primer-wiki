@@ -3,7 +3,7 @@ import { withPrefix, Link as GatsbyLink } from "gatsby";
 import Tippy from "@tippyjs/react";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { Link, Box, Heading, Button } from "@primer/components";
+import { Link, Box, Heading, Button, Text } from "@primer/components";
 import isRelativeUrl from "is-relative-url";
 import { ZapIcon } from "@primer/octicons-react";
 
@@ -64,8 +64,8 @@ const AnchorTag = ({
       </Box>
     );
     child = (
-      <Box
-        display="inline"
+      <Text
+        data-test="ref-tag"
         sx={{
           ":before": {
             content: "'[['",
@@ -104,7 +104,7 @@ const AnchorTag = ({
         >
           <ZapIcon size="14"></ZapIcon>
         </Button>
-      </Box>
+      </Text>
     );
   } else {
     popupContent = <div className="popover no-max-width">{href}</div>;

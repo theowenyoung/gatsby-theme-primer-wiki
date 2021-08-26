@@ -44,7 +44,11 @@ function Code({ className, children, live, noinline }) {
             p={3}
             border={0}
             style={{ ...style, overflow: "auto" }}
-            sx={{ borderRadius: 2 }}
+            sx={{
+              borderRadius: 2,
+              whiteSpace: "pre-wrap",
+              wordBreak: "break-word",
+            }}
           >
             {tokens.map((line, i) => (
               <div key={i} {...getLineProps({ line, key: i })}>

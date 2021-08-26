@@ -8,7 +8,8 @@ import styled from "styled-components";
 import { HEADER_HEIGHT } from "./header";
 
 const StyledHeading = styled(Heading)`
-  margin-bottom: ${themeGet("space.4")};
+  margin-top: ${themeGet("space.4")};
+  margin-bottom: ${themeGet("space.3")};
   scroll-margin-top: ${HEADER_HEIGHT + 24}px;
 
   & .octicon-link {
@@ -43,6 +44,7 @@ function MarkdownHeading({ children, ...props }) {
 }
 
 const StyledH1 = styled(StyledHeading).attrs({ as: "h1" })`
+  margin-top: 0;
   padding-bottom: ${themeGet("space.1")};
   font-size: ${themeGet("fontSizes.5")};
   border-bottom: 1px solid ${themeGet("colors.auto.gray.2")};

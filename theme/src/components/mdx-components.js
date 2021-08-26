@@ -13,6 +13,7 @@ import Note from "./note";
 import Paragraph from "./paragraph";
 import Table from "./table";
 import AnchorTag from "./anchor-tag";
+
 const components = {
   a: AnchorTag,
   pre: (props) => props.children,

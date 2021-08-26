@@ -3,7 +3,6 @@ import themeGet from "@styled-system/theme-get";
 
 const List = styled.ul`
   padding-left: 2em;
-
   ul,
   ol {
     margin-top: 0;
@@ -11,7 +10,8 @@ const List = styled.ul`
   }
 
   li {
-    word-wrap: break-all;
+    overflow-wrap: break-word;
+    word-break: break-all;
   }
 
   li > p {
