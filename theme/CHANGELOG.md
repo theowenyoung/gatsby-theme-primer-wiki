@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.3
+
+### Patch Changes
+
+- [`7e19dda`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/7e19dda91bc9cc4e3deab089a4a12c23ad9fc879) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix word-break style
+
 ## 1.10.2
 
 ### Patch Changes
