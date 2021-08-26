@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Merge
-        if: (github.event_name === "workflow_dispatch") || (github.head_ref=='changeset-release/main')
+        if: (github.event_name == 'workflow_dispatch') || (github.head_ref=='changeset-release/main')
         uses: KeisukeYamashita/auto-pull-request-merge@v1
         with:
           intervalSeconds: 10
