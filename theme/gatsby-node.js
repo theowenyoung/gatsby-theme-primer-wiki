@@ -2,6 +2,7 @@ const path = require("path");
 const { execSync } = require("child_process");
 const { getTitle, defaultOptions } = require("./gatsby-util");
 const urlJoin = require("url-join");
+const kebabCase = require(`lodash/kebabCase`);
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
@@ -122,6 +123,76 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 exports.createPages = async ({ graphql, actions }, themeOptions) => {
   const postTemplate = path.resolve(__dirname, `./src/templates/post-query.js`);
+  const summaryData = await graphql(`
+    {
+      allSummaryGroup {
+        nodes {
+          title
+          items {
+            title
+            url
+            external
+            items {
+              title
+              url
+              external
+              items {
+                title
+                url
+                external
+                items {
+                  title
+                  url
+                  external
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+  let sidebarItems = summaryData.data.allSummaryGroup.nodes;
+
+  if (sidebarItems.length === 0) {
+    // use tag
+
+    const tagsGroupData = await graphql(`
+      {
+        tagsGroup: allMdx {
+          group(field: frontmatter___tags) {
+            fieldValue
+            nodes {
+              id
+              fields {
+                slug
+                title
+              }
+            }
+          }
+        }
+      }
+    `);
+    const tagsGroups = tagsGroupData.data.tagsGroup.group;
+    sidebarItems = [
+      {
+        title: "Tags",
+        items: tagsGroups.map((item) => {
+          return {
+            title: `#${item.fieldValue}`,
+            // url: `/tags/${kebabCase(item.fieldValue)}`,
+            items: item.nodes.map((child) => {
+              return {
+                title: child.fields.title,
+                url: child.fields.slug,
+              };
+            }),
+          };
+        }),
+      },
+    ];
+  }
+
   const { data } = await graphql(`
     {
       allMdx {
@@ -150,6 +221,7 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         component: postTemplate,
         context: {
           slug: slug,
+          sidebarItems,
         },
       });
     });

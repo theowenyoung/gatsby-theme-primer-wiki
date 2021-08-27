@@ -5,19 +5,27 @@ import PageFooter from "./page-footer";
 import Sidebar from "./sidebar";
 import TableOfContents from "./table-of-contents";
 import "../styles/global.css";
-function Layout({ children, fields, frontmatter, tableOfContents, location }) {
+function Layout({
+  children,
+  fields,
+  frontmatter,
+  tableOfContents,
+  location,
+  pageContext,
+}) {
   let { title } = frontmatter;
   const { lastUpdated, editUrl } = fields;
+  const { sidebarItems } = pageContext;
   return (
     <Box display="flex" flexDirection="column" minHeight="100vh">
-      <Header location={location} />
+      <Header location={location} sidebarItems={sidebarItems} />
       <Box
         display="flex"
         flex="1 1 auto"
         flexDirection="row"
         css={{ zIndex: 0 }}
       >
-        <Sidebar location={location} />
+        <Sidebar location={location} sidebarItems={sidebarItems} />
         <Box
           id="skip-nav"
           display="flex"

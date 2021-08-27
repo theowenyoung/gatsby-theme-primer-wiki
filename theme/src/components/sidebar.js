@@ -28,39 +28,10 @@ function usePersistentScroll(id) {
   };
 }
 
-function Sidebar({ location }) {
+function Sidebar({ location, sidebarItems }) {
   const scrollContainerProps = usePersistentScroll("sidebar");
-  const data = useStaticQuery(graphql`
-    {
-      allSummaryGroup {
-        nodes {
-          title
-          items {
-            title
-            url
-            external
-            items {
-              title
-              url
-              external
-              items {
-                title
-                url
-                external
-                items {
-                  title
-                  url
-                  external
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
 
-  if (data.allSummaryGroup.nodes && data.allSummaryGroup.nodes.length <= 0) {
+  if (!(Array.isArray(sidebarItems) && sidebarItems.length > 0)) {
     return null;
   }
   return (
@@ -84,7 +55,7 @@ function Sidebar({ location }) {
         style={{ overflow: "auto" }}
       >
         <Box display="flex" flexDirection="column">
-          <NavItems location={location} items={data.allSummaryGroup.nodes} />
+          <NavItems location={location} items={sidebarItems} />
         </Box>
       </Box>
     </Box>

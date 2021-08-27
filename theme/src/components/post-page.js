@@ -52,6 +52,7 @@ const Post = ({ data, pageContext, location }) => {
     url,
     slug,
   };
+
   const AnchorTag = (props) => (
     <components.a {...props} references={outboundReferences} />
   );

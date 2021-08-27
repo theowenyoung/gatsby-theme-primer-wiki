@@ -40,7 +40,7 @@ export function useNavDrawerState(breakpoint) {
   return [isOpen, setOpen];
 }
 
-function NavDrawer({ isOpen, onDismiss, location }) {
+function NavDrawer({ isOpen, onDismiss, location, sidebarItems }) {
   const { siteMetadata } = useSiteMetadata();
   const data = useStaticQuery(graphql`
     {
@@ -54,35 +54,10 @@ function NavDrawer({ isOpen, onDismiss, location }) {
           }
         }
       }
-      allSummaryGroup {
-        nodes {
-          title
-          items {
-            title
-            url
-            external
-            items {
-              title
-              url
-              external
-              items {
-                title
-                url
-                external
-                items {
-                  title
-                  url
-                  external
-                }
-              }
-            }
-          }
-        }
-      }
     }
   `);
 
-  const navItems = data.allSummaryGroup.nodes;
+  const navItems = sidebarItems;
   const primerNavItems = data.primerWikiThemeConfig.nav;
   return (
     <Drawer isOpen={isOpen} onDismiss={onDismiss}>

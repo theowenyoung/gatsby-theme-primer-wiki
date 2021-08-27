@@ -1,5 +1,5 @@
 import React from "react";
-import { withPrefix, Link as GatsbyLink } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 import Tippy from "@tippyjs/react";
 import { MDXProvider } from "@mdx-js/react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
@@ -16,11 +16,7 @@ const AnchorTag = ({
   withoutPopup,
   ...restProps
 }) => {
-  // same as in gatsby-transformer-markdown-references/src/compute-inbounds.ts#getRef
-  const ref = references.find(
-    (x) =>
-      withPrefix(x.fields.slug) === withPrefix(href) || x.fields.title === title
-  );
+  const ref = references.find((x) => x.fields.slug === href);
   let instance = null;
   const onCreate = (theInstance) => {
     instance = theInstance;
@@ -87,7 +83,7 @@ const AnchorTag = ({
             },
           }}
           as={GatsbyLink}
-          to={withPrefix(href)}
+          to={href}
           title={title}
         >
           {title || restProps.children}
@@ -110,19 +106,19 @@ const AnchorTag = ({
     popupContent = <div className="popover no-max-width">{href}</div>;
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     const externalLink = !isRelativeUrl(href);
-    child = (
+    child = externalLink ? (
       <Link
         {...restProps}
-        target={externalLink ? "_blank" : null}
+        target="_blank"
         // Add noopener and noreferrer for security reasons
-        rel={externalLink ? "noopener noreferrer" : null}
-        href={
-          !href || (href.indexOf && href.indexOf("#") === 0)
-            ? href
-            : withPrefix(href)
-        }
+        rel="noopener noreferrer"
+        href={href}
         title={title}
       >
+        {title || restProps.children}
+      </Link>
+    ) : (
+      <Link {...restProps} as={GatsbyLink} to={href} title={title}>
         {title || restProps.children}
       </Link>
     );

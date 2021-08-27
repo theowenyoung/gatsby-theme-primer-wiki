@@ -16,7 +16,7 @@ import Search from "./search";
 
 export const HEADER_HEIGHT = 66;
 
-function Header({ isSearchEnabled, location }) {
+function Header({ isSearchEnabled, location, sidebarItems }) {
   const theme = React.useContext(ThemeContext);
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useNavDrawerState(
     theme.breakpoints[2]
@@ -100,6 +100,7 @@ function Header({ isSearchEnabled, location }) {
               location={location}
               isOpen={isNavDrawerOpen}
               onDismiss={() => setIsNavDrawerOpen(false)}
+              sidebarItems={sidebarItems}
             />
           </Box>
         </Box>

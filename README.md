@@ -9,4 +9,4 @@
 - [x] - release workflow
 - [ ] - readme add summary
 - [ ] - pathPrefix test
-- [ ] - qbittorrent with jackett mobile screen overflow
+- [x] - qbittorrent with jackett mobile screen overflow

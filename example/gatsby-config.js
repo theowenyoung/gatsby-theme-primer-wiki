@@ -5,8 +5,10 @@ const siteMetadata = {
   description: "A Gatsby theme for creating Primer wiki sites",
   siteUrl: "https://wiki.demo.owenyoung.com",
 };
+const contentFolder = "content5";
 module.exports = {
   siteMetadata,
+  pathPrefix: "/wiki",
   flags: {
     DEV_SSR: true,
   },
@@ -15,7 +17,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
-        path: path.resolve("./content5"),
+        path: path.resolve(`./${contentFolder}`),
       },
     },
     {
@@ -27,15 +29,14 @@ module.exports = {
     {
       resolve: "gatsby-theme-primer-wiki",
       options: {
-        sidebarDepth: 1,
+        sidebarDepth: 0,
         nav: [
           {
             title: "Github",
             url: "https://github.com/theowenyoung/gatsby-theme-primer-wiki",
           },
         ],
-        editUrl:
-          "https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example/content/",
+        editUrl: `https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example/${contentFolder}/`,
       },
     },
     {
