@@ -1,5 +1,13 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.4
+
+### Patch Changes
+
+- [`a211def`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/a211def4e6f3611454b1c11f20f9d298dbb35d6d) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix word overflow, nav drawer title
+
+* [`3344c25`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/3344c25b76d05b658852a8d17901be7cbd8ce34e) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support tags sidebar
+
 ## 1.10.3
 
 ### Patch Changes
