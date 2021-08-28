@@ -13,7 +13,7 @@ import MobileSearch from "./mobile-search";
 import NavDrawer, { useNavDrawerState } from "./nav-drawer";
 import NavDropdown, { NavDropdownItem } from "./nav-dropdown";
 import Search from "./search";
-import GraphButton from "./graph-button";
+import GraphButton from "./note-graph-button";
 import useThemeConfig from "../use-theme-config";
 export const HEADER_HEIGHT = 66;
 
