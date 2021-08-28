@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.6
+
+### Patch Changes
+
+- [`52e189f`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/52e189f8d1d59458011cb8e488c48d69e41a6196) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix word overflow, add mini reset css
+
 ## 1.10.5
 
 ### Patch Changes
