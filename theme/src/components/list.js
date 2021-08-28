@@ -11,8 +11,6 @@ const List = styled.ul`
   }
 
   li {
-    overflow-wrap: break-word;
-    word-break: break-all;
   }
 
   li > p {

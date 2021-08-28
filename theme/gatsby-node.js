@@ -99,6 +99,9 @@ exports.createResolvers = ({ createResolvers }) => {
       description: {
         type: "String",
       },
+      language: {
+        type: "String",
+      },
       date: {
         type: "Date",
       },

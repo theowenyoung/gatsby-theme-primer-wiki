@@ -16,7 +16,7 @@ function TagsList({ type = "normal", title, url, items, depth = 0 }) {
   return (
     <li>
       <AnchorTag href={url}>{type === "tag" ? `#${title}` : title}</AnchorTag>
-      {Array.isArray(items) ? (
+      {Array.isArray(items) && items.length > 0 ? (
         <components.ul>
           {items.map((subItem, index) => (
             <TagsList key={subItem.title} depth={depth + 1} {...subItem} />
@@ -58,6 +58,7 @@ const Post = ({ data, pageContext, location }) => {
     imageAlt,
     dateModified,
     tags,
+    language,
   } = frontmatter;
   const category = tags && tags[0];
   const datePublished = date
@@ -83,6 +84,7 @@ const Post = ({ data, pageContext, location }) => {
     url,
     slug,
     tags: tags || [],
+    language,
   };
   const AnchorTag = (props) => (
     <components.a {...props} references={outboundReferences} />

@@ -7,7 +7,7 @@ tags:
   - Templates
 ---
 
-# Caddy File Server Browser with URL Scheme
+# Caddy File Server URL Scheme Test Title Long
 
 [Template](https://gist.github.com/theowenyoung/e09cb6e2c59f247fdc3f4e6fe4401481)
 

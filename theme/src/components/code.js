@@ -46,8 +46,6 @@ function Code({ className, children, live, noinline }) {
             style={{ ...style, overflow: "auto" }}
             sx={{
               borderRadius: 2,
-              whiteSpace: "pre-wrap",
-              wordBreak: "break-word",
             }}
           >
             {tokens.map((line, i) => (

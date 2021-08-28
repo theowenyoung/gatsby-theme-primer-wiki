@@ -7,7 +7,6 @@ const InlineCode = styled.code`
   font-size: 85%;
   background-color: rgba(27, 31, 35, 0.05); // Copied from github.com
   border-radius: ${themeGet("radii.1")};
-  word-break: break-word;
 `;
 
 export default InlineCode;

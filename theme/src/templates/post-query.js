@@ -27,6 +27,7 @@ export const query = graphql`
         tags
         date
         dateModified
+        language
         image {
           publicURL
           childImageSharp {
