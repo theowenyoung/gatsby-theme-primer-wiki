@@ -2,12 +2,13 @@ import { Box, Link, Text } from "@primer/components";
 import { ChevronDownIcon, ChevronUpIcon, XIcon } from "@primer/octicons-react";
 import debounce from "lodash.debounce";
 import React from "react";
-import { useStaticQuery, graphql, Link as GatsbyLink } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 import useSiteMetadata from "../use-site";
 import DarkButton from "./dark-button";
 import Details from "./details";
 import Drawer from "./drawer";
 import NavItems from "./nav-items";
+import useThemeConfig from "../use-theme-config";
 
 export function useNavDrawerState(breakpoint) {
   // Handle string values from themes with units at the end
@@ -42,23 +43,9 @@ export function useNavDrawerState(breakpoint) {
 
 function NavDrawer({ isOpen, onDismiss, location, sidebarItems }) {
   const { siteMetadata } = useSiteMetadata();
-  const data = useStaticQuery(graphql`
-    {
-      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-        nav {
-          title
-          url
-          items {
-            title
-            url
-          }
-        }
-      }
-    }
-  `);
-
+  const primerWikiThemeConfig = useThemeConfig();
   const navItems = sidebarItems;
-  const primerNavItems = data.primerWikiThemeConfig.nav;
+  const primerNavItems = primerWikiThemeConfig.nav;
   return (
     <Drawer isOpen={isOpen} onDismiss={onDismiss}>
       <Box

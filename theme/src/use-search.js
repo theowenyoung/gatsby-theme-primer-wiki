@@ -33,7 +33,7 @@ function useSearch(query) {
     return data.tagsGroup.group
       .map((item) => {
         return {
-          path: `/tags/${kebabCase(item.fieldValue)}`,
+          path: `/tags/${kebabCase(item.fieldValue)}/`,
           title: `#${item.fieldValue}`,
         };
       })

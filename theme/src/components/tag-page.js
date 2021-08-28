@@ -1,13 +1,12 @@
 import React from "react";
 import Layout from "./layout";
-import components from "./mdx-components";
 import SEO from "./seo";
-import { Box, Text } from "@primer/components";
+import { Box } from "@primer/components";
 import urlJoin from "url-join";
+import TagPosts from "./tag-posts";
 const Tag = ({ data, pageContext, location }) => {
   const pathPrefix = data.site.pathPrefix || "";
   const slug = pageContext.slug;
-  const themeConfig = data.primerWikiThemeConfig;
   const fullPath = urlJoin(pathPrefix || "/", slug);
   const siteUrl = data.site.siteMetadata.siteUrl;
   const fullUrl = urlJoin(siteUrl, fullPath);
@@ -45,32 +44,15 @@ const Tag = ({ data, pageContext, location }) => {
     slug: slug,
     tags: [tag],
   };
-  const AnchorTag = (props) => <components.a {...props} references={posts} />;
   return (
     <Layout pageContext={pageContext} location={location}>
       <SEO post={postSeoData}></SEO>
       <Box p={[4, 5, 6, 7]}>
-        <components.h2># {tag}</components.h2>
-        <Box>
-          <components.ul>
-            {posts &&
-              posts.map((post) => {
-                return (
-                  <li key={post.fields.slug}>
-                    <AnchorTag href={post.fields.slug}>
-                      {post.fields.title}
-                    </AnchorTag>
-                    {themeConfig.shouldShowLastUpdated && (
-                      <Text color="text.placeholder" fontSize={1}>
-                        &nbsp; - {themeConfig.lastUpdatedText}&nbsp;
-                        {post.fields.lastUpdated}
-                      </Text>
-                    )}
-                  </li>
-                );
-              })}
-          </components.ul>
-        </Box>
+        <TagPosts
+          nodes={data.allMdx.nodes}
+          tag={tag}
+          shouldShowInstantView
+        ></TagPosts>
       </Box>
     </Layout>
   );

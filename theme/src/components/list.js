@@ -18,7 +18,7 @@ const List = styled.ul`
   }
 
   li + li {
-    margin-top: ${themeGet("space.1")};
+    margin-top: ${themeGet("space.2")};
   }
 `;
 

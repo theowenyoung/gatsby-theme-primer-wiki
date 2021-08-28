@@ -10,10 +10,11 @@ import {
   ChevronDownIcon,
   ChevronUpIcon,
 } from "@primer/octicons-react";
-import { Link as GatsbyLink, graphql, useStaticQuery } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 
 import React from "react";
 import styled from "styled-components";
+import useThemeConfig from "../use-theme-config";
 
 const NavLink = styled(Link)`
   &.active {
@@ -171,13 +172,7 @@ function SidebarItem({
 }
 
 function NavItems({ items, location }) {
-  const data = useStaticQuery(graphql`
-    {
-      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-        sidebarDepth
-      }
-    }
-  `);
+  const primerWikiThemeConfig = useThemeConfig();
   return (
     <>
       {items.map((item) => (
@@ -208,7 +203,7 @@ function NavItems({ items, location }) {
             {Array.isArray(item.items)
               ? item.items.map((child, index) => (
                   <SidebarItem
-                    sidebarDepth={data.primerWikiThemeConfig.sidebarDepth}
+                    sidebarDepth={primerWikiThemeConfig.sidebarDepth}
                     location={location}
                     isLast={item.items.length - 1 === index}
                     key={child.title}

@@ -9,13 +9,15 @@ import { Box, Heading, Text } from "@primer/components";
 import { HEADER_HEIGHT } from "./header";
 import PageFooter from "./page-footer";
 import TableOfContents from "./table-of-contents";
-import AnchorTag from "./anchor-tag";
-
+import TagsBlock from "./tags-block";
+import useThemeConfig from "../use-theme-config";
 function TagsList({ type = "normal", title, url, items, depth = 0 }) {
   items = items || [];
   return (
     <li>
-      <AnchorTag href={url}>{type === "tag" ? `#${title}` : title}</AnchorTag>
+      <components.a href={url}>
+        {type === "tag" ? `#${title}` : title}
+      </components.a>
       {Array.isArray(items) && items.length > 0 ? (
         <components.ul>
           {items.map((subItem, index) => (
@@ -28,7 +30,9 @@ function TagsList({ type = "normal", title, url, items, depth = 0 }) {
 }
 const Post = ({ data, pageContext, location }) => {
   const post = data.mdx;
-  const primerWikiThemeConfig = data.primerWikiThemeConfig;
+  const tagsOutbound = data.tagsOutbound;
+
+  const primerWikiThemeConfig = useThemeConfig();
   const sidebarItems = pageContext.sidebarItems;
   const {
     tableOfContents,
@@ -186,6 +190,7 @@ const Post = ({ data, pageContext, location }) => {
               );
             })}
           <ReferencesBlock references={inboundReferences} />
+          <TagsBlock tags={tags} nodes={tagsOutbound.nodes} />
           <PageFooter editUrl={editUrl} lastUpdated={lastUpdated} />
         </Box>
       </Box>

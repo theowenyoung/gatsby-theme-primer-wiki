@@ -4,7 +4,7 @@ import {
   SearchIcon,
   ThreeBarsIcon,
 } from "@primer/octicons-react";
-import { useStaticQuery, graphql, Link as GatsbyLink } from "gatsby";
+import { Link as GatsbyLink } from "gatsby";
 import React from "react";
 import { ThemeContext } from "styled-components";
 import useSiteMetadata from "../use-site";
@@ -13,31 +13,19 @@ import MobileSearch from "./mobile-search";
 import NavDrawer, { useNavDrawerState } from "./nav-drawer";
 import NavDropdown, { NavDropdownItem } from "./nav-dropdown";
 import Search from "./search";
-
+import GraphButton from "./graph-button";
+import useThemeConfig from "../use-theme-config";
 export const HEADER_HEIGHT = 66;
 
-function Header({ isSearchEnabled, location, sidebarItems }) {
+function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
   const theme = React.useContext(ThemeContext);
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useNavDrawerState(
     theme.breakpoints[2]
   );
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const { siteMetadata } = useSiteMetadata();
-  const data = useStaticQuery(graphql`
-    {
-      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-        nav {
-          title
-          url
-          items {
-            title
-            url
-          }
-        }
-      }
-    }
-  `);
-  const primerNavItems = data.primerWikiThemeConfig.nav;
+  const themeConfig = useThemeConfig();
+  const primerNavItems = themeConfig.nav;
 
   return (
     <Box top={0} zIndex={1} position="sticky">
@@ -72,6 +60,7 @@ function Header({ isSearchEnabled, location, sidebarItems }) {
           <Box display={["none", null, null, "block"]}>
             <PrimerNavItems items={primerNavItems} />
           </Box>
+          <GraphButton tagsGroups={tagsGroups}></GraphButton>
           <Box display={["flex", null, null, "none"]}>
             {isSearchEnabled ? (
               <>

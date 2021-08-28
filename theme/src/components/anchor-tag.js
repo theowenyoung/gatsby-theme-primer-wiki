@@ -35,7 +35,8 @@ const AnchorTag = ({
         return <AnchorTag {...props} references={references} withoutPopup />;
       },
     };
-    const frontmatterTitle = ref.frontmatter.title;
+    const frontmatter = ref.frontmatter || {};
+    const frontmatterTitle = frontmatter.title;
     popupContent = (
       <Box
         width={["100%", "400px"]}
@@ -54,9 +55,13 @@ const AnchorTag = ({
             </Box>
           </Box>
         )}
-        <MDXProvider components={nestedComponents}>
-          <MDXRenderer>{ref.body}</MDXRenderer>
-        </MDXProvider>
+        {ref.component ? (
+          ref.component
+        ) : (
+          <MDXProvider components={nestedComponents}>
+            <MDXRenderer>{ref.body}</MDXRenderer>
+          </MDXProvider>
+        )}
       </Box>
     );
     child = (
@@ -79,6 +84,7 @@ const AnchorTag = ({
             textDecoration: "none",
           },
         }}
+        {...restProps}
       >
         <Text
           sx={{

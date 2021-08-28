@@ -1,13 +1,15 @@
 ---
-tags: 
-	- Makefile
+tags:
+  - Makefile
   - Templates
   - Workflows
 ---
 
 # Makefile Templates
 
-```Makefile
+## Sample
+
+```bash
 .PHONY: start reload stop
 start:
 	systemctl start caddy

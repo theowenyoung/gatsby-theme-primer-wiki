@@ -4,10 +4,7 @@ import PostPage from "../components/post-page";
 export default PostPage;
 
 export const query = graphql`
-  query PostQuery($slug: String!) {
-    primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-      shouldShowSidebarListOnIndex
-    }
+  query PostQuery($slug: String!, $tags: [String!]!) {
     mdx(fields: { slug: { eq: $slug } }) {
       id
       tableOfContents(maxDepth: 2)
@@ -60,6 +57,21 @@ export const query = graphql`
             slug
             title
           }
+        }
+      }
+    }
+    tagsOutbound: allMdx(filter: { frontmatter: { tags: { in: $tags } } }) {
+      nodes {
+        frontmatter {
+          title
+          tags
+        }
+        fields {
+          slug
+          title
+          lastUpdated
+          lastUpdatedAt
+          gitCreatedAt
         }
       }
     }

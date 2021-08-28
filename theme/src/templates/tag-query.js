@@ -11,10 +11,6 @@ export const query = graphql`
         siteUrl
       }
     }
-    primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-      shouldShowLastUpdated
-      lastUpdatedText
-    }
     allMdx(filter: { frontmatter: { tags: { eq: $tag } } }) {
       nodes {
         frontmatter {

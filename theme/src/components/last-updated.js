@@ -1,19 +1,9 @@
 import { Text } from "@primer/components";
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-
-// The `contributors` array is fetched in gatsby-node.js at build-time.
+import useThemeConfig from "../use-theme-config";
 
 function LastUpdated({ lastUpdated }) {
-  const data = useStaticQuery(graphql`
-    {
-      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-        shouldShowLastUpdated
-        lastUpdatedText
-      }
-    }
-  `);
-  const { primerWikiThemeConfig } = data;
+  const primerWikiThemeConfig = useThemeConfig();
   const { lastUpdatedText, shouldShowLastUpdated } = primerWikiThemeConfig;
   if (!shouldShowLastUpdated) {
     return null;

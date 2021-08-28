@@ -1,17 +1,11 @@
 import { StyledOcticon, Link, Box } from "@primer/components";
 import { PencilIcon } from "@primer/octicons-react";
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import LastUpdated from "./last-updated";
+import useThemeConfig from "../use-theme-config";
 
 function PageFooter({ editUrl, lastUpdated }) {
-  const data = useStaticQuery(graphql`
-    {
-      primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
-        editUrlText
-      }
-    }
-  `);
+  const data = useThemeConfig();
 
   return editUrl || lastUpdated ? (
     <Box
@@ -27,7 +21,7 @@ function PageFooter({ editUrl, lastUpdated }) {
         {editUrl ? (
           <Link mb="1" href={editUrl}>
             <StyledOcticon icon={PencilIcon} mr={2} />
-            {data.primerWikiThemeConfig.editUrlText}
+            {data.editUrlText}
           </Link>
         ) : null}
         {lastUpdated && <LastUpdated lastUpdated={lastUpdated}></LastUpdated>}

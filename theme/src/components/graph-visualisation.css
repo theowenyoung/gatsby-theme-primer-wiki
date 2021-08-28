@@ -1,0 +1,71 @@
+.overlay {
+  z-index: 98;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--shadow);
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  z-index: 99;
+  position: fixed;
+  border-radius: 8px;
+  background-color: var(--main-bg);
+  box-shadow: -5px -5px 15px -3px var(--shadow),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.modal-close,
+.modal-scale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  border: 0;
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.modal-close svg,
+.modal-scale svg {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-close path,
+.modal-scale path {
+  fill: currentColor;
+}
+
+.modal-scale {
+  right: 30px;
+}
+
+.modal-minimized .modal-scale svg,
+.modal-minimized .modal-close svg {
+  width: 15px;
+  height: 15px;
+}
+
+.modal-minimized .modal-scale {
+  right: 25px;
+}
+
+.modal-body {
+  height: 100%;
+  width: 100%;
+}
+
+.modal-body .node,
+.modal-body .text {
+  cursor: pointer;
+}

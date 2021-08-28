@@ -1,8 +1,7 @@
 import React from "react";
-import Reference from "./reference";
 import { Box, Heading, StyledOcticon } from "@primer/components";
 import { LinkIcon } from "@primer/octicons-react";
-
+import components from "./mdx-components";
 const ReferencesBlock = ({ references }) => {
   if (!references.length) {
     return null;
@@ -23,11 +22,15 @@ const ReferencesBlock = ({ references }) => {
         />
         LINKS TO THIS PAGE
       </Heading>
-      <div>
-        {references.map((ref) => (
-          <Reference node={ref} key={ref.fields.slug} />
+      <components.ul style={{ paddingLeft: "16px" }}>
+        {references.map((node) => (
+          <li key={node.fields.slug}>
+            <components.a href={node.fields.slug} references={[node]}>
+              {node.fields.title || node.fields.slug}
+            </components.a>
+          </li>
         ))}
-      </div>
+      </components.ul>
     </Box>
   );
 };

@@ -196,35 +196,26 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         ...item,
         nodes: validPosts,
       };
+    })
+    .map((item) => {
+      return {
+        title: `${item.fieldValue}`,
+        type: "tag",
+        url: `/tags/${kebabCase(item.fieldValue)}/`,
+        items: item.nodes.map((child) => {
+          return {
+            id: child.id,
+            title: child.fields.title,
+            url: child.fields.slug,
+          };
+        }),
+      };
     });
   let sidebarItems = postsData.data.allSummaryGroup.nodes;
 
-  if (sidebarItems.length === 0) {
-    // use tag
-    sidebarItems = [
-      {
-        title: "Tags",
-        items: tagsGroups.map((item) => {
-          return {
-            title: `${item.fieldValue}`,
-            type: "tag",
-            url: `/tags/${kebabCase(item.fieldValue)}`,
-            items: item.nodes.map((child) => {
-              return {
-                title: child.fields.title,
-                url: child.fields.slug,
-              };
-            }),
-          };
-        }),
-      },
-    ];
-  }
-
   tagsGroups.forEach((item) => {
-    let tag = item.fieldValue;
-    const slugTag = kebabCase(tag);
-    const slug = `/tags/${slugTag}`;
+    let tag = item.title;
+    const slug = item.url;
     actions.createPage({
       path: slug,
       component: tagTemplate,
@@ -232,6 +223,7 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         slug: slug,
         tag: tag,
         sidebarItems,
+        tagsGroups,
       },
     });
   });
@@ -245,6 +237,7 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
           tableOfContents(maxDepth: 2)
           frontmatter {
             draft
+            tags
           }
           fields {
             slug
@@ -264,8 +257,10 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         path: slug,
         component: postTemplate,
         context: {
+          tags: node.frontmatter.tags || [],
           slug: slug,
           sidebarItems,
+          tagsGroups,
         },
       });
     });
