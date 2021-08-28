@@ -2,8 +2,8 @@ import removeMd from "remove-markdown";
 // Generate postData from a allMdx edge
 export const generatePostData = (post) => {
   const {
-    coverImageUrl,
-    coverImageAlt,
+    imageUrl,
+    imageAlt,
     datePublished,
     dateModified,
     description,
@@ -38,8 +38,8 @@ export const generatePostData = (post) => {
     slug,
     title,
     description: postDescription,
-    coverImageUrl,
-    coverImageAlt,
+    imageUrl,
+    imageAlt,
     datePublished,
     dateModified,
     category: category || "None",
@@ -54,8 +54,12 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
   const isArticle = !!postData;
   const title = postData ? postData.title : siteMetadata.title;
   const type = postData && postData.slug !== "/" ? "article" : "website";
-  const imageUrl = postData ? postData.coverImageUrl : siteMetadata.imageUrl;
-  const imageAlt = postData ? postData.coverImageAlt : siteMetadata.description;
+  const imageUrl =
+    postData && postData.imageUrl ? postData.imageUrl : siteMetadata.imageUrl;
+  const imageAlt =
+    postData && postData.imageAlt
+      ? postData.imageAlt
+      : siteMetadata.description || siteMetadata.title;
   if (!pathPrefix) {
     pathPrefix = "/";
   }
@@ -65,7 +69,7 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
   const description = postData
     ? postData.description
     : siteMetadata.description;
-
+  const tags = postData.tags || [];
   return {
     isArticle,
     type,
@@ -74,5 +78,6 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
     imageAlt,
     url,
     description,
+    tags,
   };
 };

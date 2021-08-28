@@ -47,6 +47,7 @@ function SidebarItem({
   items,
   depth = 0,
   sidebarDepth = 1,
+  type = "normal",
 }) {
   items = items || [];
   const defaultShowItems = depth < sidebarDepth;
@@ -114,6 +115,17 @@ function SidebarItem({
             to={url}
             className={isActive ? "active" : undefined}
             display="block"
+            sx={
+              type === "tag"
+                ? {
+                    ":before": {
+                      content: "'# '",
+                      color: "text.disabled",
+                      opacity: "0.8",
+                    },
+                  }
+                : {}
+            }
           >
             {title}
           </NavLink>

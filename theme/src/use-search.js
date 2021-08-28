@@ -2,18 +2,26 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import SearchWorker from "worker-loader!./search.worker.js";
-
+import kebabCase from "lodash/kebabCase";
 function useSearch(query) {
   const latestQuery = React.useRef(query);
   const workerRef = React.useRef();
 
   const data = useStaticQuery(graphql`
     {
+      tagsGroup: allMdx {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
       allMdx {
         nodes {
           fields {
             slug
             title
+          }
+          frontmatter {
+            draft
           }
           rawBody
         }
@@ -22,13 +30,26 @@ function useSearch(query) {
   `);
 
   const list = React.useMemo(() => {
-    return data.allMdx.nodes.map((node) => {
-      return {
-        path: node.fields.slug,
-        title: node.fields.title,
-        rawBody: node.rawBody,
-      };
-    });
+    return data.tagsGroup.group
+      .map((item) => {
+        return {
+          path: `/tags/${kebabCase(item.fieldValue)}`,
+          title: `#${item.fieldValue}`,
+        };
+      })
+      .concat(
+        data.allMdx.nodes
+          .filter((node) => {
+            return node.frontmatter.draft !== true;
+          })
+          .map((node) => {
+            return {
+              path: node.fields.slug,
+              title: node.fields.title,
+              rawBody: node.rawBody,
+            };
+          })
+      );
   }, [data]);
 
   const [results, setResults] = React.useState(list);

@@ -10,6 +10,7 @@ const defaultOptions = (pluginOptions) => {
       editUrl: "", // 'https://github.com/facebook/docusaurus/edit/main/website/',
       editUrlText: "Edit this page",
       shouldShowLastUpdated: true,
+      shouldShowSidebarListOnIndex: true,
       lastUpdatedTransformer: (isoString) => {
         const dateObj = new Date(isoString);
         const date = dateObj.toLocaleString("en-US", {

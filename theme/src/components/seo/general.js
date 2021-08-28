@@ -1,17 +1,24 @@
 import * as React from "react";
 
 const GeneralTags = (seoData) => {
-  const { title, description, imageUrl } = seoData;
+  const { title, description, imageUrl, tags } = seoData;
 
-  const tags = [<title key="gen-title">{title}</title>];
+  const htmlTags = [<title key="gen-title">{title}</title>];
 
   if (description)
-    tags.push(<meta name="description" content={description} key="gen-desc" />);
+    htmlTags.push(
+      <meta name="description" content={description} key="gen-desc" />
+    );
 
   if (imageUrl)
-    tags.push(<meta name="image" content={imageUrl} key="gen-image" />);
+    htmlTags.push(<meta name="image" content={imageUrl} key="gen-image" />);
 
-  return tags;
+  if (tags && tags.length > 0) {
+    htmlTags.push(
+      <meta name="keywords" content={tags.join(", ")} key="gen-keywords" />
+    );
+  }
+  return htmlTags;
 };
 
 export default GeneralTags;

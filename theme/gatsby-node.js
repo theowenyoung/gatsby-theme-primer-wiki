@@ -24,6 +24,7 @@ exports.createSchemaCustomization = ({ actions }) => {
  
   `);
 };
+
 exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
   const { createNode } = actions;
   const options = defaultOptions(pluginOptions);
@@ -32,12 +33,14 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     editUrlText,
     shouldShowLastUpdated,
     lastUpdatedText,
+    shouldShowSidebarListOnIndex,
     nav,
   } = options;
   const themeConfig = {
     sidebarDepth,
     editUrlText,
     shouldShowLastUpdated,
+    shouldShowSidebarListOnIndex,
     lastUpdatedText,
     nav,
   };
@@ -123,8 +126,26 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 exports.createPages = async ({ graphql, actions }, themeOptions) => {
   const postTemplate = path.resolve(__dirname, `./src/templates/post-query.js`);
-  const summaryData = await graphql(`
+
+  const tagTemplate = path.resolve(__dirname, `./src/templates/tag-query.js`);
+
+  const postsData = await graphql(`
     {
+      tagsGroup: allMdx {
+        group(field: frontmatter___tags) {
+          fieldValue
+          nodes {
+            id
+            frontmatter {
+              draft
+            }
+            fields {
+              slug
+              title
+            }
+          }
+        }
+      }
       allSummaryGroup {
         nodes {
           title
@@ -152,35 +173,39 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
       }
     }
   `);
-  let sidebarItems = summaryData.data.allSummaryGroup.nodes;
+
+  const tagsGroups = postsData.data.tagsGroup.group
+    .filter((item) => {
+      const validPosts = item.nodes.filter((child) => {
+        return child.frontmatter.draft !== true;
+      });
+      if (validPosts.length > 0) {
+        return true;
+      } else {
+        return false;
+      }
+    })
+    .map((item) => {
+      const validPosts = item.nodes.filter((child) => {
+        return child.frontmatter.draft !== true;
+      });
+      return {
+        ...item,
+        nodes: validPosts,
+      };
+    });
+  let sidebarItems = postsData.data.allSummaryGroup.nodes;
 
   if (sidebarItems.length === 0) {
     // use tag
-
-    const tagsGroupData = await graphql(`
-      {
-        tagsGroup: allMdx {
-          group(field: frontmatter___tags) {
-            fieldValue
-            nodes {
-              id
-              fields {
-                slug
-                title
-              }
-            }
-          }
-        }
-      }
-    `);
-    const tagsGroups = tagsGroupData.data.tagsGroup.group;
     sidebarItems = [
       {
         title: "Tags",
         items: tagsGroups.map((item) => {
           return {
-            title: `#${item.fieldValue}`,
-            // url: `/tags/${kebabCase(item.fieldValue)}`,
+            title: `${item.fieldValue}`,
+            type: "tag",
+            url: `/tags/${kebabCase(item.fieldValue)}`,
             items: item.nodes.map((child) => {
               return {
                 title: child.fields.title,
@@ -192,6 +217,21 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
       },
     ];
   }
+
+  tagsGroups.forEach((item) => {
+    let tag = item.fieldValue;
+    const slugTag = kebabCase(tag);
+    const slug = `/tags/${slugTag}`;
+    actions.createPage({
+      path: slug,
+      component: tagTemplate,
+      context: {
+        slug: slug,
+        tag: tag,
+        sidebarItems,
+      },
+    });
+  });
 
   const { data } = await graphql(`
     {
@@ -216,6 +256,7 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
     .filter((node) => node.frontmatter.draft !== true)
     .forEach((node) => {
       let slug = node.fields.slug;
+
       actions.createPage({
         path: slug,
         component: postTemplate,

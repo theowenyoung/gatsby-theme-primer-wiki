@@ -4,7 +4,7 @@ export const generateArticleMetadata = (postData) => {
   const {
     title,
     description,
-    coverImageUrl,
+    imageUrl,
     datePublished,
     dateModified,
     category,
@@ -16,12 +16,12 @@ export const generateArticleMetadata = (postData) => {
   const orgMetaData = undefined;
   const authorData = undefined;
 
-  if (!coverImageUrl || !description) return null;
+  if (!imageUrl || !description) return null;
 
   return {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    image: coverImageUrl,
+    image: imageUrl,
     url,
     headline: title,
     name: title,

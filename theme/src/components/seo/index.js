@@ -9,7 +9,6 @@ import useSiteMetadata from "../../use-site";
 
 const SEO = ({ post }) => {
   const { siteMetadata, pathPrefix } = useSiteMetadata();
-
   const postData = post ? generatePostData(post) : undefined;
 
   const seoData = generateSeoData(siteMetadata, postData, {
@@ -22,6 +21,7 @@ const SEO = ({ post }) => {
     ...RichSearchTags({ seoData, postData }),
     ...TwitterTags({ seoData, siteMetadata }),
   ];
+
   const titleTemplate = `%s - ${siteMetadata.title}`;
   return (
     <Helmet

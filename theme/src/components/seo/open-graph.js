@@ -7,17 +7,21 @@ const addTag = (tagList, property, content) => {
 
 const createArticleTagList = (postData) => {
   const metaTags = [];
+  if (postData.datePublished) {
+    addTag(
+      metaTags,
+      "article:published_time",
+      postData.datePublished.toISOString()
+    );
+  }
+  if (postData.dateModified) {
+    addTag(
+      metaTags,
+      "article:modified_time",
+      postData.dateModified.toISOString()
+    );
+  }
 
-  addTag(
-    metaTags,
-    "article:published_time",
-    postData.datePublished.toISOString()
-  );
-  addTag(
-    metaTags,
-    "article:modified_time",
-    postData.dateModified.toISOString()
-  );
   addTag(
     metaTags,
     "article:author",

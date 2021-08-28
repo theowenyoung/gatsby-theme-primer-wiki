@@ -7,6 +7,7 @@
 - [x] - support nav items
 - [ ] - support graph view
 - [x] - release workflow
-- [ ] - readme add summary
-- [ ] - pathPrefix test
+- [x] - readme add summary
+- [x] - pathPrefix test
 - [x] - qbittorrent with jackett mobile screen overflow
+- [x] - support tags search

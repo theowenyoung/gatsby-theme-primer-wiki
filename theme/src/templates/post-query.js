@@ -5,30 +5,8 @@ export default PostPage;
 
 export const query = graphql`
   query PostQuery($slug: String!) {
-    allSummaryGroup {
-      nodes {
-        title
-        items {
-          title
-          url
-          external
-          items {
-            title
-            url
-            external
-            items {
-              title
-              url
-              external
-              items {
-                title
-                url
-                external
-              }
-            }
-          }
-        }
-      }
+    primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
+      shouldShowSidebarListOnIndex
     }
     mdx(fields: { slug: { eq: $slug } }) {
       id

@@ -5,10 +5,31 @@ import ReferencesBlock from "./references-block";
 import { MDXProvider } from "@mdx-js/react";
 import components from "./mdx-components";
 import SEO from "./seo";
+import { Box, Heading, Text } from "@primer/components";
+import { HEADER_HEIGHT } from "./header";
+import PageFooter from "./page-footer";
+import TableOfContents from "./table-of-contents";
+import AnchorTag from "./anchor-tag";
 
+function TagsList({ type = "normal", title, url, items, depth = 0 }) {
+  items = items || [];
+  return (
+    <li>
+      <AnchorTag href={url}>{type === "tag" ? `#${title}` : title}</AnchorTag>
+      {Array.isArray(items) ? (
+        <components.ul>
+          {items.map((subItem, index) => (
+            <TagsList key={subItem.title} depth={depth + 1} {...subItem} />
+          ))}
+        </components.ul>
+      ) : null}
+    </li>
+  );
+}
 const Post = ({ data, pageContext, location }) => {
   const post = data.mdx;
-
+  const primerWikiThemeConfig = data.primerWikiThemeConfig;
+  const sidebarItems = pageContext.sidebarItems;
   const {
     tableOfContents,
     frontmatter,
@@ -20,15 +41,25 @@ const Post = ({ data, pageContext, location }) => {
     excerpt,
   } = post;
 
-  const { title, lastUpdatedAt, gitCreatedAt, slug, url } = fields;
+  const {
+    title,
+    lastUpdatedAt,
+    lastUpdated,
+    gitCreatedAt,
+    slug,
+    url,
+    editUrl,
+  } = fields;
+
   const {
     title: frontmatterTitle,
     date,
     description,
     imageAlt,
     dateModified,
+    tags,
   } = frontmatter;
-  const category = getCategory(slug, data.allSummaryGroup.nodes);
+  const category = tags && tags[0];
   const datePublished = date
     ? new Date(date)
     : gitCreatedAt
@@ -51,55 +82,112 @@ const Post = ({ data, pageContext, location }) => {
     imageAlt: imageAlt,
     url,
     slug,
+    tags: tags || [],
   };
-
   const AnchorTag = (props) => (
     <components.a {...props} references={outboundReferences} />
   );
   return (
-    <Layout
-      fields={fields}
-      frontmatter={frontmatter}
-      tableOfContents={tableOfContents}
-      pageContext={pageContext}
-      location={location}
-    >
+    <Layout pageContext={pageContext} location={location}>
       <SEO post={postSeoData}></SEO>
-      <MDXProvider components={{ a: AnchorTag }}>
-        <MDXRenderer>{body}</MDXRenderer>
-      </MDXProvider>
-      <ReferencesBlock references={inboundReferences} />
+
+      <Box
+        id="skip-nav"
+        display="flex"
+        width="100%"
+        p={[4, 5, 6, 7]}
+        sx={{
+          justifyContent: "center",
+          flexDirection: "row-reverse",
+        }}
+      >
+        {tableOfContents.items ? (
+          <Box
+            sx={{ width: 220, flex: "0 0 auto", marginLeft: 6 }}
+            display={["none", null, "block"]}
+            css={{ gridArea: "table-of-contents", overflow: "auto" }}
+            position="sticky"
+            top={HEADER_HEIGHT + 24}
+            maxHeight={`calc(100vh - ${HEADER_HEIGHT}px - 24px)`}
+          >
+            <Text display="inline-block" fontWeight="bold" mb={1}>
+              On this page
+            </Text>
+            <TableOfContents items={tableOfContents.items} />
+          </Box>
+        ) : null}
+        <Box width="100%" maxWidth="960px">
+          {frontmatterTitle && (
+            <Box mb={4}>
+              <Box display="flex" sx={{ alignItems: "center" }}>
+                <Heading as="h1" mr={2}>
+                  {frontmatterTitle}
+                </Heading>
+              </Box>
+            </Box>
+          )}
+
+          {tableOfContents.items ? (
+            <Box
+              borderWidth="1px"
+              borderStyle="solid"
+              borderColor="border.primary"
+              borderRadius={2}
+              display={["block", null, "none"]}
+              mb={5}
+              bg="auto.gray.1"
+            >
+              <Box p={3}>
+                <Box
+                  display="flex"
+                  flexDirection="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Text fontWeight="bold">On this page</Text>
+                </Box>
+              </Box>
+              <Box
+                p={3}
+                sx={{
+                  borderTop: "1px solid",
+                  borderColor: "border.gray",
+                }}
+              >
+                <TableOfContents items={tableOfContents.items} />
+              </Box>
+            </Box>
+          ) : null}
+          <MDXProvider components={{ a: AnchorTag }}>
+            <MDXRenderer>{body}</MDXRenderer>
+          </MDXProvider>
+          {slug === "/" &&
+            primerWikiThemeConfig.shouldShowSidebarListOnIndex &&
+            sidebarItems.length > 0 &&
+            sidebarItems.map((item) => {
+              return (
+                <Box key={item.title}>
+                  <components.h2>{item.title}</components.h2>
+                  {item.items.map((child) => {
+                    return (
+                      <components.ul key={child.title}>
+                        <TagsList
+                          title={child.title}
+                          url={child.url}
+                          type={child.type}
+                          items={child.items}
+                        ></TagsList>
+                      </components.ul>
+                    );
+                  })}
+                </Box>
+              );
+            })}
+          <ReferencesBlock references={inboundReferences} />
+          <PageFooter editUrl={editUrl} lastUpdated={lastUpdated} />
+        </Box>
+      </Box>
     </Layout>
   );
 };
 export default Post;
-function getMatchNode(url, items, title) {
-  if (items && items.length > 0) {
-    let matchedTitle = "";
-    for (let i = 0; i < items.length; i++) {
-      const item = items[i];
-      if (item.url === url) {
-        matchedTitle = title;
-      } else if (item.items) {
-        matchedTitle = getMatchNode(url, item.items, item.title);
-      }
-      if (matchedTitle) {
-        return matchedTitle;
-      }
-    }
-    return null;
-  } else {
-    return null;
-  }
-}
-function getCategory(url, allNodes) {
-  let realNodes = allNodes.map((nodeGroup) => nodeGroup.items);
-  for (let i = 0; i < realNodes.length; i++) {
-    const currentGroup = realNodes[i];
-    const category = getMatchNode(url, currentGroup);
-    if (category) {
-      return category;
-    }
-  }
-  return null;
-}

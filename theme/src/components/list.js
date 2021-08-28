@@ -3,6 +3,7 @@ import themeGet from "@styled-system/theme-get";
 
 const List = styled.ul`
   padding-left: 2em;
+  margin-bottom: ${themeGet("space.1")};
   ul,
   ol {
     margin-top: 0;

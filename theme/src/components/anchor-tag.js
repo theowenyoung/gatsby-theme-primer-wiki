@@ -64,18 +64,32 @@ const AnchorTag = ({
         data-test="ref-tag"
         sx={{
           ":before": {
-            content: "'[['",
+            content: "'['",
+            color: "text.disabled",
+            mr: "1px",
             opacity: "0.5",
           },
           ":after": {
-            content: "']]'",
+            content: "']'",
+            color: "text.disabled",
             opacity: "0.5",
+            ml: "1px",
           },
           ":hover": {
             textDecoration: "none",
           },
         }}
       >
+        <Text
+          sx={{
+            ":before": {
+              mr: "2px",
+              content: "'['",
+              color: "text.disabled",
+              opacity: "0.5",
+            },
+          }}
+        ></Text>
         <Link
           sx={{
             ":hover": {
@@ -88,6 +102,7 @@ const AnchorTag = ({
         >
           {title || restProps.children}
         </Link>
+
         <Button
           display={["inline-block", "inline-block", "inline-block", "none"]}
           bg="transparent"
@@ -100,6 +115,16 @@ const AnchorTag = ({
         >
           <ZapIcon size="14"></ZapIcon>
         </Button>
+        <Text
+          sx={{
+            ":after": {
+              ml: "2px",
+              content: "']'",
+              color: "text.disabled",
+              opacity: "0.5",
+            },
+          }}
+        ></Text>
       </Text>
     );
   } else {
