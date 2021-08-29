@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.7
+
+### Patch Changes
+
+- [`a45d0d6`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/a45d0d65951e39eb7b4b311617517c9ec6175a5e) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support Graph View
+
 ## 1.10.6
 
 ### Patch Changes
