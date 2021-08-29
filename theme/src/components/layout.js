@@ -13,7 +13,7 @@ function Layout({ children, location, pageContext }) {
     <Box display="flex" flexDirection="column" minHeight="100vh">
       <Header
         location={location}
-        sidebarItems={sidebarItems}
+        sidebarItems={finalSidebarItems}
         tagsGroups={tagsGroups}
       />
       <Box

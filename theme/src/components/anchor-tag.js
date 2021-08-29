@@ -115,7 +115,7 @@ const AnchorTag = ({
           px="1"
           py="0"
           pb="1"
-          ml="2"
+          ml="1"
           mr="1"
           onClick={show}
         >

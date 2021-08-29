@@ -13,15 +13,16 @@ import MobileSearch from "./mobile-search";
 import NavDrawer, { useNavDrawerState } from "./nav-drawer";
 import NavDropdown, { NavDropdownItem } from "./nav-dropdown";
 import Search from "./search";
-import GraphButton from "./note-graph-button";
+import GraphButton from "./graph-button";
 import useThemeConfig from "../use-theme-config";
 export const HEADER_HEIGHT = 66;
-
 function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
   const theme = React.useContext(ThemeContext);
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useNavDrawerState(
     theme.breakpoints[2]
   );
+  const [isGraphOpen, setIsGraphOpen] = React.useState(false);
+
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const { siteMetadata } = useSiteMetadata();
   const themeConfig = useThemeConfig();
@@ -57,10 +58,21 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
           ) : null}
         </Box>
         <Box display="flex">
-          <Box display={["none", null, null, "block"]}>
+          <Box display={["none", null, null, "flex"]} alignItems="center">
             <PrimerNavItems items={primerNavItems} />
+            <DarkButton
+              aria-label="Show Graph Visualisation"
+              onClick={setIsGraphOpen.bind(null, !isGraphOpen)}
+              sx={{ ml: "3" }}
+            >
+              <GraphButton
+                isOpen={isGraphOpen}
+                setIsOpen={setIsGraphOpen}
+                tagsGroups={tagsGroups}
+              ></GraphButton>
+            </DarkButton>
           </Box>
-          <GraphButton tagsGroups={tagsGroups}></GraphButton>
+
           <Box display={["flex", null, null, "none"]}>
             {isSearchEnabled ? (
               <>
@@ -77,6 +89,17 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
                 />
               </>
             ) : null}
+            <DarkButton
+              aria-label="Show Graph Visualisation"
+              onClick={setIsGraphOpen.bind(null, !isGraphOpen)}
+              sx={{ ml: "3" }}
+            >
+              <GraphButton
+                isOpen={isGraphOpen}
+                setIsOpen={setIsGraphOpen}
+                tagsGroups={tagsGroups}
+              ></GraphButton>
+            </DarkButton>
             <DarkButton
               aria-label="Menu"
               aria-expanded={isNavDrawerOpen}

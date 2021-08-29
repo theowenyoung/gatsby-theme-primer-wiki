@@ -75,6 +75,7 @@
     "react-helmet": "^6.1.0",
     "react-live": "^2.3.0",
     "react-measure": "^2.5.2",
+    "react-overlays": "^5.1.1",
     "react-spring": "^9.2.4",
     "remark-inline-links": "^5.0.0",
     "remove-markdown": "^0.3.0",

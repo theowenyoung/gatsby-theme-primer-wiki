@@ -10,6 +10,7 @@ import { HEADER_HEIGHT } from "./header";
 import PageFooter from "./page-footer";
 import TableOfContents from "./table-of-contents";
 import TagsBlock from "./tags-block";
+import { getSidebarItems } from "../utils/sidebar-items";
 import useThemeConfig from "../use-theme-config";
 function TagsList({ type = "normal", title, url, items, depth = 0 }) {
   items = items || [];
@@ -33,7 +34,10 @@ const Post = ({ data, pageContext, location }) => {
   const tagsOutbound = data.tagsOutbound;
 
   const primerWikiThemeConfig = useThemeConfig();
-  const sidebarItems = pageContext.sidebarItems;
+  const sidebarItems = getSidebarItems(
+    pageContext.sidebarItems,
+    pageContext.tagsGroups
+  );
   const {
     tableOfContents,
     frontmatter,

@@ -6,7 +6,7 @@ const defaultOptions = (pluginOptions) => {
       mdxOtherwiseConfigured: false,
       nav: [],
       imageMaxWidth: 561,
-      sidebarDepth: 1,
+      sidebarDepth: 0,
       editUrl: "", // 'https://github.com/facebook/docusaurus/edit/main/website/',
       editUrlText: "Edit this page",
       shouldShowLastUpdated: true,
