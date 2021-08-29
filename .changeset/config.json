@@ -6,7 +6,7 @@
     { "repo": "theowenyoung/gatsby-theme-primer-wiki" }
   ],
 
-  "commit": false,
+  "commit": true,
   "linked": [],
   "access": "public",
   "baseBranch": "main",
