@@ -6,6 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { Link, Box, Heading, Button, Text } from "@primer/components";
 import isRelativeUrl from "is-relative-url";
 import { ZapIcon } from "@primer/octicons-react";
+import { useTheme } from "@primer/components";
 
 // import './anchor-tag.css'
 const AnchorTag = ({
@@ -16,6 +17,8 @@ const AnchorTag = ({
   withoutPopup,
   ...restProps
 }) => {
+  const theme = useTheme();
+  const colorMode = theme.resolvedColorMode;
   const ref = references.find((x) => x.fields.slug === href);
   let instance = null;
   const onCreate = (theInstance) => {
@@ -134,7 +137,6 @@ const AnchorTag = ({
       </Text>
     );
   } else {
-    popupContent = <div className="popover no-max-width">{href}</div>;
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     const externalLink = !isRelativeUrl(href);
     child = externalLink ? (
@@ -162,7 +164,7 @@ const AnchorTag = ({
 
   return (
     <Tippy
-      theme="light"
+      theme={colorMode === "night" ? "dark" : "light"}
       delay={100}
       interactiveDebounce={0}
       interactive={true}

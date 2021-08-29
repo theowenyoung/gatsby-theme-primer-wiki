@@ -2,6 +2,7 @@ import React from "react";
 import components from "./mdx-components";
 import { Box, Text } from "@primer/components";
 import useThemeConfig from "../use-theme-config";
+
 const TagPosts = ({
   tag,
   nodes,

@@ -3,6 +3,8 @@ import {
   MarkGithubIcon,
   SearchIcon,
   ThreeBarsIcon,
+  SunIcon,
+  MoonIcon,
 } from "@primer/octicons-react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
@@ -15,6 +17,7 @@ import NavDropdown, { NavDropdownItem } from "./nav-dropdown";
 import Search from "./search";
 import GraphButton from "./graph-button";
 import useThemeConfig from "../use-theme-config";
+import { useTheme } from "@primer/components";
 export const HEADER_HEIGHT = 66;
 function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
   const theme = React.useContext(ThemeContext);
@@ -22,7 +25,7 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
     theme.breakpoints[2]
   );
   const [isGraphOpen, setIsGraphOpen] = React.useState(false);
-
+  const { resolvedColorMode, setColorMode } = useTheme();
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const { siteMetadata } = useSiteMetadata();
   const themeConfig = useThemeConfig();
@@ -36,16 +39,22 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
         px={[3, null, null, 4]}
         alignItems="center"
         justifyContent="space-between"
-        bg="auto.black"
+        bg="header.bg"
+        color="header.text"
       >
         <Box display="flex" alignItems="center">
-          <Link href="/" color="auto.white" mr={3} lineHeight="condensedUltra">
+          <Link href="/" color="header.logo" mr={3} lineHeight="condensedUltra">
             <StyledOcticon icon={MarkGithubIcon} size="medium" />
           </Link>
 
           {siteMetadata.shortName ? (
             <>
-              <Link as={GatsbyLink} to="/" color="auto.white" fontFamily="mono">
+              <Link
+                as={GatsbyLink}
+                to="/"
+                color="header.logo"
+                fontFamily="mono"
+              >
                 {siteMetadata.shortName}
               </Link>
             </>
@@ -70,6 +79,20 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
                 setIsOpen={setIsGraphOpen}
                 tagsGroups={tagsGroups}
               ></GraphButton>
+            </DarkButton>
+            <DarkButton
+              aria-label="Theme"
+              aria-expanded={isNavDrawerOpen}
+              onClick={() =>
+                setColorMode(resolvedColorMode === "day" ? "night" : "day")
+              }
+              ml={3}
+            >
+              {resolvedColorMode === "day" ? (
+                <SunIcon />
+              ) : (
+                <MoonIcon></MoonIcon>
+              )}
             </DarkButton>
           </Box>
 
@@ -100,6 +123,7 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
                 tagsGroups={tagsGroups}
               ></GraphButton>
             </DarkButton>
+
             <DarkButton
               aria-label="Menu"
               aria-expanded={isNavDrawerOpen}
@@ -127,7 +151,7 @@ Header.defaultProps = {
 
 function PrimerNavItems({ items }) {
   return (
-    <Box display="flex" alignItems="center" color="auto.blue.2">
+    <Box display="flex" alignItems="center" color="header.text">
       {items.map((item, index) => {
         if (item.items) {
           return (

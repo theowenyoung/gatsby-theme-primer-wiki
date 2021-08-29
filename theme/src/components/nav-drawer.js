@@ -9,7 +9,8 @@ import Details from "./details";
 import Drawer from "./drawer";
 import NavItems from "./nav-items";
 import useThemeConfig from "../use-theme-config";
-
+import { useTheme } from "@primer/components";
+import { SunIcon, MoonIcon } from "@primer/octicons-react";
 export function useNavDrawerState(breakpoint) {
   // Handle string values from themes with units at the end
   if (typeof breakpoint === "string") {
@@ -46,21 +47,23 @@ function NavDrawer({ isOpen, onDismiss, location, sidebarItems }) {
   const primerWikiThemeConfig = useThemeConfig();
   const navItems = sidebarItems;
   const primerNavItems = primerWikiThemeConfig.nav;
+  const { resolvedColorMode, setColorMode } = useTheme();
+
   return (
     <Drawer isOpen={isOpen} onDismiss={onDismiss}>
       <Box
         display="flex"
         flexDirection="column"
         height="100%"
-        bg="auto.gray.9"
+        bg="header.bg"
         style={{ overflow: "auto", WebkitOverflowScrolling: "touch" }}
       >
         <Box
           display="flex"
           flexDirection="column"
           flex="0 0 auto"
-          color="auto.blue.2"
-          bg="auto.gray.9"
+          color="header.text"
+          bg="header.bg"
         >
           <Box>
             <Box
@@ -78,6 +81,21 @@ function NavDrawer({ isOpen, onDismiss, location, sidebarItems }) {
                 <XIcon />
               </DarkButton>
             </Box>
+          </Box>
+          <Box pl={4} pr={3} display="flex" justifyContent="flex-end">
+            <DarkButton
+              aria-label="Theme"
+              onClick={() =>
+                setColorMode(resolvedColorMode === "day" ? "night" : "day")
+              }
+              ml={3}
+            >
+              {resolvedColorMode === "day" ? (
+                <SunIcon />
+              ) : (
+                <MoonIcon></MoonIcon>
+              )}
+            </DarkButton>
           </Box>
           <Box display="flex" flexDirection="column">
             <PrimerNavItems items={primerNavItems} />

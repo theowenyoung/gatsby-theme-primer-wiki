@@ -7,13 +7,13 @@ const DarkTextInput = styled(TextInput)`
    * TODO: Update font-size of TextInput in @primer/components.
    */
   font-size: ${themeGet("fontSizes.2")} !important;
-  color: ${themeGet("colors.auto.white")};
-  background-color: rgba(255, 255, 255, 0.07);
+  color: ${themeGet("colors.header.text")};
+  background-color: ${themeGet("colors.headerSearch.bg")};
   border: 1px solid transparent;
   box-shadow: none;
 
   &:focus {
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid ${themeGet("colors.headerSearch.border")}
     outline: none;
     box-shadow: none;
   }

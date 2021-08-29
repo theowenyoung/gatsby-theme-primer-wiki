@@ -10,7 +10,13 @@ function Layout({ children, location, pageContext }) {
   const tagsGroups = pageContext.tagsGroups;
   const finalSidebarItems = getSidebarItems(sidebarItems, tagsGroups);
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+    <Box
+      display="flex"
+      flexDirection="column"
+      minHeight="100vh"
+      bg="bg.primary"
+      color="text.primary"
+    >
       <Header
         location={location}
         sidebarItems={finalSidebarItems}

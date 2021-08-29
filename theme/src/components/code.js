@@ -2,13 +2,17 @@ import { Box, Text } from "@primer/components";
 import Highlight, { defaultProps } from "prism-react-renderer";
 import Prism from "../prism";
 import githubTheme from "../github";
+import vsDarkTheme from "../vs-dark";
 import React from "react";
 import ClipboardCopy from "./clipboard-copy";
 import LiveCode from "./live-code";
+import { useTheme } from "@primer/components";
 
 function Code({ className, children, live, noinline }) {
   const language = className ? className.replace(/language-/, "") : "";
   const code = children.trim();
+  const theme = useTheme();
+  const colorMode = theme.resolvedColorMode;
 
   if (live) {
     return <LiveCode code={code} language={language} noinline={noinline} />;
@@ -33,7 +37,7 @@ function Code({ className, children, live, noinline }) {
         Prism={Prism}
         code={code}
         language={language}
-        theme={githubTheme}
+        theme={colorMode === "night" ? vsDarkTheme : githubTheme}
       >
         {({ className, style, tokens, getLineProps, getTokenProps }) => (
           <Box
