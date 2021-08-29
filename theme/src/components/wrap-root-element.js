@@ -8,7 +8,7 @@ import deepmerge from "deepmerge";
 const customTheme = deepmerge(theme, {});
 function wrapRootElement({ element }) {
   return (
-    <ThemeProvider theme={customTheme} colorMode="auto">
+    <ThemeProvider theme={customTheme} colorMode="day">
       <MDXProvider components={components}>{element}</MDXProvider>
     </ThemeProvider>
   );

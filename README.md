@@ -5,7 +5,7 @@
 - [x] - excerpt as seo description
 - [x] - support mobile instant view button
 - [x] - support nav items
-- [ ] - support graph view
+- [x] - support graph view
 - [x] - release workflow
 - [x] - readme add summary
 - [x] - pathPrefix test
