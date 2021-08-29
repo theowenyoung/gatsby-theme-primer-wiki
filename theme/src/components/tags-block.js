@@ -4,6 +4,8 @@ import { HashIcon } from "@primer/octicons-react";
 import components from "./mdx-components";
 import kebabCase from "lodash/kebabCase";
 import TagPosts from "./tag-posts";
+import ReferenceLi from "./reference-li";
+
 const TagsBlock = ({ tags, nodes }) => {
   if (!tags.length) {
     return null;
@@ -24,7 +26,7 @@ const TagsBlock = ({ tags, nodes }) => {
         />
         Tags
       </Heading>
-      <Box>
+      <components.ul style={{ paddingLeft: "16px", listStyle: "none" }}>
         {tags.map((tag) => {
           const references = [
             {
@@ -33,6 +35,7 @@ const TagsBlock = ({ tags, nodes }) => {
               },
               component: (
                 <TagPosts
+                  forceMobile
                   nodes={nodes.filter((node) => {
                     return node.frontmatter.tags.includes(tag);
                   })}
@@ -43,17 +46,19 @@ const TagsBlock = ({ tags, nodes }) => {
           ];
 
           return (
-            <components.a
-              key={tag}
-              href={`/tags/${kebabCase(tag)}/`}
-              references={references}
-              mr={3}
-            >
-              #{tag}
-            </components.a>
+            <ReferenceLi key={tag}>
+              <components.a
+                href={`/tags/${kebabCase(tag)}/`}
+                references={references}
+                mr={3}
+              >
+                #{tag}
+              </components.a>
+            </ReferenceLi>
           );
         })}
-      </Box>
+      </components.ul>
+      <Box></Box>
     </Box>
   );
 };

@@ -41,6 +41,7 @@ function Sidebar({ location, sidebarItems }) {
       top={HEADER_HEIGHT}
       height={`calc(100vh - ${HEADER_HEIGHT}px)`}
       minWidth={260}
+      maxWidth={360}
       color="auto.gray.8"
       bg="auto.gray.0"
     >

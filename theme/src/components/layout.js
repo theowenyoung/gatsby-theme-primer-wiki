@@ -23,7 +23,9 @@ function Layout({ children, location, pageContext }) {
         css={{ zIndex: 0 }}
       >
         <Sidebar location={location} sidebarItems={finalSidebarItems} />
-        <Box as="main">{children}</Box>
+        <Box as="main" flex="1">
+          {children}
+        </Box>
       </Box>
     </Box>
   );

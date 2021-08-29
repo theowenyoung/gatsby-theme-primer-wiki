@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Heading, StyledOcticon } from "@primer/components";
 import { LinkIcon } from "@primer/octicons-react";
 import components from "./mdx-components";
+import ReferenceLi from "./reference-li";
+
 const ReferencesBlock = ({ references }) => {
   if (!references.length) {
     return null;
@@ -22,13 +24,13 @@ const ReferencesBlock = ({ references }) => {
         />
         LINKS TO THIS PAGE
       </Heading>
-      <components.ul style={{ paddingLeft: "16px" }}>
+      <components.ul style={{ paddingLeft: "16px", listStyle: "none" }}>
         {references.map((node) => (
-          <li key={node.fields.slug}>
+          <ReferenceLi key={node.fields.slug}>
             <components.a href={node.fields.slug} references={[node]}>
               {node.fields.title || node.fields.slug}
             </components.a>
-          </li>
+          </ReferenceLi>
         ))}
       </components.ul>
     </Box>

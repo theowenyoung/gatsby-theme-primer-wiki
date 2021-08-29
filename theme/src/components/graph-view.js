@@ -38,7 +38,13 @@ const Backdrop = styled("div")`
   justify-content: center;
 `;
 const renderBackdrop = (props) => <Backdrop {...props} />;
-
+const StyledModal = styled(Modal)`
+  z-index: 98;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
 export default function GraphView({
   setIsOpen,
   isOpen,
@@ -49,13 +55,6 @@ export default function GraphView({
   const windowSize = useWindowSize();
   const graphContainer = useRef(null);
 
-  const StyledModal = styled(Modal)`
-    z-index: 98;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  `;
   const notes = Array.from(notesMap.values());
 
   useEffect(() => {
