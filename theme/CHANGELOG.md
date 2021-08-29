@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.8
+
+### Patch Changes
+
+- [`ef2ce21`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/ef2ce21780cabaaad38ad9f715edf9c89af5ca98) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support theme color mode
+
 ## 1.10.7
 
 ### Patch Changes
