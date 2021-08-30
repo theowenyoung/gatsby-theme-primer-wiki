@@ -1,4 +1,6 @@
 import removeMd from "remove-markdown";
+import isRelativeUrl from "is-relative-url";
+import urlJoin from "url-join";
 // Generate postData from a allMdx edge
 export const generatePostData = (post) => {
   const {
@@ -58,7 +60,7 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
   const isArticle = !!postData;
   const title = postData ? postData.title : siteMetadata.title;
   const type = postData && postData.slug !== "/" ? "article" : "website";
-  const imageUrl =
+  let imageUrl =
     postData && postData.imageUrl ? postData.imageUrl : siteMetadata.imageUrl;
   const imageAlt =
     postData && postData.imageAlt
@@ -74,6 +76,10 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
     ? postData.description
     : siteMetadata.description;
   const tags = postData.tags || [];
+  const siteUrl = siteMetadata.siteUrl;
+  if (isRelativeUrl(imageUrl)) {
+    imageUrl = urlJoin(siteUrl, imageUrl);
+  }
   return {
     isArticle,
     type,

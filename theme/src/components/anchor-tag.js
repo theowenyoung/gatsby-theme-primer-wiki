@@ -139,6 +139,7 @@ const AnchorTag = ({
   } else {
     // eslint-disable-next-line jsx-a11y/anchor-has-content
     const externalLink = !isRelativeUrl(href);
+
     child = externalLink ? (
       <Link
         {...restProps}
