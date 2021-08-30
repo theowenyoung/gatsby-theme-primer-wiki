@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.14
+
+### Patch Changes
+
+- [`07c5b1d`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/07c5b1d68e90512dfd6e6f69d161bfbcfa6e89e7) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Add mdx placeholder, for posts don't has a tags
+
 ## 1.10.13
 
 ### Patch Changes
