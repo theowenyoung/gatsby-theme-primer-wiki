@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.13
+
+### Patch Changes
+
+- [`bae81fb`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/bae81fb446aa14d49a6dabe20fe5c5bc303a2f30) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix prefix image link
+
 ## 1.10.12
 
 ### Patch Changes
