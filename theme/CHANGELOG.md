@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.10
+
+### Patch Changes
+
+- [`4415aae`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/4415aaef36d054bc105d729c00511a99b654854a) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support seoTitle field
+
 ## 1.10.9
 
 ### Patch Changes
