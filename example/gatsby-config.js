@@ -8,7 +8,7 @@ const siteMetadata = {
 const contentFolder = "content5";
 module.exports = {
   siteMetadata,
-  pathPrefix: "/wiki",
+  // pathPrefix: "/wiki",
   flags: {
     DEV_SSR: true,
   },
