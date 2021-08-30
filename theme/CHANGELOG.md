@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.12
+
+### Patch Changes
+
+- [`7d6ce3b`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/7d6ce3b7177d91df7c95749cd20c475913acf857) Thanks [@theowenyoung](https://github.com/theowenyoung)! - SEO image url to full
+
 ## 1.10.11
 
 ### Patch Changes
