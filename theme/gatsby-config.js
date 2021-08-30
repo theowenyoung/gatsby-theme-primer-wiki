@@ -15,7 +15,6 @@ module.exports = (themeOptions) => {
       "@theowenyoung/gatsby-plugin-slug",
       "gatsby-plugin-styled-components",
       "gatsby-plugin-react-helmet",
-      "gatsby-plugin-catch-links",
       "gatsby-transformer-summary",
       `gatsby-plugin-image`,
       `gatsby-plugin-sharp`,
@@ -27,8 +26,6 @@ module.exports = (themeOptions) => {
           extensions: extensions,
           remarkPlugins: [require("remark-inline-links")],
           gatsbyRemarkPlugins: [
-            "gatsby-remark-rewrite-link-for-trailing-slash",
-
             {
               resolve: `gatsby-remark-relative-images`,
               options: {

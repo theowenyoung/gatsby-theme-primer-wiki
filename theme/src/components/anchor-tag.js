@@ -138,7 +138,8 @@ const AnchorTag = ({
     );
   } else {
     // eslint-disable-next-line jsx-a11y/anchor-has-content
-    const externalLink = !isRelativeUrl(href);
+    const externalLink =
+      !isRelativeUrl(href) || (restProps && restProps.target === "_blank");
 
     child = externalLink ? (
       <Link
@@ -149,11 +150,11 @@ const AnchorTag = ({
         href={href}
         title={title}
       >
-        {title || restProps.children}
+        {restProps.children}
       </Link>
     ) : (
       <Link {...restProps} as={GatsbyLink} to={href} title={title}>
-        {title || restProps.children}
+        {restProps.children}
       </Link>
     );
     return child;

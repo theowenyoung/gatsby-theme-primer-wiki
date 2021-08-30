@@ -25,7 +25,7 @@ function SearchResults({ results, getItemProps, highlightedIndex }) {
           flex: "0 0 auto",
           px: 3,
           py: 2,
-          color: highlightedIndex === index ? "white" : "gray.8",
+          color: highlightedIndex === index ? "auto.white" : "auto.gray.8",
           bg: highlightedIndex === index ? "auto.blue.5" : "transparent",
           style: { cursor: "pointer" },
         })}

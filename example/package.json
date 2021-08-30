@@ -7,7 +7,7 @@
     "develop": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve  -H 0.0.0.0 --port 8000",
     "now-build": "npm run build",
     "test": "echo "
   },
@@ -15,6 +15,7 @@
     "@primer/components": "^28.3.0",
     "@primer/css": "^17.5.0",
     "gatsby": "^3.12.0",
+    "gatsby-plugin-manifest": "^3.12.0",
     "gatsby-plugin-robots-txt": "^1.6.9",
     "gatsby-source-filesystem": "^3.12.0",
     "gatsby-theme-primer-wiki": "^1.10.1",
