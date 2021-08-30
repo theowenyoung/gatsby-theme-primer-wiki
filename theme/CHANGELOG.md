@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.11
+
+### Patch Changes
+
+- [`979008e`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/979008e9ed53cb5257876db4d6f68dea6d36e85f) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Add figcaption style
+
 ## 1.10.10
 
 ### Patch Changes
