@@ -25,6 +25,7 @@ export const query = graphql`
         date
         dateModified
         language
+        seoTitle
         image {
           publicURL
           childImageSharp {

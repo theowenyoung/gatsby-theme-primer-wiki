@@ -15,6 +15,7 @@ export const generatePostData = (post) => {
     slug,
     frontmatterTitle,
     language,
+    seoTitle,
   } = post;
   let body = "";
   if (rawBody) {
@@ -48,6 +49,7 @@ export const generatePostData = (post) => {
     body,
     url: post.url,
     language: language || "en",
+    seoTitle,
   };
 };
 
@@ -82,5 +84,6 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
     description,
     tags,
     language: postData.language,
+    seoTitle: postData.seoTitle,
   };
 };

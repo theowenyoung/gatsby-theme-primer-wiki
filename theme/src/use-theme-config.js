@@ -9,6 +9,7 @@ function useThemeConfig() {
         sidebarDepth
         editUrlText
         shouldShowSidebarListOnIndex
+        titleTemplate
         nav {
           title
           url

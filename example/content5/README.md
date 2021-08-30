@@ -2,6 +2,7 @@
 title: A Personal Knowledge Base Wiki
 description: Personal wiki, share everything I learned, and spend a lifetime updating it. I hope it'll be a good gift for my grandchildren.
 image: ./attachments/header.jpeg
+seoTitle: Everything I know by Owen
 ---
 
 Since I found [Everything I know](https://wiki.nikitavoloboev.xyz), I realized that "Yes, this is what I want to do", I used to create many blogs, tumblr, wordpress, hexo, hugo, gatsbyjs etc. But I do not post too much posts, cause there is a certain cost for blog post. But not for note.

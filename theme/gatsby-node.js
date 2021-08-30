@@ -15,11 +15,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       items: [NavItem]
     }
     type PrimerWikiThemeConfig implements Node {
-      sidebarDepth: Int,
-      editUrlText: String,
-      shouldShowLastUpdated: Boolean,
-      lastUpdatedText: String,
+      sidebarDepth: Int
+      editUrlText: String
+      shouldShowLastUpdated: Boolean
+      lastUpdatedText: String
       nav: [NavItem!]
+      titleTemplate: String
     }
  
   `);
@@ -35,6 +36,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     lastUpdatedText,
     shouldShowSidebarListOnIndex,
     nav,
+    titleTemplate,
   } = options;
   const themeConfig = {
     sidebarDepth,
@@ -43,6 +45,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     shouldShowSidebarListOnIndex,
     lastUpdatedText,
     nav,
+    titleTemplate,
   };
 
   createNode({
@@ -94,6 +97,9 @@ exports.createResolvers = ({ createResolvers }) => {
         },
       },
       title: {
+        type: "String",
+      },
+      seoTitle: {
         type: "String",
       },
       description: {

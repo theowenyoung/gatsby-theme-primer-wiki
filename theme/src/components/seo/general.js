@@ -1,9 +1,9 @@
 import * as React from "react";
 
 const GeneralTags = (seoData) => {
-  const { title, description, imageUrl, tags } = seoData;
+  const { title, seoTitle, description, imageUrl, tags } = seoData;
 
-  const htmlTags = [<title key="gen-title">{title}</title>];
+  const htmlTags = [<title key="gen-title">{seoTitle || title}</title>];
 
   if (description)
     htmlTags.push(

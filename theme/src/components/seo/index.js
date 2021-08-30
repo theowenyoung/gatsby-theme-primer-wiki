@@ -6,9 +6,10 @@ import RichSearchTags from "./rich-search.js";
 import TwitterTags from "./twitter";
 import { generatePostData, generateSeoData } from "./utils";
 import useSiteMetadata from "../../use-site";
-
+import useThemeConfig from "../../use-theme-config";
 const SEO = ({ post }) => {
   const { siteMetadata, pathPrefix } = useSiteMetadata();
+  const themeConfig = useThemeConfig();
   const postData = post ? generatePostData(post) : undefined;
 
   const seoData = generateSeoData(siteMetadata, postData, {
@@ -22,10 +23,13 @@ const SEO = ({ post }) => {
     ...TwitterTags({ seoData, siteMetadata }),
   ];
 
-  const titleTemplate = `%s - ${siteMetadata.title}`;
+  const titleTemplate =
+    themeConfig.titleTemplate === null
+      ? `%s - ${siteMetadata.title}`
+      : themeConfig.titleTemplate;
   return (
     <Helmet
-      titleTemplate={titleTemplate}
+      titleTemplate={seoData.seoTitle ? null : titleTemplate}
       htmlAttributes={{
         lang:
           postData && postData.language

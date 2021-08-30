@@ -67,6 +67,7 @@ const Post = ({ data, pageContext, location }) => {
     dateModified,
     tags,
     language,
+    seoTitle,
   } = frontmatter;
   const category = tags && tags[0];
   const datePublished = date
@@ -81,6 +82,7 @@ const Post = ({ data, pageContext, location }) => {
     rawBody,
     excerpt,
     datePublished,
+    seoTitle,
     dateModified: dateModified
       ? new Date(dateModified)
       : lastUpdatedAt
