@@ -8,6 +8,7 @@ import { getSidebarItems } from "../utils/sidebar-items";
 function Layout({ children, location, pageContext }) {
   const sidebarItems = pageContext.sidebarItems;
   const tagsGroups = pageContext.tagsGroups;
+  const currentSlug = pageContext.slug;
   const finalSidebarItems = getSidebarItems(sidebarItems, tagsGroups);
   return (
     <Box
@@ -18,6 +19,7 @@ function Layout({ children, location, pageContext }) {
       color="text.primary"
     >
       <Header
+        currentSlug={currentSlug}
         location={location}
         sidebarItems={finalSidebarItems}
         tagsGroups={tagsGroups}

@@ -11,4 +11,5 @@
 - [x] - pathPrefix test
 - [x] - qbittorrent with jackett mobile screen overflow
 - [x] - support tags search
-- [ ] - support theme
+- [x] - support theme
+- [ ] - Docs

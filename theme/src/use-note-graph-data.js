@@ -6,19 +6,24 @@ export const useGraphData = (tagsGroups) => {
     {
       allMdx {
         nodes {
-          id
           fields {
             title
             slug
           }
           inboundReferences {
             ... on Mdx {
-              id
+              fields {
+                title
+                slug
+              }
             }
           }
           outboundReferences {
             ... on Mdx {
-              id
+              fields {
+                title
+                slug
+              }
             }
           }
         }
@@ -38,7 +43,7 @@ export const useGraphData = (tagsGroups) => {
           referencedBy: [],
         };
         tagGroup.items.forEach((node) => {
-          note.linkTo.push(node.id);
+          note.linkTo.push(node.url);
         });
 
         notesMap.set(note.id, note);
@@ -50,7 +55,7 @@ export const useGraphData = (tagsGroups) => {
       }
 
       const note = {
-        id: node.id,
+        id: node.fields.slug,
         title: node.fields.title,
         url: node.fields.slug,
         linkTo: [],
@@ -58,15 +63,14 @@ export const useGraphData = (tagsGroups) => {
       };
 
       node.inboundReferences.forEach((x) => {
-        note.referencedBy && note.referencedBy.push(x.id);
+        note.referencedBy && note.referencedBy.push(x.fields.slug);
       });
 
       node.outboundReferences.forEach((x) => {
-        note.linkTo && note.linkTo.push(x.id);
+        note.linkTo && note.linkTo.push(x.fields.slug);
       });
       notesMap.set(note.id, note);
     });
-
     return { notesMap };
   }, [data, tagsGroups]);
 

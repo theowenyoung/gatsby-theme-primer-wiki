@@ -3,7 +3,7 @@ import { Box, Text } from "@primer/components";
 const Graph = lazy(() => import("./graph-view"));
 
 const GraphButton = (props) => {
-  const { currentFileId, tagsGroups, isOpen, setIsOpen } = props;
+  const { currentSlug, tagsGroups, isOpen, setIsOpen } = props;
   const hint = "Show Graph Visualisation";
   const anchorRef = React.useRef(null);
   return (
@@ -27,6 +27,9 @@ const GraphButton = (props) => {
         display="flex"
         alignItems="center"
         ref={anchorRef}
+        onClick={(e) => {
+          setIsOpen(!isOpen);
+        }}
       >
         <svg
           t="1607341341241"
@@ -52,7 +55,7 @@ const GraphButton = (props) => {
           <Graph
             isOpen={isOpen}
             setIsOpen={setIsOpen}
-            currentFileId={currentFileId}
+            currentSlug={currentSlug}
             tagsGroups={tagsGroups}
             anchorRef={anchorRef}
           />

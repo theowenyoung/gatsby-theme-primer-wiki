@@ -19,12 +19,19 @@ import GraphButton from "./graph-button";
 import useThemeConfig from "../use-theme-config";
 import { useTheme } from "@primer/components";
 export const HEADER_HEIGHT = 66;
-function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
+function Header({
+  isSearchEnabled,
+  location,
+  sidebarItems,
+  tagsGroups,
+  currentSlug,
+}) {
   const theme = React.useContext(ThemeContext);
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useNavDrawerState(
     theme.breakpoints[2]
   );
   const [isGraphOpen, setIsGraphOpen] = React.useState(false);
+
   const { resolvedColorMode, setColorMode } = useTheme();
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const { siteMetadata } = useSiteMetadata();
@@ -69,17 +76,7 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
         <Box display="flex">
           <Box display={["none", null, null, "flex"]} alignItems="center">
             <PrimerNavItems items={primerNavItems} />
-            <DarkButton
-              aria-label="Show Graph Visualisation"
-              onClick={setIsGraphOpen.bind(null, !isGraphOpen)}
-              sx={{ ml: "3" }}
-            >
-              <GraphButton
-                isOpen={isGraphOpen}
-                setIsOpen={setIsGraphOpen}
-                tagsGroups={tagsGroups}
-              ></GraphButton>
-            </DarkButton>
+
             <DarkButton
               aria-label="Theme"
               aria-expanded={isNavDrawerOpen}
@@ -112,18 +109,17 @@ function Header({ isSearchEnabled, location, sidebarItems, tagsGroups }) {
                 />
               </>
             ) : null}
-            <DarkButton
-              aria-label="Show Graph Visualisation"
-              onClick={setIsGraphOpen.bind(null, !isGraphOpen)}
-              sx={{ ml: "3" }}
-            >
-              <GraphButton
-                isOpen={isGraphOpen}
-                setIsOpen={setIsGraphOpen}
-                tagsGroups={tagsGroups}
-              ></GraphButton>
-            </DarkButton>
+          </Box>
+          <DarkButton aria-label="Show Graph Visualisation" sx={{ ml: "3" }}>
+            <GraphButton
+              currentSlug={currentSlug}
+              isOpen={isGraphOpen}
+              setIsOpen={setIsGraphOpen}
+              tagsGroups={tagsGroups}
+            ></GraphButton>
+          </DarkButton>
 
+          <Box display={["flex", null, null, "none"]}>
             <DarkButton
               aria-label="Menu"
               aria-expanded={isNavDrawerOpen}

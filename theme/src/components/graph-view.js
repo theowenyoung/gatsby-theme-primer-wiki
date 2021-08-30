@@ -48,13 +48,12 @@ const StyledModal = styled(Modal)`
 export default function GraphView({
   setIsOpen,
   isOpen,
-  currentFileId,
+  currentSlug,
   tagsGroups,
 }) {
   const { notesMap } = useGraphData(tagsGroups);
   const windowSize = useWindowSize();
   const graphContainer = useRef(null);
-
   const notes = Array.from(notesMap.values());
 
   useEffect(() => {
@@ -80,17 +79,17 @@ export default function GraphView({
       }
     });
 
-    if (currentFileId) {
-      const currentNoteInfo = graphModel.getNodeInfoById(currentFileId);
+    if (currentSlug) {
+      const currentNoteInfo = graphModel.getNodeInfoById(currentSlug);
       const shouldZoomToFit =
         currentNoteInfo && Boolean(currentNoteInfo.neighbors?.length);
-      noteGraphView.setSelectedNodes([currentFileId], { shouldZoomToFit });
+      noteGraphView.setSelectedNodes([currentSlug], { shouldZoomToFit });
     }
 
     return () => {
       noteGraphView.dispose();
     };
-  }, [notes, isOpen, currentFileId, windowSize]);
+  }, [notes, isOpen, currentSlug, windowSize]);
   if (!isOpen) {
     return null;
   }
@@ -98,7 +97,9 @@ export default function GraphView({
   return (
     <StyledModal
       show={isOpen}
-      onHide={() => setIsOpen(false)}
+      onHide={(e) => {
+        setIsOpen(false);
+      }}
       renderBackdrop={renderBackdrop}
       aria-labelledby="modal-label"
     >
@@ -112,7 +113,14 @@ export default function GraphView({
           CLOSE
         </CloseButton>
 
-        <Box display="flex" justifyContent="center" alignItems="center">
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          onClick={(ev) => {
+            ev.preventDefault();
+          }}
+        >
           <div ref={graphContainer} id="graph-container"></div>
         </Box>
       </Box>

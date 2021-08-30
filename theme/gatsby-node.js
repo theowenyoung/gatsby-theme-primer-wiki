@@ -204,7 +204,6 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         url: `/tags/${kebabCase(item.fieldValue)}/`,
         items: item.nodes.map((child) => {
           return {
-            id: child.id,
             title: child.fields.title,
             url: child.fields.slug,
           };
