@@ -30,6 +30,7 @@ module.exports = {
       resolve: "gatsby-theme-primer-wiki",
       options: {
         sidebarDepth: 0,
+        shouldSupportTags: true,
         nav: [
           {
             title: "Github",

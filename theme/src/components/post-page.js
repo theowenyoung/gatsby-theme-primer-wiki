@@ -31,7 +31,9 @@ function TagsList({ type = "normal", title, url, items, depth = 0 }) {
 }
 const Post = ({ data, pageContext, location }) => {
   const post = data.mdx;
-  const tagsOutbound = data.tagsOutbound;
+  const tagsOutbound = data.tagsOutbound || {
+    nodes: [],
+  };
 
   const primerWikiThemeConfig = useThemeConfig();
   const sidebarItems = getSidebarItems(

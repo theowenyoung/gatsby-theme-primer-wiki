@@ -1,4 +1,5 @@
 const { defaultOptions } = require("./gatsby-util");
+const path = require("path");
 module.exports = (themeOptions) => {
   const { mdxOtherwiseConfigured, imageMaxWidth, extensions } =
     defaultOptions(themeOptions);
@@ -12,6 +13,13 @@ module.exports = (themeOptions) => {
         "https://user-images.githubusercontent.com/10384315/53922681-2f6d3100-402a-11e9-9719-5d1811c8110a.png",
     },
     plugins: [
+      {
+        resolve: "gatsby-source-filesystem",
+        options: {
+          name: "gatsby-theme-primer-wiki-placeholder",
+          path: path.resolve(__dirname, `./src/placeholder`),
+        },
+      },
       "@theowenyoung/gatsby-plugin-slug",
       "gatsby-plugin-styled-components",
       "gatsby-plugin-react-helmet",

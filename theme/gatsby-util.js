@@ -11,6 +11,7 @@ const defaultOptions = (pluginOptions) => {
       editUrlText: "Edit this page",
       shouldShowLastUpdated: true,
       shouldShowSidebarListOnIndex: true,
+      shouldSupportTags: true,
       lastUpdatedTransformer: (isoString) => {
         const dateObj = new Date(isoString);
         const date = dateObj.toLocaleString("en-US", {

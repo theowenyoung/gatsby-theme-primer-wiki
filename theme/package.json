@@ -49,6 +49,7 @@
     "gatsby-remark-images": "^5.9.0",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-remark-rewrite-link-for-trailing-slash": "^1.9.13",
+    "gatsby-source-filesystem": "^3.12.0",
     "gatsby-transformer-sharp": "^3.12.0",
     "gatsby-transformer-summary": "^1.9.4",
     "get-md-title": "^1.0.4",

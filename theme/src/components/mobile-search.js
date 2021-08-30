@@ -26,9 +26,9 @@ function stateReducer(state, changes) {
   }
 }
 
-function MobileSearch({ isOpen, onDismiss }) {
+function MobileSearch({ isOpen, onDismiss, tagsGroups }) {
   const [query, setQuery] = React.useState("");
-  const results = useSearch(query);
+  const results = useSearch(query, tagsGroups);
 
   function handleDismiss() {
     setQuery("");

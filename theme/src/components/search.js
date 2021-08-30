@@ -20,9 +20,9 @@ function stateReducer(state, changes) {
   }
 }
 
-function Search() {
+function Search({ tagsGroups }) {
   const [query, setQuery] = React.useState("");
-  const results = useSearch(query);
+  const results = useSearch(query, tagsGroups);
   const { siteMetadata } = useSiteMetadata();
 
   return (

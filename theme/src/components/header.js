@@ -69,7 +69,7 @@ function Header({
 
           {isSearchEnabled ? (
             <Box display={["none", null, null, "block"]} ml={4}>
-              <Search />
+              <Search tagsGroups={tagsGroups} />
             </Box>
           ) : null}
         </Box>
@@ -104,6 +104,7 @@ function Header({
                   <SearchIcon />
                 </DarkButton>
                 <MobileSearch
+                  tagsGroups={tagsGroups}
                   isOpen={isMobileSearchOpen}
                   onDismiss={() => setIsMobileSearchOpen(false)}
                 />
