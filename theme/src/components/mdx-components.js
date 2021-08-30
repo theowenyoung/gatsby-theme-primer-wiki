@@ -13,7 +13,7 @@ import Note from "./note";
 import Paragraph from "./paragraph";
 import Table from "./table";
 import AnchorTag from "./anchor-tag";
-
+import Figcaption from "./figcaption";
 const components = {
   a: AnchorTag,
   pre: (props) => props.children,
@@ -33,6 +33,7 @@ const components = {
   ul: List,
   ol: List.withComponent("ol"),
   dl: DescriptionList,
+  figcaption: Figcaption,
 
   // Shortcodes (https://mdxjs.com/blog/shortcodes)
   Note,
