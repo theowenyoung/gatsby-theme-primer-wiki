@@ -1,5 +1,19 @@
 # gatsby-theme-primer-wiki
 
+## 1.11.0
+
+### Minor Changes
+
+- [`b4c7573`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/b4c75733595b425ec48255897af44921b308460c) Thanks [@theowenyoung](https://github.com/theowenyoung)! - First real release
+
+### Patch Changes
+
+- Updated dependencies [[`b4c7573`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/b4c75733595b425ec48255897af44921b308460c)]:
+  - @theowenyoung/gatsby-transformer-references@1.10.0
+  - gatsby-remark-rewrite-link-for-trailing-slash@1.10.0
+  - @theowenyoung/gatsby-plugin-slug@1.10.0
+  - gatsby-transformer-summary@1.10.0
+
 ## 1.10.15
 
 ### Patch Changes

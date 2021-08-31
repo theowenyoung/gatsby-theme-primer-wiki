@@ -1,6 +1,6 @@
 {
   "name": "gatsby-transformer-summary",
-  "version": "1.9.4",
+  "version": "1.10.0",
   "description": "Gatsby Plugin Source SUMMARY.md",
   "main": "index.js",
   "devDependencies": {},
