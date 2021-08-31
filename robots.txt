@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
-Sitemap: https://wiki.demo.owenyoung.com/sitemap/sitemap-index.xml
-Host: https://wiki.demo.owenyoung.com
+Sitemap: https://demo-wiki.owenyoung.com/sitemap/sitemap-index.xml
+Host: https://demo-wiki.owenyoung.com
