@@ -1,5 +1,14 @@
 # gatsby-theme-primer-wiki
 
+## 1.10.15
+
+### Patch Changes
+
+- [`cb7e1c7`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/cb7e1c7682d2a0d00ae3819a5c9a03c7a6cec271) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix placeholder
+
+- Updated dependencies [[`cb7e1c7`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/cb7e1c7682d2a0d00ae3819a5c9a03c7a6cec271)]:
+  - gatsby-remark-rewrite-link-for-trailing-slash@1.9.14
+
 ## 1.10.14
 
 ### Patch Changes
