@@ -29,7 +29,7 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 Here are my main ideas/principles in designing this theme.
 
 1. No vendor lock-in. The less vendor features you use, the better you'll be able to migrate, including this theme. So we should only write standard markdown. I like `[[WikiLink]]`, but I love standard markdown more. So we should always use standard markdown link `[text](https://example.com)`, or use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions), and don't use any vendor locked-in feature. That give us the capability change our theme, or hosted place.
-2. Use meta data instead of special characters. We should use `tags` as the document's metadata, not `#tag` at the plain text.
+2. Use meta data instead of special characters. We should use `tags` as the document's metadata, not `#tag` in the plain text.
 3. Use tags instead of categories. Minimal subfolders.
 
 ## Getting Started
