@@ -139,3 +139,9 @@ Advanced, use your own mdx plugin config, See https://github.com/theowenyoung/ga
 ### Prefix Path
 
 See [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)
+
+## Custom Sidebars
+
+Create a file named `SUMMARY.md` in your content directory, for the format, just following the [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) docs.
+
+You can set a custom default sidebar depth using `sidebarDepth`, the default value is `0`
