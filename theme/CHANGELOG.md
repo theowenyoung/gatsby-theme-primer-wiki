@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.11.1
+
+### Patch Changes
+
+- [`ab78fea`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/ab78fea9d506c20c9838e7070a0737c240b5e312) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Docs
+
 ## 1.11.0
 
 ### Minor Changes
