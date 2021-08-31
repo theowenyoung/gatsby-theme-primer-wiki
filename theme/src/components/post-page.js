@@ -198,7 +198,10 @@ const Post = ({ data, pageContext, location }) => {
               );
             })}
           <ReferencesBlock references={inboundReferences} />
-          <TagsBlock tags={tags} nodes={tagsOutbound.nodes} />
+          {primerWikiThemeConfig.shouldSupportTags && (
+            <TagsBlock tags={tags} nodes={tagsOutbound.nodes} />
+          )}
+
           <PageFooter editUrl={editUrl} lastUpdated={lastUpdated} />
         </Box>
       </Box>

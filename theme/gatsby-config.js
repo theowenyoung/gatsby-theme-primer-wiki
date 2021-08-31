@@ -1,8 +1,13 @@
 const { defaultOptions } = require("./gatsby-util");
 const path = require("path");
 module.exports = (themeOptions) => {
-  const { mdxOtherwiseConfigured, imageMaxWidth, extensions } =
-    defaultOptions(themeOptions);
+  const {
+    mdxOtherwiseConfigured,
+    imageMaxWidth,
+    extensions,
+    rewriteUrlFileIgnore,
+    rewriteToParentUrlFileIgnore,
+  } = defaultOptions(themeOptions);
   return {
     siteMetadata: {
       title: "Gatsby Theme Primer Wiki",
@@ -48,11 +53,18 @@ module.exports = (themeOptions) => {
               },
             },
             {
+              resolve: "gatsby-remark-rewrite-link-for-trailing-slash",
+              options: {
+                fileIgnore: rewriteUrlFileIgnore,
+                rewriteToParentUrlFileIgnore: rewriteToParentUrlFileIgnore,
+              },
+            },
+            {
               resolve: `gatsby-remark-copy-linked-files`,
               options: {
                 ignoreFileExtensions: extensions
                   .map((item) => item.slice(1))
-                  .concat([`png`, `jpg`, `jpeg`, `bmp`, `tiff`]),
+                  .concat([`png`, `jpg`, `jpeg`, `bmp`, `tiff`, "txt"]),
               },
             },
 

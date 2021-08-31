@@ -5,10 +5,10 @@ module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
   const defaults = {
     extensions: [".md", ".mdx", ".markdown"],
     fileIgnore: [],
-    fileParentIgnore: [],
+    rewriteToParentUrlFileIgnore: [],
     pathIgnore: [],
   };
-  const { fileIgnore, extensions, fileParentIgnore, pathIgnore } =
+  const { fileIgnore, extensions, rewriteToParentUrlFileIgnore, pathIgnore } =
     Object.assign(defaults, pluginOptions);
   const parentNode = getNode(markdownNode.parent);
   const relativePath = parentNode.relativePath;
@@ -23,7 +23,10 @@ module.exports = ({ markdownAST, markdownNode, getNode }, pluginOptions) => {
     return markdownNode;
   }
 
-  const shouldRewriteToParent = !anymatch(fileParentIgnore, relativePath);
+  const shouldRewriteToParent = !anymatch(
+    rewriteToParentUrlFileIgnore,
+    relativePath
+  );
 
   const visitor = (node, index, parent) => {
     const newUrl = transformerUrl(node.url, {

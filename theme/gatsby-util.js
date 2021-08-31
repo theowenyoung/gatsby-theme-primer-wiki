@@ -2,8 +2,7 @@ const getMdTitle = require("get-md-title");
 const defaultOptions = (pluginOptions) => {
   const options = Object.assign(
     {
-      extensions: [`.mdx`, ".md", ".markdown"],
-      mdxOtherwiseConfigured: false,
+      extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
       nav: [],
       imageMaxWidth: 561,
       sidebarDepth: 0,
@@ -12,6 +11,8 @@ const defaultOptions = (pluginOptions) => {
       shouldShowLastUpdated: true,
       shouldShowSidebarListOnIndex: true,
       shouldSupportTags: true,
+      rewriteUrlFileIgnore: [],
+      rewriteToParentUrlFileIgnore: [],
       lastUpdatedTransformer: (isoString) => {
         const dateObj = new Date(isoString);
         const date = dateObj.toLocaleString("en-US", {
@@ -22,6 +23,7 @@ const defaultOptions = (pluginOptions) => {
         return date;
       },
       lastUpdatedText: "Last updated on",
+      mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
     },
     pluginOptions
   );
