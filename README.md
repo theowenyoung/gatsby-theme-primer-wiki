@@ -8,34 +8,70 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 
 - [Demo](https://wiki.demo.owenyoung.com/) - ([Source](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example))
 - [Everything I Know by Owen](https://wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/wiki))
+- [Foam Demo](https://foam.demo.owenyoung.com/) - ([Source](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki))
+
+## Features
+
+- Support Local search, full-text search.
+- SEO Optimization
+- Support Graph Visualisation with Canvas.
+- Support Tags, Tags First, Generating tag pages, also connecting with graph visualisation.
+- Support [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) styled `SUMMARY.md` for custom sidebar.
+- Support `[[WikiLink]]`, But you'd better use [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions) with extensions, `"foam.edit.linkReferenceDefinitions": "withExtensions"`
+- Support Light/Dark Theme
+- Custom Header Nav Items
+- Nested Sidebar
+- Support Prefix Path
 
 ## Principles
 
 Here are my main ideas/principles in designing this theme.
 
-1. No vendor lock-in. So we should only write standard markdown. I like `[[WikiLink]]`, but I love standard markdown more. So we should always use standard markdown link `[text](https://example.com)`, or use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions), and don't use any vendor locked-in feature. That give us the capability change our theme, or hosted place.
+1. No vendor lock-in. The less vendor features you use, the better you'll be able to migrate, including this theme. So we should only write standard markdown. I like `[[WikiLink]]`, but I love standard markdown more. So we should always use standard markdown link `[text](https://example.com)`, or use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions), and don't use any vendor locked-in feature. That give us the capability change our theme, or hosted place.
 2. Use meta data instead of special characters. We should use `tags` as the document's metadata, not `#tag` at the plain text.
-
-## Features
-
-- Support Local search, full-text search.
-- Support Graph Visualisation with canvas.
-- Support Tags, Tags First
-- Support [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) styled `SUMMARY.md` for custom sidebar.
-- Support `[[WikiLink]]`, But you'd better use [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions) with extensions, `"foam.edit.linkReferenceDefinitions": "withExtensions"`
-- Support Light/Dark Theme
-- Custom Header Nav Items
-- Nested sidebar
+3. Use tags instead of categories. Minimal subfolders.
 
 ## Getting Started
 
 ### With Foam template repo
 
+See [foam-template-gatsby-theme-primer-wiki](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki)
+
 ### With the Gatsby starter
+
+See [gatsby-starter-primer-wiki](https://github.com/theowenyoung/gatsby-starter-primer-wiki)
+
+### Manual
+
+```bash
+npm i gatsby-theme-primer-wiki
+```
 
 ## Usage
 
 ### Theme Config
+
+Edit `gatsby-config.js`
+
+> If you use foam template, edit `.layouts/gatsby-config.js`
+
+Example:
+
+```javascript
+    {
+      resolve: "gatsby-theme-primer-wiki",
+      options: {
+        sidebarDepth: 0,
+        nav: [
+          {
+            title: "Github",
+            url: "https://github.com/theowenyoung/gatsby-theme-primer-wiki",
+          },
+        ],
+        editUrl: `https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/`,
+      },
+    },
+```
 
 ### nav
 
@@ -61,9 +97,17 @@ For header navs. Support two depth levels. Example:
 }
 ```
 
+### editUrl
+
+You remote git repo url prefix.
+
 ### mdxOtherwiseConfigured
 
 Advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
+
+### Prefix Path
+
+See [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-prefix/)
 
 ### Others
 

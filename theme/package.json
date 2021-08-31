@@ -16,6 +16,12 @@
     "react": "^17.0.x",
     "react-dom": "^17.0.x"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theowenyoung/gatsby-theme-primer-wiki.git",
+    "directory": "theme"
+  },
+  "homepage": "https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/theme",
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.14.5",
     "@mdx-js/mdx": "^1.6.22",

@@ -1,13 +1,13 @@
-# gatsby-transformer-markdown-references
+# @theowenyoung/gatsby-transformer-references
 
 Transformer plugin to extract references between markdown nodes. You can then use them to create bi-directional links.
 
-An example site for using this plugin is at [https://mathieudutour.github.io/gatsby-digital-garden/](https://mathieudutour.github.io/gatsby-digital-garden/)
+An example site for using this plugin is at [https://wiki.owenyoung.com/](https://wiki.owenyoung.com/)
 
 ## Install
 
 ```shell
-npm install --save gatsby-transformer-markdown-references
+npm install --save @theowenyoung/gatsby-transformer-references
 ```
 
 ## How to use
@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     // after a markdown or Mdx transformer
     {
-      resolve: `gatsby-transformer-markdown-references`,
+      resolve: `@theowenyoung/gatsby-transformer-references`,
       options: {
         types: ["Mdx"], // or ["MarkdownRemark"] (or both)
       },
@@ -45,20 +45,11 @@ The fields will be created in your site's GraphQL schema on the nodes of types s
     outboundReferences {
       ... on Mdx {
         id
-        parent {
-          id
-        }
       }
     }
     inboundReferences {
       ... on Mdx {
         id
-        parent {
-          id
-          ... on RoamPage {
-            title
-          }
-        }
       }
     }
   }
