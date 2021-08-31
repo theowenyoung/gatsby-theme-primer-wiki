@@ -6,9 +6,10 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 
 ## Sites that use this theme
 
-- [Demo](https://wiki.demo.owenyoung.com/) - ([Source](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example))
+- [Demo](https://demo-wiki.owenyoung.com) - ([Source](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example))
 - [Everything I Know by Owen](https://wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/wiki))
-- [Foam Demo](https://foam.demo.owenyoung.com/) - ([Source](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki))
+- [Foam Demo](https://demo-foam.owenyoung.com/) - ([Source](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki))
+- [Gatsby Starter Demo](https://demo-gatsby-starter-primer-wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/gatsby-starter-primer-wiki))
 
 ## Features
 
