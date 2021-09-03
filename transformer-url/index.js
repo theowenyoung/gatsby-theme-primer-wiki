@@ -1,15 +1,20 @@
 const isRelativeUrl = require("is-relative-url");
 const path = require("path");
 function transformUrl(url, options) {
-  const { extensions, addParent, fileUrl } = options;
-  let shouldReplace = isRelativeUrl(url);
+  const {
+    extensions = [],
+    addParent,
+    fileUrl,
+    removeExtension = true,
+  } = options;
+  let shouldReplace = url && isRelativeUrl(url) && !url.startsWith("/");
 
   if (shouldReplace && Array.isArray(extensions)) {
     const extname = path.extname(url || "");
 
     const matchedExtname = extensions.find((n) => extname === n);
 
-    if (matchedExtname) {
+    if (removeExtension && matchedExtname) {
       if (addParent) {
         url = path.join(fileUrl, "../", url);
         url = url.slice(0, url.length - matchedExtname.length);
@@ -24,7 +29,7 @@ function transformUrl(url, options) {
         url = path.join(fileUrl, url);
       }
     }
-    if (!url.endsWith("/")) {
+    if (removeExtension && !url.endsWith("/")) {
       url = url + "/";
     }
   }

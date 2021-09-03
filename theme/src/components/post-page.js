@@ -59,10 +59,10 @@ const Post = ({ data, pageContext, location }) => {
     slug,
     url,
     editUrl,
+    shouldShowTitle,
   } = fields;
 
   const {
-    title: frontmatterTitle,
     date,
     description,
     imageAlt,
@@ -77,9 +77,10 @@ const Post = ({ data, pageContext, location }) => {
     : gitCreatedAt
     ? new Date(gitCreatedAt)
     : null;
+
   const postSeoData = {
     title,
-    frontmatterTitle,
+    shouldShowTitle,
     description,
     rawBody,
     excerpt,
@@ -131,11 +132,11 @@ const Post = ({ data, pageContext, location }) => {
           </Box>
         ) : null}
         <Box width="100%" maxWidth="960px">
-          {frontmatterTitle && (
+          {shouldShowTitle && (
             <Box mb={4}>
               <Box display="flex" sx={{ alignItems: "center" }}>
                 <Heading as="h1" mr={2}>
-                  {frontmatterTitle}
+                  {title}
                 </Heading>
               </Box>
             </Box>

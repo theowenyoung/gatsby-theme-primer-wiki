@@ -4,10 +4,10 @@ import githubTheme from "../github";
 import React, { useState } from "react";
 import reactElementToJsxString from "react-element-to-jsx-string";
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live";
-import { ThemeContext } from "styled-components";
 import scope from "../live-code-scope";
 import ClipboardCopy from "./clipboard-copy";
 import LivePreviewWrapper from "./live-preview-wrapper";
+import { useTheme } from "@primer/components";
 
 const languageTransformers = {
   html: (html) => htmlToJsx(html),
@@ -35,7 +35,7 @@ function wrapWithFragment(jsx) {
 }
 
 function LiveCode({ code, language, noinline }) {
-  const theme = React.useContext(ThemeContext);
+  const { theme } = useTheme();
   const [liveCode, setLiveCode] = useState(code);
   const handleChange = (updatedLiveCode) => setLiveCode(updatedLiveCode);
 

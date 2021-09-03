@@ -7,7 +7,7 @@ import { Link, Box, Heading, Button, Text } from "@primer/components";
 import isRelativeUrl from "is-relative-url";
 import { ZapIcon } from "@primer/octicons-react";
 import { useTheme } from "@primer/components";
-
+import { encodeSlug } from "../utils/encode";
 // import './anchor-tag.css'
 const AnchorTag = ({
   title,
@@ -19,7 +19,11 @@ const AnchorTag = ({
 }) => {
   const theme = useTheme();
   const colorMode = theme.resolvedColorMode;
-  const ref = references.find((x) => x.fields.slug === href);
+  const ref = references.find(
+    (x) => x.fields.slug === href || encodeSlug(x.fields.slug) === href
+  );
+  // console.log("ref", href, ref, references);
+
   let instance = null;
   const onCreate = (theInstance) => {
     instance = theInstance;
@@ -38,8 +42,10 @@ const AnchorTag = ({
         return <AnchorTag {...props} references={references} withoutPopup />;
       },
     };
-    const frontmatter = ref.frontmatter || {};
-    const frontmatterTitle = frontmatter.title;
+    const fields = ref.fields || {};
+    const shouldShowTitle =
+      fields.shouldShowTitle !== undefined ? fields.shouldShowTitle : false;
+    const documentTitle = fields.title;
     popupContent = (
       <Box
         width={["100%", "400px"]}
@@ -49,11 +55,11 @@ const AnchorTag = ({
         px="2"
         py="1"
       >
-        {frontmatterTitle && (
+        {shouldShowTitle && documentTitle && (
           <Box mb={4}>
             <Box display="flex" sx={{ alignItems: "center" }}>
               <Heading as="h1" mr={2}>
-                {frontmatterTitle}
+                {documentTitle}
               </Heading>
             </Box>
           </Box>

@@ -4,9 +4,9 @@ export function useScrollSpy(selectors, options) {
   const [activeId, setActiveId] = React.useState();
   const observer = React.useRef();
   React.useEffect(() => {
-    const elements = selectors.map((selector) =>
-      document.querySelector(selector)
-    );
+    const elements = selectors
+      .filter((selector) => document.querySelector(selector))
+      .map((selector) => document.querySelector(selector));
     if (observer.current) {
       observer.current.disconnect();
     }

@@ -212,13 +212,13 @@ Text inside `backticks` on a line will be formatted like code.
 
 Syntax highlight is supported with the language specified after the first set of backticks. We use prismjs for syntax highlighting, a list of supported languages can be found [at their site](https://prismjs.com/#supported-languages)
 
-<pre><code>```js
+````js
 function fancyAlert(arg) {
   if(arg) {
     $.facebox({div:'#foo'})
   }
 }
-```</code></pre>
+```
 
 ```js
 function fancyAlert(arg) {
@@ -447,3 +447,6 @@ It looks like this if you follow the [[Format your notes#^376b9d|second option]]
 ## Developer notes
 
 We strive for maximum capability without breaking any existing formats, therefore we use a slightly unorthodox combination of flavors of markdown. It is broadly CommonMark, with the addition of some functionality from GitHub Flavored Markdown (GFM), some latex support, and our chosen embed syntax, which you can read more about at [[Accepted file formats]].
+
+
+````

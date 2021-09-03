@@ -8,7 +8,6 @@ import {
 } from "@primer/octicons-react";
 import { Link as GatsbyLink } from "gatsby";
 import React from "react";
-import { ThemeContext } from "styled-components";
 import useSiteMetadata from "../use-site";
 import DarkButton from "./dark-button";
 import MobileSearch from "./mobile-search";
@@ -26,13 +25,12 @@ function Header({
   tagsGroups,
   currentSlug,
 }) {
-  const theme = React.useContext(ThemeContext);
+  const { resolvedColorMode, setColorMode, theme } = useTheme();
   const [isNavDrawerOpen, setIsNavDrawerOpen] = useNavDrawerState(
     theme.breakpoints[2]
   );
   const [isGraphOpen, setIsGraphOpen] = React.useState(false);
 
-  const { resolvedColorMode, setColorMode } = useTheme();
   const [isMobileSearchOpen, setIsMobileSearchOpen] = React.useState(false);
   const { siteMetadata } = useSiteMetadata();
   const themeConfig = useThemeConfig();

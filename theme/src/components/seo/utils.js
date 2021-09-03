@@ -15,7 +15,7 @@ export const generatePostData = (post) => {
     rawBody,
     excerpt,
     slug,
-    frontmatterTitle,
+    shouldShowTitle,
     language,
     seoTitle,
   } = post;
@@ -29,7 +29,7 @@ export const generatePostData = (post) => {
     postDescription = description;
   } else {
     postDescription = excerpt || "";
-    if (!frontmatterTitle && title && postDescription.startsWith(title)) {
+    if (!shouldShowTitle && title && postDescription.startsWith(title)) {
       postDescription = postDescription.slice(title.length);
       if (postDescription && postDescription.startsWith(" ")) {
         // remove title space
@@ -77,7 +77,7 @@ export const generateSeoData = (siteMetadata, postData, { pathPrefix }) => {
     : siteMetadata.description;
   const tags = postData.tags || [];
   const siteUrl = siteMetadata.siteUrl;
-  if (isRelativeUrl(imageUrl)) {
+  if (imageUrl && isRelativeUrl(imageUrl)) {
     imageUrl = urlJoin(siteUrl, imageUrl);
   }
   return {

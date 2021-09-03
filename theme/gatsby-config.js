@@ -40,6 +40,20 @@ module.exports = (themeOptions) => {
           remarkPlugins: [require("remark-inline-links")],
           gatsbyRemarkPlugins: [
             {
+              resolve: "gatsby-remark-rewrite-link-for-trailing-slash",
+              options: {
+                fileIgnore: rewriteUrlFileIgnore,
+                rewriteToParentUrlFileIgnore: rewriteToParentUrlFileIgnore,
+              },
+            },
+
+            {
+              resolve: `gatsby-remark-autolink-headers`,
+              options: {
+                icon: false,
+              },
+            },
+            {
               resolve: `gatsby-remark-relative-images`,
               options: {
                 include: ["image"],
@@ -53,25 +67,19 @@ module.exports = (themeOptions) => {
               },
             },
             {
-              resolve: "gatsby-remark-rewrite-link-for-trailing-slash",
-              options: {
-                fileIgnore: rewriteUrlFileIgnore,
-                rewriteToParentUrlFileIgnore: rewriteToParentUrlFileIgnore,
-              },
-            },
-            {
               resolve: `gatsby-remark-copy-linked-files`,
               options: {
                 ignoreFileExtensions: extensions
                   .map((item) => item.slice(1))
-                  .concat([`png`, `jpg`, `jpeg`, `bmp`, `tiff`, "txt"]),
-              },
-            },
-
-            {
-              resolve: `gatsby-remark-autolink-headers`,
-              options: {
-                icon: false,
+                  .concat([
+                    `.png`,
+                    `.jpg`,
+                    `.jpeg`,
+                    `.bmp`,
+                    `.tiff`,
+                    ".svg",
+                    ".gif",
+                  ]),
               },
             },
           ],

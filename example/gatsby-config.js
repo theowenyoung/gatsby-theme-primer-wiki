@@ -5,7 +5,9 @@ const siteMetadata = {
   description: "A Gatsby theme for creating Primer wiki sites",
   siteUrl: "https://demo-wiki.owenyoung.com",
 };
-const contentFolder = "obsidian-content";
+// const contentFolder = "content6";
+const contentFolder = "foam-content";
+
 module.exports = {
   siteMetadata,
   // pathPrefix: "/wiki",
@@ -30,7 +32,8 @@ module.exports = {
       resolve: "gatsby-theme-primer-wiki",
       options: {
         sidebarDepth: 0,
-        shouldSupportTags: true,
+        // sidebarDefault: "tag",
+        // shouldSupportTags: true,
         nav: [
           {
             title: "Github",

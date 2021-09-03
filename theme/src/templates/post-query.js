@@ -16,6 +16,7 @@ export const query = graphql`
         lastUpdatedAt
         lastUpdated
         gitCreatedAt
+        shouldShowTitle
       }
       frontmatter {
         title
@@ -39,21 +40,16 @@ export const query = graphql`
       outboundReferences {
         ... on Mdx {
           body
-          frontmatter {
-            title
-          }
           fields {
             slug
             title
+            shouldShowTitle
           }
         }
       }
       inboundReferences {
         ... on Mdx {
           body
-          frontmatter {
-            title
-          }
           fields {
             slug
             title

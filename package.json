@@ -8,7 +8,7 @@
     "build:prefix": "npm -w example run build -- --prefix-paths",
     "serve": "npm -w example run serve",
     "serve:prefix": "npm -w example run serve -- --prefix-paths",
-    "test": "npm -ws run test -- --passWithNoTests",
+    "test": "jest",
     "lint": "npx prettier --write . && eslint ./ --fix",
     "check": "npx prettier --check --loglevel debug .",
     "prepare": "husky install",
@@ -21,6 +21,8 @@
   },
   "workspaces": [
     "transformer-url",
+    "gatsby-relative-path-to-slug",
+    "remark-rewrite",
     "slug",
     "references",
     "rewrite",
@@ -35,7 +37,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^6.0.0",
     "husky": "^7.0.1",
-    "jest": "^27.0.6",
+    "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2"
   },

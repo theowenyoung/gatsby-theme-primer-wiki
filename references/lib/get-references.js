@@ -1,15 +1,18 @@
 const remark = require("remark");
-const remarkInlineLinks = require("remark-inline-links");
+var visit = require("unist-util-visit");
+
 const isRelativeUrl = require("is-relative-url");
 const anymatch = require("anymatch");
 
-var visit = require("unist-util-visit");
 const transformerMarkdownUrl = require("@theowenyoung/transformer-markdown-url");
+const remarkRewrite = require("@theowenyoung/remark-rewrite");
+const inlineLinks = require("remark-inline-links");
 const getReferences = async (string, options) => {
   let result = {
     pages: [],
   };
   const markdownNode = options.node;
+  // console.log("markdownNode", markdownNode);
   const parentNode = options.getNode(markdownNode.parent);
   const relativePath = parentNode.relativePath;
   const isIgnore = anymatch(options.fileIgnore, relativePath);
@@ -31,6 +34,8 @@ const getReferences = async (string, options) => {
 
       function onvisit(node, index, parent) {
         if (node.type === "link") {
+          // console.log("node", node.url);
+
           if (isRelativeUrl(node.url)) {
             references.push({
               url: transformerMarkdownUrl(node.url, {
@@ -45,12 +50,16 @@ const getReferences = async (string, options) => {
       }
     }
   }
+
   return remark()
-    .use(remarkInlineLinks)
+    .use(inlineLinks)
+    .use(remarkRewrite, options)
     .use(getAllOutbounds)
     .process(string)
     .then((file) => {
       result.pages = references;
+      // console.log("references", references);
+
       return result;
     });
 };

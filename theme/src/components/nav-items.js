@@ -11,7 +11,7 @@ import {
   ChevronUpIcon,
 } from "@primer/octicons-react";
 import { Link as GatsbyLink } from "gatsby";
-
+import { encodeSlug } from "../utils/encode";
 import React from "react";
 import styled from "styled-components";
 import useThemeConfig from "../use-theme-config";
@@ -31,13 +31,17 @@ const NavBox = styled(Box)`
 `;
 function getGroupIsActive(location, url, items) {
   return (
-    (url && location.pathname.startsWith(url)) ||
+    (url &&
+      (location.pathname.startsWith(url) ||
+        location.pathname.startsWith(encodeSlug(url)))) ||
     (Array.isArray(items) &&
       items.find((item) => getGroupIsActive(location, item.url, item.items)))
   );
 }
 function getIsActive(location, url) {
-  return url && location.pathname === url;
+  return (
+    url && (location.pathname === url || location.pathname === encodeSlug(url))
+  );
 }
 function SidebarItem({
   location,

@@ -14,7 +14,10 @@
     "node": ">=12.13.0"
   },
   "dependencies": {
+    "@theowenyoung/gatsby-relative-path-to-slug": "^1.0.0",
+    "@theowenyoung/transformer-markdown-url": "^1.9.4",
+    "slugify": "^1.6.0",
     "unist-util-visit": "^1.3.0",
-    "@theowenyoung/transformer-markdown-url": "^1.9.4"
+    "@theowenyoung/remark-rewrite": "^1.0.0"
   }
 }

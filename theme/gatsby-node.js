@@ -1,6 +1,6 @@
 const path = require("path");
 const { execSync } = require("child_process");
-const { getTitle, defaultOptions } = require("./gatsby-util");
+const { getTitle, defaultOptions, getTree } = require("./gatsby-util");
 const urlJoin = require("url-join");
 const kebabCase = require(`lodash/kebabCase`);
 
@@ -138,6 +138,7 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 exports.createPages = async ({ graphql, actions }, themeOptions) => {
   const options = defaultOptions(themeOptions);
+  const sidebarDefault = options.sidebarDefault;
   const postTemplate = path.resolve(__dirname, `./src/templates/post-query.js`);
 
   const tagTemplate = path.resolve(__dirname, `./src/templates/tag-query.js`);
@@ -229,6 +230,47 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
   }
 
   let sidebarItems = postsData.data.allSummaryGroup.nodes;
+  const { data } = await graphql(`
+    {
+      allMdx {
+        nodes {
+          fileAbsolutePath
+          rawBody
+          tableOfContents(maxDepth: 2)
+          frontmatter {
+            draft
+            tags
+          }
+          fields {
+            slug
+            title
+          }
+        }
+      }
+    }
+  `);
+  const allPostNodes = data.allMdx.nodes.filter(
+    (node) => node.frontmatter.draft !== true
+  );
+  if (
+    (sidebarItems.length === 0 && tagsGroups.length === 0) ||
+    sidebarDefault === "category"
+  ) {
+    // auto generate summary
+    const tree = getTree(
+      allPostNodes.map((node) => {
+        return {
+          slug: node.fields.slug,
+          title: node.fields.title,
+        };
+      })
+    );
+    // console.log("tree", JSON.stringify(tree, null, 2));
+    sidebarItems = [{ title: "Categories", items: tree }];
+  }
+  if (sidebarDefault === "tag") {
+    sidebarItems = [];
+  }
 
   tagsGroups.forEach((item) => {
     let tag = item.title;
@@ -245,42 +287,21 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
     });
   });
 
-  const { data } = await graphql(`
-    {
-      allMdx {
-        nodes {
-          fileAbsolutePath
-          rawBody
-          tableOfContents(maxDepth: 2)
-          frontmatter {
-            draft
-            tags
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  `);
-
   // Turn every MDX file into a page.
-  return data.allMdx.nodes
-    .filter((node) => node.frontmatter.draft !== true)
-    .forEach((node) => {
-      let slug = node.fields.slug;
+  return allPostNodes.forEach((node) => {
+    let slug = node.fields.slug;
 
-      actions.createPage({
-        path: slug,
-        component: postTemplate,
-        context: {
-          tags: node.frontmatter.tags || [],
-          slug: slug,
-          sidebarItems,
-          tagsGroups,
-        },
-      });
+    actions.createPage({
+      path: slug,
+      component: postTemplate,
+      context: {
+        tags: node.frontmatter.tags || [],
+        slug: slug,
+        sidebarItems,
+        tagsGroups,
+      },
     });
+  });
 };
 exports.onCreateNode = async (
   { node, actions, getNode, loadNodeContent },
@@ -290,19 +311,26 @@ exports.onCreateNode = async (
     const { createNodeField } = actions;
     const parentNode = getNode(node.parent);
     const options = defaultOptions(themeOptions);
-    const title = await getTitle(node, { loadNodeContent });
+    const { title, shouldShowTitle } = await getTitle(node, {
+      loadNodeContent,
+    });
 
     createNodeField({
       name: `title`,
       node,
       value: title || "",
     });
+    createNodeField({
+      name: `shouldShowTitle`,
+      node,
+      value: shouldShowTitle,
+    });
     let lastUpdated = "";
     let lastUpdatedAt = "";
     if (options.shouldShowLastUpdated) {
       try {
         const gitAuthorTime = execSync(
-          `git log -1 --pretty=format:%aI ${node.fileAbsolutePath}`
+          `git log -1 --pretty=format:%aI "${node.fileAbsolutePath}"`
         ).toString();
         const isoTime = new Date(gitAuthorTime).toISOString();
         lastUpdatedAt = isoTime;
@@ -316,7 +344,7 @@ exports.onCreateNode = async (
     let gitCreatedAt = "";
     try {
       const gitFirstAuthorTime = execSync(
-        `git log --pretty=format:%aI ${node.fileAbsolutePath} | tail -1`
+        `git log --pretty=format:%aI "${node.fileAbsolutePath}" | tail -1`
       ).toString();
       gitCreatedAt = new Date(gitFirstAuthorTime).toISOString();
     } catch (error) {

@@ -1,10 +1,13 @@
 const getMdTitle = require("get-md-title");
+const { arrayToTree } = require("performant-array-to-tree");
+const { titleCase } = require("title-case");
 const defaultOptions = (pluginOptions) => {
   const options = Object.assign(
     {
       nav: [],
       mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
       extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
+      sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
       imageMaxWidth: 561, // max width for image
       sidebarDepth: 0, // sidebar depth, default is 0;
 
@@ -39,13 +42,102 @@ async function getTitle(node, { loadNodeContent }) {
     "title" in node.frontmatter &&
     node.frontmatter["title"]
   ) {
-    return node.frontmatter["title"];
+    return {
+      title: node.frontmatter["title"],
+      shouldShowTitle: true,
+    };
   }
   const content = await loadNodeContent(node);
   const result = getMdTitle(content);
-  if (!result) {
-    return "Untitled";
+  if (!result || !result.text) {
+    // get file name
+
+    if (node.fields && node.fields.slug) {
+      const slugArr = node.fields.slug.split("/").filter((item) => item);
+      const baseSlug = slugArr[slugArr.length - 1];
+      if (!baseSlug) {
+        return {
+          title: "Index",
+          shouldShowTitle: false,
+        };
+      }
+      return {
+        title: titleCase(baseSlug),
+        shouldShowTitle: true,
+      };
+    }
   }
-  return result.text || "Untitled";
+  return {
+    title: result.text || "Untitled",
+    shouldShowTitle: false,
+  };
 }
 exports.getTitle = getTitle;
+function formatTree(tree) {
+  return tree.map((node) => {
+    return {
+      title: node.data.title,
+      url: node.data.slug || "",
+      items: node.children.length > 0 ? formatTree(node.children) : [],
+    };
+  });
+}
+exports.getTree = (nodes) => {
+  // First add parent node
+  const nodeMap = new Map();
+  let allNodes = [];
+  // first files, then folders
+  // files may have index, so that should be handled first
+  nodes.forEach((node) => {
+    if (!nodeMap.get(node.slug)) {
+      const arr = node.slug.split("/").filter((item) => item);
+
+      nodeMap.set(node.slug, true);
+      // last
+
+      allNodes.push({
+        id: node.slug,
+        parentId:
+          arr.length > 1
+            ? "/" + arr.slice(0, arr.length - 1).join("/") + "/"
+            : null,
+        slug: node.slug,
+        title: node.title,
+      });
+    }
+  });
+  nodes.forEach((node) => {
+    const arr = node.slug.split("/").filter((item) => item);
+
+    if (arr.length > 0) {
+      arr.forEach((item, index) => {
+        if (index < arr.length - 1) {
+          const slug = "/" + arr.slice(0, index + 1).join("/") + "/";
+          let parentSlug = "";
+          if (arr.slice(0, index).length > 0) {
+            parentSlug = "/" + arr.slice(0, index).join("/") + "/";
+          }
+
+          if (!nodeMap.get(slug)) {
+            const title = titleCase(item);
+
+            nodeMap.set(slug, true);
+            allNodes.push({
+              id: slug,
+              parentId: parentSlug ? parentSlug : null,
+              title: title,
+            });
+          }
+        }
+      });
+    }
+  });
+  // console.log("allNodes", allNodes);
+  // sort
+  allNodes = allNodes.sort((a, b) => {
+    return a.title.localeCompare(b.title);
+  });
+  const tree = arrayToTree(allNodes);
+
+  return formatTree(tree);
+};
