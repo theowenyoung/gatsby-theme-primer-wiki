@@ -1,5 +1,14 @@
 # example
 
+## 1.9.8
+
+### Patch Changes
+
+- [`9f494ec`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/9f494ec252e1eac24eaba1db19c37125501cbb58) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support Wiki Link for Obsidian
+
+- Updated dependencies [[`9f494ec`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/9f494ec252e1eac24eaba1db19c37125501cbb58)]:
+  - gatsby-theme-primer-wiki@1.11.2
+
 ## 1.9.7
 
 ### Patch Changes
