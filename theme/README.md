@@ -9,6 +9,7 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 - [Demo](https://demo-wiki.owenyoung.com) - ([Source](https://github.com/theowenyoung/gatsby-theme-primer-wiki/tree/main/example))
 - [Everything I Know by Owen](https://wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/wiki))
 - [Foam Demo](https://demo-foam.owenyoung.com/) - ([Source](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki))
+- [Obsidian Demo](https://demo-obsidian.owenyoung.com/) - ([Source](https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki))
 - [Gatsby Starter Demo](https://demo-gatsby-starter-primer-wiki.owenyoung.com/) - ([Source](https://github.com/theowenyoung/gatsby-starter-primer-wiki))
 
 ## Features
@@ -18,7 +19,7 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 - Support Graph Visualisation with Canvas.
 - Support Tags, Tags First, Generating tag pages, also connecting with graph visualisation.
 - Support [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) styled `SUMMARY.md` for custom sidebar.
-- Support `[[WikiLink]]`, But you'd better use [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions) with extensions, `"foam.edit.linkReferenceDefinitions": "withExtensions"`
+- Support `[[WikiLink]]`
 - Support Light/Dark Theme
 - Custom Header Nav Items
 - Nested Sidebar
@@ -28,7 +29,7 @@ This theme is inspired with [gatsby-project-kb](https://github.com/hikerpig/gats
 
 Here are my main ideas/principles in designing this theme.
 
-1. No vendor lock-in. The less vendor features you use, the better you'll be able to migrate, including this theme. So we should only write standard markdown. I like `[[WikiLink]]`, but I love standard markdown more. So we should always use standard markdown link `[text](https://example.com)`, or use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions), and don't use any vendor locked-in feature. That give us the capability change our theme, or hosted place.
+1. No vendor lock-in. The less vendor features you use, the better you'll be able to migrate. `[[Wikilink]]` is the only non-markdown feature supported by default, but nonetheless, it is recommended to use the standard markdown syntax, or if you edit with [Foam](https://github.com/foambubble/foam), please use [Wikilink](https://foambubble.github.io/foam/wikilinks) with [Link Reference Definitions](https://foambubble.github.io/foam/features/link-reference-definitions). That give us the capability change our theme, or hosted place.
 2. Use meta data instead of special characters. We should use `tags` as the document's metadata, not `#tag` in the plain text.
 3. Use tags instead of categories. Minimal subfolders.
 
@@ -37,6 +38,10 @@ Here are my main ideas/principles in designing this theme.
 ### With Foam template repo
 
 See [foam-template-gatsby-theme-primer-wiki](https://github.com/theowenyoung/foam-template-gatsby-theme-primer-wiki)
+
+### With the Obsidian template repo
+
+See [obsidian-template-gatsby-theme-primer-wiki](https://github.com/theowenyoung/obsidian-template-gatsby-theme-primer-wiki)
 
 ### With the Gatsby starter
 
@@ -115,7 +120,7 @@ Advanced, use your own mdx plugin config, See https://github.com/theowenyoung/ga
   extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
   imageMaxWidth: 561, // max width for image
   sidebarDepth: 0, // sidebar depth, default is 0;
-
+  sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
   editUrl: "", // github/gitlab editurl, with prefix, example: 'https://github.com/facebook/docusaurus/edit/main/website/',
   editUrlText: "Edit this page", // edit url text
   shouldShowLastUpdated: true, // should show last updated
