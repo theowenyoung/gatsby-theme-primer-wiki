@@ -6,7 +6,7 @@ const siteMetadata = {
   siteUrl: "https://demo-wiki.owenyoung.com",
 };
 // const contentFolder = "content6";
-const contentFolder = "foam-content";
+const contentFolder = "obsidian-content";
 
 module.exports = {
   siteMetadata,

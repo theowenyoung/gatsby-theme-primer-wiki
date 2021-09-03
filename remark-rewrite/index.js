@@ -95,10 +95,13 @@ module.exports = function remarkRewrite(pluginOptions) {
       const previous = siblings[index - 1];
       const next = siblings[index + 1];
 
-      if (
-        !previous?.value?.includes("[", "![") ||
-        !next?.value?.includes("]")
-      ) {
+      if (!(previous && previous.value && next && next.value)) {
+        return;
+      }
+      const previousValue = previous.value.trimEnd();
+      const nextValue = next.value.trimStart();
+
+      if (!(previousValue.endsWith("[") && nextValue.startsWith("]"))) {
         return;
       }
 
@@ -121,8 +124,7 @@ module.exports = function remarkRewrite(pluginOptions) {
       const titleLowerCase = parsedTitle.toLowerCase();
 
       const isImage =
-        previous &&
-        previous.value === "![" &&
+        previousValue.endsWith("![") &&
         imageExtensions.includes(pathLib.extname(titleLowerCase));
 
       let file = files
@@ -153,9 +155,13 @@ module.exports = function remarkRewrite(pluginOptions) {
             extensions,
           });
         }
-        previous.value = previous.value.replace("![", "");
-        previous.value = previous.value.replace("[", "");
-        next.value = next.value.replace("]", "");
+        if (isImage) {
+          previous.value = previousValue.slice(0, previousValue.length - 2);
+        } else {
+          previous.value = previousValue.slice(0, previousValue.length - 1);
+        }
+
+        next.value = nextValue.slice(1);
         node.type = isImage ? "image" : "link";
         let nodeTitle = node.label;
         if (node.label.match(/#/)) {
