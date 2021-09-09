@@ -22,6 +22,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       lastUpdatedText: String
       nav: [NavItem!]
       titleTemplate: String
+      defaultColorMode: String
     }
  
   `);
@@ -39,6 +40,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     nav,
     shouldSupportTags,
     titleTemplate,
+    defaultColorMode,
   } = options;
   const themeConfig = {
     sidebarDepth,
@@ -49,6 +51,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     shouldSupportTags,
     nav,
     titleTemplate,
+    defaultColorMode,
   };
 
   createNode({

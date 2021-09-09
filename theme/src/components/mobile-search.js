@@ -92,8 +92,8 @@ function MobileSearch({ isOpen, onDismiss, tagsGroups }) {
                 >
                   <Box
                     display="flex"
-                    bg="auto.gray.9"
-                    color="auto.white"
+                    bg="header.bg"
+                    color="header.text"
                     p={3}
                     flex="0 0 auto"
                   >
@@ -123,7 +123,7 @@ function MobileSearch({ isOpen, onDismiss, tagsGroups }) {
                     <Box
                       display="flex"
                       {...getMenuProps({
-                        bg: "white",
+                        bg: "auto.white",
                         py: 1,
                         flexDirection: "column",
                         flex: "1 1 auto",

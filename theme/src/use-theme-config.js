@@ -11,6 +11,7 @@ function useThemeConfig() {
         shouldShowSidebarListOnIndex
         shouldSupportTags
         titleTemplate
+        defaultColorMode
         nav {
           title
           url

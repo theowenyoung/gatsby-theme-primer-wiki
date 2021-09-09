@@ -34,6 +34,7 @@ module.exports = {
         sidebarDepth: 0,
         // sidebarDefault: "tag",
         // shouldSupportTags: true,
+        defaultColorMode: "night",
         nav: [
           {
             title: "Github",

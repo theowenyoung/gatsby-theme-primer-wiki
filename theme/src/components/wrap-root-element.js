@@ -5,6 +5,7 @@ import { theme, ThemeProvider } from "@primer/components";
 import React from "react";
 import components from "./mdx-components";
 import deepmerge from "deepmerge";
+import useThemeConfig from "../use-theme-config";
 const customTheme = deepmerge(theme, {
   colorSchemes: {
     light: {
@@ -26,12 +27,12 @@ const customTheme = deepmerge(theme, {
     },
   },
 });
-function wrapRootElement({ element }) {
+function WrapRootElement({ element }) {
   return (
-    <ThemeProvider theme={customTheme} colorMode="auto">
+    <ThemeProvider theme={customTheme} colorMode={"night"}>
       <MDXProvider components={components}>{element}</MDXProvider>
     </ThemeProvider>
   );
 }
 
-export default wrapRootElement;
+export default WrapRootElement;
