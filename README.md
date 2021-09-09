@@ -133,7 +133,7 @@ See [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-pr
   shouldSupportTags: true, // whether support tags
   rewriteUrlFileIgnore: [], // not rewrite `xxx.md`  to `xxx`
   rewriteToParentUrlFileIgnore: [], // not add parent path join for the file
-  defaultColorMode: "auto", // default color mode, auto, night, day
+  defaultColorMode: "day", // default color mode, auto, night, day
   lastUpdatedTransformer: (isoString) => {
     const dateObj = new Date(isoString);
     const date = dateObj.toLocaleString("en-US", {

@@ -37,7 +37,10 @@ module.exports = (themeOptions) => {
         resolve: `gatsby-plugin-mdx`,
         options: {
           extensions: extensions,
-          remarkPlugins: [require("remark-inline-links")],
+          remarkPlugins: [
+            require("remark-inline-links"),
+            require("remark-unwrap-images"),
+          ],
           gatsbyRemarkPlugins: [
             {
               resolve: "gatsby-remark-rewrite-link-for-trailing-slash",

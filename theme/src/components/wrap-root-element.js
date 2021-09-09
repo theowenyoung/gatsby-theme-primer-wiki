@@ -27,12 +27,16 @@ const customTheme = deepmerge(theme, {
     },
   },
 });
-function WrapRootElement({ element }) {
+const Provider = (props) => {
+  const themeConfig = useThemeConfig();
   return (
-    <ThemeProvider theme={customTheme} colorMode={"night"}>
-      <MDXProvider components={components}>{element}</MDXProvider>
+    <ThemeProvider theme={customTheme} colorMode={themeConfig.defaultColorMode}>
+      <MDXProvider components={components}>{props.children}</MDXProvider>
     </ThemeProvider>
   );
+};
+function WrapRootElement({ element }) {
+  return <Provider>{element}</Provider>;
 }
 
 export default WrapRootElement;
