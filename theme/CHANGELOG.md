@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.11.4
+
+### Patch Changes
+
+- [`70321ecc`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/70321eccc6b329a9c379d3e60c372b04f28626ae) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix night mode bg
+
 ## 1.11.3
 
 ### Patch Changes
