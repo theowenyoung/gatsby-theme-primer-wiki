@@ -1,6 +1,5 @@
 import { Box } from "@primer/components";
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
 import { HEADER_HEIGHT } from "./header";
 import NavItems from "./nav-items";
 

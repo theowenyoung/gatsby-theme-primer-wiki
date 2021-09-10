@@ -133,6 +133,9 @@ function SidebarItem({
             }
           >
             {title}
+            {type === "tag" && items && items.length > 0
+              ? ` (${items.length})`
+              : ""}
           </NavLink>
         ) : (
           <NavBox
