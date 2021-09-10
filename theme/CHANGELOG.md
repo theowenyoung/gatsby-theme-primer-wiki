@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.11.6
+
+### Patch Changes
+
+- [`67482350`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/674823504f12a82b4353bc8bce47e956ebc4c68f) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Show tag posts count on sidebar
+
 ## 1.11.5
 
 ### Patch Changes
