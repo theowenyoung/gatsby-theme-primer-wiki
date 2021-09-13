@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.12.1
+
+### Patch Changes
+
+- [`e7ba2813`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/e7ba28132ca153147e3e789f3447c4ae40e3ee8d) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix nav items active state
+
 ## 1.12.0
 
 ### Minor Changes
