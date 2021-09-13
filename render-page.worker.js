@@ -2257,9 +2257,9 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!**************************************************************************************************************************************************!*\
-  !*** ../node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!./node_modules/gatsby-theme-primer-wiki/src/search.worker.js ***!
-  \**************************************************************************************************************************************************/
+/*!*******************************************************************************************************************!*\
+  !*** ../node_modules/gatsby/dist/utils/babel-loader.js??ruleSet[1].rules[2].use[0]!../theme/src/search.worker.js ***!
+  \*******************************************************************************************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var fuse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fuse.js */ "../node_modules/fuse.js/dist/fuse.esm.js");
 /* harmony import */ var lodash_debounce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash.debounce */ "../node_modules/lodash.debounce/index.js");
