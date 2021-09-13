@@ -32,8 +32,7 @@ const NavBox = styled(Box)`
 function getGroupIsActive(location, url, items) {
   return (
     (url &&
-      (location.pathname.startsWith(url) ||
-        location.pathname.startsWith(encodeSlug(url)))) ||
+      (location.pathname === url || location.pathname === encodeSlug(url))) ||
     (Array.isArray(items) &&
       items.find((item) => getGroupIsActive(location, item.url, item.items)))
   );
