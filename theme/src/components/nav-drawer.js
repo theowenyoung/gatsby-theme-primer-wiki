@@ -11,6 +11,7 @@ import NavItems from "./nav-items";
 import useThemeConfig from "../use-theme-config";
 import { useTheme } from "@primer/components";
 import { SunIcon, MoonIcon } from "@primer/octicons-react";
+import components from "./mdx-components";
 export function useNavDrawerState(breakpoint) {
   // Handle string values from themes with units at the end
   if (typeof breakpoint === "string") {
@@ -146,7 +147,7 @@ function PrimerNavItems({ items }) {
                   </summary>
                   <Box display="flex" flexDirection="column" mt={2}>
                     {item.items.map((child) => (
-                      <Link
+                      <components.a
                         key={child.title}
                         href={child.url}
                         py={1}
@@ -155,7 +156,7 @@ function PrimerNavItems({ items }) {
                         color="inherit"
                       >
                         {child.title}
-                      </Link>
+                      </components.a>
                     ))}
                   </Box>
                 </>

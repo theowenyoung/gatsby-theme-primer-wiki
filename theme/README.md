@@ -115,21 +115,24 @@ Advanced, use your own mdx plugin config, See https://github.com/theowenyoung/ga
 
 ```javascript
 {
-  nav: [],
-  mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
-  extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
-  imageMaxWidth: 561, // max width for image
-  sidebarDepth: 0, // sidebar depth, default is 0;
-  sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
-  editUrl: "", // github/gitlab editurl, with prefix, example: 'https://github.com/facebook/docusaurus/edit/main/website/',
-  editUrlText: "Edit this page", // edit url text
-  shouldShowLastUpdated: true, // should show last updated
-  shouldShowSidebarListOnIndex: true, // should show all articles at index.
-  shouldSupportTags: true, // whether support tags
-  rewriteUrlFileIgnore: [], // not rewrite `xxx.md`  to `xxx`
-  rewriteToParentUrlFileIgnore: [], // not add parent path join for the file
-  defaultColorMode: "day", // default color mode, auto, night, day
-  lastUpdatedTransformer: (isoString) => {
+   nav: [],
+   mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
+   extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
+   imageMaxWidth: 561, // max width for image
+   sidebarDepth: 0, // sidebar depth, default is 0;
+   sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
+   editUrl: "", // github/gitlab editurl, with prefix, example: 'https://github.com/facebook/docusaurus/edit/main/website/',
+   editUrlText: "Edit this page", // edit url text
+   shouldShowLastUpdated: true, // should show last updated
+   shouldShowSidebarListOnIndex: true, // should show all articles at index.
+   shouldSupportTags: true, // whether support tags
+   rewriteUrlFileIgnore: [], // not rewrite `xxx.md`  to `xxx`
+   rewriteToParentUrlFileIgnore: [], // not add parent path join for the file
+   defaultColorMode: "day", // default color mode, auto, night, day
+   shouldSupportLatest: true, // whether support latest posts, if true, theme will generate /latest/ page show latest updated posts.
+   shouldShowLatestOnIndex: true, // should show latest posts on index,
+   defaultIndexLatestPostCount: 10, // default latest posts on index count, default is 25
+   lastUpdatedTransformer: (isoString) => {
     const dateObj = new Date(isoString);
     const date = dateObj.toLocaleString("en-US", {
       day: "numeric",
@@ -137,9 +140,9 @@ Advanced, use your own mdx plugin config, See https://github.com/theowenyoung/ga
       year: "numeric",
     });
     return date;
-  },
-  lastUpdatedText: "Last updated on",
-    },
+   },
+   lastUpdatedText: "Last updated on",
+},
 ```
 
 ### Prefix Path

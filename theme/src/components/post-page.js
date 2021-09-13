@@ -12,6 +12,8 @@ import TableOfContents from "./table-of-contents";
 import TagsBlock from "./tags-block";
 import { getSidebarItems } from "../utils/sidebar-items";
 import useThemeConfig from "../use-theme-config";
+import TagPosts from "./tag-posts";
+
 function TagsList({ type = "normal", title, url, items, depth = 0 }) {
   items = items || [];
   return (
@@ -40,6 +42,7 @@ const Post = ({ data, pageContext, location }) => {
     pageContext.sidebarItems,
     pageContext.tagsGroups
   );
+  const latestPosts = pageContext.latestPosts;
   const {
     tableOfContents,
     frontmatter,
@@ -176,6 +179,17 @@ const Post = ({ data, pageContext, location }) => {
           <MDXProvider components={{ a: AnchorTag }}>
             <MDXRenderer>{body}</MDXRenderer>
           </MDXProvider>
+          {slug === "/" &&
+            primerWikiThemeConfig.shouldShowLatestOnIndex &&
+            latestPosts.length > 0 && (
+              <Box>
+                <components.h2>Recently Updated</components.h2>
+                <TagPosts
+                  nodes={latestPosts}
+                  shouldShowInstantView={false}
+                ></TagPosts>
+              </Box>
+            )}
           {slug === "/" &&
             primerWikiThemeConfig.shouldShowSidebarListOnIndex &&
             sidebarItems.length > 0 &&

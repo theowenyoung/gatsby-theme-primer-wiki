@@ -1,23 +1,22 @@
 import { graphql } from "gatsby";
-import TagPage from "../components/tag-page";
+import LatestPage from "../components/latest-page";
 
-export default TagPage;
+export default LatestPage;
 
 export const query = graphql`
-  query tagQuery($tag: String) {
+  query latestQuery {
     site {
       pathPrefix
       siteMetadata {
         siteUrl
       }
     }
-    allMdx(filter: { frontmatter: { tags: { eq: $tag } } }) {
+    allMdx {
       nodes {
         frontmatter {
           title
           draft
         }
-        body
         fields {
           slug
           title

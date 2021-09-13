@@ -3,10 +3,9 @@ import Layout from "./layout";
 import SEO from "./seo";
 import { Box } from "@primer/components";
 import urlJoin from "url-join";
-import TagPosts from "./tag-posts";
 import components from "./mdx-components";
-
-const Tag = ({ data, pageContext, location }) => {
+import TagPosts from "./tag-posts";
+const Latest = ({ data, pageContext, location }) => {
   const pathPrefix = data.site.pathPrefix || "";
   const slug = pageContext.slug;
   const fullPath = urlJoin(pathPrefix || "/", slug);
@@ -27,10 +26,9 @@ const Tag = ({ data, pageContext, location }) => {
       dateModified = new Date(posts[0].fields.lastUpdatedAt);
     }
   }
-  const tag = pageContext.tag;
-  const title = `#${tag}`;
+  const title = `Latest Posts`;
   const palinBody = posts.map((post) => post.fields.title).join(", ");
-  const description = `All posts about #${tag}, ${palinBody.slice(0, 256)}`;
+  const description = `All latest posts, ${palinBody.slice(0, 256)}`;
   const postSeoData = {
     title,
     frontmatterTitle: "",
@@ -39,25 +37,24 @@ const Tag = ({ data, pageContext, location }) => {
     excerpt: description,
     datePublished: firstPublistedAt,
     dateModified: dateModified,
-    category: tag,
+    category: "Latest",
     imageUrl: null,
     imageAlt: "",
     url: fullUrl,
     slug: slug,
-    tags: [tag],
+    tags: ["All Posts"],
   };
   return (
     <Layout pageContext={pageContext} location={location}>
       <SEO post={postSeoData}></SEO>
       <Box py="2" px={[4, 5, 6, 7]}>
-        <components.h2># {tag}</components.h2>
+        <components.h2>{title}</components.h2>
         <TagPosts
           nodes={data.allMdx.nodes}
-          tag={tag}
-          shouldShowInstantView
+          shouldShowInstantView={false}
         ></TagPosts>
       </Box>
     </Layout>
   );
 };
-export default Tag;
+export default Latest;

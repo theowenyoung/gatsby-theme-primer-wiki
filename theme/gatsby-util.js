@@ -14,8 +14,11 @@ const defaultOptions = (pluginOptions) => {
       editUrl: "", // github/gitlab editurl, with prefix, example: 'https://github.com/facebook/docusaurus/edit/main/website/',
       editUrlText: "Edit this page", // edit url text
       shouldShowLastUpdated: true, // should show last updated
-      shouldShowSidebarListOnIndex: true, // should show all articles at index.
+      shouldShowSidebarListOnIndex: true, // shouldShowSidebarListOnIndex
       shouldSupportTags: true, // whether support tags
+      shouldSupportLatest: true, // whether support latest posts, if true, theme will generate /latest/ page show latest updated posts.
+      shouldShowLatestOnIndex: true, // should show latest posts on index,
+      defaultIndexLatestPostCount: 10, // default latest posts on index count, default is 25
       rewriteUrlFileIgnore: [], // not rewrite `xxx.md`  to `xxx`
       rewriteToParentUrlFileIgnore: [], // not add parent path join for the file
       defaultColorMode: "day", // default color mode, auto, night, day

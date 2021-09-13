@@ -37,6 +37,10 @@ module.exports = {
         // defaultColorMode: "night",
         nav: [
           {
+            title: "Latest",
+            url: "/latest/",
+          },
+          {
             title: "Github",
             url: "https://github.com/theowenyoung/gatsby-theme-primer-wiki",
           },

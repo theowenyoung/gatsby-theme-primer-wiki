@@ -12,6 +12,7 @@ function useThemeConfig() {
         shouldSupportTags
         titleTemplate
         defaultColorMode
+        shouldShowLatestOnIndex
         nav {
           title
           url

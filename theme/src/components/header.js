@@ -17,6 +17,7 @@ import Search from "./search";
 import GraphButton from "./graph-button";
 import useThemeConfig from "../use-theme-config";
 import { useTheme } from "@primer/components";
+import components from "./mdx-components";
 export const HEADER_HEIGHT = 66;
 function Header({
   isSearchEnabled,
@@ -163,7 +164,7 @@ function PrimerNavItems({ items }) {
         }
 
         return (
-          <Link
+          <components.a
             key={index}
             href={item.url}
             display="block"
@@ -171,7 +172,7 @@ function PrimerNavItems({ items }) {
             ml={4}
           >
             {item.title}
-          </Link>
+          </components.a>
         );
       })}
     </Box>

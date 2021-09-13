@@ -23,6 +23,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       nav: [NavItem!]
       titleTemplate: String
       defaultColorMode: String
+      shouldShowLatestOnIndex:Boolean
     }
  
   `);
@@ -41,6 +42,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     shouldSupportTags,
     titleTemplate,
     defaultColorMode,
+    shouldShowLatestOnIndex,
   } = options;
   const themeConfig = {
     sidebarDepth,
@@ -51,6 +53,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     shouldSupportTags,
     nav,
     titleTemplate,
+    shouldShowLatestOnIndex,
     defaultColorMode,
   };
 
@@ -142,9 +145,14 @@ exports.createResolvers = ({ createResolvers }) => {
 exports.createPages = async ({ graphql, actions }, themeOptions) => {
   const options = defaultOptions(themeOptions);
   const sidebarDefault = options.sidebarDefault;
+  const { shouldSupportLatest } = options;
   const postTemplate = path.resolve(__dirname, `./src/templates/post-query.js`);
 
   const tagTemplate = path.resolve(__dirname, `./src/templates/tag-query.js`);
+  const latestTemplate = path.resolve(
+    __dirname,
+    `./src/templates/latest-query.js`
+  );
 
   const postsData = await graphql(`
     {
@@ -247,6 +255,8 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
           fields {
             slug
             title
+            lastUpdatedAt
+            lastUpdated
           }
         }
       }
@@ -255,6 +265,20 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
   const allPostNodes = data.allMdx.nodes.filter(
     (node) => node.frontmatter.draft !== true
   );
+
+  const latestPosts = allPostNodes
+    .sort((a, b) => {
+      const aDate = new Date(a.fields.lastUpdatedAt || 0).getTime();
+      const bDate = new Date(b.fields.lastUpdatedAt || 0).getTime();
+      return bDate - aDate;
+    })
+    .slice(0, options.defaultIndexLatestPostCount)
+    .map((node) => {
+      return {
+        fields: node.fields,
+        frontmatter: node.frontmatter,
+      };
+    });
   if (
     (sidebarItems.length === 0 && tagsGroups.length === 0) ||
     sidebarDefault === "category"
@@ -273,6 +297,17 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
   }
   if (sidebarDefault === "tag") {
     sidebarItems = [];
+  }
+  if (shouldSupportLatest) {
+    actions.createPage({
+      path: "/latest/",
+      component: latestTemplate,
+      context: {
+        slug: "/latest/",
+        sidebarItems,
+        tagsGroups,
+      },
+    });
   }
 
   tagsGroups.forEach((item) => {
@@ -302,6 +337,7 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         slug: slug,
         sidebarItems,
         tagsGroups,
+        latestPosts,
       },
     });
   });

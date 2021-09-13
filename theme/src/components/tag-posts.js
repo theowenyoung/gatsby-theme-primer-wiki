@@ -4,27 +4,26 @@ import { Box, Text } from "@primer/components";
 import useThemeConfig from "../use-theme-config";
 
 const TagPosts = ({
-  tag,
   nodes,
   shouldShowInstantView = false,
   forceMobile = false,
 }) => {
   const themeConfig = useThemeConfig();
-  const posts = nodes.sort((a, b) => {
-    const aDate = new Date(a.fields.lastUpdatedAt || 0).getTime();
-    const bDate = new Date(b.fields.lastUpdatedAt || 0).getTime();
-    return bDate - aDate;
-  });
+  const posts = nodes;
   const AnchorTag = (props) => (
     <components.a {...props} references={shouldShowInstantView ? posts : []} />
   );
   return (
     <Box>
-      <components.h2># {tag}</components.h2>
-      <Box>
-        <components.ul>
-          {posts &&
-            posts.map((post) => {
+      <components.ul>
+        {posts &&
+          posts
+            .filter(
+              (post) =>
+                post.fields.slug !== "/404/" &&
+                (!post.frontmatter || post.frontmatter.draft !== true)
+            )
+            .map((post) => {
               return (
                 <li key={post.fields.slug}>
                   <AnchorTag href={post.fields.slug}>
@@ -60,8 +59,7 @@ const TagPosts = ({
                 </li>
               );
             })}
-        </components.ul>
-      </Box>
+      </components.ul>
     </Box>
   );
 };
