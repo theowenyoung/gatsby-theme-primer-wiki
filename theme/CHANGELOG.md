@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.14.0
+
+### Minor Changes
+
+- [#32](https://github.com/theowenyoung/gatsby-theme-primer-wiki/pull/32) [`213cabca`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/213cabca0be659ddc2bfcb3da6470df1d7381ed5) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support sidebar custom
+
 ## 1.13.1
 
 ### Patch Changes
