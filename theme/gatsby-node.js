@@ -3,7 +3,8 @@ const { execSync } = require("child_process");
 const { getTitle, defaultOptions, getTree } = require("./gatsby-util");
 const urlJoin = require("url-join");
 const kebabCase = require(`lodash/kebabCase`);
-
+const { createFileNodeFromBuffer } = require("gatsby-source-filesystem");
+const fs = require("fs");
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
@@ -24,13 +25,21 @@ exports.createSchemaCustomization = ({ actions }) => {
       titleTemplate: String
       defaultColorMode: String
       shouldShowLatestOnIndex:Boolean
+      icon: File
     }
  
   `);
 };
 
-exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
-  const { createNode } = actions;
+exports.sourceNodes = async (gatsbyFunctions, pluginOptions) => {
+  const {
+    actions: { createNode },
+    createNodeId,
+    store,
+    cache,
+
+    createContentDigest,
+  } = gatsbyFunctions;
   const options = defaultOptions(pluginOptions);
   const {
     sidebarDepth,
@@ -43,6 +52,7 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     titleTemplate,
     defaultColorMode,
     shouldShowLatestOnIndex,
+    icon,
   } = options;
   const themeConfig = {
     sidebarDepth,
@@ -56,6 +66,20 @@ exports.sourceNodes = ({ actions, createContentDigest }, pluginOptions) => {
     shouldShowLatestOnIndex,
     defaultColorMode,
   };
+  // create icon node
+  if (icon) {
+    const buffer = fs.readFileSync(icon);
+
+    const fileNode = await createFileNodeFromBuffer({
+      buffer,
+      store,
+      cache,
+      createNode,
+      createNodeId,
+      name: "site-icon",
+    });
+    themeConfig.icon = fileNode;
+  }
 
   createNode({
     ...themeConfig,

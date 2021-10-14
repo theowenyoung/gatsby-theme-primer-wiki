@@ -10,7 +10,7 @@ const contentFolder = "foam-content";
 
 module.exports = {
   siteMetadata,
-  // pathPrefix: "/wiki",
+  pathPrefix: "/wiki",
   flags: {
     DEV_SSR: true,
   },
@@ -32,6 +32,7 @@ module.exports = {
       resolve: "gatsby-theme-primer-wiki",
       options: {
         sidebarDepth: 0,
+        icon: "./static/icon.png",
         // sidebarDefault: "tag",
         // shouldSupportTags: true,
         // defaultColorMode: "night",
@@ -51,7 +52,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: path.resolve("./static/logo.png"),
+        icon: path.resolve("./static/icon.png"),
       },
     },
   ],

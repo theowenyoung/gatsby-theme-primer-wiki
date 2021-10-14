@@ -33,6 +33,15 @@ export const useGraphData = (tagsGroups) => {
 
   const { notesMap } = useMemo(() => {
     const notesMap = new Map();
+    // add latest page
+    const latestNote = {
+      id: "/latest/",
+      title: `Latest`,
+      url: "/latest/",
+      linkTo: [],
+      referencedBy: [],
+    };
+    notesMap.set(latestNote.id, latestNote);
     tagsGroups.forEach((tagGroup) => {
       if (tagGroup.items) {
         const note = {

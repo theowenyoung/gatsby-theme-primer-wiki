@@ -18,6 +18,8 @@ import GraphButton from "./graph-button";
 import useThemeConfig from "../use-theme-config";
 import { useTheme } from "@primer/components";
 import components from "./mdx-components";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
 export const HEADER_HEIGHT = 66;
 function Header({
   isSearchEnabled,
@@ -36,7 +38,7 @@ function Header({
   const { siteMetadata } = useSiteMetadata();
   const themeConfig = useThemeConfig();
   const primerNavItems = themeConfig.nav;
-
+  const image = getImage(themeConfig.icon);
   return (
     <Box top={0} zIndex={1} position="sticky">
       <Box
@@ -49,8 +51,12 @@ function Header({
         color="header.text"
       >
         <Box display="flex" alignItems="center">
-          <Link href="/" color="header.logo" mr={3} lineHeight="condensedUltra">
-            <StyledOcticon icon={MarkGithubIcon} size="medium" />
+          <Link as={GatsbyLink} to="/" color="header.logo" mr={3}>
+            {themeConfig.icon ? (
+              <GatsbyImage image={image} alt="logo" />
+            ) : (
+              <StyledOcticon icon={MarkGithubIcon} size="medium" />
+            )}
           </Link>
 
           {siteMetadata.shortName ? (
@@ -61,7 +67,7 @@ function Header({
                 color="header.logo"
                 fontFamily="mono"
               >
-                {siteMetadata.shortName}
+                {siteMetadata.shortName}333
               </Link>
             </>
           ) : null}

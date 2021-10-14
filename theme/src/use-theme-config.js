@@ -21,6 +21,11 @@ function useThemeConfig() {
             url
           }
         }
+        icon {
+          childImageSharp {
+            gatsbyImageData(width: 32, height: 32)
+          }
+        }
       }
     }
   `);
