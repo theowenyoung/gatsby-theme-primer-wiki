@@ -80,6 +80,8 @@ Example:
     },
 ```
 
+A valid config can be found [here](https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/example/gatsby-config.js)
+
 ### nav
 
 For header navs. Support two depth levels. Example:
