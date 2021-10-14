@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.13.0
+
+### Minor Changes
+
+- [`f8c6c6b7`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/f8c6c6b7a0a12ba4cc26c0246c1be01f8cbf0fab) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support icon option, fix logo prefix link
+
 ## 1.12.1
 
 ### Patch Changes
