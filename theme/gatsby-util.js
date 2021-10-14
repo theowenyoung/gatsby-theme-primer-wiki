@@ -8,6 +8,7 @@ const defaultOptions = (pluginOptions) => {
       mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
       extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
       sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
+      sidebarComponents: [], // custom sitebar components, value can be summary, latest, tag, category, example: ["summary", "latest", "tag"], if this be defined, sidebarDefault will not work.
       imageMaxWidth: 561, // max width for image
       sidebarDepth: 0, // sidebar depth, default is 0;
 

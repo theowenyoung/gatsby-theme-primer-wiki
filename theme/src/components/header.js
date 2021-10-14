@@ -67,7 +67,7 @@ function Header({
                 color="header.logo"
                 fontFamily="mono"
               >
-                {siteMetadata.shortName}333
+                {siteMetadata.shortName}
               </Link>
             </>
           ) : null}
