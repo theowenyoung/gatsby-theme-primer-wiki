@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.14.1
+
+### Patch Changes
+
+- [`4abd7d04`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/4abd7d047a8c9e078cb052da6e1ebb172f5d044b) Thanks [@theowenyoung](https://github.com/theowenyoung)! - fix logo border radius
+
 ## 1.14.0
 
 ### Minor Changes
