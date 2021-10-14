@@ -24,8 +24,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       nav: [NavItem!]
       titleTemplate: String
       defaultColorMode: String
-      shouldShowLatestOnIndex:Boolean
-      icon: File
+      shouldShowTagGroupsOnIndex:Boolean
+      icon: File,
+      latestUpdatedText: String
+      tagText: String
     }
  
   `);
@@ -46,25 +48,29 @@ exports.sourceNodes = async (gatsbyFunctions, pluginOptions) => {
     editUrlText,
     shouldShowLastUpdated,
     lastUpdatedText,
-    shouldShowSidebarListOnIndex,
+    shouldShowTagGroupsOnIndex,
     nav,
     shouldSupportTags,
     titleTemplate,
     defaultColorMode,
     shouldShowLatestOnIndex,
     icon,
+    latestUpdatedText,
+    tagText,
   } = options;
   const themeConfig = {
     sidebarDepth,
     editUrlText,
     shouldShowLastUpdated,
-    shouldShowSidebarListOnIndex,
+    shouldShowTagGroupsOnIndex,
     lastUpdatedText,
     shouldSupportTags,
     nav,
     titleTemplate,
     shouldShowLatestOnIndex,
     defaultColorMode,
+    latestUpdatedText,
+    tagText,
   };
   // create icon node
   if (icon) {
@@ -168,8 +174,16 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 exports.createPages = async ({ graphql, actions }, themeOptions) => {
   const options = defaultOptions(themeOptions);
-  const sidebarDefault = options.sidebarDefault;
-  const { shouldSupportLatest } = options;
+  const {
+    shouldSupportLatest,
+    latestUpdatedText,
+    sidebarComponents,
+    sidebarDefault,
+    tagText,
+    categoryText,
+    summaryDepth,
+    summary1DepthIndent,
+  } = options;
   const postTemplate = path.resolve(__dirname, `./src/templates/post-query.js`);
 
   const tagTemplate = path.resolve(__dirname, `./src/templates/tag-query.js`);
@@ -264,7 +278,15 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
       });
   }
 
-  let sidebarItems = postsData.data.allSummaryGroup.nodes;
+  let summarySidebars = postsData.data.allSummaryGroup.nodes.map((item) => {
+    return formatSummaryDepth(item, {
+      sidebarDepth: summaryDepth,
+      currentDepth: 0,
+      summary1DepthIndent: summary1DepthIndent,
+    });
+  });
+  //
+  let sidebarItems = [];
   const { data } = await graphql(`
     {
       allMdx {
@@ -303,25 +325,69 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
         frontmatter: node.frontmatter,
       };
     });
-  if (
-    (sidebarItems.length === 0 && tagsGroups.length === 0) ||
-    sidebarDefault === "category"
-  ) {
-    // auto generate summary
-    const tree = getTree(
-      allPostNodes.map((node) => {
-        return {
-          slug: node.fields.slug,
-          title: node.fields.title,
-        };
-      })
-    );
-    // console.log("tree", JSON.stringify(tree, null, 2));
-    sidebarItems = [{ title: "Categories", items: tree }];
+
+  // auto generate summary
+  const tree = getTree(
+    allPostNodes.map((node) => {
+      return {
+        slug: node.fields.slug,
+        title: node.fields.title,
+      };
+    })
+  );
+  // console.log("tree", JSON.stringify(tree, null, 2));
+  const categorySidebars = [{ title: categoryText, items: tree }];
+
+  if (sidebarComponents && sidebarComponents.length > 0) {
+    // use sidebarComponents
+
+    sidebarComponents.forEach((item) => {
+      if (item === "summary") {
+        sidebarItems = sidebarItems.concat(summarySidebars);
+      } else if (item === "tag") {
+        sidebarItems.push({
+          title: tagText,
+          items: tagsGroups,
+        });
+      } else if (item === "category") {
+        sidebarItems.push(categorySidebars[0]);
+      } else if (item === "latest") {
+        sidebarItems.push({
+          title: "",
+          items: [
+            {
+              title: latestUpdatedText,
+              url: "/latest/",
+              collapse: true,
+              indent: false,
+              items: latestPosts.map((item) => {
+                return {
+                  title: item.fields.title,
+                  url: item.fields.slug,
+                };
+              }),
+            },
+          ],
+        });
+      }
+    });
+  } else {
+    sidebarItems = summarySidebars;
+    if (
+      (sidebarItems.length === 0 && tagsGroups.length === 0) ||
+      sidebarDefault === "category"
+    ) {
+      sidebarItems = categorySidebars;
+    } else if (sidebarDefault === "tag") {
+      sidebarItems = [
+        {
+          title: tagText,
+          items: tagsGroups,
+        },
+      ];
+    }
   }
-  if (sidebarDefault === "tag") {
-    sidebarItems = [];
-  }
+
   if (shouldSupportLatest) {
     actions.createPage({
       path: "/latest/",
@@ -442,4 +508,28 @@ function getEditUrl(baseEditUrl, filePath) {
   } else {
     return "";
   }
+}
+function formatSummaryDepth(
+  sidebar,
+  { sidebarDepth, currentDepth, summary1DepthIndent }
+) {
+  if (currentDepth === undefined) {
+    currentDepth = 0;
+  }
+  if (currentDepth === 1) {
+    sidebar.indent = summary1DepthIndent;
+  }
+  if (sidebar.items && sidebar.items.length > 0) {
+    if (currentDepth <= sidebarDepth) {
+      sidebar.collapse = true;
+    }
+    sidebar.items.map((item) => {
+      return formatSummaryDepth(item, {
+        sidebarDepth,
+        currentDepth: currentDepth + 1,
+        summary1DepthIndent,
+      });
+    });
+  }
+  return sidebar;
 }

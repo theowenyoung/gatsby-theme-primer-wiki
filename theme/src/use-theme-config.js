@@ -8,7 +8,7 @@ function useThemeConfig() {
         lastUpdatedText
         sidebarDepth
         editUrlText
-        shouldShowSidebarListOnIndex
+        shouldShowTagGroupsOnIndex
         shouldSupportTags
         titleTemplate
         defaultColorMode
