@@ -53,7 +53,13 @@ function Header({
         <Box display="flex" alignItems="center">
           <Link as={GatsbyLink} to="/" color="header.logo" mr={3}>
             {themeConfig.icon ? (
-              <GatsbyImage image={image} alt="logo" />
+              <GatsbyImage
+                imgStyle={{
+                  borderRadius: "9999999px",
+                }}
+                image={image}
+                alt="logo"
+              />
             ) : (
               <StyledOcticon icon={MarkGithubIcon} size="medium" />
             )}
