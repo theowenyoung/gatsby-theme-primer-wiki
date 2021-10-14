@@ -121,6 +121,7 @@ See [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/path-pr
 ```javascript
 {
    nav: [],
+   icon: "./static/icon.png", // icon, useing at header logo, if not , use default icon
    mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
    extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
    imageMaxWidth: 561, // max width for image
