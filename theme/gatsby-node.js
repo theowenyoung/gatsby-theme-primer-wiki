@@ -5,6 +5,7 @@ const urlJoin = require("url-join");
 const kebabCase = require(`lodash/kebabCase`);
 const { createFileNodeFromBuffer } = require("gatsby-source-filesystem");
 const fs = require("fs");
+const datefn = require("date-fns");
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
 
@@ -361,8 +362,16 @@ exports.createPages = async ({ graphql, actions }, themeOptions) => {
               collapse: true,
               indent: false,
               items: latestPosts.map((item) => {
+                const date = datefn.format(
+                  new Date(item.fields.lastUpdatedAt),
+                  "MM-dd"
+                );
+                let title = item.fields.title;
+                if (date) {
+                  title = `${date}: ${title}`;
+                }
                 return {
-                  title: item.fields.title,
+                  title: title,
                   url: item.fields.slug,
                 };
               }),
