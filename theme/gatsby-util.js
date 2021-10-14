@@ -11,12 +11,16 @@ const defaultOptions = (pluginOptions) => {
       sidebarComponents: [], // custom sitebar components, value can be summary, latest, tag, category, example: ["summary", "latest", "tag"], if this be defined, sidebarDefault will not work.
       imageMaxWidth: 561, // max width for image
       sidebarDepth: 0, // sidebar depth, default is 0;
-
+      summaryDepth: 1, // specify summary depth if exist
+      summary1DepthIndent: false, // specify summary depth 0 indent, default false, not indent, when depth>1, it will indent
       editUrl: "", // github/gitlab editurl, with prefix, example: 'https://github.com/facebook/docusaurus/edit/main/website/',
       editUrlText: "Edit this page", // edit url text
       shouldShowLastUpdated: true, // should show last updated
-      shouldShowSidebarListOnIndex: true, // shouldShowSidebarListOnIndex
+      latestUpdatedText: "Recently Updated",
+      shouldShowTagGroupsOnIndex: true, // should show tags list at index page
       shouldSupportTags: true, // whether support tags
+      tagText: "Tags",
+      categoryText: "Categories",
       shouldSupportLatest: true, // whether support latest posts, if true, theme will generate /latest/ page show latest updated posts.
       shouldShowLatestOnIndex: true, // should show latest posts on index,
       defaultIndexLatestPostCount: 10, // default latest posts on index count, default is 25

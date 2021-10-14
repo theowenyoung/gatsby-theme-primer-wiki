@@ -12,7 +12,6 @@ import TableOfContents from "./table-of-contents";
 import TagsBlock from "./tags-block";
 import { getSidebarItems } from "../utils/sidebar-items";
 import useThemeConfig from "../use-theme-config";
-import TagPosts from "./tag-posts";
 
 function TagsList({ type = "normal", title, url, items, depth = 0 }) {
   items = items || [];
@@ -42,7 +41,7 @@ const Post = ({ data, pageContext, location }) => {
     pageContext.sidebarItems,
     pageContext.tagsGroups
   );
-  const latestPosts = pageContext.latestPosts;
+  const tagsGroups = pageContext.tagsGroups;
   const {
     tableOfContents,
     frontmatter,
@@ -179,39 +178,26 @@ const Post = ({ data, pageContext, location }) => {
           <MDXProvider components={{ a: AnchorTag }}>
             <MDXRenderer>{body}</MDXRenderer>
           </MDXProvider>
+
           {slug === "/" &&
-            primerWikiThemeConfig.shouldShowLatestOnIndex &&
-            latestPosts.length > 0 && (
+            primerWikiThemeConfig.shouldShowTagGroupsOnIndex &&
+            sidebarItems.length > 0 && (
               <Box>
-                <components.h2>Recently Updated</components.h2>
-                <TagPosts
-                  nodes={latestPosts}
-                  shouldShowInstantView={false}
-                ></TagPosts>
+                <components.h2>Tags</components.h2>
+                {tagsGroups.map((child) => {
+                  return (
+                    <components.ul key={child.title}>
+                      <TagsList
+                        title={child.title}
+                        url={child.url}
+                        type={child.type}
+                        items={child.items}
+                      ></TagsList>
+                    </components.ul>
+                  );
+                })}
               </Box>
             )}
-          {slug === "/" &&
-            primerWikiThemeConfig.shouldShowSidebarListOnIndex &&
-            sidebarItems.length > 0 &&
-            sidebarItems.map((item) => {
-              return (
-                <Box key={item.title}>
-                  <components.h2>{item.title}</components.h2>
-                  {item.items.map((child) => {
-                    return (
-                      <components.ul key={child.title}>
-                        <TagsList
-                          title={child.title}
-                          url={child.url}
-                          type={child.type}
-                          items={child.items}
-                        ></TagsList>
-                      </components.ul>
-                    );
-                  })}
-                </Box>
-              );
-            })}
           <ReferencesBlock references={inboundReferences} />
           {primerWikiThemeConfig.shouldSupportTags && (
             <TagsBlock tags={tags} nodes={tagsOutbound.nodes} />

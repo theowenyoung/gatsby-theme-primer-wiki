@@ -52,6 +52,9 @@ function SidebarItem({
   depth = 0,
   sidebarDepth = 1,
   type = "normal",
+  collapse = false,
+  indent,
+  currentIndent,
 }) {
   items = items || [];
   const defaultShowItems = depth < sidebarDepth;
@@ -59,7 +62,7 @@ function SidebarItem({
   const isActive = getIsActive(location, url);
 
   const [isShowItems, setIsShowItems] = React.useState(
-    isGroupActive || defaultShowItems
+    isGroupActive || defaultShowItems || collapse
   );
   const isHasItems = items.length > 0;
 
@@ -70,11 +73,13 @@ function SidebarItem({
   if (depth === 0 && items.length === 0) {
     isShowBorderBottom = false;
   }
+  const marginLeft = currentIndent !== false && depth > sidebarDepth ? 3 : 0;
+
   return (
     <Box
       display="flex"
       flexDirection="column"
-      ml={depth > sidebarDepth ? 3 : 0}
+      ml={marginLeft}
       borderStyle="solid"
       borderColor="border.primary"
       borderWidth={0}
@@ -114,7 +119,6 @@ function SidebarItem({
         ) : url ? (
           <NavLink
             color={depth > 0 ? undefined : "text.primary"}
-            key={title}
             as={GatsbyLink}
             to={url}
             className={isActive ? "active" : undefined}
@@ -138,7 +142,6 @@ function SidebarItem({
           </NavLink>
         ) : (
           <NavBox
-            key={title}
             color="text.secondary"
             fontWeight={isActive ? "600" : "400"}
             className={isActive ? "active" : undefined}
@@ -167,8 +170,9 @@ function SidebarItem({
               sidebarDepth={sidebarDepth}
               location={location}
               isLast={items.length - 1 === index}
-              key={subItem.title}
+              key={`sub-${subItem.title}-${index}`}
               depth={depth + 1}
+              currentIndent={indent}
               {...subItem}
             />
           ))
@@ -181,9 +185,9 @@ function NavItems({ items, location }) {
   const primerWikiThemeConfig = useThemeConfig();
   return (
     <>
-      {items.map((item) => (
+      {items.map((item, rootIndex) => (
         <Box
-          key={item.title}
+          key={`${item.title}-root-1-${rootIndex}`}
           borderStyle="solid"
           borderColor="border.primary"
           borderWidth={0}
@@ -212,7 +216,7 @@ function NavItems({ items, location }) {
                     sidebarDepth={primerWikiThemeConfig.sidebarDepth}
                     location={location}
                     isLast={item.items.length - 1 === index}
-                    key={child.title}
+                    key={`${child.title}-${rootIndex}-first-child-${index}`}
                     {...child}
                   ></SidebarItem>
                 ))

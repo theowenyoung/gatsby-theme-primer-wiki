@@ -33,6 +33,7 @@ module.exports = {
       options: {
         sidebarDepth: 0,
         icon: "./static/icon.png",
+        sidebarComponents: ["summary", "latest", "tag"],
         // sidebarDefault: "tag",
         // shouldSupportTags: true,
         // defaultColorMode: "night",

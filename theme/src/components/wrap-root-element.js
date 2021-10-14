@@ -6,6 +6,7 @@ import React from "react";
 import components from "./mdx-components";
 import deepmerge from "deepmerge";
 import useThemeConfig from "../use-theme-config";
+import userTheme from "../theme";
 const customTheme = deepmerge(theme, {
   colorSchemes: {
     light: {
@@ -27,10 +28,11 @@ const customTheme = deepmerge(theme, {
     },
   },
 });
+const finalTheme = deepmerge(customTheme, userTheme);
 const Provider = (props) => {
   const themeConfig = useThemeConfig();
   return (
-    <ThemeProvider theme={customTheme} colorMode={themeConfig.defaultColorMode}>
+    <ThemeProvider theme={finalTheme} colorMode={themeConfig.defaultColorMode}>
       <MDXProvider components={components}>{props.children}</MDXProvider>
     </ThemeProvider>
   );

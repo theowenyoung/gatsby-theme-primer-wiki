@@ -123,7 +123,7 @@ function PrimerNavItems({ items }) {
     return (
       <Box
         borderStyle="solid"
-        key={item.title}
+        key={item.title + index}
         borderWidth={0}
         borderRadius={0}
         borderTopWidth={index !== 0 ? 1 : 0}
