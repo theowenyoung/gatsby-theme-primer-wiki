@@ -5,7 +5,10 @@ const defaultOptions = (pluginOptions) => {
   const options = Object.assign(
     {
       nav: [],
+
       mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js#L31-L67
+      remarkPlugins: [], // add gatsby-plugin-mdx remarkPlugins
+      gatsbyRemarkPlugins: [], // add gatsby-plugin-mdx gatsbyRemarkPlugins
       extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
       sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
       sidebarComponents: [], // custom sitebar components, value can be summary, latest, tag, category, example: ["summary", "latest", "tag"], if this be defined, sidebarDefault will not work.
