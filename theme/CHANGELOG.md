@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.14.3
+
+### Patch Changes
+
+- [`15950245`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/15950245cde11bf1b95c31ccb9efcea2d50cd48f) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support custom remark plugins
+
 ## 1.14.2
 
 ### Patch Changes
