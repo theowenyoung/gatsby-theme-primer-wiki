@@ -135,6 +135,7 @@ You can use `icon` as your site logo path. Example:
       nav: [],
       mdxOtherwiseConfigured: false, // advanced, use your own mdx plugin config, See https://github.com/theowenyoung/gatsby-theme-primer-wiki/blob/main/theme/gatsby-config.js
       remarkPlugins: [], // add gatsby-plugin-mdx remarkPlugins
+      rehypePlugins: [], // add gatsby-plugin-mdx rehypePlugins
       gatsbyRemarkPlugins: [], // add gatsby-plugin-mdx gatsbyRemarkPlugins
       extensions: [`.mdx`, ".md", ".markdown"], // supported file extensions for mdx
       sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
