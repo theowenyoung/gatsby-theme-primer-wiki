@@ -9,6 +9,7 @@ module.exports = (themeOptions) => {
     rewriteToParentUrlFileIgnore,
     gatsbyRemarkPlugins,
     remarkPlugins,
+    rehypePlugins,
   } = defaultOptions(themeOptions);
   let plugins = [
     {
@@ -37,6 +38,7 @@ module.exports = (themeOptions) => {
           require("remark-unwrap-images"),
           ...remarkPlugins,
         ],
+        rehypePlugins: [...rehypePlugins],
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-rewrite-link-for-trailing-slash",
