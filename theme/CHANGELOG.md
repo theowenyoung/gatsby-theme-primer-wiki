@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.14.4
+
+### Patch Changes
+
+- [`79ad053b`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/79ad053b31c5141ad001524fbed1b104864500cd) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support rehypye plugin
+
 ## 1.14.3
 
 ### Patch Changes
