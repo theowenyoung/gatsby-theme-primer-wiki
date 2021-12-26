@@ -18,6 +18,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type PrimerWikiThemeConfig implements Node {
       sidebarDepth: Int
+      contentMaxWidth: Int
       editUrlText: String
       shouldShowLastUpdated: Boolean
       shouldSupportTags: Boolean
@@ -46,6 +47,7 @@ exports.sourceNodes = async (gatsbyFunctions, pluginOptions) => {
   const options = defaultOptions(pluginOptions);
   const {
     sidebarDepth,
+    contentMaxWidth,
     editUrlText,
     shouldShowLastUpdated,
     lastUpdatedText,
@@ -61,6 +63,7 @@ exports.sourceNodes = async (gatsbyFunctions, pluginOptions) => {
   } = options;
   const themeConfig = {
     sidebarDepth,
+    contentMaxWidth,
     editUrlText,
     shouldShowLastUpdated,
     shouldShowTagGroupsOnIndex,

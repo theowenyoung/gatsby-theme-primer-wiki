@@ -5,6 +5,7 @@ function useThemeConfig() {
     {
       primerWikiThemeConfig(id: { eq: "gatsby-theme-primer-wiki-config" }) {
         shouldShowLastUpdated
+        contentMaxWidth
         lastUpdatedText
         sidebarDepth
         editUrlText
