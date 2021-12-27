@@ -133,7 +133,7 @@ const Post = ({ data, pageContext, location }) => {
             <TableOfContents items={tableOfContents.items} />
           </Box>
         ) : null}
-        <Box width="100%" maxWidth={primerWikiThemeConfig.contentMaxWidth}>
+        <Box width="100%">
           {shouldShowTitle && (
             <Box mb={4}>
               <Box display="flex" sx={{ alignItems: "center" }}>

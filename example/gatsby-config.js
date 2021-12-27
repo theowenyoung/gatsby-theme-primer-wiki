@@ -34,6 +34,7 @@ module.exports = {
         sidebarDepth: 0,
         icon: "./static/icon.png",
         sidebarComponents: ["summary", "latest", "tag"],
+        contentMaxWidth: 1363,
         // sidebarDefault: "tag",
         // shouldSupportTags: true,
         // defaultColorMode: "night",
