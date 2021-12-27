@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 1.14.5
+
+### Patch Changes
+
+- [`a7926864`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/a7926864d8290040c40add2c98dbc12054eb7cdd) Thanks [@theowenyoung](https://github.com/theowenyoung)! - max content size
+
 ## 1.14.4
 
 ### Patch Changes
