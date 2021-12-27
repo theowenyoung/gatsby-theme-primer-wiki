@@ -14,6 +14,7 @@ const defaultOptions = (pluginOptions) => {
       sidebarDefault: "auto", // first summary -> tags -> files tree , value can be auto, summary, tag, category
       sidebarComponents: [], // custom sitebar components, value can be summary, latest, tag, category, example: ["summary", "latest", "tag"], if this be defined, sidebarDefault will not work.
       imageMaxWidth: 561, // max width for image
+      contentMaxWidth: 960, // max width for content
       sidebarDepth: 0, // sidebar depth, default is 0;
       summaryDepth: 1, // specify summary depth if exist
       summary1DepthIndent: false, // specify summary depth 0 indent, default false, not indent, when depth>1, it will indent
