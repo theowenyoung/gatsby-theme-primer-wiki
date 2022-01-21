@@ -30,6 +30,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       icon: File,
       latestUpdatedText: String
       tagText: String
+      searchBody: Boolean
     }
  
   `);
@@ -60,6 +61,7 @@ exports.sourceNodes = async (gatsbyFunctions, pluginOptions) => {
     icon,
     latestUpdatedText,
     tagText,
+    searchBody,
   } = options;
   const themeConfig = {
     sidebarDepth,
@@ -75,6 +77,7 @@ exports.sourceNodes = async (gatsbyFunctions, pluginOptions) => {
     defaultColorMode,
     latestUpdatedText,
     tagText,
+    searchBody,
   };
   // create icon node
   if (icon) {

@@ -1,10 +1,13 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import useThemeConfig from "./use-theme-config";
+
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import SearchWorker from "worker-loader!./search.worker.js";
 function useSearch(query, tagsGroups) {
   const latestQuery = React.useRef(query);
   const workerRef = React.useRef();
+  const themeConfig = useThemeConfig();
 
   const data = useStaticQuery(graphql`
     {
@@ -29,7 +32,7 @@ function useSearch(query, tagsGroups) {
         return {
           path: item.url,
           title: `#${item.title}`,
-          body: "Tag",
+          // body: "Tag",
         };
       })
       .concat(
@@ -38,13 +41,14 @@ function useSearch(query, tagsGroups) {
             return node.frontmatter.draft !== true;
           })
           .map((node) => {
-            // console.log("node.rawBody", node.rawBody);
-
-            return {
+            const item = {
               path: node.fields.slug,
               title: node.fields.title,
-              body: node.rawBody.slice(0, 1000),
             };
+            if (themeConfig.searchBody) {
+              item.body = node.rawBody.slice(0, 500);
+            }
+            return item;
           })
       );
   }, [data, tagsGroups]);
@@ -53,7 +57,7 @@ function useSearch(query, tagsGroups) {
 
   const handleSearchResults = React.useCallback(({ data }) => {
     if (data.query && data.results && data.query === latestQuery.current) {
-      setResults(data.results.map((item) => item.item));
+      setResults([...data.results.map((item) => item.item)]);
     }
   }, []);
 

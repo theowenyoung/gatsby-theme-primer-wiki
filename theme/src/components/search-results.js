@@ -18,7 +18,7 @@ function SearchResults({ results, getItemProps, highlightedIndex }) {
     return (
       <Box
         display="flex"
-        key={item.path}
+        key={`${item.path}-${index}`}
         {...getItemProps({
           item,
           flexDirection: "column",

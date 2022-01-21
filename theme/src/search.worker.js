@@ -24,7 +24,9 @@ import debounce from "lodash.debounce";
   onmessage = function ({ data }) {
     if (data.list) {
       fuse = new Fuse(data.list, {
+        // threshold: 0.5,
         keys: ["path", "title", "body"],
+        // tokenize: true,
       });
     } else if (data.query) {
       performSearch(data.query);

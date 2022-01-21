@@ -32,6 +32,7 @@ const defaultOptions = (pluginOptions) => {
       rewriteUrlFileIgnore: [], // not rewrite `xxx.md`  to `xxx`
       rewriteToParentUrlFileIgnore: [], // not add parent path join for the file
       defaultColorMode: "day", // default color mode, auto, night, day
+      searchBody: false, // is search body, default is false, if true, search will search all content, not only title
       lastUpdatedTransformer: (isoString) => {
         const dateObj = new Date(isoString);
         const date = dateObj.toLocaleString("en-US", {
