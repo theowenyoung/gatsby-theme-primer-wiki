@@ -1,5 +1,14 @@
 # example
 
+## 2.0.1
+
+### Patch Changes
+
+- [`b9420358`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/b9420358ee160864f72fb7f3840cf356bafcbb5b) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Fix search, add searchBody option
+
+- Updated dependencies [[`b9420358`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/b9420358ee160864f72fb7f3840cf356bafcbb5b)]:
+  - gatsby-theme-primer-wiki@2.0.1
+
 ## 2.0.0
 
 ### Major Changes
