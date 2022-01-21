@@ -21,20 +21,12 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 16.x
-      - name: Setup NPM Latest
-        run: npm i -g npm
-      - name: Install Dependencies
-        run: npm i
-      - name: Test
-        run: npm test
-      - name: build
-        run: npm run build
       - name: Create Release Pull Request or Publish to npm
         uses: changesets/action@v1
         with:
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: npm run release
-          version: npm run version-packages
+          publish: npx changeset publish
+          version: npx changeset version
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
