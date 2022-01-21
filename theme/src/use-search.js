@@ -29,6 +29,7 @@ function useSearch(query, tagsGroups) {
         return {
           path: item.url,
           title: `#${item.title}`,
+          body: "Tag",
         };
       })
       .concat(
@@ -37,10 +38,12 @@ function useSearch(query, tagsGroups) {
             return node.frontmatter.draft !== true;
           })
           .map((node) => {
+            // console.log("node.rawBody", node.rawBody);
+
             return {
               path: node.fields.slug,
               title: node.fields.title,
-              rawBody: node.rawBody,
+              body: node.rawBody.slice(0, 1000),
             };
           })
       );

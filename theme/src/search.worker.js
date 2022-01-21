@@ -15,7 +15,6 @@ import debounce from "lodash.debounce";
   const performSearch = debounce(
     function performSearch(query) {
       const results = fuse.search(query).slice(0, 20);
-
       postMessage({ results: results, query: query });
     },
     50,
@@ -25,9 +24,7 @@ import debounce from "lodash.debounce";
   onmessage = function ({ data }) {
     if (data.list) {
       fuse = new Fuse(data.list, {
-        threshold: 0.2,
-        keys: ["title", "rawBody"],
-        tokenize: true,
+        keys: ["path", "title", "body"],
       });
     } else if (data.query) {
       performSearch(data.query);

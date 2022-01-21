@@ -11,9 +11,7 @@ const contentFolder = "foam-content";
 module.exports = {
   siteMetadata,
   pathPrefix: "/wiki",
-  flags: {
-    DEV_SSR: true,
-  },
+
   plugins: [
     {
       resolve: "gatsby-source-filesystem",

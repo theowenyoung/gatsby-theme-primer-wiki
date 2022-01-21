@@ -10,7 +10,7 @@ const parseSummary = require("./parse");
  */
 
 // should see message in console when running `gatsby develop` in example-site
-exports.onPreInit = () => console.log("Loaded gatsby-source-summary");
+// exports.onPreInit = () => console.log("Loaded gatsby-source-summary");
 
 /**
  * ============================================================================
