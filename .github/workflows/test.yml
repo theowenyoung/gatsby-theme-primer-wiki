@@ -21,10 +21,8 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 16.x
-      - name: Setup NPM Latest
-        run: npm i -g npm
       - name: Install Dependencies
-        run: npm i
+        run: npx npm@7.20.2 install
       - name: Test
         run: npm test
       - name: build
