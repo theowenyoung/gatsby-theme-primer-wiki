@@ -24,7 +24,7 @@ import debounce from "lodash.debounce";
   onmessage = function ({ data }) {
     if (data.list) {
       fuse = new Fuse(data.list, {
-        // threshold: 0.5,
+        threshold: 0.4,
         keys: ["path", "title", "body"],
         // tokenize: true,
       });
