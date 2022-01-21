@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-primer-wiki",
-  "version": "1.14.5",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -33,7 +33,7 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@theowenyoung/gatsby-plugin-slug": "^1.10.1",
-    "@theowenyoung/gatsby-transformer-references": "^1.10.1",
+    "@theowenyoung/gatsby-transformer-references": "^1.10.2",
     "@tippyjs/react": "^4.2.6",
     "babel-jest": "^27.4.6",
     "babel-plugin-styled-components": "^2.0.2",
@@ -59,7 +59,7 @@
     "gatsby-remark-rewrite-link-for-trailing-slash": "^1.10.1",
     "gatsby-source-filesystem": "^4.5.2",
     "gatsby-transformer-sharp": "^4.5.0",
-    "gatsby-transformer-summary": "^1.10.0",
+    "gatsby-transformer-summary": "^1.10.1",
     "get-md-title": "^1.0.4",
     "github-slugger": "^1.4.0",
     "html-react-parser": "^1.4.5",

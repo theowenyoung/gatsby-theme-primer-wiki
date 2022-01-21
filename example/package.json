@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "example",
-  "version": "1.9.8",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop -H 0.0.0.0",
@@ -18,7 +18,7 @@
     "gatsby-plugin-manifest": "^4.5.2",
     "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-source-filesystem": "^4.5.2",
-    "gatsby-theme-primer-wiki": "^1.14.5",
+    "gatsby-theme-primer-wiki": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

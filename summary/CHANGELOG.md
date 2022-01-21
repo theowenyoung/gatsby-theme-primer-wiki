@@ -1,5 +1,11 @@
 # gatsby-transformer-summary
 
+## 1.10.1
+
+### Patch Changes
+
+- [`ff59e4fb`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/ff59e4fbb6bf9f12ab1a259ded2c38790ab8589f) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support Gatsby v4, fix fuse search
+
 ## 1.10.0
 
 ### Minor Changes

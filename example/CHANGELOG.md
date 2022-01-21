@@ -1,5 +1,16 @@
 # example
 
+## 2.0.0
+
+### Major Changes
+
+- [`ff59e4fb`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/ff59e4fbb6bf9f12ab1a259ded2c38790ab8589f) Thanks [@theowenyoung](https://github.com/theowenyoung)! - Support Gatsby v4, fix fuse search
+
+### Patch Changes
+
+- Updated dependencies [[`ff59e4fb`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/ff59e4fbb6bf9f12ab1a259ded2c38790ab8589f)]:
+  - gatsby-theme-primer-wiki@2.0.0
+
 ## 1.9.8
 
 ### Patch Changes
