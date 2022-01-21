@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 2.0.2
+
+### Patch Changes
+
+- [`8b617a83`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/8b617a83707de51618b39e61580f7575223e08ce) Thanks [@theowenyoung](https://github.com/theowenyoung)! - fuse param
+
 ## 2.0.1
 
 ### Patch Changes
