@@ -174,7 +174,7 @@ You can use `icon` as your site logo path. Example:
 
 ## Custom Sidebars
 
-Create a file named `SUMMARY.md` in your content directory, for the format, just following the [Gitbook](https://docs.gitbook.com/integrations/github/content-configuration#summary) docs.
+Create a file named `SUMMARY.md` in your content directory, for the format, just following the [Gitbook](https://docs.gitbook.com/integrations/git-sync/content-configuration#summary) docs.
 
 You can set a custom default sidebar depth using `sidebarDepth`, the default value is `0`
 
