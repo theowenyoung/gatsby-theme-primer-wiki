@@ -22,17 +22,16 @@ function hasChildInArrayExcept(node, array, except, getNode) {
 
 function getInboundReferences(getNode, allNodes) {
   const nodes = allNodes;
+  const slugs = Array.from(nodes.map((node) => node.fields.slug));
+
   const inboundReferences = {};
-  function getRef(item) {
-    return nodes.find((x) => {
-      return x.fields.slug === item;
-    });
+  function filterNodes(item) {
+    return slugs.includes(item);
   }
 
   nodes.forEach((node) => {
     const mapped = node.__outboundReferencesSlugs
-      .map(getRef)
-      .filter(_nonNullable.nonNullable)
+      .filter(filterNodes)
       .map((x) => x.id);
 
     mapped.forEach((x) => {

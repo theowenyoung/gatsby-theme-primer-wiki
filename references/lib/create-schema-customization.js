@@ -25,24 +25,25 @@ const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
   return {
     outboundReferences: {
       type: `[ReferenceTarget!]!`,
-      resolve: async (source, _, context) => {
+      resolve: (source, _, context) => {
         // return [];
         if (
           source.__outboundReferencesSlugs &&
           Array.isArray(source.__outboundReferencesSlugs) &&
           source.__outboundReferencesSlugs.length > 0
         ) {
-          return context.nodeModel.runQuery({
-            query: {
-              filter: {
-                fields: {
-                  slug: { in: source.__outboundReferencesSlugs },
+          return context.nodeModel
+            .findAll({
+              query: {
+                filter: {
+                  fields: {
+                    slug: { in: source.__outboundReferencesSlugs },
+                  },
                 },
               },
-            },
-            type: type.name,
-            firstOnly: false,
-          });
+              type: type.name,
+            })
+            .then((result) => result.entries);
         } else {
           return [];
         }
@@ -52,7 +53,9 @@ const setFieldsOnGraphQLNodeType = ({ cache, type, getNode }, _options) => {
       type: `[ReferenceTarget!]!`,
       resolve: async (node, _, context) => {
         // return [];
-        const allNodes = context.nodeModel.getAllNodes({ type: type.name });
+        const allNodes = await context.nodeModel
+          .findAll({ type: type.name })
+          .then((result) => result.entries);
         const data = _computeInbounds.getInboundReferences(getNode, allNodes);
 
         if (data) {

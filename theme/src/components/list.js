@@ -11,6 +11,7 @@ const List = styled.ul`
   }
 
   li {
+    line-height: 1.6;
   }
 
   li > p {
