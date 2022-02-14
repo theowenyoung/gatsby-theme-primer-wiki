@@ -1,5 +1,11 @@
 # @theowenyoung/gatsby-transformer-references
 
+## 1.10.3
+
+### Patch Changes
+
+- [`9fbc137a`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/9fbc137aa291b8c7583b7bbad100681ece340cdf) Thanks [@theowenyoung](https://github.com/theowenyoung)! - use findAll, list-item line-height 1.6
+
 ## 1.10.2
 
 ### Patch Changes
