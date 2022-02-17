@@ -34,8 +34,6 @@ const getReferences = async (string, options) => {
 
       function onvisit(node, index, parent) {
         if (node.type === "link") {
-          console.log("node", node.url);
-
           if (isRelativeUrl(node.url)) {
             references.push({
               url: transformerMarkdownUrl(node.url, {
@@ -58,7 +56,6 @@ const getReferences = async (string, options) => {
     .process(string)
     .then((file) => {
       result.pages = references;
-      console.log("references", references);
 
       return result;
     });

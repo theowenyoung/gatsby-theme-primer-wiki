@@ -39,17 +39,12 @@ module.exports = function remarkRewrite(pluginOptions) {
   );
   function transformer(markdownAST) {
     const visitor = (node, index, parent) => {
-      console.log("remark url", node.url);
-      console.log("currentSlug", currentSlug);
-      console.log("pathIgnore", pathIgnore);
-
       const newUrl = transformerUrl(node.url, {
         fileUrl: currentSlug,
         extensions,
         addParent: shouldRewriteToParent,
         pathIgnore,
       });
-      console.log("newUrl", newUrl);
 
       const isReplaced = newUrl !== node.url;
 
