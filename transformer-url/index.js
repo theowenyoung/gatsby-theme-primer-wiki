@@ -16,17 +16,17 @@ function transformUrl(url, options) {
 
     if (removeExtension && matchedExtname) {
       if (addParent) {
-        url = path.join(fileUrl, "../", url);
+        url = path.posix.join(fileUrl, "../", url);
         url = url.slice(0, url.length - matchedExtname.length);
       } else {
-        url = path.join(fileUrl, url);
+        url = path.posix.join(fileUrl, url);
         url = url.slice(0, url.length - matchedExtname.length);
       }
     } else {
       if (addParent) {
-        url = path.join(fileUrl, "../", url);
+        url = path.posix.join(fileUrl, "../", url);
       } else {
-        url = path.join(fileUrl, url);
+        url = path.posix.join(fileUrl, url);
       }
     }
     if (removeExtension && !url.endsWith("/")) {
