@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   release:
     types: [published]
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
 jobs:
   release:
     name: Release
