@@ -1,5 +1,11 @@
 # @theowenyoung/transformer-markdown-url
 
+## 1.9.6
+
+### Patch Changes
+
+- [`a8bf2062`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/a8bf2062dd2bc413f81b164cd4ad6fd95a6894b2) Thanks [@theowenyoung](https://github.com/theowenyoung)! - fix windown url path
+
 ## 1.9.5
 
 ### Patch Changes
