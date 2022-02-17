@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
   release:
     types: [published]
-
+  push:
+    branches:
+      - main
 jobs:
   release:
     name: Release
@@ -20,8 +22,8 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: 16.x
-      - name: Setup NPM Latest
-        run: npm i -g npm
+      # - name: Setup NPM Latest
+      #   run: npm i -g npm
       - name: Install Dependencies
         run: npm i
       - name: Test
