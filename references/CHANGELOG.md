@@ -1,5 +1,15 @@
 # @theowenyoung/gatsby-transformer-references
 
+## 1.10.4
+
+### Patch Changes
+
+- [`30ae81f3`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/30ae81f3a4c2028bbbc78039aa73a08c8f0999cb) Thanks [@theowenyoung](https://github.com/theowenyoung)! - update url
+
+- Updated dependencies [[`30ae81f3`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/30ae81f3a4c2028bbbc78039aa73a08c8f0999cb)]:
+  - @theowenyoung/remark-rewrite@1.0.2
+  - @theowenyoung/transformer-markdown-url@1.9.7
+
 ## 1.10.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @theowenyoung/transformer-markdown-url
 
+## 1.9.7
+
+### Patch Changes
+
+- [`30ae81f3`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/30ae81f3a4c2028bbbc78039aa73a08c8f0999cb) Thanks [@theowenyoung](https://github.com/theowenyoung)! - update url
+
 ## 1.9.6
 
 ### Patch Changes
