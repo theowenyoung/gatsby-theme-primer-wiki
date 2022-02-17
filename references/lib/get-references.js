@@ -34,7 +34,7 @@ const getReferences = async (string, options) => {
 
       function onvisit(node, index, parent) {
         if (node.type === "link") {
-          // console.log("node", node.url);
+          console.log("node", node.url);
 
           if (isRelativeUrl(node.url)) {
             references.push({
@@ -58,7 +58,7 @@ const getReferences = async (string, options) => {
     .process(string)
     .then((file) => {
       result.pages = references;
-      // console.log("references", references);
+      console.log("references", references);
 
       return result;
     });

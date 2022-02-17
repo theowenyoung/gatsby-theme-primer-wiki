@@ -5,8 +5,8 @@ const siteMetadata = {
   description: "A Gatsby theme for creating Primer wiki sites",
   siteUrl: "https://demo-wiki.owenyoung.com",
 };
-// const contentFolder = "content6";
-const contentFolder = "foam-content";
+const contentFolder = "content6";
+// const contentFolder = "foam-content";
 
 module.exports = {
   siteMetadata,
