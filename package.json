@@ -45,5 +45,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/theowenyoung/gatsby-theme-primer-wiki.git"
+  },
+  "dependencies": {
+    "clean": "^4.0.2",
+    "npm": "^8.5.1",
+    "run": "^1.4.0"
   }
 }
