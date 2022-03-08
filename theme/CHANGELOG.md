@@ -1,5 +1,11 @@
 # gatsby-theme-primer-wiki
 
+## 2.0.5
+
+### Patch Changes
+
+- [`b909588f`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/b909588f12988805d1dee0dfc65800e3d6f5c54e) Thanks [@theowenyoung](https://github.com/theowenyoung)! - change blockquote style
+
 ## 2.0.4
 
 ### Patch Changes
