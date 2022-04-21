@@ -29,18 +29,22 @@ function getInboundReferences(getNode, allNodes) {
     return slugs.includes(item);
   }
 
+  function getRef(item) {
+    return Array.from(nodes).find((x) => x.fields.slug === item);
+  }
+
   nodes.forEach((node) => {
     const mapped = node.__outboundReferencesSlugs
       .filter(filterNodes)
-      .map((x) => x.id);
+      .map(getRef);
 
-    mapped.forEach((x) => {
-      if (!inboundReferences[x]) {
-        inboundReferences[x] = [];
+    mapped.forEach(({ id: mappedId }) => {
+      if (!inboundReferences[mappedId]) {
+        inboundReferences[mappedId] = [];
       }
       // deduplation
-      if (!inboundReferences[x].map((y) => y.id).includes(node.id)) {
-        inboundReferences[x].push(node);
+      if (!inboundReferences[mappedId].map((y) => y.id).includes(node.id)) {
+        inboundReferences[mappedId].push(node);
       }
     });
   });
