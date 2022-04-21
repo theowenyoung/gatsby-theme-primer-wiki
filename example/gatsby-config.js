@@ -10,7 +10,7 @@ const contentFolder = "foam-content";
 
 module.exports = {
   siteMetadata,
-  pathPrefix: "/wiki",
+  pathPrefix: "/",
 
   plugins: [
     {
