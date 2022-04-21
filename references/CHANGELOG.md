@@ -1,5 +1,11 @@
 # @theowenyoung/gatsby-transformer-references
 
+## 1.10.5
+
+### Patch Changes
+
+- [`7edee245`](https://github.com/theowenyoung/gatsby-theme-primer-wiki/commit/7edee245dcd938bae94907368292c56f4c883882) Thanks [@theowenyoung](https://github.com/theowenyoung)! - fix reference
+
 ## 1.10.4
 
 ### Patch Changes
